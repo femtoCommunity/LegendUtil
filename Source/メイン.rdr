@@ -1,4 +1,4 @@
-※開始引数 /Debug
+//※開始引数 /Play
 
 「LockCursorInMonitorPlugin.dll」を利用する // マウスカーソルロックプラグイン
 「ResolutionChangerPlugin.dll」を利用する // ディスプレイ解像度変更プラグイン
@@ -15,8 +15,8 @@
 もし終わり
 
 もしアプリの起動引数から「/Play」を完全一致で探したものの個数が1以上なら
-	もしApexLegendsを起動したものが×なら
-		「Apex Legends の起動に失敗しました。」を「中止アイコン」で表示する
+	もしApexLegendsを1で起動したものが×なら
+		「Apex Legends の起動に失敗しました。」を「中止アイコン」で表示する//
 		終了する
 	もし終わり
 	待機する
