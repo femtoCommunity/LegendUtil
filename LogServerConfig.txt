@@ -1,0 +1,9 @@
+Port=7111
+LogWindow.Pos.X=1180
+LogWindow.Pos.Y=448
+LogWindow.Size.W=620
+LogWindow.Size.H=400
+InfoWindow.Pos.X=0
+InfoWindow.Pos.Y=0
+InfoWindow.Size.W=620
+InfoWindow.Size.H=400

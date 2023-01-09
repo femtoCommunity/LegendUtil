@@ -1,0 +1,24 @@
+<プロジェクト 名前="LegendUtil" ビット32="×" 管理者実行="×" ライブラリ同梱="○">
+  <一覧>
+    <項目 位置="Source\メイン.rdr" 開始="○" 開く="○" />
+    <項目 位置="Source\ウィンドウ管理器.rdr" 開く="○" />
+    <項目 位置="Source\アプリ.rdr" 開く="○" />
+    <項目 位置="Source\ウィンドウ\メイン画面.rdr" 開く="○" />
+    <項目 位置="Source\ウィンドウ\設定画面.rdr" 開く="○" />
+    <項目 位置="Source\プロセス監視.rdr" 開く="○" />
+    <項目 位置="Source\コンフィグ管理器.rdr" 開く="○" />
+    <項目 位置="Source\デバッグログ.rdr" 開く="○" />
+    <項目 位置="Source\ウィンドウ\デバッグ画面.rdr" 開く="○" />
+  </一覧>
+  <バージョン 値="1.0.0.0">
+    <項目 名前="Comments" 値="LegendUtil - Development by femto Community Software Development Team" />
+    <項目 名前="FileDescription" 値="LegendUtil" />
+    <項目 名前="CompanyName" 値="femto Community Software Development Team" />
+    <項目 名前="ProductName" 値="LegendUtil" />
+    <項目 名前="LegalCopyright" 値="Copyright (C) 2023 femto Community" />
+  </バージョン>
+  <リソース>
+    <項目 名前="アイコン" 値="" />
+  </リソース>
+  <実行開始 モード="OnDesigner" パス="" 形式="Executable" />
+</プロジェクト>
