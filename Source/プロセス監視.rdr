@@ -10,11 +10,10 @@ ApexLegendsとは
 	はじめの手順
 		監視有効=×
 		プロセス起動中=×
-		//インストールパス取得する
 	終わり
 	
 	インストールパス取得する手順
-		【パス】=レジストリから「HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\EA Games\Apex Legends\Install Dir」を取得したもの
+		【パス】=レジストリから「HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Respawn\Apex\Install Dir」を取得したもの
 		もしパスというフォルダが存在するならインストールパス=パス&「EasyAntiCheat_launcher.exe」
 		そうでなければインストールパス=「」
 	終わり
