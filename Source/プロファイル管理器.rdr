@@ -1,15 +1,23 @@
 プロファイル管理器とは
 	単一種類
 	
-	+一覧:配列
+	+一覧:辞書
 	+初期プロファイル:辞書
 	
 	はじめの手順
-		一覧={}
+		一覧=空の辞書
 		初期プロファイル={
 			「Apex_Legends」={
 				「EAC.Binary.Path」=「」
 			},
+			「Fullscreen_Stretched_Resolution」={
+				「Enable」=×,
+				「Resolution.Width」=1920,
+				「Resolution.Height」=1080,
+				「Refresh_Rate」=60,
+				「Alt_Enter_Automatic_Press」=×,
+				「Alt_Enter_Automatic_Press_Wait_Second」=30
+			}/*,
 			「Display.Default」={
 				「Resolution.Width」=1920,
 				「Resolution.Height」=1080,
@@ -19,7 +27,7 @@
 				「Resolution.Width」=1920,
 				「Resolution.Height」=1080,
 				「Refresh_Rate」=60
-			}
+			}*/
 		}
 	終わり
 終わり
