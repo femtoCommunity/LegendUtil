@@ -229,7 +229,7 @@
 			そのフォントを「Yu Gothic UI,11.25」に変える
 			そのドッキング方向を「全体」に変える
 		プロファイル情報パネルというパネルを作る
-			その位置と大きさを｛351,40,400,380｝に変える
+			その位置と大きさを｛351,40,500,380｝に変える
 			その移動順を2に変える
 			そのフォントを「Yu Gothic UI,9」に変える
 			そのドッキング方向を「右」に変える
@@ -300,11 +300,11 @@ const md = function(html) {
 		【プロファイル情報テキスト:文字列】=「
 ### プロファイル - [プロファイル名]
 
-#### フルスクリーンのストレッチ(引き伸ばし)処理 - **`[[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Enable」)]を文字列変換]`**
-- 解像度: **`[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Resolution.Width」)]×[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Resolution.Height」)]`**
-- リフレッシュレート: **`[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Refresh_Rate」)]` Hz**
-- Alt+Enter の自動押下処理: **`[[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press」)]を文字列変換]`**
- - 待機時間: **`[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)]` 秒**
+- フルスクリーンのストレッチ(引き伸ばし)処理 - **`[[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Enable」)]を文字列変換]`**
+ - 解像度: **`[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Resolution.Width」)]×[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Resolution.Height」)]`**
+ - リフレッシュレート: **`[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Refresh_Rate」)]` Hz**
+ - Alt+Enter の自動押下処理: **`[[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press」)]を文字列変換]`**
+   - 待機時間: **`[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)]` 秒**
 」
 		// プロファイル情報の ` をエスケープする
 		プロファイル情報テキスト=プロファイル情報テキストで「`」を「\`」に置換したもの
