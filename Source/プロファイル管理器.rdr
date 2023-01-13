@@ -3,31 +3,44 @@
 	
 	+一覧:辞書
 	+初期プロファイル:辞書
+	+プロファイルキーテーブル:辞書
 	
 	はじめの手順
 		一覧=空の辞書
 		初期プロファイル={
 			「Apex_Legends」={
-				「EAC.Binary.Path」=「」
+				「EACBinaryPath」=「」
 			},
 			「Fullscreen_Stretched_Resolution」={
 				「Enable」=×,
-				「Resolution.Width」=1920,
-				「Resolution.Height」=1080,
+				「ResolutionWidth」=1920,
+				「ResolutionHeight」=1080,
 				「Refresh_Rate」=60,
 				「Alt_Enter_Automatic_Press」=×,
 				「Alt_Enter_Automatic_Press_Wait_Second」=30
 			}/*,
-			「Display.Default」={
-				「Resolution.Width」=1920,
-				「Resolution.Height」=1080,
+			「DisplayDefault」={
+				「ResolutionWidth」=1920,
+				「ResolutionHeight」=1080,
 				「Refresh_Rate」=60
 			},
-			「Display.InPlay」={
-				「Resolution.Width」=1920,
-				「Resolution.Height」=1080,
+			「DisplayInPlay」={
+				「ResolutionWidth」=1920,
+				「ResolutionHeight」=1080,
 				「Refresh_Rate」=60
 			}*/
+		}
+		
+		プロファイルキーテーブル={
+			「Apex_Legends」=「Apex Legends」,
+			「EACBinaryPath」={「Apex Legends の実行ファイルのパス (EasyAntiCheat_launcher.exe)」,「」},
+			「Fullscreen_Stretched_Resolution」={「フルスクリーンのストレッチ(引き伸ばし)」,「」},
+			「Enable」={「有効」,「」},
+			「ResolutionWidth」={「ディスプレイ解像度 (幅)」,「」},
+			「ResolutionHeight」={「ディスプレイ解像度 (高さ)」,「」},
+			「Refresh_Rate」={「リフレッシュレート」,「」},
+			「Alt_Enter_Automatic_Press」={「Alt+Enter の自動押下」,「」},
+			「Alt_Enter_Automatic_Press_Wait_Second」={「Alt+Enter の自動押下の待機時間」,「」}
 		}
 	終わり
 	
