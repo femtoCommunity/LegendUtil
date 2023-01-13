@@ -1,3 +1,8 @@
+「VDF.rdr.dll」を利用する
+「Produire.WebView2.dll」を利用する
+「LockCursorInMonitorPlugin.dll」を利用する // マウスカーソルロックプラグイン
+「ResolutionChangerPlugin.dll」を利用する // ディスプレイ解像度変更プラグイン
+
 「..\LegendUtil.rdrproj」を素材として利用する
 //「..\_Resources\Icons\Icon.ico」を素材として利用する
 
@@ -22,6 +27,7 @@
 		繰り返し終わり
 		//アイコン=「Icon.ico」を素材リストからアイコンとして取得したもの
 		コンフィグフォルダーというフォルダ情報(「[マイドキュメント][アプリの名前]」)を作る
+		起動引数=空の配列
 	終わり
 	
 	自分を終了する手順
