@@ -2,24 +2,15 @@
 	単一種類
 	
 	-コンフィグ初期値={
-		「ApexLegends」={
-			//「R5.Binary.Path」=「」,
-			「EAC.Binary.Path」=「C:\Program Files (x86)\Steam\steamapps\common\Apex Legends\EasyAntiCheat_launcher.exe」
-		},
-		「Display.Default」={
-			「Resolution.Width」=「1920」,
-			「Resolution.Height」=「1080」,
-			「RefreshRate」=「60」
-		},
-		「Display.InPlay」={
-			「Resolution.Width」=「1920」,
-			「Resolution.Height」=「1080」,
+		「Display」={
+			「Resolution_Width」=「1920」,
+			「Resolution_Height」=「1080」,
 			「RefreshRate」=「60」
 		}
 	}
 	
 	はじめの手順
-		メイン設定のファイル名=「Config.ini」
+		メイン設定のファイル名=「[アプリのコンフィグフォルダー]\Config.ini」
 	終わり
 	
 	自分でコンフィグチェックする手順
@@ -48,9 +39,8 @@
 		10回【カウント】にカウントしながら繰り返す
 			【ディスプレイ】=画面のカウント番目を取得したもの
 			もしディスプレイのメインが○なら
-				// 元の解像度 //
-				メイン設定について「Display.Default」で「Resolution.Width」へディスプレイの幅を設定する
-				メイン設定について「Display.Default」で「Resolution.Height」へディスプレイの高さを設定する				
+				メイン設定について「Display」で「Resolution_Width」へディスプレイの幅を設定する
+				メイン設定について「Display」で「Resolution_Height」へディスプレイの高さを設定する				
 				繰り返しから抜け出す
 			もし終わり
 		繰り返し終わり
