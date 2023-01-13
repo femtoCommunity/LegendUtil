@@ -70,13 +70,13 @@ ApexLegendsとは
 			
 		もし終わり
 		
-		インストールパス=プロファイル(「Apex_Legends」)(「EAC.Binary.Path」)
+		インストールパス=プロファイル(「Apex_Legends」)(「EACBinaryPath」)
 		
 		もしインストールパスというファイルが存在しないなら×を返す
 		「"」&インストールパス&「"」を起動する
 		
 		// ディスプレイの解像度を変更する
-		画面領域サイズを{プロファイル(「Display.InPlay」)(「Resolution.Width」), プロファイル(「Display.InPlay」)(「Resolution.Height」), プロファイル(「Display.InPlay」)(「Refresh_Rate」)}へ変更する
+		画面領域サイズを{プロファイル(「DisplayInPlay」)(「ResolutionWidth」), プロファイル(「DisplayInPlay」)(「ResolutionHeight」), プロファイル(「DisplayInPlay」)(「Refresh_Rate」)}へ変更する
 		
 		// Apex Legends が起動するまで待つ
 		【Apexプロセス】=空
@@ -153,7 +153,7 @@ ApexLegendsとは
 					メイン画面の起動中パネルのPIDラベルの内容=「」
 					マウスカーソルロッカーでロック解除する
 					// ディスプレイの解像度を戻す
-					画面領域サイズを{プロファイル(「Display.Default」)(「Resolution.Width」), プロファイル(「Display.Default」)(「Resolution.Height」), プロファイル(「Display.Default」)(「Refresh_Rate」)}へ変更する
+					画面領域サイズを{プロファイル(「DisplayDefault」)(「ResolutionWidth」), プロファイル(「DisplayDefault」)(「ResolutionHeight」), プロファイル(「DisplayDefault」)(「Refresh_Rate」)}へ変更する
 					アプリを終了する
 					
 				分岐終わり
