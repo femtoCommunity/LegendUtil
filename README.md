@@ -2,7 +2,7 @@
 <img src="https://github.com/femtoCommunity/LegendUtil/raw/main/Resources/Logo/LegendUtil_Logo_256x256.png" alt="LegendUtil Logo" title="LegendUtil">
 </div>
 <h2 align="center">LegendUtil</h2>
-<h4 align="center">For Legends Aiming for Apex.</h4>
+<p align="center">For Legends Aiming for Apex.</p>
 
 **🔧開発中🔧**
 
