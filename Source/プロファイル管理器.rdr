@@ -2,46 +2,49 @@
 	単一種類
 	
 	+一覧:辞書
-	+初期プロファイル:辞書
-	+プロファイルキーテーブル:辞書
+	+設定初期プロファイル:辞書={
+		「Apex_Legends」={
+			「EACBinaryPath」=「」
+		},
+		「Fullscreen_Stretched_Resolution」={
+			「Enable」=×,
+			「ResolutionWidth」=「1920」,
+			「ResolutionHeight」=「1080」,
+			「Refresh_Rate」=「60」,
+			「Alt_Enter_Automatic_Press」=×,
+			「Alt_Enter_Automatic_Press_Wait_Second」=「30」
+		}
+	}
+	+プロファイルキーテーブル:辞書={
+		「Apex_Legends」=「Apex Legends」,
+		「EACBinaryPath」={「Apex Legends の実行ファイルのパス (EasyAntiCheat_launcher.exe)」,「」},
+		「Fullscreen_Stretched_Resolution」={「フルスクリーンのストレッチ(引き伸ばし)」,「」},
+		「Enable」={「有効」,「」},
+		「ResolutionWidth」={「ディスプレイ解像度 (幅)」,「」},
+		「ResolutionHeight」={「ディスプレイ解像度 (高さ)」,「」},
+		「Refresh_Rate」={「リフレッシュレート」,「」},
+		「Alt_Enter_Automatic_Press」={「Alt+Enter の自動押下」,「」},
+		「Alt_Enter_Automatic_Press_Wait_Second」={「Alt+Enter の自動押下の待機時間」,「」}
+	}
+	+プロファイル名正規表現:文字列=「「[\\\/:\*\?\"<>\|]」」
+	
+	初期プロファイルという属性
+		取得する手順
+			設定初期プロファイルを返す
+		終わり
+	終わり
 	
 	はじめの手順
 		一覧=空の辞書
-		初期プロファイル={
-			「Apex_Legends」={
-				「EACBinaryPath」=「」
-			},
-			「Fullscreen_Stretched_Resolution」={
-				「Enable」=×,
-				「ResolutionWidth」=1920,
-				「ResolutionHeight」=1080,
-				「Refresh_Rate」=60,
-				「Alt_Enter_Automatic_Press」=×,
-				「Alt_Enter_Automatic_Press_Wait_Second」=30
-			}/*,
-			「DisplayDefault」={
-				「ResolutionWidth」=1920,
-				「ResolutionHeight」=1080,
-				「Refresh_Rate」=60
-			},
-			「DisplayInPlay」={
-				「ResolutionWidth」=1920,
-				「ResolutionHeight」=1080,
-				「Refresh_Rate」=60
-			}*/
-		}
-		
-		プロファイルキーテーブル={
-			「Apex_Legends」=「Apex Legends」,
-			「EACBinaryPath」={「Apex Legends の実行ファイルのパス (EasyAntiCheat_launcher.exe)」,「」},
-			「Fullscreen_Stretched_Resolution」={「フルスクリーンのストレッチ(引き伸ばし)」,「」},
-			「Enable」={「有効」,「」},
-			「ResolutionWidth」={「ディスプレイ解像度 (幅)」,「」},
-			「ResolutionHeight」={「ディスプレイ解像度 (高さ)」,「」},
-			「Refresh_Rate」={「リフレッシュレート」,「」},
-			「Alt_Enter_Automatic_Press」={「Alt+Enter の自動押下」,「」},
-			「Alt_Enter_Automatic_Press_Wait_Second」={「Alt+Enter の自動押下の待機時間」,「」}
-		}
+	終わり
+	
+	自分でプロファイル読み込む手順
+		プロファイル管理器の一覧=空の辞書
+		フルパスで「[アプリのコンフィグフォルダー]\Profile」のファイルの一覧を【ファイル】へそれぞれ繰り返す
+			もしファイルの拡張子だけが「json」なら
+				プロファイル管理器の一覧へ[ファイルの名前だけ]として[ファイルから「UTF-8」で読み込んだものをJSON形式として読み取ったもの]を設定する
+			もし終わり
+		繰り返し終わり
 	終わり
 	
 	自分でプロファイル保存する手順
