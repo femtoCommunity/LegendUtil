@@ -7,7 +7,7 @@
     <項目 位置="Source\ウィンドウ\設定画面.rdr" />
     <項目 位置="Source\プロセス監視.rdr" 開く="○" />
     <項目 位置="Source\コンフィグ管理器.rdr" 開く="○" />
-    <項目 位置="Source\デバッグログ.rdr" />
+    <項目 位置="Source\デバッグログ.rdr" 開く="○" />
     <項目 位置="Source\ウィンドウ\デバッグ画面.rdr" />
     <項目 位置="Source\プロファイル管理器.rdr" 開く="○" />
     <項目 位置="Source\真偽値文字列変換.rdr" />
@@ -20,7 +20,7 @@
     <項目 名前="LegalCopyright" 値="Copyright (C) 2023 femto Community" />
   </バージョン>
   <リソース>
-    <項目 名前="アイコン" 値="" />
+    <項目 名前="アイコン" 値="Resources\Logo\LegendUtil.ico" />
   </リソース>
   <実行開始 モード="OnDesigner" パス="" 形式="Executable" />
 </プロジェクト>
