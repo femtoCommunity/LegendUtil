@@ -1,8 +1,7 @@
 <div align="center">
-<img src="https://github.com/femtoCommunity/LegendUtil/raw/main/Resources/Logo/LegendUtil_Logo_256x256.png" alt="LegendUtil Logo" title="LegendUtil">
+<img src="https://github.com/femtoCommunity/LegendUtil/raw/main/Resources/Logo/LegendUtil_Logo_Banner_GitHub_1000x300.png" alt="LegendUtil Banner" title="LegendUtil">
 </div>
 <h2 align="center">LegendUtil</h2>
-<p align="center">For Legends Aiming for Apex.</p>
 
 **🔧開発中🔧**
 
