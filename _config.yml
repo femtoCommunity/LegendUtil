@@ -1,1 +1,4 @@
 markdown: kramdown
+theme: forty-jekyll-theme
+title: LegendUtil - A Utility ForLegends Aiming for Apex.
+description: Edit, Save and Play.
