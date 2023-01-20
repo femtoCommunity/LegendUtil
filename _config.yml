@@ -1,4 +1,4 @@
 markdown: kramdown
-theme: https://github.com/andrewbanchich/forty-jekyll-theme
+theme: jekyll-theme-cayman
 title: LegendUtil - A Utility ForLegends Aiming for Apex.
 description: Edit, Save and Play.
