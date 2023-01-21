@@ -5,8 +5,6 @@
 
 **🔧開発中🔧**
 
-サポートサーバー: https://discord.gg/bMf9dDjndC
-
 開発計画はこちら: https://github.com/orgs/femtoCommunity/projects/1/views/2?layout=board
 
 開発: femto Community Software Development Team
