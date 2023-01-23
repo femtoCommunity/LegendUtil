@@ -8,6 +8,7 @@
 		},
 		「Fullscreen_Stretched_Resolution」={
 			「Enable」=×,
+			「Change_System_Resolution」=×,
 			「ResolutionWidth」=「1920」,
 			「ResolutionHeight」=「1080」,
 			「Refresh_Rate」=「60」,
