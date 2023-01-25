@@ -10,11 +10,18 @@ namespace ResolutionChangerPlugin
 	public class 画面領域サイズ : IProduireStaticClass
 	{
 		[自分("を")]
-		public bool 変更する([へ] int[] 大きさ)
+		public string 変更する([へ] int[] 設定)
 		{
 			var res = new Resolution();
-			var result = res.ChangeDisplaySettings(大きさ[0], 大きさ[1], 大きさ[2]);
+			var result = res.ChangeDisplaySettings(設定[0], 設定[1], 設定[2]);
 			return result;
 		}
+
+		/*[自分("で")]
+		public bool 確認する([を] int[] 設定)
+		{
+			var res = new Resolution();
+			return res.IsDisplayModeSupported(設定[0], 設定[1]);
+		}*/
 	}
 }

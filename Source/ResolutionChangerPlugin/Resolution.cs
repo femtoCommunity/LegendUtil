@@ -200,7 +200,7 @@ namespace ResChanger
 		/// </summary>
 		/// <param name="width" />
 		/// <param name="height" />
-		public bool ChangeDisplaySettings(int width, int height, int frequency)
+		public string ChangeDisplaySettings(int width, int height, int frequency)
 		{
 			_oldDevmode = new Devmode();
 			_oldDevmode.dmSize = (ushort)Marshal.SizeOf(_oldDevmode);
@@ -227,19 +227,19 @@ namespace ResChanger
 			switch (result)
 			{
 				case DispChangeSuccessful:
-					return true;
+					return "Successful";
 
 				case DispChangeBadmode:
-					MessageBox.Show("Mode not supported.");
-					return false;
+					//MessageBox.Show("Mode not supported.");
+					return "Mode not supported.";
 
 				case DispChangeRestart:
-					MessageBox.Show("Restart required.");
-					return false;
+					//MessageBox.Show("Restart required.");
+					return "Restart required.";
 
 				default:
-					MessageBox.Show("Failed. Error code = " + result);
-					return false;
+					//MessageBox.Show("Failed. Error code = " + result);
+					return "Failed. Error code = " + result;
 			}
 		}
 		#endregion
