@@ -12,4 +12,4 @@
   - [GitHub](https://github.com/Milkeyyy) | [Twitter](https://twitter.com/Milkeyyy_53)
   - [Ko-fiで開発をサポートする](https://ko-fi.com/milkeyyy)
 
-開発言語: [**プロデル**](https://produ.irelang.jp/) - **`1.9.1173`**
+開発言語: [**プロデル**](https://produ.irelang.jp/) **`1.9`**
