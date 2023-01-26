@@ -10,7 +10,7 @@ ApexLegendsとは
 	
 	+エラー一覧:辞書={
 		1=「プロファイルの読み込み失敗」,
-		2=「画面解像度の変更失敗」,
+		2=「ディスプレイ解像度の変更失敗」,
 		3=「Apex Legends の起動時エラー」,
 		4=「Apex Legends の起動時エラー: 未インストール」,
 		5=「Apex Legends のプロセス取得タイムアウト」,
@@ -151,16 +151,16 @@ ApexLegendsとは
 		
 		メイン画面のメインメニューパネルの有効=×
 		
-		// ディスプレイの解像度を変更する
+		// システムのディスプレイ解像度を変更する
 		例外監視
-			もしプロファイル(「Fullscreen_Stretched_Resolution」)(「Enable」)が○なら
+			もし(プロファイル(「Fullscreen_Stretched_Resolution」)(「Enable」)が○)かつ(プロファイル(「Fullscreen_Stretched_Resolution」)(「Change_System_Resolution」)が○)なら
 				【サイズ変更結果】=画面領域サイズを{プロファイル(「Fullscreen_Stretched_Resolution」)(「ResolutionWidth」), プロファイル(「Fullscreen_Stretched_Resolution」)(「ResolutionHeight」), プロファイル(「Fullscreen_Stretched_Resolution」)(「Refresh_Rate」)}へ変更する
 				もしサイズ変更結果が「Successful」でないなら
 					「エラー: [サイズ変更結果]」というエラーを発生させる
 				もし終わり
 			もし終わり
 		発生した場合
-			{×,「画面解像度の変更に失敗しました。[改行][改行][エラーのメッセージ]」,2}を返す
+			{×,「ディスプレイ解像度の変更に失敗しました。[改行][改行][エラーのメッセージ]」,2}を返す
 		監視終わり
 		
 		インストールパス=プロファイル(「Apex_Legends」)(「EACBinaryPath」)
@@ -174,7 +174,7 @@ ApexLegendsとは
 		
 		// Apex Legends が起動するまで待つ
 		【Apexプロセス】=無
-		10回繰り返す
+		30回繰り返す
 			例外監視
 				もし「r5apex」のプロセス一覧の個数が1以上なら
 					Apexプロセス=「r5apex」のプロセス
@@ -188,7 +188,7 @@ ApexLegendsとは
 		5秒待つ
 		// Apex Legends が起動するまで待つ (2回目)
 		Apexプロセス=無
-		10回繰り返す
+		30回繰り返す
 			例外監視
 				もし「r5apex」のプロセス一覧の個数が1以上なら
 					Apexプロセス=「r5apex」のプロセス
@@ -206,25 +206,28 @@ ApexLegendsとは
 		
 		自分を監視開始する
 		
-		// Alt+Enter 押下までの待機
-		例外監視
-			【AltEnter待機時間】=プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)
-			もしAltEnter待機時間が1以上でないならAltEnter待機時間=30
-			[AltEnter待機時間]秒待つ
-		発生した場合
-			{×,「Alt+Enter の自動押下待機時にエラーが発生しました。[改行][改行][エラーのメッセージ]」,6}を返す
-		監視終わり
-		
 		// Alt+Enter の自動押下処理
-		例外監視
-			もしApexプロセスの起動中が○なら
-				プロセスへ「%{Enter}」を入力する
-				2秒待つ
-				プロセスへ「%{Enter}」を入力する
-			もし終わり
-		発生した場合
-			{×,「Alt+Enter の自動押下実行時にエラーが発生しました。[改行][改行][エラーのメッセージ]」,7}を返す
-		監視終わり
+		もし(プロファイル(「Fullscreen_Stretched_Resolution」)(「Enable」)が○)かつ(プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press」)が○)なら
+			// Alt+Enter 押下までの待機
+			例外監視
+				【AltEnter待機時間】=プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)
+				もしAltEnter待機時間が1以上でないならAltEnter待機時間=30
+				[AltEnter待機時間]秒待つ
+			発生した場合
+				{×,「Alt+Enter の自動押下待機時にエラーが発生しました。[改行][改行][エラーのメッセージ]」,6}を返す
+			監視終わり
+			
+			// Alt+Enter の自動押下処理
+			例外監視
+				もしApexプロセスの起動中が○なら
+					プロセスへ「%{Enter}」を入力する
+					2秒待つ
+					プロセスへ「%{Enter}」を入力する
+				もし終わり
+			発生した場合
+				{×,「Alt+Enter の自動押下実行時にエラーが発生しました。[改行][改行][エラーのメッセージ]」,7}を返す
+			監視終わり
+		もし終わり
 		
 		もし(インストールパスというファイルが存在する)かつ(Apexプロセスの起動中が○)なら{○,「」}を返す
 		そうでなければ{×,「Apex Legends の起動に失敗しました。設定に誤りがないか確認してもう一度お試しください。」,8}を返す
