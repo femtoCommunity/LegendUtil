@@ -118,7 +118,7 @@ ApexLegendsとは
 				インストール先=無
 			監視終わり
 			
-		「2」の場合 // EA Desktop (Origin)
+		「2」の場合 // EA app (Origin)
 			例外監視
 			// レジストリーからApex Legendsのインストール先を取得する
 			パス=レジストリから「HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Respawn\Apex\Install Dir」を取得したもの
