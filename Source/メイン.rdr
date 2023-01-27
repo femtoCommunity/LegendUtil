@@ -1,5 +1,6 @@
 ※開始引数 /Setup
 
+「Milkeyyy.ControlSR.dll」を利用する
 「Transitions.rdr.dll」を利用する
 「VDF.rdr.dll」を利用する
 「Produire.WebView2.dll」を利用する
@@ -16,7 +17,7 @@ ApexLegendsの起動引数を報告する
 もしアプリの起動引数から「/Debug」を完全一致で探したものの個数が1以上なら
 	休憩する
 	デバッグログを接続する
-	セットアップ画面を表示する
+	テスト画面を表示する
 もし終わり
 
 もしアプリの起動引数から「/Play」を完全一致で探したものの個数が1以上なら
