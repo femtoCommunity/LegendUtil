@@ -40,8 +40,10 @@ ApexLegendsとは
 		
 	終わり
 	
+	
+	
 	〈【プラットフォーム:文字列】から〉起動引数取得する手順:文字列
-		// EA Desktop
+		// EA app
 		例外監視
 			【フォルダー:文字列】=「C:\Users\[ウィンドウズのユーザ名]\AppData\Local\Electronic Arts\EA Desktop\」
 			【テレメトリー:辞書】=[「[フォルダー]telemetry.ini」から「UTF-8」で読み込んだもの]を辞書化したもの
