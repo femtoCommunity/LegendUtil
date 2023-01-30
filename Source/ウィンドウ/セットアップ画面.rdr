@@ -401,11 +401,11 @@ Steam ID Finder (https://steamid.xyz) などのWebサイトを使用すること
 				仮コンフィグについて「General」で「Platform」へプラットフォーム選択リストの選択項目を設定する
 				もしプラットフォーム選択リストの選択項目が「Steam」なら仮コンフィグについて「General」で「Steam_32bit_Id」へSteam32ID選択リストの内容を設定する
 				
-				プロファイル管理器の一覧(「Default」)(「Fullscreen_Stretched_Resolution」)(「Enable」)=画面ストレッチチェックボックスのチェック
-				プロファイル管理器の一覧(「Default」)(「Fullscreen_Stretched_Resolution」)(「Change_System_Resolution」)=システム解像度変更チェックボックスのチェック
-				プロファイル管理器の一覧(「Default」)(「Fullscreen_Stretched_Resolution」)(「ResolutionWidth」)=解像度Wダイヤルの値
-				プロファイル管理器の一覧(「Default」)(「Fullscreen_Stretched_Resolution」)(「ResolutionHeight」)=解像度Hダイヤルの値
-				プロファイル管理器の一覧(「Default」)(「Fullscreen_Stretched_Resolution」)(「Refresh_Rate」)=リフレッシュレートダイヤルの値
+				プロファイル管理器の一覧(「Default」)(「Change_Display_Resolution」)(「Enable」)=画面ストレッチチェックボックスのチェック
+				プロファイル管理器の一覧(「Default」)(「Change_Display_Resolution」)(「Change_System_Resolution」)=システム解像度変更チェックボックスのチェック
+				プロファイル管理器の一覧(「Default」)(「Change_Display_Resolution」)(「ResolutionWidth」)=解像度Wダイヤルの値
+				プロファイル管理器の一覧(「Default」)(「Change_Display_Resolution」)(「ResolutionHeight」)=解像度Hダイヤルの値
+				プロファイル管理器の一覧(「Default」)(「Change_Display_Resolution」)(「Refresh_Rate」)=リフレッシュレートダイヤルの値
 				プロファイル管理器でプロファイル保存する
 				
 				// 既に存在するコンフィグファイルを削除して、仮コンフィグと置き換える

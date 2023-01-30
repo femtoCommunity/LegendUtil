@@ -6,7 +6,7 @@
 		「Apex_Legends」={
 			「EACBinaryPath」=「」
 		},
-		「Fullscreen_Stretched_Resolution」={
+		「Change_Display_Resolution」={
 			「Enable」=×,
 			「Change_System_Resolution」=×,
 			「ResolutionWidth」=「1920」,
@@ -19,7 +19,7 @@
 	+プロファイルキーテーブル:辞書={
 		「Apex_Legends」=「Apex Legends」,
 		「EACBinaryPath」={「Apex Legends の実行ファイルのパス (EasyAntiCheat_launcher.exe)」,「」},
-		「Fullscreen_Stretched_Resolution」={「フルスクリーンのストレッチ(引き伸ばし)」,「」},
+		「Change_Display_Resolution」={「フルスクリーンのストレッチ(引き伸ばし)」,「」},
 		「Enable」={「有効」,「」},
 		「ResolutionWidth」={「ディスプレイ解像度 (幅)」,「」},
 		「ResolutionHeight」={「ディスプレイ解像度 (高さ)」,「」},

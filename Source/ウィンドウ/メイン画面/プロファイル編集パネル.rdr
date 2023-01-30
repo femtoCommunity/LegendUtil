@@ -351,20 +351,20 @@
 			ApexLegendsパステキストの内容=プロファイル(「Apex_Legends」)(「EACBinaryPath」)
 			ApexLegendsパス選択リストをすべて消す
 			ApexLegendsパス選択リストへ「未取得」を追加する
-			フルスクリーンストレッチ有効チェックボックスのチェック=プロファイル(「Fullscreen_Stretched_Resolution」)(「Enable」)
-			フルスクリーンストレッチ設定項目パネルの有効=プロファイル(「Fullscreen_Stretched_Resolution」)(「Enable」)
+			フルスクリーンストレッチ有効チェックボックスのチェック=プロファイル(「Change_Display_Resolution」)(「Enable」)
+			フルスクリーンストレッチ設定項目パネルの有効=プロファイル(「Change_Display_Resolution」)(「Enable」)
 			
-			システム解像度変更チェックボックスのチェック=プロファイル(「Fullscreen_Stretched_Resolution」)(「Change_System_Resolution」)
+			システム解像度変更チェックボックスのチェック=プロファイル(「Change_Display_Resolution」)(「Change_System_Resolution」)
 			
-			ディスプレイ解像度Wダイヤルの値=プロファイル(「Fullscreen_Stretched_Resolution」)(「ResolutionWidth」)
-			ディスプレイ解像度Hダイヤルの値=プロファイル(「Fullscreen_Stretched_Resolution」)(「ResolutionHeight」)
+			ディスプレイ解像度Wダイヤルの値=プロファイル(「Change_Display_Resolution」)(「ResolutionWidth」)
+			ディスプレイ解像度Hダイヤルの値=プロファイル(「Change_Display_Resolution」)(「ResolutionHeight」)
 			ディスプレイ解像度プリセット選択リストの選択番号=1
 			
-			ディスプレイリフレッシュレートダイヤルの値=プロファイル(「Fullscreen_Stretched_Resolution」)(「Refresh_Rate」)
-			ディスプレイリフレッシュレートダイヤルの有効=プロファイル(「Fullscreen_Stretched_Resolution」)(「Change_System_Resolution」)
+			ディスプレイリフレッシュレートダイヤルの値=プロファイル(「Change_Display_Resolution」)(「Refresh_Rate」)
+			ディスプレイリフレッシュレートダイヤルの有効=プロファイル(「Change_Display_Resolution」)(「Change_System_Resolution」)
 			
-			AltEnter自動押下チェックボックスのチェック=プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press」)
-			AltEnter自動押下待機時間ダイヤルの値=プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)
+			AltEnter自動押下チェックボックスのチェック=プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press」)
+			AltEnter自動押下待機時間ダイヤルの値=プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)
 		発生した場合
 			プロファイル読み込み済み=×
 			「プロファイルの読み込みに失敗しました。[改行][改行][エラーのメッセージ]」を「中止アイコン」で表示する
@@ -409,21 +409,21 @@
 	フルスクリーンストレッチ有効チェックボックスがチェックされた時の手順
 		フルスクリーンストレッチ設定項目パネルの有効=フルスクリーンストレッチ有効チェックボックスのチェック
 		
-		もしプロファイル読み込み済みが○ならプロファイル(「Fullscreen_Stretched_Resolution」)(「Enable」)=フルスクリーンストレッチ有効チェックボックスのチェック
+		もしプロファイル読み込み済みが○ならプロファイル(「Change_Display_Resolution」)(「Enable」)=フルスクリーンストレッチ有効チェックボックスのチェック
 	終わり
 	
 	システム解像度変更チェックボックスがチェックされた時の手順
 		ディスプレイリフレッシュレートダイヤルの有効=システム解像度変更チェックボックスのチェック
 		
-		もしプロファイル読み込み済みが○ならプロファイル(「Fullscreen_Stretched_Resolution」)(「Change_System_Resolution」)=システム解像度変更チェックボックスのチェック
+		もしプロファイル読み込み済みが○ならプロファイル(「Change_Display_Resolution」)(「Change_System_Resolution」)=システム解像度変更チェックボックスのチェック
 	終わり
 	
 	ディスプレイ解像度Wダイヤルが変更された時の手順
-		もしプロファイル読み込み済みが○ならプロファイル(「Fullscreen_Stretched_Resolution」)(「ResolutionWidth」)=ディスプレイ解像度Wダイヤルの値
+		もしプロファイル読み込み済みが○ならプロファイル(「Change_Display_Resolution」)(「ResolutionWidth」)=ディスプレイ解像度Wダイヤルの値
 	終わり
 	
 	ディスプレイ解像度Hダイヤルが変更された時の手順
-		もしプロファイル読み込み済みが○ならプロファイル(「Fullscreen_Stretched_Resolution」)(「ResolutionHeight」)=ディスプレイ解像度Hダイヤルの値
+		もしプロファイル読み込み済みが○ならプロファイル(「Change_Display_Resolution」)(「ResolutionHeight」)=ディスプレイ解像度Hダイヤルの値
 	終わり
 	
 	ディスプレイ解像度プリセット選択リストが選択された時の手順
@@ -432,20 +432,20 @@
 		ディスプレイ解像度Wダイヤルの値=プリセット解像度(1)
 		ディスプレイ解像度Hダイヤルの値=プリセット解像度(2)
 		
-		もしプロファイル読み込み済みが○ならプロファイル(「Fullscreen_Stretched_Resolution」)(「ResolutionWidth」)=プリセット解像度(1)
-		もしプロファイル読み込み済みが○ならプロファイル(「Fullscreen_Stretched_Resolution」)(「ResolutionHeight」)=プリセット解像度(2)
+		もしプロファイル読み込み済みが○ならプロファイル(「Change_Display_Resolution」)(「ResolutionWidth」)=プリセット解像度(1)
+		もしプロファイル読み込み済みが○ならプロファイル(「Change_Display_Resolution」)(「ResolutionHeight」)=プリセット解像度(2)
 	終わり
 	
 	ディスプレイリフレッシュレートダイヤルが変更された時の手順
-		もしプロファイル読み込み済みが○ならプロファイル(「Fullscreen_Stretched_Resolution」)(「Refresh_Rate」)=ディスプレイリフレッシュレートダイヤルの値
+		もしプロファイル読み込み済みが○ならプロファイル(「Change_Display_Resolution」)(「Refresh_Rate」)=ディスプレイリフレッシュレートダイヤルの値
 	終わり
 	
 	AltEnter自動押下チェックボックスがチェックされた時の手順
-		もしプロファイル読み込み済みが○ならプロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press」)=AltEnter自動押下チェックボックスのチェック
+		もしプロファイル読み込み済みが○ならプロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press」)=AltEnter自動押下チェックボックスのチェック
 	終わり
 	
 	AltEnter自動押下待機時間ダイヤルが変更された時の手順
-		もしプロファイル読み込み済みが○ならプロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)=AltEnter自動押下待機時間ダイヤルの値
+		もしプロファイル読み込み済みが○ならプロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)=AltEnter自動押下待機時間ダイヤルの値
 	終わり
 終わり
 
