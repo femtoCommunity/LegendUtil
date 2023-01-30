@@ -4,7 +4,6 @@
 「Transitions.rdr.dll」を利用する
 「VDF.rdr.dll」を利用する
 「Produire.WebView2.dll」を利用する
-「Produire.WMP.dll」を利用する
 「LockCursorInWindowPlugin.dll」を利用する // マウスカーソルロックプラグイン
 「ResolutionChangerPlugin.dll」を利用する // ディスプレイ解像度変更プラグイン
 
