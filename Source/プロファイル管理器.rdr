@@ -4,7 +4,9 @@
 	+一覧:辞書
 	+設定初期プロファイル:辞書={
 		「Apex_Legends」={
-			「EACBinaryPath」=「」
+			「Platform」=「Steam」,
+			「EACBinaryPath」=「」,
+			「EACBinaryPath_AutoDetection」=○
 		},
 		「Change_Display_Resolution」={
 			「Enable」=×,

@@ -230,8 +230,8 @@
 		プロファイル管理器の一覧の見出しを【プロファイル名】へそれぞれ繰り返す
 			プロファイル項目部品をプロファイルパネルへ作る
 				その名前ラベルの内容=プロファイル名
-				その設定ラベルの内容=「引き伸ばし: [プロファイル管理器の一覧(プロファイル名)(「Fullscreen_Stretched_Resolution」)(「Enable」)を文字列変換したもの]」
-				もしプロファイル管理器の一覧(プロファイル名)(「Fullscreen_Stretched_Resolution」)(「Enable」)が○ならその設定ラベルの内容=「[その設定ラベルの内容][改行]解像度: [プロファイル管理器の一覧(プロファイル名)(「Fullscreen_Stretched_Resolution」)(「ResolutionWidth」)]×[プロファイル管理器の一覧(プロファイル名)(「Fullscreen_Stretched_Resolution」)(「ResolutionHeight」)] - [プロファイル管理器の一覧(プロファイル名)(「Fullscreen_Stretched_Resolution」)(「Refresh_Rate」)] Hz」
+				その設定ラベルの内容=「引き伸ばし: [プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「Enable」)を文字列変換したもの]」
+				もしプロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「Enable」)が○ならその設定ラベルの内容=「[その設定ラベルの内容][改行]解像度: [プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「ResolutionWidth」)]×[プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「ResolutionHeight」)] - [プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「Refresh_Rate」)] Hz」
 				その名前ラベルへ「プロファイル [プロファイル名] で起動」という説明ツールチップを設定する
 				その設定ラベルへ「プロファイル [プロファイル名] で起動」という説明ツールチップを設定する
 		繰り返し終わり

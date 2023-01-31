@@ -79,7 +79,7 @@ ApexLegendsとは
 		
 		もしプラットフォームが無ならプラットフォーム番号一覧={0}
 		そうでなければプラットフォーム番号一覧=プラットフォーム
-		もしプラットフォーム番号一覧が「{0}」ならプラットフォーム番号一覧={1,2}
+		もしプラットフォーム番号一覧が「{0}」ならプラットフォーム番号一覧={「Steam」,「EA app」}
 		
 		【インストール先】
 		プラットフォーム番号一覧を【プラットフォーム番号】へそれぞれ繰り返す
@@ -94,7 +94,7 @@ ApexLegendsとは
 		【インストール先】=「」
 		プラットフォーム=「[プラットフォーム]」
 		プラットフォームについて分岐
-		「1」の場合 // Steam
+		「Steam」の場合 // Steam
 			例外監視
 			// レジストリーからSteamのインストール先を取得する
 			【Steamパス】=[レジストリから「HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Valve\Steam\InstallPath」を取得したもの]
@@ -118,7 +118,7 @@ ApexLegendsとは
 				インストール先=無
 			監視終わり
 			
-		「2」の場合 // EA app (Origin)
+		「EA app」の場合 // EA app (Origin)
 			例外監視
 			// レジストリーからApex Legendsのインストール先を取得する
 			パス=レジストリから「HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Respawn\Apex\Install Dir」を取得したもの
@@ -161,9 +161,9 @@ ApexLegendsとは
 		
 		// システムのディスプレイ解像度を変更する
 		例外監視
-			もし(プロファイル(「Fullscreen_Stretched_Resolution」)(「Enable」)が○)かつ(プロファイル(「Fullscreen_Stretched_Resolution」)(「Change_System_Resolution」)が○)なら
+			もし(プロファイル(「Change_Display_Resolution」)(「Enable」)が○)かつ(プロファイル(「Change_Display_Resolution」)(「Change_System_Resolution」)が○)なら
 				メイン画面の起動中パネルの状態ラベルの内容=「ディスプレイ解像度を変更中」
-				【サイズ変更結果】=画面領域サイズを{プロファイル(「Fullscreen_Stretched_Resolution」)(「ResolutionWidth」), プロファイル(「Fullscreen_Stretched_Resolution」)(「ResolutionHeight」), プロファイル(「Fullscreen_Stretched_Resolution」)(「Refresh_Rate」)}へ変更する
+				【サイズ変更結果】=画面領域サイズを{プロファイル(「Change_Display_Resolution」)(「ResolutionWidth」), プロファイル(「Change_Display_Resolution」)(「ResolutionHeight」), プロファイル(「Change_Display_Resolution」)(「Refresh_Rate」)}へ変更する
 				もしサイズ変更結果が「Successful」でないなら
 					「エラー: [サイズ変更結果]」というエラーを発生させる
 				もし終わり
@@ -225,10 +225,10 @@ ApexLegendsとは
 		自分を監視開始する
 		
 		// Alt+Enter の自動押下処理
-		もし(プロファイル(「Fullscreen_Stretched_Resolution」)(「Enable」)が○)かつ(プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press」)が○)なら
+		もし(プロファイル(「Change_Display_Resolution」)(「Enable」)が○)かつ(プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press」)が○)なら
 			// Alt+Enter 押下までの待機
 			例外監視
-				【AltEnter待機時間】=プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)
+				【AltEnter待機時間】=プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)
 				もしAltEnter待機時間が1以上でないならAltEnter待機時間=30
 				[AltEnter待機時間]秒待つ
 			発生した場合
@@ -324,7 +324,7 @@ ApexLegendsとは
 		「[[][今][]] カーソルロック解除」をメイン画面の起動中パネルのログテキストへ改行して挿入する
 		
 		// ディスプレイの解像度を戻す
-		もし(プロファイル(「Fullscreen_Stretched_Resolution」)(「Enable」)が○)かつ(プロファイル(「Fullscreen_Stretched_Resolution」)(「Change_System_Resolution」)が○)なら
+		もし(プロファイル(「Change_Display_Resolution」)(「Enable」)が○)かつ(プロファイル(「Change_Display_Resolution」)(「Change_System_Resolution」)が○)なら
 			【サイズ変更結果】=画面領域サイズを{メイン設定について「Display」から「Resolution_Width」を取得したもの, メイン設定について「Display」から「Resolution_Width」を取得したもの, メイン設定について「Display」から「RefreshRate」を取得したもの}へ変更する
 			もしサイズ変更結果が「Successful」でないなら
 				「[[][今][]] ディスプレイ解像度変更 - 失敗: [サイズ変更結果]」をメイン画面の起動中パネルのログテキストへ改行して挿入する

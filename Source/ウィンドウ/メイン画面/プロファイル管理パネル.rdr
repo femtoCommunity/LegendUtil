@@ -216,11 +216,11 @@ const md = function(html) {
 ### プロファイル - [プロファイル名]
 
 - Apex Legends のパス - **`[表示プロファイル(「Apex_Legends」)(「EACBinaryPath」)]`**
-- 解像度の変更(引き伸ばし) - **`[[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Enable」)]を文字列変換]`**
- - 解像度: **`[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「ResolutionWidth」)]×[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「ResolutionHeight」)]`**
- - リフレッシュレート: **`[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Refresh_Rate」)]` Hz**
- - Alt+Enter の自動押下: **`[[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press」)]を文字列変換]`**
-   - 待機時間: **`[表示プロファイル(「Fullscreen_Stretched_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)]` 秒**
+- 解像度の変更(引き伸ばし) - **`[[表示プロファイル(「Change_Display_Resolution」)(「Enable」)]を文字列変換]`**
+ - 解像度: **`[表示プロファイル(「Change_Display_Resolution」)(「ResolutionWidth」)]×[表示プロファイル(「Change_Display_Resolution」)(「ResolutionHeight」)]`**
+ - リフレッシュレート: **`[表示プロファイル(「Change_Display_Resolution」)(「Refresh_Rate」)]` Hz**
+ - Alt+Enter の自動押下: **`[[表示プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press」)]を文字列変換]`**
+   - 待機時間: **`[表示プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)]` 秒**
 」
 		// プロファイル情報の ` をエスケープする
 		プロファイル情報テキスト=プロファイル情報テキストで「`」を「\`」に置換したもの
