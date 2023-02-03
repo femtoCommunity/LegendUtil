@@ -1,6 +1,7 @@
 _Debug
 Config.ini
 _Test_*.rdr
+_Test
 *.exe
 _Pack
 FolderList.txt
