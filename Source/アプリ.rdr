@@ -1,5 +1,5 @@
 「..\LegendUtil.rdrproj」を素材として利用する
-「..\Resources\Logo\LegendUtil.ico」を素材として利用する
+「..\Resources\Logo\LegendUtil_Icon.ico」を素材として利用する
 
 アプリとは
 	単一種類
@@ -39,7 +39,7 @@
 		
 		コンフィグフォルダーというフォルダ情報(「[マイドキュメント][アプリの名前]」)を作る
 		起動引数=空の配列
-		アイコン=「LegendUtil.ico」を素材リストからアイコンとして取得したもの
+		アイコン=「LegendUtil_Icon.ico」を素材リストからアイコンとして取得したもの
 	終わり
 	
 	自分で情報表示する手順
