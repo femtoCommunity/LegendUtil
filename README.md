@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/femtoCommunity/LegendUtil/raw/main/Resources/Logo/LegendUtil_Logo_Banner_GitHub_1000x300.png" alt="LegendUtil Banner" title="LegendUtil">
+<img src="https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Logo/LegendUtil_Banner.png?raw=true" alt="LegendUtil Banner" title="LegendUtil">
 </div>
 <h2 align="center">LegendUtil</h2>
 
