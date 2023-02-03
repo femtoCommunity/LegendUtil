@@ -2,7 +2,7 @@
 
 「Milkeyyy.ControlSR.dll」を利用する
 「Transitions.rdr.dll」を利用する
-「VDF.rdr.dll」を利用する
+「VJson.rdr.dll」を利用する
 「Produire.WebView2.dll」を利用する
 「LockCursorInWindowPlugin.dll」を利用する // マウスカーソルロックプラグイン
 「ResolutionChangerPlugin.dll」を利用する // ディスプレイ解像度変更プラグイン
@@ -12,7 +12,6 @@
 
 メイン設定という設定ファイルを作る
 コンフィグ管理器でコンフィグチェックする
-ApexLegendsの起動引数を報告する
 
 もしアプリの起動引数から「/Debug」を完全一致で探したものの個数が1以上なら
 	休憩する
