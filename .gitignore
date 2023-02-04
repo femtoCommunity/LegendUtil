@@ -1,4 +1,6 @@
 _Debug
+BuilderConfig.ini
+_Build.bat
 Config.ini
 _Test_*.rdr
 _Test

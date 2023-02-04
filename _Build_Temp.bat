@@ -1,0 +1,1 @@
+pconsole.exeへのパス _Build.rdr
