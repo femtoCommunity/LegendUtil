@@ -27,6 +27,7 @@ AppPublisherURL={#MyAppURL}
 AppCopyright=Copyright (C) 2023 {#MyAppCopyrighter}
 AppSupportURL={#MyAppSupportURL}
 AppUpdatesURL={#MyAppURL}
+DefaultDialogFontName=Yu Gothic UI
 DefaultDirName={autopf}\{#MyAppName}
 DisableDirPage=yes
 ChangesAssociations=yes
