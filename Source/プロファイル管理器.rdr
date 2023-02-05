@@ -17,7 +17,7 @@
 			「ResolutionHeight」=「1080」,
 			「Refresh_Rate」=「60」,
 			「Alt_Enter_Automatic_Press」=×,
-			「Alt_Enter_Automatic_Press_Wait_Second」=「30」
+			「Alt_Enter_Automatic_Press_Wait_Second」=「20」
 		},
 		「Command_Line_Arguments」={
 			「Value」=「」
