@@ -144,6 +144,7 @@ ApexLegendsとは
 	
 	自分で【設定:配列】へ解像度変更する手順
 		もし「[コンフィグフォルダー]videoconfig.txt」というファイルが存在するなら
+			「ビデオコンフィグの編集を開始」をログ出力する
 			// 古いバックアップファイルを削除
 			【バックアップ一覧】=空の配列
 			「[アプリのコンフィグフォルダー]Backup\VideoConfig\」のファイルの一覧を【バックアップ】へそれぞれ繰り返す
@@ -175,9 +176,10 @@ ApexLegendsとは
 			コンフィグをJSON形式として書き出したものをVDF形式として書き出したものを「[コンフィグフォルダー]videoconfig.txt」へ保存する
 			// ファイルを読み取り専用にする
 			「[コンフィグフォルダー]videoconfig.txt」へ「読み取り専用」というファイル属性を設定する
+			○を返す
 			
 		そうでなければ
-			「ビデオコンフィグファイルが見つかりませんでした。[改行]一度 Apex Legends を起動し、ビデオコンフィグファイルを生成してから、もう一度お試しください。」というエラーを発生させる
+			×を返す
 			
 		もし終わり
 	終わり
@@ -208,9 +210,11 @@ ApexLegendsとは
 		メイン画面の起動中パネルのログテキストの内容=「」
 		
 		// EACランチャーのパスを取得する 取得できなければエラー
+		「インストールパスを取得」をログ出力する
 		インストールパス=プロファイル(「Apex_Legends」)(「BinaryPath」)
 		もしインストールパスのフォルダだけ&「\EasyAntiCheat_launcher.exe」というファイルが存在するなら
 			プロファイル(「Apex_Legends」)(「EACBinaryPath」)=「[インストールパスのフォルダだけ]\EasyAntiCheat_launcher.exe」
+			「- パス: [インストールパス]」をログ出力する
 			
 		そうでなければ
 			監視終了する
@@ -219,7 +223,9 @@ ApexLegendsとは
 		もし終わり
 		
 		// 起動引数を設定する
+		「起動引数を設定中...」をログ出力する
 		例外監視
+			「- 値: [プロファイル(「Command_Line_Arguments」)(「Value」)]」をログ出力する
 			プロファイル(「Apex_Legends」)(「Platform」)について分岐
 			「Steam」の場合
 				//初期起動引数=Steamの起動引数
@@ -228,33 +234,44 @@ ApexLegendsとは
 				初期起動引数=EAappの起動引数
 				EAappの起動引数=[プロファイル(「Command_Line_Arguments」)(「Value」)]
 			分岐終わり
+			「完了」をログ出力する
 		発生した場合
 			監視終了する
 			{×,「起動引数の変更に失敗しました。[改行][改行][エラーのメッセージ]」,9}を返す
 		監視終わり
 		
 		// ビデオコンフィグを編集する (解像度)
-		例外監視
-			もし(プロファイル(「Change_Display_Resolution」)(「Enable」)が○)なら
-				{
-					プロファイル(「Change_Display_Resolution」)(「ResolutionWidth」),
-					プロファイル(「Change_Display_Resolution」)(「ResolutionHeight」)
-				}へ解像度変更する
-			もし終わり
-		発生した場合
-			監視終了する
-			{×,「ビデオコンフィグの編集に失敗しました。[改行][改行][エラーのメッセージ]」,2}を返す
-		監視終わり
+			例外監視
+				もし(プロファイル(「Change_Display_Resolution」)(「Enable」)が○)なら
+					「ビデオコンフィグを編集中...」をログ出力する
+					【ビデオコンフィグ編集結果】={
+						プロファイル(「Change_Display_Resolution」)(「ResolutionWidth」),
+						プロファイル(「Change_Display_Resolution」)(「ResolutionHeight」)
+					 }へ解像度変更する
+					
+					 もしビデオコンフィグ編集結果が×なら
+					 	監視終了する
+						{×,「ビデオコンフィグファイルが見つかりませんでした。[改行]一度 Apex Legends を起動し、ビデオコンフィグファイルを生成してからもう一度お試しください。」,2}を返す
+					もし終わり
+					
+					「完了」をログ出力する
+				もし終わり
+			発生した場合
+				監視終了する
+				{×,「ビデオコンフィグの編集に失敗しました。[改行][改行][エラーのメッセージ]」,2}を返す
+			監視終わり
 		
 		// システムのディスプレイ解像度を変更する
 		例外監視
 			もし(プロファイル(「Change_Display_Resolution」)(「Enable」)が○)かつ(プロファイル(「Change_Display_Resolution」)(「Change_System_Resolution」)が○)なら
+				「システムのディスプレイ解像度を変更中...」をログ出力する
 				メイン画面の起動中パネルの状態ラベルの内容=「ディスプレイ解像度を変更中」
 				【サイズ変更結果】=画面領域サイズを{プロファイル(「Change_Display_Resolution」)(「ResolutionWidth」), プロファイル(「Change_Display_Resolution」)(「ResolutionHeight」), プロファイル(「Change_Display_Resolution」)(「Refresh_Rate」)}へ変更する
 				もしサイズ変更結果が「Successful」でないなら
 					「エラー: [サイズ変更結果]」というエラーを発生させる
 				もし終わり
 			もし終わり
+			「完了」をログ出力する
 		発生した場合
 			監視終了する
 			{×,「ディスプレイ解像度の変更に失敗しました。[改行][改行][エラーのメッセージ]」,2}を返す
@@ -262,6 +279,7 @@ ApexLegendsとは
 		
 		EACインストールパス=プロファイル(「Apex_Legends」)(「EACBinaryPath」)
 		// Apex Legends を起動する
+		「Apex Legends を起動中...」をログ出力する
 		例外監視
 			メイン画面の起動中パネルの状態ラベルの内容=「Apex Legends を起動中」
 			もしEACインストールパスというファイルが存在しないなら
@@ -285,6 +303,8 @@ ApexLegendsとは
 			// 起動引数を取得する
 			【起動引数:文字列】=「[プロファイル(「Command_Line_Arguments」)(「Value」)]」
 			
+			「- プラットフォーム: [プロファイル(「Apex_Legends」)(「Platform」)]」をログ出力する
+			
 			////////// EA app //////////
 			もしプロファイル(「Apex_Legends」)(「Platform」)が「EA app」なら
 				// プラットフォームが EA app の場合は、起動引数を適用するために EA app を終了する
@@ -299,12 +319,14 @@ ApexLegendsとは
 				監視終わり
 				
 				// EAC(Apex Legends)のランチャーを起動
+				「- 起動: [EACインストールパス]」をログ出力する
 				「"[EACインストールパス]"」を起動する
 			もし終わり
 			////////// EA app //////////
 			
 			////////// Steam //////////
 			もしプロファイル(「Apex_Legends」)(「Platform」)が「Steam」なら
+				「- 起動: [Steamのインストール先]steam.exe -applaunch 1172470 [起動引数]」をログ出力する
 				「[Steamのインストール先]steam.exe」を「-applaunch 1172470 [起動引数]」として起動する
 			もし終わり
 			////////// Steam //////////
@@ -335,6 +357,7 @@ ApexLegendsとは
 		
 		// EA app で起動した場合は一度 R5Apex.exe が終了するので2回目の取得を行う
 		もしプロファイル(「Apex_Legends」)(「Platform」)が「EA app」なら
+			「Apex Legends の起動を待機中...」をログ出力する
 			メイン画面の起動中パネルの状態ラベルの内容=「プロセスの起動を待機中」
 			5秒待つ
 			// Apex Legends が起動するまで待つ (2回目)
@@ -366,8 +389,11 @@ ApexLegendsとは
 		もし(プロファイル(「Change_Display_Resolution」)(「Enable」)が○)かつ(プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press」)が○)なら
 			// Alt+Enter 押下までの待機
 			例外監視
+				
 				【AltEnter待機時間】=プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)
 				もしAltEnter待機時間が1以上でないならAltEnter待機時間=30
+				「Alt+Enter の自動押下の実行まで待機中」をログ出力する
+				「- 待機時間: [AltEnter待機時間]秒」をログ出力する
 				[AltEnter待機時間]秒待つ
 			発生した場合
 				監視終了する
@@ -376,6 +402,7 @@ ApexLegendsとは
 			
 			// Alt+Enter の自動押下処理
 			例外監視
+				「Alt+Enter の自動押下を実行」をログ出力する
 				もしApexプロセスの起動中が○なら
 					プロセスへ「%{Enter}」を入力する
 					2秒待つ
@@ -417,6 +444,9 @@ ApexLegendsとは
 			監視終わり
 			
 			【カーソルロックスレッド:スレッド】
+			
+			「Apex Legends のプロセスを監視開始します...」をログ出力する
+			「- PID: [プロセスのID]」をログ出力する
 			
 			監視有効が○の間、繰り返す
 				// Apex Legendsが起動しているかチェック
@@ -466,6 +496,7 @@ ApexLegendsとは
 	
 	自分を監視終了する手順
 		監視有効=×
+		「プロセスの監視を終了します...」をログ出力する
 		// ロックが解除できていないと困るので念のためカーソルのロックを解除する
 		カーソルロッカーでロック解除する
 		「カーソルロック無効化」をログ出力する		
@@ -488,6 +519,12 @@ ApexLegendsとは
 				例外監視
 					「EA app のプロセスを取得」をログ出力する
 					【EAappプロセス】=「EADesktop」のプロセス
+					
+					20回繰り返す
+						もしEAappプロセスのメインウィンドウハンドルが0でないなら繰り返しから抜け出す
+						1秒待つ
+					繰り返し終わり
+					
 					EAappプロセスを終了する
 					「- PID: [EAappプロセスのID]」をログ出力する
 					「EA app のプロセスを終了」をログ出力する
