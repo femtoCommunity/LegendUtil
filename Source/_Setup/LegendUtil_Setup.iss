@@ -3,8 +3,9 @@
 
 #define MyAppName "LegendUtil"
 #define MyAppVersion "0.1.0"
-#define MyAppReleaseChannel "beta"
-#define MyAppReleaseNumber "1"
+#define MyAppReleaseChannel "dev"
+#define MyAppReleaseNumber "debug"
+#define MyAppVersionText "0.1.0-dev.20230205.210800"
 #define MyAppPublisher "femto Community Software Development Team"
 #define MyAppCopyrighter "Milkeyyy"
 #define MyAppURL "https://github.com/femtoCommunity/LegendUtil"
@@ -19,7 +20,7 @@
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={{7BBCA358-FF52-4F02-8685-08F5E06}
 AppName={#MyAppName}
-AppVersion={#MyAppVersion}-{#MyAppReleaseChannel}.{#MyAppReleaseNumber}
+AppVersion={#MyAppVersionText}
 VersionInfoVersion={#MyAppVersion}
 AppVerName={#MyAppName}
 AppPublisher={#MyAppPublisher}
@@ -75,4 +76,4 @@ Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChang
 Filename: "{app}\{#MyAppExeName}"; Parameters: "/AfterUpdate {#MyAppVersion}" ; Flags: nowait skipifnotsilent
 
 [Messages]
-BeveledLabel={#MyAppName} Setup [App Version: {#MyAppVersion}-{#MyAppReleaseChannel}.{#MyAppReleaseNumber}]
+BeveledLabel={#MyAppName} Setup [App Version: {#MyAppVersionText}]
