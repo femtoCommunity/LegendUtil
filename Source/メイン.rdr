@@ -4,6 +4,7 @@
 「Transitions.rdr.dll」を利用する
 「VJson.rdr.dll」を利用する
 「Produire.WebView2.dll」を利用する
+「RdrWindows7API.dll」を利用する
 「LockCursorInWindowPlugin.dll」を利用する // マウスカーソルロックプラグイン
 「ResolutionChangerPlugin.dll」を利用する // ディスプレイ解像度変更プラグイン
 
@@ -39,7 +40,9 @@
 // アップデートを確認する
 アップデーターでアップデート確認する
 
-もしセットアップ画面の表示が○でないならメイン画面を表示する
+もしセットアップ画面の表示が○でないなら
+	メイン画面を表示する
+もし終わり
 
 待機する
 
