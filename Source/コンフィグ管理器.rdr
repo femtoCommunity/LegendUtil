@@ -89,7 +89,7 @@
 		「Window_Main」={
 			//「Position_X」=「0」,
 			//「Position_Y」=「0」,
-			「Size_W」={「初期値」=「800」},
+			「Size_W」={「初期値」=「900」},
 			「Size_H」={「初期値」=「650」}
 		}
 	}
