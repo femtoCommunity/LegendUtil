@@ -2,7 +2,21 @@ Steamとは
 	単一種類
 	
 	はじめの手順
-		インストール先データ=フォルダ情報(「[レジストリから「HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Valve\Steam\InstallPath」を取得したもの]」)を作ったもの
+		もし「[レジストリから「HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Valve\Steam\InstallPath」を取得したもの]」というフォルダが存在するなら
+			インストール先データ=フォルダ情報(「[レジストリから「HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Valve\Steam\InstallPath」を取得したもの]」)を作ったもの
+			インストール済みデータ=○
+			
+		そうでなければ
+			インストール済みデータ=×
+			
+		もし終わり
+	終わり
+	
+	-インストール済みデータ:真偽値
+	インストール済みという属性
+		取得する手順
+			インストール済みデータを返す
+		終わり
 	終わり
 	
 	-インストール先データ:フォルダ情報
