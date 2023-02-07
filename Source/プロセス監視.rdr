@@ -155,7 +155,7 @@ ApexLegendsとは
 			「ビデオコンフィグ: [コンフィグファイルをVDF形式として読み取ったもの]」をデバッグログへ出力する
 			【コンフィグ】=[コンフィグファイルをVDF形式として読み取ったもの]をJSON形式として読み取ったもの
 			
-			初期ビデオコンフィグ=コンフィグの内容を辞書化したもの
+			初期ビデオコンフィグ=[コンフィグファイルをVDF形式として読み取ったもの]をJSON形式として読み取ったもの
 			
 			コンフィグ(「VideoConfig」)(「setting.defaultres」)=「[設定(1)]」
 			コンフィグ(「VideoConfig」)(「setting.defaultresheight」)=「[設定(2)]」
@@ -203,6 +203,8 @@ ApexLegendsとは
 		メイン画面の起動中パネルのカーソル状態ラベルの内容=「」
 		メイン画面の起動中パネルの起動引数テキストの内容=「[プロファイル(「Command_Line_Arguments」)(「Value」)]」
 		メイン画面の起動中パネルのログテキストの内容=「」
+		
+		初期ビデオコンフィグ=無
 		
 		// EACランチャーのパスを取得する 取得できなければエラー
 		「インストールパスを取得」をログ出力する
@@ -565,10 +567,10 @@ ApexLegendsとは
 			
 			// ビデオコンフィグを元に戻す
 			もしコンフィグに「VideoConfig」が存在するなら
-				もし[コンフィグの「VideoConfig」]に「setting.defaultres」が存在するなら、コンフィグ(「VideoConfig」)へ「setting.defaultres」として「[初期ビデオコンフィグ(「VideoConfig」)(「setting.defaultres」)]」を設定する
-				もし[コンフィグの「VideoConfig」]に「setting.defaultresheight」が存在するなら、コンフィグ(「VideoConfig」)へ「setting.defaultresheight」として「[初期ビデオコンフィグ(「VideoConfig」)(「setting.defaultresheight」)]」を設定する
-				もし[コンフィグの「VideoConfig」]に「setting.fullscreen」が存在するなら、コンフィグ(「VideoConfig」)へ「setting.fullscreen」として「[初期ビデオコンフィグ(「VideoConfig」)(「setting.fullscreen」)]」を設定する
-				もし[コンフィグの「VideoConfig」]に「setting.nowindowborder」が存在するなら、コンフィグ(「VideoConfig」)へ「setting.nowindowborder」として「[初期ビデオコンフィグ(「VideoConfig」)(「setting.nowindowborder」)]」を設定する
+				もしコンフィグ(「VideoConfig」)に「setting.defaultres」が存在するなら、コンフィグ(「VideoConfig」)へ「setting.defaultres」として「[初期ビデオコンフィグ(「VideoConfig」)(「setting.defaultres」)]」を設定する
+				もしコンフィグ(「VideoConfig」)に「setting.defaultresheight」が存在するなら、コンフィグ(「VideoConfig」)へ「setting.defaultresheight」として「[初期ビデオコンフィグ(「VideoConfig」)(「setting.defaultresheight」)]」を設定する
+				もしコンフィグ(「VideoConfig」)に「setting.fullscreen」が存在するなら、コンフィグ(「VideoConfig」)へ「setting.fullscreen」として「[初期ビデオコンフィグ(「VideoConfig」)(「setting.fullscreen」)]」を設定する
+				もしコンフィグ(「VideoConfig」)に「setting.nowindowborder」が存在するなら、コンフィグ(「VideoConfig」)へ「setting.nowindowborder」として「[初期ビデオコンフィグ(「VideoConfig」)(「setting.nowindowborder」)]」を設定する
 				「更新後ビデオコンフィグ: [コンフィグをJSON形式として書き出したもの]」をデバッグログへ出力する
 				
 				// 現在のコンフィグファイルを削除する
