@@ -74,13 +74,13 @@
 		この内容を「プロファイル管理パネル部品」に変える
 		このフォントを「Yu Gothic UI,9」に変える
 		プロファイルリストボックスというリストボックスを作る
-			その位置と大きさを｛0,75,251,344｝に変える
+			その位置と大きさを｛0,75,201,344｝に変える
 			その項目高さを20に変える
 			その移動順を1に変える
 			そのフォントを「Yu Gothic UI,11.25」に変える
 			そのドッキング方向を「全体」に変える
 		ツールバーパネルというパネルを作る
-			その位置と大きさを｛0,40,251,35｝に変える
+			その位置と大きさを｛0,40,201,35｝に変える
 			その枠を「線」に変える
 			その移動順を4に変える
 			そのフォントを「Yu Gothic UI,9」に変える
@@ -114,12 +114,12 @@
 				その背景画像配置を「拡大」に変える
 				そのドッキング方向を「左」に変える
 		プロファイル情報パネルというパネルを作る
-			その位置と大きさを｛251,40,500,380｝に変える
+			その位置と大きさを｛201,40,550,380｝に変える
 			その移動順を2に変える
 			そのフォントを「Yu Gothic UI,9」に変える
 			そのドッキング方向を「右」に変える
 			プロファイル情報ウェブビューというEdgeウェブビューをプロファイル情報パネルへ作る
-				その位置と大きさを｛0,0,500,380｝に変える
+				その位置と大きさを｛0,0,550,380｝に変える
 				そのフォントを「Yu Gothic UI,9」に変える
 				そのドッキング方向を「全体」に変える
 		パネル1というパネルを作る
@@ -231,11 +231,12 @@ const md = function(html) {
 
 - プラットフォーム - **[表示プロファイル(「Apex_Legends」)(「Platform」)]**
  - Apex Legends のパス - **`[表示プロファイル(「Apex_Legends」)(「BinaryPath」)]`**
-- 解像度の変更(引き伸ばし) - **`[[表示プロファイル(「Change_Display_Resolution」)(「Enable」)]を文字列変換]`**
- - 解像度: **`[表示プロファイル(「Change_Display_Resolution」)(「ResolutionWidth」)]×[表示プロファイル(「Change_Display_Resolution」)(「ResolutionHeight」)]`**
- - リフレッシュレート: **`[表示プロファイル(「Change_Display_Resolution」)(「Refresh_Rate」)]` Hz**
- - Alt+Enter の自動押下: **`[[表示プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press」)]を文字列変換]`**
-   - 待機時間: **`[表示プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)]` 秒**
+- 解像度の変更(引き伸ばし) - **[[表示プロファイル(「Change_Display_Resolution」)(「Enable」)]を文字列変換]**
+ - 解像度: **[表示プロファイル(「Change_Display_Resolution」)(「ResolutionWidth」)]×[表示プロファイル(「Change_Display_Resolution」)(「ResolutionHeight」)]**
+ - リフレッシュレート: **[表示プロファイル(「Change_Display_Resolution」)(「Refresh_Rate」)] Hz**
+ - Alt+Enter の自動押下: **[[表示プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press」)]を文字列変換]**
+   - 待機時間: **[表示プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)] 秒**
+ - 起動引数: **`[表示プロファイル(「Command_Line_Arguments」)(「Value」)]`**
 」
 		// プロファイル情報の ` をエスケープする
 		プロファイル情報テキスト=プロファイル情報テキストで「`」を「\`」に置換したもの
