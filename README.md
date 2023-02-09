@@ -19,7 +19,7 @@ Apex Legends のプレイをより快適にするアプリケーションです�
   	- ビデオコンフィグの編集
     - ゲーム起動後の `Alt` + `Enter` の自動押下 (「黒帯」の削除)
   ![Profile Edit Panel Preview 1](https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Previews/ProfileEditPanel_1.jpeg)
-  --- 
+  ---
   - **起動引数(起動オプション)の変更**
   ![Profile Edit Panel Preview 2](https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Previews/ProfileEditPanel_2.jpeg)
   ![Profile Edit Panel Preview 3](https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Previews/ProfileEditPanel_3.jpeg)
