@@ -6,6 +6,8 @@
 	
 	-ヘルプツールチップ:ツールチップ
 	
+	-プロファイル情報ウェブビューCSS:文字列
+	
 	はじめの手順
 		初期化する
 		このドッキング方向=「全体」
@@ -42,6 +44,13 @@
 		選択肢ダイアログのキャンセルボタン=○
 		選択肢ダイアログの項目一覧={「空のプロファイルを作成」,「作成ウィザードを使用して作成」}
 		
+		プロファイル情報ウェブビューCSS=「<style type="text/css">
+html, body {
+  font-family: "Yu Gothic UI";
+  font-size: 0.95em;
+  color: rgb([ウィンドウ管理器のテーマ文字色の赤],[ウィンドウ管理器のテーマ文字色の緑],[ウィンドウ管理器のテーマ文字色の青]);
+  background-color: rgb([ウィンドウ管理器のテーマ背景色の赤],[ウィンドウ管理器のテーマ背景色の緑],[ウィンドウ管理器のテーマ背景色の青]);
+}</style>」
 		ーー貼り付けた部品に対する操作をここに書きます
 	終わり
 	初期化する手順
@@ -121,13 +130,7 @@
 		// 情報ウェブビューを初期化
 		20回繰り返す
 			例外監視
-				プロファイル情報ウェブビューのソース=「<style type="text/css">
-html, body {
-  font-family: "Yu Gothic UI";
-  font-size: 0.95em;
-  color: #e6e6e6;
-  background-color: #282828
-}
+				プロファイル情報ウェブビューのソース=「[プロファイル情報ウェブビューCSS]
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
 <script>
 const md = function(html) {
@@ -227,14 +230,7 @@ const md = function(html) {
 		// 情報ページのソースを読み込む
 		20回繰り返す
 			例外監視
-			プロファイル情報ウェブビューのソース=「<style type="text/css">
-html, body {
-  font-family: "Yu Gothic UI";
-  font-size: 0.95em;
-  color: #e6e6e6;
-  background-color: #282828
-}
-</style>
+			プロファイル情報ウェブビューのソース=「[プロファイル情報ウェブビューCSS]
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
 <script>
 const md = function(html) {
