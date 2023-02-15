@@ -10,6 +10,11 @@
 Apex Legends のプレイをより快適にするアプリケーションです。
 引き伸ばしを行うための解像度の変更や、軽量化のための起動オプションの変更などを、GUIで視覚的に行うことができます。
 
+### 対応プラットフォーム
+- [**EA app**](https://www.ea.com/ja-jp/ea-app)
+  - Origin は近々サポートが終了するため、対応していません。
+- [**Steam**](https://store.steampowered.com)
+
 ## 機能
 - **プロファイル**
 	- 解像度や起動引数などの設定を複数保存でき、ランチャーのような形でプロファイルを選んで Apex Legends を起動できます。
@@ -28,7 +33,7 @@ Apex Legends のプレイをより快適にするアプリケーションです�
 
 - [開発計画](https://github.com/orgs/femtoCommunity/projects/1/views/2?layout=board)
 
-### 開発者
+## 開発者
 - **ソフトウェア**
   - **Milkeyyy** - [femto Community](https://femtocommunity.com/)
     - [GitHub](https://github.com/Milkeyyy)
@@ -41,5 +46,5 @@ Apex Legends のプレイをより快適にするアプリケーションです�
     - [Twitter](https://twitter.com/Apex_tyaneko) / [Twitter (Brand)](https://twitter.com/Rel1cStyle)
     - [Website](https://rel1c.work/)
 
-### 言語
+## 言語
 [**プロデル**](https://produ.irelang.jp/) **`1.9`**
