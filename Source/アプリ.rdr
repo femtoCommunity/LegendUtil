@@ -2,6 +2,8 @@
 「..\BuildVersion.txt」を素材として利用する
 
 「..\Resources\Logo\LegendUtil_Icon.ico」を素材として利用する
+「..\Resources\Logo\LegendUtil_Icon.png」を素材として利用する
+「..\Resources\Logo\LegendUtil_Icon_Transparent.png」を素材として利用する
 
 アプリとは
 	単一種類
@@ -20,6 +22,8 @@
 	//----- バージョン関連 -----//
 	
 	+アイコン:プロデルアイコン
+	+アイコン画像:画像
+	+アイコン透過画像:画像
 	
 	+設計スケール比率={96,96}
 	
@@ -59,14 +63,12 @@
 		コンフィグフォルダーというフォルダ情報(「[マイドキュメント][アプリの名前]」)を作る
 		起動引数=空の配列
 		アイコン=「LegendUtil_Icon.ico」を素材リストからアイコンとして取得したもの
+		アイコン画像=「LegendUtil_Icon.png」を素材リストから画像として取得したもの
+		アイコン透過画像=「LegendUtil_Icon_Transparent.png」を素材リストから画像として取得したもの
 	終わり
 	
 	自分で情報表示する手順
-		「[アプリの名前]
-Version [アプリのバージョン表記]
-(Internal [アプリの内部バージョン]) 
-
-Copyright (C) 2023 Milkeyyy」を「情報アイコン」で表示する
+		アプリケーション情報画面をダイアログで表示する
 	終わり
 	
 	自分を終了する手順

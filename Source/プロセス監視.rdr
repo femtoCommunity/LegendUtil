@@ -634,6 +634,7 @@ ApexLegendsとは
 		// ディスプレイの解像度を戻す
 		もしプロファイルに「Change_Display_Resolution」が存在するなら
 			もし(プロファイル(「Change_Display_Resolution」)(「Enable」)が○)かつ(プロファイル(「Change_Display_Resolution」)(「Change_System_Resolution」)が○)なら
+				「ディスプレイ解像度変更: [メイン設定について「Display」から「Resolution_Width」を取得したもの]×[メイン設定について「Display」から「Resolution_Height」を取得したもの] - [メイン設定について「Display」から「RefreshRate」を取得したもの] Hz」をログ出力する
 				【サイズ変更結果】=画面領域サイズを{メイン設定について「Display」から「Resolution_Width」を取得したもの, メイン設定について「Display」から「Resolution_Height」を取得したもの, メイン設定について「Display」から「RefreshRate」を取得したもの}へ変更する
 				もしサイズ変更結果が「Successful」でないなら
 					「ディスプレイ解像度変更 - 失敗: [サイズ変更結果]」をログ出力する
