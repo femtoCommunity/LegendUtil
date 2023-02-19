@@ -33,6 +33,9 @@
 	
 	+コンフィグフォルダー:フォルダ情報
 	
+	+GitHubリポジトリーURL:文字列=「https://github.com/femtoCommunity/LegendUtil」
+	+DiscordサーバーURL:文字列=「https://discord.gg/Y5FrzPft3M」
+	
 	はじめの手順
 		【プロジェクトファイル】=XMLで[「LegendUtil.rdrproj」を素材リストから文字列として取得したもの]から作成したもの
 		名前=「[プロジェクトファイルの「プロジェクト」の「名前」の内容]」
