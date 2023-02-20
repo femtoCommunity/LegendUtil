@@ -15,6 +15,10 @@ Apex Legends のプレイをより快適にするアプリケーションです�
   - Origin は近々サポートが終了するため、対応していません。
 - [**Steam**](https://store.steampowered.com)
 
+## ダウンロード
+- [**リリース一覧**](https://github.com/femtoCommunity/LegendUtil/releases)
+  - **Assets** から `LegendUtil_Setup.exe` をダウンロードしてください。
+
 ## 機能
 - **プロファイル**
 	- 解像度や起動引数などの設定を複数保存でき、ランチャーのような形でプロファイルを選んで Apex Legends を起動できます。
