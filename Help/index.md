@@ -1,3 +1,7 @@
+---
+title: LegendUtil Help
+---
+
 ## 目次
 - [EA app(Origin) や Steam に設定していた起動オプションを引き継ぐ](#a1)
 - [ディスプレイ解像度の引き伸ばし設定を行う](#a2)
