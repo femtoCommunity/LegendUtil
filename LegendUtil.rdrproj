@@ -24,7 +24,7 @@
     <項目 位置="Source\ウィンドウ\アプリケーション情報画面.rdr" />
     <項目 位置="Source\ウィンドウ\ヘルプ画面.rdr" 開く="○" />
   </一覧>
-  <バージョン 値="0.1.0.1">
+  <バージョン 値="0.1.0.2">
     <項目 名前="Comments" 値="LegendUtil - Development by femto Community Software Team" />
     <項目 名前="FileDescription" 値="LegendUtil" />
     <項目 名前="CompanyName" 値="femto Community Software Team" />
