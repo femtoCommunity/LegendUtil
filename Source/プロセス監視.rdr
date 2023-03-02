@@ -332,8 +332,8 @@ ApexLegendsとは
 		// EACランチャーのパスを取得する 取得できなければエラー
 		「インストールパスを取得」をログ出力する
 		インストールパス=プロファイル(「Apex_Legends」)(「BinaryPath」)
-		もしインストールパスのフォルダだけ&「\EasyAntiCheat_launcher.exe」というファイルが存在するなら
-			プロファイル(「Apex_Legends」)(「EACBinaryPath」)=「[インストールパスのフォルダだけ]\EasyAntiCheat_launcher.exe」
+		もしインストールパスのフォルダだけ&「EasyAntiCheat_launcher.exe」というファイルが存在するなら
+			プロファイル(「Apex_Legends」)(「EACBinaryPath」)=「[インストールパスのフォルダだけ]EasyAntiCheat_launcher.exe」
 			「- パス: [インストールパス]」をログ出力する
 			
 		そうでなければ
