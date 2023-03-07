@@ -347,12 +347,11 @@ ApexLegendsとは
 		「起動引数を設定中...」をログ出力する
 		「- 値: [プロファイル(「Command_Line_Arguments」)(「Value」)]」をログ出力する
 		
-		EAappで○としてコンフィグ読み込む
-		
 		// 起動引数を設定する
 		「起動引数を設定」をデバッグログへ出力する
 		プロファイル(「Apex_Legends」)(「Platform」)について分岐
 		「EA app」の場合
+			EAappで○としてコンフィグ読み込む
 			初期起動引数=EAappの起動引数
 			EAappの起動引数=[プロファイル(「Command_Line_Arguments」)(「Value」)]
 		分岐終わり
