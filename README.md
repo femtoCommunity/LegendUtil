@@ -15,8 +15,24 @@ Apex Legends のプレイをより快適にするアプリケーションです�
   - Origin は近々サポートが終了するため、対応していません。
 - [**Steam**](https://store.steampowered.com)
 
-## ダウンロード
-- [**リリース一覧**](https://github.com/femtoCommunity/LegendUtil/releases)
+## ダウンロード/インストール
+- [Windows Package Manager](https://learn.microsoft.com/ja-jp/windows/package-manager/) が利用できる環境の場合は、コマンドプロンプトやPowerShellで次のコマンドを実行することでインストールできます。
+```
+winget install femtoCommunity.LegendUtil
+```
+
+- 例
+  - コマンドプロンプト
+
+    ![cmd Preview](https://user-images.githubusercontent.com/59532514/223331635-8ebdbc30-e658-4776-8709-eee5d1cd8a61.png)
+
+  - Powershell
+
+    ![PowerShell Preview](https://user-images.githubusercontent.com/59532514/223331108-f1b908cb-8399-4117-89f4-ea2a155dae61.png)
+
+---
+
+- [**こちら**](https://github.com/femtoCommunity/LegendUtil/releases)からインストーラーをダウンロードしてインストールすることもできます。
   - **Assets** から `LegendUtil_Setup.exe` をダウンロードしてください。
 
 ## 機能
