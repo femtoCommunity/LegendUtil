@@ -122,28 +122,6 @@ html, body {
 		
 		プロファイルリストボックスの有効=×
 		
-		//1秒待つ
-		// 情報ウェブビューを初期化
-		/*20回繰り返す
-			例外監視
-				プロファイル情報ウェブビューのソース=「[プロファイル情報ウェブビューCSS]
-<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
-<script>
-const md = function(html) {
-  const div = document.createElement("div")
-  div.innerHTML = marked(html)
-  document.body.appendChild(div)
-}
-</script>
-</head>
-<body>
-<script>md(`### プロファイルを選択してください`)</script>」
-			繰り返しから抜け出す
-			発生した場合
-			監視終わり
-			0.1秒待つ
-		繰り返し終わり*/
-		
 		// リストボックスを初期化してプロファイル一覧を読み込む
 		プロファイルリストボックスをクリアする
 		プロファイルリストボックスへプロファイル管理器の一覧の見出しを一括追加する
@@ -208,44 +186,8 @@ const md = function(html) {
 		プロファイル名=プロファイルリストボックスの選択一覧(1)
 		【表示プロファイル】=プロファイル管理器の一覧(プロファイル名)
 		プロファイル管理コンテキストメニューのメインパネルのプロファイル名ラベルの内容=「　」&プロファイル名
-		【プロファイル情報テキスト:文字列】=「
-### プロファイル - [プロファイル名]
-
-- プラットフォーム - **[表示プロファイル(「Apex_Legends」)(「Platform」)]**
- - Apex Legends のパス - **`[表示プロファイル(「Apex_Legends」)(「BinaryPath」)]`**
-- 解像度の変更(引き伸ばし) - **[[表示プロファイル(「Change_Display_Resolution」)(「Enable」)]を文字列変換]**
- - 解像度: **[表示プロファイル(「Change_Display_Resolution」)(「ResolutionWidth」)]×[表示プロファイル(「Change_Display_Resolution」)(「ResolutionHeight」)]**
- - リフレッシュレート: **[表示プロファイル(「Change_Display_Resolution」)(「Refresh_Rate」)] Hz**
- - Alt+Enter の自動押下: **[[表示プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press」)]を文字列変換]**
-   - 待機時間: **[表示プロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press_Wait_Second」)] 秒**
- - 起動引数: **`[表示プロファイル(「Command_Line_Arguments」)(「Value」)]`**
-」
-		// プロファイル情報の ` をエスケープする
-		プロファイル情報テキスト=プロファイル情報テキストで「`」を「\`」に置換したもの
 		
-		// 情報ページのソースを読み込む
-		/*20回繰り返す
-			例外監視
-			プロファイル情報ウェブビューのソース=「[プロファイル情報ウェブビューCSS]
-<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
-<script>
-const md = function(html) {
-  const div = document.createElement("div")
-  div.innerHTML = marked(html)
-  document.body.appendChild(div)
-}
-</script>
-</head>
-<body>
-<script>md(`
-」&プロファイル情報テキスト&「`)</script>」
-			繰り返しから抜け出す
-			発生した場合
-			監視終わり
-			0.1秒待つ
-		繰り返し終わり*/
-	
-	プロファイルリストボックスの有効=○
+		プロファイルリストボックスの有効=○
 	終わり
 	
 	ツールボタン有効化する手順
@@ -359,7 +301,7 @@ const md = function(html) {
 				プロファイル管理器で[プロファイル名]を文字入力画面の結果にプロファイル名称変更する
 				
 			もし終わり
-			プロファイル管理器でプロファイル読み込む
+			メイン画面のプロファイル情報パネルへプロファイル読み込む
 		発生した場合
 			「プロファイルの名前を変更できませんでした。[改行][改行][エラーのメッセージ]」を「中止アイコン」で表示する
 			手順から抜け出す
