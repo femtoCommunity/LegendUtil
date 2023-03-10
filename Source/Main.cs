@@ -10,12 +10,26 @@ namespace LockCursorInWindowPlugin
 
 		// 手順
 		[自分("で")]
-		public void ロックする([として] int ウィンドウハンドル)
+		public void ロックする([へ] int ウィンドウハンドル)
 		{
 			IntPtr i = new IntPtr(ウィンドウハンドル);
 			try
 			{
 				LockCursor(i);
+				IsLocked = true;
+			}
+			catch (Exception ex)
+			{
+				throw new ProduireException(ex);
+			}
+		}
+
+		[自分("で")]
+		public void ロックする([へ] IntPtr ウィンドウハンドル)
+		{
+			try
+			{
+				LockCursor(ウィンドウハンドル);
 				IsLocked = true;
 			}
 			catch (Exception ex)
