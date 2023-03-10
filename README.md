@@ -67,4 +67,4 @@ winget install femtoCommunity.LegendUtil
     - [Website](https://rel1c.work/)
 
 ## 言語
-[**プロデル**](https://produ.irelang.jp/) **`1.9`**
+[**プロデル**](https://produ.irelang.jp/) **`2.0`**
