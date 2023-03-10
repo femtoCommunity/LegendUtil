@@ -7,8 +7,8 @@
     <ProjectGuid>{001B1B32-A4FD-4DAC-9172-7DB9036301A8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExDisplayPlugin</RootNamespace>
-    <AssemblyName>ExDisplayPlugin</AssemblyName>
+    <RootNamespace>LegendUtil.DisplayDeviceHelper</RootNamespace>
+    <AssemblyName>LegendUtil.DisplayDeviceHelper</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

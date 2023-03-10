@@ -1,37 +1,13 @@
 ﻿using Produire;
-using ResChanger;
 using System;
-using System.CodeDom;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace ExDisplayPlugin
 {
-	// Library: Change Resolution Before Starting Application
-	// - Source: https://www.codeproject.com/Tips/702664/Change-Resolution-Before-Starting-Application
-	// - License: The Code Project Open License https://www.codeproject.com/info/cpol10.aspx
-
 	public class ディスプレイ管理器 : IProduireStaticClass
 	{
-		/*[自分を]
-		public string 変更([へ] int[] 設定)
-		{
-			DISPLAY_DEVICE d = new DISPLAY_DEVICE();
-			DEVMODE dm = new DEVMODE();
-			d.cb = Marshal.SizeOf(d);
-
-			dm.dmPelsWidth = 設定[0];
-			dm.dmPelsHeight = 設定[1];
-			dm.dmDisplayFrequency = 設定[2];
-
-			DisplayManager.ChangeDisplaySettingsEx();
-
-			var res = new Resolution();
-			var result = res.ChangeDisplaySettings(設定[0], 設定[1], 設定[2]);
-			return result;
-		}*/
-
 		[自分("で")]
 		public DISP_CHANGE 設定する([へ] string デバイス名, [を] int[] 設定, [省略][として] ChangeDisplaySettingsFlags フラグ = ChangeDisplaySettingsFlags.CDS_UPDATEREGISTRY)
 		{

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegendUtil.DisplayDeviceHelper", "ResolutionChangerPlugin\LegendUtil.DisplayDeviceHelper.csproj", "{001B1B32-A4FD-4DAC-9172-7DB9036301A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegendUtil.DisplayDeviceHelper", "LegendUtil.DisplayDeviceHelper\LegendUtil.DisplayDeviceHelper.csproj", "{001B1B32-A4FD-4DAC-9172-7DB9036301A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
