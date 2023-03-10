@@ -7,8 +7,8 @@
     <ProjectGuid>{001B1B32-A4FD-4DAC-9172-7DB9036301A8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ResolutionChangerPlugin</RootNamespace>
-    <AssemblyName>ResolutionChangerPlugin</AssemblyName>
+    <RootNamespace>ExDisplayPlugin</RootNamespace>
+    <AssemblyName>ExDisplayPlugin</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -29,6 +29,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Produire.Core, Version=0.1.0.0, Culture=neutral, PublicKeyToken=cdfd51753ea89a11, processorArchitecture=MSIL">
