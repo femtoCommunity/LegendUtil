@@ -140,7 +140,7 @@ namespace ResChanger
 		#region DllImport
 		[DllImport("User32.dll")]
 		[return: MarshalAs(UnmanagedType.Bool)]
-		private static extern Boolean EnumDisplaySettings(
+		public static extern Boolean EnumDisplaySettings(
 			[param: MarshalAs(UnmanagedType.LPTStr)] string lpszDeviceName,
 			[param: MarshalAs(UnmanagedType.U4)] int iModeNum,
 			[In, Out] ref Devmode lpDevMode);
