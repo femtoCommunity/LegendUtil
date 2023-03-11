@@ -240,7 +240,7 @@ namespace LegendUtil_DisplayDeviceHelper
 		無し = ChangeDisplaySettingsFlags.CDS_NONE,
 		レジストリー更新 = ChangeDisplaySettingsFlags.CDS_UPDATEREGISTRY,
 		テスト = ChangeDisplaySettingsFlags.CDS_TEST,
-		フルスクリーン = ChangeDisplaySettingsFlags.CDS_TEST,
+		フルスクリーン = ChangeDisplaySettingsFlags.CDS_FULLSCREEN,
 		グローバル = ChangeDisplaySettingsFlags.CDS_GLOBAL,
 		プライマリー設定 = ChangeDisplaySettingsFlags.CDS_SET_PRIMARY,
 		ビデオパラメーター = ChangeDisplaySettingsFlags.CDS_VIDEOPARAMETERS,
