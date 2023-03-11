@@ -327,14 +327,14 @@ namespace LegendUtil_DisplayDeviceHelper
 	public enum DisplayFixedFlags : int
 	{
 		DMDFO_DEFAULT = 0,
-		DMDFO_CENTER = 1,
-		DMDFO_STRETCH = 2
+		DMDFO_STRETCH = 1,
+		DMDFO_CENTER = 2
 	}
 	[列挙体(typeof(DisplayFixedFlags))]
 	public enum ディスプレイ固定フラグ : int
 	{
 		デフォルト = DisplayFixedFlags.DMDFO_DEFAULT,
-		中央 = DisplayFixedFlags.DMDFO_CENTER,
-		伸縮 = DisplayFixedFlags.DMDFO_STRETCH
+		伸縮 = DisplayFixedFlags.DMDFO_STRETCH,
+		中央 = DisplayFixedFlags.DMDFO_CENTER
 	}
 }
