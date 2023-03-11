@@ -20,7 +20,8 @@ namespace ExDisplayPlugin_Test
 		static void Main(string[] args)
 		{
 			//PrintDisplayResolutions();
-			PrintDisplays();
+			//PrintDisplays();
+			PrintDisplaySettings();
 			Console.ReadKey();
 		}
 
@@ -28,7 +29,15 @@ namespace ExDisplayPlugin_Test
 		{
 			var mode = new DEVMODE();
 			mode.dmSize = (short)Marshal.SizeOf(mode);
-			DisplayManager.EnumDisplaySettings(デバイス名, -1, ref mode);
+			DisplayManager.EnumDisplaySettings(@"\\.\DISPLAY1", -1, ref mode);
+
+			Type type = typeof(DEVMODE);
+			System.Reflection.FieldInfo[] fi = type.GetFields();
+
+			foreach (var f in fi)
+			{
+				Console.WriteLine($"{f.Name}:{f.GetValue(mode)}");
+			}
 		}
 
 		static void PrintDisplayResolutions(){
