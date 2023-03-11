@@ -13,7 +13,7 @@ namespace LegendUtil_DisplayDeviceHelper
 		{
 			if (設定.Length < 3)
 			{
-				throw new ProduireException("引数 設定 の値が不正です。\n{幅, 高さ, リフレッシュレート} という形式で指定してください。");
+				throw new ProduireException("引数 設定 の値が不正です。\n{幅, 高さ, リフレッシュレート, ディスプレイ固定フラグ} という形式で指定してください。");
 			}
 
 			if (設定が存在する(デバイス名, 設定) == false)
@@ -24,6 +24,12 @@ namespace LegendUtil_DisplayDeviceHelper
 			int dw = 設定[0];
 			int dh = 設定[1];
 			int df = 設定[2];
+			int dfx = 0;
+
+			if (設定.Length >= 4)
+			{
+				dfx = 設定[3];
+			}
 
 			// デバイスモード(変数)を作成
 			var mode = new DEVMODE();
@@ -35,6 +41,7 @@ namespace LegendUtil_DisplayDeviceHelper
 			mode.dmPelsWidth = dw;
 			mode.dmPelsHeight = dh;
 			mode.dmDisplayFrequency = df;
+			mode.dmDisplayFixedOutput = dfx;
 			//mode.dmFields = mode.dmPelsWidth | mode.dmPelsHeight | mode.dmDisplayFrequency;
 
 			// ディスプレイ設定の変更を実行
@@ -283,20 +290,6 @@ namespace LegendUtil_DisplayDeviceHelper
 		public int dmPanningHeight;
 	}
 
-	[列挙体(typeof(DisplayDeviceStateFlags))]
-	public enum ディスプレイデバイス状態
-	{
-		無効 = 0,
-		デスクトップ表示 = DisplayDeviceStateFlags.AttachedToDesktop,
-		複数ドライバー= DisplayDeviceStateFlags.MultiDriver,
-		メインディスプレイ = DisplayDeviceStateFlags.PrimaryDevice,
-		疑似デバイス = DisplayDeviceStateFlags.MirroringDriver,
-		VGA対応 = DisplayDeviceStateFlags.VGACompatible,
-		取り外し可能 = DisplayDeviceStateFlags.Removable,
-		上位表示モード存在 = DisplayDeviceStateFlags.ModesPruned,
-		リモート = DisplayDeviceStateFlags.Remote,
-		切断 = DisplayDeviceStateFlags.Disconnect
-	}
 	[Flags()]
 	public enum DisplayDeviceStateFlags : int
 	{
@@ -315,5 +308,33 @@ namespace LegendUtil_DisplayDeviceHelper
 		ModesPruned = 0x8000000,
 		Remote = 0x4000000,
 		Disconnect = 0x2000000
+	}
+	[列挙体(typeof(DisplayDeviceStateFlags))]
+	public enum ディスプレイデバイス状態
+	{
+		無効 = 0,
+		デスクトップ表示 = DisplayDeviceStateFlags.AttachedToDesktop,
+		複数ドライバー= DisplayDeviceStateFlags.MultiDriver,
+		メインディスプレイ = DisplayDeviceStateFlags.PrimaryDevice,
+		疑似デバイス = DisplayDeviceStateFlags.MirroringDriver,
+		VGA対応 = DisplayDeviceStateFlags.VGACompatible,
+		取り外し可能 = DisplayDeviceStateFlags.Removable,
+		上位表示モード存在 = DisplayDeviceStateFlags.ModesPruned,
+		リモート = DisplayDeviceStateFlags.Remote,
+		切断 = DisplayDeviceStateFlags.Disconnect
+	}
+
+	public enum DisplayFixedFlags : int
+	{
+		DMDFO_DEFAULT = 0,
+		DMDFO_CENTER = 1,
+		DMDFO_STRETCH = 2
+	}
+	[列挙体(typeof(DisplayFixedFlags))]
+	public enum ディスプレイ固定フラグ : int
+	{
+		デフォルト = DisplayFixedFlags.DMDFO_DEFAULT,
+		中央 = DisplayFixedFlags.DMDFO_CENTER,
+		伸縮 = DisplayFixedFlags.DMDFO_STRETCH
 	}
 }
