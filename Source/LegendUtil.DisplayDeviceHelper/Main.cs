@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace ExDisplayPlugin
+namespace LegendUtil_DisplayDeviceHelper
 {
 	public class ディスプレイ管理器 : IProduireStaticClass
 	{
