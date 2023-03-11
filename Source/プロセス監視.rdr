@@ -161,6 +161,7 @@ ApexLegendsとは
 			
 			コンフィグ(「VideoConfig」)(「setting.defaultres」)=「[設定(1)]」
 			コンフィグ(「VideoConfig」)(「setting.defaultresheight」)=「[設定(2)]」
+			
 			コンフィグ(「VideoConfig」)(「setting.fullscreen」)=「1」
 			コンフィグ(「VideoConfig」)(「setting.nowindowborder」)=「0」
 			
@@ -320,7 +321,7 @@ ApexLegendsとは
 			
 		そうでなければ
 			実行ファイル名=「r5apex」
-				
+			
 		もし終わり
 		
 		// インストールされているゲームのビルドとバージョンを取得
@@ -397,8 +398,15 @@ ApexLegendsとは
 			
 			コンフィグ(「VideoConfig」)(「setting.defaultres」)=「[設定(1)]」
 			コンフィグ(「VideoConfig」)(「setting.defaultresheight」)=「[設定(2)]」
-			コンフィグ(「VideoConfig」)(「setting.fullscreen」)=「1」
-			コンフィグ(「VideoConfig」)(「setting.nowindowborder」)=「0」
+			もしプロファイル(「Command_Line_Arguments」)(「Value」)が「-eac_launcher_settings SettingsDX12.json」を含むなら
+				コンフィグ(「VideoConfig」)(「setting.fullscreen」)=「1」
+				コンフィグ(「VideoConfig」)(「setting.nowindowborder」)=「0」
+				
+			そうでなければ
+				コンフィグ(「VideoConfig」)(「setting.fullscreen」)=「1」
+				コンフィグ(「VideoConfig」)(「setting.nowindowborder」)=「0」
+				
+			もし終わり
 			
 			// ビデオコンフィグファイルを削除する
 			「[コンフィグフォルダー]videoconfig.txt」へ「標準」というファイル属性を設定する
@@ -423,7 +431,7 @@ ApexLegendsとは
 		もし(プロファイル(「Change_Display_Resolution」)(「Enable」)が○)かつ(プロファイル(「Change_Display_Resolution」)(「Change_System_Resolution」)が○)なら
 			「システムのディスプレイ解像度を変更中...」をログ出力する
 			メイン画面の起動中パネルの状態ラベルの内容=「ディスプレイ解像度を変更中」
-			【サイズ変更結果】=ディスプレイ管理器でメインディスプレイへ{プロファイル(「Change_Display_Resolution」)(「ResolutionWidth」), プロファイル(「Change_Display_Resolution」)(「ResolutionHeight」), プロファイル(「Change_Display_Resolution」)(「Refresh_Rate」),プロファイル(「Change_Display_Resolution」)(「Display_Scaling_Mode」)}を「無し」として設定する
+			【サイズ変更結果】=ディスプレイ管理器でメインディスプレイへ{プロファイル(「Change_Display_Resolution」)(「ResolutionWidth」), プロファイル(「Change_Display_Resolution」)(「ResolutionHeight」), プロファイル(「Change_Display_Resolution」)(「Refresh_Rate」),プロファイル(「Change_Display_Resolution」)(「Display_Scaling_Mode」)}を「レジストリー更新」として設定する
 			もしサイズ変更結果が「成功」でないなら
 				「エラー内容: [サイズ変更結果]」というエラーを発生させる
 			もし終わり
@@ -464,7 +472,7 @@ ApexLegendsとは
 			// EAC(Apex Legends)のランチャーを起動
 			//「- 起動: [EACインストールパス]」をログ出力する
 			//「"[EACインストールパス]"」を起動する
-			「- URLスキーム: origin2://game/launch/?offerIds=194908」をログ出力する
+			「- 起動: origin2://game/launch/?offerIds=194908」をログ出力する
 			「origin2://game/launch/?offerIds=194908」を開く
 		もし終わり
 		////////// EA app //////////
@@ -650,7 +658,7 @@ ApexLegendsとは
 		もしプロファイルに「Change_Display_Resolution」が存在するなら
 			もし(プロファイル(「Change_Display_Resolution」)(「Enable」)が○)かつ(プロファイル(「Change_Display_Resolution」)(「Change_System_Resolution」)が○)なら
 				「ディスプレイ解像度変更: [メイン設定について「Display」から「Resolution_Width」を取得したもの]×[メイン設定について「Display」から「Resolution_Height」を取得したもの] - [メイン設定について「Display」から「RefreshRate」を取得したもの] Hz」をログ出力する
-				【サイズ変更結果】=ディスプレイ管理器でメインディスプレイへ{メイン設定について「Display」から「Resolution_Width」を取得したもの, メイン設定について「Display」から「Resolution_Height」を取得したもの, メイン設定について「Display」から「RefreshRate」を取得したもの,0}を「無し」として設定する
+				【サイズ変更結果】=ディスプレイ管理器でメインディスプレイへ{メイン設定について「Display」から「Resolution_Width」を取得したもの, メイン設定について「Display」から「Resolution_Height」を取得したもの, メイン設定について「Display」から「RefreshRate」を取得したもの,0}を「レジストリー更新」として設定する
 				もしサイズ変更結果が「Successful」でないなら
 					「ディスプレイ解像度変更 - 失敗: [サイズ変更結果]」をログ出力する
 				もし終わり
