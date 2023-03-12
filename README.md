@@ -16,7 +16,7 @@ Apex Legends のプレイをより快適にするアプリケーションです�
 - [**Steam**](https://store.steampowered.com)
 
 ## ダウンロード/インストール
-- [Windows Package Manager](https://learn.microsoft.com/ja-jp/windows/package-manager/) が利用できる環境の場合は、コマンドプロンプトやPowerShellで次のコマンドを実行することでインストールできます。
+- [Windows Package Manager](https://apps.microsoft.com/store/detail/9NBLGGH4NNS1) が利用できる環境の場合は、コマンドプロンプトやPowerShellで次のコマンドを実行することでインストールできます。
 ```
 winget install femtoCommunity.LegendUtil
 ```
