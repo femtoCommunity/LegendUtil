@@ -413,10 +413,13 @@
 			例外監視
 				項目部品=プロファイル項目部品をプロファイルパネルへ作る
 					項目部品の名前ラベルの内容=プロファイル名
-					項目部品の設定ラベルの内容=「プラットフォーム: [プロファイル管理器の一覧(プロファイル名)(「Apex_Legends」)(「Platform」)]
-	解像度の変更(引き伸ばし): [プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「Enable」)を文字列変換したもの]」
+					項目部品の設定ラベルの内容=「プラットフォーム: [プロファイル管理器の一覧(プロファイル名)(「Apex_Legends」)(「Platform」)]」
 					もしプロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「Enable」)が○なら
-						項目部品の設定ラベルの内容=「[その設定ラベルの内容][改行]解像度: [プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「ResolutionWidth」)]×[プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「ResolutionHeight」)] - [プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「Refresh_Rate」)] Hz」
+						項目部品の設定ラベルの内容=「[その設定ラベルの内容][改行]解像度: [プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「ResolutionWidth」)]×[プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「ResolutionHeight」)] ([{[プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「ResolutionWidth」)], [プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「ResolutionHeight」)]}からアスペクト比算出したもの]) - [プロファイル管理器の一覧(プロファイル名)(「Change_Display_Resolution」)(「Refresh_Rate」)] Hz」
+						
+					そうでなければ
+						項目部品の設定ラベルの内容=「[その設定ラベルの内容][改行]解像度: ネイティブ」
+						
 					もし終わり
 					項目部品の名前ラベルへ「プロファイル [プロファイル名] で起動」という説明ツールチップを設定する
 					項目部品の設定ラベルへ「プロファイル [プロファイル名] で起動」という説明ツールチップを設定する
