@@ -25,17 +25,6 @@ ApexLegendsとは
 		終わり
 	終わり
 	
-	+Steam32ID一覧:配列
-	Steam32ID取得する手順
-		
-	終わり
-	
-	+EAトークン一覧:配列
-	EAトークン一覧取得する手順
-		
-	終わり
-	
-	
 	〈【プラットフォーム:文字列】から〉起動引数取得する手順:文字列
 		// EA app
 		例外監視
@@ -660,9 +649,7 @@ ApexLegendsとは
 			もし(プロファイル(「Change_Display_Resolution」)(「Enable」)が○)かつ(プロファイル(「Change_Display_Resolution」)(「Change_System_Resolution」)が○)なら
 				「ディスプレイ解像度変更: [メイン設定について「Display」から「Resolution_Width」を取得したもの]×[メイン設定について「Display」から「Resolution_Height」を取得したもの] - [メイン設定について「Display」から「RefreshRate」を取得したもの] Hz」をログ出力する
 				【サイズ変更結果】=ディスプレイ管理器でメインディスプレイへ{メイン設定について「Display」から「Resolution_Width」を取得したもの, メイン設定について「Display」から「Resolution_Height」を取得したもの, メイン設定について「Display」から「RefreshRate」を取得したもの,0}を「レジストリー更新」として設定する
-				もしサイズ変更結果が「Successful」でないなら
-					「ディスプレイ解像度変更 - 失敗: [サイズ変更結果]」をログ出力する
-				もし終わり
+				「 - [サイズ変更結果]」をログ出力する
 			もし終わり
 		もし終わり
 		

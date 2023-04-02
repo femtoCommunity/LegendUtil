@@ -68,17 +68,6 @@ Steamとは
 		終わり
 	終わり
 	
-	// SteamでログインしているユーザーのID (32-bit)
-	現在ユーザーIDという属性
-		取得する手順
-			例外監視
-				[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]を返す
-			発生した場合
-				0を返す
-			監視終わり
-		終わり
-	終わり
-	
 	自分でコンフィグ読み込む手順
 		例外監視
 			もし「[データフォルダー]localconfig.vdf」というファイルが存在するなら
