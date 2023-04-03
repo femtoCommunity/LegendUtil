@@ -6,16 +6,20 @@
 
 ---
 
-## 概要
+## 📃 概要
 Apex Legends のプレイをより快適にするアプリケーションです。
 引き伸ばしを行うための解像度の変更や、軽量化のための起動オプションの変更などを、GUIで視覚的に行うことができます。
 
-### 対応プラットフォーム
+### 🖥️ 対応プラットフォーム
 - [**EA app**](https://www.ea.com/ja-jp/ea-app)
   - Origin は近々サポートが終了するため、対応していません。
 - [**Steam**](https://store.steampowered.com)
 
-## ダウンロード/インストール
+---
+
+## 📥 ダウンロード/インストール
+
+### 📦 WinGet を使用してインストールする
 - [Windows Package Manager](https://apps.microsoft.com/store/detail/9NBLGGH4NNS1) が利用できる環境の場合は、コマンドプロンプトやPowerShellで次のコマンドを実行することでインストールできます。
 ```
 winget install femtoCommunity.LegendUtil
@@ -30,12 +34,18 @@ winget install femtoCommunity.LegendUtil
 
     ![PowerShell Preview](https://user-images.githubusercontent.com/59532514/223331108-f1b908cb-8399-4117-89f4-ea2a155dae61.png)
 
----
-
+### 📁 インストーラーをダウンロードしてインストールする
 - [**こちら**](https://github.com/femtoCommunity/LegendUtil/releases)からインストーラーをダウンロードしてインストールすることもできます。
   - **Assets** から `LegendUtil_Setup.exe` をダウンロードしてください。
 
-## 機能
+### 💊 開発ビルドをインストールする
+- 最新の開発ビルド(Dev Build)のインストーラーは[**こちら**](https://github.com/femtoCommunity/LegendUtil/tree/releases/dev/Pack)
+  - **開発ビルドには、実装途中の機能や不安定な機能が含まれており、予期せぬ不具合、クラッシュが発生する可能性があります。**
+  - 開発ビルドは、通常(Beta/Release)ビルドとは別のアプリケーションとしてインストールされます。**ただし、コンフィグやプロファイルなどは共通です。**
+
+---
+
+## 🔧 機能
 - **プロファイル**
 	- 解像度や起動引数などの設定を複数保存でき、ランチャーのような形でプロファイルを選んで Apex Legends を起動できます。
   ![Main Panel Preview 1](https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Previews/MainPanel_1.jpeg)
