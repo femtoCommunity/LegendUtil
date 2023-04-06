@@ -1,11 +1,10 @@
 ※開始引数
 
-「LegendUtil.CursorLocker.dll」を利用する // マウスカーソルロックプラグイン
-「LegendUtil.DisplayDeviceHelper.dll」を利用する // ディスプレイ解像度変更プラグイン
+// C# ライブラリー (マウスカーソルロック / ディスプレイ解像度変更 / 画像処理(OpenCvSharp) / Zipファイル処理)
+「LegendUtil.SharpLibrary.dll」を利用する
 
 「Milkeyyy.ControlSR.dll」を利用する
 //「Transitions.rdr.dll」を利用する
-「VJson.rdr.dll」を利用する
 「Produire.WebView2.dll」を利用する
 「rdrReadWriteTextReader.dll」を利用する
 「RdrWindows7API.dll」を利用する
