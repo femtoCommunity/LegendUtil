@@ -583,7 +583,7 @@ ApexLegendsとは
 			// 画像認識が有効の場合は画面をキャプチャーして、類似度が一定の数値以下になったら自動押下を実行する
 			もしプロファイル(「Change_Display_Resolution」)(「Alt_Enter_Automatic_Press_Use_Image_Matcher」)が○なら
 				もし「[アプリのコンフィグフォルダー]Resources\TitleScreenImage\[最新タイトル画像ファイル名]」というファイルが存在しないなら「- タイトル画面スクリーンショットファイルが見つからないため、自動押下を実行できません」をログ出力する
-				【タイトル画面:画像】=画像(「[アプリのコンフィグフォルダー]Resources\TitleScreenImage\Latest.jpg」)を作ったもの
+				【タイトル画面:画像】=画像(「[アプリのコンフィグフォルダー]Resources\TitleScreenImage\[最新タイトル画像ファイル名]」)を作ったもの
 				【キャプチャー画像:画像】
 				【類似度:浮動小数】
 				「- タイトル画面の表示を監視」をログ出力する
