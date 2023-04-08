@@ -347,7 +347,7 @@ ApexLegendsとは
 			もし終わり
 			
 		そうでなければ
-			「指定されたファイル([インストールパス])が見つかりませんでした。」というエラーを発生させる
+			「指定されたファイルが見つかりませんでした。[改行]- パス: [インストールパス]」というエラーを発生させる
 			
 		もし終わり
 	終わり
@@ -428,8 +428,8 @@ ApexLegendsとは
 			もしサイズ変更結果が「成功」でないなら
 				「エラー内容: [サイズ変更結果]」というエラーを発生させる
 			もし終わり
+			「完了」をログ出力する
 		もし終わり
-		「完了」をログ出力する
 	終わり
 	
 	プロセス起動する手順
@@ -553,7 +553,7 @@ ApexLegendsとは
 		例外監視
 			最新タイトル画像ファイル名=「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Images/TitleScreen/Latest.txt」をHTTPで取得したもの
 			もしHTTPのステータスコードが200でないなら{×,「ステータスコード: [HTTPのステータスコード]」}を返す
-			「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Images/TitleScreen/[最新タイトル画像ファイル名]」を「[アプリのコンフィグフォルダー]Resources\TitleScreenImage\Latest.jpg」へHTTPでダウンロードする
+			「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Images/TitleScreen/[最新タイトル画像ファイル名]」を「[アプリのコンフィグフォルダー]Resources\TitleScreenImage\[最新タイトル画像ファイル名]」へHTTPでダウンロードする
 			{○,「ステータスコード: [HTTPのステータスコード]」}を返す
 		発生した場合
 			{×,[エラーのメッセージ]}を返す
@@ -689,7 +689,7 @@ ApexLegendsとは
 			
 			【カーソルロックスレッド:スレッド】
 			
-			「Apex Legends のプロセスを監視開始します...」をログ出力する
+			「Apex Legends のプロセスを監視開始」をログ出力する
 			「- PID: [プロセスのID]」をログ出力する
 			
 			監視有効が○の間、繰り返す
@@ -735,6 +735,7 @@ ApexLegendsとは
 			起動処理中=×
 		』を実行する
 		発生した場合
+			「プロセス監視エラー: [エラーのメッセージ]」をログ出力する
 			監視終了する
 		監視終わり
 	終わり
