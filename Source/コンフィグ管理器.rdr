@@ -90,8 +90,8 @@
 	+フォルダー一覧:配列={
 		「Update」,
 		「Profile」,
-		「Backup」,
-		「Backup\VideoConfig」
+		「Resources」,
+		「Resources\TitleScreenImage」
 	}
 	
 	+初回起動:真偽値

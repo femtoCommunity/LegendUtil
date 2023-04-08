@@ -41,6 +41,20 @@
 	
 	+ライセンス一覧:辞書
 	
+	+追加ファイル一覧:辞書={
+		「OpenCvSharp」={
+			「ファイル」={
+				// x64
+				{「dll\x64\opencv_videoio_ffmpeg455_64.dll」},
+				{「dll\x64\OpenCvSharpExtern.dll」},
+				// x86
+				{「dll\x86\opencv_videoio_ffmpeg455.dll」},
+				{「dll\x86\OpenCvSharpExtern.dll」}
+			},
+			「URL」=「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Libs/OpenCvSharp/4.7.0.20230114/dll.zip」
+		}
+	}
+	
 	はじめの手順
 		【プロジェクトファイル】=XMLで[「LegendUtil.rdrproj」を素材リストから文字列として取得したもの]から作成したもの
 		名前=「[プロジェクトファイルの「プロジェクト」の「名前」の内容]」
