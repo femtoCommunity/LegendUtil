@@ -84,6 +84,12 @@
 			//「Position_Y」=「0」,
 			「Size_W」={「初期値」=「900」},
 			「Size_H」={「初期値」=「650」}
+		},
+		「Window_InPlay」={
+			//「Position_X」=「0」,
+			//「Position_Y」=「0」,
+			「Size_W」={「初期値」=「800」},
+			「Size_H」={「初期値」=「600」}
 		}
 	}
 	
@@ -145,7 +151,9 @@
 				メイン設定について「Display」で「Resolution_Height」へディスプレイの高さを設定する
 				// ウィンドウの位置をディスプレイの中心に設定する
 				もしメイン設定について「Window_Main」から「Position_X」を取得したものが無ならメイン設定について「Window_Main」で「Position_X」へ((ディスプレイの幅/2)-コンフィグ初期値(「Window_Main」)(「Size_H」)/2)を設定する
+				もしメイン設定について「Window_InPlay」から「Position_X」を取得したものが無ならメイン設定について「Window_InPlay」で「Position_X」へ[メイン設定について「Window_Main」から「Position_X」を取得したもの]を設定する
 				もしメイン設定について「Window_Main」から「Position_Y」を取得したものが無ならメイン設定について「Window_Main」で「Position_Y」へ((ディスプレイの高さ/2)-コンフィグ初期値(「Window_Main」)(「Size_W」)/2)を設定する
+				もしメイン設定について「Window_InPlay」から「Position_Y」を取得したものが無ならメイン設定について「Window_InPlay」で「Position_Y」へ[メイン設定について「Window_Main」から「Position_Y」を取得したもの]を設定する
 				繰り返しから抜け出す
 			もし終わり
 		繰り返し終わり
