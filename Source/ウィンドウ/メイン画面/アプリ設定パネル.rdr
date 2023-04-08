@@ -85,7 +85,7 @@
 		
 		【追加項目命令】
 		
-		【例外セクション一覧】={「Info」,「Window_Main」}
+		【例外セクション一覧】={「Info」,「Window_Main」,「Window_InPlay」}
 		
 		【検索結果:配列】
 		
