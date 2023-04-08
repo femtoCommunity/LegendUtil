@@ -23,7 +23,13 @@
     <項目 位置="Source\アップデーター.rdr" />
     <項目 位置="Source\ウィンドウ\アプリケーション情報画面.rdr" />
     <項目 位置="Source\ウィンドウ\ヘルプ画面.rdr" />
-    <項目 位置="Source\アスペクト比計算.rdr" 開く="○" />
+    <項目 位置="Source\アスペクト比計算.rdr" />
+    <項目 位置="Source\ウィンドウ\スプラッシュ画面.rdr" />
+    <項目 位置="Source\ウィンドウ\メイン画面\プロファイル作成ウィザードパネル.rdr" />
+    <項目 位置="Source\CFG形式.rdr" />
+    <項目 位置="Source\ウィンドウ\ライセンス画面.rdr" />
+    <項目 位置="Source\ライセンス.rdr" />
+    <項目 位置="Source\ウィンドウ\処理画面.rdr" 開く="○" />
   </一覧>
   <バージョン 値="0.1.0.5">
     <項目 名前="Comments" 値="LegendUtil - Development by femto Community Software Team" />
