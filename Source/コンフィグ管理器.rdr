@@ -83,7 +83,8 @@
 			//「Position_X」=「0」,
 			//「Position_Y」=「0」,
 			「Size_W」={「初期値」=「900」},
-			「Size_H」={「初期値」=「650」}
+			「Size_H」={「初期値」=「650」},
+			「Profile_Sort_Order」={「初期値」=「1」}
 		},
 		「Window_InPlay」={
 			//「Position_X」=「0」,
