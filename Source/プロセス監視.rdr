@@ -807,7 +807,7 @@ ApexLegendsとは
 				「現在ビデオコンフィグ: [コンフィグファイルをVDF形式として読み取ったもの]」をデバッグログへ出力する
 				
 				// ビデオコンフィグを元に戻す
-				もしコンフィグに「VideoConfig」が存在するかつ初期ビデオコンフィグが無でないなら
+				もし(コンフィグに「VideoConfig」が存在する)かつ(初期ビデオコンフィグが無でない)なら
 					もしコンフィグ(「VideoConfig」)に「setting.defaultres」が存在するなら、コンフィグ(「VideoConfig」)へ「setting.defaultres」として「[初期ビデオコンフィグ(「VideoConfig」)(「setting.defaultres」)]」を設定する
 					もしコンフィグ(「VideoConfig」)に「setting.defaultresheight」が存在するなら、コンフィグ(「VideoConfig」)へ「setting.defaultresheight」として「[初期ビデオコンフィグ(「VideoConfig」)(「setting.defaultresheight」)]」を設定する
 					もしコンフィグ(「VideoConfig」)に「setting.fullscreen」が存在するなら、コンフィグ(「VideoConfig」)へ「setting.fullscreen」として「[初期ビデオコンフィグ(「VideoConfig」)(「setting.fullscreen」)]」を設定する
