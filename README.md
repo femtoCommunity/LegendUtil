@@ -8,10 +8,17 @@
 Apex Legends のプレイをより快適にするアプリケーションです。
 引き伸ばしを行うための解像度の変更や、軽量化のための起動オプションの変更などを、GUIで視覚的に行うことができます。
 
-### 🖥️ 対応プラットフォーム
+### 🖥️ 対応環境
+- Windows 11
+- Windows 10
+
+### 🎮 対応プラットフォーム
 - [**EA app**](https://www.ea.com/ja-jp/ea-app)
-  - Origin は近々サポートが終了するため、対応していません。
 - [**Steam**](https://store.steampowered.com)
+
+### 📝 言語
+- [**プロデル**](https://produ.irelang.jp/) 2.0 - `.NET Framework 4.8`
+- **C#** - `.NET Framework 4.8`
 
 ---
 
@@ -32,7 +39,7 @@ winget install femtoCommunity.LegendUtil
 
     ![PowerShell Preview](https://user-images.githubusercontent.com/59532514/223331108-f1b908cb-8399-4117-89f4-ea2a155dae61.png)
 
-### 📁 インストーラーをダウンロードしてインストールする
+### 📁 インストーラーを使用してインストールする
 - [**こちら**](https://github.com/femtoCommunity/LegendUtil/releases)からインストーラーをダウンロードしてインストールすることもできます。
   - **Assets** から `LegendUtil_Setup.exe` をダウンロードしてください。
 
@@ -45,17 +52,24 @@ winget install femtoCommunity.LegendUtil
 
 ## 🔧 機能
 - **プロファイル**
-	- 解像度や起動引数などの設定を複数保存でき、ランチャーのような形でプロファイルを選んで Apex Legends を起動できます。
-  ![Main Panel Preview 1](https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Previews/MainPanel_1.jpeg)
+  - 解像度や起動引数などの設定を複数保存でき、ランチャーのような形でプロファイルを選んで Apex Legends を起動できます。
+   
+  ![Main Panel Preview 1](https://user-images.githubusercontent.com/59532514/231395446-0f396f23-6fba-4e77-8697-bbb00fbe39cb.png)
+
+---
+
 - **ゲームの起動前に設定を自動変更**
-  - **ゲーム & システム(PC)のディスプレイ解像度の変更 (引き伸ばし)**
-  	- ビデオコンフィグの編集
+  - **ゲーム & ディスプレイ解像度の変更 (引き伸ばし)**
     - ゲーム起動後の `Alt` + `Enter` の自動押下 (「黒帯」の削除)
-  ![Profile Edit Panel Preview 1](https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Previews/ProfileEditPanel_1.jpeg)
-  ---
+  
+  ![Profile Edit Panel Preview 1](https://user-images.githubusercontent.com/59532514/231396035-fd619e60-fa1e-41bf-8fab-81eb88a6964f.png)
+
+---
+
   - **起動引数(起動オプション)の変更**
-  ![Profile Edit Panel Preview 2](https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Previews/ProfileEditPanel_2.jpeg)
-  ![Profile Edit Panel Preview 3](https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Previews/ProfileEditPanel_3.jpeg)
+   
+  ![Profile Edit Panel Preview 2](https://user-images.githubusercontent.com/59532514/231396331-3083964b-8d3c-4250-ab26-7478174d9400.png)
+  ![Profile Edit Panel Preview 3](https://user-images.githubusercontent.com/59532514/231396502-f41b2c2e-68c5-419d-88ba-ed4c6bb6b733.png)
 
 ---
 
@@ -73,6 +87,3 @@ winget install femtoCommunity.LegendUtil
     - [GitHub](https://github.com/Rel1c393)
     - [Twitter](https://twitter.com/Apex_tyaneko) / [Twitter (Brand)](https://twitter.com/Rel1cStyle)
     - [Website](https://rel1c.work/)
-
-## 言語
-[**プロデル**](https://produ.irelang.jp/) **`2.0`**
