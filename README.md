@@ -1,8 +1,6 @@
 <div align="center">
 <img src="https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Logo/LegendUtil_Banner.png?raw=true" alt="LegendUtil Banner" title="LegendUtil">
 </div>
-<h2 align="center">LegendUtil</h2>
-<p align="center">LegendUtil は、PC版 Apex Legends のプレイをより快適にするアプリケーションです。</p>
 
 ---
 
