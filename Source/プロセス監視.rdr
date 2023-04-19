@@ -320,7 +320,7 @@ ApexLegendsとは
 		
 		// autoexec の設定
 		もしプロファイルの起動引数が「+exec」を含むなら
-			「[アプリのコンフィグフォルダー]Profile\AutoExecute\autoexec_[プロファイルデータのID].cfg」を「[インストール先]cfg\autoexec_[プロファイルデータのID].cfg」へコピーする
+			「[アプリのコンフィグフォルダー]Profile\AutoExecute\autoexec_[プロファイルのID].cfg」を「[インストール先]cfg\autoexec_[プロファイルのID].cfg」へコピーする
 		もし終わり
 		
 		// インストールされているゲームのビルドとバージョンを取得
