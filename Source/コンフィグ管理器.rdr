@@ -97,6 +97,7 @@
 	+フォルダー一覧:配列={
 		「Update」,
 		「Profile」,
+		「Profile\AutoExecute」,
 		「Profile\v1」,
 		「Resources」,
 		「Resources\TitleScreenImage」
