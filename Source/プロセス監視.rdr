@@ -310,6 +310,8 @@ ApexLegendsとは
 			
 		もし終わり
 		
+		起動中画面の起動中パネルのプロファイル名ラベルの内容=プロファイルの名前
+		
 		もしプロファイルの起動引数が「-eac_launcher_settings SettingsDX12.json」を含むなら
 			実行ファイル名=「r5apex_dx12」
 			
