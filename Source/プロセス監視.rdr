@@ -510,7 +510,7 @@ ApexLegendsとは
 		////////// EA app //////////
 		
 		////////// Steam //////////
-		もしプロファイルApexLegendsプラットフォームが「Steam」なら
+		もしプロファイルのApexLegendsプラットフォームが「Steam」なら
 			「- 起動: [Steamのインストール先]steam.exe -applaunch 1172470 [起動引数]」をログ出力する
 			Steamで「1172470」を起動引数として起動する
 		もし終わり
