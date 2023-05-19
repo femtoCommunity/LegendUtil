@@ -167,13 +167,15 @@
 	リリース設定について「Latest」で「ReleaseChannel」へ「[アプリのリリースチャンネル]」を設定する
 	リリース設定について「Latest」で「BuildVersion」へ「[ビルド番号]」を設定する
 	リリース設定について「Latest」で「InstallerFileName」へ「[ソースファイルの名前だけ]_Setup.exe」を設定する
+	リリース設定について「Latest」で「ChangeLog」へ[コミットメッセージで[改行]を「\n」へ置換したもの]を設定する
 	
 	コマンド一覧={
 		「cd "[メイン設定について「Main」から「Dev_Build_Releases_Brunch_Folder」を取得したもの]"」,
 		「git checkout releases/dev」,
 		「git add "[メイン設定について「Main」から「Dev_Build_Releases_Brunch_Folder」を取得したもの]\Releases.ini"」,
 		「git add "[リリース先フォルダー][ソースファイルの名前だけ]_Setup.exe"」,
-		「git commit -m "Version [アプリのバージョン]-[アプリのリリースチャンネル][ビルド番号]" -m "- [コミットメッセージ]"」,
+		//「git commit -m "Version [アプリのバージョン]-[アプリのリリースチャンネル][ビルド番号]" -m "- [コミットメッセージ]"」,
+		「git commit -m "Version [アプリのバージョン]-[アプリのリリースチャンネル][ビルド番号]"」,
 		「git push origin releases/dev」
 	}
 	
