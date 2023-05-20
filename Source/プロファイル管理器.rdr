@@ -400,6 +400,10 @@
 				},
 				「Exe_Path_Auto_Detection」=○,
 				「Platform」=「Steam」,
+				「Launch_EAapp_Via_Steam」={
+					「Enable」=×,
+					「AppID」=「」
+				},
 				「Arguments」=「」
 			},
 			「Display」={
@@ -1010,6 +1014,24 @@ Apex Legends が使用するスレッド数を制限したい場合にこの設�
 		終わり
 		設定する手順
 			プロファイルデータ(「Game」)(「Platform」)=設定値
+		終わり
+	終わり
+	
+	EAappSteam経由起動という属性
+		取得する手順
+			プロファイルデータ(「Game」)(「Launch_EAapp_Via_Steam」)(「Enable」)を返す
+		終わり
+		設定する手順
+			プロファイルデータ(「Game」)(「Launch_EAapp_Via_Steam」)(「Enable」)=設定値
+		終わり
+	終わり
+	
+	EAappSteam経由起動AppIDという属性
+		取得する手順
+			プロファイルデータ(「Game」)(「Launch_EAapp_Via_Steam」)(「AppID」)を返す
+		終わり
+		設定する手順
+			プロファイルデータ(「Game」)(「Launch_EAapp_Via_Steam」)(「AppID」)=設定値
 		終わり
 	終わり
 	
