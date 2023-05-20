@@ -846,8 +846,18 @@
 			プラットフォーム選択リストの選択番号=1
 			
 		もし終わり
+		
 		EAappSteam経由チェックボックスのチェック=プロファイルデータのEAappSteam経由起動
 		EAappSteam経由IDテキストの内容=プロファイルデータのEAappSteam経由起動AppID
+		もしプラットフォーム選択リストの選択項目が「EA app」なら
+			EAappSteam経由項目パネルを表示する
+			EAappSteam経由項目パネルの有効=◯
+			
+		そうでなければ
+			EAappSteam経由項目パネルを隠す
+			EAappSteam経由項目パネルの有効=×
+			
+		もし終わり
 		
 		ApexLegendsパステキストの内容=プロファイルデータのApexLegendsバイナリーパス
 		ApexLegendsパス自動取得チェックボックスのチェック=プロファイルデータのバイナリーパス自動検出
