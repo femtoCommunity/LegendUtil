@@ -13,8 +13,9 @@
 		「戻るボタン」=「プロファイル一覧へ戻る」,
 		
 		「プラットフォーム選択リスト」=「Apex Legends をインストールしているプラットフォームを選択します。」,
-		「ApexLegendsパステキスト」=「Apex Legends のインストール先(実行ファイル)へのパスを設定します。
-[「]EasyAntiCheat_launcher.exe[」]ではなく[「]r5apex.exe[」]へのパスを指定してください。」,
+		「EAappSteam経由チェックボックス」=「Steam を経由して EA app を起動するかどうかを設定します。[改行]この設定を利用する場合は、EA app を 非Steamゲームとして Steam に登録しておく必要があります。」,
+		「EAappSteam経由IDテキスト」=「Steam に登録された EA app の AppID を指定します。」,
+		「ApexLegendsパステキスト」=「Apex Legends のインストール先(実行ファイル)へのパスを設定します。[改行][「]EasyAntiCheat_launcher.exe[」]ではなく[「]r5apex.exe[」]へのパスを指定してください。」,
 		「ApexLegendsパス自動取得チェックボックス」=「このPCにインストールされている Apex Legends のインストール先(実行ファイル)を自動的に取得します。」,
 		「ApexLegendsパス自動取得ボタン」=「このPCにインストールされている Apex Legends のインストール先を取得し直します。[改行]再インストールを行った時など、インストール先が変更された場合に行ってください。」,
 		「フルスクリーンストレッチ有効チェックボックス」=「Apex Legends のプレイ時にディスプレイ解像度の変更(引き伸ばし)を行うかどうかを設定します。」,
