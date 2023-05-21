@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Logo/LegendUtil_Banner.png?raw=true" alt="LegendUtil Banner" title="LegendUtil">
+<img src="https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Logo/LegendUtil_Banner_WithoutText.png?raw=true" alt="LegendUtil Banner" title="LegendUtil">
 </div>
 
 ---
@@ -9,23 +9,26 @@ Apex Legends のプレイをより快適にするアプリケーションです�
 引き伸ばしを行うための解像度の変更や、軽量化のための起動オプションの変更などを、GUIで視覚的に行うことができます。
 
 ### 🖥️ 対応環境
-- Windows 11
-- Windows 10
+- Windows 11 / Windows 10
 
 ### 🎮 対応プラットフォーム
 - [**EA app**](https://www.ea.com/ja-jp/ea-app)
 - [**Steam**](https://store.steampowered.com)
 
 ### 📝 言語
-- [**プロデル**](https://produ.irelang.jp/) 2.0 - `.NET Framework 4.8`
-- **C#** - `.NET Framework 4.8`
+- [**プロデル**](https://produ.irelang.jp/) 2.0
+- **C#**
 
 ---
 
 ## 📥 ダウンロード/インストール
 
-### 📦 WinGet を使用してインストールする
-- [Windows Package Manager](https://apps.microsoft.com/store/detail/9NBLGGH4NNS1) が利用できる環境の場合は、コマンドプロンプトやPowerShellで次のコマンドを実行することでインストールできます。
+### 📁 インストーラーを使用してインストールする
+- [**こちら**](https://github.com/femtoCommunity/LegendUtil/releases)からインストーラーをダウンロードしてインストールできます。
+  - **Assets** から `LegendUtil_Setup.exe` をダウンロードして、実行してください。
+
+### 📦 winget を使用してインストールする
+- [**winget**](https://learn.microsoft.com/ja-jp/windows/package-manager/winget/) が利用できる環境の場合は、コマンドプロンプトやPowerShellで次のコマンドを実行することでインストールできます。
 ```
 winget install femtoCommunity.LegendUtil
 ```
@@ -38,10 +41,6 @@ winget install femtoCommunity.LegendUtil
   - Powershell
 
     ![PowerShell Preview](https://user-images.githubusercontent.com/59532514/223331108-f1b908cb-8399-4117-89f4-ea2a155dae61.png)
-
-### 📁 インストーラーを使用してインストールする
-- [**こちら**](https://github.com/femtoCommunity/LegendUtil/releases)からインストーラーをダウンロードしてインストールすることもできます。
-  - **Assets** から `LegendUtil_Setup.exe` をダウンロードしてください。
 
 ### 💊 開発ビルドをインストールする
 - 最新の開発ビルド(Dev Build)のインストーラーは[**こちら**](https://github.com/femtoCommunity/LegendUtil/tree/releases/dev/Pack)
