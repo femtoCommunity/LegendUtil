@@ -5,7 +5,7 @@
 「..\Resources\Logo\LegendUtil_Icon.ico」を素材として利用する
 「..\Resources\Logo\LegendUtil_Icon.png」を素材として利用する
 「..\Resources\Logo\LegendUtil_Icon_Transparent.png」を素材として利用する
-「..\Resources\Logo\LegendUtil_Banner.png」を素材として利用する
+「..\Resources\Logo\LegendUtil_Banner_WithoutText.png」を素材として利用する
 
 アプリとは
 	単一種類
@@ -89,7 +89,7 @@
 		アイコン=「LegendUtil_Icon.ico」を素材リストからアイコンとして取得したもの
 		アイコン画像=「LegendUtil_Icon.png」を素材リストから画像として取得したもの
 		アイコン透過画像=「LegendUtil_Icon_Transparent.png」を素材リストから画像として取得したもの
-		バナー画像=「LegendUtil_Banner.png」を素材リストから画像として取得したもの
+		バナー画像=「LegendUtil_Banner_WithoutText.png」を素材リストから画像として取得したもの
 	終わり
 	
 	自分で情報表示する手順
