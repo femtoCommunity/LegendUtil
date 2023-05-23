@@ -4,12 +4,18 @@
 
 ---
 
+
+[![Licence](https://img.shields.io/github/license/femtoCommunity/LegendUtil?style=for-the-badge)](https://opensource.org/license/mit/)
+
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/Y5FrzPft3M)
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/Milkeyyy_53)
+
 ## 📃 概要
 Apex Legends のプレイをより快適にするアプリケーションです。
 引き伸ばしを行うための解像度の変更や、軽量化のための起動オプションの変更などを、GUIで視覚的に行うことができます。
 
 ### 🖥️ 対応環境
-- Windows 11 / Windows 10
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 ### 🎮 対応プラットフォーム
 - [**EA app**](https://www.ea.com/ja-jp/ea-app)
