@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FolderSelectDialog.cs" />
     <Compile Include="WindowManageHelper.cs" />
     <Compile Include="VDFHelper.cs" />
     <Compile Include="CursorLocker.cs" />
@@ -72,6 +73,12 @@
     </PackageReference>
     <PackageReference Include="utopiat.Produire">
       <Version>1.8.1117</Version>
+    </PackageReference>
+    <PackageReference Include="WindowsAPICodePack-Core">
+      <Version>1.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="WindowsAPICodePack-Shell">
+      <Version>1.1.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
