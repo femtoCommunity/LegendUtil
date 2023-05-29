@@ -39,6 +39,8 @@
 	+GitHubリポジトリーURL:文字列=「https://github.com/femtoCommunity/LegendUtil」
 	+DiscordサーバーURL:文字列=「https://discord.gg/Y5FrzPft3M」
 	
+	+ヘルプページURL:文字列=「https://github.com/femtoCommunity/LegendUtil/wiki」
+	
 	+ライセンス一覧:辞書
 	
 	+追加ファイル一覧:辞書={
