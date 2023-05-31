@@ -413,3 +413,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+Source/_Setup/LegendUtil_Setup_Dev.iss
+Source/_Setup/LegendUtil_Setup.iss
+LegendUtil.rdrproj
