@@ -52,7 +52,7 @@
 	-開発アップデートデータURL:文字列=「https://raw.githubusercontent.com/femtoCommunity/LegendUtil/releases/dev/Releases.ini」
 	
 	-アップデートデータ取得結果:真偽値=×
-	-アップデートデータステータスコード:整数=0
+	-アップデートデータステータスコード=0
 	-アップデートデータ:辞書={}
 	-アップデートファイル:辞書={}
 	自分で〈【オプション:配列】として〉アップデートデータ取得する手順
@@ -62,7 +62,11 @@
 		【アップデートチャンネル】
 		【アップデートデータJSON:配列】
 		【Rawアップデートデータ】
+		【開発アップデートデータアドレス:文字列】=開発アップデートデータURL
+		【開発インストーラーURL:文字列】
+		【カスタムリリースチャンネル:真偽値】
 		
+		例外監視
 		もしアプリのリリースチャンネルが「beta」またはアプリのリリースチャンネルが「release」なら
 			もしメイン設定について「Update」から「ReleaseChannel」を取得したものが「dev」で始まるなら
 				アップデートチャンネル=アプリのリリースチャンネル
@@ -81,23 +85,38 @@
 		もし終わり
 		
 		もしアップデートチャンネルが「dev」で始まるなら
-			//例外監視
-				もしオプションから「ダウンロード無効」を完全一致で取り出したものの個数が0なら
-					HTTPで「[開発アップデートデータURL]」を「[アプリのコンフィグフォルダー]Update\Releases.ini」へダウンロードする
+			カスタムリリースチャンネル=×
+			開発アップデートデータアドレス=開発アップデートデータURL
+			
+			もしメイン設定について「Update」から「CustomReleaseChannelUrl」を取得したもので「 」を「」へ置換したものが「」でないなら
+				もし(メイン設定について「Update」から「CustomReleaseChannelUrl」を取得したものが「https://」で始まる)または(メイン設定について「Update」から「CustomReleaseChannelUrl」を取得したものが「http://」で始まる)なら
+					開発アップデートデータアドレス=メイン設定について「Update」から「CustomReleaseChannelUrl」を取得したもの
+					
+				そうでなければ
+					開発アップデートデータアドレス=「https://milkeyyy.com/LegendUtil/Update/」&[メイン設定について「Update」から「CustomReleaseChannelUrl」を取得したもの]
+					
 				もし終わり
-				【アップデートデータ設定:設定ファイル】という設定ファイルを作る
-					そのファイル名=「[アプリのコンフィグフォルダー]Update\Releases.ini」
-				元アップデートデータ={
-					「assets」={
-						{「browser_download_url」=「https://github.com/femtoCommunity/LegendUtil/raw/releases/dev/Pack/[アップデートデータ設定について「Latest」から「Version」を取得したもの]-[アップデートデータ設定について「Latest」から「ReleaseChannel」を取得したもの][アップデートデータ設定について「Latest」から「BuildVersion」を取得したもの]/[アップデートデータ設定について「Latest」から「InstallerFileName」を取得したもの]」}
-					},
-					「name」=「[アップデートデータ設定について「Latest」から「Version」を取得したもの]-[アップデートデータ設定について「Latest」から「ReleaseChannel」を取得したもの][アップデートデータ設定について「Latest」から「BuildVersion」を取得したもの]」,
-					「tag_name」=[アップデートデータ設定について「Latest」から「InternalVersion」を取得したもの],
-					「body」=[アップデートデータ設定について「Latest」から「ChangeLog」を取得したもの]
-				}
-			//発生した場合
-			//	{×,「[エラーのメッセージ]」}を返す
-			//監視終わり
+				カスタムリリースチャンネル=◯
+			もし終わり
+			
+			もしオプションから「ダウンロード無効」を完全一致で取り出したものの個数が0なら
+				HTTPで「[開発アップデートデータアドレス]」を「[アプリのコンフィグフォルダー]Update\Releases.ini」へダウンロードする
+			もし終わり
+			
+			【アップデートデータ設定:設定ファイル】という設定ファイルを作る
+				そのファイル名=「[アプリのコンフィグフォルダー]Update\Releases.ini」
+			元アップデートデータ={
+				「name」=「[アップデートデータ設定について「Latest」から「Version」を取得したもの]-[アップデートデータ設定について「Latest」から「ReleaseChannel」を取得したもの][アップデートデータ設定について「Latest」から「BuildVersion」を取得したもの]」,
+				「tag_name」=[アップデートデータ設定について「Latest」から「InternalVersion」を取得したもの],
+				「body」=[アップデートデータ設定について「Latest」から「ChangeLog」を取得したもの]
+			}
+			もしカスタムリリースチャンネルが◯なら
+				元アップデートデータ(「assets」)={{「browser_download_url」=[アップデートデータ設定について「Latest」から「InstallerFileUrl」を取得したもの]}}
+				
+			そうでなければ
+				元アップデートデータ(「assets」)={{「browser_download_url」=「https://github.com/femtoCommunity/LegendUtil/raw/releases/dev/Pack/[アップデートデータ設定について「Latest」から「Version」を取得したもの]-[アップデートデータ設定について「Latest」から「ReleaseChannel」を取得したもの][アップデートデータ設定について「Latest」から「BuildVersion」を取得したもの]/[アップデートデータ設定について「Latest」から「InstallerFileName」を取得したもの]」}}
+				
+			もし終わり
 			
 		そうでなければ
 			// アップデートデータをダウンロード
@@ -146,6 +165,10 @@
 		アップデートデータステータスコード=HTTPのステータスコード
 		アップデートデータ=元アップデートデータ
 		アップデートファイル=元アップデートデータ(「assets」)(1)
+		発生した場合
+			アップデートデータ取得結果=×
+			アップデートデータステータスコード=「[エラーのメッセージ]」
+		監視終わり
 	終わり
 	
 	自分で〈【オプション:辞書】として〉アップデート確認する手順
