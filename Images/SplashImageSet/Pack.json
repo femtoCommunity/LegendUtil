@@ -1,0 +1,22 @@
+{
+	"Rel1cStyle": {
+		"IMPACT": {
+			"Url": "https://raw.githubusercontent.com/femtoCommunity/LegendUtil/Resources/Images/SplashImageSet/Pack/IMPACT.zip",
+			"Size": 3241425,
+			"Version": 1,
+			"Count": 2
+		},
+		"RING": {
+			"Url": "https://raw.githubusercontent.com/femtoCommunity/LegendUtil/Resources/Images/SplashImageSet/Pack/RING.zip",
+			"Size": 13915082,
+			"Version": 1,
+			"Count": 10
+		},
+		"SCREEN": {
+			"Url": "https://raw.githubusercontent.com/femtoCommunity/LegendUtil/Resources/Images/SplashImageSet/Pack/SCREEN.zip",
+			"Size": 3241425,
+			"Version": 1,
+			"Count": 2
+		}
+	}
+}
