@@ -1,21 +1,14 @@
 モザンビークAPIとは
 	単一種類
 	
-	//-APIURL:文字列=「https://mozambique.api.legendutil.femtocommunity.com」
 	-APIURL:文字列=「https://legendutil_mbapi-1-z1481468.deta.app」
 	
-	-初期ニュースデータ:配列={
+	-エラーニュースデータ:配列={
 		{
-			「title」=「キラーモード コレクションイベントで華麗に決めよう」,
-			「link」=「https://www.ea.com/games/apex-legends/news/dressed-to-kill-collection-event」,
-			「img」=「https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/dressed-to-kill-event/feat-image-apex-dressed-to-kill-event-primary-art-3840x2160.jpg.adapt.crop16x9.431p.jpg」,
-			「short_desc」=「期間限定の危険武装に挑み、ショットガンとスナイパーで君の力を証明しよう。」
-		},
-		{
-			「title」=「全世界での価格調整 最新情報」,
-			「link」=「https://www.ea.com/games/apex-legends/news/global-price-adjustment-update」,
-			「img」=「https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-price-change-key-art.jpg.adapt.crop16x9.431p.jpg」,
-			「short_desc」=「「「エーペックスレジェンズ」で、全世界での価格調整を実施。その最新情報をお届けします。」」
+			「title」=「ニュースの取得に失敗しました」,
+			「link」=「」,
+			「img」=「」,
+			「short_desc」=「」
 		}
 	}
 	+ニュースデータ:配列
@@ -36,19 +29,31 @@
 		
 		【データ】
 		例外監視
+			// 画像ファイルを削除する
+			「[アプリのコンフィグフォルダー]Resources\News\Image\*.jpg」を削除する
+			
 			データ=「[APIURL]/news?language=ja-jp」をHTTPで取得したもの
+			「ニュースデータ取得 - ステータスコード: [HTTPのステータスコード]」をデバッグログへ出力する
 			ニュースデータ=データをJSON形式として読み取ったもの
+			もしHTTPのステータスコードが200でないなら
+				ニュースデータ=エラーニュースデータ
+				ニュースデータ(1)(「short_desc」)=「ステータスコード: [HTTPのステータスコード]」
+				「[今の位置]Resources\Images\News\Warn.jpg」を「[アプリのコンフィグフォルダー]Resources\News\Image\1.jpg」へコピーする
+				「ニュースの取得に失敗しました。[改行]ステータスコード: [HTTPのステータスコード]」というエラーを発生させる
+				手順から抜け出す
+			もし終わり
+			// 画像を取得する
+			【カウント:整数】=1
+			ニュースデータを【ニュース】へそれぞれ繰り返す
+				[ニュース(「img」)]を「[アプリのコンフィグフォルダー]Resources\News\Image\[カウント].jpg」へHTTPでダウンロードする
+				カウント=カウント+1
+			繰り返し終わり
 		発生した場合
-			ニュースデータ=初期ニュースデータ
+			「[エラーのメッセージ]」をデバッグログへ出力する
+			ニュースデータ=エラーニュースデータ
+			ニュースデータ(1)(「short_desc」)=「[エラーのメッセージ]」
+			「[今の位置]Resources\Images\News\Warn.jpg」を「[アプリのコンフィグフォルダー]Resources\News\Image\1.jpg」へコピーする
+			手順から抜け出す
 		監視終わり
-		// 画像を取得する
-		【カウント:整数】=1
-		ニュースデータを【ニュース】へそれぞれ繰り返す
-			[ニュース(「img」)]を「[アプリのコンフィグフォルダー]Resources\News\Image\[カウント].jpg」へHTTPでダウンロードする
-			カウント=カウント+1
-		繰り返し終わり
-		もしHTTPのステータスコードが200でないなら
-			「ニュースの取得に失敗しました。[改行]ステータスコード: [HTTPのステータスコード]」というエラーを発生させる
-		もし終わり
 	終わり
 終わり
