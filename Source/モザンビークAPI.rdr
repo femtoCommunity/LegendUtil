@@ -1,0 +1,54 @@
+モザンビークAPIとは
+	単一種類
+	
+	//-APIURL:文字列=「https://mozambique.api.legendutil.femtocommunity.com」
+	-APIURL:文字列=「https://legendutil_mbapi-1-z1481468.deta.app」
+	
+	-初期ニュースデータ:配列={
+		{
+			「title」=「キラーモード コレクションイベントで華麗に決めよう」,
+			「link」=「https://www.ea.com/games/apex-legends/news/dressed-to-kill-collection-event」,
+			「img」=「https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/dressed-to-kill-event/feat-image-apex-dressed-to-kill-event-primary-art-3840x2160.jpg.adapt.crop16x9.431p.jpg」,
+			「short_desc」=「期間限定の危険武装に挑み、ショットガンとスナイパーで君の力を証明しよう。」
+		},
+		{
+			「title」=「全世界での価格調整 最新情報」,
+			「link」=「https://www.ea.com/games/apex-legends/news/global-price-adjustment-update」,
+			「img」=「https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-price-change-key-art.jpg.adapt.crop16x9.431p.jpg」,
+			「short_desc」=「「「エーペックスレジェンズ」で、全世界での価格調整を実施。その最新情報をお届けします。」」
+		}
+	}
+	+ニュースデータ:配列
+	-ニュース最終取得日時:日時形式
+	
+	はじめの手順
+		ニュースデータ=初期ニュースデータ
+		ニュース最終取得日時=日時形式(「2000/01/01」)を作る
+	終わり
+	
+	自分でニュース更新する手順
+		// 10秒間隔を空けないと取得できないようにする
+		【経過時間:日時期間形式】=ニュース最終取得日時と今の日付差
+		もし経過時間の合計秒数が10未満なら
+			「間隔が短すぎます。[改行][10-経過時間の合計秒数の整数]秒後にもう一度お試しください。」というエラーを発生させる
+			手順から抜け出す
+		もし終わり
+		
+		【データ】
+		例外監視
+			データ=「[APIURL]/news?language=ja-jp」をHTTPで取得したもの
+			ニュースデータ=データをJSON形式として読み取ったもの
+		発生した場合
+			ニュースデータ=初期ニュースデータ
+		監視終わり
+		// 画像を取得する
+		【カウント:整数】=1
+		ニュースデータを【ニュース】へそれぞれ繰り返す
+			[ニュース(「img」)]を「[アプリのコンフィグフォルダー]Resources\News\Image\[カウント].jpg」へHTTPでダウンロードする
+			カウント=カウント+1
+		繰り返し終わり
+		もしHTTPのステータスコードが200でないなら
+			「ニュースの取得に失敗しました。[改行]ステータスコード: [HTTPのステータスコード]」というエラーを発生させる
+		もし終わり
+	終わり
+終わり

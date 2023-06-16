@@ -130,6 +130,8 @@
 		「Profile\v1」,
 		「Resources」,
 		「Resources\TitleScreenImage」
+		「Resources\News」,
+		「Resources\News\Image」
 	}
 	
 	+初回起動:真偽値
