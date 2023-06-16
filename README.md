@@ -26,6 +26,7 @@ Apex Legends のプレイをより快適にするアプリケーションです�
 ### 📝 言語
 - [**プロデル**](https://produ.irelang.jp/) 2.0
 - **C#**
+- **Python**
 
 ---
 
