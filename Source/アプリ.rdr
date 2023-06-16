@@ -6,6 +6,7 @@
 「..\Resources\Logo\LegendUtil_Icon.png」を素材として利用する
 「..\Resources\Logo\LegendUtil_Icon_Transparent.png」を素材として利用する
 「..\Resources\Logo\LegendUtil_Banner_WithoutText.png」を素材として利用する
+「..\Resources\Logo\LegendUtil_LogoType_Transparent.png」を素材として利用する
 
 アプリとは
 	単一種類
@@ -13,7 +14,7 @@
 	+名前:文字列
 	
 	//----- バージョン関連 -----//
-	+リリースチャンネル:文字列=「dev」 // dev,beta,release
+	+リリースチャンネル:文字列=「dev_splash_image_test」 // dev,beta,release
 	
 	+バージョン:文字列
 	+バージョン配列:配列
@@ -27,6 +28,7 @@
 	+アイコン画像:画像
 	+アイコン透過画像:画像
 	+バナー画像:画像
+	+ロゴタイプ画像:画像
 	
 	+設計スケール比率={96,96}
 	
@@ -92,6 +94,7 @@
 		アイコン画像=「LegendUtil_Icon.png」を素材リストから画像として取得したもの
 		アイコン透過画像=「LegendUtil_Icon_Transparent.png」を素材リストから画像として取得したもの
 		バナー画像=「LegendUtil_Banner_WithoutText.png」を素材リストから画像として取得したもの
+		ロゴタイプ画像=「LegendUtil_LogoType_Transparent.png」を素材リストから画像として取得したもの
 	終わり
 	
 	自分で情報表示する手順
