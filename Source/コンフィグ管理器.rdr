@@ -119,8 +119,24 @@
 				「CustomReleaseChannelUrl」={
 					「初期値」=「」,
 					「名前」=「カスタムリリースチャンネルURL」,
-					「説明」=「」,
+					「説明」=「※開発用※」,
 					「型」=文字列
+				}
+			},
+			「UI_MainMenu」={
+				「News_Language」={
+					「初期値」=「ja-jp」,
+					「名前」=「ニュースの言語」,
+					「説明」=「メインメニューに表示されるニュースの言語」,
+					「型」=文字列,
+					「一覧」={「ja-jp」,「en-us」}
+				},
+				「ServerStatus_Region」={
+					「初期値」=「Asia」,
+					「名前」=「サーバーステータスの地域」,
+					「説明」=「メインメニューに表示されるサーバーステータスの地域」,
+					「型」=文字列,
+					「一覧」={「Asia」,「EU-East」,「EU-West」,「SouthAmerica」,「US-Central」,「US-East」,「US-West」}
 				}
 			},
 			「Window_Main」={
