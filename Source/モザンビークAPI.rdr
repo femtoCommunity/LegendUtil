@@ -1,7 +1,7 @@
 モザンビークAPIとは
 	単一種類
 	
-	-APIURL:文字列=「https://legendutil_mbapi-1-z1481468.deta.app」
+	-APIURL:文字列=「https://api.legendutil.milkeyyy.com/mozambique」
 	
 	はじめの手順
 		サーバーステータス最終取得日時=日時形式(「2000/01/01」)を作る
