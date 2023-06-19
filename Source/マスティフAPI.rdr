@@ -1,69 +1,71 @@
-ãƒžã‚¹ãƒ†ã‚£ãƒ•APIã¨ã¯
-	å˜ä¸€ç¨®é¡ž
+ƒ}ƒXƒeƒBƒtAPI‚Æ‚Í
+	’PˆêŽí—Þ
 	
-	-APIURL:æ–‡å­—åˆ—=ã€Œhttps://api.legendutil.milkeyyy.com/mastiffã€
+	-APIURL:•¶Žš—ñ=u[ƒAƒvƒŠ‚ÌAPIURL]/mastiffv
 	
-	ã¯ã˜ã‚ã®æ‰‹é †
-		ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿=ã‚¨ãƒ©ãƒ¼ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿
-		ãƒ‹ãƒ¥ãƒ¼ã‚¹æœ€çµ‚å–å¾—æ—¥æ™‚=æ—¥æ™‚å½¢å¼(ã€Œ2000/01/01ã€)ã‚’ä½œã‚‹
-	çµ‚ã‚ã‚Š
+	‚Í‚¶‚ß‚ÌŽè‡
+		ƒjƒ…[ƒXƒf[ƒ^=ƒGƒ‰[ƒjƒ…[ƒXƒf[ƒ^
+		ƒjƒ…[ƒXÅIŽæ“¾“úŽž=“úŽžŒ`Ž®(u2000/01/01v)‚ðì‚é
+		// Šù‘¶‚Ìƒjƒ…[ƒX‰æ‘œƒtƒ@ƒCƒ‹‚ðíœ‚·‚é
+		u[ƒAƒvƒŠ‚ÌƒRƒ“ƒtƒBƒOƒtƒHƒ‹ƒ_[]Resources\News\Image\*.jpgv‚ðíœ‚·‚é
+	I‚í‚è
 	
-	-ã‚¨ãƒ©ãƒ¼ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿:é…åˆ—={
+	-ƒGƒ‰[ƒjƒ…[ƒXƒf[ƒ^:”z—ñ={
 		{
-			ã€Œtitleã€=ã€Œãƒ‹ãƒ¥ãƒ¼ã‚¹ã®å–å¾—ã«å¤±æ•—ã—ã¾ã—ãŸã€,
-			ã€Œlinkã€=ã€Œã€,
-			ã€Œimgã€=ã€Œã€,
-			ã€Œshort_descã€=ã€Œã€
+			utitlev=uƒjƒ…[ƒX‚ÌŽæ“¾‚ÉŽ¸”s‚µ‚Ü‚µ‚½v,
+			ulinkv=uv,
+			uimgv=uv,
+			ushort_descv=uv
 		}
 	}
-	+ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿:é…åˆ—
-	-ãƒ‹ãƒ¥ãƒ¼ã‚¹æœ€çµ‚å–å¾—æ—¥æ™‚:æ—¥æ™‚å½¢å¼
-	+ãƒ‹ãƒ¥ãƒ¼ã‚¹æœ€å¤§å–å¾—æ•°:æ•´æ•°=2
-	è‡ªåˆ†ã§ãƒ‹ãƒ¥ãƒ¼ã‚¹æ›´æ–°ã™ã‚‹æ‰‹é †
-		// 10ç§’é–“éš”ã‚’ç©ºã‘ãªã„ã¨å–å¾—ã§ããªã„ã‚ˆã†ã«ã™ã‚‹
-		ã€çµŒéŽæ™‚é–“:æ—¥æ™‚æœŸé–“å½¢å¼ã€‘=ãƒ‹ãƒ¥ãƒ¼ã‚¹æœ€çµ‚å–å¾—æ—¥æ™‚ã¨ä»Šã®æ—¥ä»˜å·®
-		ã‚‚ã—çµŒéŽæ™‚é–“ã®åˆè¨ˆç§’æ•°ãŒ10æœªæº€ãªã‚‰
-			ã€Œé–“éš”ãŒçŸ­ã™ãŽã¾ã™ã€‚[æ”¹è¡Œ][10-çµŒéŽæ™‚é–“ã®åˆè¨ˆç§’æ•°ã®æ•´æ•°]ç§’å¾Œã«ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚ã€ã¨ã„ã†ã‚¨ãƒ©ãƒ¼ã‚’ç™ºç”Ÿã•ã›ã‚‹
-			æ‰‹é †ã‹ã‚‰æŠœã‘å‡ºã™
-		ã‚‚ã—çµ‚ã‚ã‚Š
+	+ƒjƒ…[ƒXƒf[ƒ^:”z—ñ
+	-ƒjƒ…[ƒXÅIŽæ“¾“úŽž:“úŽžŒ`Ž®
+	+ƒjƒ…[ƒXÅ‘åŽæ“¾”:®”=2
+	Ž©•ª‚Åƒjƒ…[ƒXXV‚·‚éŽè‡
+		// 10•bŠÔŠu‚ð‹ó‚¯‚È‚¢‚ÆŽæ“¾‚Å‚«‚È‚¢‚æ‚¤‚É‚·‚é
+		yŒo‰ßŽžŠÔ:“úŽžŠúŠÔŒ`Ž®z=ƒjƒ…[ƒXÅIŽæ“¾“úŽž‚Æ¡‚Ì“ú•t·
+		‚à‚µŒo‰ßŽžŠÔ‚Ì‡Œv•b”‚ª10–¢–ž‚È‚ç
+			uŠÔŠu‚ª’Z‚·‚¬‚Ü‚·B[‰üs][10-Œo‰ßŽžŠÔ‚Ì‡Œv•b”‚Ì®”]•bŒã‚É‚à‚¤ˆê“x‚¨ŽŽ‚µ‚­‚¾‚³‚¢Bv‚Æ‚¢‚¤ƒGƒ‰[‚ð”­¶‚³‚¹‚é
+			Žè‡‚©‚ç”²‚¯o‚·
+		‚à‚µI‚í‚è
 		
-		ãƒ‹ãƒ¥ãƒ¼ã‚¹æœ€çµ‚å–å¾—æ—¥æ™‚=ä»Š
+		ƒjƒ…[ƒXÅIŽæ“¾“úŽž=¡
 		
-		// ãƒ‹ãƒ¥ãƒ¼ã‚¹ã‚’å–å¾—ã™ã‚‹
-		ã€ãƒ‡ãƒ¼ã‚¿ã€‘
-		ä¾‹å¤–ç›£è¦–
-			// ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‰Šé™¤ã™ã‚‹
-			ã€Œ[ã‚¢ãƒ—ãƒªã®ã‚³ãƒ³ãƒ•ã‚£ã‚°ãƒ•ã‚©ãƒ«ãƒ€ãƒ¼]Resources\News\Image\*.jpgã€ã‚’å‰Šé™¤ã™ã‚‹
-			ãƒ‡ãƒ¼ã‚¿=ã€Œ[APIURL]/newsã€ã‚’HTTPã§å–å¾—ã—ãŸã‚‚ã®
-			ã€Œãƒžã‚¹ãƒ†ã‚£ãƒ•API ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿å–å¾— - ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰: [HTTPã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰]ã€ã‚’ãƒ‡ãƒãƒƒã‚°ãƒ­ã‚°ã¸å‡ºåŠ›ã™ã‚‹
-			ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿=ãƒ‡ãƒ¼ã‚¿ã‚’JSONå½¢å¼ã¨ã—ã¦èª­ã¿å–ã£ãŸã‚‚ã®ã®1ç•ªç›®ã‹ã‚‰ãƒ‹ãƒ¥ãƒ¼ã‚¹æœ€å¤§å–å¾—æ•°å€‹åˆ‡ã‚Šå‡ºã—ãŸã‚‚ã®
-			ã‚‚ã—HTTPã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰ãŒ200ã§ãªã„ãªã‚‰
-				ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿=ã‚¨ãƒ©ãƒ¼ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿
-				ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿(1)(ã€Œshort_descã€)=ã€Œã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰: [HTTPã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰]ã€
-				ã€Œ[ä»Šã®ä½ç½®]Resources\Images\News\Warn.jpgã€ã‚’ã€Œ[ã‚¢ãƒ—ãƒªã®ã‚³ãƒ³ãƒ•ã‚£ã‚°ãƒ•ã‚©ãƒ«ãƒ€ãƒ¼]Resources\News\Image\1.jpgã€ã¸ã‚³ãƒ”ãƒ¼ã™ã‚‹
-				æ‰‹é †ã‹ã‚‰æŠœã‘å‡ºã™
-			ã‚‚ã—çµ‚ã‚ã‚Š
-		ç™ºç”Ÿã—ãŸå ´åˆ
-			ã‚¨ãƒ©ãƒ¼ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ãƒ‡ãƒãƒƒã‚°ãƒ­ã‚°ã¸å‡ºåŠ›ã™ã‚‹
-			ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿=ã‚¨ãƒ©ãƒ¼ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿
-			ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿(1)(ã€Œshort_descã€)=ã€Œå†…éƒ¨ã‚¨ãƒ©ãƒ¼: [ã‚¨ãƒ©ãƒ¼ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸]ã€
-			ã€Œ[ä»Šã®ä½ç½®]Resources\Images\News\Warn.jpgã€ã‚’ã€Œ[ã‚¢ãƒ—ãƒªã®ã‚³ãƒ³ãƒ•ã‚£ã‚°ãƒ•ã‚©ãƒ«ãƒ€ãƒ¼]Resources\News\Image\1.jpgã€ã¸ã‚³ãƒ”ãƒ¼ã™ã‚‹
-			æ‰‹é †ã‹ã‚‰æŠœã‘å‡ºã™
-		ç›£è¦–çµ‚ã‚ã‚Š
+		// ƒjƒ…[ƒX‚ðŽæ“¾‚·‚é
+		yƒf[ƒ^z
+		—áŠOŠÄŽ‹
+			// ‰æ‘œƒtƒ@ƒCƒ‹‚ðíœ‚·‚é
+			u[ƒAƒvƒŠ‚ÌƒRƒ“ƒtƒBƒOƒtƒHƒ‹ƒ_[]Resources\News\Image\*.jpgv‚ðíœ‚·‚é
+			ƒf[ƒ^=u[APIURL]/newsv‚ðHTTP‚ÅŽæ“¾‚µ‚½‚à‚Ì
+			uƒ}ƒXƒeƒBƒtAPI ƒjƒ…[ƒXƒf[ƒ^Žæ“¾ - ƒXƒe[ƒ^ƒXƒR[ƒh: [HTTP‚ÌƒXƒe[ƒ^ƒXƒR[ƒh]v‚ðƒfƒoƒbƒOƒƒO‚Öo—Í‚·‚é
+			ƒjƒ…[ƒXƒf[ƒ^=ƒf[ƒ^‚ðJSONŒ`Ž®‚Æ‚µ‚Ä“Ç‚ÝŽæ‚Á‚½‚à‚Ì‚Ì1”Ô–Ú‚©‚çƒjƒ…[ƒXÅ‘åŽæ“¾”ŒÂØ‚èo‚µ‚½‚à‚Ì
+			‚à‚µHTTP‚ÌƒXƒe[ƒ^ƒXƒR[ƒh‚ª200‚Å‚È‚¢‚È‚ç
+				ƒjƒ…[ƒXƒf[ƒ^=ƒGƒ‰[ƒjƒ…[ƒXƒf[ƒ^
+				ƒjƒ…[ƒXƒf[ƒ^(1)(ushort_descv)=uƒXƒe[ƒ^ƒXƒR[ƒh: [HTTP‚ÌƒXƒe[ƒ^ƒXƒR[ƒh]v
+				u[¡‚ÌˆÊ’u]Resources\Images\News\Warn.jpgv‚ðu[ƒAƒvƒŠ‚ÌƒRƒ“ƒtƒBƒOƒtƒHƒ‹ƒ_[]Resources\News\Image\1.jpgv‚ÖƒRƒs[‚·‚é
+				Žè‡‚©‚ç”²‚¯o‚·
+			‚à‚µI‚í‚è
+		”­¶‚µ‚½ê‡
+			ƒGƒ‰[‚ÌƒƒbƒZ[ƒW‚ðƒfƒoƒbƒOƒƒO‚Öo—Í‚·‚é
+			ƒjƒ…[ƒXƒf[ƒ^=ƒGƒ‰[ƒjƒ…[ƒXƒf[ƒ^
+			ƒjƒ…[ƒXƒf[ƒ^(1)(ushort_descv)=u“à•”ƒGƒ‰[: [ƒGƒ‰[‚ÌƒƒbƒZ[ƒW]v
+			u[¡‚ÌˆÊ’u]Resources\Images\News\Warn.jpgv‚ðu[ƒAƒvƒŠ‚ÌƒRƒ“ƒtƒBƒOƒtƒHƒ‹ƒ_[]Resources\News\Image\1.jpgv‚ÖƒRƒs[‚·‚é
+			Žè‡‚©‚ç”²‚¯o‚·
+		ŠÄŽ‹I‚í‚è
 		
-		// ç”»åƒã‚’å–å¾—ã™ã‚‹
-		ã€ã‚«ã‚¦ãƒ³ãƒˆ:æ•´æ•°ã€‘=1
-		ãƒ‹ãƒ¥ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿ã‚’ã€ãƒ‹ãƒ¥ãƒ¼ã‚¹ã€‘ã¸ãã‚Œãžã‚Œç¹°ã‚Šè¿”ã™
-			ä¾‹å¤–ç›£è¦–
-				[ãƒ‹ãƒ¥ãƒ¼ã‚¹(ã€Œimgã€)]ã‚’ã€Œ[ã‚¢ãƒ—ãƒªã®ã‚³ãƒ³ãƒ•ã‚£ã‚°ãƒ•ã‚©ãƒ«ãƒ€ãƒ¼]Resources\News\Image\[ã‚«ã‚¦ãƒ³ãƒˆ].jpgã€ã¸HTTPã§ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã™ã‚‹
-				ã‚‚ã—HTTPã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰ãŒ200ã§ãªã„ãªã‚‰ã€Œã€ã¨ã„ã†ã‚¨ãƒ©ãƒ¼ã‚’ç™ºç”Ÿã•ã›ã‚‹
-			ç™ºç”Ÿã—ãŸå ´åˆ
-				ã‚¨ãƒ©ãƒ¼ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ãƒ‡ãƒãƒƒã‚°ãƒ­ã‚°ã¸å‡ºåŠ›ã™ã‚‹
-				ã€Œ[ä»Šã®ä½ç½®]Resources\Images\News\Warn.jpgã€ã‚’ã€Œ[ã‚¢ãƒ—ãƒªã®ã‚³ãƒ³ãƒ•ã‚£ã‚°ãƒ•ã‚©ãƒ«ãƒ€ãƒ¼]Resources\News\Image\[ã‚«ã‚¦ãƒ³ãƒˆ].jpgã€ã¸ã‚³ãƒ”ãƒ¼ã™ã‚‹
-			ç›£è¦–çµ‚ã‚ã‚Š
-			ã‚«ã‚¦ãƒ³ãƒˆ=ã‚«ã‚¦ãƒ³ãƒˆ+1
-			// æœ€å¤§å–å¾—æ•°ã«é”ã—ãŸã‚‰ç¹°ã‚Šè¿”ã—ã‹ã‚‰æŠœã‘ã‚‹
-			ã‚‚ã—ã‚«ã‚¦ãƒ³ãƒˆãŒãƒ‹ãƒ¥ãƒ¼ã‚¹æœ€å¤§å–å¾—æ•°+1ä»¥ä¸Šãªã‚‰æ‰‹é †ã‹ã‚‰æŠœã‘å‡ºã™
-		ç¹°ã‚Šè¿”ã—çµ‚ã‚ã‚Š
-	çµ‚ã‚ã‚Š
-çµ‚ã‚ã‚Š
+		// ‰æ‘œ‚ðŽæ“¾‚·‚é
+		yƒJƒEƒ“ƒg:®”z=1
+		ƒjƒ…[ƒXƒf[ƒ^‚ðyƒjƒ…[ƒXz‚Ö‚»‚ê‚¼‚êŒJ‚è•Ô‚·
+			—áŠOŠÄŽ‹
+				[ƒjƒ…[ƒX(uimgv)]‚ðu[ƒAƒvƒŠ‚ÌƒRƒ“ƒtƒBƒOƒtƒHƒ‹ƒ_[]Resources\News\Image\[ƒJƒEƒ“ƒg].jpgv‚ÖHTTP‚Åƒ_ƒEƒ“ƒ[ƒh‚·‚é
+				‚à‚µHTTP‚ÌƒXƒe[ƒ^ƒXƒR[ƒh‚ª200‚Å‚È‚¢‚È‚çuv‚Æ‚¢‚¤ƒGƒ‰[‚ð”­¶‚³‚¹‚é
+			”­¶‚µ‚½ê‡
+				ƒGƒ‰[‚ÌƒƒbƒZ[ƒW‚ðƒfƒoƒbƒOƒƒO‚Öo—Í‚·‚é
+				u[¡‚ÌˆÊ’u]Resources\Images\News\Warn.jpgv‚ðu[ƒAƒvƒŠ‚ÌƒRƒ“ƒtƒBƒOƒtƒHƒ‹ƒ_[]Resources\News\Image\[ƒJƒEƒ“ƒg].jpgv‚ÖƒRƒs[‚·‚é
+			ŠÄŽ‹I‚í‚è
+			ƒJƒEƒ“ƒg=ƒJƒEƒ“ƒg+1
+			// Å‘åŽæ“¾”‚É’B‚µ‚½‚çŒJ‚è•Ô‚µ‚©‚ç”²‚¯‚é
+			‚à‚µƒJƒEƒ“ƒg‚ªƒjƒ…[ƒXÅ‘åŽæ“¾”+1ˆÈã‚È‚çŽè‡‚©‚ç”²‚¯o‚·
+		ŒJ‚è•Ô‚µI‚í‚è
+	I‚í‚è
+I‚í‚è
