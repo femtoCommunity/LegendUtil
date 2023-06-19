@@ -7,6 +7,8 @@
 「..\Resources\Logo\LegendUtil_Icon_Transparent.png」を素材として利用する
 「..\Resources\Logo\LegendUtil_Banner_WithoutText.png」を素材として利用する
 
+「..\Resources\Images\kofi_button_red.png」を素材として利用する
+
 アプリとは
 	単一種類
 	
@@ -41,6 +43,8 @@
 	+DiscordサーバーURL:文字列=「https://discord.gg/Y5FrzPft3M」
 	
 	+ヘルプページURL:文字列=「https://github.com/femtoCommunity/LegendUtil/wiki」
+	
+	+KofiURL:文字列=「https://ko-fi.com/milkeyyy」
 	
 	+ライセンス一覧:辞書
 	
