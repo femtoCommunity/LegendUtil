@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FolderSelectDialog.cs" />
+    <Compile Include="PingUtil.cs" />
     <Compile Include="WindowManageHelper.cs" />
     <Compile Include="VDFHelper.cs" />
     <Compile Include="CursorLocker.cs" />
@@ -62,6 +63,15 @@
     <PackageReference Include="Gameloop.Vdf.JsonConverter">
       <Version>0.2.1</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft-Windows10-APICodePack-Core">
+      <Version>1.1.8</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft-Windows10-APICodePack-Shell">
+      <Version>1.1.8</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft-Windows10-APICodePack-ShellExtensions">
+      <Version>1.1.8</Version>
+    </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.3</Version>
     </PackageReference>
@@ -73,12 +83,6 @@
     </PackageReference>
     <PackageReference Include="utopiat.Produire">
       <Version>1.8.1117</Version>
-    </PackageReference>
-    <PackageReference Include="WindowsAPICodePack-Core">
-      <Version>1.1.2</Version>
-    </PackageReference>
-    <PackageReference Include="WindowsAPICodePack-Shell">
-      <Version>1.1.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
