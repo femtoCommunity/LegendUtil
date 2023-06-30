@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using static OpenCvSharp.Stitcher;
 
 namespace LegendUtil.SharpLibrary
 {
@@ -71,9 +72,7 @@ namespace LegendUtil.SharpLibrary
 				var mode = new DEVMODE();
 				mode.dmSize = (short)Marshal.SizeOf(mode);
 
-				while (DisplayManager.EnumDisplaySettings(デバイス名,
-					modeIndex,
-					ref mode))
+				while (DisplayManager.EnumDisplaySettings(デバイス名, modeIndex, ref mode))
 				{
 					if (mode.dmPelsWidth == (uint)dw && mode.dmPelsHeight == (uint)dh && mode.dmDisplayFrequency == (uint)df)
 						return true;
@@ -95,7 +94,24 @@ namespace LegendUtil.SharpLibrary
 				return false;
 			}
 
-			public DISPLAY_DEVICE[] 一覧
+			public ディスプレイ設定[] 設定一覧を取得する([から] string デバイス名)
+			{
+				var list = new List<ディスプレイ設定>();
+				
+				int modeIndex = 0;
+
+				var mode = new DEVMODE();
+				mode.dmSize = (short)Marshal.SizeOf(mode);
+
+				while (DisplayManager.EnumDisplaySettings(デバイス名, modeIndex, ref mode))
+				{
+					list.Add(new ディスプレイ設定(mode.dmPelsWidth, mode.dmPelsHeight, mode.dmDisplayFrequency));
+					modeIndex++;
+				}
+				return list.ToArray();
+			}
+
+			public DISPLAY_DEVICE[] ディスプレイ一覧
 			{
 				get
 				{
@@ -106,7 +122,7 @@ namespace LegendUtil.SharpLibrary
 					{
 						for (uint id = 0; DisplayManager.EnumDisplayDevices(null, id, ref d, 0); id++)
 						{
-							list.Add(new DISPLAY_DEVICE());
+							list.Add(d);
 							d.cb = Marshal.SizeOf(d);
 						}
 					}
@@ -135,10 +151,6 @@ namespace LegendUtil.SharpLibrary
 		[対応型(typeof(DISPLAY_DEVICE))]
 		public class ディスプレイデバイス : ClassWarpper<DISPLAY_DEVICE>
 		{
-			public ディスプレイデバイス()
-			{
-
-			}
 			public string 名前 => baseObject.DeviceName;
 			public string デバイス文字列 => baseObject.DeviceString;
 			public DisplayDeviceStateFlags 状態 => baseObject.StateFlags;
@@ -251,6 +263,28 @@ namespace LegendUtil.SharpLibrary
 			リセット = ChangeDisplaySettingsFlags.CDS_RESET,
 			リセットEX = ChangeDisplaySettingsFlags.CDS_RESET_EX,
 			リセット無し = ChangeDisplaySettingsFlags.CDS_NORESET
+		}
+
+		public class ディスプレイ設定 : IProduireClass
+		{
+			public ディスプレイ設定(int w, int h, int fq)
+			{
+				this.w = w;
+				this.h = h;
+				this.fq = fq;
+			}
+
+			public readonly int w;
+			[設定項目]
+			public int 幅 => w;
+
+			public readonly int h;
+			[設定項目]
+			public int 高さ => h;
+			
+			public readonly int fq;
+			[設定項目]
+			public int リフレッシュレート => fq;
 		}
 
 		[StructLayout(LayoutKind.Sequential)]
