@@ -70,7 +70,8 @@
 	"PanelTitle": {
 		"MainWindow": {
 			"ProfileManage": "プロファイルの管理",
-			"ProfileEdit": "プロファイルの編集"
+			"ProfileEdit": "プロファイルの編集",
+			"AppSettings": "アプリケーション設定"
 		}
 	},
 	"Tooltip": {

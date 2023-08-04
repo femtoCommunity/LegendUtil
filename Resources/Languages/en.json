@@ -70,7 +70,8 @@
 	"PanelTitle": {
 		"MainWindow": {
 			"ProfileManage": "Manage Profiles",
-			"ProfileEdit": "Edit Profile"
+			"ProfileEdit": "Edit Profile",
+			"AppSettings": "Application Settings"
 		}
 	},
 	"Tooltip": {
