@@ -1,0 +1,141 @@
+{
+	"__Info": {
+		"Name": "English"
+	},
+	"General": {
+		"General": {
+			"1": "Internal Error",
+			"2": "Native"
+		}
+	},
+	"Config": {
+		"Design": {
+			"__Name": "Appearance",
+			"Theme;Name": "Theme",
+			"Theme;Desc": "UI Theme\r\n(Theme changes will be applied when the application is restarted.)"
+		},
+		"Display": {
+			"__Name": "Display",
+			"Resolution_Width;Name": "Display Resolution (Width)",
+			"Resolution_Width;Desc": "Normal main display resolution (Width)",
+			"Resolution_Height;Name": "Display Resolution (Height)",
+			"Resolution_Height;Desc": "Normal main display resolution (Height)",
+			"RefreshRate;Name": "Display Refresh Rate",
+			"RefreshRate;Desc": "Normal main display refresh rate"
+		},
+		"General": {
+			"__Name": "General",
+			"EAapp_Config_Folder_Path;Name": "EA app Config Folder",
+			"EAapp_Config_Folder_Path;Desc": "Folder where EA app config files are stored\r\nIf you enter a blank or nonexistent folder, it will be retrieved automatically.\r\n*Normally, we recommend leaving this field blank.",
+			"EAapp_Config_Folder_Path;Custom_1": "Select Folder",
+			"EAapp_Config_File_Name;Name": "EA app Config File",
+			"EAapp_Config_File_Name;Desc": "File name of EA app config file\r\nThis field is required if the platform you are playing on is the EA app.\r\n*This config file is different for each account, so if you play with multiple accounts,\r\nyou will need to rename the file each time you switch accounts.",
+			"EAapp_Config_File_Name;Custom_1": "Run auto detection"
+		},
+		"Update": {
+			"__Name": "Update",
+			"CheckForUpdatesOnAppLaunch;Name": "Check for updates when launching the application",
+			"CheckForUpdatesOnAppLaunch;Desc": "Whether or not to automatically check for updates when the application is launched",
+			"ReleaseChannel;Name": "Release Channel",
+			"ReleaseChannel;Desc": "Release channel of the version to be installed when updating",
+			"CustomReleaseChannelUrl;Name": "Custom Release Channel URL",
+			"CustomReleaseChannelUrl;Desc": "*for development"
+		},
+		"UI_General": {
+			"__Name": "UI - General",
+			"Language;Name": "UI Languages",
+			"Language;Desc": "User interface display language"
+		},
+		"UI_MainMenu": {
+			"__Name": "UI - Main Menu",
+			"News_Language;Name": "News Languages",
+			"News_Language;Desc": "Languages of news displayed in the main menu",
+			"ServerStatus_Region;Name": "Server Status Regions",
+			"ServerStatus_Region;Desc": "Server status regions displayed in the main menu",
+			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West"
+		}
+	},
+	"ErrorMessage": {
+		"1": {
+			"1": "Failed to get server status.\r\n\r\n{0}",
+			"2": "Failed to update news"
+		},
+		"2": {
+			"1": "Failed to load profile.\r\n\r\n<Profile failed to load>\r\n・{0}",
+			"2": "Failed to load profile.\r\n\r\n{0}",
+			"3": "Failed to create profile.\r\n\r\n{0}",
+			"4": "Could not rename profile.\r\n\r\n{0}"
+		}
+	},
+	"PanelTitle": {
+		"MainWindow": {
+			"ProfileManage": "Manage Profiles",
+			"ProfileEdit": "Edit Profile"
+		}
+	},
+	"Tooltip": {
+		"ProfileEditPanel": {
+			"AltEnter自動押下チェックボックス": "Sets whether Alt+Enter is automatically pressed after starting Apex Legends.\r\nEnable this setting to turn off the black bars that occur when the resolution is stretched.",
+			"AltEnter自動押下待機時間ダイヤル": "Sets the time (in seconds) to wait between the start of Apex Legends and the automatic press of Alt+Enter.\r\nSince the time until the title screen is displayed varies depending on your environment, please set it according to your environment.",
+			"AltEnter自動押下方法選択リスト": "Sets the method of executing automatic Alt+Enter presses.\r\n  <Image Recognition>\r\n    {0} automatically recognizes the title screen display and performs an automatic Alt+Enter press. To use this setting, an additional file must be downloaded. (The file will be downloaded automatically.)\r\n\r\n  <Time>\r\n    After Apex Legends starts up, it waits for the specified time before executing an automatic Alt+Enter press\r\n    Since the time until the title screen is displayed varies depending on the environment, please set the time according to your environment.",
+			"ApexLegendsパステキスト": "Set the path to the Apex Legends installation (executable file).\r\nSpecify the path to \"r5apex.exe\", not \"EasyAntiCheat_launcher.exe\".",
+			"ApexLegendsパス自動取得チェックボックス": "Automatically retrieve the Apex Legends installation (executable file) installed on this PC.",
+			"ApexLegendsパス自動取得ボタン": "Retrieve the installation location of Apex Legends installed on this PC.\r\nThis should be done when the installation location has been changed, such as when reinstalling the software.",
+			"EAappSteam経由IDテキスト": "Specify the AppID of the EA app registered with Steam.",
+			"EAappSteam経由チェックボックス": "Sets whether or not the EA app is launched via Steam.\r\nTo use this setting, the EA app must be registered with Steam as a non-Steam game.",
+			"システム解像度変更チェックボックス": "Sets whether the system (PC) display resolution should be changed before starting Apex Legends.\r\nEnabling this setting will prevent the PC from freezing for a few seconds every time you switch from one Apex Legends window to another,\r\nfor example, by pressing Alt+Tab, This will prevent the PC from freezing for a few seconds.\r\n(Only the main display where Apex Legends is displayed is changed. Sub-displays are not changed)",
+			"ディスプレイスケーリングモードヘルプボタン": "Displays a detailed description of the display's scaling mode type.",
+			"ディスプレイスケーリングモード選択リスト": "Sets the display scaling mode for resolution changes.",
+			"ディスプレイリフレッシュレートダイヤル": "Sets the refresh rate when playing.",
+			"ディスプレイ解像度Hダイヤル": "Sets the display resolution (height) when playing.",
+			"ディスプレイ解像度Wダイヤル": "Sets the display resolution (width) when playing.",
+			"ディスプレイ設定プリセット有効項目チェックボックス": "When enabled, settings not supported by the display are also displayed in the preset list.\r\nIf an unsupported resolution or refresh rate is specified, changing the resolution will fail and the game will not start.",
+			"ディスプレイ設定プリセット選択リスト": "When selected, it will be entered automatically.",
+			"フルスクリーンストレッチ有効チェックボックス": "Sets whether or not the display resolution is changed (stretched) when playing Apex Legends.",
+			"プラットフォーム選択リスト": "Select the platform on which Apex Legends is installed.",
+			"戻るボタン": "Back to Profile List"
+		}
+	},
+	"1": {
+		"1": {
+			"1": "Play",
+			"2": "Profile",
+			"3": "Settings"
+		},
+		"2": {
+			"1": "Region: {0} | Last Update: {1} | Data provided by https://apexlegendsstatus.com/",
+			"2": "Crossplay auth",
+			"3": "Lobby/Matchmaking",
+			"4": "Origin logins",
+			"5": "EA Accounts",
+			"6": "LegendUtil API",
+			"7": "Failed to get server status"
+		},
+		"3": {
+			"1": "Play"
+		}
+	},
+	"2": {
+		"1": {
+			"1": "Create a new profile",
+			"2": "Edit the selected profile",
+			"3": "Create a shortcut for the selected profile",
+			"4": "Rename the selected profile",
+			"5": "Delete the selected profile",
+			"6": "Name",
+			"7": "ID",
+			"8": "Display Settings",
+			"9": "Create new profile",
+			"10": "Choose how you would like to create a profile.\r\nA wizard allows you to create profiles from presets.",
+			"11": "Create an empty profile",
+			"12": "Create profiles from presets",
+			"13": "Enter the name of the profile to be created.",
+			"14": "No name entered.",
+			"15": "Profile \"{0}\" was created.",
+			"16": "Rename a profile",
+			"17": "The name of the profile \"{0}\" cannot be changed.",
+			"18": "Enter the name you wish to change.",
+			"19": "The name of the profile has not been entered."
+		}
+	}
+}
