@@ -404,6 +404,7 @@
 					「Enable」=×,
 					「AppID」=「」
 				},
+				「CursorLocker」=○,
 				「Arguments」=「」
 			},
 			「Display」={
@@ -1032,6 +1033,15 @@ Apex Legends が使用するスレッド数を制限したい場合にこの設�
 		終わり
 		設定する手順
 			プロファイルデータ(「Game」)(「Launch_EAapp_Via_Steam」)(「AppID」)=設定値
+		終わり
+	終わり
+	
+	カーソルロックという属性
+		取得する手順
+			プロファイルデータ(「Game」)(「CursorLocker」)を返す
+		終わり
+		設定する手順
+			プロファイルデータ(「Game」)(「CursorLocker」)=設定値
 		終わり
 	終わり
 	

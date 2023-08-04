@@ -84,6 +84,7 @@
 			"ApexLegendsパス自動取得ボタン": "Retrieve the installation location of Apex Legends installed on this PC.\r\nThis should be done when the installation location has been changed, such as when reinstalling the software.",
 			"EAappSteam経由IDテキスト": "Specify the AppID of the EA app registered with Steam.",
 			"EAappSteam経由チェックボックス": "Sets whether or not the EA app is launched via Steam.\r\nTo use this setting, the EA app must be registered with Steam as a non-Steam game.",
+			"カーソルロックチェックボックス": "Enables or disables cursor lock.\r\nIf enabled, it prevents the mouse cursor from protruding from the Apex Legends window when multiple monitors are connected.",
 			"システム解像度変更チェックボックス": "Sets whether the system (PC) display resolution should be changed before starting Apex Legends.\r\nEnabling this setting will prevent the PC from freezing for a few seconds every time you switch from one Apex Legends window to another,\r\nfor example, by pressing Alt+Tab, This will prevent the PC from freezing for a few seconds.\r\n(Only the main display where Apex Legends is displayed is changed. Sub-displays are not changed)",
 			"ディスプレイスケーリングモードヘルプボタン": "Displays a detailed description of the display's scaling mode type.",
 			"ディスプレイスケーリングモード選択リスト": "Sets the display scaling mode for resolution changes.",
