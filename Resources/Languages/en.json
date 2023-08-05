@@ -147,6 +147,39 @@
 			"19": "The name of the profile has not been entered."
 		}
 	},
+	"3": {
+		"1": {
+			"1": "Editing: {0}",
+			"2": "Hover over an item for a description"
+		},
+		"2": {
+			"1": "General",
+			"2": "Launch Options",
+			"3": "Autoexec"
+		},
+		"3": {
+			"1": "Platform",
+			"2": "Apex Legends executable path",
+			"3": "Automatic acquisition (recommended)",
+			"4": "Execute automatic acquisition",
+			"5": "Launch via Steam",
+			"6": "EA app AppID",
+			"7": "Cursor Lock",
+			"8": "Change resolution (stretch)",
+			"9": "Change system resolution",
+			"10": "Scaling Mode",
+			"17": "Alt+Enter auto-press after startup",
+			"14": "Presets",
+			"13": "Refresh Rate",
+			"12": "Resolution",
+			"11": "No Scaling,Stretch,Center",
+			"15": "Automatically filled in when selected",
+			"20": "Wait time",
+			"18": "How to run autopress",
+			"19": "Image Recognition,Time",
+			"21": "sec"
+		}
+	},
 	"4": {
 		"1": {
 			"1": "Changes are saved automatically"
