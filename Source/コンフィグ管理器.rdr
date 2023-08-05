@@ -118,7 +118,7 @@
 					「名前」=「アップデートのリリースチャンネル」,
 					「説明」=「アップデート時にインストールするバージョンのリリースチャンネル」,
 					「型」=文字列,
-					「一覧」={「release」=「Release」,「beta」=「Beta」,「beta_only」=「Beta Only」,「dev」=「Development」}
+					「一覧」={「Release」=「Release」,「Beta」=「Beta」,「Beta Only」=「beta_only」,「Development」=「dev」}
 				},
 				「CustomReleaseChannelUrl」={
 					「初期値」=「」,
