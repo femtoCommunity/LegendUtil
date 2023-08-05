@@ -69,7 +69,8 @@
 			"1": "Failed to load profile.\r\n\r\n<Profile failed to load>\r\n・{0}",
 			"2": "Failed to load profile.\r\n\r\n{0}",
 			"3": "Failed to create profile.\r\n\r\n{0}",
-			"4": "Could not rename profile.\r\n\r\n{0}"
+			"4": "Could not rename profile.\r\n\r\n{0}",
+			"5": "The specified Profile Id {0} does not exist."
 		}
 	},
 	"PanelTitle": {
@@ -179,6 +180,9 @@
 			"19": "Image Recognition,Time",
 			"21": "sec",
 			"22": "Failed to get display settings"
+		},
+		"4": {
+			"1": "Enter any startup arguments not listed below as options here.\nEnter the text of an existing launch argument and run \"Parse\" and LegendUtil will automatically parse and load it."
 		}
 	},
 	"4": {
