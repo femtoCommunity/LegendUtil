@@ -35,7 +35,7 @@
 			"EAapp_Config_Folder_Path;Custom_1": "Select Folder",
 			"EAapp_Config_File_Name;Name": "EA app Config File",
 			"EAapp_Config_File_Name;Desc": "File name of EA app config file\r\nThis field is required if the platform you are playing on is the EA app.\r\n*This config file is different for each account, so if you play with multiple accounts,\r\nyou will need to rename the file each time you switch accounts.",
-			"EAapp_Config_File_Name;Custom_1": "Run auto detection"
+			"EAapp_Config_File_Name;Custom_1": "Run auto-detection"
 		},
 		"Update": {
 			"__Name": "Update",
@@ -48,7 +48,7 @@
 		},
 		"UI_General": {
 			"__Name": "UI - General",
-			"Language;Name": "UI Languages",
+			"Language;Name": "UI Language",
 			"Language;Desc": "User interface display language"
 		},
 		"UI_MainMenu": {
@@ -74,7 +74,7 @@
 	},
 	"PanelTitle": {
 		"MainWindow": {
-			"ProfileManage": "Manage Profiles",
+			"ProfileManage": "Profiles Management",
 			"ProfileEdit": "Edit Profile",
 			"AppSettings": "Application Settings"
 		}
@@ -141,10 +141,15 @@
 			"13": "Enter the name of the profile to be created.",
 			"14": "No name entered.",
 			"15": "Profile \"{0}\" was created.",
-			"16": "Rename a profile",
+			"16": "Rename Profile",
 			"17": "The name of the profile \"{0}\" cannot be changed.",
 			"18": "Enter the name you wish to change.",
 			"19": "The name of the profile has not been entered."
+		}
+	},
+	"4": {
+		"1": {
+			"1": "Changes are saved automatically"
 		}
 	}
 }
