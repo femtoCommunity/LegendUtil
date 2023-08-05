@@ -5,7 +5,12 @@
 	"General": {
 		"General": {
 			"1": "Internal Error",
-			"2": "Native"
+			"2": "Native",
+			"3": "Resolution",
+			"4": "Enable",
+			"5": "Enabled",
+			"6": "Disable",
+			"7": "Disabled"
 		}
 	},
 	"Config": {
@@ -111,10 +116,12 @@
 			"4": "Origin logins",
 			"5": "EA Accounts",
 			"6": "LegendUtil API",
-			"7": "Failed to get server status"
+			"7": "Failed to get server status",
+			"8": "News"
 		},
 		"3": {
-			"1": "Play"
+			"1": "Play",
+			"2": "Failed to get information"
 		}
 	},
 	"2": {
