@@ -71,6 +71,9 @@
 			"3": "Failed to create profile.\r\n\r\n{0}",
 			"4": "Could not rename profile.\r\n\r\n{0}",
 			"5": "The specified Profile Id {0} does not exist."
+		},
+		"3": {
+			"1": "File download failed.\n\n{0}"
 		}
 	},
 	"PanelTitle": {
@@ -84,7 +87,7 @@
 		"ProfileEditPanel": {
 			"AltEnter自動押下チェックボックス": "Sets whether Alt+Enter is automatically pressed after starting Apex Legends.\r\nEnable this setting to turn off the black bars that occur when the resolution is stretched.",
 			"AltEnter自動押下待機時間ダイヤル": "Sets the time (in seconds) to wait between the start of Apex Legends and the automatic press of Alt+Enter.\r\nSince the time until the title screen is displayed varies depending on your environment, please set it according to your environment.",
-			"AltEnter自動押下方法選択リスト": "Sets the method of executing automatic Alt+Enter presses.\r\n  <Image Recognition>\r\n    {0} automatically recognizes the title screen display and performs an automatic Alt+Enter press. To use this setting, an additional file must be downloaded. (The file will be downloaded automatically.)\r\n\r\n  <Time>\r\n    After Apex Legends starts up, it waits for the specified time before executing an automatic Alt+Enter press\r\n    Since the time until the title screen is displayed varies depending on the environment, please set the time according to your environment.",
+			"AltEnter自動押下方法選択リスト": "Sets the method of executing automatic Alt+Enter presses.\n  <Image Recognition>\n    Automatically recognizes the display of the title screen and executes the automatic press of Alt + Enter.\n    Additional file downloads are required when using this setting. (It will be downloaded automatically.)\n\n  <Time>\n    After Apex Legends starts up, it waits for the specified time before executing an automatic Alt+Enter press\n    Since the time until the title screen is displayed varies depending on the environment, please set the time according to your environment.",
 			"ApexLegendsパステキスト": "Set the path to the Apex Legends installation (executable file).\r\nSpecify the path to \"r5apex.exe\", not \"EasyAntiCheat_launcher.exe\".",
 			"ApexLegendsパス自動取得チェックボックス": "Automatically retrieve the Apex Legends installation (executable file) installed on this PC.",
 			"ApexLegendsパス自動取得ボタン": "Retrieve the installation location of Apex Legends installed on this PC.\r\nThis should be done when the installation location has been changed, such as when reinstalling the software.",
@@ -183,10 +186,18 @@
 			"23": "Alt+Enter You are missing a file needed for automatic image processing.\nWould you like to download it?",
 			"24": "Failed to get Apex Legends install location.\nApex Legends may not be installed on the specified platform \"{0}\".",
 			"25": "<Scaling mode of the display>\n- No scaling\n  The displayed screen is centered on the display in its original size.\n  If the resolution is set to a smaller resolution than that of the display, a black band will be created in the excess area.\n\n- Stretching\n  The displayed screen will be scaled to fit the display \"without maintaining the aspect ratio\".\n  Even if the aspect ratio is different, it will be stretched and displayed.\n  This setting is recommended when the resolution is stretched.\n\n- Center\n  The displayed screen is stretched to fit the display \"while maintaining the aspect ratio\".\n  If the aspect ratio is different, a black band will appear in the excess area.",
-			"26": "[Unsupported]"
+			"26": "[Unsupported]",
+			"27": "Your display does not support the selected setting {0}×{1}@{2}Hz ({3}).\nAre you sure you want to set it?\n\n(If you want to stretch, create a custom resolution in the NVIDIA Control Panel, etc., then try again.)",
+			"28": "Downloading required files",
+			"29": "Extracting files",
+			"30": "Done",
+			"31": "Download completed.",
+			"32": "Show non-compliant settings"
 		},
 		"4": {
-			"1": "Enter any startup arguments not listed below as options here.\nEnter the text of an existing launch argument and run \"Parse\" and LegendUtil will automatically parse and load it."
+			"2": "Enter any startup arguments not listed below as options here.\nEnter the text of an existing launch argument and run \"Parse\" and LegendUtil will automatically parse and load it.",
+			"1": "Additional arguments",
+			"3": "Parse"
 		},
 		"5": {
 			"1": "<Statistics>\n- Options: {0}"
