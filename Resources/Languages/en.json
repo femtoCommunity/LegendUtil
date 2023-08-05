@@ -177,7 +177,8 @@
 			"20": "Wait time",
 			"18": "How to run autopress",
 			"19": "Image Recognition,Time",
-			"21": "sec"
+			"21": "sec",
+			"22": "Failed to get display settings"
 		}
 	},
 	"4": {
