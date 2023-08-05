@@ -71,6 +71,9 @@
 			"3": "Failed to create profile.\r\n\r\n{0}",
 			"4": "Could not rename profile.\r\n\r\n{0}",
 			"5": "The specified Profile Id {0} does not exist."
+		},
+		"3": {
+			"1": "File download failed.\n\n{0}"
 		}
 	},
 	"PanelTitle": {
@@ -183,7 +186,13 @@
 			"23": "Alt+Enter You are missing a file needed for automatic image processing.\nWould you like to download it?",
 			"24": "Failed to get Apex Legends install location.\nApex Legends may not be installed on the specified platform \"{0}\".",
 			"25": "<Scaling mode of the display>\n- No scaling\n  The displayed screen is centered on the display in its original size.\n  If the resolution is set to a smaller resolution than that of the display, a black band will be created in the excess area.\n\n- Stretching\n  The displayed screen will be scaled to fit the display \"without maintaining the aspect ratio\".\n  Even if the aspect ratio is different, it will be stretched and displayed.\n  This setting is recommended when the resolution is stretched.\n\n- Center\n  The displayed screen is stretched to fit the display \"while maintaining the aspect ratio\".\n  If the aspect ratio is different, a black band will appear in the excess area.",
-			"26": "[Unsupported]"
+			"26": "[Unsupported]",
+			"27": "Your display does not support the selected setting {0}×{1}@{2}Hz ({3}).\nAre you sure you want to set it?\n\n(If you want to stretch, create a custom resolution in the NVIDIA Control Panel, etc., then try again.)",
+			"28": "Downloading required files",
+			"29": "Extracting files",
+			"30": "Done",
+			"31": "Download completed.",
+			"32": "Show non-compliant settings"
 		},
 		"4": {
 			"1": "Enter any startup arguments not listed below as options here.\nEnter the text of an existing launch argument and run \"Parse\" and LegendUtil will automatically parse and load it."
