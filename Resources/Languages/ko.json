@@ -66,7 +66,8 @@
 			"Choices": "有効",
 			"Desc": "DirectX 12 でゲームを起動します。\r\nDirectX 12 を使用すると、ゲームがCPU グラフィック コードを複数のコアに分散できるようになり、フレームレートの向上が期待できます。\r\n環境によっては、テクスチャーが正常に表示されないなど、不具合が発生する可能性があります。",
 			"DisabledText": "無効",
-			"Name": "DirectX 12 を有効化 (ベータ)"
+			"Name": "DirectX 12 を有効化 (ベータ)",
+			"AdditionalButtonText": "DirectX 12 に関する詳しい情報 (Reddit)"
 		},
 		"-forcenovsync": {
 			"Category": "グラフィック",
@@ -196,7 +197,7 @@
 		},
 		"+cl_liveapi_ws_keepalive": {
 			"Category": "Live API",
-			"Choices": "指定",
+			"Choices": "有効",
 			"Desc": "接続された任意のサーバーにPingを送信する間隔を指定します。",
 			"DisabledText": "無効化しない",
 			"Name": "WebSocket | Ping送信間隔"
@@ -287,6 +288,9 @@
 		},
 		"__Category": {
 			"List": "コンフィグ,全般,グラフィック,システム,CPU,マウス/コントローラー,Live API"
+		},
+		"__Placeholder": {
+			"Text": "<指定値>"
 		}
 	},
 	"ErrorMessage": {
