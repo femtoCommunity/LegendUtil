@@ -4,8 +4,8 @@
 #define MyAppName "LegendUtil"
 #define MyAppVersion "0.1.0"
 #define MyAppReleaseChannel "beta"
-#define MyAppReleaseNumber "6"
-#define MyAppVersionText "0.1.0-beta.6"
+#define MyAppReleaseNumber "10"
+#define MyAppVersionText "0.1.0-beta.10"
 #define MyAppPublisher "femto Community Software Team"
 #define MyAppCopyrighter "Milkeyyy"
 #define MyAppURL "https://github.com/femtoCommunity/LegendUtil"
@@ -67,6 +67,8 @@ Type: files; Name: "{app}\Milkeyyy.ControlSR.dll"
 Type: files; Name: "{app}\ResolutionChangerPlugin.dll"
 Type: files; Name: "{app}\Transitions.dll"
 Type: files; Name: "{app}\Transitions.rdr.dll"
+Type: filesandordirs; Name: "{app}\runtimes\win-arm64"
+Type: filesandordirs; Name: "{app}\runtimes\win-x86"
 
 [Registry]
 Root: HKA; Subkey: "Software\Classes\{#MyAppAssocExt}\OpenWithProgids"; ValueType: string; ValueName: "{#MyAppAssocKey}"; ValueData: ""; Flags: uninsdeletevalue
