@@ -60,6 +60,239 @@
 			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West"
 		}
 	},
+	"LaunchOption": {
+		"-eac_launcher_settings": {
+			"Category": "Graphics",
+			"Choices": "Enable",
+			"Desc": "Launch your game with DirectX 12.\nUsing DirectX 12 allows the game to distribute the CPU graphics code across multiple cores, which can result in higher frame rates.\nIn some environments, this may cause problems, such as textures not displaying properly.",
+			"DisabledText": "Disable",
+			"Name": "Enable DirectX 12 (Beta)",
+			"AdditionalButtonText": "More information about DirectX 12 (Reddit)"
+		},
+		"-forcenovsync": {
+			"Category": "Graphics",
+			"Choices": "Force Disable V-SYNC",
+			"Desc": "Forces the V-SYNC to be disabled.",
+			"DisabledText": "Don't Force Disable V-SYNC",
+			"Name": "Force Disable V-SYNC"
+		},
+		"-fullscreen": {
+			"Category": "Graphics",
+			"Choices": "Enable",
+			"Desc": "Start the game with the window in full screen.",
+			"DisabledText": "Disable",
+			"Name": "Fullscreen"
+		},
+		"-high": {
+			"Category": "CPU",
+			"Choices": "Change CPU priority to \"High\"",
+			"Desc": "Change the CPU priority of Apex Legends to \"High\".\nChanging this may lead to performance improvements, though,\nApex Legends CPU usage will increase and may cause system and other applications to become unstable.",
+			"DisabledText": "Disable",
+			"Name": "Change priority to \"high\""
+		},
+		"-limitvsconst": {
+			"Category": "Graphics",
+			"Choices": "Enable",
+			"Desc": "Change the number of vertex shaders to 256. Changes may lead to better performance.",
+			"DisabledText": "No override",
+			"Name": "Change the number of vertex shaders"
+		},
+		"-noff": {
+			"Category": "Mouse/Controller",
+			"Choices": "Disable vibration function",
+			"Desc": "Disables the vibration function of the controller in the game. The vibration function will no longer function in-game.\nDisabling it may lead to improved performance.",
+			"DisabledText": "Don't Disable Vibration Function",
+			"Name": "Disable Vibration Function"
+		},
+		"-nojoy": {
+			"Category": "Mouse/Controller",
+			"Choices": "Disable joystick function",
+			"Desc": "Disables the joystick function of the controller. You will no longer be able to use the joystick in-game.\nDisabling it may lead to improved performance.",
+			"DisabledText": "Don't Disable Joystick Function",
+			"Name": "Disable Joystick Function"
+		},
+		"-nomouse": {
+			"Category": "Mouse/Controller",
+			"Choices": "Disable Mouse Function",
+			"Desc": "Disables mouse functionality. You will not be able to use the mouse in the game.\nDisabling it may lead to improved performance.",
+			"DisabledText": "Don't Disable Mouse Function",
+			"Name": "Disable Mouse Function"
+		},
+		"-novid": {
+			"Category": null,
+			"Choices": "Disable splash movie",
+			"Desc": "Disables EA's unique explosive splash movie, reducing startup time and preventing eardrum damage.",
+			"DisabledText": "Don't disable splash movie",
+			"Name": "Disable Splash Movie"
+		},
+		"-preload": {
+			"Category": "System",
+			"Choices": "Enable",
+			"Desc": "Priority is given to loading the necessary data at game startup.\nThis may lead to improved performance when playing, but may increase RAM usage and increase loading time.",
+			"DisabledText": "Disable",
+			"Name": "Prioritize reading necessary data at startup"
+		},
+		"-refresh": {
+			"Category": "Graphics",
+			"Choices": "Specified Input,60 Hz,95 Hz,120 Hz,144 Hz,240 Hz,360 Hz",
+			"Desc": "Sets the upper limit of the refresh rate.",
+			"DisabledText": "Not set",
+			"Name": "Refresh rate upper limit"
+		},
+		"-threads": {
+			"Category": "CPU",
+			"Choices": "Change the number of threads",
+			"Desc": "Change the number of CPU threads used by Apex Legends.\nNormally, Apex Legends automatically uses all threads, so no configuration is required.\nChange this setting if you want to limit the number of threads Apex Legends uses.",
+			"DisabledText": "No changes",
+			"Name": "Change number of threads"
+		},
+		"+building_cubemaps": {
+			"Category": "Graphics",
+			"Choices": "",
+			"Desc": "This argument is automatically enabled when resolution changing is enabled.",
+			"DisabledText": "Enable",
+			"Name": "Only for resolution change setting | +building_cubemaps"
+		},
+		"+cl_forcepreload": {
+			"Category": "System",
+			"Choices": "Enable",
+			"Desc": "Pre-load data such as maps and sounds required for play.\nThis may lead to better performance when playing, but may increase RAM usage and increase load times.",
+			"DisabledText": "Disable",
+			"Name": "Pre-load the data necessary for play"
+		},
+		"+cl_fovScale": {
+			"Category": "Graphics",
+			"Choices": "Change FOV",
+			"Desc": "Change the field of view (FOV).",
+			"DisabledText": "No changes",
+			"Name": "Change FOV"
+		},
+		"+cl_liveapi_allow_requests": {
+			"Category": "Live API",
+			"Choices": "Enable",
+			"Desc": "Allows processing and execution of incoming requests.",
+			"DisabledText": "Enable",
+			"Name": "Allow processing and execution of incoming requests"
+		},
+		"+cl_liveapi_enabled": {
+			"Category": "Live API",
+			"Choices": "Enable",
+			"Desc": "Enable Live API.",
+			"DisabledText": "Enable",
+			"Name": "Enable Live API"
+		},
+		"+cl_liveapi_pretty_print_log": {
+			"Category": "Live API",
+			"Choices": "Enable",
+			"Desc": "Formats the JSON output to be more human readable.",
+			"DisabledText": "Enable",
+			"Name": "Pretty JSON output"
+		},
+		"+cl_liveapi_use_protobuf": {
+			"Category": "Live API",
+			"Choices": "Enable",
+			"Desc": "When enabled, uses protobuf as serialization format.\nWhen disabled, uses JSON as the serialization format.",
+			"DisabledText": "Enable",
+			"Name": "Use protobuf as serialization format"
+		},
+		"+cl_liveapi_ws_keepalive": {
+			"Category": "Live API",
+			"Choices": "Enable",
+			"Desc": "Specifies the interval at which to ping any connected server.",
+			"DisabledText": "Enable",
+			"Name": "WebSocket | Keepalive interval"
+		},
+		"+cl_liveapi_ws_retry_count": {
+			"Category": "Live API",
+			"Choices": "Enable",
+			"Desc": "Specifies the number of retries before failing to connect.",
+			"DisabledText": "Enable",
+			"Name": "WebSocket | Number of retries"
+		},
+		"+cl_liveapi_ws_retry_time": {
+			"Category": "Live API",
+			"Choices": "Enable",
+			"Desc": "Specifies the time (in seconds) before retrying.",
+			"DisabledText": "Enable",
+			"Name": "WebSocket | Retry time"
+		},
+		"+cl_liveapi_ws_servers": {
+			"Category": "Live API",
+			"Choices": "Enable",
+			"Desc": "Specifies a WebSocket server.\nIf you specify more than one, separate them with \",\".",
+			"DisabledText": "Enable",
+			"Name": "WebSocket | Server list"
+		},
+		"+cl_liveapi_ws_timeout": {
+			"Category": "Live API",
+			"Choices": "Enable",
+			"Desc": "Specify the time (seconds) until timeout.",
+			"DisabledText": "Enable",
+			"Name": "WebSocket | Timeout period"
+		},
+		"+cl_ragdoll_collide": {
+			"Category": "Graphics",
+			"Choices": "Enable",
+			"Desc": "Change the physical behavior of dead bodies and other objects. Changes may lead to improved performance.",
+			"DisabledText": "No override",
+			"Name": "Change physics behavior"
+		},
+		"+cl_showfps": {
+			"Category": "System",
+			"Choices": "Enable",
+			"Desc": "Enables the overlay display of performance information such as ping for FPS and servers.\nThis setting is similar to the \"Performance Display\" setting in the in-game settings.",
+			"DisabledText": "Enable",
+			"Name": "Enable performance information overlay display"
+		},
+		"+cl_showpos": {
+			"Category": "System",
+			"Choices": "Enable",
+			"Desc": "Enable overlay display of information such as username, position coordinates, and movement speed.",
+			"DisabledText": "Enable",
+			"Name": "Enable player info overlay"
+		},
+		"+CrossPlay_user_optin": {
+			"Category": "System",
+			"Choices": "Disable crossplay",
+			"Desc": "Force disable crossplay.",
+			"DisabledText": "Enable",
+			"Name": "Disable crossplay"
+		},
+		"+exec": {
+			"Category": "Config",
+			"Choices": "Profile,Specify",
+			"Desc": "Load the autoexec file and apply the config when the game starts.\nautoexec can be edited from the \"Autoexec\" tab.",
+			"DisabledText": "Disable",
+			"Name": "Load autoexec"
+		},
+		"+fps_max": {
+			"Category": "Graphics",
+			"Choices": "Unlimited,Specified Input,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
+			"Desc": "Set the upper limit of FPS.",
+			"DisabledText": "Not set",
+			"Name": "FPS upper limit"
+		},
+		"+m_rawinput": {
+			"Category": "Mouse/Controller",
+			"Choices": "Enable",
+			"Desc": "Enable mouse raw input.",
+			"DisabledText": "Don't enable",
+			"Name": "Enable Raw Input"
+		},
+		"+mat_queue_mode": {
+			"Category": "CPU",
+			"Choices": "<Recommended> Multi,Single (Asynchronous),Single (Sync),System,Legacy",
+			"Desc": "Change the CPU thread mode. Depending on your settings, it may lead to better performance.",
+			"DisabledText": "No changes",
+			"Name": "Change thread mode"
+		},
+		"__Category": {
+			"List": "Config,General,Graphics,System,CPU,Mouse/Controller,Live API"
+		},
+		"__Placeholder": {
+			"Text": "<Value>"
+		}
+	},
 	"ErrorMessage": {
 		"1": {
 			"1": "Failed to get server status.\r\n\r\n{0}",
