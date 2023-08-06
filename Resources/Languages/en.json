@@ -66,7 +66,8 @@
 			"Choices": "Enable",
 			"Desc": "Launch your game with DirectX 12.\nUsing DirectX 12 allows the game to distribute the CPU graphics code across multiple cores, which can result in higher frame rates.\nIn some environments, this may cause problems, such as textures not displaying properly.",
 			"DisabledText": "Disable",
-			"Name": "Enable DirectX 12 (Beta)"
+			"Name": "Enable DirectX 12 (Beta)",
+			"AdditionalButtonText": "More information about DirectX 12 (Reddit)"
 		},
 		"-forcenovsync": {
 			"Category": "Graphics",
@@ -91,10 +92,10 @@
 		},
 		"-limitvsconst": {
 			"Category": "Graphics",
-			"Choices": "Change the number of vertex shaders",
+			"Choices": "Enable",
 			"Desc": "Change the number of vertex shaders to 256. Changes may lead to better performance.",
 			"DisabledText": "No override",
-			"Name": "Override"
+			"Name": "Change the number of vertex shaders"
 		},
 		"-noff": {
 			"Category": "Mouse/Controller",
@@ -196,7 +197,7 @@
 		},
 		"+cl_liveapi_ws_keepalive": {
 			"Category": "Live API",
-			"Choices": "SSpecified input",
+			"Choices": "Enable",
 			"Desc": "Specifies the interval at which to ping any connected server.",
 			"DisabledText": "Enable",
 			"Name": "WebSocket | Keepalive interval"
@@ -206,14 +207,14 @@
 			"Choices": "Enable",
 			"Desc": "Specifies the number of retries before failing to connect.",
 			"DisabledText": "Enable",
-			"Name": "WebSocket | number of retries"
+			"Name": "WebSocket | Number of retries"
 		},
 		"+cl_liveapi_ws_retry_time": {
 			"Category": "Live API",
 			"Choices": "Enable",
 			"Desc": "Specifies the time (in seconds) before retrying.",
 			"DisabledText": "Enable",
-			"Name": "WebSocket | Retry Time"
+			"Name": "WebSocket | Retry time"
 		},
 		"+cl_liveapi_ws_servers": {
 			"Category": "Live API",
@@ -227,7 +228,7 @@
 			"Choices": "Enable",
 			"Desc": "Specify the time (seconds) until timeout.",
 			"DisabledText": "Enable",
-			"Name": "WebSocket | timeout period"
+			"Name": "WebSocket | Timeout period"
 		},
 		"+cl_ragdoll_collide": {
 			"Category": "Graphics",
@@ -269,7 +270,7 @@
 			"Choices": "Unlimited,Specified Input,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
 			"Desc": "Set the upper limit of FPS.",
 			"DisabledText": "Not set",
-			"Name": "Max FPS"
+			"Name": "FPS upper limit"
 		},
 		"+m_rawinput": {
 			"Category": "Mouse/Controller",
@@ -287,6 +288,9 @@
 		},
 		"__Category": {
 			"List": "Config,General,Graphics,System,CPU,Mouse/Controller,Live API"
+		},
+		"__Placeholder": {
+			"Text": "<Value>"
 		}
 	},
 	"ErrorMessage": {
