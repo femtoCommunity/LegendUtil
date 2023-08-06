@@ -207,5 +207,10 @@
 		"1": {
 			"1": "Changes are saved automatically"
 		}
+	},
+	"LaunchOption": {
+		"+exec": {
+			"Name": "autoexec を読み込む"
+		}
 	}
 }
