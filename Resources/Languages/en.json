@@ -284,6 +284,9 @@
 			"Desc": "Change the CPU thread mode. Depending on your settings, it may lead to better performance.",
 			"DisabledText": "No changes",
 			"Name": "Change thread mode"
+		},
+		"__Category": {
+			"List": "Config,General,Graphics,System,CPU,Mouse/Controller,Live API"
 		}
 	},
 	"ErrorMessage": {
