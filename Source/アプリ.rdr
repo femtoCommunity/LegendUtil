@@ -39,7 +39,7 @@
 	
 	+コンフィグフォルダー:フォルダ情報
 	
-	+APIアドレス:文字列=「legendutil_mbapi-1-z1481468.deta.app」
+	+APIアドレス:文字列=「api.legendutil.milkeyyy.com」
 	+APIURL:文字列=「https://[APIアドレス]」
 	
 	+GitHubリポジトリーURL:文字列=「https://github.com/femtoCommunity/LegendUtil」
