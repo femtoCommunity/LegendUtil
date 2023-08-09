@@ -313,7 +313,8 @@
 		"MainWindow": {
 			"ProfileManage": "プロファイル管理",
 			"ProfileEdit": "プロファイル編集",
-			"AppSettings": "アプリケーション設定"
+			"AppSettings": "アプリケーション設定",
+			"OpenSourceLicenses": "オープンソースライセンス"
 		}
 	},
 	"Tooltip": {
