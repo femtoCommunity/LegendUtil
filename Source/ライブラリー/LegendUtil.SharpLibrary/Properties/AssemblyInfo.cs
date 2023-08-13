@@ -17,8 +17,8 @@ using System.Runtime.InteropServices;
 
 [assembly: PluginName("LegendUtil.SharpLibrary")]
 [assembly: PluginDescription("LegendUtil.SharpLibrary")]
-[assembly: PluginVersion("0.1.0")]
-[assembly: PluginAcceptVersion("0.1.0")]
+[assembly: PluginVersion("0.2.0")]
+[assembly: PluginAcceptVersion("0.2.0")]
 
 // ComVisible を false に設定すると、このアセンブリ内の型は COM コンポーネントから
 // 参照できなくなります。COM からこのアセンブリ内の型にアクセスする必要がある場合は、
@@ -38,5 +38,5 @@ using System.Runtime.InteropServices;
 // すべての値を指定するか、次を使用してビルド番号とリビジョン番号を既定に設定できます
 // 既定値にすることができます:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.1.0.0")]
-[assembly: AssemblyFileVersion("0.1.0.0")]
+[assembly: AssemblyVersion("0.2.0.0")]
+[assembly: AssemblyFileVersion("0.2.0.0")]

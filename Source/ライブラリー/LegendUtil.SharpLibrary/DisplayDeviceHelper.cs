@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Security.RightsManagement;
 using System.Windows.Forms;
 using static OpenCvSharp.Stitcher;
 
@@ -51,6 +52,19 @@ namespace LegendUtil.SharpLibrary
 				var result = DisplayManager.ChangeDisplaySettingsEx(デバイス名, ref mode, IntPtr.Zero, フラグ, IntPtr.Zero);
 
 				return result;
+			}
+
+			public ディスプレイ設定 設定を取得する([から] string デバイス名)
+			{
+
+				int modeIndex = -1;
+
+				var mode = new DEVMODE();
+				mode.dmSize = (short)Marshal.SizeOf(mode);
+
+				DisplayManager.EnumDisplaySettings(デバイス名, modeIndex, ref mode);
+
+				return new ディスプレイ設定(mode.dmPelsWidth, mode.dmPelsHeight, mode.dmDisplayFrequency, mode.dmDisplayFixedOutput);
 			}
 
 			//[自分("で")]
@@ -105,7 +119,7 @@ namespace LegendUtil.SharpLibrary
 
 				while (DisplayManager.EnumDisplaySettings(デバイス名, modeIndex, ref mode))
 				{
-					list.Add(new ディスプレイ設定(mode.dmPelsWidth, mode.dmPelsHeight, mode.dmDisplayFrequency));
+					list.Add(new ディスプレイ設定(mode.dmPelsWidth, mode.dmPelsHeight, mode.dmDisplayFrequency, mode.dmDisplayFixedOutput));
 					modeIndex++;
 				}
 				return list.ToArray();
@@ -267,11 +281,13 @@ namespace LegendUtil.SharpLibrary
 
 		public class ディスプレイ設定 : IProduireClass
 		{
-			public ディスプレイ設定(int w, int h, int fq)
+			public ディスプレイ設定(int w, int h, int fq, int dfo)
 			{
 				this.w = w;
 				this.h = h;
 				this.fq = fq;
+				this.dfo = dfo;
+				this.list = new int[4] {w, h, fq, dfo};
 			}
 
 			public readonly int w;
@@ -285,6 +301,14 @@ namespace LegendUtil.SharpLibrary
 			public readonly int fq;
 			[設定項目]
 			public int リフレッシュレート => fq;
+
+			public readonly int dfo;
+			[設定項目]
+			public int スケーリングモード => dfo;
+
+			public readonly Array list;
+			[設定項目]
+			public Array 一覧 => list;
 		}
 
 		[StructLayout(LayoutKind.Sequential)]
