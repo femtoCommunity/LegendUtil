@@ -281,7 +281,7 @@ namespace LegendUtil.SharpLibrary
 			public readonly int h;
 			[設定項目]
 			public int 高さ => h;
-			
+
 			public readonly int fq;
 			[設定項目]
 			public int リフレッシュレート => fq;
