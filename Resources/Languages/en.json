@@ -338,7 +338,8 @@
 			"ディスプレイ設定プリセット選択リスト": "When selected, it will be entered automatically.",
 			"フルスクリーンストレッチ有効チェックボックス": "Sets whether or not the display resolution is changed (stretched) when playing Apex Legends.",
 			"プラットフォーム選択リスト": "Select the platform on which Apex Legends is installed.",
-			"戻るボタン": "Back to Profile List"
+			"戻るボタン": "Back to Profile List",
+			"ディスプレイ解像度テストボタン": "Tests if it can be displayed normally after changing to the specified display settings."
 		}
 	},
 	"1": {
