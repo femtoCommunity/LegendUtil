@@ -5,7 +5,7 @@
 ---
 
 
-[![Licence](https://img.shields.io/github/license/femtoCommunity/LegendUtil?style=for-the-badge)](https://opensource.org/license/mit/)
+[![Licence](https://img.shields.io/github/license/femtoCommunity/LegendUtil?style=for-the-badge)](./README.md#-ライセンス)
 
 [![Downloads](https://img.shields.io/github/downloads/femtoCommunity/LegendUtil/total?style=for-the-badge)](https://github.com/femtoCommunity/LegendUtil/releases)
 
@@ -80,17 +80,22 @@ winget install femtoCommunity.LegendUtil
 
 ---
 
-- [開発計画](https://github.com/orgs/femtoCommunity/projects/1/views/2?layout=board)
+## 📒 ライセンス
+Copyright (C) 2023 Milkeyyy
+
+LegendUtil は [GNU General Public License 3.0](https://opensource.org/license/gpl-3-0/) のもとでライセンスされています。
+
+---
 
 ## 開発者
 - **ソフトウェア**
   - **Milkeyyy** - [femto Community](https://femtocommunity.com/)
     - [GitHub](https://github.com/Milkeyyy)
-    - [Twitter](https://twitter.com/Milkeyyy_53)
+    - [X](https://x.com/Milkeyyy_53)
     - [Website](https://milkeyyy.com/)
     - [Ko-fiで開発をサポートする](https://ko-fi.com/milkeyyy)
 - **ロゴデザイン**
   - **Rel1c** (Rel1cStyle) - [femto Community](https://femtocommunity.com/)
     - [GitHub](https://github.com/Rel1c393)
-    - [Twitter](https://twitter.com/Apex_tyaneko) / [Twitter (Brand)](https://twitter.com/Rel1cStyle)
+    - [X](https://x.com/Apex_tyaneko) / [X (Brand)](https://x.com/Rel1cStyle)
     - [Website](https://rel1c.work/)
