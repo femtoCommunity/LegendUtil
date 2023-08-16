@@ -5,7 +5,7 @@
 ---
 
 
-[![Licence](https://img.shields.io/github/license/femtoCommunity/LegendUtil?style=for-the-badge)](./README.md#-ライセンス)
+[![Licence](https://img.shields.io/github/license/femtoCommunity/LegendUtil?style=for-the-badge)](#-ライセンス)
 
 [![Downloads](https://img.shields.io/github/downloads/femtoCommunity/LegendUtil/total?style=for-the-badge)](https://github.com/femtoCommunity/LegendUtil/releases)
 
