@@ -152,7 +152,8 @@
 					「説明」=「メインメニューに表示されるサーバーステータスの地域」,
 					「型」=文字列,
 					「一覧」={「アジア」=「Asia」,「東ヨーロッパ」=「EU-East」,「西ヨーロッパ」=「EU-West」,「アメリカ南部」=「SouthAmerica」,「アメリカ中部」=「US-Central」,「アメリカ東部」=「US-East」,「アメリカ西部」=「US-West」}
-				}
+				},
+				「ProfileList_SelectedIndex」={「設定可能」=×,「初期値」=「1」}
 			},
 			「Window_Main」={
 				「Profile_Sort_Order」={「初期値」=「1」},
