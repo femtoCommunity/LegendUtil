@@ -60,6 +60,7 @@ Source: "..\..\_Pack\LegendUtil\*"; DestDir: "{app}"; Flags: ignoreversion recur
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [InstallDelete]
+Type: files; Name: "{app}\License.txt"
 Type: files; Name: "{app}\LegendUtil.CursorLocker.dll"
 Type: files; Name: "{app}\LegendUtil.DisplayDeviceHelper.dll"
 Type: files; Name: "{app}\LockCursorInWindowPlugin.dll"
@@ -67,6 +68,8 @@ Type: files; Name: "{app}\Milkeyyy.ControlSR.dll"
 Type: files; Name: "{app}\ResolutionChangerPlugin.dll"
 Type: files; Name: "{app}\Transitions.dll"
 Type: files; Name: "{app}\Transitions.rdr.dll"
+Type: filesandordirs; Name: "{app}\runtimes\win-arm64"
+Type: filesandordirs; Name: "{app}\runtimes\win-x86"
 
 [Registry]
 Root: HKA; Subkey: "Software\Classes\{#MyAppAssocExt}\OpenWithProgids"; ValueType: string; ValueName: "{#MyAppAssocKey}"; ValueData: ""; Flags: uninsdeletevalue
