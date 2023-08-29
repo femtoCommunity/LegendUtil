@@ -54,6 +54,7 @@ namespace LegendUtil.SharpLibrary
 				return result;
 			}
 
+			[自分("で")]
 			public ディスプレイ設定 設定を取得する([から] string デバイス名)
 			{
 
