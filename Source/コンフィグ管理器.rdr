@@ -29,7 +29,7 @@
 					「一覧」=ウィンドウ管理器のテーマ項目一覧
 				}
 			},
-			「Display」={
+			/*「Display」={
 				「__Name」=「ディスプレイ」,
 				「Resolution_Width」={
 					「初期値」=「1920」,
@@ -55,8 +55,8 @@
 					「最小値」=60,
 					「最大値」=360
 				}
-			},
-			「General」={
+			},*/
+			/*「General」={
 				「__Name」=「全般」,
 				「EAapp_Config_Folder_Path」={
 					「初期値」=「」,
@@ -104,29 +104,7 @@
 						』
 					}
 				}
-			},
-			「Update」={
-				「__Name」=「アップデート」,
-				「CheckForUpdatesOnAppLaunch」={
-					「初期値」=○,
-					「名前」=「アプリの起動時にアップデートを確認する」,
-					「説明」=「アプリの起動時にアップデートの確認を行うかどうか」,
-					「型」=真偽値
-				},
-				「ReleaseChannel」={
-					「初期値」=「[アプリのリリースチャンネル]」,
-					「名前」=「アップデートのリリースチャンネル」,
-					「説明」=「アップデート時にインストールするバージョンのリリースチャンネル」,
-					「型」=文字列,
-					「一覧」={「Release」=「release」,「Beta」=「beta」,「Beta Only」=「beta_only」,「Development (Stable)」=「dev_stable」,「Development (Unstable)」=「dev」}
-				},
-				「CustomReleaseChannelUrl」={
-					「初期値」=「」,
-					「名前」=「カスタムリリースチャンネルURL」,
-					「説明」=「※開発用※」,
-					「型」=文字列
-				}
-			},
+			},*/
 			「UI_General」={
 				「__Name」=「UI - 全般」,
 				「Language」={
@@ -154,6 +132,28 @@
 					「一覧」={「アジア」=「Asia」,「東ヨーロッパ」=「EU-East」,「西ヨーロッパ」=「EU-West」,「アメリカ南部」=「SouthAmerica」,「アメリカ中部」=「US-Central」,「アメリカ東部」=「US-East」,「アメリカ西部」=「US-West」}
 				},
 				「ProfileList_SelectedIndex」={「設定可能」=×,「初期値」=「1」}
+			},
+			「Update」={
+				「__Name」=「アップデート」,
+				「CheckForUpdatesOnAppLaunch」={
+					「初期値」=○,
+					「名前」=「アプリの起動時にアップデートを確認する」,
+					「説明」=「アプリの起動時にアップデートの確認を行うかどうか」,
+					「型」=真偽値
+				},
+				「ReleaseChannel」={
+					「初期値」=「[アプリのリリースチャンネル]」,
+					「名前」=「アップデートのリリースチャンネル」,
+					「説明」=「アップデート時にインストールするバージョンのリリースチャンネル」,
+					「型」=文字列,
+					「一覧」={「Release」=「release」,「Beta」=「beta」,「Beta Only」=「beta_only」,「Development (Stable)」=「dev_stable」,「Development (Unstable)」=「dev」}
+				},
+				「CustomReleaseChannelUrl」={
+					「初期値」=「」,
+					「名前」=「カスタムリリースチャンネルURL」,
+					「説明」=「※開発用※」,
+					「型」=文字列
+				}
 			},
 			「Window_Main」={
 				「Profile_Sort_Order」={「初期値」=「1」},
@@ -270,14 +270,6 @@
 				繰り返しから抜け出す
 			もし終わり
 		繰り返し終わり
-		
-		// 現在のディスプレイ設定を取得してコンフィグに設定する
-		もし初回起動なら
-			【現在ディスプレイ設定:ディスプレイ設定】=ディスプレイ管理器:メインディスプレイ名から設定を取得したもの
-			メイン設定について「Display」で「Resolution_Width」へ現在ディスプレイ設定の幅を設定する
-			メイン設定について「Display」で「Resolution_Height」へ現在ディスプレイ設定の高さを設定する
-			メイン設定について「Display」で「RefreshRate」へ現在ディスプレイ設定のリフレッシュレートを設定する
-		もし終わり
 		
 		// ウィンドウのテーマを設定する
 		ウィンドウ管理器のテーマ名=メイン設定について「Design」から「Theme」を取得したもの
