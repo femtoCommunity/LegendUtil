@@ -7,7 +7,11 @@
 「..\Resources\Logo\LegendUtil_Icon_Transparent.png」を素材として利用する
 「..\Resources\Logo\LegendUtil_Banner_WithoutText.png」を素材として利用する
 
+「..\Resources\Logo\LegendUtil_LogoType_Transparent.png」を素材として利用する
+
 「..\Resources\Images\kofi_button_red.png」を素材として利用する
+
+「..\Resources\Images\Splash\SplashImage.jpg」を素材として利用する
 
 アプリとは
 	単一種類
@@ -29,6 +33,7 @@
 	+アイコン画像:画像
 	+アイコン透過画像:画像
 	+バナー画像:画像
+	+ロゴタイプ画像:画像=「LegendUtil_LogoType_Transparent.png」を素材リストから画像として取得したもの
 	
 	+設計スケールモード:文字列=「Dpi」
 	+設計スケール比率:整数の配列={96,96}
