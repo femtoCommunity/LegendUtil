@@ -424,7 +424,15 @@
 					「AppID」=「」
 				},
 				「CursorLocker」=○,
-				「Arguments」=「」
+				「Arguments」=「」,
+				「Config_File」={
+					「Type」=2, // 読み込むコンフィグファイル 1=共通 2=プロファイル固有
+					「Read_Only」=×
+				},
+				「Video_Config_File」={
+					「Type」=2, // 読み込むビデオコンフィグファイル 1=共通 2=プロファイル固有
+					「Read_Only」=×
+				}
 			},
 			「Display」={
 				「Change_Game_Resolution」=×,
@@ -1071,6 +1079,42 @@ Apex Legends が使用するスレッド数を制限したい場合にこの設�
 		終わり
 		設定する手順
 			プロファイルデータ(「Game」)(「Arguments」)=設定値
+		終わり
+	終わり
+	
+	コンフィグ指定という属性
+		取得する手順
+			プロファイルデータ(「Game」)(「Config_File」)(「Type」)を返す
+		終わり
+		設定する手順
+			プロファイルデータ(「Game」)(「Config_File」)(「Type」)=設定値
+		終わり
+	終わり
+	
+	コンフィグ読み取り専用という属性
+		取得する手順
+			プロファイルデータ(「Game」)(「Config_File」)(「Read_Only」)を返す
+		終わり
+		設定する手順
+			プロファイルデータ(「Game」)(「Config_File」)(「Read_Only」)=設定値
+		終わり
+	終わり
+	
+	ビデオコンフィグ指定という属性
+		取得する手順
+			プロファイルデータ(「Game」)(「Video_Config_File」)(「Type」)を返す
+		終わり
+		設定する手順
+			プロファイルデータ(「Game」)(「Video_Config_File」)(「Type」)=設定値
+		終わり
+	終わり
+	
+	ビデオコンフィグ読み取り専用という属性
+		取得する手順
+			プロファイルデータ(「Game」)(「Video_Config_File」)(「Read_Only」)を返す
+		終わり
+		設定する手順
+			プロファイルデータ(「Game」)(「Video_Config_File」)(「Read_Only」)=設定値
 		終わり
 	終わり
 	
