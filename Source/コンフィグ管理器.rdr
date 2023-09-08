@@ -14,6 +14,7 @@
 		「Resources\TitleScreenImage」,
 		「Resources\News」,
 		「Resources\News\Image」
+		「Temp」
 	}
 	
 	+初回起動:真偽値
