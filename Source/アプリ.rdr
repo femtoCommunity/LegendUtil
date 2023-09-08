@@ -19,7 +19,8 @@
 	+名前:文字列
 	
 	//----- バージョン関連 -----//
-	+リリースチャンネル:文字列=「dev_stable」 // dev,dev_stable,beta,release
+	//+リリースチャンネル:文字列=「dev」 // dev,dev_stable,beta,release
+	+リリースチャンネル:文字列=「dev」
 	
 	+バージョン:文字列
 	+バージョン配列:配列
@@ -58,15 +59,19 @@
 	
 	+追加ファイル一覧:辞書={
 		「OpenCvSharp」={
+			「展開先」=「[今の位置]」,
+			「親フォルダー」=「dll」,
 			「ファイル」={
 				// x64
-				{「dll\x64\opencv_videoio_ffmpeg455_64.dll」},
-				{「dll\x64\OpenCvSharpExtern.dll」},
+				{「dll\x64\opencv_videoio_ffmpeg455_64.dll」,「3552D34215BA2EA22CE68C54B0BEE03B857610EBC30E102F6C982B3E415A159C」}, // ファイル名,SHA256ハッシュ値
+				{「dll\x64\OpenCvSharpExtern.dll」,「60CDF2E127F3EE14CBEF59AF5358AB1DDD873505A7758E3AA97CB8F583B202C0」}
 				// x86
-				{「dll\x86\opencv_videoio_ffmpeg455.dll」},
-				{「dll\x86\OpenCvSharpExtern.dll」}
+				//{「dll\x86\opencv_videoio_ffmpeg455.dll」},
+				//{「dll\x86\OpenCvSharpExtern.dll」}
 			},
-			「URL」=「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Libs/OpenCvSharp/4.7.0.20230114/dll.zip」
+			//「URL」=「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Libs/OpenCvSharp/4.7.0.20230114/dll.zip」
+			「URL」=「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Libs/OpenCvSharp/4.7.0.20230114/dll_x64.zip」,
+			「存在」=×
 		}
 	}
 	
