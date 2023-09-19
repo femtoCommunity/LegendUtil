@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FolderSelectDialog.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="PingUtil.cs" />
     <Compile Include="WindowManageHelper.cs" />
     <Compile Include="VDFHelper.cs" />

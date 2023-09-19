@@ -2,9 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using System.Security.RightsManagement;
 using System.Windows.Forms;
-using static OpenCvSharp.Stitcher;
 
 namespace LegendUtil.SharpLibrary
 {
