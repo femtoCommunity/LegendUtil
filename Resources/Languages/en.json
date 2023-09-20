@@ -339,7 +339,11 @@
 			"フルスクリーンストレッチ有効チェックボックス": "Sets whether or not the display resolution is changed (stretched) when playing Apex Legends.",
 			"プラットフォーム選択リスト": "Select the platform on which Apex Legends is installed.",
 			"戻るボタン": "Back to Profile List",
-			"ディスプレイ解像度テストボタン": "Tests if it can be displayed normally after changing to the specified display settings."
+			"ディスプレイ解像度テストボタン": "Tests if it can be displayed normally after changing to the specified display settings.",
+			"コンフィグパネル部品のコンフィグ指定選択リスト": "Select the config to load when playing with this profile.",
+			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "Select the Video config to load when playing with this profile.",
+			"コンフィグパネル部品のコンフィグ読み取り専用チェックボックス": "Set whether to make the Config file read-only during play.",
+			"ビデオコンフィグパネル部品のビデオコンフィグ読み取り専用チェックボックス": "Set whether to make the Video config file read-only during play."
 		}
 	},
 	"1": {
@@ -395,7 +399,9 @@
 		"2": {
 			"1": "General",
 			"2": "Launch Options",
-			"3": "Autoexec"
+			"3": "Autoexec",
+			"4": "Config",
+			"5": "Video Config"
 		},
 		"3": {
 			"1": "Platform",
@@ -437,6 +443,14 @@
 		},
 		"5": {
 			"1": "<Statistics>\n- Options: {0}"
+		},
+		"6": {
+			"1": "Common,Profile",
+			"2": "Read Only"
+		},
+		"7": {
+			"1": "Common,Profile",
+			"2": "Read Only"
 		}
 	},
 	"4": {
