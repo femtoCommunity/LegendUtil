@@ -446,10 +446,12 @@
 		},
 		"6": {
 			"1": "Common,Profile",
+			"3": "Read Only",
 			"2": "Read Only"
 		},
 		"7": {
 			"1": "Common,Profile",
+			"3": "Read Only",
 			"2": "Read Only"
 		}
 	},
