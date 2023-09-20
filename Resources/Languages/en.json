@@ -445,14 +445,16 @@
 			"1": "<Statistics>\n- Options: {0}"
 		},
 		"6": {
-			"1": "Common,Profile",
+			"1": "Config file to load",
+			"2": "Common,Profile",
 			"3": "Enable",
-			"2": "Read Only"
+			"4": "Read Only"
 		},
 		"7": {
-			"1": "Common,Profile",
+			"1": "Config file to load",
+			"2": "Common,Profile",
 			"3": "Enable",
-			"2": "Read Only"
+			"4": "Read Only"
 		}
 	},
 	"4": {
