@@ -307,6 +307,12 @@
 		},
 		"3": {
 			"1": "File download failed.\n\n{0}"
+		},
+		"4": {
+			"1": "Could not get information from API.\nStatus code: {0}",
+			"2": "Unable to obtain update data.\nThe number of arrays is 0.",
+			"3": "Status code: {0}",
+			"4": "The installed {0} is the latest version!\nRelease Channel: {1}\n\nCurrent version: {2} ({3})\nLatest version: {4}"
 		}
 	},
 	"PanelTitle": {
@@ -448,8 +454,7 @@
 			"1": "Config file to load",
 			"2": "Common,Profile",
 			"3": "Read-only",
-			"4": "Enable",
-			"5": "If you have resolution stretching enabled, we recommend enabling read-only."
+			"4": "Enable"
 		},
 		"7": {
 			"1": "Config file to load",
