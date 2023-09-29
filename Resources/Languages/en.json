@@ -447,14 +447,16 @@
 		"6": {
 			"1": "Config file to load",
 			"2": "Common,Profile",
-			"3": "Read Only",
-			"4": "Enable"
+			"3": "Read-only",
+			"4": "Enable",
+			"5": "If you have resolution stretching enabled, we recommend enabling read-only."
 		},
 		"7": {
 			"1": "Config file to load",
 			"2": "Common,Profile",
-			"3": "Read Only",
-			"4": "Enable"
+			"3": "Read-only",
+			"4": "Enable",
+			"5": "If you have resolution stretching enabled, we recommend enabling read-only."
 		}
 	},
 	"4": {
