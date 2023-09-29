@@ -478,7 +478,7 @@
 		"1": {
 			"1": "Checking for updates...",
 			"2": "Downloading the installer...",
-			"3": "The installed {0} is the Latest version!\nRelease Channel: {1}\n\nCurrent version: {2} ({3})\nThe Latest version: {4}"
+			"3": "The installed {0} is the Latest version!\nRelease Channel: {1}\n\nCurrent version: {2} ({3})\nLatest version: {4}"
 		}
 	}
 }
