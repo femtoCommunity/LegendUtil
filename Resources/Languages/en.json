@@ -312,7 +312,7 @@
 			"1": "Could not get information from API.\nStatus code: {0}",
 			"2": "Unable to obtain update data.\nThe number of arrays is 0.",
 			"3": "Status code: {0}",
-			"4": "The installed {0} is the latest version!\nRelease Channel: {1}\n\nCurrent version: {2} ({3})\nLatest version: {4}"
+			"4": "Failed to perform update.\n\n{0}"
 		}
 	},
 	"PanelTitle": {
@@ -472,6 +472,13 @@
 	"5": {
 		"1": {
 			"1": "Open Source Licenses"
+		}
+	},
+	"6": {
+		"1": {
+			"1": "Checking for updates...",
+			"2": "Downloading the installer...",
+			"3": "The installed {0} is the Latest version!\nRelease Channel: {1}\n\nCurrent version: {2} ({3})\nThe Latest version: {4}"
 		}
 	}
 }
