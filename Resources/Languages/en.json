@@ -447,14 +447,14 @@
 		"6": {
 			"1": "Config file to load",
 			"2": "Common,Profile",
-			"3": "Enable",
-			"4": "Read Only"
+			"3": "Read Only",
+			"4": "Enable"
 		},
 		"7": {
 			"1": "Config file to load",
 			"2": "Common,Profile",
-			"3": "Enable",
-			"4": "Read Only"
+			"3": "Read Only",
+			"4": "Enable"
 		}
 	},
 	"4": {
