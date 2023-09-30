@@ -320,7 +320,8 @@
 			"ProfileManage": "Profiles Management",
 			"ProfileEdit": "Edit Profile",
 			"AppSettings": "Application Settings",
-			"OpenSourceLicenses": "Open Source Licenses"
+			"OpenSourceLicenses": "Open Source Licenses",
+			"Update": "Update"
 		}
 	},
 	"Tooltip": {
