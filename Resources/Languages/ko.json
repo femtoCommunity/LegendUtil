@@ -320,7 +320,8 @@
 			"ProfileManage": "프로필 관리",
 			"ProfileEdit": "프로필 편집",
 			"AppSettings": "애플리케이션 설정",
-			"OpenSourceLicenses": "オープンソースライセンス"
+			"OpenSourceLicenses": "オープンソースライセンス",
+			"Update": "アップデート"
 		}
 	},
 	"Tooltip": {
