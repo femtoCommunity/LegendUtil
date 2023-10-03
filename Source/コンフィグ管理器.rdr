@@ -165,17 +165,11 @@
 				「Profile_Sort_Order」={「初期値」=「1」},
 				//「Position_X」=「0」,
 				//「Position_Y」=「0」,
-				「Size_W」={「初期値」=「900」},
-				「Size_H」={「初期値」=「770」}
-			},
-			「Window_InPlay」={
-				//「Position_X」=「0」,
-				//「Position_Y」=「0」,
-				「Size_W」={「初期値」=「900」},
-				「Size_H」={「初期値」=「770」}
+				「Size_W」={「初期値」=「1165」},
+				「Size_H」={「初期値」=「1010」}
 			}
 		}
-			
+		
 		初回起動=×
 	終わり
 	
