@@ -17,7 +17,10 @@ Apex Legends のプレイをより快適にするアプリケーションです�
 引き伸ばしを行うための解像度の変更や、軽量化のための起動オプションの変更などを、GUIで視覚的に行うことができます。
 
 ### 🖥️ 対応環境
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+- **Windows 11**
+- **Windows 10 (64-bit)**
+  - 21H2
+  - 22H2
 
 ### 🎮 対応プラットフォーム
 - [**EA app**](https://www.ea.com/ja-jp/ea-app)
