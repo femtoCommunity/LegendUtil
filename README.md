@@ -34,7 +34,7 @@ Apex Legends のプレイをより快適にするアプリケーションです�
 ---
 
 ## ⚠️ 注意
-LegendUtil には [**ELECTRONIC ARTS ユーザー契約**](https://www.ea.com/ja-jp/legal/user-agreement) に違反するような機能は実装されていませんが、万が一 LegendUtil を使用した影響で EA アカウント が停止されたりしても、[**ライセンス**](#📒-ライセンス) に基づき、開発者は一切の責任を負いません。
+LegendUtil には [**ELECTRONIC ARTS ユーザー契約**](https://www.ea.com/ja-jp/legal/user-agreement) に違反するような機能は実装されていませんが、万が一 LegendUtil を使用した影響で EA アカウント が停止されたりしても、[**ライセンス**](#-ライセンス) に基づき、開発者は一切の責任を負いません。
 
 ---
 
