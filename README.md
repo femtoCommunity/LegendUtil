@@ -92,7 +92,7 @@ winget install femtoCommunity.LegendUtil
 ## 📒 ライセンス
 Copyright (C) 2023 Milkeyyy
 
-LegendUtil は [GNU General Public License 3.0](https://opensource.org/license/gpl-3-0/) のもとでライセンスされています。
+LegendUtil は [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.ja.html) のもとでライセンスされています。
 
 ---
 
