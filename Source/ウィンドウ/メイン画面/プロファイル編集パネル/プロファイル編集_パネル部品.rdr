@@ -1065,7 +1065,7 @@
 		
 		ApexLegendsパステキストの内容=プロファイルデータのApexLegendsバイナリーパス
 		ApexLegendsパス自動取得チェックボックスのチェック=プロファイルデータのバイナリーパス自動検出
-		ApexLegendsパステキストの有効=ApexLegendsパス自動取得チェックボックスのチェックを反転したもの
+		ApexLegendsパステキストの有効=[ApexLegendsパス自動取得チェックボックスのチェックでない]
 		ApexLegendsパス自動取得ボタンの有効=ApexLegendsパス自動取得チェックボックスのチェック
 		
 		カーソルロックチェックボックスのチェック=プロファイルデータのカーソルロック
@@ -1435,7 +1435,7 @@
 	終わり
 	
 	ApexLegendsパス自動取得チェックボックスがチェックされた時の手順
-		ApexLegendsパステキストの有効=ApexLegendsパス自動取得チェックボックスのチェックを反転したもの
+		ApexLegendsパステキストの有効=[ApexLegendsパス自動取得チェックボックスのチェックでない]
 		ApexLegendsパス自動取得ボタンの有効=ApexLegendsパス自動取得チェックボックスのチェック
 		
 		もしプロファイル読み込み済みが○なら
