@@ -9,6 +9,8 @@
 
 「..\Resources\Logo\LegendUtil_LogoType_Transparent.png」を素材として利用する
 
+「..\Resources\Logo\Rel1cStyle_Logo_TypographyDeth_1_White.png」を素材として利用する
+
 「..\Resources\Images\kofi_button_red.png」を素材として利用する
 
 「..\Resources\Images\Splash\SplashImage.jpg」を素材として利用する
@@ -47,6 +49,8 @@
 	
 	+APIアドレス:文字列=「api.legendutil.milkeyyy.com」
 	+APIURL:文字列=「https://[APIアドレス]」
+	
+	+ロゴ作者URL:文字列=「https://twitter.com/Apex_tyaneko」
 	
 	+GitHubリポジトリーURL:文字列=「https://github.com/femtoCommunity/LegendUtil」
 	+DiscordサーバーURL:文字列=「https://discord.gg/Y5FrzPft3M」
