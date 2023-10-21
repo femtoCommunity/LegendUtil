@@ -36,7 +36,7 @@
 	+アイコン画像:画像
 	+アイコン透過画像:画像
 	+バナー画像:画像
-	+ロゴタイプ画像:画像=「LegendUtil_LogoType_Transparent.png」を素材リストから画像として取得したもの
+	+ロゴタイプ画像:画像
 	
 	+設計スケールモード:文字列=「Dpi」
 	+設計スケール比率:整数の配列={96,96}
@@ -117,6 +117,7 @@
 		アイコン画像=「LegendUtil_Icon.png」を素材リストから画像として取得したもの
 		アイコン透過画像=「LegendUtil_Icon_Transparent.png」を素材リストから画像として取得したもの
 		バナー画像=「LegendUtil_Banner_WithoutText.png」を素材リストから画像として取得したもの
+		ロゴタイプ画像=「LegendUtil_LogoType_Transparent.png」を素材リストから画像として取得したもの
 	終わり
 	
 	自分で情報表示する手順
