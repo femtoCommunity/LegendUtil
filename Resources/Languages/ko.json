@@ -17,7 +17,7 @@
 		"Design": {
 			"__Name": "외관",
 			"Theme;Name": "테마",
-			"Theme;Desc": "UI 테마\n(테마 변경은 앱을 다시 시작하면 적용됩니다.)"
+			"Theme;Desc": "UIのテーマ\r\n(適用するにはアプリの再起動が必要です)"
 		},
 		"Display": {
 			"__Name": "디스플레이",
@@ -53,11 +53,17 @@
 		},
 		"UI_MainMenu": {
 			"__Name": "UI - 메인 메뉴",
+			"News_Enable;Name": "ニュースを表示する",
+			"News_Enable;Desc": "メインメニューにニュースを表示します\r\n(適用するにはアプリの再起動が必要です)",
 			"News_Language;Name": "뉴스 언어",
 			"News_Language;Desc": "메인 메뉴에 표시되는 뉴스 언어",
+			"ServerStatus_Enable;Name": "サーバーステータスを表示する",
+			"ServerStatus_Enable;Desc": "メインメニューにサーバーステータスを表示します\r\n(適用するにはアプリの再起動が必要です)",
 			"ServerStatus_Region;Name": "서버 상태 지역",
 			"ServerStatus_Region;Desc": "주 메뉴에 표시되는 서버 상태의 지역",
-			"ServerStatus_Region;List": "아시아,동유럽,서유럽,미국 남부,미국 중부,미국 동부,미국 서부"
+			"ServerStatus_Region;List": "아시아,동유럽,서유럽,미국 남부,미국 중부,미국 동부,미국 서부",
+			"MapRotation_Enable;Name": "マップローテーション情報を表示する",
+			"MapRotation_Enable;Desc": "メインメニューにマップローテーション情報を表示します\r\n(適用するにはアプリの再起動が必要です)"
 		}
 	},
 	"LaunchOption": {
@@ -351,6 +357,15 @@
 			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "このプロファイルでプレイする際に読み込むビデオコンフィグを選択します。",
 			"コンフィグパネル部品のコンフィグ読み取り専用チェックボックス": "プレイ時にコンフィグファイルを読み取り専用にするかどうかを設定します。",
 			"ビデオコンフィグパネル部品のビデオコンフィグ読み取り専用チェックボックス": "プレイ時にビデオコンフィグファイルを読み取り専用にするかどうかを設定します。"
+		}
+	},
+	"MapRotation": {
+		"Gamemode": {
+			"battle_royale": "バトルロイヤル | カジュアル",
+			"ranked": "バトルロイヤル | ランクリーグ",
+			"arenas": "アリーナ | カジュアル",
+			"arenasRanked": "アリーナ | ランク",
+			"ltm": "チームデスマッチ"
 		}
 	},
 	"1": {
