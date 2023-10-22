@@ -69,11 +69,7 @@
 				// x64
 				{「dll\x64\opencv_videoio_ffmpeg455_64.dll」,「3552D34215BA2EA22CE68C54B0BEE03B857610EBC30E102F6C982B3E415A159C」}, // ファイル名,SHA256ハッシュ値
 				{「dll\x64\OpenCvSharpExtern.dll」,「60CDF2E127F3EE14CBEF59AF5358AB1DDD873505A7758E3AA97CB8F583B202C0」}
-				// x86
-				//{「dll\x86\opencv_videoio_ffmpeg455.dll」},
-				//{「dll\x86\OpenCvSharpExtern.dll」}
 			},
-			//「URL」=「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Libs/OpenCvSharp/4.7.0.20230114/dll.zip」
 			「URL」=「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Libs/OpenCvSharp/4.7.0.20230114/dll_x64.zip」,
 			「存在」=×
 		}
