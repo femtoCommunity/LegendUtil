@@ -42,7 +42,7 @@
 					「名前」=「UIの言語」,
 					「説明」=「ユーザーインターフェースの表示言語」,
 					「型」=文字列,
-					「一覧」={「日本語 - Japanese」=「ja」,「English」=「en」,「한국어 - Korean」=「ko」}
+					「一覧」={「日本語 - Japanese」=「ja」}//,「English」=「en」,「한국어 - Korean」=「ko」}
 				}
 			},
 			「UI_MainMenu」={
