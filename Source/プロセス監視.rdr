@@ -839,16 +839,26 @@ ApexLegendsとは
 	-最新タイトル画像ファイル名:文字列
 	最新タイトル画面取得する手順:配列
 		例外監視
-			最新タイトル画像ファイル名=「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Images/TitleScreen/Latest.txt」をHTTPで取得したもの
-			もしHTTPのステータスコードが200でないなら{×,「最新の画像ファイル名を取得できませんでした | ステータスコード: [HTTPのステータスコード]」}を返す
+			// 最新の画像ファイル名を取得する
+			【要求内容:HTTP要求】=HTTP要求を作ったもの
+			要求内容の文字コード=「UTF-8」
+			【応答内容:HTTP応答】=「https://raw.githubusercontent.com/femtoCommunity/LegendUtil/Resources/Images/TitleScreen/Latest.txt」を要求内容にてHTTPで要求したもの
+			最新タイトル画像ファイル名=応答内容の本文
+			最新タイトル画像ファイル名=最新タイトル画像ファイル名で[改行]を「」へ置換したもの
+			
+			「 - URL: https://raw.githubusercontent.com/femtoCommunity/LegendUtil/Resources/Images/TitleScreen/[最新タイトル画像ファイル名]」をログ出力する
+			「 - パス: [アプリのコンフィグフォルダー]Resources\TitleScreenImage\[最新タイトル画像ファイル名]」をログ出力する
+			
+			もし(HTTPのステータスコードが200でない)または(最新タイトル画像ファイル名が無)なら{×,「最新の画像ファイル名を取得できませんでした | ステータスコード: [HTTPのステータスコード]」}を返す
 			
 			もし「[アプリのコンフィグフォルダー]Resources\TitleScreenImage\[最新タイトル画像ファイル名]」が存在するなら
 				{○,「既に最新の画像ファイルがダウンロードされています | ステータスコード: [HTTPのステータスコード]」}を返す
 				
 			そうでなければ
-				「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Images/TitleScreen/[最新タイトル画像ファイル名]」を「[アプリのコンフィグフォルダー]Resources\TitleScreenImage\[最新タイトル画像ファイル名]」へHTTPでダウンロードする
+				// 画像ファイルをダウンロード
+				「https://raw.githubusercontent.com/femtoCommunity/LegendUtil/Resources/Images/TitleScreen/[最新タイトル画像ファイル名]」を「[アプリのコンフィグフォルダー]Resources\TitleScreenImage\[最新タイトル画像ファイル名]」へHTTPでダウンロードする
 				もしHTTPのステータスコードが200でないなら{×,「最新の画像ファイル([最新タイトル画像ファイル名])を取得できませんでした | ステータスコード: [HTTPのステータスコード]」}を返す
-				そうでなければ{○,「ダウンロード - [最新タイトル画面ファイル名の名前だけ] | ステータスコード: [HTTPのステータスコード]」}を返す
+				そうでなければ{○,「ダウンロード - [最新タイトル画像ファイル名の名前だけ] | ステータスコード: [HTTPのステータスコード]」}を返す
 				
 			もし終わり
 		発生した場合
