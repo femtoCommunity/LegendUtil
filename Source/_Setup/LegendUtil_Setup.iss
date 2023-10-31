@@ -2,10 +2,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "LegendUtil"
-#define MyAppVersion "0.1.0"
+#define MyAppVersion "0.2.0"
 #define MyAppReleaseChannel "beta"
-#define MyAppReleaseNumber "6"
-#define MyAppVersionText "0.1.0-beta.6"
+#define MyAppReleaseNumber "0"
+#define MyAppVersionText "0.2.0-beta.0"
 #define MyAppPublisher "femto Community Software Team"
 #define MyAppCopyrighter "Milkeyyy"
 #define MyAppURL "https://github.com/femtoCommunity/LegendUtil"
@@ -60,6 +60,7 @@ Source: "..\..\_Pack\LegendUtil\*"; DestDir: "{app}"; Flags: ignoreversion recur
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [InstallDelete]
+Type: files; Name: "{app}\License.txt"
 Type: files; Name: "{app}\LegendUtil.CursorLocker.dll"
 Type: files; Name: "{app}\LegendUtil.DisplayDeviceHelper.dll"
 Type: files; Name: "{app}\LockCursorInWindowPlugin.dll"
