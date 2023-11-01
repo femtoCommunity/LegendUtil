@@ -18,9 +18,9 @@ Apex Legends のプレイをより快適にするアプリケーションです�
 
 ### 🖥️ 対応環境
 - **Windows 11**
-- **Windows 10 (64-bit)**
   - 21H2
   - 22H2
+- **Windows 10 (64-bit)**
 
 ### 🎮 対応プラットフォーム
 - [**EA app**](https://www.ea.com/ja-jp/ea-app)
@@ -70,22 +70,41 @@ winget install femtoCommunity.LegendUtil
 - **プロファイル**
   - 解像度や起動引数などの設定を複数保存でき、ランチャーのような形でプロファイルを選んで Apex Legends を起動できます。
    
-  ![Main Panel Preview 1](https://user-images.githubusercontent.com/59532514/231395446-0f396f23-6fba-4e77-8697-bbb00fbe39cb.png)
+  ![Main Panel Preview 1](https://github.com/femtoCommunity/LegendUtil/assets/59532514/978b2001-5292-4171-bb0c-2f14914a5173)
+  ![Main Panel Preview 2](https://github.com/femtoCommunity/LegendUtil/assets/59532514/2d52e4bd-bd30-44a8-b023-0966431c9e33)
+
 
 ---
 
 - **ゲームの起動前に設定を自動変更**
   - **ゲーム & ディスプレイ解像度の変更 (引き伸ばし)**
     - ゲーム起動後の `Alt` + `Enter` の自動押下 (「黒帯」の削除)
-  
-  ![Profile Edit Panel Preview 1](https://user-images.githubusercontent.com/59532514/231396035-fd619e60-fa1e-41bf-8fab-81eb88a6964f.png)
+
+  ![Profile Edit Panel Preview 1](https://github.com/femtoCommunity/LegendUtil/assets/59532514/1dab9f7d-d10f-4078-91c1-23fdafcc4786)
+
 
 ---
 
   - **起動引数(起動オプション)の変更**
    
-  ![Profile Edit Panel Preview 2](https://user-images.githubusercontent.com/59532514/231396331-3083964b-8d3c-4250-ab26-7478174d9400.png)
-  ![Profile Edit Panel Preview 3](https://user-images.githubusercontent.com/59532514/231396502-f41b2c2e-68c5-419d-88ba-ed4c6bb6b733.png)
+  ![Profile Edit Panel Preview 2](https://github.com/femtoCommunity/LegendUtil/assets/59532514/d7990fef-50ed-41fe-87bc-a8b316e17638)
+  ![Profile Edit Panel Preview 3](https://github.com/femtoCommunity/LegendUtil/assets/59532514/087566b8-c9dc-44de-b4d3-99e076b1e7e6)
+
+
+---
+
+  - **Autoexec の編集**
+  
+  ![Profile Edit Panel Preview 4](https://github.com/femtoCommunity/LegendUtil/assets/59532514/f0122707-e0eb-4099-8ff2-a76042575f26)
+
+
+---
+
+  - **コンフィグ/ビデオコンフィグの編集**
+  
+  ![Profile Edit Panel Preview 5](https://github.com/femtoCommunity/LegendUtil/assets/59532514/8dfeca59-ef50-48f6-a10b-2b7a4bbca6fa)
+  ![Profile Edit Panel Preview 6](https://github.com/femtoCommunity/LegendUtil/assets/59532514/9ec34109-4b18-4b44-9557-7bbea0b86ea9)
+
 
 ---
 
