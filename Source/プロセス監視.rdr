@@ -802,9 +802,7 @@ ApexLegendsとは
 						// 待機時間をリセットする
 						待機時間カウント=待機時間
 						// EABackgroundServiceを停止する
-						「EABackgroundService を停止」をログ出力する
-						「- コマンド: net stop EABackgroundService」をログ出力する
-						「net stop EABackgroundService」をコマンド実行する
+						EAappでバックグラウンドサービス終了する
 						1秒待つ
 						// ゲームを起動する (EALaunchHelperを呼ぶとEA appも起動するので、EABackgroundServiceも勝手に開始される)
 						プロセス起動する
