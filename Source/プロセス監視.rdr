@@ -721,7 +721,7 @@ ApexLegendsとは
 				【EAappプロセス一覧:配列】
 				
 				「EA app のプロセスを取得」をログ出力する
-				EAappプロセス=EAappのプロセス
+				EAappプロセス=EAappのアプリプロセス
 				もしEAappプロセスが無でないなら
 					EAappを終了する
 					「- PID: [EAappプロセスのID]」をログ出力する
@@ -739,7 +739,7 @@ ApexLegendsとは
 				「 - プロセスを検索中...」をログ出力する
 				EAappプロセス=無
 				30回繰り返す
-					EAappプロセス=EAappのプロセス
+					EAappプロセス=EAappのアプリプロセス
 					もしEAappプロセスが無でないなら繰り返しから抜け出す
 					1秒待つ
 				繰り返し終わり
@@ -762,7 +762,7 @@ ApexLegendsとは
 			
 			// Apex Legends を起動する
 			「- パス: [EAappのインストール先]EA Desktop\EALaunchHelper.exe "origin2://game/launch/?offerIds=194908&cmdParams=[起動引数]"」をログ出力する
-			EAappで「194908」を起動引数として起動する
+			EAappで「194908」を起動引数としてゲーム起動する
 		もし終わり
 		////////// EA app //////////
 		

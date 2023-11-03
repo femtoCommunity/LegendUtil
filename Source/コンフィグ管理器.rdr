@@ -6,19 +6,27 @@
 	+フォルダー一覧:配列={
 		「Logs」,
 		「Logs\Debug」,
+		
 		「Update」,
+		
 		「Profile」,
 		「Profile\AutoExecute」,
 		「Profile\Config」,
 		「Profile\VideoConfig」,
 		「Profile\v1」,
+		
+		「Account」,
+		「Account\EAapp」,
+		
 		「Backup」,
 		「Backup\Config」,
 		「Backup\VideoConfig」,
+		
 		「Resources」,
 		「Resources\TitleScreenImage」,
 		「Resources\News」,
 		「Resources\News\Image」,
+		
 		「Temp」
 	}
 	
