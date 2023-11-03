@@ -443,7 +443,10 @@
 					「EAC」=「」
 				},
 				「Exe_Path_Auto_Detection」=○,
-				「Platform」=「Steam」,
+				「Platform」=「Steam」, // Steam,EA app
+				「Account」={
+					「EAapp」=「」
+				},
 				「Launch_EAapp_Via_Steam」={
 					「Enable」=×,
 					「AppID」=「」
@@ -1095,6 +1098,15 @@ Apex Legends が使用するスレッド数を制限したい場合にこの設�
 		終わり
 		設定する手順
 			プロファイルデータ(「Game」)(「Platform」)=設定値
+		終わり
+	終わり
+	
+	EAappアカウントという属性
+		取得する手順
+			プロファイルデータ(「Game」)(「Account」)(「EAapp」)を返す
+		終わり
+		設定する手順
+			プロファイルデータ(「Game」)(「Account」)(「EAapp」)=設定値
 		終わり
 	終わり
 	
