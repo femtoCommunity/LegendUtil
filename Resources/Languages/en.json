@@ -325,6 +325,7 @@
 		"MainWindow": {
 			"ProfileManage": "Profiles Management",
 			"ProfileEdit": "Edit Profile",
+			"AccountManage": "アカウント管理",
 			"AppSettings": "Application Settings",
 			"OpenSourceLicenses": "Open Source Licenses",
 			"Update": "Update"
@@ -372,7 +373,8 @@
 		"1": {
 			"1": "Play",
 			"2": "Profile",
-			"3": "Settings"
+			"3": "アカウント",
+			"4": "設定"
 		},
 		"2": {
 			"1": "Region: {0} | Last Update: {1} | Data provided by https://apexlegendsstatus.com/",
@@ -502,6 +504,16 @@
 			"2": "Current version: {0}\nLatest version: {1}",
 			"3": "Update",
 			"4": "Later"
+		}
+	},
+	"7": {
+		"1": {
+			"1": "名前",
+			"2": "ID"
+		},
+		"2": {
+			"1": "現在のアカウント: {0}",
+			"2": "現在のアカウント: {0} (追加されていないアカウント)"
 		}
 	}
 }
