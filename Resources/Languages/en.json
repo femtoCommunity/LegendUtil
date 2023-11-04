@@ -352,6 +352,7 @@
 			"ディスプレイ設定プリセット選択リスト": "When selected, it will be entered automatically.",
 			"フルスクリーンストレッチ有効チェックボックス": "Sets whether or not the display resolution is changed (stretched) when playing Apex Legends.",
 			"プラットフォーム選択リスト": "Select the platform on which Apex Legends is installed.",
+			"アカウント選択リスト": "Apex Legends をプレイする際に使用するアカウントを選択します。\r\n(アカウントの管理は「アカウント」タブから行えます。)",
 			"戻るボタン": "Back to Profile List",
 			"ディスプレイ解像度テストボタン": "Tests if it can be displayed normally after changing to the specified display settings.",
 			"コンフィグパネル部品のコンフィグ指定選択リスト": "Select the config to load when playing with this profile.",
