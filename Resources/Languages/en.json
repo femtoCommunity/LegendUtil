@@ -53,11 +53,17 @@
 		},
 		"UI_MainMenu": {
 			"__Name": "UI - Main Menu",
+			"News_Enable;Name": "ニュースを表示する",
+			"News_Enable;Desc": "メインメニューにニュースを表示します\r\n(適用するにはアプリの再起動が必要です)",
 			"News_Language;Name": "News Languages",
 			"News_Language;Desc": "Languages of news displayed in the main menu",
+			"ServerStatus_Enable;Name": "サーバーステータスを表示する",
+			"ServerStatus_Enable;Desc": "メインメニューにサーバーステータスを表示します\r\n(適用するにはアプリの再起動が必要です)",
 			"ServerStatus_Region;Name": "Server Status Regions",
 			"ServerStatus_Region;Desc": "Server status regions displayed in the main menu",
-			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West"
+			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West",
+			"MapRotation_Enable;Name": "マップローテーション情報を表示する",
+			"MapRotation_Enable;Desc": "メインメニューにマップローテーション情報を表示します\r\n(適用するにはアプリの再起動が必要です)"
 		}
 	},
 	"LaunchOption": {
@@ -353,6 +359,15 @@
 			"ビデオコンフィグパネル部品のビデオコンフィグ読み取り専用チェックボックス": "Set whether to make the Video config file read-only during play."
 		}
 	},
+	"MapRotation": {
+		"Gamemode": {
+			"battle_royale": "バトルロイヤル | カジュアル",
+			"ranked": "バトルロイヤル | ランクリーグ",
+			"arenas": "アリーナ | カジュアル",
+			"arenasRanked": "アリーナ | ランク",
+			"ltm": "チームデスマッチ"
+		}
+	},
 	"1": {
 		"1": {
 			"1": "Play",
@@ -441,7 +456,8 @@
 			"29": "Extracting files",
 			"30": "Done",
 			"31": "Download completed.",
-			"32": "Show non-compliant settings"
+			"32": "Show non-compliant settings",
+			"33": "Apex Legends のインストール先が見つかりました。\r\n\r\nパス: {0}"
 		},
 		"4": {
 			"2": "Enter any startup arguments not listed below as options here.\nEnter the text of an existing launch argument and run \"Parse\" and LegendUtil will automatically parse and load it.",
