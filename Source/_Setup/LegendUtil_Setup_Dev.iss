@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "LegendUtil Dev Build"
-#define MyAppVersion "0.1.0"
+#define MyAppVersion "0.2.0"
 #define MyAppReleaseChannel "dev"
 #define MyAppReleaseNumber "20230219.130205"
 #define MyAppVersionText "0.1.0-dev.20230219.130205"
