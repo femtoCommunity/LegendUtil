@@ -1,12 +1,12 @@
 <プロジェクト 名前="LegendUtil" ビット32="×" 管理者実行="×" ライブラリ同梱="○">
   <一覧>
     <項目 位置="Resources\Languages\言語ファイル.rdr" />
-	<項目 位置="Source\Icon.rdr" />
-	<項目 位置="Source\CFG形式.rdr" />
+    <項目 位置="Source\Icon.rdr" />
+    <項目 位置="Source\CFG形式.rdr" />
     <項目 位置="Source\アスペクト比計算.rdr" />
     <項目 位置="Source\アップデーター.rdr" />
     <項目 位置="Source\アプリ.rdr" 開く="○" />
-	<項目 位置="Source\ウィンドウ管理器.rdr" 開く="○" />
+    <項目 位置="Source\ウィンドウ管理器.rdr" 開く="○" />
     <項目 位置="Source\コンフィグ管理器.rdr" />
     <項目 位置="Source\サムネイル化.rdr" />
     <項目 位置="Source\デバッグログ.rdr" />
@@ -18,7 +18,7 @@
     <項目 位置="Source\言語管理器.rdr" />
     <項目 位置="Source\辞書複製.rdr" />
     <項目 位置="Source\追加ファイル管理器.rdr" />
-	<項目 位置="Source\Platform\EAapp.rdr" 開く="○" />
+    <項目 位置="Source\Platform\EAapp.rdr" 開く="○" />
     <項目 位置="Source\Platform\Steam.rdr" />
     <項目 位置="Source\ウィンドウ\アップデート確認画面.rdr" />
     <項目 位置="Source\ウィンドウ\アプリケーション情報画面.rdr" />
@@ -48,8 +48,8 @@
     <項目 位置="Source\ウィンドウ\設定画面.rdr" />
     <項目 位置="Source\ウィンドウ\文字入力画面.rdr" />
   </一覧>
-  <バージョン 値="0.2.0.0">
-    <項目 名前="Comments" 値="LegendUtil - Development by femto Community Software Team" />
+  <バージョン 値="0.2.1.0">
+    <項目 名前="Comments" 値="LegendUtil - Developed by femto Community Software Team" />
     <項目 名前="FileDescription" 値="LegendUtil" />
     <項目 名前="CompanyName" 値="femto Community Software Team" />
     <項目 名前="ProductName" 値="LegendUtil" />
