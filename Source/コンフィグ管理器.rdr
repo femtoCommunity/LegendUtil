@@ -12,6 +12,7 @@
 		「Profile」,
 		「Profile\AutoExecute」,
 		「Profile\Config」,
+		「Profile\ProfileConfig」,
 		「Profile\VideoConfig」,
 		「Profile\v1」,
 		
@@ -20,6 +21,7 @@
 		
 		「Backup」,
 		「Backup\Config」,
+		「Backup\ProfileConfig」,
 		「Backup\VideoConfig」,
 		
 		「Resources」,
