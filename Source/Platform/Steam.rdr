@@ -71,11 +71,41 @@ Steamとは
 	現在ユーザーIDという属性
 		取得する手順
 			例外監視
-				[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]を返す
+				【アクティブユーザー】=[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]
 			発生した場合
 				エラーのメッセージを「エラー」としてデバッグログへ出力する
-				0を返す
+				-1を返す
 			監視終わり
+			もしアクティブユーザーが「0」なら
+				// Steam が起動されていない場合
+				もし[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\pid」を取得したもの]が「0」なら
+					// Steam を起動する
+					「"[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\SteamExe」を取得したもの]"」を起動する
+					15回繰り返す 
+						もし[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]が「0」でないなら
+							[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]を返す
+						もし終わり
+						1秒待つ
+					繰り返し終わり
+					
+					もし[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]が「0」なら
+						-1を返す
+						
+					そうでなければ
+						[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]を返す
+						
+					もし終わり
+					
+				// Steam が起動されている場合
+				そうでなければ
+					-1を返す
+					
+				もし終わり
+				
+			そうでなければ
+				アクティブユーザーを返す
+				
+			もし終わり
 		終わり
 	終わり
 	

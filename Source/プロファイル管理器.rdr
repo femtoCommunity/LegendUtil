@@ -445,8 +445,8 @@
 				「Exe_Path_Auto_Detection」=○,
 				「Platform」=「Steam」, // Steam,EA app
 				「Account」={
-					「Steam」=「」,
-					「EAapp」=「」
+					「Steam」=0,
+					「EAapp」=0
 				},
 				「Launch_EAapp_Via_Steam」={
 					「Enable」=×,
@@ -1136,10 +1136,10 @@ Apex Legends が使用するスレッド数を制限したい場合にこの設�
 			【アカウントID】
 			ApexLegendsプラットフォームについて分岐
 			「Steam」の場合
-				もしSteamアカウントが無ならアカウントID=Steamの現在ユーザーID
+				もしSteamアカウントが0またはSteamアカウントが無ならアカウントID=Steamの現在ユーザーID
 				そうでなければアカウントID=Steamアカウント
 			「EA app」の場合
-				もしEAappアカウントが無ならアカウントID=EAappの現在ユーザーID
+				もしEAappアカウントが0またはEAappアカウントが無ならアカウントID=EAappの現在ユーザーID
 				そうでなければアカウントID=EAappアカウント
 			分岐終わり
 			アカウントIDを返す
