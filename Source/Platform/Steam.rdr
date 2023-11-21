@@ -80,7 +80,8 @@ Steamとは
 				// Steam が起動されていない場合
 				もし[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\pid」を取得したもの]が「0」なら
 					// Steam を起動する
-					「"[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\SteamExe」を取得したもの]"」を起動する
+					「"[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\SteamExe」を取得したもの]"」を「-silent」として起動する
+					// 15秒間アクティブユーザーを取得し続ける
 					15回繰り返す 
 						もし[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]が「0」でないなら
 							[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]を返す
