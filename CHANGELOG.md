@@ -1,5 +1,11 @@
 # LegendUtil Changelog
 
+## 🚀 Version 0.2.2-beta
+
+### 🔧 修正
+- LegendUtil で設定されている起動引数と EA app で設定されている起動引数が両方適用される
+- ゲームの起動時の一部ログ出力を修正
+
 ## 🚀 Version 0.2.1-beta
 
 ### 🔧 修正
