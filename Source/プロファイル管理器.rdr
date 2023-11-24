@@ -155,6 +155,11 @@
 							繰り返し終わり
 							
 						繰り返し終わり
+						
+						// アカウントIDが無の場合はエラー回避のために0へ変更する
+						もしプロファイル辞書(「Game」)(「Account」)(「Steam」)が「」ならプロファイル辞書(「Game」)(「Account」)(「Steam」)=「0」
+						もしプロファイル辞書(「Game」)(「Account」)(「EAapp」)が「」ならプロファイル辞書(「Game」)(「Account」)(「EAapp」)=「0」
+						
 						プロファイル管理器のプロファイルテーブルへ[プロファイルID]として[プロファイルを作ったもの]を設定する
 						プロファイル管理器のプロファイルテーブル(プロファイルID)のプロファイルデータ=プロファイル辞書
 						
@@ -445,8 +450,8 @@
 				「Exe_Path_Auto_Detection」=○,
 				「Platform」=「Steam」, // Steam,EA app
 				「Account」={
-					「Steam」=0,
-					「EAapp」=0
+					「Steam」=「0」,
+					「EAapp」=「0」
 				},
 				「Launch_EAapp_Via_Steam」={
 					「Enable」=×,
