@@ -125,7 +125,7 @@ ApexLegendsとは
 		「EA app」の場合 // EA app (Origin)
 			例外監視
 			// レジストリーからApex Legendsのインストール先を取得する
-			パス=レジストリから「HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Respawn\Apex\Install Dir」を取得したもの
+			パス=レジストリから「HKEY_LOCAL_MACHINE\SOFTWARE\Respawn\Apex\Install Dir」を取得したもの
 			// 取得したインストール先フォルダーが存在する場合、インストール先一覧に加える
 			もしパスというフォルダが存在するなら
 				もしパスが「\」で終わらないならパス=パス&「\」
