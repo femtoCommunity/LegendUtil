@@ -47,7 +47,7 @@
     <項目 位置="Source\ウィンドウ\設定画面.rdr" />
     <項目 位置="Source\ウィンドウ\文字入力画面.rdr" />
   </一覧>
-  <バージョン 値="0.2.1.0">
+  <バージョン 値="0.2.2.0">
     <項目 名前="Comments" 値="LegendUtil - Developed by femto Community Software Team" />
     <項目 名前="FileDescription" 値="LegendUtil" />
     <項目 名前="CompanyName" 値="femto Community Software Team" />
