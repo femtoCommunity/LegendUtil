@@ -11,7 +11,7 @@
 			"5": "Enabled",
 			"6": "Disable",
 			"7": "Disabled",
-			"8": "アカウント"
+			"8": "Account"
 		}
 	},
 	"Config": {
@@ -54,17 +54,17 @@
 		},
 		"UI_MainMenu": {
 			"__Name": "UI - Main Menu",
-			"News_Enable;Name": "ニュースを表示する",
-			"News_Enable;Desc": "メインメニューにニュースを表示します\r\n(適用するにはアプリの再起動が必要です)",
+			"News_Enable;Name": "Show News Widget",
+			"News_Enable;Desc": "Show news on main menu\n(Requires app restart to apply)",
 			"News_Language;Name": "News Languages",
 			"News_Language;Desc": "Languages of news displayed in the main menu",
-			"ServerStatus_Enable;Name": "サーバーステータスを表示する",
-			"ServerStatus_Enable;Desc": "メインメニューにサーバーステータスを表示します\r\n(適用するにはアプリの再起動が必要です)",
+			"ServerStatus_Enable;Name": "Show Server Status Widget",
+			"ServerStatus_Enable;Desc": "Show server status on main menu\n(Requires app restart to apply)",
 			"ServerStatus_Region;Name": "Server Status Regions",
 			"ServerStatus_Region;Desc": "Server status regions displayed in the main menu",
 			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West",
-			"MapRotation_Enable;Name": "マップローテーション情報を表示する",
-			"MapRotation_Enable;Desc": "メインメニューにマップローテーション情報を表示します\r\n(適用するにはアプリの再起動が必要です)"
+			"MapRotation_Enable;Name": "Show Map Rotation Widget",
+			"MapRotation_Enable;Desc": "Show map rotation on main menu\n(Requires app restart to apply)"
 		}
 	},
 	"LaunchOption": {
@@ -326,7 +326,7 @@
 		"MainWindow": {
 			"ProfileManage": "Profiles Management",
 			"ProfileEdit": "Edit Profile",
-			"AccountManage": "アカウント管理",
+			"AccountManage": "Account Management",
 			"AppSettings": "Application Settings",
 			"OpenSourceLicenses": "Open Source Licenses",
 			"Update": "Update"
@@ -334,46 +334,46 @@
 	},
 	"Tooltip": {
 		"プロファイル編集パネル部品": {
-			"AltEnter自動押下チェックボックス": "Apex Legends の起動後に Alt+Enter を自動的に押下するかどうかを設定します。\nこの設定を有効にすると、「解像度の引き伸ばし」を行った際に発生する「黒帯」を消すことができます。",
-			"AltEnter自動押下待機時間ダイヤル": "Apex Legends が起動してから Alt+Enter の自動押下を行うまでの待機時間(秒)を設定します。\r\n環境によってタイトル画面が表示されるまでの時間が変化するため、ご自分の環境に合わせて設定してください。",
-			"AltEnter自動押下方法選択リスト": "Alt+Enter の自動押下の実行方法を設定します。\n\n  ＜画像認識＞\n    タイトル画面の表示を自動的に認識して Alt+Enter の自動押下を実行します。\n    この設定を使用する場合、追加ファイルのダウンロードが必要です。(自動的にダウンロードされます。)\n\n  ＜時間＞\n    Apex Legends が起動した後、指定された時間待機して Alt+Enter の自動押下を実行します。\n    環境によってタイトル画面が表示されるまでの時間が変化するため、ご自分の環境に合わせて設定してください。",
-			"ApexLegendsパステキスト": "Apex Legends のインストール先(実行ファイル)へのパスを設定します。\r\n「EasyAntiCheat_launcher.exe」ではなく「r5apex.exe」へのパスを指定してください。",
-			"ApexLegendsパス自動取得チェックボックス": "このPCにインストールされている Apex Legends のインストール先(実行ファイル)を自動的に取得します。",
-			"ApexLegendsパス自動取得ボタン": "このPCにインストールされている Apex Legends のインストール先を取得し直します。\r\n再インストールを行った時など、インストール先が変更された場合に行ってください。",
-			"EAappSteam経由IDテキスト": "Steam に登録された EA app の AppID を指定します。",
-			"EAappSteam経由チェックボックス": "Steam を経由して EA app を起動するかどうかを設定します。\r\nこの設定を利用する場合は、EA app を 非Steamゲームとして Steam に登録しておく必要があります。",
-			"カーソルロックチェックボックス": "カーソルロックを有効にするかどうかを設定します。\r\n有効にすると、複数のモニターを接続している際、Apex Legends のウィンドウからマウスカーソルがはみ出てしまう現象を防ぐことができます。",
-			"システム解像度変更チェックボックス": "Apex Legends の起動前にシステム(PC)のディスプレイ解像度を変更するかどうかを設定します。\nこの設定を有効にすると、Alt+Tab などで Apex Legends から別のウィンドウに切り替えた際、\n毎回ディスプレイ解像度が元に戻り、数秒間PCがフリーズしてしまう現象を防止できます。\n(Apex Legends が表示されるメインディスプレイのみ変更されます。サブディスプレイは変更されません。)",
-			"ディスプレイスケーリングモードヘルプボタン": "ディスプレイのスケーリングモードの種類に関する詳しい説明を表示します。",
-			"ディスプレイスケーリングモード選択リスト": "解像度変更時のディスプレイのスケーリングモードを設定します。",
-			"ディスプレイリフレッシュレートダイヤル": "プレイ時のリフレッシュレートを設定します。",
-			"ディスプレイ解像度Hダイヤル": "プレイ時のディスプレイ解像度(高さ)を設定します。",
-			"ディスプレイ解像度Wダイヤル": "プレイ時のディスプレイ解像度(幅)を設定します。",
-			"ディスプレイ設定プリセット有効項目チェックボックス": "有効にすると、ディスプレイが対応していない設定もプリセット一覧へ表示します。\r\n対応していない解像度やリフレッシュレートを指定すると、プレイ時に解像度の変更に失敗して起動できません。",
-			"ディスプレイ設定プリセット選択リスト": "プレイ時のディスプレイ設定をプリセットから選択します。\r\n選択すると自動的に入力されます。",
-			"フルスクリーンストレッチ有効チェックボックス": "Apex Legends のプレイ時にディスプレイ解像度の変更(引き伸ばし)を行うかどうかを設定します。",
-			"プラットフォーム選択リスト": "Apex Legends をインストールしているプラットフォームを選択します。",
-			"アカウント選択リスト": "Apex Legends をプレイする際に使用するアカウントを選択します。\r\n(アカウントの管理は「アカウント」タブから行えます。)",
-			"戻るボタン": "プロファイル一覧へ戻る",
-			"ディスプレイ解像度テストボタン": "指定されたディスプレイ設定に変更しても正常に表示できるかをテストします。",
-			"コンフィグパネル部品のコンフィグ指定選択リスト": "このプロファイルでプレイする際に読み込むコンフィグを選択します。",
-			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "このプロファイルでプレイする際に読み込むビデオコンフィグを選択します。",
-			"コンフィグパネル部品のコンフィグ読み取り専用チェックボックス": "プレイ時にコンフィグファイルを読み取り専用にするかどうかを設定します。",
-			"ビデオコンフィグパネル部品のビデオコンフィグ読み取り専用チェックボックス": "プレイ時にビデオコンフィグファイルを読み取り専用にするかどうかを設定します。"
+			"AltEnter自動押下チェックボックス": "Set whether to automatically press Alt+Enter after starting Apex Legends.\nBy enabling this setting, you can eliminate the \"black bands\" that occur when \"resolution stretching\" is performed.",
+			"AltEnter自動押下待機時間ダイヤル": "Sets the wait time (in seconds) from when Apex Legends starts to when Alt+Enter is automatically pressed.\nThe time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
+			"AltEnter自動押下方法選択リスト": "Sets how Alt+Enter is automatically pressed.\n\n   <Image recognition>\n     Automatically recognizes the title screen display and automatically presses Alt+Enter.\n     Using this configuration requires additional file downloads. (It will be downloaded automatically.)\n\n   <Time>\n     After Apex Legends starts, waits the specified amount of time to perform an automatic Alt+Enter press.\n     The time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
+			"ApexLegendsパステキスト": "Set the path to the installation destination (executable file) of Apex Legends.\nPlease specify the path to \"r5apex.exe\" instead of \"EasyAntiCheat_launcher.exe\".",
+			"ApexLegendsパス自動取得チェックボックス": "Automatically obtains the installation location (executable file) of Apex Legends installed on this PC.",
+			"ApexLegendsパス自動取得ボタン": "Retrieve the installation location of Apex Legends installed on this PC.\nThis should be done when the installation location has been changed, such as when reinstalling the software.",
+			"EAappSteam経由IDテキスト": "Specify the AppID of the EA app registered with Steam.",
+			"EAappSteam経由チェックボックス": "Sets whether or not the EA app is launched via Steam.\nTo use this setting, the EA app must be registered with Steam as a non-Steam game.",
+			"カーソルロックチェックボックス": "Enables or disables cursor lock.\nIf enabled, it prevents the mouse cursor from protruding from the Apex Legends window when multiple monitors are connected.",
+			"システム解像度変更チェックボックス": "Sets whether the system (PC) display resolution should be changed before starting Apex Legends.\nEnabling this setting will prevent the PC from freezing for a few seconds every time you switch from one Apex Legends window to another,\nfor example, by pressing Alt+Tab, This will prevent the PC from freezing for a few seconds.\n(Only the main display where Apex Legends is displayed is changed. Sub-displays are not changed)",
+			"ディスプレイスケーリングモードヘルプボタン": "Displays a detailed description of the display's scaling mode type.",
+			"ディスプレイスケーリングモード選択リスト": "Sets the display scaling mode for resolution changes.",
+			"ディスプレイリフレッシュレートダイヤル": "Sets the refresh rate when playing.",
+			"ディスプレイ解像度Hダイヤル": "Sets the display resolution (height) when playing.",
+			"ディスプレイ解像度Wダイヤル": "Sets the display resolution (width) when playing.",
+			"ディスプレイ設定プリセット有効項目チェックボックス": "When enabled, settings not supported by the display are also displayed in the preset list.\nIf an unsupported resolution or refresh rate is specified, changing the resolution will fail and the game will not start.",
+			"ディスプレイ設定プリセット選択リスト": "Select the display settings during play from the presets.\nOnce selected, it will be filled in automatically.",
+			"フルスクリーンストレッチ有効チェックボックス": "Sets whether or not the display resolution is changed (stretched) when playing Apex Legends.",
+			"プラットフォーム選択リスト": "Select the platform on which Apex Legends is installed.",
+			"アカウント選択リスト": "Select the account you want to use to play Apex Legends.\n(You can manage your account from the \"Account\" tab.)",
+			"戻るボタン": "Back to Profile List",
+			"ディスプレイ解像度テストボタン": "Tests if it can be displayed normally after changing to the specified display settings.",
+			"コンフィグパネル部品のコンフィグ指定選択リスト": "Select the config to load when playing with this profile.",
+			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "Select the Video config to load when playing with this profile.",
+			"コンフィグパネル部品のコンフィグ読み取り専用チェックボックス": "Set whether to make the Config file read-only during play.",
+			"ビデオコンフィグパネル部品のビデオコンフィグ読み取り専用チェックボックス": "Set whether to make the Video config file read-only during play."
 		},
 		"アカウント管理パネル部品": {
-			"切り替えボタン": "選択しているアカウントへ切り替え",
-			"削除ボタン": "選択しているアカウントを削除",
-			"追加ボタン": "アカウントを追加"
+			"切り替えボタン": "Switch to selected account",
+			"削除ボタン": "Delete selected account",
+			"追加ボタン": "Add account"
 		}
 	},
 	"MapRotation": {
 		"Gamemode": {
-			"battle_royale": "バトルロイヤル | カジュアル",
-			"ranked": "バトルロイヤル | ランクリーグ",
-			"arenas": "アリーナ | カジュアル",
-			"arenasRanked": "アリーナ | ランク",
-			"ltm": "チームデスマッチ"
+			"battle_royale": "Battle Royale | Casual",
+			"ranked": "Battle Royale | Ranked League",
+			"arenas": "Arena | Casual",
+			"arenasRanked": "Arena | Ranked",
+			"ltm": "Team Deathmatch"
 		}
 	},
 	"1": {
@@ -381,7 +381,7 @@
 			"1": "Play",
 			"2": "Profile",
 			"3": "Settings",
-			"4": "設定"
+			"4": "Settings"
 		},
 		"2": {
 			"1": "Region: {0} | Last Update: {1} | Data provided by https://apexlegendsstatus.com/",
@@ -420,9 +420,9 @@
 			"17": "The name of the profile \"{0}\" cannot be changed.",
 			"18": "Enter the name you wish to change.",
 			"19": "The name of the profile has not been entered.",
-			"20": "最終プレイ日時",
-			"21": "総プレイ時間",
-			"22": "{0}時間{1}分"
+			"20": "Last Played",
+			"21": "Total play time",
+			"22": "{0}h {1}m"
 		}
 	},
 	"3": {
@@ -469,7 +469,7 @@
 			"30": "Done",
 			"31": "Download completed.",
 			"32": "Show non-compliant settings",
-			"33": "Apex Legends のインストール先が見つかりました。\r\n\r\nパス: {0}"
+			"33": "The installation location for Apex Legends has been found.\n\nPath: {0}"
 		},
 		"4": {
 			"2": "Enter any startup arguments not listed below as options here.\nEnter the text of an existing launch argument and run \"Parse\" and LegendUtil will automatically parse and load it.",
@@ -481,30 +481,30 @@
 		},
 		"コンフィグパネル部品": {
 			"ベースフレーム": "Config",
-			"コンフィグ指定ラベル": "読み込むファイル",
-			"__DropDownList;コンフィグ指定選択リスト": "共通,プロファイル",
-			"コンフィグ読み取り専用ラベル": "読み取り専用",
+			"コンフィグ指定ラベル": "Config file to load",
+			"__DropDownList;コンフィグ指定選択リスト": "Common,Profile",
+			"コンフィグ読み取り専用ラベル": "Read-only",
 			"コンフィグ読み取り専用チェックボックス": "Enable",
-			"コンフィグファイル開くボタン": "ファイルを開く",
-			"__Text;コンフィグ未生成警告": "コンフィグが生成されていません。一度このプロファイルでゲームを起動してください。"
+			"コンフィグファイル開くボタン": "Open file",
+			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile."
 		},
 		"コンフィグパネル部品2": {
-			"ベースフレーム": "プロファイルコンフィグ",
-			"コンフィグ指定ラベル": "読み込むファイル",
-			"__DropDownList;コンフィグ指定選択リスト": "共通,プロファイル",
-			"コンフィグ読み取り専用ラベル": "読み取り専用",
+			"ベースフレーム": "Profile Config",
+			"コンフィグ指定ラベル": "Config file to load",
+			"__DropDownList;コンフィグ指定選択リスト": "Common,Profile",
+			"コンフィグ読み取り専用ラベル": "Read-only",
 			"コンフィグ読み取り専用チェックボックス": "Enable",
-			"コンフィグファイル開くボタン": "ファイルを開く",
-			"__Text;コンフィグ未生成警告": "プロファイルコンフィグが生成されていません。一度このプロファイルでゲームを起動してください。"
+			"コンフィグファイル開くボタン": "Open file",
+			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile."
 		},
 		"ビデオコンフィグパネル部品": {
 			"ベースフレーム": "Video Config",
-			"コンフィグ指定ラベル": "読み込むファイル",
-			"__DropDownList;コンフィグ指定選択リスト": "共通,プロファイル",
-			"コンフィグ読み取り専用ラベル": "読み取り専用",
+			"コンフィグ指定ラベル": "Config file to load",
+			"__DropDownList;コンフィグ指定選択リスト": "Common,Profile",
+			"コンフィグ読み取り専用ラベル": "Read-only",
 			"コンフィグ読み取り専用チェックボックス": "Enable",
-			"コンフィグファイル開くボタン": "ファイルを開く",
-			"__Text;コンフィグ未生成警告": "ビデオコンフィグが生成されていません。一度このプロファイルでゲームを起動してください。"
+			"コンフィグファイル開くボタン": "Open file",
+			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile."
 		}
 	},
 	"4": {
@@ -532,20 +532,20 @@
 	},
 	"7": {
 		"1": {
-			"1": "アカウントが追加されていません。\r\n「追加」をクリックして、EA app でログインしているアカウントを追加しましょう。",
+			"1": "No account added.\nClick Add to add an account logged in with the EA app.",
 			"2": "Name",
 			"3": "ID",
-			"4": "しばらくアカウントにログインしていないと、再度ログインを求められる場合があります。\r\nログインを求められた場合は、ログインを行った後に「追加」ボタンをクリックしてキャッシュを更新してください。"
+			"4": "If you haven't logged in to your account for a while, you may be asked to log in again.\nIf you are prompted to log in, please log in and then click the Add button to update the cache."
 		},
 		"2": {
-			"1": "ログイン中のアカウント: {0}",
-			"2": "ログイン中のアカウント: {0} (追加されていないアカウント)"
+			"1": "Account currently logged in: {0}",
+			"2": "Account currently logged in: {0} (account not added)"
 		},
 		"3": {
-			"1": "追加",
-			"2": "切り替え",
-			"3": "名前を変更",
-			"4": "削除"
+			"1": "Add",
+			"2": "Switch",
+			"3": "Rename",
+			"4": "Delete"
 		}
 	}
 }
