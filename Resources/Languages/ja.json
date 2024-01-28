@@ -11,7 +11,8 @@
 			"5": "有効",
 			"6": "無効",
 			"7": "無効",
-			"8": "アカウント"
+			"8": "アカウント",
+			"loading": "Loading"
 		}
 	},
 	"Config": {
@@ -368,7 +369,7 @@
 		}
 	},
 	"MapRotation": {
-		"Gamemode":{
+		"Gamemode": {
 			"battle_royale": "バトルロイヤル | カジュアル",
 			"ranked": "バトルロイヤル | ランクリーグ",
 			"arenas": "アリーナ | カジュアル",
@@ -376,6 +377,15 @@
 			"ltm": "チームデスマッチ"
 		}
 	},
+	"MozambiqueAPI": {
+		"ErrorMessage": {
+			"HTTPStatusCode": "HTTP ステータスコード: {0}",
+			"FailedToGetMapRotation": "マップローテーションを取得できませんでした。",
+			"FailedToGetServerStatus": "サーバーステータスを取得できませんでした。",
+			"FailedToGetNews": "ニュースを取得できませんでした。",
+			"FailedToGetNewsImage": "画像を取得できませんでした。"
+		}
+	}
 	"1": {
 		"1": {
 			"1": "プレイ",
@@ -396,7 +406,8 @@
 		"3": {
 			"1": "プレイ",
 			"2": "取得できませんでした",
-			"3": "停止"
+			"3": "停止",
+			"4": "Apex Legends のプロセスを停止してもよろしいですか？\r\n設定などの情報が正常に保存されない可能性があります。"
 		}
 	},
 	"2": {
