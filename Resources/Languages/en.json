@@ -12,7 +12,7 @@
 			"6": "Disable",
 			"7": "Disabled",
 			"8": "Account",
-			"loading": "Loading"
+			"Loading": "読み込み中"
 		}
 	},
 	"Config": {
@@ -407,7 +407,7 @@
 			"1": "Play",
 			"2": "Failed to get information",
 			"3": "Stop",
-			"4": "Are you sure you want to stop the Apex Legends process?\nSettings may not be saved properly."
+			"4": "Apex Legends のプロセスを停止してもよろしいですか？\r\n設定などの情報が正常に保存されない可能性があります。"
 		}
 	},
 	"2": {
