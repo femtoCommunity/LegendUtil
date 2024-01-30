@@ -33,7 +33,7 @@
 		"4": {
 			"1": "Could not get information from API.\nStatus code: {0}",
 			"2": "Unable to obtain update data.\nThe number of arrays is 0.",
-			"3": "Status code: {0}",
+			"3": "ステータスコード: {0}",
 			"4": "Failed to perform update.\n\n{0}"
 		}
 	},
@@ -95,9 +95,9 @@
 			"GameMode_ranked": "Battle Royale | Ranked League",
 			"GameMode_arenas": "Arena | Casual",
 			"GameMode_arenasRanked": "Arena | Ranked",
-			"GameMode_ltm_Control": "コントロール",
-			"GameMode_ltm_TDM": "チームデスマッチ",
-			"GameMode_ltm_Gun Run": "ガンゲーム"
+			"GameMode_ltm_Control": "Control",
+			"GameMode_ltm_TDM": "Team Deathmatch",
+			"GameMode_ltm_Gun Run": "Gun Run"
 		}
 	},
 	"1": {
