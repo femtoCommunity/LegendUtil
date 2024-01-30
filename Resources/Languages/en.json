@@ -15,6 +15,264 @@
 			"Loading": "Loading"
 		}
 	},
+	"ErrorMessage": {
+		"1": {
+			"1": "Failed to get server status.\r\n\r\n{0}",
+			"2": "Failed to update news"
+		},
+		"2": {
+			"1": "Failed to load profile.\r\n\r\n<Profile failed to load>\r\n・{0}",
+			"2": "Failed to load profile.\r\n\r\n{0}",
+			"3": "Failed to create profile.\r\n\r\n{0}",
+			"4": "Could not rename profile.\r\n\r\n{0}",
+			"5": "The specified Profile Id {0} does not exist."
+		},
+		"3": {
+			"1": "File download failed.\n\n{0}"
+		},
+		"4": {
+			"1": "Could not get information from API.\nStatus code: {0}",
+			"2": "Unable to obtain update data.\nThe number of arrays is 0.",
+			"3": "Status code: {0}",
+			"4": "Failed to perform update.\n\n{0}"
+		}
+	},
+	"PanelTitle": {
+		"MainWindow": {
+			"ProfileManage": "Profiles Management",
+			"ProfileEdit": "Edit Profile",
+			"AccountManage": "Account Management",
+			"AppSettings": "Application Settings",
+			"OpenSourceLicenses": "Open Source Licenses",
+			"Update": "Update"
+		}
+	},
+	"Tooltip": {
+		"プロファイル編集パネル部品": {
+			"AltEnter自動押下チェックボックス": "Set whether to automatically press Alt+Enter after starting Apex Legends.\nBy enabling this setting, you can eliminate the \"black bands\" that occur when \"resolution stretching\" is performed.",
+			"AltEnter自動押下待機時間ダイヤル": "Sets the wait time (in seconds) from when Apex Legends starts to when Alt+Enter is automatically pressed.\nThe time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
+			"AltEnter自動押下方法選択リスト": "Sets how Alt+Enter is automatically pressed.\n\n   <Image recognition>\n     Automatically recognizes the title screen display and automatically presses Alt+Enter.\n     Using this configuration requires additional file downloads. (It will be downloaded automatically.)\n\n   <Time>\n     After Apex Legends starts, waits the specified amount of time to perform an automatic Alt+Enter press.\n     The time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
+			"ApexLegendsパステキスト": "Set the path to the installation destination (executable file) of Apex Legends.\nPlease specify the path to \"r5apex.exe\" instead of \"EasyAntiCheat_launcher.exe\".",
+			"ApexLegendsパス自動取得チェックボックス": "Automatically obtains the installation location (executable file) of Apex Legends installed on this PC.",
+			"ApexLegendsパス自動取得ボタン": "Retrieve the installation location of Apex Legends installed on this PC.\nThis should be done when the installation location has been changed, such as when reinstalling the software.",
+			"EAappSteam経由IDテキスト": "Specify the AppID of the EA app registered with Steam.",
+			"EAappSteam経由チェックボックス": "Sets whether or not the EA app is launched via Steam.\nTo use this setting, the EA app must be registered with Steam as a non-Steam game.",
+			"カーソルロックチェックボックス": "Enables or disables cursor lock.\nIf enabled, it prevents the mouse cursor from protruding from the Apex Legends window when multiple monitors are connected.",
+			"システム解像度変更チェックボックス": "Sets whether the system (PC) display resolution should be changed before starting Apex Legends.\nEnabling this setting will prevent the PC from freezing for a few seconds every time you switch from one Apex Legends window to another,\nfor example, by pressing Alt+Tab, This will prevent the PC from freezing for a few seconds.\n(Only the main display where Apex Legends is displayed is changed. Sub-displays are not changed)",
+			"ディスプレイスケーリングモードヘルプボタン": "Displays a detailed description of the display's scaling mode type.",
+			"ディスプレイスケーリングモード選択リスト": "Sets the display scaling mode for resolution changes.",
+			"ディスプレイリフレッシュレートダイヤル": "Sets the refresh rate when playing.",
+			"ディスプレイ解像度Hダイヤル": "Sets the display resolution (height) when playing.",
+			"ディスプレイ解像度Wダイヤル": "Sets the display resolution (width) when playing.",
+			"ディスプレイ設定プリセット有効項目チェックボックス": "When enabled, settings not supported by the display are also displayed in the preset list.\nIf an unsupported resolution or refresh rate is specified, changing the resolution will fail and the game will not start.",
+			"ディスプレイ設定プリセット選択リスト": "Select the display settings during play from the presets.\nOnce selected, it will be filled in automatically.",
+			"フルスクリーンストレッチ有効チェックボックス": "Sets whether or not the display resolution is changed (stretched) when playing Apex Legends.",
+			"プラットフォーム選択リスト": "Select the platform on which Apex Legends is installed.",
+			"アカウント選択リスト": "Select the account you want to use to play Apex Legends.\n(You can manage your account from the \"Account\" tab.)",
+			"戻るボタン": "Back to Profile List",
+			"ディスプレイ解像度テストボタン": "Tests if it can be displayed normally after changing to the specified display settings.",
+			"コンフィグパネル部品のコンフィグ指定選択リスト": "Select the config to load when playing with this profile.",
+			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "Select the Video config to load when playing with this profile.",
+			"コンフィグパネル部品のコンフィグ読み取り専用チェックボックス": "Set whether to make the Config file read-only during play.",
+			"ビデオコンフィグパネル部品のビデオコンフィグ読み取り専用チェックボックス": "Set whether to make the Video config file read-only during play."
+		},
+		"アカウント管理パネル部品": {
+			"切り替えボタン": "Switch to selected account",
+			"削除ボタン": "Delete selected account",
+			"追加ボタン": "Add account"
+		}
+	},
+	"MozambiqueAPI": {
+		"ErrorMessage": {
+			"HTTPStatusCode": "HTTP Status Code: {0}",
+			"FailedToGetMapRotation": "Failed to get Map Rotation.",
+			"FailedToGetServerStatus": "Failed to get Server Status.",
+			"FailedToGetNews": "Failed to get News.",
+			"FailedToGetNewsImage": "Failed to get News Image."
+		},
+		"MapRotation": {
+			"GameMode_battle_royale": "バトルロイヤル | カジュアル",
+			"GameMode_ranked": "バトルロイヤル | ランクリーグ",
+			"GameMode_arenas": "アリーナ | カジュアル",
+			"GameMode_arenasRanked": "アリーナ | ランク",
+			"GameMode_ltm": "チームデスマッチ"
+		}
+	},
+	"1": {
+		"1": {
+			"1": "Play",
+			"2": "Profile",
+			"3": "Account",
+			"4": "Settings"
+		},
+		"2": {
+			"1": "Region: {0} | Last Update: {1} | Data provided by https://apexlegendsstatus.com/",
+			"2": "Crossplay auth",
+			"3": "Lobby/Matchmaking",
+			"4": "Origin logins",
+			"5": "EA Accounts",
+			"6": "LegendUtil API",
+			"7": "Failed to get server status",
+			"8": "News"
+		},
+		"3": {
+			"1": "Play",
+			"2": "Failed to get information",
+			"3": "Stop",
+			"4": "Are you sure you want to stop the Apex Legends process?\nSettings may not be saved properly."
+		}
+	},
+	"2": {
+		"1": {
+			"1": "Create a new profile",
+			"2": "Edit the selected profile",
+			"3": "Create a shortcut for the selected profile",
+			"4": "Rename the selected profile",
+			"5": "Delete the selected profile",
+			"6": "Name",
+			"7": "ID",
+			"8": "Display Settings",
+			"9": "Create new profile",
+			"10": "Choose how you would like to create a profile.\r\nA wizard allows you to create profiles from presets.",
+			"11": "Create an empty profile",
+			"12": "Create profiles from presets",
+			"13": "Enter the name of the profile to be created.",
+			"14": "No name entered.",
+			"15": "Profile \"{0}\" was created.",
+			"16": "Rename Profile",
+			"17": "The name of the profile \"{0}\" cannot be changed.",
+			"18": "Enter the name you wish to change.",
+			"19": "The name of the profile has not been entered.",
+			"20": "Last Played",
+			"21": "Total play time",
+			"22": "{0}h {1}m"
+		}
+	},
+	"3": {
+		"1": {
+			"1": "Editing: {0}",
+			"2": "Hover over an item for a description"
+		},
+		"2": {
+			"1": "General",
+			"2": "Launch Options",
+			"3": "Autoexec",
+			"4": "Config",
+			"5": "Video Config"
+		},
+		"3": {
+			"1": "Platform",
+			"2": "Apex Legends executable path",
+			"3": "Automatic acquisition (recommended)",
+			"4": "Execute automatic acquisition",
+			"5": "Launch via Steam",
+			"6": "EA app AppID",
+			"7": "Cursor Lock",
+			"8": "Change resolution (stretch)",
+			"9": "Change system resolution",
+			"10": "Scaling Mode",
+			"17": "Alt+Enter auto-press after startup",
+			"14": "Presets",
+			"13": "Refresh Rate",
+			"12": "Resolution",
+			"11": "No Scaling,Stretch,Center",
+			"15": "Automatically filled in when selected",
+			"20": "Wait time",
+			"18": "How to run autopress",
+			"19": "Image Recognition,Time",
+			"21": "sec",
+			"22": "Failed to get display settings",
+			"23": "Alt+Enter You are missing a file needed for automatic image processing.\nWould you like to download it?",
+			"24": "Failed to get Apex Legends install location.\nApex Legends may not be installed on the specified platform \"{0}\".",
+			"25": "<Scaling mode of the display>\n- No scaling\n  The displayed screen is centered on the display in its original size.\n  If the resolution is set to a smaller resolution than that of the display, a black band will be created in the excess area.\n\n- Stretching\n  The displayed screen will be scaled to fit the display \"without maintaining the aspect ratio\".\n  Even if the aspect ratio is different, it will be stretched and displayed.\n  This setting is recommended when the resolution is stretched.\n\n- Center\n  The displayed screen is stretched to fit the display \"while maintaining the aspect ratio\".\n  If the aspect ratio is different, a black band will appear in the excess area.",
+			"26": "[Unsupported]",
+			"27": "Your display does not support the selected setting {0}×{1}@{2}Hz ({3}).\nAre you sure you want to set it?\n\n(If you want to stretch, create a custom resolution in the NVIDIA Control Panel, etc., then try again.)",
+			"28": "Downloading required files",
+			"29": "Extracting files",
+			"30": "Done",
+			"31": "Download completed.",
+			"32": "Show non-compliant settings",
+			"33": "The installation location for Apex Legends has been found.\n\nPath: {0}",
+			"34": "Account",
+			"35": "テスト"
+		},
+		"4": {
+			"2": "Enter any startup arguments not listed below as options here.\nEnter the text of an existing launch argument and run \"Parse\" and LegendUtil will automatically parse and load it.",
+			"1": "Additional arguments",
+			"3": "Parse"
+		},
+		"5": {
+			"1": "<Statistics>\n- Options: {0}"
+		},
+		"コンフィグパネル部品": {
+			"ベースフレーム": "Config",
+			"コンフィグ指定ラベル": "Config file to load",
+			"__DropDownList;コンフィグ指定選択リスト": "Common,Profile",
+			"コンフィグ読み取り専用ラベル": "Read-only",
+			"コンフィグ読み取り専用チェックボックス": "Enable",
+			"コンフィグファイル開くボタン": "Open file",
+			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile."
+		},
+		"コンフィグパネル部品2": {
+			"ベースフレーム": "Profile Config",
+			"コンフィグ指定ラベル": "Config file to load",
+			"__DropDownList;コンフィグ指定選択リスト": "Common,Profile",
+			"コンフィグ読み取り専用ラベル": "Read-only",
+			"コンフィグ読み取り専用チェックボックス": "Enable",
+			"コンフィグファイル開くボタン": "Open file",
+			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile."
+		},
+		"ビデオコンフィグパネル部品": {
+			"ベースフレーム": "Video Config",
+			"コンフィグ指定ラベル": "Config file to load",
+			"__DropDownList;コンフィグ指定選択リスト": "Common,Profile",
+			"コンフィグ読み取り専用ラベル": "Read-only",
+			"コンフィグ読み取り専用チェックボックス": "Enable",
+			"コンフィグファイル開くボタン": "Open file",
+			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile."
+		}
+	},
+	"4": {
+		"1": {
+			"1": "Changes are saved automatically"
+		}
+	},
+	"5": {
+		"1": {
+			"1": "Open Source Licenses"
+		}
+	},
+	"6": {
+		"1": {
+			"1": "Checking for updates...",
+			"2": "Downloading the installer...",
+			"3": "The installed {0} is the Latest version!\nRelease Channel: {1}\n\nCurrent version: {2} ({3})\nLatest version: {4}"
+		},
+		"2": {
+			"1": "A new version has been released!",
+			"2": "Current version: {0}\nLatest version: {1}",
+			"3": "Update",
+			"4": "Later"
+		}
+	},
+	"7": {
+		"1": {
+			"1": "No account added.\nClick Add to add an account logged in with the EA app.",
+			"2": "Name",
+			"3": "ID",
+			"4": "If you haven't logged in to your account for a while, you may be asked to log in again.\nIf you are prompted to log in, please log in and then click the Add button to update the cache."
+		},
+		"2": {
+			"1": "Account currently logged in: {0}",
+			"2": "Account currently logged in: {0} (account not added)"
+		},
+		"3": {
+			"1": "Add",
+			"2": "Switch",
+			"3": "Rename",
+			"4": "Delete"
+		}
+	},
 	"Config": {
 		"Design": {
 			"__Name": "Appearance",
@@ -299,264 +557,6 @@
 		},
 		"__Placeholder": {
 			"Text": "<Value>"
-		}
-	},
-	"ErrorMessage": {
-		"1": {
-			"1": "Failed to get server status.\r\n\r\n{0}",
-			"2": "Failed to update news"
-		},
-		"2": {
-			"1": "Failed to load profile.\r\n\r\n<Profile failed to load>\r\n・{0}",
-			"2": "Failed to load profile.\r\n\r\n{0}",
-			"3": "Failed to create profile.\r\n\r\n{0}",
-			"4": "Could not rename profile.\r\n\r\n{0}",
-			"5": "The specified Profile Id {0} does not exist."
-		},
-		"3": {
-			"1": "File download failed.\n\n{0}"
-		},
-		"4": {
-			"1": "Could not get information from API.\nStatus code: {0}",
-			"2": "Unable to obtain update data.\nThe number of arrays is 0.",
-			"3": "Status code: {0}",
-			"4": "Failed to perform update.\n\n{0}"
-		}
-	},
-	"PanelTitle": {
-		"MainWindow": {
-			"ProfileManage": "Profiles Management",
-			"ProfileEdit": "Edit Profile",
-			"AccountManage": "Account Management",
-			"AppSettings": "Application Settings",
-			"OpenSourceLicenses": "Open Source Licenses",
-			"Update": "Update"
-		}
-	},
-	"Tooltip": {
-		"プロファイル編集パネル部品": {
-			"AltEnter自動押下チェックボックス": "Set whether to automatically press Alt+Enter after starting Apex Legends.\nBy enabling this setting, you can eliminate the \"black bands\" that occur when \"resolution stretching\" is performed.",
-			"AltEnter自動押下待機時間ダイヤル": "Sets the wait time (in seconds) from when Apex Legends starts to when Alt+Enter is automatically pressed.\nThe time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
-			"AltEnter自動押下方法選択リスト": "Sets how Alt+Enter is automatically pressed.\n\n   <Image recognition>\n     Automatically recognizes the title screen display and automatically presses Alt+Enter.\n     Using this configuration requires additional file downloads. (It will be downloaded automatically.)\n\n   <Time>\n     After Apex Legends starts, waits the specified amount of time to perform an automatic Alt+Enter press.\n     The time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
-			"ApexLegendsパステキスト": "Set the path to the installation destination (executable file) of Apex Legends.\nPlease specify the path to \"r5apex.exe\" instead of \"EasyAntiCheat_launcher.exe\".",
-			"ApexLegendsパス自動取得チェックボックス": "Automatically obtains the installation location (executable file) of Apex Legends installed on this PC.",
-			"ApexLegendsパス自動取得ボタン": "Retrieve the installation location of Apex Legends installed on this PC.\nThis should be done when the installation location has been changed, such as when reinstalling the software.",
-			"EAappSteam経由IDテキスト": "Specify the AppID of the EA app registered with Steam.",
-			"EAappSteam経由チェックボックス": "Sets whether or not the EA app is launched via Steam.\nTo use this setting, the EA app must be registered with Steam as a non-Steam game.",
-			"カーソルロックチェックボックス": "Enables or disables cursor lock.\nIf enabled, it prevents the mouse cursor from protruding from the Apex Legends window when multiple monitors are connected.",
-			"システム解像度変更チェックボックス": "Sets whether the system (PC) display resolution should be changed before starting Apex Legends.\nEnabling this setting will prevent the PC from freezing for a few seconds every time you switch from one Apex Legends window to another,\nfor example, by pressing Alt+Tab, This will prevent the PC from freezing for a few seconds.\n(Only the main display where Apex Legends is displayed is changed. Sub-displays are not changed)",
-			"ディスプレイスケーリングモードヘルプボタン": "Displays a detailed description of the display's scaling mode type.",
-			"ディスプレイスケーリングモード選択リスト": "Sets the display scaling mode for resolution changes.",
-			"ディスプレイリフレッシュレートダイヤル": "Sets the refresh rate when playing.",
-			"ディスプレイ解像度Hダイヤル": "Sets the display resolution (height) when playing.",
-			"ディスプレイ解像度Wダイヤル": "Sets the display resolution (width) when playing.",
-			"ディスプレイ設定プリセット有効項目チェックボックス": "When enabled, settings not supported by the display are also displayed in the preset list.\nIf an unsupported resolution or refresh rate is specified, changing the resolution will fail and the game will not start.",
-			"ディスプレイ設定プリセット選択リスト": "Select the display settings during play from the presets.\nOnce selected, it will be filled in automatically.",
-			"フルスクリーンストレッチ有効チェックボックス": "Sets whether or not the display resolution is changed (stretched) when playing Apex Legends.",
-			"プラットフォーム選択リスト": "Select the platform on which Apex Legends is installed.",
-			"アカウント選択リスト": "Select the account you want to use to play Apex Legends.\n(You can manage your account from the \"Account\" tab.)",
-			"戻るボタン": "Back to Profile List",
-			"ディスプレイ解像度テストボタン": "Tests if it can be displayed normally after changing to the specified display settings.",
-			"コンフィグパネル部品のコンフィグ指定選択リスト": "Select the config to load when playing with this profile.",
-			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "Select the Video config to load when playing with this profile.",
-			"コンフィグパネル部品のコンフィグ読み取り専用チェックボックス": "Set whether to make the Config file read-only during play.",
-			"ビデオコンフィグパネル部品のビデオコンフィグ読み取り専用チェックボックス": "Set whether to make the Video config file read-only during play."
-		},
-		"アカウント管理パネル部品": {
-			"切り替えボタン": "Switch to selected account",
-			"削除ボタン": "Delete selected account",
-			"追加ボタン": "Add account"
-		}
-	},
-	"MapRotation": {
-		"Gamemode": {
-			"battle_royale": "Battle Royale | Casual",
-			"ranked": "Battle Royale | Ranked League",
-			"arenas": "Arena | Casual",
-			"arenasRanked": "Arena | Ranked",
-			"ltm": "Team Deathmatch"
-		}
-	},
-	"MozambiqueAPI": {
-		"ErrorMessage": {
-			"HTTPStatusCode": "HTTP Status Code: {0}",
-			"FailedToGetMapRotation": "Failed to get Map Rotation.",
-			"FailedToGetServerStatus": "Failed to get Server Status.",
-			"FailedToGetNews": "Failed to get News.",
-			"FailedToGetNewsImage": "Failed to get News Image."
-		}
-	},
-	"1": {
-		"1": {
-			"1": "Play",
-			"2": "Profile",
-			"3": "Account",
-			"4": "Settings"
-		},
-		"2": {
-			"1": "Region: {0} | Last Update: {1} | Data provided by https://apexlegendsstatus.com/",
-			"2": "Crossplay auth",
-			"3": "Lobby/Matchmaking",
-			"4": "Origin logins",
-			"5": "EA Accounts",
-			"6": "LegendUtil API",
-			"7": "Failed to get server status",
-			"8": "News"
-		},
-		"3": {
-			"1": "Play",
-			"2": "Failed to get information",
-			"3": "Stop",
-			"4": "Are you sure you want to stop the Apex Legends process?\nSettings may not be saved properly."
-		}
-	},
-	"2": {
-		"1": {
-			"1": "Create a new profile",
-			"2": "Edit the selected profile",
-			"3": "Create a shortcut for the selected profile",
-			"4": "Rename the selected profile",
-			"5": "Delete the selected profile",
-			"6": "Name",
-			"7": "ID",
-			"8": "Display Settings",
-			"9": "Create new profile",
-			"10": "Choose how you would like to create a profile.\r\nA wizard allows you to create profiles from presets.",
-			"11": "Create an empty profile",
-			"12": "Create profiles from presets",
-			"13": "Enter the name of the profile to be created.",
-			"14": "No name entered.",
-			"15": "Profile \"{0}\" was created.",
-			"16": "Rename Profile",
-			"17": "The name of the profile \"{0}\" cannot be changed.",
-			"18": "Enter the name you wish to change.",
-			"19": "The name of the profile has not been entered.",
-			"20": "Last Played",
-			"21": "Total play time",
-			"22": "{0}h {1}m"
-		}
-	},
-	"3": {
-		"1": {
-			"1": "Editing: {0}",
-			"2": "Hover over an item for a description"
-		},
-		"2": {
-			"1": "General",
-			"2": "Launch Options",
-			"3": "Autoexec",
-			"4": "Config",
-			"5": "Video Config"
-		},
-		"3": {
-			"1": "Platform",
-			"2": "Apex Legends executable path",
-			"3": "Automatic acquisition (recommended)",
-			"4": "Execute automatic acquisition",
-			"5": "Launch via Steam",
-			"6": "EA app AppID",
-			"7": "Cursor Lock",
-			"8": "Change resolution (stretch)",
-			"9": "Change system resolution",
-			"10": "Scaling Mode",
-			"17": "Alt+Enter auto-press after startup",
-			"14": "Presets",
-			"13": "Refresh Rate",
-			"12": "Resolution",
-			"11": "No Scaling,Stretch,Center",
-			"15": "Automatically filled in when selected",
-			"20": "Wait time",
-			"18": "How to run autopress",
-			"19": "Image Recognition,Time",
-			"21": "sec",
-			"22": "Failed to get display settings",
-			"23": "Alt+Enter You are missing a file needed for automatic image processing.\nWould you like to download it?",
-			"24": "Failed to get Apex Legends install location.\nApex Legends may not be installed on the specified platform \"{0}\".",
-			"25": "<Scaling mode of the display>\n- No scaling\n  The displayed screen is centered on the display in its original size.\n  If the resolution is set to a smaller resolution than that of the display, a black band will be created in the excess area.\n\n- Stretching\n  The displayed screen will be scaled to fit the display \"without maintaining the aspect ratio\".\n  Even if the aspect ratio is different, it will be stretched and displayed.\n  This setting is recommended when the resolution is stretched.\n\n- Center\n  The displayed screen is stretched to fit the display \"while maintaining the aspect ratio\".\n  If the aspect ratio is different, a black band will appear in the excess area.",
-			"26": "[Unsupported]",
-			"27": "Your display does not support the selected setting {0}×{1}@{2}Hz ({3}).\nAre you sure you want to set it?\n\n(If you want to stretch, create a custom resolution in the NVIDIA Control Panel, etc., then try again.)",
-			"28": "Downloading required files",
-			"29": "Extracting files",
-			"30": "Done",
-			"31": "Download completed.",
-			"32": "Show non-compliant settings",
-			"33": "The installation location for Apex Legends has been found.\n\nPath: {0}"
-		},
-		"4": {
-			"2": "Enter any startup arguments not listed below as options here.\nEnter the text of an existing launch argument and run \"Parse\" and LegendUtil will automatically parse and load it.",
-			"1": "Additional arguments",
-			"3": "Parse"
-		},
-		"5": {
-			"1": "<Statistics>\n- Options: {0}"
-		},
-		"コンフィグパネル部品": {
-			"ベースフレーム": "Config",
-			"コンフィグ指定ラベル": "Config file to load",
-			"__DropDownList;コンフィグ指定選択リスト": "Common,Profile",
-			"コンフィグ読み取り専用ラベル": "Read-only",
-			"コンフィグ読み取り専用チェックボックス": "Enable",
-			"コンフィグファイル開くボタン": "Open file",
-			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile."
-		},
-		"コンフィグパネル部品2": {
-			"ベースフレーム": "Profile Config",
-			"コンフィグ指定ラベル": "Config file to load",
-			"__DropDownList;コンフィグ指定選択リスト": "Common,Profile",
-			"コンフィグ読み取り専用ラベル": "Read-only",
-			"コンフィグ読み取り専用チェックボックス": "Enable",
-			"コンフィグファイル開くボタン": "Open file",
-			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile."
-		},
-		"ビデオコンフィグパネル部品": {
-			"ベースフレーム": "Video Config",
-			"コンフィグ指定ラベル": "Config file to load",
-			"__DropDownList;コンフィグ指定選択リスト": "Common,Profile",
-			"コンフィグ読み取り専用ラベル": "Read-only",
-			"コンフィグ読み取り専用チェックボックス": "Enable",
-			"コンフィグファイル開くボタン": "Open file",
-			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile."
-		}
-	},
-	"4": {
-		"1": {
-			"1": "Changes are saved automatically"
-		}
-	},
-	"5": {
-		"1": {
-			"1": "Open Source Licenses"
-		}
-	},
-	"6": {
-		"1": {
-			"1": "Checking for updates...",
-			"2": "Downloading the installer...",
-			"3": "The installed {0} is the Latest version!\nRelease Channel: {1}\n\nCurrent version: {2} ({3})\nLatest version: {4}"
-		},
-		"2": {
-			"1": "A new version has been released!",
-			"2": "Current version: {0}\nLatest version: {1}",
-			"3": "Update",
-			"4": "Later"
-		}
-	},
-	"7": {
-		"1": {
-			"1": "No account added.\nClick Add to add an account logged in with the EA app.",
-			"2": "Name",
-			"3": "ID",
-			"4": "If you haven't logged in to your account for a while, you may be asked to log in again.\nIf you are prompted to log in, please log in and then click the Add button to update the cache."
-		},
-		"2": {
-			"1": "Account currently logged in: {0}",
-			"2": "Account currently logged in: {0} (account not added)"
-		},
-		"3": {
-			"1": "Add",
-			"2": "Switch",
-			"3": "Rename",
-			"4": "Delete"
 		}
 	}
 }
