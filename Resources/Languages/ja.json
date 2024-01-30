@@ -95,7 +95,9 @@
 			"GameMode_ranked": "バトルロイヤル | ランクリーグ",
 			"GameMode_arenas": "アリーナ | カジュアル",
 			"GameMode_arenasRanked": "アリーナ | ランク",
-			"GameMode_ltm": "チームデスマッチ"
+			"GameMode_ltm_Control": "コントロール",
+			"GameMode_ltm_TDM": "チームデスマッチ",
+			"GameMode_ltm_Gun Run": "ガンゲーム"
 		}
 	},
 	"1": {
