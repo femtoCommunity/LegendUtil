@@ -95,7 +95,9 @@
 			"GameMode_ranked": "Battle Royale | Ranked League",
 			"GameMode_arenas": "Arena | Casual",
 			"GameMode_arenasRanked": "Arena | Ranked",
-			"GameMode_ltm": "Team Deathmatch"
+			"GameMode_ltm_Control": "コントロール",
+			"GameMode_ltm_TDM": "チームデスマッチ",
+			"GameMode_ltm_Gun Run": "ガンゲーム"
 		}
 	},
 	"1": {
