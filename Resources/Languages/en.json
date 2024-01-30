@@ -31,9 +31,9 @@
 			"1": "File download failed.\n\n{0}"
 		},
 		"4": {
-			"1": "Could not get information from API.\nStatus code: {0}",
-			"2": "Unable to obtain update data.\nThe number of arrays is 0.",
-			"3": "ステータスコード: {0}",
+			"1": "アップデートチェックに失敗しました。\n\nAPIから正常な応答が得られませんでした。\nステータスコード: {0}",
+			"2": "アップデートチェックに失敗しました。\r\n配列の個数が0です。",
+			"3": "Status code: {0}",
 			"4": "Failed to perform update.\n\n{0}"
 		}
 	},
