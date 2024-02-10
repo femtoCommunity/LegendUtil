@@ -25,7 +25,7 @@ VersionInfoVersion={#MyAppVersion}
 AppVerName={#MyAppName}
 AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
-AppCopyright=Copyright (C) 2023 {#MyAppCopyrighter}
+AppCopyright=Copyright (C) 2024 {#MyAppCopyrighter}
 AppSupportURL={#MyAppSupportURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDialogFontName=Yu Gothic UI
@@ -44,12 +44,16 @@ PrivilegesRequired=lowest
 OutputDir=..\..\_Pack
 OutputBaseFilename=LegendUtil_Setup
 SetupIconFile=..\..\Resources\Logo\LegendUtil_Icon.ico
-Compression=lzma
+Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
+; �C���X�g�[���[�ƃA�v���̃A�[�L�e�N�`���[���w��
+ArchitecturesInstallIn64BitMode=x64
+ArchitecturesAllowed=x64
 
 [Languages]
 Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
+Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
