@@ -1008,6 +1008,9 @@
 				もし終わり
 			もし終わり
 			
+			// DiscordRPCを更新
+			RPC管理器で[RPC管理器で「DiscordRPC.ProfileEdit.Editing_Details」を取得したもの]を[RPC管理器で「DiscordRPC.ProfileEdit.Editing_State」を{プロファイル名}として取得したもの]としてステータス更新する
+			
 			自分のメインタブパネルをウィンドウ管理器で初期化開始する
 			
 			// 起動引数の読み込み

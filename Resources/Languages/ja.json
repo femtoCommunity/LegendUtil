@@ -100,6 +100,24 @@
 			"GameMode_ltm_Gun Run": "ガンゲーム"
 		}
 	},
+	"DiscordRPC": {
+		"MainMenu": {
+			"Idle_Details": "メインメニューを閲覧中",
+			"Idle_State": ""
+		},
+		"ProfileManage": {
+			"Viewing_Details": "プロファイルを閲覧中",
+			"Viewing_State": ""
+		},
+		"ProfileEdit": {
+			"Editing_Details": "プロファイルを編集中",
+			"Editing_State": "- {0}"
+		},
+		"ApplicationSettings": {
+			"Viewing_Details": "アプリケーション設定を閲覧中",
+			"Viewing_State": ""
+		}
+	},
 	"1": {
 		"1": {
 			"1": "プレイ",
@@ -298,6 +316,13 @@
 			"EAapp_Config_File_Name;Name": "EA app コンフィグファイル",
 			"EAapp_Config_File_Name;Desc": "EA app のコンフィグファイルのファイル名\r\nプレイする際のプラットフォームが EA app の場合、この項目は必須です。\r\n※このコンフィグファイルはアカウントによって異なるため、複数のアカウントでプレイする場合、\r\nアカウントを切り替えるたびにファイル名を変更する必要があります※",
 			"EAapp_Config_File_Name;Custom_1": "自動検出を実行"
+		},
+		"Discord_RPC": {
+			"__Name": "Discord リッチプレゼンス",
+			"Enable;Name": "リッチプレゼンスを有効化",
+			"Enable;Desc": "Discord のプロフィールに LegendUtil のステータスを表示するかどうか\n(適用するにはアプリの再起動が必要です)",
+			"Language;Name": "リッチプレゼンスの表示言語",
+			"Language;Desc": "Discord のプロフィールに表示されるリッチプレゼンスの言語\n(適用するにはアプリの再起動が必要です)"
 		},
 		"Update": {
 			"__Name": "アップデート",

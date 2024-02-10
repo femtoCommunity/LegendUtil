@@ -357,11 +357,14 @@
 		// パネル表示時に実行される手順
 		部品の名前について分岐
 		「メインメニューパネル」の場合
+			RPC管理器で[RPC管理器で「DiscordRPC.MainMenu.Idle_Details」を取得したもの]を[RPC管理器で「DiscordRPC.MainMenu.Idle_State」を取得したもの]としてステータス更新する
 			メインメニューパネルへプロファイル読み込む
 			メインメニューパネル:大きさが変わった
 		「アプリ設定パネル」の場合
+			RPC管理器で[RPC管理器で「DiscordRPC.ApplicationSettings.Viewing_Details」を取得したもの]を[RPC管理器で「DiscordRPC.ApplicationSettings.Viewing_State」を取得したもの]としてステータス更新する
 			アプリ設定パネルでコンフィグ読み込む
 		「プロファイル情報パネル」の場合
+			RPC管理器で[RPC管理器で「DiscordRPC.ProfileManage.Viewing_Details」を取得したもの]を[RPC管理器で「DiscordRPC.ProfileManage.Viewing_State」を取得したもの]としてステータス更新する
 			プロファイル情報パネルへプロファイル読み込む
 		「プロファイル編集パネル」の場合
 			部品の読み込み失敗=×

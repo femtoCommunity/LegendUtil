@@ -3,6 +3,9 @@
 // C# ライブラリー (マウスカーソルロック / ディスプレイ解像度変更 / 画像処理(OpenCvSharp) / Zipファイル処理)
 「LegendUtil.SharpLibrary.dll」を利用する
 
+// DiscordRPC ライブラリー
+「FuwaFuwaPresence.dll」を利用する
+
 「Milkeyyy.ControlSR.dll」を利用する
 //「Transitions.rdr.dll」を利用する
 「Produire.WebView2.dll」を利用する
@@ -46,6 +49,9 @@
 EAappでアカウントデータ読み込む
 
 追加ファイル管理器で一括存在確認する
+
+// DiscordRPCを初期化
+RPC管理器で初期化する
 
 もしアプリの起動引数から「/Play」を完全一致で探したものの個数が1以上でないならスプラッシュ画面を表示する
 

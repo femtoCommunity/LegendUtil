@@ -117,6 +117,22 @@
 				},
 				「ProfileDropdownList_SelectedID」={「設定可能」=×,「初期値」=「Default」}
 			},
+			「Discord_RPC」={
+				「__Name」=「Discord リッチプレゼンス」,
+				「Enable」={
+					「初期値」=○,
+					「名前」=「」,
+					「説明」=「」,
+					「型」=真偽値
+				},
+				「Language」={
+					「初期値」=「ja」,
+					「名前」=「」,
+					「説明」=「」,
+					「型」=文字列,
+					「一覧」=空の辞書
+				}
+			},
 			「Update」={
 				「__Name」=「アップデート」,
 				「CheckForUpdatesOnAppLaunch」={
