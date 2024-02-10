@@ -322,7 +322,7 @@
 			"Enable;Name": "Enable Rich Presence",
 			"Enable;Desc": "Whether to display LegendUtil status on your Discord profile\n(Requires app restart to apply)",
 			"Language;Name": "Rich Presence Display Language",
-			"Language;Desc": "Discord のプロフィールに表示されるリッチプレゼンスの言語"
+			"Language;Desc": "Rich presence language displayed on Discord profile"
 		},
 		"Update": {
 			"__Name": "Update",
