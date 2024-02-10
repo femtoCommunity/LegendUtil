@@ -322,7 +322,7 @@
 			"Enable;Name": "リッチプレゼンスを有効化",
 			"Enable;Desc": "Discord のプロフィールに LegendUtil のステータスを表示するかどうか\n(適用するにはアプリの再起動が必要です)",
 			"Language;Name": "リッチプレゼンスの表示言語",
-			"Language;Desc": "Discord のプロフィールに表示されるリッチプレゼンスの言語\n(適用するにはアプリの再起動が必要です)"
+			"Language;Desc": "Discord のプロフィールに表示されるリッチプレゼンスの言語"
 		},
 		"Update": {
 			"__Name": "アップデート",
