@@ -102,19 +102,19 @@
 	},
 	"DiscordRPC": {
 		"MainMenu": {
-			"Idle_Details": "メインメニューを閲覧中",
+			"Idle_Details": "Viewing Main Menu",
 			"Idle_State": ""
 		},
 		"ProfileManage": {
-			"Viewing_Details": "プロファイルを閲覧中",
+			"Viewing_Details": "Browsing Profiles",
 			"Viewing_State": ""
 		},
 		"ProfileEdit": {
-			"Editing_Details": "プロファイルを編集中",
+			"Editing_Details": "Editing Profile",
 			"Editing_State": "- {0}"
 		},
 		"ApplicationSettings": {
-			"Viewing_Details": "アプリケーション設定を閲覧中",
+			"Viewing_Details": "Browsing Application Settings",
 			"Viewing_State": ""
 		}
 	},
@@ -318,11 +318,11 @@
 			"EAapp_Config_File_Name;Custom_1": "Run auto-detection"
 		},
 		"Discord_RPC": {
-			"__Name": "Discord リッチプレゼンス",
-			"Enable;Name": "リッチプレゼンスを有効化",
-			"Enable;Desc": "Discord のプロフィールに LegendUtil のステータスを表示するかどうか\n(適用するにはアプリの再起動が必要です)",
-			"Language;Name": "リッチプレゼンスの表示言語",
-			"Language;Desc": "Discord のプロフィールに表示されるリッチプレゼンスの言語\n(適用するにはアプリの再起動が必要です)"
+			"__Name": "Discord Rich Presence",
+			"Enable;Name": "Enable Rich Presence",
+			"Enable;Desc": "Whether to display LegendUtil status on your Discord profile\n(Requires app restart to apply)",
+			"Language;Name": "Rich Presence Display Language",
+			"Language;Desc": "Discord のプロフィールに表示されるリッチプレゼンスの言語"
 		},
 		"Update": {
 			"__Name": "Update",
