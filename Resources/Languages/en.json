@@ -255,8 +255,8 @@
 	"4": {
 		"1": {
 			"1": "Changes are saved automatically",
-			"ExperimentalFeatures": "実験的機能",
-			"Activate": "有効化"
+			"ExperimentalFeatures": "Experimental Features",
+			"Activate": "Activate"
 		}
 	},
 	"5": {
@@ -355,7 +355,7 @@
 			"MapRotation_Enable;Desc": "Show map rotation on main menu\n(Requires app restart to apply)"
 		},
 		"ExperimentalFeatures": {
-			"__Name": "実験的機能"
+			"__Name": "Experimental Features"
 		}
 	},
 	"LaunchOption": {
