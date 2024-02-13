@@ -254,7 +254,9 @@
 	},
 	"4": {
 		"1": {
-			"1": "Changes are saved automatically"
+			"1": "Changes are saved automatically",
+			"ExperimentalFeatures": "実験的機能",
+			"Activate": "有効化"
 		}
 	},
 	"5": {
@@ -351,6 +353,9 @@
 			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West",
 			"MapRotation_Enable;Name": "Show Map Rotation Widget",
 			"MapRotation_Enable;Desc": "Show map rotation on main menu\n(Requires app restart to apply)"
+		},
+		"ExperimentalFeatures": {
+			"__Name": "実験的機能"
 		}
 	},
 	"LaunchOption": {
