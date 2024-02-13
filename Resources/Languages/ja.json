@@ -254,7 +254,10 @@
 	},
 	"4": {
 		"1": {
-			"1": "変更内容は自動的に保存されます"
+			"1": "変更内容は自動的に保存されます",
+			"ExperimentalFeatures": "実験的機能",
+			"Manage": "管理",
+			"Activate": "有効化"
 		}
 	},
 	"5": {
@@ -351,6 +354,9 @@
 			"ServerStatus_Region;List": "アジア,東ヨーロッパ,西ヨーロッパ,アメリカ南部,アメリカ中部,アメリカ東部,アメリカ西部",
 			"MapRotation_Enable;Name": "マップローテーション情報を表示する",
 			"MapRotation_Enable;Desc": "メインメニューにマップローテーション情報を表示します\r\n(適用するにはアプリの再起動が必要です)"
+		},
+		"ExperimentalFeatures": {
+			"__Name": "実験的機能"
 		}
 	},
 	"LaunchOption": {
