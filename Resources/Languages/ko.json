@@ -116,6 +116,10 @@
 		"ApplicationSettings": {
 			"Viewing_Details": "アプリケーション設定を閲覧中",
 			"Viewing_State": ""
+		},
+		"Playing": {
+			"Playing_Details": "ゲームをプレイ中",
+			"Playing_State": "プロファイル: {0}"
 		}
 	},
 	"ProfileManagement": {
