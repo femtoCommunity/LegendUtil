@@ -118,6 +118,20 @@
 			"Viewing_State": ""
 		}
 	},
+	"ProfileManagement": {
+		"General": {
+			"NotFound": "指定されたプロファイル (ID: {0}) は存在しません。"
+		},
+		"Shortcut": {
+			"ConfirmCreate": "プロファイル「{0}」のショートカットを作成してもよろしいですか？",
+			"Created": "プロファイル「{0}」のショートカットをデスクトップへ作成しました。",
+			"CannotCreate": "ショートカットの作成に失敗しました。\n\n{0}"
+		},
+		"Delete": {
+			"ConfirmDelete": "プロファイル「{0}」を削除してもよろしいですか？",
+			"CannotDelete": "プロファイル「{0}」は削除できません。"
+		}
+	},
 	"1": {
 		"1": {
 			"1": "Play",
