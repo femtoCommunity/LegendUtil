@@ -389,7 +389,7 @@
 		
 		// プロファイルがDefaultの場合は変更をキャンセルする
 		もしIDが「Default」なら
-			[言語管理器で「ProfileManagement.General.CannotDelete」を{[プロファイル管理器のプロファイルテーブル(ID)の名前]}として取得したもの]を「中止アイコン」で表示する
+			[言語管理器で「ProfileManagement.Delete.CannotDelete」を{[プロファイル管理器のプロファイルテーブル(ID)の名前]}として取得したもの]を「中止アイコン」で表示する
 			×を返す
 		もし終わり
 		
