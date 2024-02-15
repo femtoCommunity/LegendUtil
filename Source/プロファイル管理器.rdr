@@ -434,8 +434,8 @@
 				「Name」=「」,
 				「Id」=「」,
 				「Version」=「2」,
-				「Total_Play_Time_List」=空の辞書,
-				「Last_Play_Date_And_Time_List」=空の辞書
+				「Total_Play_Time_List」=無,
+				「Last_Play_Date_And_Time_List」=無
 			},
 			「Game」={
 				「Exe_Path」={
@@ -981,6 +981,9 @@ Apex Legends が使用するスレッド数を制限したい場合にこの設�
 		プロファイルデータ=プロファイル管理器の設定初期プロファイル(「v2」)を複製したもの
 		プロファイルデータ(「Info」)(「Id」)=GUID値を生成したもの
 		プロファイルデータ(「Info」)(「Name」)=「Profile_[プロファイルデータ(「Info」)(「Id」)]」
+		
+		もしプロファイルデータ(「Info」)(「Total_Play_Time_List」)が無ならプロファイルデータ(「Info」)(「Total_Play_Time_List」)=空の辞書
+		もしプロファイルデータ(「Info」)(「Last_Play_Date_And_Time_List」)が無ならプロファイルデータ(「Info」)(「Last_Play_Date_And_Time_List」)=空の辞書
 		
 		バイナリーパス自動検出実行する
 		
