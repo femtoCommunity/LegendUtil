@@ -570,7 +570,7 @@
 			「説明」=「DirectX 12 でゲームを起動します。
 DirectX 12 を使用すると、ゲームがCPU グラフィック コードを複数のコアに分散できるようになり、フレームレートの向上が期待できます。
 環境によっては、テクスチャーが正常に表示されないなど、不具合が発生する可能性があります。」,
-			「拡張ボタン」={「DirectX 12 に関する詳しい情報はこちら (Reddit)」,「「「https://www.reddit.com/r/apexlegends/comments/yiek6d/dev_team_update_directx_12_beta_on_pcshare_your/」を「標準」で開く」」},
+			「拡張ボタン」={「DirectX 12 に関する詳しい情報はこちら (Reddit)」,「「「https://www.reddit.com/r/apexlegends/comments/16mwzaz/dev_team_update_directx_12_rhi/」を「標準」で開く」」},
 			「編集可能」=○,
 			「入力」=×,
 			「入力初期値」=「SettingsDX12.json」,
