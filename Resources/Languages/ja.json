@@ -136,6 +136,17 @@
 			"CannotDelete": "プロファイル「{0}」は削除できません。"
 		}
 	},
+	"PlayingPanel": {
+		"UI": {
+			"Cancel": "キャンセル",
+			"ProfileName": "プロファイル名",
+			"CursorLock": "カーソルロック",
+			"PID": "PID",
+			"Version": "バージョン",
+			"Build": "ビルド",
+			"LaunchOption": "起動引数"
+		}
+	},
 	"1": {
 		"1": {
 			"1": "プレイ",
