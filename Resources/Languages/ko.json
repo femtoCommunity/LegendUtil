@@ -136,6 +136,17 @@
 			"CannotDelete": "プロファイル「{0}」は削除できません。"
 		}
 	},
+	"InPlay": {
+		"UI": {
+			"Cancel": "キャンセル",
+			"ProfileName": "プロファイル名",
+			"CursorLock": "커서 고정",
+			"PID": "PID",
+			"Version": "バージョン",
+			"Build": "ビルド",
+			"LaunchOption": "시작 인수"
+		}
+	},
 	"1": {
 		"1": {
 			"1": "플레이",
