@@ -136,6 +136,17 @@
 			"CannotDelete": "Profile \"{0}\" cannot be deleted."
 		}
 	},
+	"InPlay": {
+		"UI": {
+			"Cancel": "キャンセル",
+			"ProfileName": "プロファイル名",
+			"CursorLock": "Cursor Lock",
+			"PID": "PID",
+			"Version": "バージョン",
+			"Build": "ビルド",
+			"LaunchOption": "Launch Options"
+		}
+	},
 	"1": {
 		"1": {
 			"1": "Play",
