@@ -136,7 +136,7 @@
 			"CannotDelete": "プロファイル「{0}」は削除できません。"
 		}
 	},
-	"PlayingPanel": {
+	"InPlay": {
 		"UI": {
 			"Cancel": "キャンセル",
 			"ProfileName": "プロファイル名",
