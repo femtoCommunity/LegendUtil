@@ -300,6 +300,16 @@
 		終わり
 	終わり
 	
+	言語読み込む手順
+		キャンセルボタンの内容=言語管理器で「PlayingPanel.UI.Cancel」を取得したもの
+		プロファイル名タイトルラベルの内容=言語管理器で「PlayingPanel.UI.ProfileName」を取得したもの
+		カーソル状態タイトルラベルの内容=言語管理器で「PlayingPanel.UI.CursorLock」を取得したもの
+		PIDタイトルラベルの内容=言語管理器で「PlayingPanel.UI.PID」を取得したもの
+		バージョンタイトルラベルの内容=言語管理器で「PlayingPanel.UI.Version」を取得したもの
+		ビルドタイトルラベルの内容=言語管理器で「PlayingPanel.UI.Build」を取得したもの
+		起動引数タイトルラベルの内容=言語管理器で「PlayingPanel.UI.LaunchOption」を取得したもの
+	終わり
+	
 	キャンセルボタンがクリックされた時の手順
 		もし「Apex Legends の待機をキャンセルしてもよろしいですか？」を「警告アイコン」にして「はいといいえ」で質問したものが「はい」なら
 			ApexLegendsの待機キャンセル=○
