@@ -118,8 +118,8 @@
 			"Viewing_State": ""
 		},
 		"Playing": {
-			"Playing_Details": "ゲームをプレイ中",
-			"Playing_State": "プロファイル: {0}"
+			"Playing_Details": "Playing a game",
+			"Playing_State": "Profile: {0}"
 		}
 	},
 	"ProfileManagement": {
@@ -138,27 +138,27 @@
 	},
 	"InPlay": {
 		"UI": {
-			"Cancel": "キャンセル",
-			"ProfileName": "プロファイル名",
+			"Cancel": "Cancel",
+			"ProfileName": "Profile Name",
 			"CursorLock": "Cursor Lock",
 			"PID": "PID",
-			"Version": "バージョン",
-			"Build": "ビルド",
+			"Version": "Version",
+			"Build": "Build",
 			"LaunchOption": "Launch Options"
 		},
 		"Status": {
-			"ProcessingStartup": "起動処理中...",
-			"ProcessingTermination": "終了処理中...",
-			"ChangingDisplaySettings": "ディスプレイ設定を変更中",
-			"StartingGame": "Apex Legends を起動中",
-			"WaitingForGameToStart": "Apex Legends の起動を待機中",
-			"WaitingForGameToStart_WithRT": "Apex Legends の起動を待機中 - 残り{0}秒",
-			"StoppingGameProcess": "Apex Legends のプロセスを停止中",
-			"MonitoringGameProcess": "Apex Legends のプロセスを追跡中"
+			"ProcessingStartup": "Starting up...",
+			"ProcessingTermination": "Finishing up...",
+			"ChangingDisplaySettings": "Changing display settings",
+			"StartingGame": "Starting Apex Legends",
+			"WaitingForGameToStart": "Waiting for Apex Legends to launch",
+			"WaitingForGameToStart_WithRT": "Waiting for Apex Legends to launch - {0} seconds left",
+			"StoppingGameProcess": "Stopping Apex Legends process",
+			"MonitoringGameProcess": "Tracking the Apex Legends process"
 		},
 		"Dialog": {
-			"Game_WontStart": "Apex Legends が起動しませんか？\nEA app のバックグラウンドサービスを再起動すると解決する場合があります。再起動しますか？\n(アップデート中の場合は、一度待機をキャンセルし、アップデート完了後に再度起動してください。)",
-			"Game_ProcessForciblyTerminated": "Apex Legends のプロセスを強制終了しました。[改行]正常な終了処理が行われていないため、コンフィグなどが保存されていない可能性があります。",
+			"Game_WontStart": "Apex Legends won't start?\nRestarting the EA app's background services may resolve the issue. Would you like to restart?\n(If the update is in progress, cancel the wait and restart after the update is complete.)",
+			"Game_ProcessForciblyTerminated": "Apex Legends のプロセスを強制終了しました。\n正常な終了処理が行われていないため、コンフィグなどが保存されていない可能性があります。",
 			"Game_DeleteStartupArgsInEAappProperties": "EA app のプロパティで Apex Legends の起動引数が設定されているため、このまま起動すると意図しない設定が適用されてしまう可能性があります。\n\nEA app のプロパティで設定されている起動引数を削除しますか？\n\n＜設定されている起動引数＞\n"
 		},
 		"Log": {
