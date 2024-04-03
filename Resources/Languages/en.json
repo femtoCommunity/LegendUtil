@@ -272,7 +272,7 @@
 	"Panel": {
 		"ProfileManage_ContextMenu": {
 			"EditButton": "Edit",
-			"CreateShortCutButton": " Create Shortcut",
+			"CreateShortcutButton": "ショートカットを作成",
 			"ChangeNameButton": "Change Name",
 			"DeleteButton": "Delete"
 		}
