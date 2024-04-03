@@ -165,6 +165,7 @@
 			"Done": "Done",
 			"Path": "Path",
 			"Platform": "Platform",
+			"WindowHandle": "ウィンドウハンドル",
 			"MainWindowHandle": "Main Window Handle",
 			"Download": "Download",
 			"StatusCode": "Status Code",
@@ -272,7 +273,7 @@
 	"Panel": {
 		"ProfileManage_ContextMenu": {
 			"EditButton": "Edit",
-			"CreateShortcutButton": "ショートカットを作成",
+			"CreateShortcutButton": "Create Shortcut",
 			"ChangeNameButton": "Change Name",
 			"DeleteButton": "Delete"
 		}
