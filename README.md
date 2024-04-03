@@ -11,30 +11,29 @@
 
 [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/Y5FrzPft3M)
 [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/Milkeyyy_53)
+[![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/milkeyyy)
 
 ## 📃 概要
-Apex Legends のプレイをより快適にするアプリケーションです。
+Apex Legends のプレイをより快適にするランチャーアプリケーションです。
 引き伸ばしを行うための解像度の変更や、軽量化のための起動オプションの変更などを、GUIで視覚的に行うことができます。
 
 ### 🖥️ 対応環境
 - **Windows 11**
-  - 21H2
-  - 22H2
 - **Windows 10 (64-bit)**
 
 ### 🎮 対応プラットフォーム
 - [**EA app**](https://www.ea.com/ja-jp/ea-app)
 - [**Steam**](https://store.steampowered.com)
 
-### 📝 言語
+### 📝 プログラミング言語
 - [**プロデル**](https://produ.irelang.jp/) 2.0
-- **C#**
-- **Python**
+- **C#** (.NET Framework 4.8)
+- **Python** (API)
 
 ---
 
-## ⚠️ 注意
-LegendUtil には [**ELECTRONIC ARTS ユーザー契約**](https://www.ea.com/ja-jp/legal/user-agreement) に違反するような機能は実装されていませんが、万が一 LegendUtil を使用した影響で EA アカウント が停止されたりしても、[**ライセンス**](#-ライセンス) に基づき、開発者は一切の責任を負いません。
+> [!IMPORTANT]
+> LegendUtil には他のプレイヤーとの競争力を不正に高めるような機能は含まれていませんが、万が一 LegendUtil を使用した影響で EA アカウント が停止されたりしても、[**ライセンス**](#-ライセンス) に基づき、開発者は一切の責任を負いません。
 
 ---
 
@@ -45,19 +44,10 @@ LegendUtil には [**ELECTRONIC ARTS ユーザー契約**](https://www.ea.com/ja
   - **Assets** から `LegendUtil_Setup.exe` をダウンロードして、実行してください。
 
 ### 📦 winget を使用してインストールする
-- [**winget**](https://learn.microsoft.com/ja-jp/windows/package-manager/winget/) が利用できる環境の場合は、コマンドプロンプトやPowerShellで次のコマンドを実行することでインストールできます。
+- [**winget**](https://learn.microsoft.com/ja-jp/windows/package-manager/winget/) ([Microsoft Store](https://www.microsoft.com/p/app-installer/9nblggh4nns1#activetab=pivot:overviewtab)) が利用できる環境の場合は、コマンドプロンプトやPowerShellで次のコマンドを実行することでインストールできます。
+```powershell
+winget install --id femtoCommunity.LegendUtil
 ```
-winget install femtoCommunity.LegendUtil
-```
-
-- 例
-  - コマンドプロンプト
-
-    ![cmd Preview](https://user-images.githubusercontent.com/59532514/223331635-8ebdbc30-e658-4776-8709-eee5d1cd8a61.png)
-
-  - Powershell
-
-    ![PowerShell Preview](https://user-images.githubusercontent.com/59532514/223331108-f1b908cb-8399-4117-89f4-ea2a155dae61.png)
 
 ### 💊 開発ビルドをインストールする
 - [**インストーラーをダウンロード**](https://releases.api.legendutil.milkeyyy.com/latest/download?release_channel=dev)
@@ -109,7 +99,7 @@ winget install femtoCommunity.LegendUtil
 ---
 
 ## 📒 ライセンス
-Copyright (C) 2023 Milkeyyy
+Copyright (C) 2024 Milkeyyy
 
 LegendUtil は [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.ja.html) のもとでライセンスされています。
 
@@ -117,13 +107,11 @@ LegendUtil は [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl
 
 ## 開発者
 - **ソフトウェア**
-  - **Milkeyyy** - [femto Community](https://femtocommunity.com/)
+  - **Milkeyyy** - [@Ezolys](https://github.com/Ezolys) / [@femto Community](https://github.com/femtoCommunity)
     - [GitHub](https://github.com/Milkeyyy)
-    - [X](https://x.com/Milkeyyy_53)
-    - [Website](https://milkeyyy.com/)
+    - [Twitter](https://twitter.com/Milkeyyy_53)
     - [Ko-fiで開発をサポートする](https://ko-fi.com/milkeyyy)
 - **ロゴデザイン**
-  - **Rel1c** (Rel1cStyle) - [femto Community](https://femtocommunity.com/)
+  - **Rel1c** (Rel1cStyle) - [@Ezolys](https://github.com/Ezolys) / [@femto Community](https://github.com/femtoCommunity)
     - [GitHub](https://github.com/Rel1c393)
-    - [X](https://x.com/Apex_tyaneko) / [X (Brand)](https://x.com/Rel1cStyle)
-    - [Website](https://rel1c.work/)
+    - [Twitter](https://twitter.com/Apex_tyaneko)
