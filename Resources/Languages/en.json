@@ -269,6 +269,14 @@
 			"EAapp_CouldNotGetWindowHandle": "EA app のウィンドウハンドルを取得できませんでした。"
 		}
 	},
+	"Panel": {
+		"ProfileManage_ContextMenu": {
+			"EditButton": "編集",
+			"CreateShortCutButton": "ショートカットを作成",
+			"ChangeNameButton": "名前の変更",
+			"DeleteButton": "Delete"
+		}
+	},
 	"1": {
 		"1": {
 			"1": "Play",
