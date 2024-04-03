@@ -256,6 +256,7 @@
 			"20": "プロファイルコンフィグの作成に失敗しました。",
 			"21": "プロファイルコンフィグの復元に失敗しました。",
 			"22": "EA app のコンフィグから起動引数を削除できませんでした。",
+			"StartupProcessFailed": "<エラー番号: {0}>\n{1}\n\n{2}",
 			"FailedToLaunch_FileNotFound": "Apex Legends の起動に失敗しました。\n指定されたパス「{0}」にファイルが見つかりませんでした。",
 			"Game_ProcessTrackingTerminationError": "監視終了処理でエラーが発生しました。\n\n{0}",
 			"Game_StartupProcessingIsAlreadyInProgress": "既に起動処理が実行中です。",
