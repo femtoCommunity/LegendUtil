@@ -165,6 +165,7 @@
 			"Done": "完了",
 			"Path": "パス",
 			"Platform": "プラットフォーム",
+			"WindowHandle": "ウィンドウハンドル",
 			"MainWindowHandle": "メインウィンドウハンドル",
 			"Download": "ダウンロード",
 			"StatusCode": "ステータスコード",
