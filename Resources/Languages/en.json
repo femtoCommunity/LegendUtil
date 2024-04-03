@@ -37,6 +37,20 @@
 			"4": "Failed to perform update.\n\n{0}"
 		}
 	},
+	"SplashWindow": {
+		"Status": {
+			"Loading": "読み込み中...",
+			"LoadingWindow": "ウィンドウを読み込み中",
+			"LoadingWindow_MainWindow": "ウィンドウを読み込み中",
+			"GeneratingControl": "コントロールを生成中",
+			"GeneratingControl_MainMenuPanel": "コントロールを生成中: メインメニュー",
+			"GeneratingControl_AppSettingsPanel": "コントロールを生成中: アプリケーション設定パネル",
+			"GeneratingControl_AccountManagePanel": "コントロールを生成中: アカウント管理パネル",
+			"GeneratingControl_ProfileManagePanel": "コントロールを生成中: プロファイル管理パネル",
+			"GeneratingControl_ProfileCreateWizardPanel": "コントロールを生成中: プロファイル作成ウィザードパネル",
+			"GeneratingControl_ProfileEditPanel": "コントロールを生成中: プロファイル編集パネル"
+		}
+	},
 	"PanelTitle": {
 		"MainWindow": {
 			"ProfileManage": "Profiles Management",
