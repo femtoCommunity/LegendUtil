@@ -159,7 +159,7 @@
 		"Dialog": {
 			"Game_WontStart": "Apex Legends won't start?\nRestarting the EA app's background services may resolve the issue. Would you like to restart?\n(If the update is in progress, cancel the wait and restart after the update is complete.)",
 			"Game_ProcessForciblyTerminated": "Apex Legends のプロセスを強制終了しました。\n正常な終了処理が行われていないため、コンフィグなどが保存されていない可能性があります。",
-			"Game_DeleteStartupArgsInEAappProperties": "EA app のプロパティで Apex Legends の起動引数が設定されているため、このまま起動すると意図しない設定が適用されてしまう可能性があります。\n\nEA app のプロパティで設定されている起動引数を削除しますか？\n\n＜設定されている起動引数＞\n"
+			"Game_DeleteStartupArgsInEAappProperties": "EA app のプロパティで Apex Legends の起動引数が設定されているため、このまま起動すると意図しない設定が適用されてしまう可能性があります。\n\nEA app のプロパティで設定されている起動引数を削除しますか？\n\n＜設定されている起動引数＞\n{0}"
 		},
 		"Log": {
 			"Done": "Done",
