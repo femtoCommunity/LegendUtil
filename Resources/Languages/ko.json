@@ -104,6 +104,9 @@
 			"FailedToGetNews": "ニュースを取得できませんでした。",
 			"FailedToGetNewsImage": "画像を取得できませんでした。"
 		},
+		"UpdateStatus": {
+			"LastUpdate": "最終更新: {0}"
+		},
 		"MapRotation": {
 			"GameMode_battle_royale": "バトルロイヤル | カジュアル",
 			"GameMode_ranked": "バトルロイヤル | ランクリーグ",
@@ -111,7 +114,8 @@
 			"GameMode_arenasRanked": "アリーナ | ランク",
 			"GameMode_ltm_Control": "コントロール",
 			"GameMode_ltm_TDM": "チームデスマッチ",
-			"GameMode_ltm_Gun Run": "ガンゲーム"
+			"GameMode_ltm_Gun Run": "ガンゲーム",
+			"GameMode_ltm_Lockdown": "ロックダウン"
 		}
 	},
 	"DiscordRPC": {
@@ -245,7 +249,9 @@
 			"ConfigFile_RestoringError": "コンフィグファイルの復元処理でエラーが発生しました。",
 			"ProfileConfigFile_RestoringError": "プロファイルコンフィグファイルの復元処理でエラーが発生しました。",
 			"VideoConfigFile_RestoringError": "ビデオコンフィグファイルの復元処理でエラーが発生しました。",
-			"VideoConfigFile_SettingsRestoringError": "ビデオコンフィグ設定項目の復元処理でエラーが発生しました。"
+			"VideoConfigFile_SettingsRestoringError": "ビデオコンフィグ設定項目の復元処理でエラーが発生しました。",
+			"TT_SystemDisplaySettings_LastPlayDateRecordError": "最終プレイ日時の記録処理でエラーが発生しました。",
+			"TT_SystemDisplaySettings_TotalPlayTimeRecordError": "総プレイ時間の記録処理でエラーを発生しました。"
 		},
 		"Error": {
 			"0": "起動処理時にエラーが発生しました。",
@@ -273,7 +279,7 @@
 			"22": "EA app のコンフィグから起動引数を削除できませんでした。",
 			"StartupProcessFailed": "<エラー番号: {0}>\n{1}\n\n{2}",
 			"FailedToLaunch_FileNotFound": "Apex Legends の起動に失敗しました。\n指定されたパス「{0}」にファイルが見つかりませんでした。",
-			"Game_ProcessTrackingTerminationError": "監視終了処理でエラーが発生しました。\n\n{0}",
+			"Game_ProcessTrackingTerminationError": "終了処理でエラーが発生しました。\n正常な終了処理が行われていないため、一部の設定が保存されていなかったりする可能性があります。\n\n{0}",
 			"Game_StartupProcessingIsAlreadyInProgress": "既に起動処理が実行中です。",
 			"Game_CouldNotGetProcess_Timeout": "時間内に Apex Legends のプロセスを取得出来ませんでした。",
 			"Profile_SpecifiedProfileNotFound": "指定されたプロファイル {0} は存在しません。",
@@ -300,7 +306,7 @@
 			"4": "設定"
 		},
 		"2": {
-			"1": "지역: {0} | 최종 업데이트: {1} | Data provided by https://apexlegendsstatus.com/",
+			"1": "地域: {0}",
 			"2": "크로스플레이 인증",
 			"3": "로비/매치메이킹",
 			"4": "Origin 로그인",
@@ -405,7 +411,8 @@
 			"コンフィグ読み取り専用ラベル": "読み取り専用",
 			"コンフィグ読み取り専用チェックボックス": "활성화됨",
 			"コンフィグファイル開くボタン": "ファイルを開く",
-			"__Text;コンフィグ未生成警告": "コンフィグが生成されていません。一度このプロファイルでゲームを起動してください。"
+			"__Text;コンフィグ未生成警告": "コンフィグが生成されていません。一度このプロファイルでゲームを起動してください。",
+			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
 		},
 		"コンフィグパネル部品2": {
 			"ベースフレーム": "プロファイルコンフィグ",
@@ -414,7 +421,8 @@
 			"コンフィグ読み取り専用ラベル": "読み取り専用",
 			"コンフィグ読み取り専用チェックボックス": "활성화됨",
 			"コンフィグファイル開くボタン": "ファイルを開く",
-			"__Text;コンフィグ未生成警告": "プロファイルコンフィグが生成されていません。一度このプロファイルでゲームを起動してください。"
+			"__Text;コンフィグ未生成警告": "プロファイルコンフィグが生成されていません。一度このプロファイルでゲームを起動してください。",
+			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
 		},
 		"ビデオコンフィグパネル部品": {
 			"ベースフレーム": "ビデオコンフィグ",
@@ -423,7 +431,8 @@
 			"コンフィグ読み取り専用ラベル": "読み取り専用",
 			"コンフィグ読み取り専用チェックボックス": "활성화됨",
 			"コンフィグファイル開くボタン": "ファイルを開く",
-			"__Text;コンフィグ未生成警告": "ビデオコンフィグが生成されていません。一度このプロファイルでゲームを起動してください。"
+			"__Text;コンフィグ未生成警告": "ビデオコンフィグが生成されていません。一度このプロファイルでゲームを起動してください。",
+			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
 		}
 	},
 	"4": {
