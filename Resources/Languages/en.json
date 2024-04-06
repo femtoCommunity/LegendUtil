@@ -104,6 +104,9 @@
 			"FailedToGetNews": "Failed to get News.",
 			"FailedToGetNewsImage": "Failed to get News Image."
 		},
+		"UpdateStatus": {
+			"LastUpdate": "最終更新: {0}"
+		},
 		"MapRotation": {
 			"GameMode_battle_royale": "Battle Royale | Casual",
 			"GameMode_ranked": "Battle Royale | Ranked League",
@@ -111,7 +114,8 @@
 			"GameMode_arenasRanked": "Arena | Ranked",
 			"GameMode_ltm_Control": "Control",
 			"GameMode_ltm_TDM": "Team Deathmatch",
-			"GameMode_ltm_Gun Run": "Gun Run"
+			"GameMode_ltm_Gun Run": "Gun Run",
+			"GameMode_ltm_Lockdown": "ロックダウン"
 		}
 	},
 	"DiscordRPC": {
@@ -245,7 +249,9 @@
 			"ConfigFile_RestoringError": "An error occurred while restoring the config file.",
 			"ProfileConfigFile_RestoringError": "An error occurred while restoring the profile config file.",
 			"VideoConfigFile_RestoringError": "An error occurred while restoring the video config file.",
-			"VideoConfigFile_SettingsRestoringError": "An error occurred while restoring the video config settings."
+			"VideoConfigFile_SettingsRestoringError": "An error occurred while restoring the video config settings.",
+			"TT_SystemDisplaySettings_LastPlayDateRecordError": "最終プレイ日時の記録処理でエラーが発生しました。",
+			"TT_SystemDisplaySettings_TotalPlayTimeRecordError": "総プレイ時間の記録処理でエラーを発生しました。"
 		},
 		"Error": {
 			"0": "An error occurred during startup processing.",
@@ -273,7 +279,7 @@
 			"22": "Failed to remove launch arguments from EA app's config.",
 			"StartupProcessFailed": "<Error Number: {0}>\n{1}\n\n{2}",
 			"FailedToLaunch_FileNotFound": "Apex Legends failed to start.\nNo file was found at the specified path '{0}'.",
-			"Game_ProcessTrackingTerminationError": "An error occurred during tracking termination processing.\n\n{0}",
+			"Game_ProcessTrackingTerminationError": "終了処理でエラーが発生しました。\n正常な終了処理が行われていないため、一部の設定が保存されていなかったりする可能性があります。\n\n{0}",
 			"Game_StartupProcessingIsAlreadyInProgress": "Startup processing is already in progress.",
 			"Game_CouldNotGetProcess_Timeout": "Failed to get Apex Legends process in time.",
 			"Profile_SpecifiedProfileNotFound": "The specified Profile {0} does not exist.",
@@ -300,7 +306,7 @@
 			"4": "Settings"
 		},
 		"2": {
-			"1": "Region: {0} | Last Update: {1} | Data provided by https://apexlegendsstatus.com/",
+			"1": "地域: {0}",
 			"2": "Crossplay auth",
 			"3": "Lobby/Matchmaking",
 			"4": "Origin logins",
@@ -405,7 +411,8 @@
 			"コンフィグ読み取り専用ラベル": "Read-only",
 			"コンフィグ読み取り専用チェックボックス": "Enable",
 			"コンフィグファイル開くボタン": "Open file",
-			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile."
+			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile.",
+			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
 		},
 		"コンフィグパネル部品2": {
 			"ベースフレーム": "Profile Config",
@@ -414,7 +421,8 @@
 			"コンフィグ読み取り専用ラベル": "Read-only",
 			"コンフィグ読み取り専用チェックボックス": "Enable",
 			"コンフィグファイル開くボタン": "Open file",
-			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile."
+			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile.",
+			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
 		},
 		"ビデオコンフィグパネル部品": {
 			"ベースフレーム": "Video Config",
@@ -423,7 +431,8 @@
 			"コンフィグ読み取り専用ラベル": "Read-only",
 			"コンフィグ読み取り専用チェックボックス": "Enable",
 			"コンフィグファイル開くボタン": "Open file",
-			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile."
+			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile.",
+			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
 		}
 	},
 	"4": {
