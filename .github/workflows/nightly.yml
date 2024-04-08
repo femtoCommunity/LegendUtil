@@ -20,47 +20,47 @@ jobs:
     steps:
     - name: Create Directory
       run: |
-        New-Item -ItemType Directory "$RUNNER_TEMP\rdr"
-        New-Item -ItemType Directory "$RUNNER_TEMP\source"
-        New-Item -ItemType Directory "$RUNNER_TEMP\build"
+        New-Item -ItemType Directory "$env:RUNNER_TEMP\rdr"
+        New-Item -ItemType Directory "$env:RUNNER_TEMP\source"
+        New-Item -ItemType Directory "$env:RUNNER_TEMP\build"
 
     - name: Download Produire
       shell: pwsh
       run: |
-        Invoke-WebRequest -Uri $env:Produire_Url -OutFile "$RUNNER_TEMP\rdr.zip"
-        $zipfilePath="$RUNNER_TEMP\rdr.zip"
-        $destinationUnzipPath="$RUNNER_TEMP\rdr"
+        Invoke-WebRequest -Uri $env:Produire_Url -OutFile "$env:RUNNER_TEMP\rdr.zip"
+        $zipfilePath="$env:RUNNER_TEMP\rdr.zip"
+        $destinationUnzipPath="$env:RUNNER_TEMP\rdr"
         & ${env:ProgramFiles}\7-Zip\7z.exe x $zipfilePath "-o$($destinationUnzipPath)" -y
-        Remove-Item -Path "$RUNNER_TEMP\rdr.zip"
+        Remove-Item -Path "$env:RUNNER_TEMP\rdr.zip"
 
     - name: Download Source
       shell: pwsh
       run: |
-        Invoke-WebRequest -Uri "https://github.com/$GITHUB_REPOSITORY/archive/refs/heads/$GITHUB_REF_NAME.zip" -OutFile "$RUNNER_TEMP\source.zip"
-        $zipfilePath="$RUNNER_TEMP\source.zip"
-        $destinationUnzipPath="$RUNNER_TEMP\source"
+        Invoke-WebRequest -Uri "https://github.com/$env:GITHUB_REPOSITORY/archive/refs/heads/$env:GITHUB_REF_NAME.zip" -OutFile "$env:RUNNER_TEMP\source.zip"
+        $zipfilePath="$env:RUNNER_TEMP\source.zip"
+        $destinationUnzipPath="$env:RUNNER_TEMP\source"
         & ${env:ProgramFiles}\7-Zip\7z.exe x $zipfilePath "-o$($destinationUnzipPath)" -y
-        Remove-Item -Path "$RUNNER_TEMP\source.zip"
+        Remove-Item -Path "$env:RUNNER_TEMP\source.zip"
 
     - name: Compile Source
       shell: pwsh
       run: |
-        Start-Process -Wait -NoNewWindow -FilePath "$RUNNER_TEMP\rdr\rdrc.exe" -ArgumentList "/desktop","/anycpu","$RUNNER_TEMP\source\$env:Project_Name.rdrproj"
-        Move-Item -Path "$RUNNER_TEMP\source\$env:Project_Name.exe" -Destination "$RUNNER_TEMP\build"
-        Move-Item -Path "$RUNNER_TEMP\source\*.dll" -Destination "$RUNNER_TEMP\build"
+        Start-Process -Wait -NoNewWindow -FilePath "$env:RUNNER_TEMP\rdr\rdrc.exe" -ArgumentList "/desktop","/anycpu","$env:RUNNER_TEMP\source\$env:Project_Name.rdrproj"
+        Move-Item -Path "$env:RUNNER_TEMP\source\$env:Project_Name.exe" -Destination "$env:RUNNER_TEMP\build"
+        Move-Item -Path "$env:RUNNER_TEMP\source\*.dll" -Destination "$env:RUNNER_TEMP\build"
 
     - name: Copy Resources
       shell: pwsh
       run: |
-        Move-Item -Path "$RUNNER_TEMP\source\_Pack\$env:Project_Name\*" -Destination "$RUNNER_TEMP\build"
+        Move-Item -Path "$env:RUNNER_TEMP\source\_Pack\$env:Project_Name\*" -Destination "$env:RUNNER_TEMP\build"
 
     - name: Compress Archive
       shell: pwsh
       run: |
-        Compress-Archive -Path "$RUNNER_TEMP\build\*" -DestinationPath "$RUNNER_TEMP\build\build.zip"
+        Compress-Archive -Path "$env:RUNNER_TEMP\build\*" -DestinationPath "$env:RUNNER_TEMP\build\build.zip"
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
         name: build
-        path: $RUNNER_TEMP\build\build.zip
+        path: $env:RUNNER_TEMP\build\build.zip
