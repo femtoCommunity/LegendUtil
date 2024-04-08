@@ -22,7 +22,7 @@ jobs:
       run: |
         New-Item -ItemType Directory "$env:RUNNER_TEMP\rdr"
         New-Item -ItemType Directory "$env:RUNNER_TEMP\source"
-        New-Item -ItemType Directory "$env:RUNNER_TEMP\build"
+        New-Item -ItemType Directory "\build"
 
     - name: Download Produire
       shell: pwsh
