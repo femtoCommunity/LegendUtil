@@ -45,6 +45,8 @@ jobs:
     - name: Compile Source
       shell: pwsh
       run: |
+        "Nightly Build" > "$env:RUNNER_TEMP\source\BuildDate.txt"
+        "99999.000000" > "$env:RUNNER_TEMP\source\BuildVersion.txt"
         Start-Process -Wait -NoNewWindow -FilePath "$env:RUNNER_TEMP\rdr\rdrc.exe" -ArgumentList "/desktop","/anycpu","$env:RUNNER_TEMP\source\$env:Project_Name.rdrproj"
         Move-Item -Path "$env:RUNNER_TEMP\source\$env:Project_Name.exe" -Destination "$env:RUNNER_TEMP\build"
         Move-Item -Path "$env:RUNNER_TEMP\source\*.dll" -Destination "$env:RUNNER_TEMP\build"
