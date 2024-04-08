@@ -22,7 +22,8 @@ jobs:
       run: |
         New-Item -ItemType Directory "$env:RUNNER_TEMP\rdr"
         New-Item -ItemType Directory "$env:RUNNER_TEMP\source"
-        New-Item -ItemType Directory "\build"
+        New-Item -ItemType Directory "$env:RUNNER_TEMP\build"
+        New-Item -ItemType Directory "\artifacts"
 
     - name: Download Produire
       shell: pwsh
@@ -61,10 +62,10 @@ jobs:
     - name: Compress Archive
       shell: pwsh
       run: |
-        Compress-Archive -Path "$env:RUNNER_TEMP\build\*" -DestinationPath "\build\$env:Project_Name-$env:GITHUB_REF_NAME-nightly.zip"
+        Compress-Archive -Path "$env:RUNNER_TEMP\build\*" -DestinationPath "\artifacts\$env:Project_Name-$env:GITHUB_REF_NAME-nightly.zip"
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
         name: build
-        path: \build\$env:Project_Name-$env:GITHUB_REF_NAME-nightly.zip
+        path: \artifacts\$env:Project_Name-$env:GITHUB_REF_NAME-nightly.zip
