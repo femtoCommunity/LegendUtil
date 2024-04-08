@@ -59,13 +59,8 @@ jobs:
         $Source_Path="$env:RUNNER_TEMP\source\$env:Project_Name-$env:GITHUB_REF_NAME"
         Copy-Item -Path "$Source_Path\_Pack\$env:Project_Name\*" -Destination "$env:RUNNER_TEMP\build"
 
-    - name: Compress Archive
-      shell: pwsh
-      run: |
-        Compress-Archive -Path "$env:RUNNER_TEMP\build\*" -DestinationPath "\artifacts\nightly.zip"
-
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: build
-        path: \artifacts\nightly.zip
+        name: ${{ env.Project_Name }}-${{ github.ref_name }}_Nightly_Build
+        path: ${{ runner.temp }}\build
