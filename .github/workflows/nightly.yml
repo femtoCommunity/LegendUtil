@@ -1,0 +1,62 @@
+name: Build Nightly
+
+on:
+  push:
+    branches: [ "dev" ]
+#  pull_request:
+#    branches: [ "dev" ]
+
+jobs:
+
+  build:
+
+    runs-on: windows-latest  # For a list of available runner types, refer to
+                             # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
+
+    env:
+      Project_Name: LegendUtil
+      Produire_Url: https://produ.irelang.jp/downloads/2.0/produire-2.0.1191.zip
+
+    steps:
+    - name: Create Directory
+      run: |
+        New-Item -ItemType Directory "$RUNNER_TEMP\rdr"
+        New-Item -ItemType Directory "$RUNNER_TEMP\source"
+        New-Item -ItemType Directory "$RUNNER_TEMP\build"
+
+    - name: Download Produire
+      shell: pwsh
+      run: |
+        Invoke-WebRequest -Uri $env:Produire_Url -OutFile "$RUNNER_TEMP\rdr.zip"
+        Expand-Archive -Path "$RUNNER_TEMP\rdr.zip" -DestinationPath "$RUNNER_TEMP\rdr"
+        Remove-Item -Path "$RUNNER_TEMP\rdr.zip"
+
+    - name: Download Source
+      shell: pwsh
+      run: |
+        Invoke-WebRequest -Uri "https://github.com/$GITHUB_REPOSITORY/archive/refs/heads/$GITHUB_REF_NAME.zip" -OutFile "$RUNNER_TEMP\source.zip"
+        Expand-Archive -Path "$RUNNER_TEMP\source.zip" -DestinationPath "$RUNNER_TEMP\source"
+        Remove-Item -Path "$RUNNER_TEMP\source.zip"
+
+    - name: Compile Source
+      shell: pwsh
+      run: |
+        Start-Process -Wait -NoNewWindow -FilePath "$RUNNER_TEMP\rdr\rdrc.exe" -ArgumentList "/desktop","/anycpu","$RUNNER_TEMP\source\$env:Project_Name.rdrproj"
+        Move-Item -Path "$RUNNER_TEMP\source\$env:Project_Name.exe" -Destination "$RUNNER_TEMP\build"
+        Move-Item -Path "$RUNNER_TEMP\source\*.dll" -Destination "$RUNNER_TEMP\build"
+
+    - name: Copy Resources
+      shell: pwsh
+      run: |
+        Move-Item -Path "$RUNNER_TEMP\source\_Pack\$env:Project_Name\*" -Destination "$RUNNER_TEMP\build"
+
+    - name: Compress Archive
+      shell: pwsh
+      run: |
+        Compress-Archive -Path "$RUNNER_TEMP\build\*" -DestinationPath "$RUNNER_TEMP\build\build.zip"
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: build
+        path: $RUNNER_TEMP\build\build.zip
