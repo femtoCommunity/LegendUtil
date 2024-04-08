@@ -28,13 +28,19 @@ jobs:
       shell: pwsh
       run: |
         Invoke-WebRequest -Uri $env:Produire_Url -OutFile "$RUNNER_TEMP\rdr.zip"
-        Expand-Archive -Path "$RUNNER_TEMP\rdr.zip" -DestinationPath "$RUNNER_TEMP\rdr"
+        $zipfilePath="$RUNNER_TEMP\rdr.zip"
+        $destinationUnzipPath="$RUNNER_TEMP\rdr"
+        & ${env:ProgramFiles}\7-Zip\7z.exe x $zipfilePath "-o$($destinationUnzipPath)" -y
+        Remove-Item -Path "$RUNNER_TEMP\rdr.zip"
 
     - name: Download Source
       shell: pwsh
       run: |
         Invoke-WebRequest -Uri "https://github.com/$GITHUB_REPOSITORY/archive/refs/heads/$GITHUB_REF_NAME.zip" -OutFile "$RUNNER_TEMP\source.zip"
-        Expand-Archive -Path "$RUNNER_TEMP\source.zip" -DestinationPath "$RUNNER_TEMP\source"
+        $zipfilePath="$RUNNER_TEMP\source.zip"
+        $destinationUnzipPath="$RUNNER_TEMP\source"
+        & ${env:ProgramFiles}\7-Zip\7z.exe x $zipfilePath "-o$($destinationUnzipPath)" -y
+        Remove-Item -Path "$RUNNER_TEMP\source.zip"
 
     - name: Compile Source
       shell: pwsh
