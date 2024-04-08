@@ -41,20 +41,21 @@ jobs:
         $destinationUnzipPath="$env:RUNNER_TEMP\source"
         & ${env:ProgramFiles}\7-Zip\7z.exe x $zipfilePath "-o$($destinationUnzipPath)" -y
         Remove-Item -Path "$env:RUNNER_TEMP\source.zip"
+        $Source_Path="$env:RUNNER_TEMP\source\$env:Project_Name-$env:GITHUB_REF_NAME"
 
     - name: Compile Source
       shell: pwsh
       run: |
-        "Nightly Build" > "$env:RUNNER_TEMP\source\BuildDate.txt"
-        "99999.000000" > "$env:RUNNER_TEMP\source\BuildVersion.txt"
-        Start-Process -Wait -NoNewWindow -FilePath "$env:RUNNER_TEMP\rdr\rdrc.exe" -ArgumentList "/desktop","/anycpu","$env:RUNNER_TEMP\source\$env:Project_Name.rdrproj"
-        Move-Item -Path "$env:RUNNER_TEMP\source\$env:Project_Name.exe" -Destination "$env:RUNNER_TEMP\build"
-        Move-Item -Path "$env:RUNNER_TEMP\source\*.dll" -Destination "$env:RUNNER_TEMP\build"
+        "Nightly Build" > "$Source_Path\BuildDate.txt"
+        "99999.000000" > "$Source_Path\BuildVersion.txt"
+        Start-Process -Wait -NoNewWindow -FilePath "$env:RUNNER_TEMP\rdr\rdrc.exe" -ArgumentList "/desktop","/anycpu","$Source_Path\$env:Project_Name.rdrproj"
+        Move-Item -Path "$Source_Path\$env:Project_Name.exe" -Destination "$env:RUNNER_TEMP\build"
+        Move-Item -Path "$Source_Path\*.dll" -Destination "$env:RUNNER_TEMP\build"
 
     - name: Copy Resources
       shell: pwsh
       run: |
-        Move-Item -Path "$env:RUNNER_TEMP\source\_Pack\$env:Project_Name\*" -Destination "$env:RUNNER_TEMP\build"
+        Move-Item -Path "$Source_Path\_Pack\$env:Project_Name\*" -Destination "$env:RUNNER_TEMP\build"
 
     - name: Compress Archive
       shell: pwsh
@@ -65,4 +66,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: build
-        path: $env:RUNNER_TEMP\build\build.zip
+        path: $env:RUNNER_TEMP\build\$env:Project_Name-$env:GITHUB_REF_NAME-nightly.zip
