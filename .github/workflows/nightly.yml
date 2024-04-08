@@ -46,16 +46,16 @@ jobs:
     - name: Compile Source
       shell: pwsh
       run: |
-        "Nightly Build" > "$Source_Path\BuildDate.txt"
-        "99999.000000" > "$Source_Path\BuildVersion.txt"
-        Start-Process -Wait -NoNewWindow -FilePath "$env:RUNNER_TEMP\rdr\rdrc.exe" -ArgumentList "/desktop","/anycpu","$Source_Path\$env:Project_Name.rdrproj"
-        Move-Item -Path "$Source_Path\$env:Project_Name.exe" -Destination "$env:RUNNER_TEMP\build"
-        Move-Item -Path "$Source_Path\*.dll" -Destination "$env:RUNNER_TEMP\build"
+        "Nightly Build" > "$env:Source_Path\BuildDate.txt"
+        "99999.000000" > "$env:Source_Path\BuildVersion.txt"
+        Start-Process -Wait -NoNewWindow -FilePath "$env:RUNNER_TEMP\rdr\rdrc.exe" -ArgumentList "/desktop","/anycpu","$env:Source_Path\$env:Project_Name.rdrproj"
+        Move-Item -Path "$env:Source_Path\$env:Project_Name.exe" -Destination "$env:RUNNER_TEMP\build"
+        Move-Item -Path "$env:Source_Path\*.dll" -Destination "$env:RUNNER_TEMP\build"
 
     - name: Copy Resources
       shell: pwsh
       run: |
-        Move-Item -Path "$Source_Path\_Pack\$env:Project_Name\*" -Destination "$env:RUNNER_TEMP\build"
+        Move-Item -Path "$env:Source_Path\_Pack\$env:Project_Name\*" -Destination "$env:RUNNER_TEMP\build"
 
     - name: Compress Archive
       shell: pwsh
