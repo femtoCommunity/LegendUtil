@@ -16,6 +16,7 @@ jobs:
     env:
       Project_Name: LegendUtil
       Produire_Url: https://produ.irelang.jp/downloads/2.0/produire-2.0.1191.zip
+      Source_Path: $env:RUNNER_TEMP\source\$env:Project_Name-$env:GITHUB_REF_NAME
 
     steps:
     - name: Create Directory
@@ -41,7 +42,6 @@ jobs:
         $destinationUnzipPath="$env:RUNNER_TEMP\source"
         & ${env:ProgramFiles}\7-Zip\7z.exe x $zipfilePath "-o$($destinationUnzipPath)" -y
         Remove-Item -Path "$env:RUNNER_TEMP\source.zip"
-        $Source_Path="$env:RUNNER_TEMP\source\$env:Project_Name-$env:GITHUB_REF_NAME"
 
     - name: Compile Source
       shell: pwsh
