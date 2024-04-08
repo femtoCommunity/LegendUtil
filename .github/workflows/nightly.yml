@@ -56,15 +56,15 @@ jobs:
       shell: pwsh
       run: |
         $Source_Path="$env:RUNNER_TEMP\source\$env:Project_Name-$env:GITHUB_REF_NAME"
-        Move-Item -Path "$Source_Path\_Pack\$env:Project_Name\*" -Destination "$env:RUNNER_TEMP\build"
+        Copy-Item -Path "$Source_Path\_Pack\$env:Project_Name\*" -Destination "$env:RUNNER_TEMP\build"
 
     - name: Compress Archive
       shell: pwsh
       run: |
-        Compress-Archive -Path "$env:RUNNER_TEMP\build\*" -DestinationPath "$env:RUNNER_TEMP\build\build.zip"
+        Compress-Archive -Path "$env:RUNNER_TEMP\build\*" -DestinationPath "\build\$env:Project_Name-$env:GITHUB_REF_NAME-nightly.zip"
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
         name: build
-        path: $env:RUNNER_TEMP\build\build.zip
+        path: \build\$env:Project_Name-$env:GITHUB_REF_NAME-nightly.zip
