@@ -2,7 +2,7 @@ ApexLegendsとは
 	単一種類
 	
 	+インストールパス:文字列
-	+EACインストールパス:文字列
+	+ApexLegendsインストールパス:文字列
 	
 	+初期ビデオコンフィグ:辞書
 	+初期起動引数:文字列
@@ -338,7 +338,7 @@ ApexLegendsとは
 		
 		メイン画面の起動中パネルのプロファイル名ラベルの内容=プロファイルの名前
 		
-		もしプロファイルの起動引数が「-eac_launcher_settings SettingsDX12.json」を含むなら
+		もしプロファイルの起動引数が「-anticheat_settings=SettingsDX12.json」を含むなら
 			実行ファイル名=「r5apex_dx12」
 			
 		そうでなければ
@@ -357,28 +357,20 @@ ApexLegendsとは
 		
 		メイン画面の起動中パネルのビルドラベルの内容=ビルド
 		メイン画面の起動中パネルのバージョンラベルの内容=バージョン
-	終わり	
+	終わり
 	
 	インストールパス取得する手順
 		ステータス番号=12
-		// EACランチャーのパスを取得する 取得できなければエラー
+		// Apex Legends の実行ファイルのパスを取得する 取得できなければエラー
 		「インストールパスを取得」をログ出力する
 		インストールパス=プロファイルのApexLegendsバイナリーパス
 		もしインストールパスというファイルが存在するなら
-			もしインストールパスのフォルダだけ&「EasyAntiCheat_launcher.exe」というファイルが存在するなら
-				// EACのパスを取得する
-				プロファイルのEACバイナリーパス=「[インストールパスのフォルダだけ]EasyAntiCheat_launcher.exe」
-				「- パス: [インストールパス]」をログ出力する
-				// autoexec を生成(コピー)する
-				プロファイルでコンフィグファイル生成する
-				もしプロファイルの起動引数が「+exec」を含むなら
-					「[アプリのコンフィグフォルダー]Profile\AutoExecute\autoexec_[プロファイルのID].cfg」を「[インストールパスのフォルダだけ]cfg\autoexec_[プロファイルのID].cfg」へコピーする
-					「 - autoexec 生成: [インストールパスのフォルダだけ]cfg\autoexec_[プロファイルのID].cfg」をログ出力する
-				もし終わり
-				
-			そうでなければ
-				「指定されたフォルダー[「][インストールパスのフォルダだけ][」]に[「]EasyAntiCheat_launcher.exe[」]が見つかりませんでした。」というエラーを発生させる
-				
+			「- パス: [インストールパス]」をログ出力する
+			// autoexec を生成(コピー)する
+			プロファイルでコンフィグファイル生成する
+			もしプロファイルの起動引数が「+exec」を含むなら
+				「[アプリのコンフィグフォルダー]Profile\AutoExecute\autoexec_[プロファイルのID].cfg」を「[インストールパスのフォルダだけ]cfg\autoexec_[プロファイルのID].cfg」へコピーする
+				「 - autoexec 生成: [インストールパスのフォルダだけ]cfg\autoexec_[プロファイルのID].cfg」をログ出力する
 			もし終わり
 			
 		そうでなければ
@@ -400,7 +392,7 @@ ApexLegendsとは
 				手順から抜け出す
 			監視終わり
 			
-			例外監視		
+			例外監視
 				もし[EAappのコンフィグ(「user.gamecommandline.origin.ofr.50.0002694」)]が「」でないなら
 					【質問結果】=「EA app のプロパティで Apex Legends の起動引数が設定されているため、[改行]このまま起動すると、意図しない設定が適用されてしまう可能性があります。[改行][改行]EA app のプロパティで設定されている起動引数を削除しますか？[改行][改行]＜設定されている起動引数＞[改行][EAappのコンフィグ(「user.gamecommandline.origin.ofr.50.0002694」)]」を「警告アイコン」にして「はいといいえ」で質問したもの
 					もし質問結果が「はい」なら
@@ -660,7 +652,7 @@ ApexLegendsとは
 				
 				コンフィグ(「VideoConfig」)(「setting.defaultres」)=「[設定(1)]」
 				コンフィグ(「VideoConfig」)(「setting.defaultresheight」)=「[設定(2)]」
-				もしプロファイルの起動引数が「-eac_launcher_settings SettingsDX12.json」を含むなら
+				もしプロファイルの起動引数が「-anticheat_settings=SettingsDX12.json」を含むなら
 					コンフィグ(「VideoConfig」)(「setting.fullscreen」)=「1」
 					コンフィグ(「VideoConfig」)(「setting.nowindowborder」)=「0」
 					
@@ -752,10 +744,10 @@ ApexLegendsとは
 	プロセス起動する手順
 		ステータス番号=3
 		// Apex Legends を起動する
-		EACインストールパス=プロファイルのEACバイナリーパス
+		ApexLegendsインストールパス=プロファイルのApexLegendsバイナリーパス
 		「Apex Legends を起動中...」をログ出力する
 		メイン画面の起動中パネルのプレイ処理状況=「Apex Legends を起動中」
-		もしEACインストールパスというファイルが存在しないなら
+		もしApexLegendsインストールパスというファイルが存在しないなら
 			監視終了する
 			{×,「Apex Legends の起動に失敗しました。[改行]指定されたパス[「][インストールパス][」]にファイルが見つかりませんでした。」,3}を返す
 		もし終わり
