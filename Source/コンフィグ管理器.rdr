@@ -6,6 +6,7 @@
 	+フォルダー一覧:配列={
 		「Logs」,
 		「Logs\Debug」,
+		「Logs\Error」,
 		
 		「Update」,
 		
