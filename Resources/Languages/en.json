@@ -66,7 +66,7 @@
 			"AltEnter自動押下チェックボックス": "Set whether to automatically press Alt+Enter after starting Apex Legends.\nBy enabling this setting, you can eliminate the \"black bands\" that occur when \"resolution stretching\" is performed.",
 			"AltEnter自動押下待機時間ダイヤル": "Sets the wait time (in seconds) from when Apex Legends starts to when Alt+Enter is automatically pressed.\nThe time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
 			"AltEnter自動押下方法選択リスト": "Sets how Alt+Enter is automatically pressed.\n\n   <Image recognition>\n     Automatically recognizes the title screen display and automatically presses Alt+Enter.\n     Using this configuration requires additional file downloads. (It will be downloaded automatically.)\n\n   <Time>\n     After Apex Legends starts, waits the specified amount of time to perform an automatic Alt+Enter press.\n     The time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
-			"ApexLegendsパステキスト": "Set the path to the installation destination (executable file) of Apex Legends.\nPlease specify the path to \"r5apex.exe\" instead of \"EasyAntiCheat_launcher.exe\".",
+			"ApexLegendsパステキスト": "Apex Legends のインストール先(実行ファイル)へのパスを設定します。\r\n「r5apex.exe」へのパスを指定してください。",
 			"ApexLegendsパス自動取得チェックボックス": "Automatically obtains the installation location (executable file) of Apex Legends installed on this PC.",
 			"ApexLegendsパス自動取得ボタン": "Retrieve the installation location of Apex Legends installed on this PC.\nThis should be done when the installation location has been changed, such as when reinstalling the software.",
 			"EAappSteam経由IDテキスト": "Specify the AppID of the EA app registered with Steam.",
@@ -105,7 +105,7 @@
 			"FailedToGetNewsImage": "Failed to get News Image."
 		},
 		"UpdateStatus": {
-			"LastUpdate": "最終更新: {0}"
+			"LastUpdate": "Last Update: {0}"
 		},
 		"MapRotation": {
 			"GameMode_battle_royale": "Battle Royale | Casual",
@@ -115,7 +115,7 @@
 			"GameMode_ltm_Control": "Control",
 			"GameMode_ltm_TDM": "Team Deathmatch",
 			"GameMode_ltm_Gun Run": "Gun Run",
-			"GameMode_ltm_Lockdown": "ロックダウン"
+			"GameMode_ltm_Lockdown": "Lockdown"
 		}
 	},
 	"DiscordRPC": {
@@ -152,6 +152,10 @@
 		"Delete": {
 			"ConfirmDelete": "Are you sure you want to delete profile \"{0}\"?",
 			"CannotDelete": "Profile \"{0}\" cannot be deleted."
+		},
+		"Dialog": {
+			"FailedToLoadProfiles": "以下のプロファイルの読み込みに失敗しました。\n詳細はデバッグログを参照してください。\n\n{0}",
+			"ConvertedOldDX12Args": "DirectX 12 で起動するための起動引数が シーズン 21 以降に対応していない値だったため、次の値を自動的に置き換えました。\n置換前: {0}\n置換後: {1}[改行][改行]<置換処理を行ったプロファイル>\n{2}"
 		}
 	},
 	"InPlay": {
@@ -250,8 +254,9 @@
 			"ProfileConfigFile_RestoringError": "An error occurred while restoring the profile config file.",
 			"VideoConfigFile_RestoringError": "An error occurred while restoring the video config file.",
 			"VideoConfigFile_SettingsRestoringError": "An error occurred while restoring the video config settings.",
-			"TT_SystemDisplaySettings_LastPlayDateRecordError": "最終プレイ日時の記録処理でエラーが発生しました。",
-			"TT_SystemDisplaySettings_TotalPlayTimeRecordError": "総プレイ時間の記録処理でエラーを発生しました。"
+			"TT_SystemDisplaySettings_LastPlayDateRecordError": "An error occurred while recording the last play date and time.",
+			"TT_SystemDisplaySettings_TotalPlayTimeRecordError": "An error occurred while recording the total play time.",
+			"TT_DiscordRPC_TimestampResetError": "Discord RPC のタイムスタンプリセットでエラーが発生しました。"
 		},
 		"Error": {
 			"0": "An error occurred during startup processing.",
@@ -279,7 +284,7 @@
 			"22": "Failed to remove launch arguments from EA app's config.",
 			"StartupProcessFailed": "<Error Number: {0}>\n{1}\n\n{2}",
 			"FailedToLaunch_FileNotFound": "Apex Legends failed to start.\nNo file was found at the specified path '{0}'.",
-			"Game_ProcessTrackingTerminationError": "終了処理でエラーが発生しました。\n正常な終了処理が行われていないため、一部の設定が保存されていなかったりする可能性があります。\n\n{0}",
+			"Game_ProcessTrackingTerminationError": "An error occurred during termination processing.\nSome settings may not have been saved because normal termination processing has not been performed.\n\n{0}",
 			"Game_StartupProcessingIsAlreadyInProgress": "Startup processing is already in progress.",
 			"Game_CouldNotGetProcess_Timeout": "Failed to get Apex Legends process in time.",
 			"Profile_SpecifiedProfileNotFound": "The specified Profile {0} does not exist.",
@@ -306,7 +311,7 @@
 			"4": "Settings"
 		},
 		"2": {
-			"1": "地域: {0}",
+			"1": "Legion: {0}",
 			"2": "Crossplay auth",
 			"3": "Lobby/Matchmaking",
 			"4": "Origin logins",
@@ -412,7 +417,7 @@
 			"コンフィグ読み取り専用チェックボックス": "Enable",
 			"コンフィグファイル開くボタン": "Open file",
 			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile.",
-			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
+			"__Text;ファイル取得失敗エラー": "Failed to get file.\n\n{0}"
 		},
 		"コンフィグパネル部品2": {
 			"ベースフレーム": "Profile Config",
@@ -422,7 +427,7 @@
 			"コンフィグ読み取り専用チェックボックス": "Enable",
 			"コンフィグファイル開くボタン": "Open file",
 			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile.",
-			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
+			"__Text;ファイル取得失敗エラー": "Failed to get file.\n\n{0}"
 		},
 		"ビデオコンフィグパネル部品": {
 			"ベースフレーム": "Video Config",
@@ -432,7 +437,7 @@
 			"コンフィグ読み取り専用チェックボックス": "Enable",
 			"コンフィグファイル開くボタン": "Open file",
 			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile.",
-			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
+			"__Text;ファイル取得失敗エラー": "Failed to get file.\n\n{0}"
 		}
 	},
 	"4": {
@@ -542,13 +547,13 @@
 		}
 	},
 	"LaunchOption": {
-		"-eac_launcher_settings": {
-			"Category": "Graphics",
+		"-anticheat_settings=SettingsDX12___dot___json": {
+			"Category": "グラフィック",
 			"Choices": "Enable",
-			"Desc": "Launch your game with DirectX 12.\nUsing DirectX 12 allows the game to distribute the CPU graphics code across multiple cores, which can result in higher frame rates.\nIn some environments, this may cause problems, such as textures not displaying properly.",
+			"Desc": "DirectX 12 でゲームを起動します。\r\nDirectX 12 を使用すると、ゲームがCPU グラフィック コードを複数のコアに分散できるようになり、フレームレートの向上が期待できます。\r\n環境によっては、テクスチャーが正常に表示されないなど、不具合が発生する可能性があります。",
 			"DisabledText": "Disable",
-			"Name": "Enable DirectX 12 (Beta)",
-			"AdditionalButtonText": "More information about DirectX 12 (Reddit)"
+			"Name": "DirectX 12 を有効化 (ベータ)",
+			"AdditionalButtonText": "DirectX 12 に関する詳しい情報 (Reddit)"
 		},
 		"-forcenovsync": {
 			"Category": "Graphics",
