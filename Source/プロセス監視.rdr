@@ -456,8 +456,8 @@ ApexLegendsとは
 		ステータス番号=12
 		// Apex Legends の実行ファイルのパスを取得する 取得できなければエラー
 		[言語管理器で「InPlay.Log.GettingGameInstallationLocation」を取得したもの]をログ出力する
-		ApexLegendsインストールパス=プロファイルのApexLegendsバイナリーパス
-		もしApexLegendsインストールパスというファイルが存在するなら
+		インストールパス=プロファイルのApexLegendsバイナリーパス
+		もしインストールパスというファイルが存在するなら
 			「- [言語管理器で「InPlay.Log.Path」を取得したもの]: [インストールパス]」をログ出力する
 			// autoexec を生成(コピー)する
 			プロファイルでコンフィグファイル生成する
