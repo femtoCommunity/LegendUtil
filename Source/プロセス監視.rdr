@@ -2,7 +2,7 @@ ApexLegendsとは
 	単一種類
 	
 	+インストールパス:文字列
-	+EACインストールパス:文字列
+	+ApexLegendsインストールパス:文字列
 	
 	+初期ビデオコンフィグ:辞書
 	+初期起動引数:文字列
@@ -282,13 +282,13 @@ ApexLegendsとは
 		
 		「起動処理開始」をデバッグログへ出力する
 		// プロファイルを読み込む
-　		プロファイル読み込む
-　		
-　		メイン画面の起動中パネルの起動引数テキストの内容=「[プロファイルの起動引数]」
-　		
-　		// Alt+Enter 自動押下処理の画像比較用タイトル画面画像を取得する
-　		もし(プロファイルのゲーム解像度変更が○)かつ(プロファイルのAltEnter自動押下が○)なら
-　			[言語管理器で「InPlay.Log.RetrievingLatestTitleScreenImage」を取得したもの]をログ出力する
+		プロファイル読み込む
+		
+		メイン画面の起動中パネルの起動引数テキストの内容=「[プロファイルの起動引数]」
+		
+		// Alt+Enter 自動押下処理の画像比較用タイトル画面画像を取得する
+		もし(プロファイルのゲーム解像度変更が○)かつ(プロファイルのAltEnter自動押下が○)なら
+			[言語管理器で「InPlay.Log.RetrievingLatestTitleScreenImage」を取得したもの]をログ出力する
 			最新タイトル画面取得結果=最新タイトル画面取得したもの
 			もし最新タイトル画面取得結果(1)が×なら[言語管理器で「InPlay.Log.RetrievingLatestTitleScreenImage_Failed」を{[最新タイトル画面取得結果(2)]}として取得したもの]をログ出力する
 			そうでなければ[言語管理器で「InPlay.Log.RetrievingLatestTitleScreenImage_Succeeded」を{[最新タイトル画面取得結果(2)]}として取得したもの]をログ出力する
@@ -402,7 +402,7 @@ ApexLegendsとは
 		
 		メイン画面の起動中パネルのプロファイル名ラベルの内容=プロファイルの名前
 		
-		もしプロファイルの起動引数が「-eac_launcher_settings SettingsDX12.json」を含むなら
+		もしプロファイルの起動引数が「-anticheat_settings=SettingsDX12.json」を含むなら
 			実行ファイル名=「r5apex_dx12」
 			
 		そうでなければ
@@ -450,30 +450,22 @@ ApexLegendsとは
 		メイン画面の起動中パネルのバージョンラベルの内容=バージョン
 		
 		[言語管理器で「InPlay.Log.Done」を取得したもの]をログ出力する
-	終わり	
+	終わり
 	
 	インストールパス取得する手順
 		ステータス番号=12
-		// EACランチャーのパスを取得する 取得できなければエラー
+		// Apex Legends の実行ファイルのパスを取得する 取得できなければエラー
 		[言語管理器で「InPlay.Log.GettingGameInstallationLocation」を取得したもの]をログ出力する
-		インストールパス=プロファイルのApexLegendsバイナリーパス
-		もしインストールパスというファイルが存在するなら
-			もしインストールパスのフォルダだけ&「EasyAntiCheat_launcher.exe」というファイルが存在するなら
-				// EACのパスを取得する
-				プロファイルのEACバイナリーパス=「[インストールパスのフォルダだけ]EasyAntiCheat_launcher.exe」
-				「- [言語管理器で「InPlay.Log.Path」を取得したもの]: [インストールパス]」をログ出力する
-				// autoexec を生成(コピー)する
-				プロファイルでコンフィグファイル生成する
-				もしプロファイルの起動引数が「+exec」を含むなら
-					「[アプリのコンフィグフォルダー]Profile\AutoExecute\autoexec_[プロファイルのID].cfg」を「[インストールパスのフォルダだけ]cfg\autoexec_[プロファイルのID].cfg」へコピーする
-					「- 」&[言語管理器で「InPlay.Log.GenerateAutoexec」を{「[インストールパスのフォルダだけ]cfg\autoexec_[プロファイルのID].cfg」}として取得したもの]をログ出力する
-				もし終わり
-				
-			そうでなければ
-				[言語管理器で「InPlay.Error.InstallPath_EACNotFoundInFolder」を{[インストールパスのフォルダだけ]}として取得したもの]というエラーを発生させる
-				
+		ApexLegendsインストールパス=プロファイルのApexLegendsバイナリーパス
+		もしApexLegendsインストールパスというファイルが存在するなら
+			「- [言語管理器で「InPlay.Log.Path」を取得したもの]: [インストールパス]」をログ出力する
+			// autoexec を生成(コピー)する
+			プロファイルでコンフィグファイル生成する
+			もしプロファイルの起動引数が「+exec」を含むなら
+				「[アプリのコンフィグフォルダー]Profile\AutoExecute\autoexec_[プロファイルのID].cfg」を「[インストールパスのフォルダだけ]cfg\autoexec_[プロファイルのID].cfg」へコピーする
+				「- 」&[言語管理器で「InPlay.Log.GenerateAutoexec」を{「[インストールパスのフォルダだけ]cfg\autoexec_[プロファイルのID].cfg」}として取得したもの]をログ出力する
 			もし終わり
-			
+
 		そうでなければ
 			[言語管理器で「InPlay.Error.InstallPath_FileNotFound」を{[インストールパス]}として取得したもの]というエラーを発生させる
 			
@@ -954,7 +946,7 @@ ApexLegendsとは
 				
 				コンフィグ(「VideoConfig」)(「setting.defaultres」)=「[設定(1)]」
 				コンフィグ(「VideoConfig」)(「setting.defaultresheight」)=「[設定(2)]」
-				もしプロファイルの起動引数が「-eac_launcher_settings SettingsDX12.json」を含むなら
+				もしプロファイルの起動引数が「-anticheat_settings=SettingsDX12.json」を含むなら
 					コンフィグ(「VideoConfig」)(「setting.fullscreen」)=「1」
 					コンフィグ(「VideoConfig」)(「setting.nowindowborder」)=「0」
 					
@@ -1046,10 +1038,10 @@ ApexLegendsとは
 	プロセス起動する手順
 		ステータス番号=3
 		// Apex Legends を起動する
-		EACインストールパス=プロファイルのEACバイナリーパス
+		ApexLegendsインストールパス=プロファイルのApexLegendsバイナリーパス
 		[言語管理器で「InPlay.Log.Game_Starting」を取得したもの]をログ出力する
 		メイン画面の起動中パネルのプレイ処理状況=言語管理器で「InPlay.Status.StartingGame」を取得したもの
-		もしEACインストールパスというファイルが存在しないなら
+		もしApexLegendsインストールパスというファイルが存在しないなら
 			監視終了する
 			{×,[言語管理器で「InPlay.Error.FailedToLaunch_FileNotFound」を{[インストールパス]}として取得したもの],3}を返す
 		もし終わり
@@ -1527,7 +1519,6 @@ ApexLegendsとは
 				プレイ終了日時=今
 				プロファイルの最終プレイ日時=プレイ終了日時のUNIX時間
 			もし終わり
-			「テストエラー」というエラーを発生させる
 		発生した場合
 			[言語管理器で「InPlay.ErrorLog.TT_SystemDisplaySettings_LastPlayDateRecordError」を取得したもの]を「エラー」としてログ出力する
 			エラーのメッセージを「エラー」としてログ出力する
@@ -1542,7 +1533,6 @@ ApexLegendsとは
 					プロファイルの総プレイ時間=プロファイルの総プレイ時間+プレイ時間の合計秒数
 				もし終わり
 			もし終わり
-			「テストエラー」というエラーを発生させる
 		発生した場合
 			[言語管理器で「InPlay.ErrorLog.TT_SystemDisplaySettings_TotalPlayTimeRecordError」を取得したもの]を「エラー」としてログ出力する
 			エラーのメッセージを「エラー」としてログ出力する
