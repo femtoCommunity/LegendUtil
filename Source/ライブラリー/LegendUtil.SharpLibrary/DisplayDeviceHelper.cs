@@ -1,8 +1,11 @@
 ﻿using Produire;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using WindowsDisplayAPI;
+using WindowsDisplayAPI.Native.DeviceContext;
 
 namespace LegendUtil.SharpLibrary
 {
@@ -10,27 +13,56 @@ namespace LegendUtil.SharpLibrary
 	{
 		public class ディスプレイ管理器 : IProduireStaticClass
 		{
-			[自分("で")]
-			public DISP_CHANGE 設定する([へ] string デバイス名, [を] int[] 設定, [省略][として] ChangeDisplaySettingsFlags フラグ = ChangeDisplaySettingsFlags.CDS_UPDATEREGISTRY)
+			/// <summary>
+			/// ディスプレイ一覧を配列で返す
+			/// </summary>
+			/// <returns></returns>
+			[自分("から")]
+			public Display[] 一覧を取得する()
 			{
-				if (設定.Length < 3)
-				{
-					throw new ProduireException("引数 設定 の値が不正です。\n{幅, 高さ, リフレッシュレート, ディスプレイ固定フラグ} という形式で指定してください。");
-				}
+				return Display.GetDisplays().ToArray();
+			}
 
-				if (設定が存在する(デバイス名, 設定) == false)
+			/// <summary>
+			/// ディスプレイ一覧からメインディスプレイを探して返す
+			/// </summary>
+			/// <returns></returns>
+			[自分("で")]
+			public Display メインディスプレイを取得する()
+			{
+				foreach (var d in Display.GetDisplays())
+				{
+					if (d.IsGDIPrimary) { return d; }
+				}
+				return null;
+			}
+
+			[自分("で")]
+			public Display 取得する([を] string ディスプレイ名)
+			{
+				foreach (var d in Display.GetDisplays())
+				{
+					if (ディスプレイ名 == d.DisplayName)
+					{
+						return d;
+					}
+				}
+				throw new ProduireException("指定されたディスプレイが見つかりません。");
+			}
+			
+			/// <summary>
+			/// 指定されたディスプレイ設定を適用する
+			/// </summary>
+			/// <param name="デバイス"></param>
+			/// <param name="設定"></param>
+			/// <param name="フラグ"></param>
+			/// <returns></returns>
+			[自分("で")]
+			public DISP_CHANGE 設定する([へ] Display デバイス, [を] DisplaySetting 設定, [省略][として] ChangeDisplaySettingsFlags フラグ = ChangeDisplaySettingsFlags.CDS_UPDATEREGISTRY)
+			{
+				if (設定が存在する(デバイス, 設定) == false)
 				{
 					return DISP_CHANGE.BadMode;
-				}
-
-				int dw = 設定[0];
-				int dh = 設定[1];
-				int df = 設定[2];
-				int dfx = 0;
-
-				if (設定.Length >= 4)
-				{
-					dfx = 設定[3];
 				}
 
 				// デバイスモード(変数)を作成
@@ -38,93 +70,42 @@ namespace LegendUtil.SharpLibrary
 				mode.dmSize = (short)Marshal.SizeOf(mode);
 
 				// 現在のディスプレイ設定を取得する
-				DisplayManager.EnumDisplaySettings(デバイス名, -1, ref mode);
+				DisplayManager.EnumDisplaySettings(デバイス.DisplayName, -1, ref mode);
 
-				mode.dmPelsWidth = dw;
-				mode.dmPelsHeight = dh;
-				mode.dmDisplayFrequency = df;
-				mode.dmDisplayFixedOutput = dfx;
-				//mode.dmFields = mode.dmPelsWidth | mode.dmPelsHeight | mode.dmDisplayFrequency;
+				// 値を設定
+				mode.dmPelsWidth = 設定.Resolution.Width;
+				mode.dmPelsHeight = 設定.Resolution.Height;
+				mode.dmDisplayFrequency = 設定.Frequency;
+				mode.dmDisplayFixedOutput = (int)設定.OutputScalingMode;
 
 				// ディスプレイ設定の変更を実行
-				var result = DisplayManager.ChangeDisplaySettingsEx(デバイス名, ref mode, IntPtr.Zero, フラグ, IntPtr.Zero);
+				var result = DisplayManager.ChangeDisplaySettingsEx(デバイス.DisplayName, ref mode, IntPtr.Zero, フラグ, IntPtr.Zero);
 
 				return result;
 			}
 
-			[自分("で")]
-			public ディスプレイ設定 設定を取得する([から] string デバイス名)
-			{
-
-				int modeIndex = -1;
-
-				var mode = new DEVMODE();
-				mode.dmSize = (short)Marshal.SizeOf(mode);
-
-				DisplayManager.EnumDisplaySettings(デバイス名, modeIndex, ref mode);
-
-				return new ディスプレイ設定(mode.dmPelsWidth, mode.dmPelsHeight, mode.dmDisplayFrequency, mode.dmDisplayFixedOutput);
-			}
-
 			//[自分("で")]
-			public bool 設定が存在する([へ] string デバイス名, [という] int[] 設定)
+			public bool 設定が存在する([へ] Display デバイス, [という] DisplaySetting 設定)
 			{
-				if (設定.Length < 3)
+				foreach (var d in Display.GetDisplays())
 				{
-					throw new ProduireException("引数 設定 の値が不正です。\n{幅, 高さ, リフレッシュレート} という形式で指定してください。");
-				}
-
-				int dw = 設定[0];
-				int dh = 設定[1];
-				int df = 設定[2];
-
-				int modeIndex = 0;
-				var supportedModes = string.Empty;
-				var previousSupportedMode = string.Empty;
-
-				var mode = new DEVMODE();
-				mode.dmSize = (short)Marshal.SizeOf(mode);
-
-				while (DisplayManager.EnumDisplaySettings(デバイス名, modeIndex, ref mode))
-				{
-					if (mode.dmPelsWidth == (uint)dw && mode.dmPelsHeight == (uint)dh && mode.dmDisplayFrequency == (uint)df)
-						return true;
-
-					var newSupportedMode = mode.dmPelsWidth + "x" + mode.dmPelsHeight + "@" + mode.dmDisplayFrequency + "Hz";
-					if (newSupportedMode != previousSupportedMode)
+					if (デバイス.DisplayFullName == d.DisplayFullName)
 					{
-						if (supportedModes == string.Empty)
-							supportedModes += newSupportedMode;
-						else
-							supportedModes += ", " + newSupportedMode;
-
-						previousSupportedMode = newSupportedMode;
+						foreach (var s in d.GetPossibleSettings())
+						{
+							if (設定 == s)
+							{
+								return true;
+							}
+						}
+						return false;
 					}
-
-					modeIndex++;
+					return false;
 				}
-
-				return false;
+				throw new ProduireException("指定されたディスプレイが見つかりません。");
 			}
 
-			public ディスプレイ設定[] 設定一覧を取得する([から] string デバイス名)
-			{
-				var list = new List<ディスプレイ設定>();
-				
-				int modeIndex = 0;
-
-				var mode = new DEVMODE();
-				mode.dmSize = (short)Marshal.SizeOf(mode);
-
-				while (DisplayManager.EnumDisplaySettings(デバイス名, modeIndex, ref mode))
-				{
-					list.Add(new ディスプレイ設定(mode.dmPelsWidth, mode.dmPelsHeight, mode.dmDisplayFrequency, mode.dmDisplayFixedOutput));
-					modeIndex++;
-				}
-				return list.ToArray();
-			}
-
-			public DISPLAY_DEVICE[] ディスプレイ一覧
+			/*public Display[] ディスプレイ一覧
 			{
 				get
 				{
@@ -135,7 +116,7 @@ namespace LegendUtil.SharpLibrary
 					{
 						for (uint id = 0; DisplayManager.EnumDisplayDevices(null, id, ref d, 0); id++)
 						{
-							list.Add(d);
+							list.Add(new DISPLAY_DEVICE());
 							d.cb = Marshal.SizeOf(d);
 						}
 					}
@@ -145,7 +126,93 @@ namespace LegendUtil.SharpLibrary
 					}
 					return list.ToArray();
 				}
+			}*/
+		}
+
+		[対応型(typeof(Display))]
+		public class ディスプレイ : ClassWarpper<Display>
+		{
+			public string デバイス名 => baseObject.DeviceName;
+			public string 名前 => baseObject.DisplayName;
+			public bool メイン => baseObject.IsGDIPrimary;
+			public bool 有効 => baseObject.IsAvailable;
+			public DisplaySetting 現在設定 => baseObject.CurrentSetting;
+			public DisplaySetting[] 設定一覧
+			{
+				get
+				{
+					// DisplayPossibleSetting を DisplaySetting へ変換して配列で返す
+					var settings = new List<DisplaySetting>();
+					foreach (var s in baseObject.GetPossibleSettings())
+					{
+						settings.Add(new DisplaySetting(s));
+					}
+					return settings.ToArray();
+				}
 			}
+		}
+
+		[対応型(typeof(DisplaySetting))]
+		public class ディスプレイ設定 : ClassWarpper<DisplaySetting>
+		{
+			public ディスプレイ設定()
+			{
+			}
+			
+			public ディスプレイ設定(System.Drawing.Size 解像度, System.Drawing.Point 位置, WindowsDisplayAPI.ColorDepth 色深度, int リフレッシュレート, bool インターレース = false, DisplayOrientation 回転 = DisplayOrientation.Identity, DisplayFixedOutput スケーリングモード = DisplayFixedOutput.Default)
+			{
+				SetBaseObject(new DisplaySetting(解像度, 位置, 色深度, リフレッシュレート, インターレース, 回転, スケーリングモード));
+			}
+			
+			[設定項目]
+			public System.Drawing.Point 位置 => baseObject.Position;
+			[設定項目]
+			public int 横 => baseObject.Position.X;
+			[設定項目]
+			public int 縦 => baseObject.Position.Y;
+			[設定項目]
+			public System.Drawing.Size 大きさ => baseObject.Resolution;
+			[設定項目]
+			public int 幅 => baseObject.Resolution.Width;
+			[設定項目]
+			public int 高さ => baseObject.Resolution.Height;
+			[設定項目]
+			public int リフレッシュレート => baseObject.Frequency;
+			[設定項目]
+			public DisplayFixedOutput スケーリングモード => baseObject.OutputScalingMode;
+			[設定項目]
+			public DisplayOrientation 回転 => baseObject.Orientation;
+			[設定項目]
+			public WindowsDisplayAPI.ColorDepth 色深度 => baseObject.ColorDepth;
+			[設定項目]
+			public bool 有効 => baseObject.IsEnable;
+		}
+
+		[列挙体(typeof(DisplayFixedOutput))]
+		public enum ディスプレイ出力スケーリングモード : uint
+		{
+			標準 = DisplayFixedOutput.Default,
+			伸縮 = DisplayFixedOutput.Stretch,
+			中央 = DisplayFixedOutput.Center
+		}
+
+		[列挙体(typeof(DisplayOrientation))]
+		public enum ディスプレイ回転 : uint
+		{
+			横 = DisplayOrientation.Identity,
+			縦 = DisplayOrientation.Rotate90Degree,
+			横反対 = DisplayOrientation.Rotate180Degree,
+			縦反対 = DisplayOrientation.Rotate270Degree
+		}
+
+		[列挙体(typeof(WindowsDisplayAPI.ColorDepth))]
+		public enum ディスプレイ色深度 : uint
+		{
+			深度4bit = WindowsDisplayAPI.ColorDepth.Depth4Bit,
+			深度8bit = WindowsDisplayAPI.ColorDepth.Depth8Bit,
+			深度16bit = WindowsDisplayAPI.ColorDepth.Depth16Bit,
+			深度24bit = WindowsDisplayAPI.ColorDepth.Depth24Bit,
+			深度32bit = WindowsDisplayAPI.ColorDepth.Depth32Bit
 		}
 
 		/*[対応型(typeof(DEVMODE))]
@@ -161,30 +228,17 @@ namespace LegendUtil.SharpLibrary
 
 		}*/
 
-		[対応型(typeof(DISPLAY_DEVICE))]
-		public class ディスプレイデバイス : ClassWarpper<DISPLAY_DEVICE>
+		/*[対応型(typeof(DisplayDevice))]
+		public class ディスプレイデバイス : ClassWarpper<DisplayDevice>
 		{
-			public string 名前 => baseObject.DeviceName;
-			public string デバイス文字列 => baseObject.DeviceString;
+			public string 名前 => baseObject.name;
+			public string デバイス文字列 => baseObject.;
 			public DisplayDeviceStateFlags 状態 => baseObject.StateFlags;
 			public string ID => baseObject.DeviceID;
 			public string キー => baseObject.DeviceKey;
+			public object 設定 => baseObject
+		}*/
 
-			/*[自分("へ")]
-			public DISP_CHANGE 設定する([を] int[] 設定)
-			{
-				DISPLAY_DEVICE d = new DISPLAY_DEVICE();
-				DEVMODE dm = new DEVMODE();
-				d.cb = Marshal.SizeOf(d);
-
-				dm.dmPelsWidth = 設定[0];
-				dm.dmPelsHeight = 設定[1];
-				dm.dmDisplayFrequency = 設定[2];
-
-				var result = DisplayManager.ChangeDisplaySettingsEx(baseObject.DeviceName, ref dm, IntPtr.Zero, ChangeDisplaySettingsFlags.CDS_UPDATEREGISTRY, IntPtr.Zero);
-				return result;
-			}*/
-		}
 		[StructLayout(LayoutKind.Sequential)]
 		public struct DISPLAY_DEVICE
 		{
@@ -276,38 +330,6 @@ namespace LegendUtil.SharpLibrary
 			リセット = ChangeDisplaySettingsFlags.CDS_RESET,
 			リセットEX = ChangeDisplaySettingsFlags.CDS_RESET_EX,
 			リセット無し = ChangeDisplaySettingsFlags.CDS_NORESET
-		}
-
-		public class ディスプレイ設定 : IProduireClass
-		{
-			public ディスプレイ設定(int w, int h, int fq, int dfo)
-			{
-				this.w = w;
-				this.h = h;
-				this.fq = fq;
-				this.dfo = dfo;
-				this.list = new int[4] {w, h, fq, dfo};
-			}
-
-			public readonly int w;
-			[設定項目]
-			public int 幅 => w;
-
-			public readonly int h;
-			[設定項目]
-			public int 高さ => h;
-
-			public readonly int fq;
-			[設定項目]
-			public int リフレッシュレート => fq;
-
-			public readonly int dfo;
-			[設定項目]
-			public int スケーリングモード => dfo;
-
-			public readonly Array list;
-			[設定項目]
-			public Array 一覧 => list;
 		}
 
 		[StructLayout(LayoutKind.Sequential)]
