@@ -66,7 +66,7 @@
 			"AltEnter自動押下チェックボックス": "Set whether to automatically press Alt+Enter after starting Apex Legends.\nBy enabling this setting, you can eliminate the \"black bands\" that occur when \"resolution stretching\" is performed.",
 			"AltEnter自動押下待機時間ダイヤル": "Sets the wait time (in seconds) from when Apex Legends starts to when Alt+Enter is automatically pressed.\nThe time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
 			"AltEnter自動押下方法選択リスト": "Sets how Alt+Enter is automatically pressed.\n\n   <Image recognition>\n     Automatically recognizes the title screen display and automatically presses Alt+Enter.\n     Using this configuration requires additional file downloads. (It will be downloaded automatically.)\n\n   <Time>\n     After Apex Legends starts, waits the specified amount of time to perform an automatic Alt+Enter press.\n     The time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
-			"ApexLegendsパステキスト": "Apex Legends のインストール先(実行ファイル)へのパスを設定します。\r\n「r5apex.exe」へのパスを指定してください。",
+			"ApexLegendsパステキスト": "Set the path to the installation destination (executable file) of Apex Legends.\nPlease specify the path to \"r5apex.exe\".",
 			"ApexLegendsパス自動取得チェックボックス": "Automatically obtains the installation location (executable file) of Apex Legends installed on this PC.",
 			"ApexLegendsパス自動取得ボタン": "Retrieve the installation location of Apex Legends installed on this PC.\nThis should be done when the installation location has been changed, such as when reinstalling the software.",
 			"EAappSteam経由IDテキスト": "Specify the AppID of the EA app registered with Steam.",
@@ -154,8 +154,8 @@
 			"CannotDelete": "Profile \"{0}\" cannot be deleted."
 		},
 		"Dialog": {
-			"FailedToLoadProfiles": "以下のプロファイルの読み込みに失敗しました。\n詳細はデバッグログを参照してください。\n\n{0}",
-			"ConvertedOldDX12Args": "DirectX 12 で起動するための起動引数が シーズン 21 以降に対応していない値だったため、次の値を自動的に置き換えました。\n置換前: {0}\n置換後: {1}[改行][改行]<置換処理を行ったプロファイル>\n{2}"
+			"FailedToLoadProfiles": "Failed to load the following profile.\nSee the debug log for details.\n\n{0}",
+			"ConvertedOldDX12Args": "DirectX 12 で起動するための起動引数が シーズン 21 以降に対応していない値だったため、次の値を自動的に置き換えました。\n置換前: {0}\n置換後: {1}\n\n<置換処理を行ったプロファイル>\n{2}"
 		}
 	},
 	"InPlay": {
