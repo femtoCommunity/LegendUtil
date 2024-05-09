@@ -179,7 +179,7 @@
 			"MonitoringGameProcess": "Tracking the Apex Legends process"
 		},
 		"Dialog": {
-			"Game_CancelProcessTracking": "Apex Legends の待機をキャンセルしてもよろしいですか？",
+			"Game_CancelProcessTracking": "Are you sure you want to cancel your Apex Legends standby?",
 			"Game_WontStart": "Apex Legends won't start?\nRestarting the EA app's background services may resolve the issue. Would you like to restart?\n(If the update is in progress, cancel the wait and restart after the update is complete.)",
 			"Game_ProcessForciblyTerminated": "Forced the Apex Legends process to close.\nThe configuration may not have been saved because normal termination processing has not been performed.",
 			"Game_DeleteStartupArgsInEAappProperties": "Apex Legends launch arguments are set in the EA app properties, so if you launch it as is, unintended settings may be applied.\n\nDo you want to remove the launch arguments set in the EA app properties?\n\n<Currently set startup arguments>\n{0}"
