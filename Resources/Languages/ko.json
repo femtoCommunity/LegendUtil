@@ -13,6 +13,10 @@
 			"7": "비활성화",
 			"8": "계정",
 			"Loading": "로딩 중"
+		},
+		"Dialog": {
+			"Welcome": "{0} をインストールしていただき、ありがとうございます！\n\n[アプリの名前] はベータ版であり、予期せぬ不具合などが発生する可能性があります。\n不具合などの問題を見つけたり、改善してほしい点があった場合は、\nサポート Discord サーバーのフォーラム または GitHub の Issue にて報告をお願いいたします。",
+			"LauncherNotInstalled": "Steam または EA app のいずれかがインストールされていることを確認できませんでした。\nSteam または EA app のいずれかをインストールしているにも関わらず、この警告が表示されている場合は、開発者に報告してください。"
 		}
 	},
 	"ErrorMessage": {
@@ -179,7 +183,7 @@
 			"MonitoringGameProcess": "Apex Legends 프로세스 추적 중"
 		},
 		"Dialog": {
-			"Game_CancelProcessTracking": "Apex Legends 대기를 취소하시겠습니까?",
+			"Game_CancelProcessTracking_Confirm": "Apex Legends の待機をキャンセルしてもよろしいですか？",
 			"Game_WontStart": "Apex Legends가 시작되지 않나요?\nEA 앱의 백그라운드 서비스를 다시 시작하면 해결될 수 있습니다. 다시 시작하시겠습니까?\n(업데이트 중일 경우, 대기를 취소하고 업데이트가 완료된 후 다시 시작하세요).",
 			"Game_ProcessForciblyTerminated": "Apex Legends의 프로세스가 강제 종료되었습니다.\n정상적인 종료 처리가 이루어지지 않아 설정 등이 저장되지 않았을 수 있습니다.",
 			"Game_DeleteStartupArgsInEAappProperties": "EA app의 속성에서 Apex Legends의 시작 인수가 설정되어 있어, 이대로 실행하면 의도하지 않은 설정이 적용될 수 있습니다.\n\nEA app 속성에서 설정된 실행 인수를 삭제하시겠습니까?\n\n<설정된 실행 인수>\n{0}"
