@@ -166,7 +166,8 @@
 			"PID": "PID",
 			"Version": "버전",
 			"Build": "빌드",
-			"LaunchOption": "시작 인수"
+			"LaunchOption": "시작 인수",
+			"CancelProcessTracking_Dialog": "Apex Legends の待機をキャンセルしてもよろしいですか？"
 		},
 		"Status": {
 			"ProcessingStartup": "시작 처리 중...",
