@@ -167,7 +167,7 @@
 			"Version": "Version",
 			"Build": "Build",
 			"LaunchOption": "Launch Options",
-			"CancelProcessTracking_Dialog": "Apex Legends の待機をキャンセルしてもよろしいですか？"
+			"CancelProcessTracking_Dialog": "Are you sure you want to cancel your Apex Legends standby?"
 		},
 		"Status": {
 			"ProcessingStartup": "Starting up...",
