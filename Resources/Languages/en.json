@@ -166,7 +166,8 @@
 			"PID": "PID",
 			"Version": "Version",
 			"Build": "Build",
-			"LaunchOption": "Launch Options"
+			"LaunchOption": "Launch Options",
+			"CancelProcessTracking_Dialog": "Apex Legends の待機をキャンセルしてもよろしいですか？"
 		},
 		"Status": {
 			"ProcessingStartup": "Starting up...",
