@@ -526,7 +526,7 @@
 		"UI_General": {
 			"__Name": "UI - General",
 			"Language;Name": "UI Language",
-			"Language;Desc": "User interface display language"
+			"Language;Desc": "User interface display language\n* Translations are done using machine translation and may not be accurate.\n* If you would like to contribute to the translation, please visit bit.ly/LegendUtil-TL"
 		},
 		"UI_MainMenu": {
 			"__Name": "UI - Main Menu",
