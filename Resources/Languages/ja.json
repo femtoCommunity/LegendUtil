@@ -166,8 +166,7 @@
 			"PID": "PID",
 			"Version": "バージョン",
 			"Build": "ビルド",
-			"LaunchOption": "起動引数",
-			"CancelProcessTracking_Dialog": "Apex Legends の待機をキャンセルしてもよろしいですか？"
+			"LaunchOption": "起動引数"
 		},
 		"Status": {
 			"ProcessingStartup": "起動処理中...",
@@ -180,6 +179,7 @@
 			"MonitoringGameProcess": "Apex Legends のプロセスを追跡中"
 		},
 		"Dialog": {
+			"Game_CancelProcessTracking": "Apex Legends の待機をキャンセルしてもよろしいですか？",
 			"Game_WontStart": "Apex Legends が起動しませんか？\nEA app のバックグラウンドサービスを再起動すると解決する場合があります。再起動しますか？\n(アップデート中の場合は、一度待機をキャンセルし、アップデート完了後に再度起動してください。)",
 			"Game_ProcessForciblyTerminated": "Apex Legends のプロセスを強制終了しました。\n正常な終了処理が行われていないため、コンフィグなどが保存されていない可能性があります。",
 			"Game_DeleteStartupArgsInEAappProperties": "EA app のプロパティで Apex Legends の起動引数が設定されているため、このまま起動すると意図しない設定が適用されてしまう可能性があります。\n\nEA app のプロパティで設定されている起動引数を削除しますか？\n\n＜設定されている起動引数＞\n{0}"
