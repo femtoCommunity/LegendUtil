@@ -429,14 +429,14 @@
 			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile.",
 			"__Text;ファイル取得失敗エラー": "Failed to get file.\n\n{0}"
 		},
-		"ビデオコンフィグパネル部品": {
+		"コンフィグパネル部品3": {
 			"ベースフレーム": "Video Config",
 			"コンフィグ指定ラベル": "Config file to load",
 			"__DropDownList;コンフィグ指定選択リスト": "Common,Profile",
 			"コンフィグ読み取り専用ラベル": "Read-only",
 			"コンフィグ読み取り専用チェックボックス": "Enable",
 			"コンフィグファイル開くボタン": "Open file",
-			"__Text;コンフィグ未生成警告": "Config file has not been generated. Please launch the game once with this profile.",
+			"__Text;コンフィグ未生成警告": "ビデオコンフィグが生成されていません。一度このプロファイルでゲームを起動してください。",
 			"__Text;ファイル取得失敗エラー": "Failed to get file.\n\n{0}"
 		}
 	},
