@@ -533,7 +533,8 @@
 		"UI_General": {
 			"__Name": "UI - 일반",
 			"Language;Name": "UI 언어",
-			"Language;Desc": "사용자 인터페이스 표시 언어\n* 번역은 기계 번역을 사용하여 수행되므로 정확하지 않을 수 있습니다.\n* 번역에 협력하려면 bit.ly/LegendUtil-TL 을 방문하십시오."
+			"Language;Desc": "사용자 인터페이스 표시 언어\n* 번역은 기계 번역을 사용하여 수행되므로 정확하지 않을 수 있습니다.\n* 번역에 협력하려면 bit.ly/LegendUtil-TL 을 방문하십시오.",
+			"Language;Custom_1": "翻訳に協力する (Crowdin)"
 		},
 		"UI_MainMenu": {
 			"__Name": "UI - 메인 메뉴",
