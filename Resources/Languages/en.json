@@ -187,8 +187,8 @@
 			"Game_WontStart": "Apex Legends won't start?\nRestarting the EA app's background services may resolve the issue. Would you like to restart?\n(If the update is in progress, cancel the wait and restart after the update is complete.)",
 			"Game_ProcessForciblyTerminated": "Forced the Apex Legends process to close.\nThe configuration may not have been saved because normal termination processing has not been performed.",
 			"Game_DeleteStartupArgsInEAappProperties": "Apex Legends launch arguments are set in the EA app properties, so if you launch it as is, unintended settings may be applied.\n\nDo you want to remove the launch arguments set in the EA app properties?\n\n<Currently set startup arguments>\n{0}",
-			"Window_Close_InPlay_Confirm": "Apex Legends が起動中です。\n強制終了してから {0} を終了しますか？\n(問題が発生する可能性があります)\n\n「はい」をクリックすると Apex Legends を強制終了してから {0} を終了します。\n「いいえ」をクリックすると {0} の終了をキャンセルします。",
-			"Window_Close_InLaunchProcess_Confirm": "Apex Legends の起動処理中です。\n起動処理をキャンセルしてから {0} を終了しますか？\n({0} の終了後に Apex Legends が起動する可能性があります。)\n\n「はい」をクリックすると Apex Legends の起動処理をキャンセルしてから {0} を終了します。\n「いいえ」をクリックすると {0} の終了をキャンセルします。"
+			"Window_Close_InPlay_Confirm": "Apex Legends is launching.\nDo you want to force quit and then exit {0}?\n(problems may occur)\n\nClicking \"Yes\" will force quit Apex Legends and then exit {0}.\nClick \"No\" to cancel the termination of {0}.",
+			"Window_Close_InLaunchProcess_Confirm": "Apex Legends is in the process of launching.\nDo you want to cancel the startup process and then exit {0}?\n(Apex Legends may start after {0} ends.)\n\nClicking \"Yes\" will cancel the Apex Legends startup process and exit {0}.\nClick \"No\" to cancel the termination of {0}."
 		},
 		"Log": {
 			"Done": "Done",
