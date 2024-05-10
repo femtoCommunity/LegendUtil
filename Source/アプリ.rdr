@@ -55,7 +55,9 @@
 	+GitHubリポジトリーURL:文字列=「https://github.com/femtoCommunity/LegendUtil」
 	+DiscordサーバーURL:文字列=「https://discord.gg/Y5FrzPft3M」
 	
-	+ヘルプページURL:文字列=「https://github.com/femtoCommunity/LegendUtil/wiki」
+	+CrowdinURL:文字列=「https://bit.ly/LegendUtil-TL」
+	
+	+ヘルプページURL:文字列=「https://wiki.legendutil.ezolys.com」
 	
 	+KofiURL:文字列=「https://ko-fi.com/milkeyyy」
 	

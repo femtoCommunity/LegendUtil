@@ -533,7 +533,8 @@
 		"UI_General": {
 			"__Name": "UI - 全般",
 			"Language;Name": "UIの言語",
-			"Language;Desc": "ユーザーインターフェースの表示言語"
+			"Language;Desc": "ユーザーインターフェースの表示言語",
+			"Language;Custom_1": "翻訳に協力する (Crowdin)"
 		},
 		"UI_MainMenu": {
 			"__Name": "UI - メインメニュー",
