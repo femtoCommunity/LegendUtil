@@ -4,7 +4,7 @@ using System.IO.Compression;
 
 namespace LegendUtil.SharpLibrary
 {
-	namespace ZipFileUtil
+	namespace ZipFileHelper
 	{
 		class アーカイブ管理器 : IProduireStaticClass
 		{
