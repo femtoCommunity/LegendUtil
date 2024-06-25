@@ -131,7 +131,14 @@
 					「名前」=「アップデートのリリースチャンネル」,
 					「説明」=「アップデート時にインストールするバージョンのリリースチャンネル」,
 					「型」=文字列,
-					「一覧」={「Release」=「release」,「Beta」=「beta」,「Beta Only」=「beta_only」,「Development (Stable)」=「dev_stable」,「Development (Unstable)」=「dev」}
+					「一覧」={
+						「Release」=「release」,
+						「Beta」=「beta」,
+						「Beta Only」=「beta_only」,
+						「Development」=「dev」,
+						「Nightly」=「dev_nightly」
+					},
+					「追加項目」=空の配列
 				},
 				「CustomReleaseChannelUrl」={
 					「初期値」=「」,
@@ -184,6 +191,18 @@
 				「[アプリのCrowdinURL]」を開く
 			』
 		コンフィグ初期値(「UI_General」)(「Language」)(「追加項目」)へ翻訳貢献ボタンを追加する
+		
+		【リリースチャンネル説明ボタン:ボタン】=ボタンを作ったもの
+			その内容=[言語管理器で「Config.Update.ReleaseChannel;Custom_1」を取得したもの]
+			その位置と大きさ={744,10,30,30}
+			その見た目=「フラット」
+			そのフォント=「Yu Gothic UI,9」
+			その背景画像配置=「拡大」
+			そのドッキング方向=「上」
+			そのクリックされた時の手順は、『
+				[言語管理器で「Config.Update.ReleaseChannel;Custom_2」を取得したもの]を「情報アイコン」で表示する
+			』
+		コンフィグ初期値(「Update」)(「ReleaseChannel」)(「追加項目」)へリリースチャンネル説明ボタンを追加する
 		
 		初回起動=×
 	終わり

@@ -527,6 +527,8 @@
 			"CheckForUpdatesOnAppLaunch;Desc": "アプリの起動時、自動的にアップデートの確認を行うかどうか",
 			"ReleaseChannel;Name": "アップデートのリリースチャンネル",
 			"ReleaseChannel;Desc": "アップデート時にインストールするバージョンのリリースチャンネル",
+			"ReleaseChannel;Custom_1": "リリースチャンネルの説明",
+			"ReleaseChannel;Custom_2": "Release: 正式リリースビルドです。\nこの選択肢は将来のために存在しており、現時点では Beta と同様です。\n\nBeta / Beta Only: ベータビルドです。\nRelease と比べて安定性に欠きますが、Dev や Nightly と比べると安定しています。\nBeta Only は Release へのアップデートを行いません。\n\nDevelopment: 開発ビルドです。\n開発者によって任意のタイミングでリリースされるビルドで、Release や Beta と比べて安定性に欠きますが、Nightly と比べると安定しています。\n\nNightly: ナイトリービルドです。\nリポジトリーへのプッシュの度にリリースされるビルドで、存在するビルドの中で最も不安定です。\n場合によっては起動すらできない事もあります。",
 			"CustomReleaseChannelUrl;Name": "カスタムリリースチャンネルURL",
 			"CustomReleaseChannelUrl;Desc": "※開発用※"
 		},
