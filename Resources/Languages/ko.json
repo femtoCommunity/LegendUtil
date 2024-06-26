@@ -19,7 +19,7 @@
 			"LauncherNotInstalled": "Steam 또는 EA app 중 하나가 설치되어 있는지 확인할 수 없습니다.\nSteam 또는 EA 앱을 설치했는데도 이 경고가 표시되면 개발자에게 보고하십시오."
 		},
 		"Error": {
-			"ErrorOccurredApplicationTermination": "アプリケーションの終了処理時にエラーが発生しました。\nコンフィグとプロファイルの変更内容が保存されていない可能性があります。\n\n{0}"
+			"ErrorOccurredApplicationTermination": "애플리케이션 종료 처리 중 오류가 발생했습니다.\n구성 및 프로파일 변경 내용이 저장되지 않았을 수 있습니다.\n\n{0}"
 		}
 	},
 	"ErrorMessage": {
@@ -152,10 +152,10 @@
 			"FolderSelectionDialog_Title": "폴더를 선택하세요"
 		},
 		"Error": {
-			"FailedToOpenFolderSelectionDialog": "フォルダー選択ダイアログの表示に失敗しました。\n\n{0}",
-			"FailedToOpenFolderSelectionDialog_RequiredRestart": "フォルダー選択ダイアログの表示に失敗しました。\nアプリケーションを再起動してください。\n\n{0}",
-			"ConfigFileNotFound": "EA app のコンフィグファイルが見つかりません。\nコンフィグファイルが生成されていない可能性があります。\nコンフィグファイルを生成させるため、EA app を再起動してからもう一度お試しください。",
-			"ConfigFileNotFound_UserFolderSettingsRequired": "EA app のコンフィグファイルが見つかりません。\nコンフィグが別のユーザーフォルダーに保存されている可能性があります。\nアプリケーション設定で「EA app コンフィグフォルダー」へ、現在ログインしている Windows のユーザーフォルダーを設定してください。"
+			"FailedToOpenFolderSelectionDialog": "폴더 선택 대화 상자를 표시하지 못했습니다.\n\n{0}",
+			"FailedToOpenFolderSelectionDialog_RequiredRestart": "폴더 선택 대화 상자를 표시하지 못했습니다.\n애플리케이션을 다시 시작해야 합니다.\n\n{0}",
+			"ConfigFileNotFound": "EA app 의 구성 파일을 찾을 수 없습니다.\n구성 파일이 생성되지 않았을 수 있습니다.\n구성 파일을 생성하려면 EA app 을 다시 시작한 다음 다시 시도하십시오.",
+			"ConfigFileNotFound_UserFolderSettingsRequired": "EA app 의 구성 파일을 찾을 수 없습니다.\n구성이 다른 사용자 폴더에 저장되었을 수 있습니다.\n응용 프로그램 설정에서 \"EA app 구성 폴더\" 에 현재 로그인되어 있는 Windows 사용자 폴더를 설정합니다."
 		}
 	},
 	"ProfileManagement": {
@@ -322,6 +322,12 @@
 			"CreateShortcutButton": "바로 가기 만들기",
 			"ChangeNameButton": "이름 변경",
 			"DeleteButton": "삭제"
+		}
+	},
+	"InputDialog": {
+		"Control": {
+			"Done": "완료",
+			"Cancel": "취소"
 		}
 	},
 	"1": {
@@ -541,8 +547,8 @@
 			"CheckForUpdatesOnAppLaunch;Desc": "앱이 시작될 때 자동으로 업데이트를 확인할지 여부",
 			"ReleaseChannel;Name": "업데이트 릴리스 채널",
 			"ReleaseChannel;Desc": "업데이트 시 설치할 버전의 릴리스 채널",
-			"ReleaseChannel;Custom_1": "リリースチャンネルの説明",
-			"ReleaseChannel;Custom_2": "Release: 正式リリースビルドです。\nこの選択肢は将来のために存在しており、現時点では Beta と同様です。\n\nBeta / Beta Only: ベータビルドです。\nRelease と比べて安定性に欠きますが、Dev や Nightly と比べると安定しています。\nBeta Only は Release へのアップデートを行いません。\n\nDevelopment: 開発ビルドです。\n開発者によって任意のタイミングでリリースされるビルドで、Release や Beta と比べて安定性に欠きますが、Nightly と比べると安定しています。\n\nNightly: ナイトリービルドです。\nリポジトリーへのプッシュの度にリリースされるビルドで、存在するビルドの中で最も不安定です。\n場合によっては起動すらできない事もあります。",
+			"ReleaseChannel;Custom_1": "릴리스 채널 설명",
+			"ReleaseChannel;Custom_2": "Release: 공식 릴리스 빌드입니다.\n이 옵션은 미래를 위해 존재하며 현재 Beta 와 동일합니다.\n\nBeta / Beta Only: 베타 빌드입니다.\nRelease에 비해 안정성이 부족하지만 Dev 나 Nightly와 비교하면 안정적입니다.\nBeta Only 는 Release 로 업데이트하지 않습니다.\n\nDevelopment: 개발 빌드입니다.\n개발자가 언제든지 출시되는 빌드는 Release 및 Beta 와 비교하여 안정성이 부족하지만 Nightly 와 비교하면 안정적입니다.\n\nNightly: 나이트리 빌드입니다.\n리포지토리에 푸시할 때마다 릴리스되는 빌드로 존재하는 빌드 중 가장 불안정합니다.\n경우에 따라서는 기동조차 할 수 없는 일도 있습니다.",
 			"CustomReleaseChannelUrl;Name": "맞춤 출시 채널 URL",
 			"CustomReleaseChannelUrl;Desc": "※개발용※"
 		},
