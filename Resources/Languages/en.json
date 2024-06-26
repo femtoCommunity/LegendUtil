@@ -320,7 +320,7 @@
 		"ProfileManage_ContextMenu": {
 			"EditButton": "Edit",
 			"CreateShortcutButton": "Create Shortcut",
-			"ChangeNameButton": "Change Name",
+			"ChangeNameButton": "Rename",
 			"DeleteButton": "Delete"
 		}
 	},
