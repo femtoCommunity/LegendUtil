@@ -17,6 +17,9 @@
 		"Dialog": {
 			"Welcome": "Thank you for installing {0}!\n\nThis app is a beta version, and unexpected problems may occur.\nIf you find any bugs or other issues or would like to see improvements, please report them in the support Discord server forum or GitHub Issue.",
 			"LauncherNotInstalled": "We couldn't verify that either Steam or EA apps are installed.\nIf you have either Steam or an EA app installed and are seeing this warning, please report it to the developer."
+		},
+		"Error": {
+			"ErrorOccurredApplicationTermination": "アプリケーションの終了処理時にエラーが発生しました。\nコンフィグとプロファイルの変更内容が保存されていない可能性があります。\n\n{0}"
 		}
 	},
 	"ErrorMessage": {
@@ -527,6 +530,8 @@
 			"CheckForUpdatesOnAppLaunch;Desc": "Whether or not to automatically check for updates when the application is launched",
 			"ReleaseChannel;Name": "Release Channel",
 			"ReleaseChannel;Desc": "Release channel of the version to be installed when updating",
+			"ReleaseChannel;Custom_1": "リリースチャンネルの説明",
+			"ReleaseChannel;Custom_2": "Release: 正式リリースビルドです。\nこの選択肢は将来のために存在しており、現時点では Beta と同様です。\n\nBeta / Beta Only: ベータビルドです。\nRelease と比べて安定性に欠きますが、Dev や Nightly と比べると安定しています。\nBeta Only は Release へのアップデートを行いません。\n\nDevelopment: 開発ビルドです。\n開発者によって任意のタイミングでリリースされるビルドで、Release や Beta と比べて安定性に欠きますが、Nightly と比べると安定しています。\n\nNightly: ナイトリービルドです。\nリポジトリーへのプッシュの度にリリースされるビルドで、存在するビルドの中で最も不安定です。\n場合によっては起動すらできない事もあります。",
 			"CustomReleaseChannelUrl;Name": "Custom Release Channel URL",
 			"CustomReleaseChannelUrl;Desc": "*for development"
 		},
