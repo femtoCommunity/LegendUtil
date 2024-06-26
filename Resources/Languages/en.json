@@ -147,6 +147,17 @@
 			"Playing_State": "Profile: {0}"
 		}
 	},
+	"Platform_EAapp": {
+		"Dialog": {
+			"FolderSelectionDialog_Title": "Select Folder"
+		},
+		"Error": {
+			"FailedToOpenFolderSelectionDialog": "フォルダー選択ダイアログの表示に失敗しました。\n\n{0}",
+			"FailedToOpenFolderSelectionDialog_RequiredRestart": "フォルダー選択ダイアログの表示に失敗しました。\nアプリケーションを再起動してください。\n\n{0}",
+			"ConfigFileNotFound": "EA app のコンフィグファイルが見つかりません。\nコンフィグファイルが生成されていない可能性があります。\nコンフィグファイルを生成させるため、EA app を再起動してからもう一度お試しください。",
+			"ConfigFileNotFound_UserFolderSettingsRequired": "EA app のコンフィグファイルが見つかりません。\nコンフィグが別のユーザーフォルダーに保存されている可能性があります。\nアプリケーション設定で「EA app コンフィグフォルダー」へ、現在ログインしている Windows のユーザーフォルダーを設定してください。"
+		}
+	},
 	"ProfileManagement": {
 		"General": {
 			"NotFound": "The specified Profile (ID: {0}) does not exist."
