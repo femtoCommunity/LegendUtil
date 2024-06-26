@@ -324,6 +324,12 @@
 			"DeleteButton": "削除"
 		}
 	},
+	"InputDialog": {
+		"Control": {
+			"Done": "完了",
+			"Cancel": "キャンセル"
+		}
+	},
 	"1": {
 		"1": {
 			"1": "プレイ",
