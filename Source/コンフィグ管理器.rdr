@@ -102,6 +102,21 @@
 				},
 				「ProfileDropdownList_SelectedID」={「設定可能」=×,「初期値」=「Default」}
 			},
+			「UI_ProfileManage」={
+				「__Name」=「」,
+				「ListView_HeadingWidths」={
+					「初期値」={190,190,110,140,120},
+					「名前」=「」,
+					「説明」=「」,
+					「型」=配列
+				},
+				「ListView_HeadingWidths_WithAccount」={
+					「初期値」={190,190,110,150,140,120},
+					「名前」=「」,
+					「説明」=「」,
+					「型」=配列
+				}
+			},
 			「Discord_RPC」={
 				「__Name」=「Discord リッチプレゼンス」,
 				「Enable」={

@@ -107,7 +107,7 @@
 		【値部品】
 		【追加項目部品】
 		
-		【例外セクション一覧:配列】={「Info」,「Window_Main」,「Window_InPlay」,「ExperimentalFeatures」}
+		【例外セクション一覧:配列】={「Info」,「Window_Main」,「Window_InPlay」,「UI_ProfileManage」,「ExperimentalFeatures」}
 		
 		【検索結果:配列】
 		
