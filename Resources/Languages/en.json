@@ -339,9 +339,9 @@
 		},
 		"2": {
 			"1": "Legion: {0}",
-			"2": "Crossplay auth",
+			"2": "Crossplay Auth",
 			"3": "Lobby/Matchmaking",
-			"4": "Origin logins",
+			"4": "Origin Logins",
 			"5": "EA Accounts",
 			"6": "LegendUtil API",
 			"7": "Failed to get server status",
@@ -376,7 +376,7 @@
 			"18": "Enter the name you wish to change.",
 			"19": "The name of the profile has not been entered.",
 			"20": "Last Played",
-			"21": "Total play time",
+			"21": "Total Play Time",
 			"22": "{0}h {1}m"
 		}
 	},
