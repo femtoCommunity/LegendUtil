@@ -10,287 +10,16 @@
 			"4": "활성화됨",
 			"5": "활성화됨",
 			"6": "비활성화",
-			"7": "비활성화"
-		}
-	},
-	"Config": {
-		"Design": {
-			"__Name": "외관",
-			"Theme;Name": "테마",
-			"Theme;Desc": "UI 테마\n(테마 변경은 앱을 다시 시작하면 적용됩니다.)"
+			"7": "비활성화",
+			"8": "계정",
+			"Loading": "로딩 중"
 		},
-		"Display": {
-			"__Name": "디스플레이",
-			"Resolution_Width;Name": "디스플레이 해상도 (너비)",
-			"Resolution_Width;Desc": "정상시 메인 디스플레이 해상도 (폭)",
-			"Resolution_Height;Name": "디스플레이 해상도 (높이)",
-			"Resolution_Height;Desc": "정상시 메인 디스플레이 해상도 (높이)",
-			"RefreshRate;Name": "디스플레이 리프레시 속도",
-			"RefreshRate;Desc": "정상시 메인 디스플레이의 리프레시 속도"
+		"Dialog": {
+			"Welcome": "{0} 을 설치해 주셔서 감사합니다!\n\n이 응용 프로그램은 베타 버전이며 예기치 않은 문제 등이 발생할 수 있습니다.\n문제 등의 문제를 발견하거나 개선하고 싶은 점이 있는 경우는 지원 Discord 서버 포럼 또는 GitHub Issue에서 보고를 부탁드립니다.",
+			"LauncherNotInstalled": "Steam 또는 EA app 중 하나가 설치되어 있는지 확인할 수 없습니다.\nSteam 또는 EA 앱을 설치했는데도 이 경고가 표시되면 개발자에게 보고하십시오."
 		},
-		"General": {
-			"__Name": "일반",
-			"EAapp_Config_Folder_Path;Name": "EA app 구성 폴더",
-			"EAapp_Config_Folder_Path;Desc": "EA app의 구성 파일이 저장된 폴더\n공백이나 존재하지 않는 폴더를 지정하면 자동으로 검색됩니다.\n※통상은 공란으로 하는 것을 추천합니다※",
-			"EAapp_Config_Folder_Path;Custom_1": "폴더를 선택하세요",
-			"EAapp_Config_File_Name;Name": "EA app 구성 파일",
-			"EAapp_Config_File_Name;Desc": "EA app 구성 파일의 파일 이름\n플레이할 플랫폼이 EA app 인 경우 이 항목은 필수입니다.\n※이 구성 파일은 계정에 따라 다르므로 여러 계정으로 플레이하는 경우,\n계정을 전환할 때마다 파일 이름을 변경해야 합니다.※",
-			"EAapp_Config_File_Name;Custom_1": "자동 감지 수행"
-		},
-		"Update": {
-			"__Name": "업데이트",
-			"CheckForUpdatesOnAppLaunch;Name": "앱이 시작될 때 업데이트 확인",
-			"CheckForUpdatesOnAppLaunch;Desc": "앱이 시작될 때 자동으로 업데이트를 확인할지 여부",
-			"ReleaseChannel;Name": "업데이트 릴리스 채널",
-			"ReleaseChannel;Desc": "업데이트 시 설치할 버전의 릴리스 채널",
-			"CustomReleaseChannelUrl;Name": "맞춤 출시 채널 URL",
-			"CustomReleaseChannelUrl;Desc": "※개발용※"
-		},
-		"UI_General": {
-			"__Name": "UI - 일반",
-			"Language;Name": "UI 언어",
-			"Language;Desc": "사용자 인터페이스 표시 언어"
-		},
-		"UI_MainMenu": {
-			"__Name": "UI - 메인 메뉴",
-			"News_Language;Name": "뉴스 언어",
-			"News_Language;Desc": "메인 메뉴에 표시되는 뉴스 언어",
-			"ServerStatus_Region;Name": "서버 상태 지역",
-			"ServerStatus_Region;Desc": "주 메뉴에 표시되는 서버 상태의 지역",
-			"ServerStatus_Region;List": "아시아,동유럽,서유럽,미국 남부,미국 중부,미국 동부,미국 서부"
-		}
-	},
-	"LaunchOption": {
-		"-eac_launcher_settings": {
-			"Category": "グラフィック",
-			"Choices": "有効",
-			"Desc": "DirectX 12 でゲームを起動します。\r\nDirectX 12 を使用すると、ゲームがCPU グラフィック コードを複数のコアに分散できるようになり、フレームレートの向上が期待できます。\r\n環境によっては、テクスチャーが正常に表示されないなど、不具合が発生する可能性があります。",
-			"DisabledText": "無効",
-			"Name": "DirectX 12 を有効化 (ベータ)",
-			"AdditionalButtonText": "DirectX 12 に関する詳しい情報 (Reddit)"
-		},
-		"-forcenovsync": {
-			"Category": "グラフィック",
-			"Choices": "垂直同期(V-SYNC)を無効化",
-			"Desc": "垂直同期(V-SYNC)を強制的に無効化します。",
-			"DisabledText": "無効化しない",
-			"Name": "垂直同期(V-SYNC)を無効化"
-		},
-		"-fullscreen": {
-			"Category": "グラフィック",
-			"Choices": "有効",
-			"Desc": "ウィンドウをフルスクリーンにした状態でゲームを起動します。",
-			"DisabledText": "無効",
-			"Name": "フルスクリーン"
-		},
-		"-high": {
-			"Category": "CPU",
-			"Choices": "CPU優先度を「高」へ変更する",
-			"Desc": "Apex Legends のCPU優先度を「高」へ変更します。\r\n変更すると、パフォーマンス向上に繋がる可能性がありますが、\r\nApex Legends のCPU使用率が増加し、システムや他のアプリケーションが不安定になる可能性があります。",
-			"DisabledText": "無効",
-			"Name": "優先度を「高」へ変更"
-		},
-		"-limitvsconst": {
-			"Category": "グラフィック",
-			"Choices": "頂点シェーダー数を変更する",
-			"Desc": "頂点シェーダー数を256に変更します。変更すると、パフォーマンス向上に繋がる可能性があります。",
-			"DisabledText": "変更しない",
-			"Name": "頂点シェーダー数を変更"
-		},
-		"-noff": {
-			"Category": "マウス/コントローラー",
-			"Choices": "振動機能を無効化する",
-			"Desc": "ゲーム内でのコントローラーの振動機能を無効化します。ゲーム内で振動機能が機能しなくなります。\r\n無効化すると、パフォーマンス向上に繋がる可能性があります。",
-			"DisabledText": "無効化しない",
-			"Name": "コントローラーの振動機能を無効化"
-		},
-		"-nojoy": {
-			"Category": "マウス/コントローラー",
-			"Choices": "スティック機能を無効化する",
-			"Desc": "コントローラーのジョイスティック機能を無効化します。ゲーム内でジョイスティックを使った操作が行えなくなります。\r\n無効化すると、パフォーマンス向上に繋がる可能性があります。",
-			"DisabledText": "無効化しない",
-			"Name": "コントローラーのジョイスティック機能を無効化"
-		},
-		"-nomouse": {
-			"Category": "マウス/コントローラー",
-			"Choices": "マウス機能を無効化する",
-			"Desc": "マウス機能を無効化します。ゲーム内でマウスを使った操作が行えなくなります。\r\n無効化すると、パフォーマンス向上に繋がる可能性があります。",
-			"DisabledText": "無効化しない",
-			"Name": "マウス機能を無効化"
-		},
-		"-novid": {
-			"Category": null,
-			"Choices": "スプラッシュムービーを再生しない",
-			"Desc": "EA特有の爆音スプラッシュムービーを無効化して、起動時間の短縮、及び鼓膜の破壊を防止します。",
-			"DisabledText": "無効化しない (スプラッシュムービーを再生する)",
-			"Name": "スプラッシュムービーを無効化"
-		},
-		"-preload": {
-			"Category": "システム",
-			"Choices": "有効",
-			"Desc": "ゲームの起動時に必要なデータを優先して読み込みます。\r\nプレイ時のパフォーマンス向上に繋がる可能性がありますが、RAMの使用量が増加したり、読み込み時間が長くなる可能性があります。",
-			"DisabledText": "無効",
-			"Name": "起動時に必要なデータを優先的に読み込む"
-		},
-		"-refresh": {
-			"Category": "グラフィック",
-			"Choices": "指定入力,60 Hz,95 Hz,120 Hz,144 Hz,240 Hz,360 Hz",
-			"Desc": "リフレッシュレートの上限値を設定します。",
-			"DisabledText": "設定しない",
-			"Name": "リフレッシュレート上限"
-		},
-		"-threads": {
-			"Category": "CPU",
-			"Choices": "変更する",
-			"Desc": "Apex Legends が使用するCPUのスレッド数を変更します。\r\n通常、Apex Legends は自動的にすべてのスレッドを使用するため、設定は不要です。\r\nApex Legends が使用するスレッド数を制限したい場合にこの設定を変更してください。",
-			"DisabledText": "変更しない",
-			"Name": "スレッド数を変更"
-		},
-		"+building_cubemaps": {
-			"Category": "グラフィック",
-			"Choices": "",
-			"Desc": "この引数は、解像度の変更が有効化されている時、自動的に有効になります。",
-			"DisabledText": "無効化しない",
-			"Name": "解像度変更設定専用 | +building_cubemaps"
-		},
-		"+cl_forcepreload": {
-			"Category": "システム",
-			"Choices": "有効",
-			"Desc": "プレイ時に必要なマップやサウンドなどのデータを事前に読み込みます。\r\nプレイ時のパフォーマンス向上に繋がる可能性がありますが、RAMの使用量が増加したり、読み込み時間が長くなる可能性があります。",
-			"DisabledText": "無効",
-			"Name": "プレイ時に必要なデータを事前に読み込む"
-		},
-		"+cl_fovScale": {
-			"Category": "グラフィック",
-			"Choices": "変更する",
-			"Desc": "視野角(FOV)を変更します。",
-			"DisabledText": "変更しない",
-			"Name": "視野角(FOV)を変更"
-		},
-		"+cl_liveapi_allow_requests": {
-			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "受信したリクエストの処理と実行を許可します。",
-			"DisabledText": "無効化しない",
-			"Name": "受信したリクエストの処理と実行を許可"
-		},
-		"+cl_liveapi_enabled": {
-			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "Live API を有効化します。",
-			"DisabledText": "無効化しない",
-			"Name": "Live API を有効化"
-		},
-		"+cl_liveapi_pretty_print_log": {
-			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "JSON出力をより人間に読みやすいものに整形します。",
-			"DisabledText": "無効化しない",
-			"Name": "JSON出力を整形"
-		},
-		"+cl_liveapi_use_protobuf": {
-			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "有効にすると、シリアライズフォーマットとして protobuf を使用します。\r\n無効にすると、シリアライズフォーマットとして JSON を使用します。",
-			"DisabledText": "無効化しない",
-			"Name": "シリアライズフォーマットとして protobuf を使用"
-		},
-		"+cl_liveapi_ws_keepalive": {
-			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "接続された任意のサーバーにPingを送信する間隔を指定します。",
-			"DisabledText": "無効化しない",
-			"Name": "WebSocket | Ping送信間隔"
-		},
-		"+cl_liveapi_ws_retry_count": {
-			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "接続不可とするまでの再試行回数を指定します。",
-			"DisabledText": "無効化しない",
-			"Name": "WebSocket | 再試行回数"
-		},
-		"+cl_liveapi_ws_retry_time": {
-			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "再試行までの時間(秒)を指定します。",
-			"DisabledText": "無効化しない",
-			"Name": "WebSocket | 再試行時間"
-		},
-		"+cl_liveapi_ws_servers": {
-			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "WebSocket サーバーを指定します。\r\n複数指定する場合は「,」で区切ります。",
-			"DisabledText": "無効化しない",
-			"Name": "WebSocket | サーバー一覧"
-		},
-		"+cl_liveapi_ws_timeout": {
-			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "タイムアウトまでの時間(秒)を指定します。",
-			"DisabledText": "無効化しない",
-			"Name": "WebSocket | タイムアウト時間"
-		},
-		"+cl_ragdoll_collide": {
-			"Category": "グラフィック",
-			"Choices": "有効",
-			"Desc": "死体などの物理挙動を変更します。変更すると、パフォーマンス向上に繋がる可能性があります。",
-			"DisabledText": "変更しない",
-			"Name": "物理挙動変更"
-		},
-		"+cl_showfps": {
-			"Category": "システム",
-			"Choices": "有効",
-			"Desc": "FPSやサーバーに対してのPingなどのパフォーマンス情報のオーバーレイ表示を有効化します。\r\nこの設定はゲーム内設定の「パフォーマンス表示」と同様の設定です。",
-			"DisabledText": "無効化しない",
-			"Name": "パフォーマンス情報のオーバーレイ表示を有効化"
-		},
-		"+cl_showpos": {
-			"Category": "システム",
-			"Choices": "有効",
-			"Desc": "ユーザー名や位置座標、移動速度などの情報のオーバーレイ表示を有効化します。",
-			"DisabledText": "無効化しない",
-			"Name": "プレイヤー情報のオーバーレイ表示を有効化"
-		},
-		"+CrossPlay_user_optin": {
-			"Category": "システム",
-			"Choices": "クロスプレイを無効化する",
-			"Desc": "クロスプレイを強制的に無効化します。",
-			"DisabledText": "無効化しない",
-			"Name": "クロスプレイを無効化"
-		},
-		"+exec": {
-			"Category": "コンフィグ",
-			"Choices": "プロファイル,指定",
-			"Desc": "ゲームの起動時に autoexec ファイルを読み込んでコンフィグを適用します。\nautoexec は「Autoexec」タブから編集できます。",
-			"DisabledText": "無効",
-			"Name": "autoexec を読み込む"
-		},
-		"+fps_max": {
-			"Category": "グラフィック",
-			"Choices": "無制限,指定入力,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
-			"Desc": "FPSの上限値を設定します。",
-			"DisabledText": "設定しない",
-			"Name": "FPS上限"
-		},
-		"+m_rawinput": {
-			"Category": "マウス/コントローラー",
-			"Choices": "有効",
-			"Desc": "マウスのローインプットを有効化します。",
-			"DisabledText": "有効化しない",
-			"Name": "ローインプットを有効化"
-		},
-		"+mat_queue_mode": {
-			"Category": "CPU",
-			"Choices": "<推奨> マルチ,シングル (非同期),シングル (同期),システム,レガシー",
-			"Desc": "CPUのスレッドモードを変更します。設定によっては、パフォーマンス向上に繋がる可能性があります。",
-			"DisabledText": "変更しない",
-			"Name": "スレッドモードを変更"
-		},
-		"__Category": {
-			"List": "コンフィグ,全般,グラフィック,システム,CPU,マウス/コントローラー,Live API"
-		},
-		"__Placeholder": {
-			"Text": "<指定値>"
+		"Error": {
+			"ErrorOccurredApplicationTermination": "애플리케이션 종료 처리 중 오류가 발생했습니다.\n구성 및 프로파일 변경 내용이 저장되지 않았을 수 있습니다.\n\n{0}"
 		}
 	},
 	"ErrorMessage": {
@@ -309,58 +38,307 @@
 			"1": "파일 다운로드에 실패했습니다.\n\n{0}"
 		},
 		"4": {
-			"1": "APIから正常な応答が得られませんでした。\nステータスコード: {0}",
-			"2": "アップデートデータを取得できませんでした。\r\n配列の個数が0です。",
-			"3": "ステータスコード: [0]",
-			"4": "アップデートの実行に失敗しました。\n\n{0}"
+			"1": "업데이트 확인에 실패했습니다.\n\nAPI에서 정상적인 응답을 얻지 못했습니다.\n상태 코드: {0}",
+			"2": "업데이트 확인에 실패했습니다.\r\n배열의 개수가 0입니다.",
+			"3": "상태 코드: {0}",
+			"4": "업데이트 실행에 실패했습니다.\n\n{0}"
+		}
+	},
+	"SplashWindow": {
+		"Status": {
+			"Loading": "로드 중...",
+			"LoadingWindow": "창 로딩 중",
+			"LoadingWindow_MainWindow": "창 로딩 중",
+			"GeneratingControl": "컨트롤 생성 중",
+			"GeneratingControl_MainMenuPanel": "컨트롤 생성 중: 메인 메뉴",
+			"GeneratingControl_AppSettingsPanel": "컨트롤 생성 중: 애플리케이션 설정 패널",
+			"GeneratingControl_AccountManagePanel": "컨트롤 생성 중: 계정 관리 패널",
+			"GeneratingControl_ProfileManagePanel": "컨트롤 생성 중: 프로필 관리 패널",
+			"GeneratingControl_ProfileCreateWizardPanel": "컨트롤 생성 중: 프로파일 생성 마법사 패널",
+			"GeneratingControl_ProfileEditPanel": "컨트롤 생성 중: 프로필 편집 패널"
 		}
 	},
 	"PanelTitle": {
 		"MainWindow": {
 			"ProfileManage": "프로필 관리",
 			"ProfileEdit": "프로필 편집",
+			"AccountManage": "계정 관리",
 			"AppSettings": "애플리케이션 설정",
-			"OpenSourceLicenses": "オープンソースライセンス",
-			"Update": "アップデート"
+			"OpenSourceLicenses": "오픈소스 라이선스",
+			"Update": "업데이트"
 		}
 	},
 	"Tooltip": {
-		"ProfileEditPanel": {
-			"AltEnter自動押下チェックボックス": "Apex Legends가 시작된 후 Alt+Enter를 자동으로 누르는지 여부를 설정합니다.\n이 설정을 사용하면 \"해상도 늘이기\"를 수행할 때 발생하는 \"검은 띠\"를 지울 수 있습니다.",
-			"AltEnter自動押下待機時間ダイヤル": "Apex Legends가 시작되고 Alt+Enter가 자동으로 눌려질 때까지 대기하는 시간(초)을 설정합니다.\n환경에 따라 타이틀 화면이 표시될 때까지의 시간이 변화하기 때문에, 자신의 환경에 맞추어 설정해 주세요.",
-			"AltEnter自動押下方法選択リスト": "Alt+Enter 자동 누르기 실행 방법을 설정합니다.\n\n  <이미지 인식>\n    제목 화면의 표시를 자동으로 인식하여 Alt+Enter 자동 누르기를 실행합니다.\n    이 설정을 사용하는 경우 추가 파일을 다운로드해야 합니다. (자동으로 다운로드됩니다.)\n\n  <시간>\n    Apex Legends가 시작된 후 지정된 시간을 기다리고 Alt+Enter 자동 누르기를 실행합니다.\n    환경에 따라 타이틀 화면이 표시될 때까지의 시간이 변화하기 때문에, 자신의 환경에 맞추어 설정해 주세요.",
-			"ApexLegendsパステキスト": "Apex Legends를 설치할 위치(실행 파일)의 경로를 설정합니다.\n\"EasyAntiCheat_launcher.exe\" 대신 \"r5apex.exe\" 경로를 지정합니다.",
-			"ApexLegendsパス自動取得チェックボックス": "이 PC에 설치되어 있는 Apex Legends의 설치처(실행 파일)를 자동적으로 취득합니다.",
-			"ApexLegendsパス自動取得ボタン": "이 PC에 설치된 Apex Legends의 설치 대상을 다시 가져옵니다.\n재설치를 실시했을 때 등, 설치처가 변경되었을 경우에 가 주세요.",
-			"EAappSteam経由IDテキスト": "Steam에 등록된 EA app의 AppID를 지정합니다.",
-			"EAappSteam経由チェックボックス": "Steam을 통해 EA 앱을 실행할지 여부를 설정합니다.\n이 설정을 사용하려면 EA 앱을 비 Steam 게임으로 Steam에 등록해야합니다.",
-			"カーソルロックチェックボックス": "커서 잠금을 사용할지 여부를 설정합니다.\n활성화하면 여러 모니터를 연결할 때 Apex Legends 창에서 마우스 커서가 튀어나오는 현상을 방지할 수 있습니다.",
-			"システム解像度変更チェックボックス": "Apex Legends를 시작하기 전에 시스템(PC)의 디스플레이 해상도를 변경할지 여부를 설정합니다.\n이 설정을 사용하면 Alt+Tab 등으로 Apex Legends에서 다른 창으로 전환할 때,\n매번 디스플레이 해상도가 되돌아가, 몇 초간 PC가 정지해 버리는 현상을 방지할 수 있습니다.\n(Apex Legends가 표시되는 메인 디스플레이만 변경됩니다. 서브 디스플레이는 변경되지 않습니다.)",
-			"ディスプレイスケーリングモードヘルプボタン": "디스플레이의 스케일링 모드 유형에 대한 자세한 설명을 표시합니다.",
-			"ディスプレイスケーリングモード選択リスト": "해상도 변경 시 디스플레이의 스케일링 모드를 설정합니다.",
-			"ディスプレイリフレッシュレートダイヤル": "플레이 시의 리프레시 레이트를 설정합니다.",
-			"ディスプレイ解像度Hダイヤル": "플레이 시의 디스플레이 해상도(높이)를 설정합니다.",
-			"ディスプレイ解像度Wダイヤル": "플레이시의 디스플레이 해상도(폭)를 설정합니다.",
-			"ディスプレイ設定プリセット有効項目チェックボックス": "활성화하면 디스플레이가 지원하지 않는 설정도 사전 설정 목록에 표시됩니다.\n지원되지 않는 해상도 또는 새로 고침 속도를 지정하면 해상도 변경이 실패하고 시작할 수 없습니다.",
-			"ディスプレイ設定プリセット選択リスト": "플레이 시 디스플레이 설정을 프리셋에서 선택합니다.\n선택하면 자동으로 입력됩니다.",
-			"フルスクリーンストレッチ有効チェックボックス": "Apex Legends를 재생할 때 디스플레이 해상도를 변경할지 여부를 설정합니다.",
-			"プラットフォーム選択リスト": "Apex Legends를 설치하는 플랫폼을 선택합니다.",
+		"プロファイル編集パネル部品": {
+			"AltEnter自動押下チェックボックス": "Apex Legends 실행 후 Alt+Enter를 자동으로 누를지 여부를 설정합니다.\n이 설정을 활성화하면 '해상도 늘리기'를 할 때 발생하는 '검은 띠'를 없앨 수 있습니다.",
+			"AltEnter自動押下待機時間ダイヤル": "Apex Legends가 실행된 후 Alt+Enter를 자동 누를 때까지의 대기 시간(초)을 설정합니다.\r\n환경에 따라 타이틀 화면이 표시되기까지 걸리는 시간이 달라지므로, 자신의 환경에 맞게 설정하시기 바랍니다.",
+			"AltEnter自動押下方法選択リスト": "Alt+Enter 자동 누름 실행 방법을 설정합니다.\n\n  <이미지 인식>\n    제목 화면의 표시를 자동으로 인식하여 Alt+Enter 자동 누름을 실행합니다.\n    이 설정을 사용하려면 추가 파일 다운로드가 필요합니다. (자동으로 다운로드됩니다).\n\n  <시간>\n    Apex Legends가 실행된 후 지정된 시간 동안 대기하여 Alt+Enter 자동 누름을 실행합니다.\n    환경에 따라 타이틀 화면이 표시되기까지 걸리는 시간이 달라지므로 자신의 환경에 맞게 설정하시기 바랍니다.",
+			"ApexLegendsパステキスト": "Apex Legends의 설치 경로(실행 파일)를 설정합니다.\r\n'r5apex.exe'의 경로를 지정합니다.",
+			"ApexLegendsパス自動取得チェックボックス": "이 PC에 설치된 Apex Legends의 설치 위치(실행 파일)를 자동으로 검색합니다.",
+			"ApexLegendsパス自動取得ボタン": "이 PC에 설치된 Apex Legends의 설치 위치를 다시 가져옵니다.\r\n재설치를 하는 등 설치 위치가 변경된 경우 다시 설치하십시오.",
+			"EAappSteam経由IDテキスト": "Steam에 등록된 EA 앱의 AppID를 지정합니다.",
+			"EAappSteam経由チェックボックス": "Steam을 통해 EA 앱을 실행할지 여부를 설정합니다.\r\n이 설정을 사용하려면 EA 앱을 Steam에 비 Steam 게임으로 등록해야 합니다.",
+			"カーソルロックチェックボックス": "커서 잠금을 활성화할지 여부를 설정합니다.\r\n활성화하면 여러 대의 모니터를 연결했을 때 Apex Legends의 창에서 마우스 커서가 튀어나오는 현상을 방지할 수 있습니다.",
+			"システム解像度変更チェックボックス": "Apex Legends를 실행하기 전에 시스템(PC)의 디스플레이 해상도를 변경할지 여부를 설정합니다.\n이 설정을 활성화하면 Alt+Tab 등으로 Apex Legends에서 다른 창으로 전환할 때\n매번 디스플레이 해상도가 원래대로 돌아와서 몇 초간 PC가 멈추는 현상을 방지할 수 있습니다.\n(Apex Legends가 표시되는 메인 디스플레이만 변경됩니다. 서브 디스플레이는 변경되지 않습니다).",
+			"ディスプレイスケーリングモードヘルプボタン": "디스플레이 스케일링 모드의 종류에 대한 자세한 설명을 표시합니다.",
+			"ディスプレイスケーリングモード選択リスト": "해상도 변경 시 디스플레이 스케일링 모드를 설정합니다.",
+			"ディスプレイリフレッシュレートダイヤル": "재생 시 재생 빈도를 설정합니다.",
+			"ディスプレイ解像度Hダイヤル": "플레이 시 디스플레이 해상도(높이)를 설정합니다.",
+			"ディスプレイ解像度Wダイヤル": "플레이 시 디스플레이 해상도(너비)를 설정합니다.",
+			"ディスプレイ設定プリセット有効項目チェックボックス": "활성화하면 디스플레이가 지원하지 않는 설정도 프리셋 목록에 표시됩니다.\r\n지원하지 않는 해상도나 재생률을 지정하면 재생 시 해상도 변경에 실패하여 실행할 수 없습니다.",
+			"ディスプレイ設定プリセット選択リスト": "플레이 시 디스플레이 설정을 프리셋에서 선택합니다.\r\n선택하면 자동으로 입력됩니다.",
+			"フルスクリーンストレッチ有効チェックボックス": "Apex Legends 플레이 시 디스플레이 해상도를 변경할지 여부를 설정합니다.",
+			"プラットフォーム選択リスト": "Apex Legends를 설치한 플랫폼을 선택합니다.",
+			"アカウント選択リスト": "Apex Legends를 플레이할 때 사용할 계정을 선택합니다.\r\n(계정 관리는 '계정' 탭에서 할 수 있습니다).",
 			"戻るボタン": "프로필 목록으로 돌아가기",
-			"ディスプレイ解像度テストボタン": "指定されたディスプレイ設定に変更しても正常に表示できるかをテストします。",
-			"コンフィグパネル部品のコンフィグ指定選択リスト": "このプロファイルでプレイする際に読み込むコンフィグを選択します。",
-			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "このプロファイルでプレイする際に読み込むビデオコンフィグを選択します。",
-			"コンフィグパネル部品のコンフィグ読み取り専用チェックボックス": "プレイ時にコンフィグファイルを読み取り専用にするかどうかを設定します。",
-			"ビデオコンフィグパネル部品のビデオコンフィグ読み取り専用チェックボックス": "プレイ時にビデオコンフィグファイルを読み取り専用にするかどうかを設定します。"
+			"ディスプレイ解像度テストボタン": "지정된 디스플레이 설정으로 변경해도 정상적으로 표시되는지 테스트합니다.",
+			"コンフィグパネル部品のコンフィグ指定選択リスト": "이 프로필로 플레이할 때 불러올 구성을 선택합니다.",
+			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "이 프로파일로 플레이할 때 로드할 비디오 구성을 선택합니다.",
+			"コンフィグパネル部品のコンフィグ読み取り専用チェックボックス": "플레이 시 설정 파일을 읽기 전용으로 사용할지 여부를 설정합니다.",
+			"ビデオコンフィグパネル部品のビデオコンフィグ読み取り専用チェックボックス": "재생 시 비디오 설정 파일을 읽기 전용으로 사용할지 여부를 설정합니다."
+		},
+		"アカウント管理パネル部品": {
+			"切り替えボタン": "선택한 계정으로 전환",
+			"削除ボタン": "선택한 계정 삭제",
+			"追加ボタン": "계정 추가"
+		}
+	},
+	"MozambiqueAPI": {
+		"ErrorMessage": {
+			"HTTPStatusCode": "HTTP 상태 코드: {0}",
+			"FailedToGetMapRotation": "맵 로테이션을 얻을 수 없습니다.",
+			"FailedToGetServerStatus": "서버 상태를 얻을 수 없습니다.",
+			"FailedToGetNews": "뉴스를 얻을 수 없습니다.",
+			"FailedToGetNewsImage": "이미지를 얻을 수 없습니다."
+		},
+		"UpdateStatus": {
+			"LastUpdate": "최종 업데이트: {0}"
+		},
+		"MapRotation": {
+			"GameMode_battle_royale": "배틀 로얄 | 캐주얼",
+			"GameMode_ranked": "배틀 로얄 | 랭크 리그",
+			"GameMode_arenas": "아레나 | 캐주얼",
+			"GameMode_arenasRanked": "아레나 | 랭크",
+			"GameMode_ltm_Control": "컨트롤",
+			"GameMode_ltm_TDM": "팀 데스매치",
+			"GameMode_ltm_Gun Run": "건 게임",
+			"GameMode_ltm_Lockdown": "락다운"
+		}
+	},
+	"DiscordRPC": {
+		"MainMenu": {
+			"Idle_Details": "메인 메뉴 열람 중",
+			"Idle_State": ""
+		},
+		"ProfileManage": {
+			"Viewing_Details": "프로필 열람 중",
+			"Viewing_State": ""
+		},
+		"ProfileEdit": {
+			"Editing_Details": "프로필 편집 중",
+			"Editing_State": "- {0}"
+		},
+		"ApplicationSettings": {
+			"Viewing_Details": "애플리케이션 설정 열람 중",
+			"Viewing_State": ""
+		},
+		"Playing": {
+			"Playing_Details": "Apex Legends 플레이 중",
+			"Playing_State": "프로필: {0}"
+		}
+	},
+	"Platform_EAapp": {
+		"Dialog": {
+			"FolderSelectionDialog_Title": "폴더를 선택하세요"
+		},
+		"Error": {
+			"FailedToOpenFolderSelectionDialog": "폴더 선택 대화 상자를 표시하지 못했습니다.\n\n{0}",
+			"FailedToOpenFolderSelectionDialog_RequiredRestart": "폴더 선택 대화 상자를 표시하지 못했습니다.\n애플리케이션을 다시 시작해야 합니다.\n\n{0}",
+			"ConfigFileNotFound": "EA app 의 구성 파일을 찾을 수 없습니다.\n구성 파일이 생성되지 않았을 수 있습니다.\n구성 파일을 생성하려면 EA app 을 다시 시작한 다음 다시 시도하십시오.",
+			"ConfigFileNotFound_UserFolderSettingsRequired": "EA app 의 구성 파일을 찾을 수 없습니다.\n구성이 다른 사용자 폴더에 저장되었을 수 있습니다.\n응용 프로그램 설정에서 \"EA app 구성 폴더\" 에 현재 로그인되어 있는 Windows 사용자 폴더를 설정합니다."
+		}
+	},
+	"ProfileManagement": {
+		"General": {
+			"NotFound": "지정한 프로필(ID: {0})이 존재하지 않습니다."
+		},
+		"Shortcut": {
+			"ConfirmCreate": "프로필 \"{0}\" 바로가기를 만들어도 되나요?",
+			"Created": "바탕화면에 '{0}' 프로필 바로가기를 만들었습니다.",
+			"CannotCreate": "바로 가기 생성에 실패했습니다.\n\n{0}"
+		},
+		"Delete": {
+			"ConfirmDelete": "\"{0}\" 프로필을 삭제해도 되나요?",
+			"CannotDelete": "\"{0}\" 프로필은 삭제할 수 없습니다."
+		},
+		"Dialog": {
+			"FailedToLoadProfiles": "다음 프로파일을 불러오는 데 실패했습니다.\n자세한 내용은 디버그 로그를 참고하세요.\n\n{0}",
+			"ConvertedOldDX12Args": "DirectX 12에서 실행하기 위한 시작 인수가 시즌 21 이상에서 지원되지 않는 값이었기 때문에 다음 값을 자동으로 대체했습니다.\n교체 전: {0}\n교체 후: {1}\n\n<치환 처리를 실시한 프로파일>\n{2}"
+		}
+	},
+	"InPlay": {
+		"UI": {
+			"Cancel": "취소",
+			"ProfileName": "프로필 이름",
+			"CursorLock": "커서 고정",
+			"PID": "PID",
+			"Version": "버전",
+			"Build": "빌드",
+			"LaunchOption": "시작 인수"
+		},
+		"Status": {
+			"ProcessingStartup": "시작 처리 중...",
+			"ProcessingTermination": "종료 처리 중...",
+			"ChangingDisplaySettings": "디스플레이 설정 변경 중",
+			"StartingGame": "Apex Legends 실행 중",
+			"WaitingForGameToStart": "Apex Legends 출시 대기 중",
+			"WaitingForGameToStart_WithRT": "Apex Legends 시작 대기 중 - 남은 시간{0}초",
+			"StoppingGameProcess": "Apex Legends 프로세스 중지 중",
+			"MonitoringGameProcess": "Apex Legends 프로세스 추적 중"
+		},
+		"Dialog": {
+			"Game_CancelProcessTracking_Confirm": "Apex Legends 대기를 취소하시겠습니까?",
+			"Game_WontStart": "Apex Legends가 시작되지 않나요?\nEA 앱의 백그라운드 서비스를 다시 시작하면 해결될 수 있습니다. 다시 시작하시겠습니까?\n(업데이트 중일 경우, 대기를 취소하고 업데이트가 완료된 후 다시 시작하세요).",
+			"Game_ProcessForciblyTerminated": "Apex Legends의 프로세스가 강제 종료되었습니다.\n정상적인 종료 처리가 이루어지지 않아 설정 등이 저장되지 않았을 수 있습니다.",
+			"Game_DeleteStartupArgsInEAappProperties": "EA app의 속성에서 Apex Legends의 시작 인수가 설정되어 있어, 이대로 실행하면 의도하지 않은 설정이 적용될 수 있습니다.\n\nEA app 속성에서 설정된 실행 인수를 삭제하시겠습니까?\n\n<설정된 실행 인수>\n{0}",
+			"Window_Close_InPlay_Confirm": "Apex Legends 가 시작 중입니다.\n강제 종료한 다음 {0} 을 종료하시겠습니까?\n(문제가 발생할 수 있음)\n\n예를 클릭하면 Apex Legends 를 강제 종료하고 {0} 을 종료합니다.\n아니요를 클릭하면 {0} 종료를 취소합니다.",
+			"Window_Close_InLaunchProcess_Confirm": "Apex Legends 시작 프로세스 중입니다.\n시작 프로세스를 취소하고 {0} 을 종료하시겠습니까?\n({0} 종료 후 Apex Legends 가 시작될 수 있습니다.)\n\n예를 클릭하면 Apex Legends 시작 프로세스를 취소하고 {0} 을 종료합니다.\n아니요를 클릭하면 {0} 종료를 취소합니다."
+		},
+		"Log": {
+			"Done": "완료",
+			"Path": "패스",
+			"Platform": "플랫폼",
+			"WindowHandle": "윈도우 핸들",
+			"MainWindowHandle": "메인 윈도우 핸들",
+			"Download": "다운로드",
+			"StatusCode": "상태 코드",
+			"Error": "오류",
+			"ImageSimilarity": "이미지 유사도",
+			"ConfigFile": "설정 파일",
+			"ProfileConfigFile": "프로파일 설정 파일",
+			"VideoConfigFile": "비디오 설정 파일",
+			"LoadingProfile": "프로필 로딩 중",
+			"GettingDetailsOfInstalledGames": "설치된 게임 정보 조회 중",
+			"GettingGameInstallationLocation": "게임 설치 위치 검색 중",
+			"GenerateAutoexec": "Autoexec 생성: {0}",
+			"StartEditingVideoConfig": "비디오 구성 편집 시작",
+			"RetrievingLatestTitleScreenImage": "- 최신 타이틀 화면 보기",
+			"RetrievingLatestTitleScreenImage_Succeeded": " - 성공: {0}",
+			"RetrievingLatestTitleScreenImage_Failed": " - 실패: {0}",
+			"DeleteStartupArgsInConfig": "설정의 시작 인수를 제거합니다.",
+			"GetConfigFile": "{0}획득",
+			"CopyConfigFile": "{0}를 복사",
+			"RestoreConfigFile": "{0}복원",
+			"SaveProfileSpecificConfigFile": "프로파일 전용 설정 저장",
+			"RestoreGlobalConfigFile": "공통 구성 복원",
+			"CopyConfigFile_Path": "{0} → {1}",
+			"TransferConfigFile_Path": "(마이그레이션): {0} → {1}",
+			"SystemDisplaySettings_Get": "시스템 디스플레이 설정 가져오기",
+			"SystemDisplaySettings_Change": "시스템 디스플레이 설정 변경",
+			"SystemDisplaySettings_Restore": "시스템 디스플레이 설정 복원",
+			"Game_Launch": "Apex Legends 시작",
+			"Game_Starting": "Apex Legends 실행 중...",
+			"Game_StartProcessTracking": "프로세스 추적 시작 ...",
+			"Game_EndProcessTracking": "프로세스 추적을 종료합니다...",
+			"EAapp_ConfigEditing": "EA app 설정 편집",
+			"EAapp_Close": "EA app 종료",
+			"EAapp_GetProcess": "EA app의 프로세스 가져오기",
+			"EAapp_TerminateProcess": "EA app 프로세스 종료",
+			"EAapp_ProcessNotFound": "EA app 프로세스를 찾을 수 없습니다.",
+			"EAapp_Launch": "EA 앱 실행",
+			"EAapp_Launch_ViaSteam": "EA 앱 실행 (Steam을 통해)",
+			"EAapp_SearchingForProcess": "EA app 프로세스 검색 중",
+			"EAapp_WaitingForWindow": "창 표시 대기 중 (시간이 걸릴 수 있습니다.)",
+			"TitleScreenImage_CouldNotGetLatestImageFileName": "최신 이미지 파일명을 검색할 수 없습니다 | 상태 코드: {0}",
+			"TitleScreenImage_AlreadyDownloaded": "이미 최신 이미지 파일이 다운로드되었습니다 | 상태 코드: {0}",
+			"TitleScreenImage_FailedToDownload": "최신 이미지 파일({0})을 검색할 수 없습니다 | 상태 코드: {1}",
+			"AltEnterAutoPress_Waiting": "Alt+Enter 자동 누름 실행 대기 중",
+			"AltEnterAutoPress_WaitingForTitleScreen": "타이틀 화면 표시 대기 중",
+			"AltEnterAutoPress_WaitingForWindow": "창 표시 대기 중",
+			"AltEnterAutoPress_CannotExecute_TitleScreenImageNotFound": "타이틀 화면의 이미지 파일을 찾을 수 없어 자동 누름을 실행할 수 없습니다.",
+			"AltEnterAutoPress_ScreenCaptureFailed_ProcessWindowNotSelected": "화면 캡처 실패: 프로세스 창이 선택되지 않았습니다.",
+			"AltEnterAutoPress_WaitingTime": "대기 시간: {0}초",
+			"AltEnterAutoPress_WaitingTime_Left": "남은 {0}초",
+			"AltEnterAutoPress_Execute": "Alt+Enter 자동 누르기 실행",
+			"CursorLock_Enabled": "커서 잠금 활성화",
+			"CursorLock_Disabled": "커서 잠금 비활성화"
+		},
+		"ErrorLog": {
+			"StartupProcessFailed": "< 오류 번호: {0}>\n{1}\n\n{2}",
+			"EAappConfigEditingFailed_WithErrMsg": "EA app 설정 편집 실패: {0}",
+			"EAappConfigEditingFailed_CouldNotLoadConfigFile": "EA app 설정 편집 실패: 설정 파일을 불러올 수 없음 (ID: {0})",
+			"EAappConfigEditingFailed_CouldNotGetLoggedInUser": "EA app 설정 편집 실패: 로그인 중인 사용자를 검색할 수 없습니다.",
+			"Game_ProcessTrackingError": "프로세스 모니터링 오류: {0}",
+			"Game_ProcessTrackingTerminationError": "모니터링 종료 처리에서 오류가 발생했습니다.\n\n{0}",
+			"SystemDisplaySettings_RestoringError": "시스템 디스플레이 설정 복원 과정에서 오류가 발생했습니다.",
+			"ConfigFile_RestoringError": "설정 파일 복원 과정에서 오류가 발생했습니다.",
+			"ProfileConfigFile_RestoringError": "프로필 설정 파일 복원 과정에서 오류가 발생했습니다.",
+			"VideoConfigFile_RestoringError": "비디오 구성 파일 복원 과정에서 오류가 발생했습니다.",
+			"VideoConfigFile_SettingsRestoringError": "비디오 설정 항목 복원 과정에서 오류가 발생했습니다.",
+			"TT_LastPlayDate_RecordError": "마지막 플레이 일시의 기록 처리에 에러가 발생했습니다.",
+			"TT_TotalPlayTime_RecordError": "총 플레이 시간의 기록 처리에 에러가 발생했습니다.",
+			"TT_DiscordRPC_TimestampResetError": "Discord RPC의 타임스탬프 프리셋에 오류가 발생했습니다."
+		},
+		"Error": {
+			"0": "부팅 처리 중 오류가 발생했습니다.",
+			"1": "프로필을 불러오는 데 실패했습니다.",
+			"2": "디스플레이 설정 변경에 실패했습니다.",
+			"3": "Apex Legends 시작 시 오류가 발생했습니다.",
+			"4": "Apex Legends 를 시작할 수 없습니다. Apex Legends 가 설치되어 있지 않을 수 있습니다.",
+			"5": "Apex Legends의 프로세스를 제시간에 얻을 수 없습니다.",
+			"6": "Alt+Enter 자동 누름 대기 시 오류가 발생했습니다.",
+			"7": "Alt+Enter 자동입력 실행 시 오류가 발생했습니다.",
+			"8": "Apex Legends가(가) 시작하지 못했습니다.",
+			"9": "시작 인수 변경 실패",
+			"10": "비디오 설정 변경에 실패했습니다.",
+			"11": "프로세스 대기가 취소되었습니다.",
+			"12": "설치 위치 검색에 실패했습니다.",
+			"13": "구성 가져오기에 실패했습니다.",
+			"14": "구성 생성에 실패했습니다.",
+			"15": "구성 복원에 실패했습니다.",
+			"16": "비디오 구성 가져오기에 실패했습니다.",
+			"17": "비디오 구성 생성에 실패했습니다.",
+			"18": "비디오 구성 복원에 실패했습니다.",
+			"19": "프로필 설정 가져오기에 실패했습니다.",
+			"20": "프로파일 구성 생성에 실패했습니다.",
+			"21": "프로필 설정 복원에 실패했습니다.",
+			"22": "EA app의 설정에서 시작 인수를 제거할 수 없습니다.",
+			"StartupProcessFailed": "< 오류 번호: {0}>\n{1}\n\n{2}",
+			"FailedToLaunch_FileNotFound": "Apex Legends의 시작에 실패했습니다.\n지정한 경로 \"{0}\"에서 파일을 찾을 수 없습니다.",
+			"Game_ProcessTrackingTerminationError": "종료 과정에서 오류가 발생했습니다.\n정상적인 종료 처리가 이루어지지 않아 일부 설정이 저장되지 않을 수 있습니다.\n\n{0}",
+			"Game_StartupProcessingIsAlreadyInProgress": "이미 부팅 프로세스가 진행 중입니다.",
+			"Game_CouldNotGetProcess_Timeout": "Apex Legends가 시간 내에 Apex Legends 프로세스를 검색하지 못했습니다.",
+			"Profile_SpecifiedProfileNotFound": "지정된 프로필 {0} 이 존재하지 않습니다.",
+			"InstallPath_EACNotFoundInFolder": "\"EasyAntiCheat_launcher.exe\"가 지정된 폴더 \"{0}\"에서 찾을 수 없습니다.",
+			"InstallPath_FileNotFound": "지정된 파일을 찾을 수 없습니다.\n- 경로: {0}",
+			"SystemDisplaySettings_UnsupportedDisplaySettings": "지원되지 않는 디스플레이 설정입니다.\n\nNVIDIA 제어판 등에서 사용자 지정 해상도를 생성한 후 다시 시도해 보십시오.",
+			"EAapp_FindProcess_Timeout": "EA app의 프로세스를 제시간에 가져오지 못했습니다.",
+			"EAapp_CouldNotGetWindowHandle": "EA 앱의 창 핸들을 가져올 수 없습니다."
+		}
+	},
+	"Panel": {
+		"ProfileManage_ContextMenu": {
+			"EditButton": "편집",
+			"CreateShortcutButton": "바로 가기 만들기",
+			"ChangeNameButton": "이름 변경",
+			"DeleteButton": "삭제"
+		}
+	},
+	"InputDialog": {
+		"Control": {
+			"Done": "완료",
+			"Cancel": "취소"
 		}
 	},
 	"1": {
 		"1": {
 			"1": "플레이",
 			"2": "프로필",
-			"3": "설정"
+			"3": "설정",
+			"4": "설정"
 		},
 		"2": {
-			"1": "지역: {0} | 최종 업데이트: {1} | Data provided by https://apexlegendsstatus.com/",
+			"1": "지역: {0}",
 			"2": "크로스플레이 인증",
 			"3": "로비/매치메이킹",
 			"4": "Origin 로그인",
@@ -372,7 +350,8 @@
 		"3": {
 			"1": "플레이",
 			"2": "얻을 수 없습니다.",
-			"3": "停止"
+			"3": "정지",
+			"4": "Apex Legends 프로세스를 중지해도 되나요?\r\n설정 등의 정보가 정상적으로 저장되지 않을 수 있습니다."
 		}
 	},
 	"2": {
@@ -395,7 +374,10 @@
 			"16": "프로필 이름 바꾸기",
 			"17": "프로필 '{0}' 의 이름은 변경할 수 없습니다.",
 			"18": "변경할 이름을 입력합니다.",
-			"19": "프로필 이름이 입력되지 않았습니다."
+			"19": "프로필 이름이 입력되지 않았습니다.",
+			"20": "최종 플레이 날짜 및 시간",
+			"21": "총 플레이 시간",
+			"22": "{0}시간{1}분"
 		}
 	},
 	"3": {
@@ -407,8 +389,8 @@
 			"1": "일반",
 			"2": "시작 인수",
 			"3": "Autoexec",
-			"4": "コンフィグ",
-			"5": "ビデオコンフィグ"
+			"4": "구성",
+			"5": "비디오 구성"
 		},
 		"3": {
 			"1": "플랫폼",
@@ -441,7 +423,10 @@
 			"29": "파일 압축 해제 중",
 			"30": "완료",
 			"31": "다운로드 완료.",
-			"32": "지원되지 않는 설정 표시"
+			"32": "지원되지 않는 설정 표시",
+			"33": "Apex Legends 설치 경로를 찾았습니다.\r\n\r\n경로: {0}",
+			"34": "계정",
+			"35": "테스트"
 		},
 		"4": {
 			"2": "아래 옵션에 없는 시작 인수는 여기에 입력하십시오.\n기존 시작 인수의 텍스트를 입력하고 구문 분석을 실행하면 LegendUtil이 자동으로 구문 분석하고 읽습니다.",
@@ -451,41 +436,377 @@
 		"5": {
 			"1": "＜통계 정보＞\n- 옵션 수: {0}"
 		},
-		"6": {
-			"1": "読み込むファイル",
-			"2": "共通,プロファイル",
-			"3": "読み取り専用",
-			"4": "有効"
+		"コンフィグパネル部品": {
+			"ベースフレーム": "구성",
+			"コンフィグ指定ラベル": "파일 불러오기",
+			"__DropDownList;コンフィグ指定選択リスト": "공통,프로필",
+			"コンフィグ読み取り専用ラベル": "읽기 전용",
+			"コンフィグ読み取り専用チェックボックス": "활성화됨",
+			"コンフィグファイル開くボタン": "파일 열기",
+			"__Text;コンフィグ未生成警告": "구성이 생성되지 않았습니다. 이 프로필로 게임을 실행해 보세요.",
+			"__Text;ファイル取得失敗エラー": "파일 가져오기에 실패했습니다.\n\n{0}"
 		},
-		"7": {
-			"1": "読み込むファイル",
-			"2": "共通,プロファイル",
-			"3": "読み取り専用",
-			"4": "有効",
-			"5": "解像度の引き伸ばしを有効にしている場合、読み取り専用を有効にすることをおすすめします。"
+		"コンフィグパネル部品2": {
+			"ベースフレーム": "프로파일 구성",
+			"コンフィグ指定ラベル": "파일 불러오기",
+			"__DropDownList;コンフィグ指定選択リスト": "공통,프로필",
+			"コンフィグ読み取り専用ラベル": "읽기 전용",
+			"コンフィグ読み取り専用チェックボックス": "활성화됨",
+			"コンフィグファイル開くボタン": "파일 열기",
+			"__Text;コンフィグ未生成警告": "프로필 설정이 생성되지 않았습니다. 이 프로필로 게임을 한번 실행해 보세요.",
+			"__Text;ファイル取得失敗エラー": "파일 가져오기에 실패했습니다.\n\n{0}"
+		},
+		"コンフィグパネル部品3": {
+			"ベースフレーム": "비디오 구성",
+			"コンフィグ指定ラベル": "파일 불러오기",
+			"__DropDownList;コンフィグ指定選択リスト": "공통,프로필",
+			"コンフィグ読み取り専用ラベル": "읽기 전용",
+			"コンフィグ読み取り専用チェックボックス": "활성화됨",
+			"コンフィグファイル開くボタン": "파일 열기",
+			"__Text;コンフィグ未生成警告": "비디오 구성이 생성되지 않았습니다. 이 프로필로 게임을 한번 실행해 보세요.",
+			"__Text;ファイル取得失敗エラー": "파일 가져오기에 실패했습니다.\n\n{0}"
 		}
 	},
 	"4": {
 		"1": {
-			"1": "변경 내용은 자동으로 저장됩니다."
+			"1": "변경 내용은 자동으로 저장됩니다.",
+			"ExperimentalFeatures": "실험적 기능",
+			"Activate": "활성화"
 		}
 	},
 	"5": {
 		"1": {
-			"1": "オープンソースライセンス"
+			"1": "오픈소스 라이선스"
 		}
 	},
 	"6": {
 		"1": {
-			"1": "アップデートを確認中...",
-			"2": "インストーラーをダウンロード中...",
-			"3": "インストールされている {0} は最新のバージョンです！\r\nリリースチャンネル: {1}\r\n\r\n現在のバージョン: {2} ({3})\r\n最新のバージョン: {4}"
+			"1": "업데이트 확인 중...",
+			"2": "설치 프로그램 다운로드 중...",
+			"3": "설치된 {0} 은 최신 버전입니다!\r\n릴리스 채널: {1}\r\n\r\n현재 버전: {2} ({3})\r\n최신 버전: {4}"
 		},
 		"2": {
-			"1": "新しいバージョンがリリースされています！",
-			"2": "現在のバージョン: {0}\r\n最新のバージョン: {1}",
-			"3": "アップデート",
-			"4": "あとで"
+			"1": "새로운 버전이 출시되었습니다!",
+			"2": "현재 버전: {0}\r\n최신 버전: {1}",
+			"3": "업데이트",
+			"4": "나중에"
+		}
+	},
+	"7": {
+		"1": {
+			"1": "계정이 추가되지 않았습니다.\r\n'추가'를 클릭하여 EA 앱에 로그인한 계정을 추가하세요.",
+			"2": "이름",
+			"3": "ID",
+			"4": "한동안 계정에 로그인하지 않으면 다시 로그인하라는 메시지가 표시될 수 있습니다.\r\n로그인하라는 메시지가 표시되면 로그인 후 '추가' 버튼을 클릭하여 캐시를 업데이트하십시오."
+		},
+		"2": {
+			"1": "로그인 중인 계정: {0}",
+			"2": "로그인 중인 계정: {0} (추가되지 않은 계정)"
+		},
+		"3": {
+			"1": "추가",
+			"2": "전환",
+			"3": "이름 변경",
+			"4": "삭제"
+		}
+	},
+	"Config": {
+		"Design": {
+			"__Name": "외관",
+			"Theme;Name": "테마",
+			"Theme;Desc": "UI 테마\n(테마 변경은 앱을 다시 시작하면 적용됩니다.)"
+		},
+		"Display": {
+			"__Name": "디스플레이",
+			"Resolution_Width;Name": "디스플레이 해상도 (너비)",
+			"Resolution_Width;Desc": "정상시 메인 디스플레이 해상도 (폭)",
+			"Resolution_Height;Name": "디스플레이 해상도 (높이)",
+			"Resolution_Height;Desc": "정상시 메인 디스플레이 해상도 (높이)",
+			"RefreshRate;Name": "디스플레이 리프레시 속도",
+			"RefreshRate;Desc": "정상시 메인 디스플레이의 리프레시 속도"
+		},
+		"General": {
+			"__Name": "일반",
+			"EAapp_Config_Folder_Path;Name": "EA app 구성 폴더",
+			"EAapp_Config_Folder_Path;Desc": "EA app의 구성 파일이 저장된 폴더\n공백이나 존재하지 않는 폴더를 지정하면 자동으로 검색됩니다.\n※통상은 공란으로 하는 것을 추천합니다※",
+			"EAapp_Config_Folder_Path;Custom_1": "폴더를 선택하세요",
+			"EAapp_Config_File_Name;Name": "EA app 구성 파일",
+			"EAapp_Config_File_Name;Desc": "EA app 구성 파일의 파일 이름\n플레이할 플랫폼이 EA app 인 경우 이 항목은 필수입니다.\n※이 구성 파일은 계정에 따라 다르므로 여러 계정으로 플레이하는 경우,\n계정을 전환할 때마다 파일 이름을 변경해야 합니다.※",
+			"EAapp_Config_File_Name;Custom_1": "자동 감지 수행"
+		},
+		"Discord_RPC": {
+			"__Name": "Discord 리치 프레즌스",
+			"Enable;Name": "리치 프레즌스 활성화",
+			"Enable;Desc": "Discord 프로필에 LegendUtil의 상태를 표시할지 여부\n(적용하려면 앱을 다시 시작해야 합니다.)",
+			"Language;Name": "리치 프레즌스 표시 언어",
+			"Language;Desc": "Discord 프로필에 표시되는 Rich Presence의 언어"
+		},
+		"Update": {
+			"__Name": "업데이트",
+			"CheckForUpdatesOnAppLaunch;Name": "앱이 시작될 때 업데이트 확인",
+			"CheckForUpdatesOnAppLaunch;Desc": "앱이 시작될 때 자동으로 업데이트를 확인할지 여부",
+			"ReleaseChannel;Name": "업데이트 릴리스 채널",
+			"ReleaseChannel;Desc": "업데이트 시 설치할 버전의 릴리스 채널",
+			"ReleaseChannel;Custom_1": "릴리스 채널 설명",
+			"ReleaseChannel;Custom_2": "Release: 공식 릴리스 빌드입니다.\n이 옵션은 미래를 위해 존재하며 현재 Beta 와 동일합니다.\n\nBeta / Beta Only: 베타 빌드입니다.\nRelease에 비해 안정성이 부족하지만 Dev 나 Nightly와 비교하면 안정적입니다.\nBeta Only 는 Release 로 업데이트하지 않습니다.\n\nDevelopment: 개발 빌드입니다.\n개발자가 언제든지 출시되는 빌드는 Release 및 Beta 와 비교하여 안정성이 부족하지만 Nightly 와 비교하면 안정적입니다.\n\nNightly: 나이트리 빌드입니다.\n리포지토리에 푸시할 때마다 릴리스되는 빌드로 존재하는 빌드 중 가장 불안정합니다.\n경우에 따라서는 기동조차 할 수 없는 일도 있습니다.",
+			"CustomReleaseChannelUrl;Name": "맞춤 출시 채널 URL",
+			"CustomReleaseChannelUrl;Desc": "※개발용※"
+		},
+		"UI_General": {
+			"__Name": "UI - 일반",
+			"Language;Name": "UI 언어",
+			"Language;Desc": "사용자 인터페이스 표시 언어\n* 번역은 기계 번역을 사용하여 수행되므로 정확하지 않을 수 있습니다.\n* 번역에 협력하려면 bit.ly/LegendUtil-TL 을 방문하십시오.",
+			"Language;Custom_1": "번역에 기여하다 (Crowdin)"
+		},
+		"UI_MainMenu": {
+			"__Name": "UI - 메인 메뉴",
+			"News_Enable;Name": "뉴스 보기",
+			"News_Enable;Desc": "메인 메뉴에 뉴스 표시\r\n(적용하려면 앱을 재부팅해야 합니다.)",
+			"News_Language;Name": "뉴스 언어",
+			"News_Language;Desc": "메인 메뉴에 표시되는 뉴스 언어",
+			"ServerStatus_Enable;Name": "서버 상태 표시하기",
+			"ServerStatus_Enable;Desc": "메인 메뉴에 서버 상태 표시\r\n(적용하려면 앱 재부팅이 필요합니다.)",
+			"ServerStatus_Region;Name": "서버 상태 지역",
+			"ServerStatus_Region;Desc": "주 메뉴에 표시되는 서버 상태의 지역",
+			"ServerStatus_Region;List": "아시아,동유럽,서유럽,미국 남부,미국 중부,미국 동부,미국 서부",
+			"MapRotation_Enable;Name": "지도 회전 정보 보기",
+			"MapRotation_Enable;Desc": "메인 메뉴에 지도 회전 정보 표시\r\n(적용하려면 앱 재부팅이 필요합니다.)"
+		},
+		"ExperimentalFeatures": {
+			"__Name": "실험적 기능"
+		}
+	},
+	"LaunchOption": {
+		"-anticheat_settings=SettingsDX12___dot___json": {
+			"Category": "그래픽",
+			"Choices": "활성화됨",
+			"Desc": "DirectX 12로 게임을 실행합니다.\r\nDirectX 12를 사용하면 게임이 CPU 그래픽 코드를 여러 코어에 분산시킬 수 있어 프레임 속도 향상을 기대할 수 있습니다.\r\n환경에 따라 텍스처가 제대로 표시되지 않는 등 문제가 발생할 수 있습니다.",
+			"DisabledText": "비활성화",
+			"Name": "DirectX 12 활성화(베타)",
+			"AdditionalButtonText": "DirectX 12에 대한 자세한 정보 (Reddit)"
+		},
+		"-forcenovsync": {
+			"Category": "그래픽",
+			"Choices": "수직 동기화(V-SYNC) 비활성화",
+			"Desc": "수직 동기화(V-SYNC)를 강제로 비활성화합니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "수직 동기화(V-SYNC) 비활성화"
+		},
+		"-fullscreen": {
+			"Category": "그래픽",
+			"Choices": "활성화됨",
+			"Desc": "창을 전체 화면으로 띄운 상태에서 게임을 실행합니다.",
+			"DisabledText": "비활성화",
+			"Name": "전체 화면"
+		},
+		"-high": {
+			"Category": "CPU",
+			"Choices": "CPU 우선순위 '높음'으로 변경",
+			"Desc": "Apex Legends의 CPU 우선순위를 '높음'으로 변경합니다.\r\n변경하면 성능이 향상될 수 있지만,\r\nApex Legends의 CPU 사용량이 증가하여 시스템 및 다른 애플리케이션이 불안정해질 수 있습니다.",
+			"DisabledText": "비활성화",
+			"Name": "우선순위 '높음'으로 변경"
+		},
+		"-limitvsconst": {
+			"Category": "그래픽",
+			"Choices": "버텍스 셰이더 수 변경하기",
+			"Desc": "頂点シェーダー数を256に変更します。変更すると、パフォーマンス向上に繋がる可能性があります。",
+			"DisabledText": "변경하지 않음",
+			"Name": "버텍스 셰이더 수 변경"
+		},
+		"-noff": {
+			"Category": "마우스/컨트롤러",
+			"Choices": "진동 기능 비활성화",
+			"Desc": "게임 내 컨트롤러의 진동 기능을 비활성화합니다. 게임 내에서 진동 기능이 작동하지 않습니다.\r\n비활성화하면 성능 향상에 도움이 될 수 있습니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "컨트롤러의 진동 기능 비활성화"
+		},
+		"-nojoy": {
+			"Category": "마우스/컨트롤러",
+			"Choices": "스틱 기능 비활성화하기",
+			"Desc": "컨트롤러의 조이스틱 기능을 비활성화합니다. 게임 내에서 조이스틱을 이용한 조작이 불가능해집니다.\r\n비활성화하면 성능 향상에 도움이 될 수 있습니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "컨트롤러의 조이스틱 기능 비활성화"
+		},
+		"-nomouse": {
+			"Category": "마우스/컨트롤러",
+			"Choices": "마우스 기능 비활성화하기",
+			"Desc": "마우스 기능을 비활성화합니다. 게임 내에서 마우스를 이용한 조작이 불가능해집니다.\r\n비활성화하면 성능 향상에 도움이 될 수 있습니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "마우스 기능 비활성화"
+		},
+		"-novid": {
+			"Category": null,
+			"Choices": "스플래쉬 무비를 재생하지 않음",
+			"Desc": "EA 특유의 폭발음 스플래쉬 무비를 비활성화하여 시작 시간 단축 및 고막 파괴를 방지합니다.",
+			"DisabledText": "비활성화하지 않음 (스플래시 동영상 재생)",
+			"Name": "스플래쉬 무비 비활성화"
+		},
+		"-preload": {
+			"Category": "시스템",
+			"Choices": "활성화됨",
+			"Desc": "게임 시작 시 필요한 데이터를 우선적으로 불러옵니다.\r\n플레이 시 성능 향상으로 이어질 수 있지만, RAM 사용량이 증가하거나 로딩 시간이 길어질 수 있습니다.",
+			"DisabledText": "비활성화",
+			"Name": "시작 시 필요한 데이터를 우선적으로 불러오기"
+		},
+		"-refresh": {
+			"Category": "그래픽",
+			"Choices": "지정 입력,60 Hz,95 Hz,120 Hz,144 Hz,240 Hz,360 Hz",
+			"Desc": "리프레시율의 상한값을 설정합니다.",
+			"DisabledText": "설정하지 않음",
+			"Name": "리프레시율 상한선"
+		},
+		"-threads": {
+			"Category": "CPU",
+			"Choices": "변경하기",
+			"Desc": "Apex Legends가 사용하는 CPU의 스레드 수를 변경합니다.\r\n일반적으로 Apex Legends는 모든 스레드를 자동으로 사용하므로 설정이 필요하지 않습니다.\r\nApex Legends가 사용하는 스레드 수를 제한하고 싶다면 이 설정을 변경하십시오.",
+			"DisabledText": "변경하지 않음",
+			"Name": "스레드 수 변경"
+		},
+		"+building_cubemaps": {
+			"Category": "그래픽",
+			"Choices": "",
+			"Desc": "이 인수는 해상도 변경이 활성화되어 있을 때 자동으로 활성화됩니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "해상도 변경 설정 전용 | +building_cubemaps"
+		},
+		"+cl_forcepreload": {
+			"Category": "시스템",
+			"Choices": "활성화됨",
+			"Desc": "플레이 시 필요한 맵, 사운드 등의 데이터를 미리 불러옵니다.\r\n플레이 시 성능 향상으로 이어질 수 있지만, RAM 사용량이 증가하거나 로딩 시간이 길어질 수 있습니다.",
+			"DisabledText": "비활성화",
+			"Name": "플레이 시 필요한 데이터를 미리 불러오기"
+		},
+		"+cl_fovScale": {
+			"Category": "그래픽",
+			"Choices": "변경하기",
+			"Desc": "시야각(FOV)을 변경합니다.",
+			"DisabledText": "변경하지 않음",
+			"Name": "시야각(FOV) 변경"
+		},
+		"+cl_liveapi_allow_requests": {
+			"Category": "Live API",
+			"Choices": "활성화됨",
+			"Desc": "수신된 요청을 처리하고 실행할 수 있도록 허용합니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "수신된 요청을 처리하고 실행할 수 있도록 허용"
+		},
+		"+cl_liveapi_enabled": {
+			"Category": "Live API",
+			"Choices": "활성화됨",
+			"Desc": "Live API를 활성화합니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "Live API 활성화"
+		},
+		"+cl_liveapi_pretty_print_log": {
+			"Category": "Live API",
+			"Choices": "활성화됨",
+			"Desc": "JSON 출력을 보다 사람이 읽기 쉬운 형태로 정형화합니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "JSON 출력 정형화"
+		},
+		"+cl_liveapi_use_protobuf": {
+			"Category": "Live API",
+			"Choices": "활성화됨",
+			"Desc": "활성화하면 protobuf를 직렬화 포맷으로 사용한다.\r\n비활성화하면 JSON을 시리얼라이즈 포맷으로 사용한다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "protobuf를 시리얼라이즈 포맷으로 사용"
+		},
+		"+cl_liveapi_ws_keepalive": {
+			"Category": "Live API",
+			"Choices": "활성화됨",
+			"Desc": "연결된 임의의 서버에 Ping을 보낼 간격을 지정합니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "WebSocket | Ping 전송 간격"
+		},
+		"+cl_liveapi_ws_retry_count": {
+			"Category": "Live API",
+			"Choices": "활성화됨",
+			"Desc": "연결 불가로 설정할 때까지 재시도 횟수를 지정합니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "WebSocket | 재시도 횟수"
+		},
+		"+cl_liveapi_ws_retry_time": {
+			"Category": "Live API",
+			"Choices": "활성화됨",
+			"Desc": "재시도까지의 시간(초)을 지정합니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "WebSocket | 재시도 시간"
+		},
+		"+cl_liveapi_ws_servers": {
+			"Category": "Live API",
+			"Choices": "활성화됨",
+			"Desc": "WebSocket 서버를 지정합니다.\n여러 개를 지정할 경우 ','로 구분합니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "WebSocket | 서버 목록"
+		},
+		"+cl_liveapi_ws_timeout": {
+			"Category": "Live API",
+			"Choices": "활성화됨",
+			"Desc": "타임아웃까지의 시간(초)을 지정합니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "WebSocket | 타임아웃 시간"
+		},
+		"+cl_ragdoll_collide": {
+			"Category": "그래픽",
+			"Choices": "활성화됨",
+			"Desc": "시체 등의 물리적 거동을 변경합니다. 변경하면 성능 향상으로 이어질 수 있습니다.",
+			"DisabledText": "변경하지 않음",
+			"Name": "물리적 거동 변경"
+		},
+		"+cl_showfps": {
+			"Category": "시스템",
+			"Choices": "활성화됨",
+			"Desc": "FPS, 서버에 대한 Ping 등 성능 정보 오버레이 표시를 활성화합니다.\r\n이 설정은 게임 내 설정의 '성능 표시'와 유사한 설정입니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "성능 정보 오버레이 표시 활성화"
+		},
+		"+cl_showpos": {
+			"Category": "시스템",
+			"Choices": "활성화됨",
+			"Desc": "사용자 이름, 위치 좌표, 이동 속도 등의 정보를 오버레이로 표시할 수 있습니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "플레이어 정보 오버레이 표시 활성화"
+		},
+		"+CrossPlay_user_optin": {
+			"Category": "시스템",
+			"Choices": "크로스 플레이 비활성화",
+			"Desc": "크로스 플레이를 강제로 비활성화합니다.",
+			"DisabledText": "비활성화하지 않음",
+			"Name": "크로스 플레이 비활성화"
+		},
+		"+exec": {
+			"Category": "구성",
+			"Choices": "프로필,지정",
+			"Desc": "게임 시작 시 autoexec 파일을 불러와 설정을 적용합니다.\nautoexec은 'Autoexec' 탭에서 편집할 수 있습니다.",
+			"DisabledText": "비활성화",
+			"Name": "autoexec 불러오기"
+		},
+		"+fps_max": {
+			"Category": "그래픽",
+			"Choices": "무제한,지정 입력,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
+			"Desc": "FPS의 상한값을 설정합니다.",
+			"DisabledText": "설정하지 않음",
+			"Name": "FPS 상한선"
+		},
+		"+m_rawinput": {
+			"Category": "마우스/컨트롤러",
+			"Choices": "활성화됨",
+			"Desc": "마우스 로우 입력을 활성화합니다.",
+			"DisabledText": "활성화하지 않음",
+			"Name": "로우 입력 활성화"
+		},
+		"+mat_queue_mode": {
+			"Category": "CPU",
+			"Choices": "<추천> 멀티,싱글(비동기),싱글(동기),시스템,레거시",
+			"Desc": "머티리얼 시스템이 사용하는 CPU의 스레드 모드를 변경합니다. 설정에 따라 성능 향상으로 이어질 수 있습니다.",
+			"DisabledText": "변경하지 않음",
+			"Name": "스레드 모드 변경"
+		},
+		"__Category": {
+			"List": "구성,일반,그래픽,시스템,CPU,마우스/컨트롤러,Live API"
+		},
+		"__Placeholder": {
+			"Text": "<指定値>"
 		}
 	}
 }
