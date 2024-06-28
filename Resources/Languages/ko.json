@@ -275,8 +275,8 @@
 			"ProfileConfigFile_RestoringError": "프로필 설정 파일 복원 과정에서 오류가 발생했습니다.",
 			"VideoConfigFile_RestoringError": "비디오 구성 파일 복원 과정에서 오류가 발생했습니다.",
 			"VideoConfigFile_SettingsRestoringError": "비디오 설정 항목 복원 과정에서 오류가 발생했습니다.",
-			"TT_LastPlayDate_RecordError": "最終プレイ日時の記録処理でエラーが発生しました。",
-			"TT_TotalPlayTime_RecordError": "総プレイ時間の記録処理でエラーを発生しました。",
+			"TT_LastPlayDate_RecordError": "마지막 플레이 일시의 기록 처리에 에러가 발생했습니다.",
+			"TT_TotalPlayTime_RecordError": "총 플레이 시간의 기록 처리에 에러가 발생했습니다.",
 			"TT_DiscordRPC_TimestampResetError": "Discord RPC의 타임스탬프 프리셋에 오류가 발생했습니다."
 		},
 		"Error": {
