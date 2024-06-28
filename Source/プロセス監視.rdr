@@ -1537,7 +1537,7 @@ ApexLegendsとは
 				プロファイルの最終プレイ日時=プレイ終了日時のUNIX時間
 			もし終わり
 		発生した場合
-			[言語管理器で「InPlay.ErrorLog.TT_SystemDisplaySettings_LastPlayDateRecordError」を取得したもの]を「エラー」としてログ出力する
+			[言語管理器で「InPlay.ErrorLog.TT_LastPlayDate_RecordError」を取得したもの]を「エラー」としてログ出力する
 			エラーのメッセージを「エラー」としてログ出力する
 		監視終わり
 		
@@ -1552,7 +1552,7 @@ ApexLegendsとは
 				もし終わり
 			もし終わり
 		発生した場合
-			[言語管理器で「InPlay.ErrorLog.TT_SystemDisplaySettings_TotalPlayTimeRecordError」を取得したもの]を「エラー」としてログ出力する
+			[言語管理器で「InPlay.ErrorLog.TT_TotalPlayTime_RecordError」を取得したもの]を「エラー」としてログ出力する
 			エラーのメッセージを「エラー」としてログ出力する
 		監視終わり
 		

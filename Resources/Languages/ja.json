@@ -275,8 +275,8 @@
 			"ProfileConfigFile_RestoringError": "プロファイルコンフィグファイルの復元処理でエラーが発生しました。",
 			"VideoConfigFile_RestoringError": "ビデオコンフィグファイルの復元処理でエラーが発生しました。",
 			"VideoConfigFile_SettingsRestoringError": "ビデオコンフィグ設定項目の復元処理でエラーが発生しました。",
-			"TT_SystemDisplaySettings_LastPlayDateRecordError": "最終プレイ日時の記録処理でエラーが発生しました。",
-			"TT_SystemDisplaySettings_TotalPlayTimeRecordError": "総プレイ時間の記録処理でエラーを発生しました。",
+			"TT_LastPlayDate_RecordError": "最終プレイ日時の記録処理でエラーが発生しました。",
+			"TT_TotalPlayTime_RecordError": "総プレイ時間の記録処理でエラーを発生しました。",
 			"TT_DiscordRPC_TimestampResetError": "Discord RPC のタイムスタンプリセットでエラーが発生しました。"
 		},
 		"Error": {
