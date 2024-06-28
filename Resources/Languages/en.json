@@ -275,8 +275,8 @@
 			"ProfileConfigFile_RestoringError": "An error occurred while restoring the profile config file.",
 			"VideoConfigFile_RestoringError": "An error occurred while restoring the video config file.",
 			"VideoConfigFile_SettingsRestoringError": "An error occurred while restoring the video config settings.",
-			"TT_SystemDisplaySettings_LastPlayDateRecordError": "An error occurred while recording the last play date and time.",
-			"TT_SystemDisplaySettings_TotalPlayTimeRecordError": "An error occurred while recording the total play time.",
+			"TT_LastPlayDate_RecordError": "最終プレイ日時の記録処理でエラーが発生しました。",
+			"TT_TotalPlayTime_RecordError": "総プレイ時間の記録処理でエラーを発生しました。",
 			"TT_DiscordRPC_TimestampResetError": "An error occurred while resetting the Discord RPC timestamp."
 		},
 		"Error": {
