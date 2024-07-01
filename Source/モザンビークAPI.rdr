@@ -2,7 +2,7 @@
 	単一種類
 	
 	-APIURL:文字列=「[アプリのAPIURL]」
-	-ベースAPIURLデータ:文字列=「https://apexlegendsstatus.com/」
+	-ベースAPIURLデータ:文字列=「https://apexlegendsstatus.com」
 	
 	+エラーマップローテーションデータ:辞書={「_error」=「マップローテーションの取得に失敗しました」}
 	+エラーサーバーステータスデータ:辞書={「_error」=「サーバーステータスの取得に失敗しました」}
