@@ -26,9 +26,9 @@ Apex Legends のプレイをより快適にするランチャーアプリケー�
 - [**Steam**](https://store.steampowered.com)
 
 ### 📝 プログラミング言語
-- [**プロデル**](https://produ.irelang.jp/) `2.0.1191`
-- **C#** `.NET Framework 4.8`
-- **Python 3** (API)
+- [**プロデル**](https://produ.irelang.jp/) - `2.0.1262`
+- **C#** - `.NET Framework 4.8`
+- **Python**
 
 ---
 
