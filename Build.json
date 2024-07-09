@@ -1,6 +1,6 @@
 {
   "App": {
-    "ReleaseChannel": "dev"
+    "ReleaseChannel": "beta"
   },
   "DiscordRPC": {
     "AppID": "1205482419730382888"
