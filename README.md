@@ -1,9 +1,10 @@
 <div align="center">
-<img src="https://github.com/femtoCommunity/LegendUtil/blob/main/Resources/Logo/LegendUtil_Banner_WithoutText.png?raw=true" alt="LegendUtil Banner" title="LegendUtil">
+<img src="./Resources/Images/Splash/SplashImage.jpg?raw=true" alt="LegendUtil Banner" title="LegendUtil">
+<h1>LegendUtil</h1>
+<p>Apex Legends のプレイをより快適にするランチャーアプリケーション</p>
 </div>
 
 ---
-
 
 [![Licence](https://img.shields.io/github/license/femtoCommunity/LegendUtil?style=for-the-badge)](#-ライセンス)
 
@@ -43,8 +44,8 @@ Apex Legends のプレイをより快適にするランチャーアプリケー�
 - [**こちら**](https://github.com/femtoCommunity/LegendUtil/releases)からインストーラーをダウンロードしてインストールできます。
   - **Assets** から `LegendUtil_Setup.exe` をダウンロードして、実行してください。
 
-### 📦 winget を使用してインストールする
-- [**winget**](https://learn.microsoft.com/ja-jp/windows/package-manager/winget/) ([Microsoft Store](https://www.microsoft.com/p/app-installer/9nblggh4nns1#activetab=pivot:overviewtab)) が利用できる環境の場合は、コマンドプロンプトやPowerShellで次のコマンドを実行することでインストールできます。
+### 📦 WinGet を使用してインストールする
+- [**WinGet**](https://learn.microsoft.com/ja-jp/windows/package-manager/winget/) ([Microsoft Store](https://www.microsoft.com/p/app-installer/9nblggh4nns1#activetab=pivot:overviewtab)) が利用できる環境の場合は、コマンドプロンプトやPowerShellで次のコマンドを実行することでインストールできます。
 ```powershell
 winget install --id femtoCommunity.LegendUtil
 ```
@@ -57,12 +58,17 @@ winget install --id femtoCommunity.LegendUtil
 ---
 
 ## 🔧 機能
-- **プロファイル**
-  - 解像度や起動引数などの設定を複数保存でき、ランチャーのような形でプロファイルを選んで Apex Legends を起動できます。
-   
-  ![Main Panel Preview 1](https://github.com/femtoCommunity/LegendUtil/assets/59532514/978b2001-5292-4171-bb0c-2f14914a5173)
-  ![Main Panel Preview 2](https://github.com/femtoCommunity/LegendUtil/assets/59532514/2d52e4bd-bd30-44a8-b023-0966431c9e33)
+- **EA app と Steam 両方のプラットフォームに対応**
 
+- **プロファイル機能**
+
+  解像度や起動引数などの設定を複数保存でき、ランチャー形式でプロファイルを選んで Apex Legends を起動できます。
+
+- **サーバーステータス/マップローテーション/ニュースの表示**
+  - サーバーステータスとマップローテーションはゲームのプレイ中も常に表示できます。
+
+  ![Main Panel Preview 1](https://github.com/femtoCommunity/LegendUtil/assets/59532514/eed9211e-1b44-405f-bbdf-c31e1bebc91e)
+  ![Profile Manage Panel Preview 1](https://github.com/femtoCommunity/LegendUtil/assets/59532514/ec2e96cc-726f-4b38-91f2-5e8292da7335)
 
 ---
 
@@ -70,38 +76,51 @@ winget install --id femtoCommunity.LegendUtil
   - **ゲーム & ディスプレイ解像度の変更 (引き伸ばし)**
     - ゲーム起動後の `Alt` + `Enter` の自動押下 (「黒帯」の削除)
 
-  ![Profile Edit Panel Preview 1](https://github.com/femtoCommunity/LegendUtil/assets/59532514/1dab9f7d-d10f-4078-91c1-23fdafcc4786)
-
-
----
-
-  - **起動引数(起動オプション)の変更**
-   
-  ![Profile Edit Panel Preview 2](https://github.com/femtoCommunity/LegendUtil/assets/59532514/d7990fef-50ed-41fe-87bc-a8b316e17638)
-  ![Profile Edit Panel Preview 3](https://github.com/femtoCommunity/LegendUtil/assets/59532514/087566b8-c9dc-44de-b4d3-99e076b1e7e6)
-
+  ![Profile Edit Panel Preview 1](https://github.com/femtoCommunity/LegendUtil/assets/59532514/b0f3e7f4-4e6a-4e8b-9403-ab8feaa76ad9)
 
 ---
 
-  - **Autoexec の編集**
-  
-  ![Profile Edit Panel Preview 4](https://github.com/femtoCommunity/LegendUtil/assets/59532514/f0122707-e0eb-4099-8ff2-a76042575f26)
+- **起動引数(起動オプション)の設定**
+  - 一覧にない起動引数も手動で指定することができます。
+  - 今まで使用していた起動引数を「追加引数」へ入力すると LegendUtil が自動的に解析して読み込むため、そのまま引き継ぐ事ができます。
 
+  ![Profile Edit Panel Preview 2](https://github.com/femtoCommunity/LegendUtil/assets/59532514/0b447778-4c94-492a-ba4b-a7a74d6b995d)
+  ![Profile Edit Panel Preview 3](https://github.com/femtoCommunity/LegendUtil/assets/59532514/b1604e42-4c00-4662-92e0-50217e42538c)
 
 ---
 
-  - **コンフィグ/ビデオコンフィグの編集**
-  
-  ![Profile Edit Panel Preview 5](https://github.com/femtoCommunity/LegendUtil/assets/59532514/8dfeca59-ef50-48f6-a10b-2b7a4bbca6fa)
-  ![Profile Edit Panel Preview 6](https://github.com/femtoCommunity/LegendUtil/assets/59532514/9ec34109-4b18-4b44-9557-7bbea0b86ea9)
+- **Autoexec の編集**
 
+  ![Profile Edit Panel Preview 4](https://github.com/femtoCommunity/LegendUtil/assets/59532514/b7ec912d-e8e0-4bd1-bfea-67dfedbd1188)
+
+---
+
+- **コンフィグの自動切り替え**
+
+  Apex Legends の各コンフィグファイルをプロファイルごとに自動で切り替えます。
+
+  プロファイルごとに別々の設定(グラフィック設定やキー設定など)を使用してプレイすることが可能です。
+
+  - プロファイルの設定から「プロファイル固有の設定」か「共通の設定」のどちらを使用するかを切り替えられます。
+
+  ![Profile Edit Panel Preview 4](https://github.com/femtoCommunity/LegendUtil/assets/59532514/3054d0ff-2566-4026-959c-537733c72011)
 
 ---
 
 ## 📒 ライセンス
-Copyright (C) 2024 Milkeyyy
 
 LegendUtil は [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.ja.html) のもとでライセンスされています。
+
+Copyright (C) 2024 Milkeyyy
+
+---
+
+### Rel1cStyle Logo Typography
+
+- [`Rel1cStyle_Logo_TypographyDeth_1.png`](./Resources/Logo/Rel1cStyle_Logo_TypographyDeth_1.png)
+- [`Rel1cStyle_Logo_TypographyDeth_1_White.png`](./Resources/Logo/Rel1cStyle_Logo_TypographyDeth_1_White.png)
+
+Copyright (C) 2024 Rel1cStyle
 
 ---
 
