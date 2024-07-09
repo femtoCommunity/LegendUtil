@@ -3,9 +3,9 @@
 
 #define MyAppName "LegendUtil"
 #define MyAppVersion "0.3.0"
-#define MyAppReleaseChannel "dev"
-#define MyAppReleaseNumber "99999.000000"
-#define MyAppVersionText "0.3.0-dev"
+#define MyAppReleaseChannel "beta"
+#define MyAppReleaseNumber "0"
+#define MyAppVersionText "0.3.0-beta"
 #define MyAppPublisher "femto Community Software Team"
 #define MyAppCopyrighter "Milkeyyy"
 #define MyAppURL "https://github.com/femtoCommunity/LegendUtil"
@@ -53,6 +53,7 @@ ArchitecturesAllowed=x64
 
 [Languages]
 Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
+Name: "korean"; MessagesFile: "compiler:Languages\Korean.isl"
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Tasks]
