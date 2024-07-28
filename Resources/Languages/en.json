@@ -514,7 +514,7 @@
 		"Design": {
 			"__Name": "Appearance",
 			"Theme;Name": "Theme",
-			"Theme;Desc": "UI Theme\r\n(Theme changes will be applied when the application is restarted.)"
+			"Theme;Desc": "ユーザーインターフェースのテーマ\r\n(適用するにはアプリの再起動が必要です)"
 		},
 		"Display": {
 			"__Name": "Display",
@@ -528,7 +528,7 @@
 		"General": {
 			"__Name": "General",
 			"EAapp_Config_Folder_Path;Name": "EA app Config Folder",
-			"EAapp_Config_Folder_Path;Desc": "EA app のコンフィグファイルが保存されているフォルダー\r\n空欄または存在しないフォルダーを指定すると自動的に取得されます。\r\n※通常は空欄にすることを推奨します※",
+			"EAapp_Config_Folder_Path;Desc": "The folder where the EA app configuration file is saved.\nIf you specify a blank or non-existent folder, it will be retrieved automatically.\n*We recommend leaving this blank.",
 			"EAapp_Config_Folder_Path;Custom_1": "Select Folder",
 			"EAapp_Config_File_Name;Name": "EA app Config File",
 			"EAapp_Config_File_Name;Desc": "File name of EA app config file\r\nThis field is required if the platform you are playing on is the EA app.\r\n*This config file is different for each account, so if you play with multiple accounts,\r\nyou will need to rename the file each time you switch accounts.",
@@ -560,19 +560,19 @@
 		},
 		"UI_MainMenu": {
 			"__Name": "UI - Main Menu",
-			"News_Enable;Name": "ニュース - 表示",
-			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n(適用するにはアプリの再起動が必要です)",
-			"News_Language;Name": "ニュース - 言語",
+			"News_Enable;Name": "News - Display",
+			"News_Enable;Desc": "Show news in the main menu\n(Requires app restart to apply)",
+			"News_Language;Name": "News - Languages",
 			"News_Language;Desc": "Languages of news displayed in the main menu",
-			"ServerStatus_Enable;Name": "サーバーステータス - 表示",
-			"ServerStatus_Enable;Desc": "メインメニューにサーバーステータス情報を表示するかどうか\n(適用するにはアプリの再起動が必要です)",
-			"ServerStatus_Region;Name": "サーバーステータス - 地域",
+			"ServerStatus_Enable;Name": "Server Status - Display",
+			"ServerStatus_Enable;Desc": "Whether to display server status information in the main menu\n(Requires app restart to apply)",
+			"ServerStatus_Region;Name": "Server Status - Region",
 			"ServerStatus_Region;Desc": "Server status regions displayed in the main menu",
 			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West",
-			"MapRotation_Enable;Name": "マップローテーション - 表示",
-			"MapRotation_Enable;Desc": "メインメニューにマップローテーション情報をするかどうか\n(適用するにはアプリの再起動が必要です)",
-			"MapRotation_RemainingTime;Name": "[試験的機能] マップローテーション - 残り時間",
-			"MapRotation_RemainingTime;Desc": "マップローテーションの各モードの残り時間を表示するかどうか\n※この設定は試験的機能です。有効化するとメモリーの使用量が増加する可能性があります。\n(適用するにはアプリの再起動が必要です)"
+			"MapRotation_Enable;Name": "Map Rotation - Display",
+			"MapRotation_Enable;Desc": "Whether to display map rotation information in the main menu\n(Requires app restart to apply)",
+			"MapRotation_RemainingTime;Name": "[Experimental] Map Rotation - Remaining Time",
+			"MapRotation_RemainingTime;Desc": "Whether to display the remaining time for each mode of map rotation.\n*This setting is an experimental feature. Enabling it may increase memory usage.\n(Requires app restart to apply)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "Experimental Features"
