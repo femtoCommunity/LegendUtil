@@ -22,7 +22,7 @@ A clear and concise description of what you expected to happen.
 
 **App**
 - Version: 0.3.0-beta
-- [Optional] Internal Version: 300.000000000000000
+- Internal Version: 300.000000000000000
 
 **Device**
 - OS: Windows 11 24H2
