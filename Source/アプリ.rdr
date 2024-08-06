@@ -1,5 +1,7 @@
 「..\LegendUtil.rdrproj」を素材として利用する
 
+「..\Build.json」を素材として利用する
+
 「..\BuildVersion.txt」を素材として利用する
 
 「..\Resources\Logo\LegendUtil_Icon.ico」を素材として利用する
@@ -9,8 +11,6 @@
 
 「..\Resources\Logo\LegendUtil_LogoType_Transparent.png」を素材として利用する
 
-「..\Resources\Logo\Rel1cStyle_Logo_TypographyDeth_1_White.png」を素材として利用する
-
 「..\Resources\Images\kofi_button_red.png」を素材として利用する
 
 「..\Resources\Images\Splash\SplashImage.jpg」を素材として利用する
@@ -18,12 +18,10 @@
 アプリとは
 	単一種類
 	
-	+名前:文字列
+	-ビルド情報:辞書
+	-プロジェクトファイル:XML文章
 	
 	//----- バージョン関連 -----//
-	//+リリースチャンネル:文字列=「dev」 // dev,dev_stable,beta,release
-	+リリースチャンネル:文字列=「beta」
-	
 	+バージョン:文字列
 	+バージョン配列:配列
 	+内部バージョン:固定小数
@@ -47,41 +45,17 @@
 	
 	+コンフィグフォルダー:フォルダ情報
 	
-	+APIアドレス:文字列=「api.legendutil.milkeyyy.com」
-	+APIURL:文字列=「https://[APIアドレス]」
-	
-	+ロゴ作者URL:文字列=「https://twitter.com/Apex_tyaneko」
-	
-	+GitHubリポジトリーURL:文字列=「https://github.com/femtoCommunity/LegendUtil」
-	+DiscordサーバーURL:文字列=「https://discord.gg/Y5FrzPft3M」
-	
-	+ヘルプページURL:文字列=「https://github.com/femtoCommunity/LegendUtil/wiki」
-	
-	+KofiURL:文字列=「https://ko-fi.com/milkeyyy」
-	
 	+ライセンス一覧:辞書
-	
-	+追加ファイル一覧:辞書={
-		「OpenCvSharp」={
-			「展開先」=「[今の位置]」,
-			「親フォルダー」=「dll」,
-			「ファイル」={
-				// x64
-				{「dll\x64\opencv_videoio_ffmpeg455_64.dll」,「3552D34215BA2EA22CE68C54B0BEE03B857610EBC30E102F6C982B3E415A159C」}, // ファイル名,SHA256ハッシュ値
-				{「dll\x64\OpenCvSharpExtern.dll」,「60CDF2E127F3EE14CBEF59AF5358AB1DDD873505A7758E3AA97CB8F583B202C0」}
-			},
-			「URL」=「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Libs/OpenCvSharp/4.7.0.20230114/dll_x64.zip」,
-			「存在」=×
-		}
-	}
 	
 	はじめの手順
 		情報設定する
 	終わり
 	
 	情報設定する手順
-		【プロジェクトファイル】=XMLで[「LegendUtil.rdrproj」を素材リストから文字列として取得したもの]から作成したもの
-		名前=「[プロジェクトファイルの「プロジェクト」の「名前」の内容]」
+		ビルド情報=[「Build.json」を素材リストから文字列として取得したもの]をJSON形式として読み取ったもの
+		
+		プロジェクトファイル=XMLで[「LegendUtil.rdrproj」を素材リストから文字列として取得したもの]から作成したもの
+		アプリ名=「[プロジェクトファイルの「プロジェクト」の「名前」の内容]」
 		[プロジェクトファイルから「プロジェクト」を取得したもの]を【要素】へそれぞれ繰り返す
 			【バージョン配列】=要素の「バージョン」の「値」の内容を「.」で区切ったもの
 			バージョン=「[バージョン配列(1)].[バージョン配列(2)].[バージョン配列(3)]」
@@ -120,15 +94,112 @@
 		アプリケーション情報画面をダイアログで表示する
 	終わり
 	
+	自分で情報保存する手順
+		RPC管理器で破棄する
+		プロファイル管理器でプロファイル保存する
+		メイン画面のアプリ設定パネルでコンフィグ保存する
+	終わり
+	
 	自分を終了する手順
 		「アプリ終了処理実行」をデバッグログへ出力する
 		例外監視
-			プロファイル管理器でプロファイル保存する
-			メイン画面のアプリ設定パネルでコンフィグ保存する
+			情報保存する
 		発生した場合
-			「アプリケーションの終了処理時にエラーが発生しました。[改行]コンフィグとプロファイルの変更内容が保存されていない可能性があります。[改行][改行][エラーのメッセージ]」を「警告アイコン」で表示する
+			[言語管理器で「General.Error.ErrorOccurredApplicationTermination」を{[エラーのメッセージ]}として取得したもの]を「警告アイコン」で表示する
 			基本:終了する
 		監視終わり
 		基本:終了する
+	終わり
+	
+	追加ファイル一覧という属性
+		取得する手順
+			{
+				「OpenCvSharp」={
+					「展開先」=「[今の位置]」,
+					「親フォルダー」=「dll」,
+					「ファイル」={
+						// x64
+						{「dll\x64\opencv_videoio_ffmpeg455_64.dll」,「3552D34215BA2EA22CE68C54B0BEE03B857610EBC30E102F6C982B3E415A159C」}, // ファイル名,SHA256ハッシュ値
+						{「dll\x64\OpenCvSharpExtern.dll」,「60CDF2E127F3EE14CBEF59AF5358AB1DDD873505A7758E3AA97CB8F583B202C0」}
+					},
+					「URL」=「https://github.com/femtoCommunity/LegendUtil/raw/Resources/Libs/OpenCvSharp/4.7.0.20230114/dll_x64.zip」,
+					「存在」=×
+				}
+			}を返す
+		終わり
+	終わり
+	
+	+デバッグモード値:真偽値
+	デバッグモードという属性
+		取得する手順
+			デバッグモード値を返す
+		終わり
+	終わり
+	
+	-アプリ名:文字列
+	名前という属性
+		取得する手順
+			アプリ名を返す
+		終わり
+	終わり
+	
+	リリースチャンネルという属性
+		取得する手順
+			ビルド情報(「App」)(「ReleaseChannel」)を返す
+		終わり
+	終わり
+	
+	DiscordRPCアプリIDという属性
+		取得する手順
+			ビルド情報(「DiscordRPC」)(「AppID」)を返す
+		終わり
+	終わり
+	
+	APIアドレスという属性
+		取得する手順
+			ビルド情報(「API」)(「FQDN」)を返す
+		終わり
+	終わり
+	
+	APIURLという属性
+		取得する手順
+			「https://[APIアドレス]」を返す
+		終わり
+	終わり
+	
+	ロゴ作者URLという属性
+		取得する手順
+			ビルド情報(「URL」)(「Logo_Author」)を返す
+		終わり
+	終わり
+	
+	GitHubリポジトリーURLという属性
+		取得する手順
+			ビルド情報(「URL」)(「GitHub_Repo」)を返す
+		終わり
+	終わり
+	
+	DiscordサーバーURLという属性
+		取得する手順
+			ビルド情報(「URL」)(「Discord_Server」)を返す
+		終わり
+	終わり
+	
+	CrowdinURLという属性
+		取得する手順
+			ビルド情報(「URL」)(「Crowdin」)を返す
+		終わり
+	終わり
+	
+	ヘルプページURLという属性
+		取得する手順
+			ビルド情報(「URL」)(「Wiki」)を返す
+		終わり
+	終わり
+	
+	KofiURLという属性
+		取得する手順
+			ビルド情報(「URL」)(「Ko-fi」)を返す
+		終わり
 	終わり
 終わり

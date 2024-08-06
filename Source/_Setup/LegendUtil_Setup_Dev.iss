@@ -2,10 +2,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "LegendUtil Dev Build"
-#define MyAppVersion "0.1.0"
+#define MyAppVersion "0.3.0"
 #define MyAppReleaseChannel "dev"
-#define MyAppReleaseNumber "20230219.130205"
-#define MyAppVersionText "0.1.0-dev.20230219.130205"
+#define MyAppReleaseNumber "99999.000000"
+#define MyAppVersionText "0.3.0-dev"
 #define MyAppPublisher "femto Community Software Team"
 #define MyAppCopyrighter "Milkeyyy"
 #define MyAppURL "https://github.com/femtoCommunity/LegendUtil"
@@ -25,7 +25,7 @@ VersionInfoVersion={#MyAppVersion}
 AppVerName={#MyAppName}
 AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
-AppCopyright=Copyright (C) 2023 {#MyAppCopyrighter}
+AppCopyright=Copyright (C) 2024 {#MyAppCopyrighter}
 AppSupportURL={#MyAppSupportURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDialogFontName=Yu Gothic UI
@@ -44,12 +44,17 @@ PrivilegesRequired=lowest
 OutputDir=..\..\_Pack
 OutputBaseFilename=LegendUtil_Setup
 SetupIconFile=..\..\Resources\Logo\LegendUtil_Icon.ico
-Compression=lzma
+Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
+; Installer and Application Architecture
+ArchitecturesInstallIn64BitMode=x64
+ArchitecturesAllowed=x64
 
 [Languages]
 Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
+Name: "korean"; MessagesFile: "compiler:Languages\Korean.isl"
+Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
@@ -60,7 +65,6 @@ Source: "..\..\_Pack\LegendUtil\*"; DestDir: "{app}"; Flags: ignoreversion recur
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [InstallDelete]
-Type: files; Name: "{app}\License.txt"
 Type: files; Name: "{app}\LegendUtil.CursorLocker.dll"
 Type: files; Name: "{app}\LegendUtil.DisplayDeviceHelper.dll"
 Type: files; Name: "{app}\LockCursorInWindowPlugin.dll"

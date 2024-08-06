@@ -1,3 +1,4 @@
+_Pack/*.dll
 _Debug
 BuilderConfig.ini
 _Build.bat
@@ -6,7 +7,6 @@ _Test_*.rdr
 _Test
 _TestProgram.txt
 *.exe
-_Pack
 FolderList.txt
 _Compile.bat
 _dbg*.bat

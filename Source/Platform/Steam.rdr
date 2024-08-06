@@ -68,6 +68,51 @@ Steamとは
 		終わり
 	終わり
 	
+	現在ユーザーIDという属性
+		取得する手順
+			例外監視
+				【アクティブユーザー】=[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]
+			発生した場合
+				エラーのメッセージを「エラー」としてデバッグログへ出力する
+				-1を返す
+			監視終わり
+			もしアクティブユーザーが「0」なら // IDを取得できなかった場合
+				// Steam が起動されていない場合
+				もし[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\pid」を取得したもの]が「0」なら
+					【質問結果】=「Steam クライアントが起動していないため、ユーザーIDを取得できません。[改行]Steam クライアントを起動しますか？」を「警告アイコン」にして「はいといいえ」で質問したもの
+					もし質問結果が「はい」なら
+						// Steam を起動する
+						「"[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\SteamExe」を取得したもの]"」を「-silent」として起動する
+						// 15秒間アクティブユーザーを取得し続ける
+						15回繰り返す 
+							もし[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]が「0」でないなら
+								[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]を返す
+							もし終わり
+							1秒待つ
+						繰り返し終わり
+					もし終わり
+					
+					もし[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]が「0」なら
+						-1を返す
+						
+					そうでなければ
+						[レジストリから「HKEY_CURRENT_USER\Software\Valve\Steam\ActiveProcess\ActiveUser」を取得したもの]を返す
+						
+					もし終わり
+					
+				// Steam が起動されている場合は-1を返す (取得失敗)
+				そうでなければ
+					-1を返す
+					
+				もし終わり
+				
+			そうでなければ // IDを取得できた場合はそのまま返す
+				アクティブユーザーを返す
+				
+			もし終わり
+		終わり
+	終わり
+	
 	自分でコンフィグ読み込む手順
 		例外監視
 			もし「[データフォルダー]localconfig.vdf」というファイルが存在するなら
