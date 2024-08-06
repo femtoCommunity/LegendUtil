@@ -514,7 +514,7 @@
 		"Design": {
 			"__Name": "Appearance",
 			"Theme;Name": "Theme",
-			"Theme;Desc": "ユーザーインターフェースのテーマ\r\n(適用するにはアプリの再起動が必要です)"
+			"Theme;Desc": "User interface theme\n(Requires app restart to apply)"
 		},
 		"Display": {
 			"__Name": "Display",
