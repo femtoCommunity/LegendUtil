@@ -35,7 +35,7 @@
 		エラーニュースデータ(「title」)=言語管理器で「MozambiqueAPI.ErrorMessage.FailedToGetNews」を取得したもの
 	終わり
 	
-	+マップローテーションゲームモード一覧:配列//={「battle_royale」,「ranked」,「ltm」}
+	+マップローテーションゲームモード一覧:配列={}//={「battle_royale」,「ranked」,「ltm」}
 	+マップローテーションゲームモード:文字列=「battle_royale」
 	+マップローテーションデータ:辞書
 	+マップローテーション最終取得日時:日時形式
