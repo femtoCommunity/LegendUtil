@@ -18,7 +18,7 @@
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{8656120F-49DA-42CC-BFD2-BD58D15DE0BD}
+AppId={{4C1362D7-D28A-49B7-A42E-05BE8B8D0E0A}
 AppName={#MyAppName}
 AppVersion={#MyAppVersionText}
 VersionInfoVersion={#MyAppVersion}
@@ -48,8 +48,8 @@ Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
 ; Installer and Application Architecture
-ArchitecturesInstallIn64BitMode=x64
-ArchitecturesAllowed=x64
+ArchitecturesInstallIn64BitMode=x64compatible
+ArchitecturesAllowed=x64compatible
 
 [Languages]
 Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
@@ -60,8 +60,9 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "..\..\_Pack\LegendUtil\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\..\_Pack\LegendUtil\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\..\Resources\7-Zip\7za.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall
+;Source: "..\..\_Pack\LegendUtil\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "..\..\_Pack\LegendUtil\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [InstallDelete]
@@ -88,8 +89,51 @@ Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
 Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]
+Filename: {tmp}\7za.exe; Parameters: "x ""{tmp}\LegendUtil_nightly_latest.zip"" -o""{app}\"" * -r -aoa"; Flags: runhidden runascurrentuser;
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 Filename: "{app}\{#MyAppExeName}"; Parameters: "/AfterUpdate {#MyAppVersion}" ; Flags: nowait skipifnotsilent
 
 [Messages]
 BeveledLabel={#MyAppName} Setup [App Version: {#MyAppVersionText}]
+
+[Code]
+var
+  DownloadPage: TDownloadWizardPage;
+
+function OnDownloadProgress(const Url, FileName: String; const Progress, ProgressMax: Int64): Boolean;
+begin
+  if Progress = ProgressMax then
+    Log(Format('Successfully downloaded file to {tmp}: %s', [FileName]));
+  Result := True;
+end;
+
+procedure InitializeWizard;
+begin
+  DownloadPage := CreateDownloadPage(SetupMessage(msgWizardPreparing), SetupMessage(msgPreparingDesc), @OnDownloadProgress);
+  DownloadPage.ShowBaseNameInsteadOfUrl := True;
+end;
+
+function NextButtonClick(CurPageID: Integer): Boolean;
+begin
+  if CurPageID = wpReady then begin
+    DownloadPage.Clear;
+    // Use AddEx to specify a username and password
+    DownloadPage.Add('https://github.com/femtoCommunity/LegendUtil/raw/releases/nightly/Pack/LegendUtil_nightly_latest.zip', 'LegendUtil_nightly_latest.zip', '');
+    DownloadPage.Show;
+    try
+      try
+        DownloadPage.Download; // This downloads the files to {tmp}
+        Result := True;
+      except
+        if DownloadPage.AbortedByUser then
+          Log('Aborted by user.')
+        else
+          SuppressibleMsgBox(AddPeriod(GetExceptionMessage), mbCriticalError, MB_OK, IDOK);
+        Result := False;
+      end;
+    finally
+      DownloadPage.Hide;
+    end;
+  end else
+    Result := True;
+end;
