@@ -48,8 +48,8 @@ Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
 ; Installer and Application Architecture
-ArchitecturesInstallIn64BitMode=x64
-ArchitecturesAllowed=x64
+ArchitecturesInstallIn64BitMode=x64compatible
+ArchitecturesAllowed=x64compatible
 
 [Languages]
 Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
