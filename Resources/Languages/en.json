@@ -514,7 +514,7 @@
 		"Design": {
 			"__Name": "Appearance",
 			"Theme;Name": "Theme",
-			"Theme;Desc": "UI Theme\r\n(Theme changes will be applied when the application is restarted.)"
+			"Theme;Desc": "User interface theme\n(Requires app restart to apply)"
 		},
 		"Display": {
 			"__Name": "Display",
@@ -528,7 +528,7 @@
 		"General": {
 			"__Name": "General",
 			"EAapp_Config_Folder_Path;Name": "EA app Config Folder",
-			"EAapp_Config_Folder_Path;Desc": "Folder where EA app config files are stored\r\nIf you enter a blank or nonexistent folder, it will be retrieved automatically.\r\n*Normally, we recommend leaving this field blank.",
+			"EAapp_Config_Folder_Path;Desc": "The folder where the EA app configuration file is saved.\nIf you specify a blank or non-existent folder, it will be retrieved automatically.\n*We recommend leaving this blank.",
 			"EAapp_Config_Folder_Path;Custom_1": "Select Folder",
 			"EAapp_Config_File_Name;Name": "EA app Config File",
 			"EAapp_Config_File_Name;Desc": "File name of EA app config file\r\nThis field is required if the platform you are playing on is the EA app.\r\n*This config file is different for each account, so if you play with multiple accounts,\r\nyou will need to rename the file each time you switch accounts.",
@@ -560,17 +560,19 @@
 		},
 		"UI_MainMenu": {
 			"__Name": "UI - Main Menu",
-			"News_Enable;Name": "Show News Widget",
-			"News_Enable;Desc": "Show news on main menu\n(Requires app restart to apply)",
-			"News_Language;Name": "News Languages",
+			"News_Enable;Name": "News - Display",
+			"News_Enable;Desc": "Show news in the main menu\n(Requires app restart to apply)",
+			"News_Language;Name": "News - Languages",
 			"News_Language;Desc": "Languages of news displayed in the main menu",
-			"ServerStatus_Enable;Name": "Show Server Status Widget",
-			"ServerStatus_Enable;Desc": "Show server status on main menu\n(Requires app restart to apply)",
-			"ServerStatus_Region;Name": "Server Status Regions",
+			"ServerStatus_Enable;Name": "Server Status - Display",
+			"ServerStatus_Enable;Desc": "Whether to display server status information in the main menu\n(Requires app restart to apply)",
+			"ServerStatus_Region;Name": "Server Status - Region",
 			"ServerStatus_Region;Desc": "Server status regions displayed in the main menu",
 			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West",
-			"MapRotation_Enable;Name": "Show Map Rotation Widget",
-			"MapRotation_Enable;Desc": "Show map rotation on main menu\n(Requires app restart to apply)"
+			"MapRotation_Enable;Name": "Map Rotation - Display",
+			"MapRotation_Enable;Desc": "Whether to display map rotation information in the main menu\n(Requires app restart to apply)",
+			"MapRotation_RemainingTime;Name": "[Experimental] Map Rotation - Remaining Time",
+			"MapRotation_RemainingTime;Desc": "Whether to display the remaining time for each mode of map rotation.\n*This setting is an experimental feature. Enabling it may increase memory usage.\n(Requires app restart to apply)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "Experimental Features"

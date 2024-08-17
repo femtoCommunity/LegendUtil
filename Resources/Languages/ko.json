@@ -514,7 +514,7 @@
 		"Design": {
 			"__Name": "외관",
 			"Theme;Name": "테마",
-			"Theme;Desc": "UI 테마\n(테마 변경은 앱을 다시 시작하면 적용됩니다.)"
+			"Theme;Desc": "사용자 인터페이스 테마\n(적용하려면 앱을 다시 시작해야 함)"
 		},
 		"Display": {
 			"__Name": "디스플레이",
@@ -560,17 +560,19 @@
 		},
 		"UI_MainMenu": {
 			"__Name": "UI - 메인 메뉴",
-			"News_Enable;Name": "뉴스 보기",
-			"News_Enable;Desc": "메인 메뉴에 뉴스 표시\r\n(적용하려면 앱을 재부팅해야 합니다.)",
-			"News_Language;Name": "뉴스 언어",
+			"News_Enable;Name": "뉴스 - 표시",
+			"News_Enable;Desc": "메인 메뉴에 뉴스를 표시할지 여부\n(적용하려면 앱을 다시 시작해야 합니다)",
+			"News_Language;Name": "뉴스 - 언어",
 			"News_Language;Desc": "메인 메뉴에 표시되는 뉴스 언어",
-			"ServerStatus_Enable;Name": "서버 상태 표시하기",
-			"ServerStatus_Enable;Desc": "메인 메뉴에 서버 상태 표시\r\n(적용하려면 앱 재부팅이 필요합니다.)",
-			"ServerStatus_Region;Name": "서버 상태 지역",
+			"ServerStatus_Enable;Name": "서버 상태 - 표시",
+			"ServerStatus_Enable;Desc": "주 메뉴에 서버 상태 정보를 표시할지 여부\n(적용하려면 앱을 다시 시작해야 합니다)",
+			"ServerStatus_Region;Name": "서버 상태 - 지역",
 			"ServerStatus_Region;Desc": "주 메뉴에 표시되는 서버 상태의 지역",
 			"ServerStatus_Region;List": "아시아,동유럽,서유럽,미국 남부,미국 중부,미국 동부,미국 서부",
-			"MapRotation_Enable;Name": "지도 회전 정보 보기",
-			"MapRotation_Enable;Desc": "메인 메뉴에 지도 회전 정보 표시\r\n(적용하려면 앱 재부팅이 필요합니다.)"
+			"MapRotation_Enable;Name": "지도 회전 - 표시",
+			"MapRotation_Enable;Desc": "메인 메뉴에 맵 회전 정보를 사용할지 여부\n(적용하려면 앱을 다시 시작해야 합니다)",
+			"MapRotation_RemainingTime;Name": "[시험 기능] 맵 회전 - 남은 시간",
+			"MapRotation_RemainingTime;Desc": "맵 회전의 각 모드의 남은 시간을 표시할지 여부\n※이 설정은 시험 기능입니다. 활성화하면 메모리 사용량이 증가할 수 있습니다.\n(적용하려면 앱을 다시 시작해야 합니다)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "실험적 기능"
