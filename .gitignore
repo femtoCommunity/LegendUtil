@@ -1,4 +1,4 @@
-_Pack/*.dll
+_Pack/LegendUtil/*.dll
 _Debug
 BuilderConfig.ini
 _Build.bat
@@ -12,7 +12,6 @@ _Compile.bat
 _dbg*.bat
 BuildDate.txt
 BuildVersion.txt
-*.dll
 !Source/*.dll
 
 ## Ignore Visual Studio temporary files, build results, and
