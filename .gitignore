@@ -12,6 +12,7 @@ _Compile.bat
 _dbg*.bat
 BuildDate.txt
 BuildVersion.txt
+CommitHash.txt
 !Source/*.dll
 
 ## Ignore Visual Studio temporary files, build results, and
