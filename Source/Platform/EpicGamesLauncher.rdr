@@ -1,0 +1,28 @@
+EpicGamesLauncherとは
+	単一種類
+
+	はじめの手順
+		もし「C:\Program Files (x86)\Epic Games\Launcher」というフォルダが存在するなら // C:\Program Files (x86)\Epic Games\Launcher\Portal\Binaries\Win64
+			インストール先データ=フォルダ情報(「C:\Program Files (x86)\Epic Games\Launcher」)を作ったもの
+			インストール済みデータ=○
+			
+		そうでなければ
+			インストール済みデータ=×
+			
+		もし終わり
+	終わり
+	
+	-インストール済みデータ:真偽値
+	インストール済みという属性
+		取得する手順
+			インストール済みデータを返す
+		終わり
+	終わり
+	
+	-インストール先データ:フォルダ情報
+	インストール先という属性
+		取得する手順
+			インストール先データを返す
+		終わり
+	終わり
+終わり

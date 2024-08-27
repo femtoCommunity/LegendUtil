@@ -3,9 +3,9 @@
 
 #define MyAppName "LegendUtil"
 #define MyAppVersion "0.3.0"
-#define MyAppReleaseChannel "beta"
-#define MyAppReleaseNumber "0"
-#define MyAppVersionText "0.3.0-beta"
+#define MyAppReleaseChannel "dev"
+#define MyAppReleaseNumber "99999.000000"
+#define MyAppVersionText "0.3.0-dev.99999.000000"
 #define MyAppPublisher "femto Community Software Team"
 #define MyAppCopyrighter "Milkeyyy"
 #define MyAppURL "https://github.com/femtoCommunity/LegendUtil"
