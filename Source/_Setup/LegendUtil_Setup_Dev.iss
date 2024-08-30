@@ -2,10 +2,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "LegendUtil Dev Build"
-#define MyAppVersion "0.3.0"
+#define MyAppVersion "0.3.1"
 #define MyAppReleaseChannel "dev"
-#define MyAppReleaseNumber "99999.000000"
-#define MyAppVersionText "0.3.0-dev"
+#define MyAppReleaseNumber "20240826.162809.2"
+#define MyAppVersionText "0.3.1-dev.20240826.162852.2"
 #define MyAppPublisher "femto Community Software Team"
 #define MyAppCopyrighter "Milkeyyy"
 #define MyAppURL "https://github.com/femtoCommunity/LegendUtil"
@@ -37,13 +37,13 @@ DisableProgramGroupPage=yes
 LicenseFile=..\..\_Pack\LegendUtil\License.txt
 DisableWelcomePage=no
 WizardImageStretch=yes
-WizardImageFile=..\..\Resources\Logo\LegendUtil_Setup_Banner_White.bmp
-WizardSmallImageFile=..\..\Resources\Logo\LegendUtil_Icon_128x128.bmp
+WizardImageFile=..\..\Resources\Logo\LegendUtil_Dev_Setup_Banner_White.bmp
+WizardSmallImageFile=..\..\Resources\Logo\LegendUtil_Dev_Icon_128x128.bmp
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
 OutputDir=..\..\_Pack
 OutputBaseFilename=LegendUtil_Setup
-SetupIconFile=..\..\Resources\Logo\LegendUtil_Icon.ico
+SetupIconFile=..\..\Resources\Logo\LegendUtil_Dev_Icon.ico
 Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern

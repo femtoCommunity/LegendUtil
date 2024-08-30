@@ -37,13 +37,13 @@ DisableProgramGroupPage=yes
 LicenseFile=..\..\_Pack\LegendUtil\License.txt
 DisableWelcomePage=no
 WizardImageStretch=yes
-WizardImageFile=..\..\Resources\Logo\LegendUtil_Setup_Banner_White.bmp
-WizardSmallImageFile=..\..\Resources\Logo\LegendUtil_Icon_128x128.bmp
+WizardImageFile=..\..\Resources\Logo\LegendUtil_Nightly_Setup_Banner_White.bmp
+WizardSmallImageFile=..\..\Resources\Logo\LegendUtil_Nightly_Icon_128x128.bmp
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
 OutputDir=..\..\_Pack
 OutputBaseFilename=LegendUtil_Setup
-SetupIconFile=..\..\Resources\Logo\LegendUtil_Icon.ico
+SetupIconFile=..\..\Resources\Logo\LegendUtil_Nightly_Icon.ico
 Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
