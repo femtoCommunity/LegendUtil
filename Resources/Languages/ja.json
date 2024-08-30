@@ -13,6 +13,13 @@
 			"7": "無効",
 			"8": "アカウント",
 			"Loading": "読み込み中"
+		},
+		"Dialog": {
+			"Welcome": "{0} をインストールしていただき、ありがとうございます！\n\nこのアプリはベータ版であり、予期せぬ不具合などが発生する可能性があります。\n不具合などの問題を見つけたり、改善してほしい点があった場合は、\nサポート Discord サーバーのフォーラム または GitHub の Issue にて報告をお願いいたします。",
+			"LauncherNotInstalled": "Steam または EA app のいずれかがインストールされていることを確認できませんでした。\nSteam または EA app のいずれかをインストールしているにも関わらず、この警告が表示されている場合は、開発者に報告してください。"
+		},
+		"Error": {
+			"ErrorOccurredApplicationTermination": "アプリケーションの終了処理時にエラーが発生しました。\nコンフィグとプロファイルの変更内容が保存されていない可能性があります。\n\n{0}"
 		}
 	},
 	"ErrorMessage": {
@@ -136,8 +143,19 @@
 			"Viewing_State": ""
 		},
 		"Playing": {
-			"Playing_Details": "ゲームをプレイ中",
+			"Playing_Details": "Apex Legends をプレイ中",
 			"Playing_State": "プロファイル: {0}"
+		}
+	},
+	"Platform_EAapp": {
+		"Dialog": {
+			"FolderSelectionDialog_Title": "フォルダーを選択"
+		},
+		"Error": {
+			"FailedToOpenFolderSelectionDialog": "フォルダー選択ダイアログの表示に失敗しました。\n\n{0}",
+			"FailedToOpenFolderSelectionDialog_RequiredRestart": "フォルダー選択ダイアログの表示に失敗しました。\nアプリケーションを再起動してください。\n\n{0}",
+			"ConfigFileNotFound": "EA app のコンフィグファイルが見つかりません。\nコンフィグファイルが生成されていない可能性があります。\nコンフィグファイルを生成させるため、EA app を再起動してからもう一度お試しください。",
+			"ConfigFileNotFound_UserFolderSettingsRequired": "EA app のコンフィグファイルが見つかりません。\nコンフィグが別のユーザーフォルダーに保存されている可能性があります。\nアプリケーション設定で「EA app コンフィグフォルダー」へ、現在ログインしている Windows のユーザーフォルダーを設定してください。"
 		}
 	},
 	"ProfileManagement": {
@@ -155,7 +173,7 @@
 		},
 		"Dialog": {
 			"FailedToLoadProfiles": "以下のプロファイルの読み込みに失敗しました。\n詳細はデバッグログを参照してください。\n\n{0}",
-			"ConvertedOldDX12Args": "DirectX 12 で起動するための起動引数が シーズン 21 以降に対応していない値だったため、次の値を自動的に置き換えました。\n置換前: {0}\n置換後: {1}[改行][改行]<置換処理を行ったプロファイル>\n{2}"
+			"ConvertedOldDX12Args": "DirectX 12 で起動するための起動引数が シーズン 21 以降に対応していない値だったため、次の値を自動的に置き換えました。\n置換前: {0}\n置換後: {1}\n\n<置換処理を行ったプロファイル>\n{2}"
 		}
 	},
 	"InPlay": {
@@ -179,9 +197,12 @@
 			"MonitoringGameProcess": "Apex Legends のプロセスを追跡中"
 		},
 		"Dialog": {
+			"Game_CancelProcessTracking_Confirm": "Apex Legends の待機をキャンセルしてもよろしいですか？",
 			"Game_WontStart": "Apex Legends が起動しませんか？\nEA app のバックグラウンドサービスを再起動すると解決する場合があります。再起動しますか？\n(アップデート中の場合は、一度待機をキャンセルし、アップデート完了後に再度起動してください。)",
 			"Game_ProcessForciblyTerminated": "Apex Legends のプロセスを強制終了しました。\n正常な終了処理が行われていないため、コンフィグなどが保存されていない可能性があります。",
-			"Game_DeleteStartupArgsInEAappProperties": "EA app のプロパティで Apex Legends の起動引数が設定されているため、このまま起動すると意図しない設定が適用されてしまう可能性があります。\n\nEA app のプロパティで設定されている起動引数を削除しますか？\n\n＜設定されている起動引数＞\n{0}"
+			"Game_DeleteStartupArgsInEAappProperties": "EA app のプロパティで Apex Legends の起動引数が設定されているため、このまま起動すると意図しない設定が適用されてしまう可能性があります。\n\nEA app のプロパティで設定されている起動引数を削除しますか？\n\n＜設定されている起動引数＞\n{0}",
+			"Window_Close_InPlay_Confirm": "Apex Legends が起動中です。\n強制終了してから {0} を終了しますか？\n(問題が発生する可能性があります)\n\n「はい」をクリックすると Apex Legends を強制終了してから {0} を終了します。\n「いいえ」をクリックすると {0} の終了をキャンセルします。",
+			"Window_Close_InLaunchProcess_Confirm": "Apex Legends の起動処理中です。\n起動処理をキャンセルしてから {0} を終了しますか？\n({0} の終了後に Apex Legends が起動する可能性があります。)\n\n「はい」をクリックすると Apex Legends の起動処理をキャンセルしてから {0} を終了します。\n「いいえ」をクリックすると {0} の終了をキャンセルします。"
 		},
 		"Log": {
 			"Done": "完了",
@@ -254,8 +275,8 @@
 			"ProfileConfigFile_RestoringError": "プロファイルコンフィグファイルの復元処理でエラーが発生しました。",
 			"VideoConfigFile_RestoringError": "ビデオコンフィグファイルの復元処理でエラーが発生しました。",
 			"VideoConfigFile_SettingsRestoringError": "ビデオコンフィグ設定項目の復元処理でエラーが発生しました。",
-			"TT_SystemDisplaySettings_LastPlayDateRecordError": "最終プレイ日時の記録処理でエラーが発生しました。",
-			"TT_SystemDisplaySettings_TotalPlayTimeRecordError": "総プレイ時間の記録処理でエラーを発生しました。",
+			"TT_LastPlayDate_RecordError": "最終プレイ日時の記録処理でエラーが発生しました。",
+			"TT_TotalPlayTime_RecordError": "総プレイ時間の記録処理でエラーを発生しました。",
 			"TT_DiscordRPC_TimestampResetError": "Discord RPC のタイムスタンプリセットでエラーが発生しました。"
 		},
 		"Error": {
@@ -301,6 +322,12 @@
 			"CreateShortcutButton": "ショートカットを作成",
 			"ChangeNameButton": "名前の変更",
 			"DeleteButton": "削除"
+		}
+	},
+	"InputDialog": {
+		"Control": {
+			"Done": "完了",
+			"Cancel": "キャンセル"
 		}
 	},
 	"1": {
@@ -429,7 +456,7 @@
 			"__Text;コンフィグ未生成警告": "プロファイルコンフィグが生成されていません。一度このプロファイルでゲームを起動してください。",
 			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
 		},
-		"ビデオコンフィグパネル部品": {
+		"コンフィグパネル部品3": {
 			"ベースフレーム": "ビデオコンフィグ",
 			"コンフィグ指定ラベル": "読み込むファイル",
 			"__DropDownList;コンフィグ指定選択リスト": "共通,プロファイル",
@@ -487,7 +514,7 @@
 		"Design": {
 			"__Name": "外観",
 			"Theme;Name": "テーマ",
-			"Theme;Desc": "UIのテーマ\r\n(適用するにはアプリの再起動が必要です)"
+			"Theme;Desc": "ユーザーインターフェースのテーマ\r\n(適用するにはアプリの再起動が必要です)"
 		},
 		"Display": {
 			"__Name": "ディスプレイ",
@@ -501,7 +528,7 @@
 		"General": {
 			"__Name": "全般",
 			"EAapp_Config_Folder_Path;Name": "EA app コンフィグフォルダー",
-			"EAapp_Config_Folder_Path;Desc": "EA app のコンフィグファイルが保存されているフォルダー\r\n空欄または存在しないフォルダーを指定すると自動的に取得されます。\r\n※通常は空欄にすることをおすすめします※",
+			"EAapp_Config_Folder_Path;Desc": "EA app のコンフィグファイルが保存されているフォルダー\r\n空欄または存在しないフォルダーを指定すると自動的に取得されます。\r\n※通常は空欄にすることを推奨します※",
 			"EAapp_Config_Folder_Path;Custom_1": "フォルダーを選択",
 			"EAapp_Config_File_Name;Name": "EA app コンフィグファイル",
 			"EAapp_Config_File_Name;Desc": "EA app のコンフィグファイルのファイル名\r\nプレイする際のプラットフォームが EA app の場合、この項目は必須です。\r\n※このコンフィグファイルはアカウントによって異なるため、複数のアカウントでプレイする場合、\r\nアカウントを切り替えるたびにファイル名を変更する必要があります※",
@@ -520,27 +547,32 @@
 			"CheckForUpdatesOnAppLaunch;Desc": "アプリの起動時、自動的にアップデートの確認を行うかどうか",
 			"ReleaseChannel;Name": "アップデートのリリースチャンネル",
 			"ReleaseChannel;Desc": "アップデート時にインストールするバージョンのリリースチャンネル",
+			"ReleaseChannel;Custom_1": "リリースチャンネルの説明",
+			"ReleaseChannel;Custom_2": "Release: 正式リリースビルドです。\nこの選択肢は将来のために存在しており、現時点では Beta と同様です。\n\nBeta / Beta Only: ベータビルドです。\nRelease と比べて安定性に欠きますが、Dev や Nightly と比べると安定しています。\nBeta Only は Release へのアップデートを行いません。\n\nDevelopment: 開発ビルドです。\n開発者によって任意のタイミングでリリースされるビルドで、Release や Beta と比べて安定性に欠きますが、Nightly と比べると安定しています。\n\nNightly: ナイトリービルドです。\nリポジトリーへのプッシュの度にリリースされるビルドで、存在するビルドの中で最も不安定です。\n場合によっては起動すらできない事もあります。",
 			"CustomReleaseChannelUrl;Name": "カスタムリリースチャンネルURL",
 			"CustomReleaseChannelUrl;Desc": "※開発用※"
 		},
 		"UI_General": {
 			"__Name": "UI - 全般",
 			"Language;Name": "UIの言語",
-			"Language;Desc": "ユーザーインターフェースの表示言語"
+			"Language;Desc": "ユーザーインターフェースの表示言語",
+			"Language;Custom_1": "翻訳に協力する (Crowdin)"
 		},
 		"UI_MainMenu": {
 			"__Name": "UI - メインメニュー",
-			"News_Enable;Name": "ニュースを表示する",
-			"News_Enable;Desc": "メインメニューにニュースを表示します\r\n(適用するにはアプリの再起動が必要です)",
-			"News_Language;Name": "ニュースの言語",
+			"News_Enable;Name": "ニュース - 表示",
+			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n(適用するにはアプリの再起動が必要です)",
+			"News_Language;Name": "ニュース - 言語",
 			"News_Language;Desc": "メインメニューに表示されるニュースの言語",
-			"ServerStatus_Enable;Name": "サーバーステータスを表示する",
-			"ServerStatus_Enable;Desc": "メインメニューにサーバーステータスを表示します\r\n(適用するにはアプリの再起動が必要です)",
-			"ServerStatus_Region;Name": "サーバーステータスの地域",
+			"ServerStatus_Enable;Name": "サーバーステータス - 表示",
+			"ServerStatus_Enable;Desc": "メインメニューにサーバーステータス情報を表示するかどうか\n(適用するにはアプリの再起動が必要です)",
+			"ServerStatus_Region;Name": "サーバーステータス - 地域",
 			"ServerStatus_Region;Desc": "メインメニューに表示されるサーバーステータスの地域",
 			"ServerStatus_Region;List": "アジア,東ヨーロッパ,西ヨーロッパ,アメリカ南部,アメリカ中部,アメリカ東部,アメリカ西部",
-			"MapRotation_Enable;Name": "マップローテーション情報を表示する",
-			"MapRotation_Enable;Desc": "メインメニューにマップローテーション情報を表示します\r\n(適用するにはアプリの再起動が必要です)"
+			"MapRotation_Enable;Name": "マップローテーション - 表示",
+			"MapRotation_Enable;Desc": "メインメニューにマップローテーション情報をするかどうか\n(適用するにはアプリの再起動が必要です)",
+			"MapRotation_RemainingTime;Name": "[試験的機能] マップローテーション - 残り時間",
+			"MapRotation_RemainingTime;Desc": "マップローテーションの各モードの残り時間を表示するかどうか\n※この設定は試験的機能です。有効化するとメモリーの使用量が増加する可能性があります。\n(適用するにはアプリの再起動が必要です)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "実験的機能"

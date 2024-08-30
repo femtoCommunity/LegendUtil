@@ -2,10 +2,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "LegendUtil Dev Build"
-#define MyAppVersion "0.3.0"
+#define MyAppVersion "0.3.1"
 #define MyAppReleaseChannel "dev"
-#define MyAppReleaseNumber "99999.000000"
-#define MyAppVersionText "0.3.0-dev.20231106.021612.2"
+#define MyAppReleaseNumber "20240826.162809.2"
+#define MyAppVersionText "0.3.1-dev.20240826.162852.2"
 #define MyAppPublisher "femto Community Software Team"
 #define MyAppCopyrighter "Milkeyyy"
 #define MyAppURL "https://github.com/femtoCommunity/LegendUtil"
@@ -37,22 +37,23 @@ DisableProgramGroupPage=yes
 LicenseFile=..\..\_Pack\LegendUtil\License.txt
 DisableWelcomePage=no
 WizardImageStretch=yes
-WizardImageFile=..\..\Resources\Logo\LegendUtil_Setup_Banner_White.bmp
-WizardSmallImageFile=..\..\Resources\Logo\LegendUtil_Icon_128x128.bmp
+WizardImageFile=..\..\Resources\Logo\LegendUtil_Dev_Setup_Banner_White.bmp
+WizardSmallImageFile=..\..\Resources\Logo\LegendUtil_Dev_Icon_128x128.bmp
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
 OutputDir=..\..\_Pack
 OutputBaseFilename=LegendUtil_Setup
-SetupIconFile=..\..\Resources\Logo\LegendUtil_Icon.ico
+SetupIconFile=..\..\Resources\Logo\LegendUtil_Dev_Icon.ico
 Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
-; �C���X�g�[���[�ƃA�v���̃A�[�L�e�N�`���[���w��
-ArchitecturesInstallIn64BitMode=x64
-ArchitecturesAllowed=x64
+; Installer and Application Architecture
+ArchitecturesInstallIn64BitMode=x64compatible
+ArchitecturesAllowed=x64compatible
 
 [Languages]
 Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
+Name: "korean"; MessagesFile: "compiler:Languages\Korean.isl"
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Tasks]
@@ -64,7 +65,6 @@ Source: "..\..\_Pack\LegendUtil\*"; DestDir: "{app}"; Flags: ignoreversion recur
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [InstallDelete]
-Type: files; Name: "{app}\License.txt"
 Type: files; Name: "{app}\LegendUtil.CursorLocker.dll"
 Type: files; Name: "{app}\LegendUtil.DisplayDeviceHelper.dll"
 Type: files; Name: "{app}\LockCursorInWindowPlugin.dll"
