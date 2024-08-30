@@ -2,10 +2,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "LegendUtil Dev Build"
-#define MyAppVersion "0.3.1"
+#define MyAppVersion "0.3.0"
 #define MyAppReleaseChannel "dev"
-#define MyAppReleaseNumber "20240826.162809.2"
-#define MyAppVersionText "0.3.1-dev.20240826.162852.2"
+#define MyAppReleaseNumber "20240829.175304.2"
+#define MyAppVersionText "0.3.0-dev.20240830.191539.2"
 #define MyAppPublisher "femto Community Software Team"
 #define MyAppCopyrighter "Milkeyyy"
 #define MyAppURL "https://github.com/femtoCommunity/LegendUtil"
