@@ -194,7 +194,14 @@
 			"WaitingForGameToStart": "Apex Legends の起動を待機中",
 			"WaitingForGameToStart_WithRT": "Apex Legends の起動を待機中 - 残り{0}秒",
 			"StoppingGameProcess": "Apex Legends のプロセスを停止中",
-			"MonitoringGameProcess": "Apex Legends のプロセスを追跡中"
+			"MonitoringGameProcess": "Apex Legends のプロセスを追跡中",
+			"WaitingForGameInstallProcess": "Apex Legends がインストール中であることを検知しました インストールが完了するのを待っています...",
+			"WaitingForGameUpdateProcess": "Apex Legends がアップデート中であることを検知しました アップデートが完了するのを待っています...",
+			"WaitingForGameRepairProcess": "Apex Legends が修復中であることを検知しました 修復が完了するのを待っています...",
+			"WaitingForGameInstallProcess_WithStatus": "Apex Legends がインストール中であることを検知しました\nインストールが完了するのを待っています...\n(進行状況: {0} - {1})",
+			"WaitingForGameUpdateProcess_WithStatus": "Apex Legends がアップデート中であることを検知しました\nアップデートが完了するのを待っています...\n(進行状況: {0} - {1})",
+			"WaitingForGameRepairProcess_WithStatus": "Apex Legends が修復中であることを検知しました\n修復が完了するのを待っています...\n(進行状況: {0} - {1})",
+			"CancelingGameInstall": "ゲームのインストール/アップデート/修復処理がキャンセルされました。"
 		},
 		"Dialog": {
 			"Game_CancelProcessTracking_Confirm": "Apex Legends の待機をキャンセルしてもよろしいですか？",
