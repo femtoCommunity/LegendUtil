@@ -195,13 +195,13 @@
 			"WaitingForGameToStart_WithRT": "Apex Legends 시작 대기 중 - 남은 시간{0}초",
 			"StoppingGameProcess": "Apex Legends 프로세스 중지 중",
 			"MonitoringGameProcess": "Apex Legends 프로세스 추적 중",
-			"WaitingForGameInstallProcess": "Apex Legends がインストール中であることを検知しました インストールが完了するのを待っています...",
-			"WaitingForGameUpdateProcess": "Apex Legends がアップデート中であることを検知しました アップデートが完了するのを待っています...",
-			"WaitingForGameRepairProcess": "Apex Legends が修復中であることを検知しました 修復が完了するのを待っています...",
-			"WaitingForGameInstallProcess_WithStatus": "Apex Legends がインストール中であることを検知しました\nインストールが完了するのを待っています...\n(進行状況: {0} - {1})",
-			"WaitingForGameUpdateProcess_WithStatus": "Apex Legends がアップデート中であることを検知しました\nアップデートが完了するのを待っています...\n(進行状況: {0} - {1})",
-			"WaitingForGameRepairProcess_WithStatus": "Apex Legends が修復中であることを検知しました\n修復が完了するのを待っています...\n(進行状況: {0} - {1})",
-			"CancelingGameInstall": "ゲームのインストール/アップデート/修復処理がキャンセルされました。"
+			"WaitingForGameInstallProcess": "Apex Legends가 설치 중임을 감지했습니다. 설치가 완료 될 때까지 기다리는 중...",
+			"WaitingForGameUpdateProcess": "Apex Legends가 업데이트 중임을 감지했습니다. 업데이트가 완료 될 때까지 기다리는 중...",
+			"WaitingForGameRepairProcess": "Apex Legends가 복구 중임을 감지했습니다. 복구가 완료 될 때까지 기다리는 중...",
+			"WaitingForGameInstallProcess_WithStatus": "Apex Legends가 설치 중임을 감지했습니다.\n설치가 완료 될 때까지 기다리는 중...\n(진행 상황: {0} - {1})",
+			"WaitingForGameUpdateProcess_WithStatus": "Apex Legends가 업데이트 중임을 감지했습니다.\n업데이트가 완료 될 때까지 기다리는 중...\n(진행 상황: {0} - {1})",
+			"WaitingForGameRepairProcess_WithStatus": "Apex Legends가 복구 중임을 감지했습니다.\n복구가 완료 될 때까지 기다리는 중...\n(진행 상황: {0} - {1})",
+			"CancelingGameInstall": "게임 설치/업데이트/복구 처리가 취소되었습니다."
 		},
 		"Dialog": {
 			"Game_CancelProcessTracking_Confirm": "Apex Legends 대기를 취소하시겠습니까?",
