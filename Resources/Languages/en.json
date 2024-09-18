@@ -195,13 +195,13 @@
 			"WaitingForGameToStart_WithRT": "Waiting for Apex Legends to launch - {0} seconds left",
 			"StoppingGameProcess": "Stopping Apex Legends process",
 			"MonitoringGameProcess": "Tracking the Apex Legends process",
-			"WaitingForGameInstallProcess": "Apex Legends がインストール中であることを検知しました インストールが完了するのを待っています...",
-			"WaitingForGameUpdateProcess": "Apex Legends がアップデート中であることを検知しました アップデートが完了するのを待っています...",
-			"WaitingForGameRepairProcess": "Apex Legends が修復中であることを検知しました 修復が完了するのを待っています...",
-			"WaitingForGameInstallProcess_WithStatus": "Apex Legends がインストール中であることを検知しました\nインストールが完了するのを待っています...\n(進行状況: {0} - {1})",
-			"WaitingForGameUpdateProcess_WithStatus": "Apex Legends がアップデート中であることを検知しました\nアップデートが完了するのを待っています...\n(進行状況: {0} - {1})",
-			"WaitingForGameRepairProcess_WithStatus": "Apex Legends が修復中であることを検知しました\n修復が完了するのを待っています...\n(進行状況: {0} - {1})",
-			"CancelingGameInstall": "ゲームのインストール/アップデート/修復処理がキャンセルされました。"
+			"WaitingForGameInstallProcess": "We have detected that Apex Legends is installing. Waiting for the installation to complete...",
+			"WaitingForGameUpdateProcess": "We have detected that Apex Legends is updating. Waiting for the update to complete...",
+			"WaitingForGameRepairProcess": "We have detected that Apex Legends is updating. Waiting for the repair to complete...",
+			"WaitingForGameInstallProcess_WithStatus": "We have detected that Apex Legends is updating.\nWaiting for the install to complete...\n(Progress: {0} - {1})",
+			"WaitingForGameUpdateProcess_WithStatus": "We have detected that Apex Legends is updating.\nWaiting for the update to complete...\n(Progress: {0} - {1})",
+			"WaitingForGameRepairProcess_WithStatus": "We have detected that Apex Legends is updating.\nWaiting for the repair to complete...\n(Progress: {0} - {1})",
+			"CancelingGameInstall": "Game install/update/repair process canceled."
 		},
 		"Dialog": {
 			"Game_CancelProcessTracking_Confirm": "Are you sure you want to cancel your Apex Legends standby?",
