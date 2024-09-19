@@ -1,6 +1,6 @@
 {
 	"__Info": {
-		"Name": "English"
+		"Name": "Japanese"
 	},
 	"General": {
 		"General": {
@@ -197,10 +197,10 @@
 			"MonitoringGameProcess": "Tracking the Apex Legends process",
 			"WaitingForGameInstallProcess": "We have detected that Apex Legends is installing. Waiting for the installation to complete...",
 			"WaitingForGameUpdateProcess": "We have detected that Apex Legends is updating. Waiting for the update to complete...",
-			"WaitingForGameRepairProcess": "We have detected that Apex Legends is updating. Waiting for the repair to complete...",
-			"WaitingForGameInstallProcess_WithStatus": "We have detected that Apex Legends is updating.\nWaiting for the install to complete...\n(Progress: {0} - {1})",
+			"WaitingForGameRepairProcess": "We have detected that Apex Legends is repairing. Waiting for the repair to complete...",
+			"WaitingForGameInstallProcess_WithStatus": "We have detected that Apex Legends is installing.\nWaiting for the install to complete...\n(Progress: {0} - {1})",
 			"WaitingForGameUpdateProcess_WithStatus": "We have detected that Apex Legends is updating.\nWaiting for the update to complete...\n(Progress: {0} - {1})",
-			"WaitingForGameRepairProcess_WithStatus": "We have detected that Apex Legends is updating.\nWaiting for the repair to complete...\n(Progress: {0} - {1})",
+			"WaitingForGameRepairProcess_WithStatus": "We have detected that Apex Legends is repairing.\nWaiting for the repair to complete...\n(Progress: {0} - {1})",
 			"CancelingGameInstall": "Game install/update/repair process canceled."
 		},
 		"Dialog": {
