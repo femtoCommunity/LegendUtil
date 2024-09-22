@@ -12,6 +12,8 @@
 			"6": "無効",
 			"7": "無効",
 			"8": "アカウント",
+			"Platform": "プラットフォーム",
+			"Play": "プレイ",
 			"Loading": "読み込み中"
 		},
 		"Dialog": {
@@ -324,6 +326,12 @@
 		}
 	},
 	"Panel": {
+		"MainMenu_ProfileList": {
+			"SortOrderList;List": "名前 (昇順),名前 (降順),ディスプレイ設定 (昇順),ディスプレイ設定 (降順),プラットフォーム (昇順),プラットフォーム (降順),最終プレイ日時 (近い順),最終プレイ日時 (遠い順),総プレイ時間 (短い順),総プレイ時間 (長い順)",
+			"ItemDetail_Resolution": "解像度: {0}×{1} ({2}) - {3} Hz",
+			"ItemDetail_Resolution_Native": "解像度: ネイティブ",
+			"ItemDetail_Additional": "総プレイ時間: {0}\n最終プレイ日時: {1}"
+		},
 		"ProfileManage_ContextMenu": {
 			"EditButton": "編集",
 			"CreateShortcutButton": "ショートカットを作成",
