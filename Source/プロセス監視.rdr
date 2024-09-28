@@ -338,9 +338,9 @@ ApexLegendsとは
 		「Steam」の場合
 			
 		「EA app」の場合
-			// 実験的機能:account_switcher
+			// 実験的機能:account_switcher_eaapp_240928
 			// アカウント切り替え機能が有効の場合のみ切り替え処理を実行する
-			もし実験的機能管理器の機能一覧(「account_switcher」)(「有効」)が○なら
+			もし実験的機能管理器の機能一覧(「account_switcher_eaapp_240928」)(「有効」)が○なら
 				// アカウントを切り替える
 				【アカウント切り替え結果:真偽値】=×
 				もしプロファイルのEAappアカウントが0でないかつプロファイルのEAappアカウントが無でないなら
