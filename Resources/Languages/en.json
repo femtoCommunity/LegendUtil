@@ -280,7 +280,7 @@
 			"SystemDisplaySettings_RestoringError": "An error occurred while restoring the system display settings.",
 			"ConfigFile_RestoringError": "An error occurred while restoring the config file.",
 			"ProfileConfigFile_RestoringError": "An error occurred while restoring the profile config file.",
-			"VideoConfigFile_EditingFailed_CorruptedFile": "ビデオコンフィグファイルが壊れている可能性があるため、ファイルを読み込めませんでした。ビデオ設定がリセットされる可能性があります。",
+			"VideoConfigFile_EditingFailed_CorruptedFile": "The video config file could not be loaded because it may be corrupted. Your video settings may be reset.",
 			"VideoConfigFile_RestoringError": "An error occurred while restoring the video config file.",
 			"VideoConfigFile_SettingsRestoringError": "An error occurred while restoring the video config settings.",
 			"TT_LastPlayDate_RecordError": "An error occurred while recording the last play date and time.",
@@ -290,7 +290,7 @@
 		"Error": {
 			"0": "An error occurred during startup processing.",
 			"1": "Failed to load profile.",
-			"2": "ディスプレイ設定の変更に失敗しました。\n\nサポートされている解像度でこのエラーが発生している場合は、スケーリングモードを変更してからもう一度お試しください。",
+			"2": "Failed to change display settings.\n\nIf you're getting this error with a supported resolution, change the scaling mode and try again.",
 			"3": "An error occurred when launching Apex Legends.",
 			"4": "Apex Legends could not start.\nApex Legends may not be installed.",
 			"5": "Apex Legends process could not be retrieved in time.",
