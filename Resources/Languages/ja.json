@@ -280,6 +280,7 @@
 			"SystemDisplaySettings_RestoringError": "システムのディスプレイ設定の復元処理でエラーが発生しました。",
 			"ConfigFile_RestoringError": "コンフィグファイルの復元処理でエラーが発生しました。",
 			"ProfileConfigFile_RestoringError": "プロファイルコンフィグファイルの復元処理でエラーが発生しました。",
+			"VideoConfigFile_EditingFailed_CorruptedFile": "ビデオコンフィグファイルが壊れている可能性があるため、ファイルを読み込めませんでした。ビデオ設定がリセットされる可能性があります。",
 			"VideoConfigFile_RestoringError": "ビデオコンフィグファイルの復元処理でエラーが発生しました。",
 			"VideoConfigFile_SettingsRestoringError": "ビデオコンフィグ設定項目の復元処理でエラーが発生しました。",
 			"TT_LastPlayDate_RecordError": "最終プレイ日時の記録処理でエラーが発生しました。",
@@ -289,7 +290,7 @@
 		"Error": {
 			"0": "起動処理時にエラーが発生しました。",
 			"1": "プロファイルの読み込みに失敗しました。",
-			"2": "ディスプレイ設定の変更に失敗しました。",
+			"2": "ディスプレイ設定の変更に失敗しました。\n\nサポートされている解像度でこのエラーが発生している場合は、スケーリングモードを変更してからもう一度お試しください。",
 			"3": "Apex Legends の起動時にエラーが発生しました。",
 			"4": "Apex Legends を起動できませんでした。Apex Legends がインストールされていない可能性があります。",
 			"5": "Apex Legends のプロセスを時間内に取得できませんでした。",
@@ -568,7 +569,7 @@
 		"UI_MainMenu": {
 			"__Name": "UI - メインメニュー",
 			"News_Enable;Name": "ニュース - 表示",
-			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n(適用するにはアプリの再起動が必要です)",
+			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n無効にすると、プロファイルリストが表示されます。\n(適用するにはアプリの再起動が必要です)",
 			"News_Language;Name": "ニュース - 言語",
 			"News_Language;Desc": "メインメニューに表示されるニュースの言語",
 			"ServerStatus_Enable;Name": "サーバーステータス - 表示",
