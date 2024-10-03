@@ -280,6 +280,7 @@
 			"SystemDisplaySettings_RestoringError": "An error occurred while restoring the system display settings.",
 			"ConfigFile_RestoringError": "An error occurred while restoring the config file.",
 			"ProfileConfigFile_RestoringError": "An error occurred while restoring the profile config file.",
+			"VideoConfigFile_EditingFailed_CorruptedFile": "ビデオコンフィグファイルが壊れている可能性があるため、ファイルを読み込めませんでした。ビデオ設定がリセットされる可能性があります。",
 			"VideoConfigFile_RestoringError": "An error occurred while restoring the video config file.",
 			"VideoConfigFile_SettingsRestoringError": "An error occurred while restoring the video config settings.",
 			"TT_LastPlayDate_RecordError": "An error occurred while recording the last play date and time.",
@@ -289,7 +290,7 @@
 		"Error": {
 			"0": "An error occurred during startup processing.",
 			"1": "Failed to load profile.",
-			"2": "Failed to change display settings.",
+			"2": "ディスプレイ設定の変更に失敗しました。\n\nサポートされている解像度でこのエラーが発生している場合は、スケーリングモードを変更してからもう一度お試しください。",
 			"3": "An error occurred when launching Apex Legends.",
 			"4": "Apex Legends could not start.\nApex Legends may not be installed.",
 			"5": "Apex Legends process could not be retrieved in time.",
@@ -568,7 +569,7 @@
 		"UI_MainMenu": {
 			"__Name": "UI - Main Menu",
 			"News_Enable;Name": "News - Display",
-			"News_Enable;Desc": "Show news in the main menu\n(Requires app restart to apply)",
+			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n無効にすると、プロファイルリストが表示されます。\n(適用するにはアプリの再起動が必要です)",
 			"News_Language;Name": "News - Languages",
 			"News_Language;Desc": "Languages of news displayed in the main menu",
 			"ServerStatus_Enable;Name": "Server Status - Display",
