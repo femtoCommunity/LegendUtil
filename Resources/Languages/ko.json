@@ -280,6 +280,7 @@
 			"SystemDisplaySettings_RestoringError": "시스템 디스플레이 설정 복원 과정에서 오류가 발생했습니다.",
 			"ConfigFile_RestoringError": "설정 파일 복원 과정에서 오류가 발생했습니다.",
 			"ProfileConfigFile_RestoringError": "프로필 설정 파일 복원 과정에서 오류가 발생했습니다.",
+			"VideoConfigFile_EditingFailed_CorruptedFile": "ビデオコンフィグファイルが壊れている可能性があるため、ファイルを読み込めませんでした。ビデオ設定がリセットされる可能性があります。",
 			"VideoConfigFile_RestoringError": "비디오 구성 파일 복원 과정에서 오류가 발생했습니다.",
 			"VideoConfigFile_SettingsRestoringError": "비디오 설정 항목 복원 과정에서 오류가 발생했습니다.",
 			"TT_LastPlayDate_RecordError": "마지막 플레이 일시의 기록 처리에 에러가 발생했습니다.",
@@ -289,7 +290,7 @@
 		"Error": {
 			"0": "부팅 처리 중 오류가 발생했습니다.",
 			"1": "프로필을 불러오는 데 실패했습니다.",
-			"2": "디스플레이 설정 변경에 실패했습니다.",
+			"2": "ディスプレイ設定の変更に失敗しました。\n\nサポートされている解像度でこのエラーが発生している場合は、スケーリングモードを変更してからもう一度お試しください。",
 			"3": "Apex Legends 시작 시 오류가 발생했습니다.",
 			"4": "Apex Legends 를 시작할 수 없습니다. Apex Legends 가 설치되어 있지 않을 수 있습니다.",
 			"5": "Apex Legends의 프로세스를 제시간에 얻을 수 없습니다.",
@@ -568,7 +569,7 @@
 		"UI_MainMenu": {
 			"__Name": "UI - 메인 메뉴",
 			"News_Enable;Name": "뉴스 - 표시",
-			"News_Enable;Desc": "메인 메뉴에 뉴스를 표시할지 여부\n(적용하려면 앱을 다시 시작해야 합니다)",
+			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n無効にすると、プロファイルリストが表示されます。\n(適用するにはアプリの再起動が必要です)",
 			"News_Language;Name": "뉴스 - 언어",
 			"News_Language;Desc": "메인 메뉴에 표시되는 뉴스 언어",
 			"ServerStatus_Enable;Name": "서버 상태 - 표시",
