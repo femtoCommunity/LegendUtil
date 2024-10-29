@@ -49,7 +49,7 @@
 	
 	
 	-アップデートデータURL:文字列=「https://api.github.com/repos/femtoCommunity/LegendUtil/releases」
-	-開発アップデートデータURL:文字列=「https://api.legendutil.milkeyyy.com/releases/latest」
+	-開発アップデートデータURL:文字列=「https://api-legendutil.ezolys.com/releases/latest」
 	
 	-アップデートデータ取得結果:真偽値=×
 	-アップデートデータステータスコード=0
