@@ -121,6 +121,7 @@
 			"GameMode_arenasRanked": "아레나 | 랭크",
 			"GameMode_ltm_Control": "컨트롤",
 			"GameMode_ltm_TDM": "팀 데스매치",
+			"GameMode_ltm_Big TDM": "ビッグTDM",
 			"GameMode_ltm_Gun Run": "건 게임",
 			"GameMode_ltm_Lockdown": "락다운"
 		}
