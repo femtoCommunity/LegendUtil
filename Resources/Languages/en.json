@@ -121,6 +121,7 @@
 			"GameMode_arenasRanked": "Arena | Ranked",
 			"GameMode_ltm_Control": "Control",
 			"GameMode_ltm_TDM": "Team Deathmatch",
+			"GameMode_ltm_Big TDM": "ビッグTDM",
 			"GameMode_ltm_Gun Run": "Gun Run",
 			"GameMode_ltm_Lockdown": "Lockdown"
 		}
