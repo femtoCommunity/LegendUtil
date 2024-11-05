@@ -121,7 +121,7 @@
 			"GameMode_arenasRanked": "아레나 | 랭크",
 			"GameMode_ltm_Control": "컨트롤",
 			"GameMode_ltm_TDM": "팀 데스매치",
-			"GameMode_ltm_Big TDM": "ビッグTDM",
+			"GameMode_ltm_Big TDM": "빅 TDM",
 			"GameMode_ltm_Gun Run": "건 게임",
 			"GameMode_ltm_Lockdown": "락다운"
 		}
@@ -436,7 +436,7 @@
 			"33": "Apex Legends 설치 경로를 찾았습니다.\r\n\r\n경로: {0}",
 			"34": "계정",
 			"35": "테스트",
-			"36": "＜注意＞\nDirectX 12 が有効になっています。\nDirectX 12 を有効にした状態で引き伸ばしを行う場合は、「システムの解像度を変更する」を有効、「スケーリングモード」を「伸縮」に設定する必要があります。"
+			"36": "<주의>\nDirectX 12가 활성화되어 있습니다.\nDirectX 12 를 활성화한 상태에서 늘이는 경우는, 「시스템의 해상도를 변경한다」를 유효로, 「스케일링 모드」를 「신축」으로 설정할 필요가 있습니다."
 		},
 		"4": {
 			"2": "아래 옵션에 없는 시작 인수는 여기에 입력하십시오.\n기존 시작 인수의 텍스트를 입력하고 구문 분석을 실행하면 LegendUtil이 자동으로 구문 분석하고 읽습니다.",
@@ -571,7 +571,7 @@
 		"UI_MainMenu": {
 			"__Name": "UI - 메인 메뉴",
 			"News_Enable;Name": "뉴스 - 표시",
-			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n無効にすると、プロファイルリストが表示されます。\n(適用するにはアプリの再起動が必要です)",
+			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n(適用するにはアプリの再起動が必要です)",
 			"News_Language;Name": "뉴스 - 언어",
 			"News_Language;Desc": "메인 메뉴에 표시되는 뉴스 언어",
 			"ServerStatus_Enable;Name": "서버 상태 - 표시",
