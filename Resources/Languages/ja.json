@@ -571,7 +571,7 @@
 		"UI_MainMenu": {
 			"__Name": "UI - メインメニュー",
 			"News_Enable;Name": "ニュース - 表示",
-			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n無効にすると、プロファイルリストが表示されます。\n(適用するにはアプリの再起動が必要です)",
+			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n(適用するにはアプリの再起動が必要です)",
 			"News_Language;Name": "ニュース - 言語",
 			"News_Language;Desc": "メインメニューに表示されるニュースの言語",
 			"ServerStatus_Enable;Name": "サーバーステータス - 表示",
