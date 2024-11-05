@@ -121,7 +121,7 @@
 			"GameMode_arenasRanked": "Arena | Ranked",
 			"GameMode_ltm_Control": "Control",
 			"GameMode_ltm_TDM": "Team Deathmatch",
-			"GameMode_ltm_Big TDM": "ビッグTDM",
+			"GameMode_ltm_Big TDM": "Big TDM",
 			"GameMode_ltm_Gun Run": "Gun Run",
 			"GameMode_ltm_Lockdown": "Lockdown"
 		}
@@ -436,7 +436,7 @@
 			"33": "The installation location for Apex Legends has been found.\n\nPath: {0}",
 			"34": "Account",
 			"35": "Test",
-			"36": "＜注意＞\nDirectX 12 が有効になっています。\nDirectX 12 を有効にした状態で引き伸ばしを行う場合は、「システムの解像度を変更する」を有効、「スケーリングモード」を「伸縮」に設定する必要があります。"
+			"36": "<Note>\nDirectX 12 is enabled.\nIf you want to stretch with DirectX 12 enabled, you must enable \"Change system resolution\" and set \"Scaling mode\" to \"Stretch\"."
 		},
 		"4": {
 			"2": "Enter any startup arguments not listed below as options here.\nEnter the text of an existing launch argument and run \"Parse\" and LegendUtil will automatically parse and load it.",
@@ -571,7 +571,7 @@
 		"UI_MainMenu": {
 			"__Name": "UI - Main Menu",
 			"News_Enable;Name": "News - Display",
-			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n無効にすると、プロファイルリストが表示されます。\n(適用するにはアプリの再起動が必要です)",
+			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n(適用するにはアプリの再起動が必要です)",
 			"News_Language;Name": "News - Languages",
 			"News_Language;Desc": "Languages of news displayed in the main menu",
 			"ServerStatus_Enable;Name": "Server Status - Display",
