@@ -571,7 +571,7 @@
 		"UI_MainMenu": {
 			"__Name": "UI - 메인 메뉴",
 			"News_Enable;Name": "뉴스 - 표시",
-			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n(適用するにはアプリの再起動が必要です)",
+			"News_Enable;Desc": "메인 메뉴에 뉴스를 표시할지 여부\n(적용하려면 앱을 다시 시작해야 합니다)",
 			"News_Language;Name": "뉴스 - 언어",
 			"News_Language;Desc": "메인 메뉴에 표시되는 뉴스 언어",
 			"ServerStatus_Enable;Name": "서버 상태 - 표시",
