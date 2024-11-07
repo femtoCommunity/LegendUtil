@@ -159,7 +159,7 @@
 						「Beta」=「beta」,
 						「Beta Only」=「beta_only」,
 						「Development」=「dev」,
-						「Nightly」=「dev_nightly」
+						「Nightly」=「nightly」
 					},
 					「追加項目」=空の配列
 				},
