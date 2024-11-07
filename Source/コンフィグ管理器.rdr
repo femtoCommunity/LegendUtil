@@ -106,7 +106,9 @@
 					「説明」=「メインメニューにマップローテーション情報を表示します\n(この設定は試験的機能です。有効化するとメモリーの使用量が増加する可能性があります。)」,
 					「型」=真偽値
 				},
-				「ProfileDropdownList_SelectedID」={「設定可能」=×,「初期値」=「Default」}
+				「ProfileList_SortOrder」={「設定可能」=×,「初期値」=「1」},
+				「ProfileDropdownList_SelectedID」={「設定可能」=×,「初期値」=「Default」},
+				
 			},
 			「UI_ProfileManage」={
 				「__Name」=「」,
