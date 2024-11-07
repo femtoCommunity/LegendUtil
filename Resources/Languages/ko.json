@@ -12,7 +12,9 @@
 			"6": "비활성화",
 			"7": "비활성화",
 			"8": "계정",
-			"Loading": "로딩 중"
+			"Loading": "로딩 중",
+			"RemainingTime_Format_Hour": "あと {0} 時間",
+			"RemainingTime_Format_Minute": "あと {0} 分"
 		},
 		"Dialog": {
 			"Welcome": "{0} 을 설치해 주셔서 감사합니다!\n\n이 응용 프로그램은 베타 버전이며 예기치 않은 문제 등이 발생할 수 있습니다.\n문제 등의 문제를 발견하거나 개선하고 싶은 점이 있는 경우는 지원 Discord 서버 포럼 또는 GitHub Issue에서 보고를 부탁드립니다.",
@@ -581,8 +583,8 @@
 			"ServerStatus_Region;List": "아시아,동유럽,서유럽,미국 남부,미국 중부,미국 동부,미국 서부",
 			"MapRotation_Enable;Name": "지도 회전 - 표시",
 			"MapRotation_Enable;Desc": "메인 메뉴에 맵 회전 정보를 사용할지 여부\n(적용하려면 앱을 다시 시작해야 합니다)",
-			"MapRotation_RemainingTime;Name": "[시험 기능] 맵 회전 - 남은 시간",
-			"MapRotation_RemainingTime;Desc": "맵 회전의 각 모드의 남은 시간을 표시할지 여부\n※이 설정은 시험 기능입니다. 활성화하면 메모리 사용량이 증가할 수 있습니다.\n(적용하려면 앱을 다시 시작해야 합니다)"
+			"MapRotation_RemainingTime;Name": "[試験的機能] マップローテーション - 詳細な残り時間の表示",
+			"MapRotation_RemainingTime;Desc": "マップローテーションの各モードの残り時間表記を毎秒更新される詳細な表示にします。\n※この設定は試験的機能です。有効化するとメモリーの使用量が増加する可能性があります。\n(適用するにはアプリの再起動が必要です)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "실험적 기능"
