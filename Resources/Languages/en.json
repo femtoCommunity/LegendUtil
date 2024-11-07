@@ -12,6 +12,8 @@
 			"6": "Disable",
 			"7": "Disabled",
 			"8": "Account",
+			"Platform": "Platform",
+			"Play": "Play",
 			"Loading": "Loading",
 			"RemainingTime_Format_Hour": "あと {0} 時間",
 			"RemainingTime_Format_Minute": "あと {0} 分"
@@ -92,7 +94,7 @@
 			"フルスクリーンストレッチ有効チェックボックス": "Sets whether or not the display resolution is changed (stretched) when playing Apex Legends.",
 			"プラットフォーム選択リスト": "Select the platform on which Apex Legends is installed.",
 			"アカウント選択リスト": "Select the account you want to use to play Apex Legends.\n(You can manage your account from the \"Account\" tab.)",
-			"戻るボタン": "Back to Profile List",
+			"戻るボタン": "戻る",
 			"ディスプレイ解像度テストボタン": "Tests if it can be displayed normally after changing to the specified display settings.",
 			"コンフィグパネル部品のコンフィグ指定選択リスト": "Select the config to load when playing with this profile.",
 			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "Select the Video config to load when playing with this profile.",
@@ -328,6 +330,12 @@
 		}
 	},
 	"Panel": {
+		"MainMenu_ProfileList": {
+			"SortOrderList;List": "名前 (昇順),名前 (降順),ディスプレイ設定 (昇順),ディスプレイ設定 (降順),プラットフォーム (昇順),プラットフォーム (降順),最終プレイ日時 (近い順),最終プレイ日時 (遠い順),総プレイ時間 (短い順),総プレイ時間 (長い順)",
+			"ItemDetail_Resolution": "解像度: {0}×{1} ({2}) - {3} Hz",
+			"ItemDetail_Resolution_Native": "解像度: ネイティブ",
+			"ItemDetail_Additional": "総プレイ時間: {0}\n最終プレイ日時: {1}"
+		},
 		"ProfileManage_ContextMenu": {
 			"EditButton": "Edit",
 			"CreateShortcutButton": "Create Shortcut",
