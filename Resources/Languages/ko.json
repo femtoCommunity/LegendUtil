@@ -15,8 +15,8 @@
 			"Platform": "플랫폼",
 			"Play": "플레이",
 			"Loading": "로딩 중",
-			"RemainingTime_Format_Hour": "あと {0} 時間",
-			"RemainingTime_Format_Minute": "あと {0} 分"
+			"RemainingTime_Format_Hour": "이후 {0} 시간",
+			"RemainingTime_Format_Minute": "이후 {0} 분"
 		},
 		"Dialog": {
 			"Welcome": "{0} 을 설치해 주셔서 감사합니다!\n\n이 응용 프로그램은 베타 버전이며 예기치 않은 문제 등이 발생할 수 있습니다.\n문제 등의 문제를 발견하거나 개선하고 싶은 점이 있는 경우는 지원 Discord 서버 포럼 또는 GitHub Issue에서 보고를 부탁드립니다.",
@@ -94,7 +94,7 @@
 			"フルスクリーンストレッチ有効チェックボックス": "Apex Legends 플레이 시 디스플레이 해상도를 변경할지 여부를 설정합니다.",
 			"プラットフォーム選択リスト": "Apex Legends를 설치한 플랫폼을 선택합니다.",
 			"アカウント選択リスト": "Apex Legends를 플레이할 때 사용할 계정을 선택합니다.\r\n(계정 관리는 '계정' 탭에서 할 수 있습니다).",
-			"戻るボタン": "戻る",
+			"戻るボタン": "뒤로",
 			"ディスプレイ解像度テストボタン": "지정된 디스플레이 설정으로 변경해도 정상적으로 표시되는지 테스트합니다.",
 			"コンフィグパネル部品のコンフィグ指定選択リスト": "이 프로필로 플레이할 때 불러올 구성을 선택합니다.",
 			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "이 프로파일로 플레이할 때 로드할 비디오 구성을 선택합니다.",
@@ -331,10 +331,10 @@
 	},
 	"Panel": {
 		"MainMenu_ProfileList": {
-			"SortOrderList;List": "名前 (昇順),名前 (降順),ディスプレイ設定 (昇順),ディスプレイ設定 (降順),プラットフォーム (昇順),プラットフォーム (降順),最終プレイ日時 (近い順),最終プレイ日時 (遠い順),総プレイ時間 (短い順),総プレイ時間 (長い順)",
-			"ItemDetail_Resolution": "解像度: {0}×{1} ({2}) - {3} Hz",
-			"ItemDetail_Resolution_Native": "解像度: ネイティブ",
-			"ItemDetail_Additional": "総プレイ時間: {0}\n最終プレイ日時: {1}"
+			"SortOrderList;List": "이름 (오름차순),이름 (내림차순),디스플레이 설정 (오름차순),디스플레이 설정 (내림차순),플랫폼 (오름차순), 플랫폼 (내림차순),마지막 플레이 일시 (가까운 순서),마지막 플레이 일시 (먼 순서),총 플레이 시간 (짧은 순서),총 플레이 시간 (긴 순서)",
+			"ItemDetail_Resolution": "해상도: {0}×{1} ({2}) - {3} Hz",
+			"ItemDetail_Resolution_Native": "해상도: 네이티브",
+			"ItemDetail_Additional": "총 플레이 시간: {0}\n마지막 플레이 날짜: {1}"
 		},
 		"ProfileManage_ContextMenu": {
 			"EditButton": "편집",
@@ -591,8 +591,8 @@
 			"ServerStatus_Region;List": "아시아,동유럽,서유럽,미국 남부,미국 중부,미국 동부,미국 서부",
 			"MapRotation_Enable;Name": "지도 회전 - 표시",
 			"MapRotation_Enable;Desc": "메인 메뉴에 맵 회전 정보를 사용할지 여부\n(적용하려면 앱을 다시 시작해야 합니다)",
-			"MapRotation_RemainingTime;Name": "[試験的機能] マップローテーション - 詳細な残り時間の表示",
-			"MapRotation_RemainingTime;Desc": "マップローテーションの各モードの残り時間表記を毎秒更新される詳細な表示にします。\n※この設定は試験的機能です。有効化するとメモリーの使用量が増加する可能性があります。\n(適用するにはアプリの再起動が必要です)"
+			"MapRotation_RemainingTime;Name": "[시험 기능] 맵 회전 - 자세한 남은 시간 표시",
+			"MapRotation_RemainingTime;Desc": "맵 회전의 각 모드의 남은 시간 표기를 매초 갱신되는 상세한 표시로 합니다.\n※이 설정은 테스트 기능입니다. 활성화하면 메모리 사용량이 증가할 수 있습니다.\n(적용하려면 앱을 다시 시작해야 함)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "실험적 기능"
