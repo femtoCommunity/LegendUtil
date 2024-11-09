@@ -15,8 +15,8 @@
 			"Platform": "Platform",
 			"Play": "Play",
 			"Loading": "Loading",
-			"RemainingTime_Format_Hour": "あと {0} 時間",
-			"RemainingTime_Format_Minute": "あと {0} 分"
+			"RemainingTime_Format_Hour": "{0} Hours left",
+			"RemainingTime_Format_Minute": "{0} Minutes left"
 		},
 		"Dialog": {
 			"Welcome": "Thank you for installing {0}!\n\nThis app is a beta version, and unexpected problems may occur.\nIf you find any bugs or other issues or would like to see improvements, please report them in the support Discord server forum or GitHub Issue.",
@@ -94,7 +94,7 @@
 			"フルスクリーンストレッチ有効チェックボックス": "Sets whether or not the display resolution is changed (stretched) when playing Apex Legends.",
 			"プラットフォーム選択リスト": "Select the platform on which Apex Legends is installed.",
 			"アカウント選択リスト": "Select the account you want to use to play Apex Legends.\n(You can manage your account from the \"Account\" tab.)",
-			"戻るボタン": "戻る",
+			"戻るボタン": "Back",
 			"ディスプレイ解像度テストボタン": "Tests if it can be displayed normally after changing to the specified display settings.",
 			"コンフィグパネル部品のコンフィグ指定選択リスト": "Select the config to load when playing with this profile.",
 			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "Select the Video config to load when playing with this profile.",
@@ -331,10 +331,10 @@
 	},
 	"Panel": {
 		"MainMenu_ProfileList": {
-			"SortOrderList;List": "名前 (昇順),名前 (降順),ディスプレイ設定 (昇順),ディスプレイ設定 (降順),プラットフォーム (昇順),プラットフォーム (降順),最終プレイ日時 (近い順),最終プレイ日時 (遠い順),総プレイ時間 (短い順),総プレイ時間 (長い順)",
-			"ItemDetail_Resolution": "解像度: {0}×{1} ({2}) - {3} Hz",
-			"ItemDetail_Resolution_Native": "解像度: ネイティブ",
-			"ItemDetail_Additional": "総プレイ時間: {0}\n最終プレイ日時: {1}"
+			"SortOrderList;List": "Name (ascending),Name (descending),Display Settings (ascending),Display Settings (descending),Platform (ascending),Platform (descending),Last Played (nearest to latest),Last Played (farthest to latest),Total Play Time (shortest to longest),Total Play Time (longest to longest)",
+			"ItemDetail_Resolution": "Resolution: {0}×{1} ({2}) - {3} Hz",
+			"ItemDetail_Resolution_Native": "Resolution: Native",
+			"ItemDetail_Additional": "Total play time: {0}\nLast play date: {1}"
 		},
 		"ProfileManage_ContextMenu": {
 			"EditButton": "Edit",
@@ -591,8 +591,8 @@
 			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West",
 			"MapRotation_Enable;Name": "Map Rotation - Display",
 			"MapRotation_Enable;Desc": "Whether to display map rotation information in the main menu\n(Requires app restart to apply)",
-			"MapRotation_RemainingTime;Name": "[試験的機能] マップローテーション - 詳細な残り時間の表示",
-			"MapRotation_RemainingTime;Desc": "マップローテーションの各モードの残り時間表記を毎秒更新される詳細な表示にします。\n※この設定は試験的機能です。有効化するとメモリーの使用量が増加する可能性があります。\n(適用するにはアプリの再起動が必要です)"
+			"MapRotation_RemainingTime;Name": "[Experimental Feature] Map Rotation - Detailed remaining time display",
+			"MapRotation_RemainingTime;Desc": "Displays the remaining time for each map rotation mode in detail, updated every second.\n*This setting is an experimental feature. Enabling it may increase memory usage.\n(App restart required to apply)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "Experimental Features"
