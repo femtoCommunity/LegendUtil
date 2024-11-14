@@ -48,7 +48,7 @@ jobs:
           $zipfilePath="$env:RUNNER_TEMP\rdr.zip"
           $destinationUnzipPath="\rdr"
           & ${env:ProgramFiles}\7-Zip\7z.exe x $zipfilePath "-o$($destinationUnzipPath)" -y
-          Remove-Item -Path "\rdr.zip"
+          Remove-Item -Path "$env:RUNNER_TEMP\rdr.zip"
 
       - name: Set Git Config
         shell: pwsh
@@ -59,4 +59,4 @@ jobs:
       - name: Run Builder
         shell: pwsh
         run: |
-          Start-Process -Wait -NoNewWindow -FilePath "\rdr\pconsole.exe" -ArgumentList "$env:RUNNER_TEMP\Source\LegendUtil\Scripts\NightlyBuilder_Actions.rdr"
+          Start-Process -Wait -NoNewWindow -FilePath "\rdr\pconsole.exe" -ArgumentList "$env:GITHUB_WORKSPACE\Source\LegendUtil\Scripts\NightlyBuilder_Actions.rdr"
