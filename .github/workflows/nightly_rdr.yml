@@ -55,4 +55,4 @@ jobs:
       - name: Run Builder
         shell: pwsh
         run: |
-          Start-Process -Wait -NoNewWindow -FilePath "\rdr\pconsole.exe" -ArgumentList "$env:GITHUB_WORKSPACE\Source\Scripts\NightlyBuilder_Actions.rdr"
+          \rdr\pconsole.exe "$env:GITHUB_WORKSPACE\Source\Scripts\NightlyBuilder_Actions.rdr"
