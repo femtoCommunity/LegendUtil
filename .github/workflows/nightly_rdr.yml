@@ -13,8 +13,9 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Create Directory
+        shell: pwsh
         run: |
-          New-Item -ItemType Directory "$env:RUNNER_TEMP\rdr"
+          New-Item -ItemType Directory "\rdr"
           New-Item -ItemType Directory "$env:RUNNER_TEMP\Source"
           New-Item -ItemType Directory "$env:RUNNER_TEMP\Source\LegendUtil"
           New-Item -ItemType Directory "$env:RUNNER_TEMP\Source\Releases_Nightly"
@@ -22,12 +23,12 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          path: ${{ env.RUNNER_TEMP }}\Source\LegendUtil
+          path: ${{ RUNNER_TEMP }}\Source\LegendUtil
 
       - uses: actions/checkout@v4
         with:
           ref: releases/nightly
-          path: ${{ env.RUNNER_TEMP }}\Source\Releases_Nightly
+          path: ${{ RUNNER_TEMP }}\Source\Releases_Nightly
 
       - name: Cache Produire
         id: cache-produire
@@ -35,7 +36,7 @@ jobs:
         env:
           cache-name: cache-produire
         with:
-          path: ${{ env.RUNNER_TEMP }}\rdr
+          path: \rdr
           key: ${{ env.cache-name }}-${{ env.produire-version }}.${{ env.produire-build }}
 
       - if: ${{ steps.cache-produire.outputs.cache-hit != 'true' }}
@@ -45,15 +46,17 @@ jobs:
         run: |
           Invoke-WebRequest -Uri "${{ env.produire-url }}/${{ env.PRODUIRE_VERSION_MAJOR }}.${{ env.PRODUIRE_VERSION_MINOR }}/produire-${{ env.PRODUIRE_VERSION_MAJOR }}.${{ env.PRODUIRE_VERSION_MINOR }}.${{ env.PRODUIRE_VERSION_BUILD }}.zip" -OutFile "$env:RUNNER_TEMP\rdr.zip"
           $zipfilePath="$env:RUNNER_TEMP\rdr.zip"
-          $destinationUnzipPath="$env:RUNNER_TEMP\rdr"
+          $destinationUnzipPath="\rdr"
           & ${env:ProgramFiles}\7-Zip\7z.exe x $zipfilePath "-o$($destinationUnzipPath)" -y
-          Remove-Item -Path "$env:RUNNER_TEMP\rdr.zip"
+          Remove-Item -Path "\rdr.zip"
 
       - name: Set Git Config
+        shell: pwsh
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
 
       - name: Run Builder
+        shell: pwsh
         run: |
-          Start-Process -Wait -NoNewWindow -FilePath "$env:RUNNER_TEMP\rdr\pconsole.exe" -ArgumentList "$env:RUNNER_TEMP\Source\LegendUtil\Scripts\NightlyBuilder_Actions.rdr"
+          Start-Process -Wait -NoNewWindow -FilePath "\rdr\pconsole.exe" -ArgumentList "$env:RUNNER_TEMP\Source\LegendUtil\Scripts\NightlyBuilder_Actions.rdr"
