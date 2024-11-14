@@ -28,7 +28,7 @@ jobs:
 
       - name: Cache Produire
         id: cache-produire
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         env:
           cache-name: cache-produire
         with:
@@ -55,4 +55,4 @@ jobs:
       - name: Run Builder
         shell: pwsh
         run: |
-          Start-Process -Wait -NoNewWindow -FilePath "\rdr\pconsole.exe" -ArgumentList "$env:GITHUB_WORKSPACE\Source\LegendUtil\Scripts\NightlyBuilder_Actions.rdr"
+          Start-Process -Wait -NoNewWindow -FilePath "\rdr\pconsole.exe" -ArgumentList "$env:GITHUB_WORKSPACE\Source\Scripts\NightlyBuilder_Actions.rdr"
