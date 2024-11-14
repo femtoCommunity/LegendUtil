@@ -16,10 +16,6 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory "\rdr"
-          New-Item -ItemType Directory "$env:RUNNER_TEMP\Source"
-          New-Item -ItemType Directory "$env:RUNNER_TEMP\Source\LegendUtil"
-          New-Item -ItemType Directory "$env:RUNNER_TEMP\Source\Releases_Nightly"
-          New-Item -ItemType Directory "$env:RUNNER_TEMP\Build"
 
       - uses: actions/checkout@v4
         with:
