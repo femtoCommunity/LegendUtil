@@ -23,12 +23,12 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          path: ${{ runner.temp }}\Source\LegendUtil
+          path: Source\LegendUtil
 
       - uses: actions/checkout@v4
         with:
           ref: releases/nightly
-          path: ${{ runner.temp }}\Source\Releases_Nightly
+          path: Source\Releases_Nightly
 
       - name: Cache Produire
         id: cache-produire
