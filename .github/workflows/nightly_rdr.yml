@@ -13,7 +13,8 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: MathRobin/timezone-action@v1.1
-        timezoneWindows: "Japan Standard Time"
+        with:
+          timezoneWindows: 'Japan Standard Time'
 
       - name: Create Directory
         shell: pwsh
