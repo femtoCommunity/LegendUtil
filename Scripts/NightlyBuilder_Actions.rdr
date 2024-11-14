@@ -74,10 +74,10 @@ APIURL=「https://api-legendutil.ezolys.com/releases」
 		一時フォルダー=[今の位置]へ[一時フォルダーパスのフォルダだけ]というフォルダを作成する
 
 		// ソースフォルダー branch
-		ソースフォルダー=フォルダ情報([「GITHUB_WORKSPACE」の環境変数]&「\Source\LegendUtil」)を作ったもの
+		ソースフォルダー=フォルダ情報([「GITHUB_WORKSPACE」の環境変数]&「\Source」)を作ったもの
 
 		// リリースフォルダー releases/nightly
-		リリースフォルダー=フォルダ情報([「GITHUB_WORKSPACE」の環境変数]&「\Releases\LegendUtil」)を作ったもの
+		リリースフォルダー=フォルダ情報([「GITHUB_WORKSPACE」の環境変数]&「\Releases」)を作ったもの
 
 		// ビルド用一時フォルダー
 		ビルドフォルダー=[今の位置]へ「BuildTemp」というフォルダを作成する
