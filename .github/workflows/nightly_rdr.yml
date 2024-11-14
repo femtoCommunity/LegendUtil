@@ -1,0 +1,59 @@
+name: Build Nightly
+
+on:
+  push:
+    branches: [ "dev" ]
+
+env:
+  project-name: LegendUtil
+  produire-url: https://produ.irelang.jp/downloads
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Create Directory
+        run: |
+          New-Item -ItemType Directory "$env:RUNNER_TEMP\rdr"
+          New-Item -ItemType Directory "$env:RUNNER_TEMP\Source"
+          New-Item -ItemType Directory "$env:RUNNER_TEMP\Source\LegendUtil"
+          New-Item -ItemType Directory "$env:RUNNER_TEMP\Source\Releases_Nightly"
+          New-Item -ItemType Directory "$env:RUNNER_TEMP\Build"
+
+      - uses: actions/checkout@v4
+        with:
+          path: ${{ env.RUNNER_TEMP }}\Source\LegendUtil
+
+      - uses: actions/checkout@v4
+        with:
+          ref: releases/nightly
+          path: ${{ env.RUNNER_TEMP }}\Source\Releases_Nightly
+
+      - name: Cache Produire
+        id: cache-produire
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-produire
+        with:
+          path: ${{ env.RUNNER_TEMP }}\rdr
+          key: ${{ env.cache-name }}-${{ env.produire-version }}.${{ env.produire-build }}
+
+      - if: ${{ steps.cache-produire.outputs.cache-hit != 'true' }}
+        name: Download Produire
+        continue-on-error: true
+        shell: pwsh
+        run: |
+          Invoke-WebRequest -Uri "${{ env.produire-url }}/${{ env.PRODUIRE_VERSION_MAJOR }}.${{ env.PRODUIRE_VERSION_MINOR }}/produire-${{ env.PRODUIRE_VERSION_MAJOR }}.${{ env.PRODUIRE_VERSION_MINOR }}.${{ env.PRODUIRE_VERSION_BUILD }}.zip" -OutFile "$env:RUNNER_TEMP\rdr.zip"
+          $zipfilePath="$env:RUNNER_TEMP\rdr.zip"
+          $destinationUnzipPath="$env:RUNNER_TEMP\rdr"
+          & ${env:ProgramFiles}\7-Zip\7z.exe x $zipfilePath "-o$($destinationUnzipPath)" -y
+          Remove-Item -Path "$env:RUNNER_TEMP\rdr.zip"
+
+      - name: Set Git Config
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+      - name: Run Builder
+        run: |
+          Start-Process -Wait -NoNewWindow -FilePath "$env:RUNNER_TEMP\rdr\pconsole.exe" -ArgumentList "$env:RUNNER_TEMP\Source\LegendUtil\Scripts\NightlyBuilder_Actions.rdr"
