@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: szenius/set-timezone@v2.0
+      - uses: MathRobin/timezone-action@v1.1
         timezoneWindows: "Japan Standard Time"
 
       - name: Create Directory
