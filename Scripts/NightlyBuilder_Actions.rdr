@@ -10,6 +10,7 @@ APIURL=「https://api-legendutil.ezolys.com/releases」
 
 // 変数
 オプション={
+	「ApiKey」=「」,
 	「DisablePushToRepo」=×,
 	「DisableRegisterToAPI」=×
 }
@@ -173,7 +174,7 @@ APIURL=「https://api-legendutil.ezolys.com/releases」
 			登録要求=HTTP要求を作ったもの
 			登録要求のメソッド=「POST」
 			登録要求のContentType=「application/json」
-			登録要求のヘッダ={「Api-Key」=「LEGENDUTIL_API_KEY」の環境変数}
+			登録要求のヘッダ={「Api-Key」=オプション(「ApiKey」)}
 			登録要求の文字コード=「UTF-8」
 			登録要求の本文={
 				「version」=[バージョン],
