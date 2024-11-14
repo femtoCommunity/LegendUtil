@@ -73,8 +73,11 @@ APIURL=「https://api-legendutil.ezolys.com/releases」
 		// 一時フォルダーを作成
 		一時フォルダー=[今の位置]へ[一時フォルダーパスのフォルダだけ]というフォルダを作成する
 
-		// ソースフォルダー
-		ソースフォルダー=フォルダ情報([「GITHUB_WORKSPACE」の環境変数]&「\Source」)を作ったもの
+		// ソースフォルダー branch
+		ソースフォルダー=フォルダ情報([「GITHUB_WORKSPACE」の環境変数]&「\Source\LegendUtil」)を作ったもの
+
+		// リリースフォルダー releases/nightly
+		リリースフォルダー=フォルダ情報([「GITHUB_WORKSPACE」の環境変数]&「\Releases\LegendUtil」)を作ったもの
 
 		// ビルド用一時フォルダー
 		ビルドフォルダー=[今の位置]へ「BuildTemp」というフォルダを作成する
@@ -164,14 +167,14 @@ APIURL=「https://api-legendutil.ezolys.com/releases」
 		オプション(「DisablePushToRepo」)でないなら
 			「成果物をリポジトリーへプッシュ」をコンソールへ表示して改行する
 			コマンド一覧={
-				「cd "[ソースフォルダー]Releases_Nightly\"」,
+				「cd "[リリースフォルダー]"」,
 				「git checkout releases/nightly」,
-				「git add "[ソースフォルダー]Releases_Nightly\Pack\LegendUtil_nightly_latest.zip"」,
+				「git add "[リリースフォルダー]Pack\LegendUtil_nightly_latest.zip"」,
 				「git commit -m "Version [バージョン]-nightly.[コミットハッシュ]"」,
 				「git push origin releases/nightly」
 			}
 
-			「[成果フォルダー]LegendUtil_v[バージョン]-nightly.[コミットハッシュ].zip」を「[ソースフォルダー]Releases_Nightly\Pack\LegendUtil_nightly_latest.zip」へコピーする
+			「[成果フォルダー]LegendUtil_v[バージョン]-nightly.[コミットハッシュ].zip」を「[リリースフォルダー]Pack\LegendUtil_nightly_latest.zip」へコピーする
 
 			[コマンド一覧を「 & 」で繋げたもの]をコマンド実行したものをコンソールへ表示して改行する
 			「」をコンソールへ表示して改行する
