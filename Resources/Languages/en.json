@@ -602,9 +602,9 @@
 		"-anticheat_settings=SettingsDX12___dot___json": {
 			"Category": "Graphics",
 			"Choices": "Enable",
-			"Desc": "DirectX 12 でゲームを起動します。\r\nDirectX 12 を使用すると、ゲームがCPU グラフィック コードを複数のコアに分散できるようになり、フレームレートの向上が期待できます。",
+			"Desc": "Launch game with DirectX 12.\nUsing DirectX 12 allows the game to distribute CPU graphics code across multiple cores, potentially resulting in improved frame rates.",
 			"DisabledText": "Disable",
-			"Name": "DirectX 12 を有効化",
+			"Name": "Enable DirectX 12",
 			"AdditionalButtonText": "More information about DirectX 12 (Reddit)"
 		},
 		"-forcenovsync": {
