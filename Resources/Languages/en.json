@@ -602,7 +602,7 @@
 		"-anticheat_settings=SettingsDX12___dot___json": {
 			"Category": "Graphics",
 			"Choices": "Enable",
-			"Desc": "Launch game with DirectX 12.\nUsing DirectX 12 allows the game to distribute CPU graphics code across multiple cores, potentially resulting in improved frame rates.",
+			"Desc": "Launch game with DirectX 12.\nUsing DirectX 12 allows the game to distribute CPU graphics code across multiple cores, which might improve the frame rate.",
 			"DisabledText": "Disable",
 			"Name": "Enable DirectX 12",
 			"AdditionalButtonText": "More information about DirectX 12 (Reddit)"
