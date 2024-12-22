@@ -1,834 +1,834 @@
 {
 	"__Info": {
-		"Name": "Japanese - 日本語"
+		"Name": "English (Translated by Gemini)"
 	},
 	"General": {
 		"General": {
-			"1": "内部エラー",
-			"2": "ネイティブ",
-			"3": "解像度",
-			"4": "有効",
-			"5": "有効",
-			"6": "無効",
-			"7": "無効",
-			"8": "アカウント",
-			"Platform": "プラットフォーム",
-			"Play": "プレイ",
-			"Loading": "読み込み中",
-			"RemainingTime_Format_Hour": "あと {0} 時間",
-			"RemainingTime_Format_Minute": "あと {0} 分"
+			"1": "Internal Error",
+			"2": "Native",
+			"3": "Resolution",
+			"4": "Enable",
+			"5": "Enabled",
+			"6": "Disable",
+			"7": "Disabled",
+			"8": "Account",
+			"Platform": "Platform",
+			"Play": "Play",
+			"Loading": "Loading",
+			"RemainingTime_Format_Hour": "{0} hour(s) remaining",
+			"RemainingTime_Format_Minute": "{0} minute(s) remaining"
 		},
 		"Dialog": {
-			"Welcome": "{0} をインストールしていただき、ありがとうございます！\n\nこのアプリはベータ版であり、予期せぬ不具合などが発生する可能性があります。\n不具合などの問題を見つけたり、改善してほしい点があった場合は、\nサポート Discord サーバーのフォーラム または GitHub の Issue にて報告をお願いいたします。",
-			"LauncherNotInstalled": "Steam または EA app のいずれかがインストールされていることを確認できませんでした。\nSteam または EA app のいずれかをインストールしているにも関わらず、この警告が表示されている場合は、開発者に報告してください。"
+			"Welcome": "Thank you for installing {0}!\n\nThis app is in beta and may contain unexpected bugs.\nIf you find any bugs or have any suggestions, please report them\nin the support Discord server's forum or GitHub Issues.",
+			"LauncherNotInstalled": "Could not confirm that either Steam or EA app is installed.\nIf you have either Steam or EA app installed and you still see this warning, please report it to the developer."
 		},
 		"Error": {
-			"ErrorOccurredApplicationTermination": "アプリケーションの終了処理時にエラーが発生しました。\nコンフィグとプロファイルの変更内容が保存されていない可能性があります。\n\n{0}"
+			"ErrorOccurredApplicationTermination": "An error occurred while terminating the application.\nConfiguration and profile changes may not have been saved.\n\n{0}"
 		}
 	},
 	"ErrorMessage": {
 		"1": {
-			"1": "サーバーステータスの取得に失敗しました。\r\n\r\n{0}",
-			"2": "ニュースの更新に失敗しました"
+			"1": "Failed to retrieve server status.\r\n\r\n{0}",
+			"2": "Failed to update news."
 		},
 		"2": {
-			"1": "プロファイルの読み込みに失敗しました。\r\n\r\n<読み込みに失敗したプロファイル>\r\n・{0}",
-			"2": "プロファイルの読み込みに失敗しました。\r\n\r\n{0}",
-			"3": "プロファイルの作成に失敗しました。\r\n\r\n{0}",
-			"4": "プロファイルの名前を変更できませんでした。\r\n\r\n{0}",
-			"5": "指定されたプロファイルID {0} は存在しません。"
+			"1": "Failed to load profile.\r\n\r\n<Failed to load profile>\r\n・{0}",
+			"2": "Failed to load profile.\r\n\r\n{0}",
+			"3": "Failed to create profile.\r\n\r\n{0}",
+			"4": "Failed to rename profile.\r\n\r\n{0}",
+			"5": "The specified profile ID {0} does not exist."
 		},
 		"3": {
-			"1": "ファイルのダウンロードに失敗しました。\r\n\r\n{0}"
+			"1": "Failed to download file.\r\n\r\n{0}"
 		},
 		"4": {
-			"1": "アップデートチェックに失敗しました。\n\nAPIから正常な応答が得られませんでした。\nステータスコード: {0}",
-			"2": "アップデートチェックに失敗しました。\r\n配列の個数が0です。",
-			"3": "ステータスコード: {0}",
-			"4": "アップデートの実行に失敗しました。\n\n{0}"
+			"1": "Failed to check for updates.\n\nCould not get a valid response from the API.\nStatus code: {0}",
+			"2": "Failed to check for updates.\r\nThe number of arrays is 0.",
+			"3": "Status Code: {0}",
+			"4": "Failed to execute update.\n\n{0}"
 		}
 	},
 	"SplashWindow": {
 		"Status": {
-			"Loading": "読み込み中...",
-			"LoadingWindow": "ウィンドウを読み込み中",
-			"LoadingWindow_MainWindow": "ウィンドウを読み込み中",
-			"GeneratingControl": "コントロールを生成中",
-			"GeneratingControl_MainMenuPanel": "コントロールを生成中: メインメニュー",
-			"GeneratingControl_AppSettingsPanel": "コントロールを生成中: アプリケーション設定パネル",
-			"GeneratingControl_AccountManagePanel": "コントロールを生成中: アカウント管理パネル",
-			"GeneratingControl_ProfileManagePanel": "コントロールを生成中: プロファイル管理パネル",
-			"GeneratingControl_ProfileCreateWizardPanel": "コントロールを生成中: プロファイル作成ウィザードパネル",
-			"GeneratingControl_ProfileEditPanel": "コントロールを生成中: プロファイル編集パネル"
+			"Loading": "Loading...",
+			"LoadingWindow": "Loading Window",
+			"LoadingWindow_MainWindow": "Loading Main Window",
+			"GeneratingControl": "Generating Controls",
+			"GeneratingControl_MainMenuPanel": "Generating Controls: Main Menu",
+			"GeneratingControl_AppSettingsPanel": "Generating Controls: Application Settings Panel",
+			"GeneratingControl_AccountManagePanel": "Generating Controls: Account Management Panel",
+			"GeneratingControl_ProfileManagePanel": "Generating Controls: Profile Management Panel",
+			"GeneratingControl_ProfileCreateWizardPanel": "Generating Controls: Profile Creation Wizard Panel",
+			"GeneratingControl_ProfileEditPanel": "Generating Controls: Profile Edit Panel"
 		}
 	},
 	"PanelTitle": {
 		"MainWindow": {
-			"ProfileManage": "プロファイル管理",
-			"ProfileEdit": "プロファイル編集",
-			"AccountManage": "アカウント管理",
-			"AppSettings": "アプリケーション設定",
-			"OpenSourceLicenses": "オープンソースライセンス",
-			"Update": "アップデート"
+			"ProfileManage": "Profile Management",
+			"ProfileEdit": "Profile Edit",
+			"AccountManage": "Account Management",
+			"AppSettings": "Application Settings",
+			"OpenSourceLicenses": "Open Source Licenses",
+			"Update": "Update"
 		}
 	},
 	"Tooltip": {
 		"プロファイル編集パネル部品": {
-			"AltEnter自動押下チェックボックス": "Apex Legends の起動後に Alt+Enter を自動的に押下するかどうかを設定します。\nこの設定を有効にすると、「解像度の引き伸ばし」を行った際に発生する「黒帯」を消すことができます。",
-			"AltEnter自動押下待機時間ダイヤル": "Apex Legends が起動してから Alt+Enter の自動押下を行うまでの待機時間(秒)を設定します。\r\n環境によってタイトル画面が表示されるまでの時間が変化するため、ご自分の環境に合わせて設定してください。",
-			"AltEnter自動押下方法選択リスト": "Alt+Enter の自動押下の実行方法を設定します。\n\n  ＜画像認識＞\n    タイトル画面の表示を自動的に認識して Alt+Enter の自動押下を実行します。\n    この設定を使用する場合、追加ファイルのダウンロードが必要です。(自動的にダウンロードされます。)\n\n  ＜時間＞\n    Apex Legends が起動した後、指定された時間待機して Alt+Enter の自動押下を実行します。\n    環境によってタイトル画面が表示されるまでの時間が変化するため、ご自分の環境に合わせて設定してください。",
-			"ApexLegendsパステキスト": "Apex Legends のインストール先(実行ファイル)へのパスを設定します。\r\n「r5apex.exe」へのパスを指定してください。",
-			"ApexLegendsパス自動取得チェックボックス": "このPCにインストールされている Apex Legends のインストール先(実行ファイル)を自動的に取得します。",
-			"ApexLegendsパス自動取得ボタン": "このPCにインストールされている Apex Legends のインストール先を取得し直します。\r\n再インストールを行った時など、インストール先が変更された場合に行ってください。",
-			"EAappSteam経由IDテキスト": "Steam に登録された EA app の AppID を指定します。",
-			"EAappSteam経由チェックボックス": "Steam を経由して EA app を起動するかどうかを設定します。\r\nこの設定を利用する場合は、EA app を 非Steamゲームとして Steam に登録しておく必要があります。",
-			"カーソルロックチェックボックス": "カーソルロックを有効にするかどうかを設定します。\r\n有効にすると、複数のモニターを接続している際、Apex Legends のウィンドウからマウスカーソルがはみ出てしまう現象を防ぐことができます。",
-			"システム解像度変更チェックボックス": "Apex Legends の起動前にシステム(PC)のディスプレイ解像度を変更するかどうかを設定します。\nこの設定を有効にすると、Alt+Tab などで Apex Legends から別のウィンドウに切り替えた際、\n毎回ディスプレイ解像度が元に戻り、数秒間PCがフリーズしてしまう現象を防止できます。\n(Apex Legends が表示されるメインディスプレイのみ変更されます。サブディスプレイは変更されません。)",
-			"ディスプレイスケーリングモードヘルプボタン": "ディスプレイのスケーリングモードの種類に関する詳しい説明を表示します。",
-			"ディスプレイスケーリングモード選択リスト": "解像度変更時のディスプレイのスケーリングモードを設定します。",
-			"ディスプレイリフレッシュレートダイヤル": "プレイ時のリフレッシュレートを設定します。",
-			"ディスプレイ解像度Hダイヤル": "プレイ時のディスプレイ解像度(高さ)を設定します。",
-			"ディスプレイ解像度Wダイヤル": "プレイ時のディスプレイ解像度(幅)を設定します。",
-			"ディスプレイ設定プリセット有効項目チェックボックス": "有効にすると、ディスプレイが対応していない設定もプリセット一覧へ表示します。\r\n対応していない解像度やリフレッシュレートを指定すると、プレイ時に解像度の変更に失敗して起動できません。",
-			"ディスプレイ設定プリセット選択リスト": "プレイ時のディスプレイ設定をプリセットから選択します。\r\n選択すると自動的に入力されます。",
-			"フルスクリーンストレッチ有効チェックボックス": "Apex Legends のプレイ時にディスプレイ解像度の変更(引き伸ばし)を行うかどうかを設定します。",
-			"プラットフォーム選択リスト": "Apex Legends をインストールしているプラットフォームを選択します。",
-			"アカウント選択リスト": "Apex Legends をプレイする際に使用するアカウントを選択します。\r\n(アカウントの管理は「アカウント」タブから行えます。)",
-			"戻るボタン": "戻る",
-			"ディスプレイ解像度テストボタン": "指定されたディスプレイ設定に変更しても正常に表示できるかをテストします。",
-			"コンフィグパネル部品のコンフィグ指定選択リスト": "このプロファイルでプレイする際に読み込むコンフィグを選択します。",
-			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "このプロファイルでプレイする際に読み込むビデオコンフィグを選択します。",
-			"コンフィグパネル部品のコンフィグ読み取り専用チェックボックス": "プレイ時にコンフィグファイルを読み取り専用にするかどうかを設定します。",
-			"ビデオコンフィグパネル部品のビデオコンフィグ読み取り専用チェックボックス": "プレイ時にビデオコンフィグファイルを読み取り専用にするかどうかを設定します。"
+			"AltEnter自動押下チェックボックス": "Sets whether to automatically press Alt+Enter after launching Apex Legends.\nEnabling this setting can eliminate the \"black bars\" that appear when \"stretching the resolution\".",
+			"AltEnter自動押下待機時間ダイヤル": "Sets the waiting time (seconds) before automatically pressing Alt+Enter after Apex Legends launches.\r\nThe time it takes for the title screen to appear varies depending on the environment, so please adjust this setting to suit your environment.",
+			"AltEnter自動押下方法選択リスト": "Sets how to automatically press Alt+Enter.\n\n  <Image Recognition>\n    Automatically recognizes the title screen and presses Alt+Enter.\n    If you use this setting, you need to download additional files. (They will be downloaded automatically.)\n\n  <Time>\n    Waits for the specified time after Apex Legends launches and then presses Alt+Enter.\n    The time it takes for the title screen to appear varies depending on the environment, so please adjust this setting to suit your environment.",
+			"ApexLegendsパステキスト": "Sets the path to the Apex Legends installation (executable file).\r\nSpecify the path to \"r5apex.exe\".",
+			"ApexLegendsパス自動取得チェックボックス": "Automatically retrieves the installation location (executable file) of Apex Legends installed on this PC.",
+			"ApexLegendsパス自動取得ボタン": "Retrieves the installation location of Apex Legends installed on this PC.\r\nDo this if the installation location has changed, such as after reinstalling.",
+			"EAappSteam経由IDテキスト": "Specifies the AppID of the EA app registered on Steam.",
+			"EAappSteam経由チェックボックス": "Sets whether to launch the EA app via Steam.\r\nTo use this setting, the EA app must be registered as a Non-Steam Game on Steam.",
+			"カーソルロックチェックボックス": "Sets whether to enable cursor lock.\r\nEnabling this prevents the mouse cursor from moving outside the Apex Legends window when multiple monitors are connected.",
+			"システム解像度変更チェックボックス": "Sets whether to change the system (PC) display resolution before launching Apex Legends.\nEnabling this setting can prevent the phenomenon where the display resolution reverts every time you switch from Apex Legends to another window using Alt+Tab, etc., and the PC freezes for a few seconds.\n(Only the main display on which Apex Legends is displayed will be changed. Sub-displays will not be changed.)",
+			"ディスプレイスケーリングモードヘルプボタン": "Displays a detailed explanation of the display scaling mode types.",
+			"ディスプレイスケーリングモード選択リスト": "Sets the display scaling mode when changing the resolution.",
+			"ディスプレイリフレッシュレートダイヤル": "Sets the refresh rate for playing.",
+			"ディスプレイ解像度Hダイヤル": "Sets the display resolution (height) for playing.",
+			"ディスプレイ解像度Wダイヤル": "Sets the display resolution (width) for playing.",
+			"ディスプレイ設定プリセット有効項目チェックボックス": "If enabled, unsupported display settings will also be displayed in the preset list.\r\nIf an unsupported resolution or refresh rate is specified, the resolution change will fail at playtime and the game will not launch.",
+			"ディスプレイ設定プリセット選択リスト": "Selects the display settings for playing from the presets.\r\nThe values will be entered automatically when selected.",
+			"フルスクリーンストレッチ有効チェックボックス": "Sets whether to change (stretch) the display resolution when playing Apex Legends.",
+			"プラットフォーム選択リスト": "Select the platform where Apex Legends is installed.",
+			"アカウント選択リスト": "Selects the account to use when playing Apex Legends.\r\n(Account management can be done from the \"Account\" tab.)",
+			"戻るボタン": "Back",
+			"ディスプレイ解像度テストボタン": "Tests whether the specified display settings can be displayed correctly.",
+			"コンフィグパネル部品のコンフィグ指定選択リスト": "Selects the config to load when playing with this profile.",
+			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "Selects the video config to load when playing with this profile.",
+			"コンフィグパネル部品のコンフィグ読み取り専用チェックボックス": "Sets whether to make the config file read-only during playtime.",
+			"ビデオコンフィグパネル部品のビデオコンフィグ読み取り専用チェックボックス": "Sets whether to make the video config file read-only during playtime."
 		},
 		"アカウント管理パネル部品": {
-			"切り替えボタン": "選択しているアカウントへ切り替え",
-			"削除ボタン": "選択しているアカウントを削除",
-			"追加ボタン": "アカウントを追加"
+			"切り替えボタン": "Switch to the selected account",
+			"削除ボタン": "Delete the selected account",
+			"追加ボタン": "Add account"
 		}
 	},
 	"MozambiqueAPI": {
 		"ErrorMessage": {
-			"HTTPStatusCode": "HTTP ステータスコード: {0}",
-			"FailedToGetMapRotation": "マップローテーションを取得できませんでした。",
-			"FailedToGetServerStatus": "サーバーステータスを取得できませんでした。",
-			"FailedToGetNews": "ニュースを取得できませんでした。",
-			"FailedToGetNewsImage": "画像を取得できませんでした。"
+			"HTTPStatusCode": "HTTP Status Code: {0}",
+			"FailedToGetMapRotation": "Failed to get map rotation.",
+			"FailedToGetServerStatus": "Failed to get server status.",
+			"FailedToGetNews": "Failed to get news.",
+			"FailedToGetNewsImage": "Failed to get image."
 		},
 		"UpdateStatus": {
-			"LastUpdate": "最終更新: {0}"
+			"LastUpdate": "Last Updated: {0}"
 		},
 		"MapRotation": {
-			"GameMode_battle_royale": "バトルロイヤル | カジュアル",
-			"GameMode_ranked": "バトルロイヤル | ランクリーグ",
-			"GameMode_arenas": "アリーナ | カジュアル",
-			"GameMode_arenasRanked": "アリーナ | ランク",
-			"GameMode_ltm_Control": "コントロール",
-			"GameMode_ltm_TDM": "チームデスマッチ",
-			"GameMode_ltm_Big TDM": "ビッグTDM",
-			"GameMode_ltm_Gun Run": "ガンゲーム",
-			"GameMode_ltm_Lockdown": "ロックダウン"
+			"GameMode_battle_royale": "Battle Royale | Casual",
+			"GameMode_ranked": "Battle Royale | Ranked Leagues",
+			"GameMode_arenas": "Arenas | Casual",
+			"GameMode_arenasRanked": "Arenas | Ranked",
+			"GameMode_ltm_Control": "Control",
+			"GameMode_ltm_TDM": "Team Deathmatch",
+			"GameMode_ltm_Big TDM": "Big TDM",
+			"GameMode_ltm_Gun Run": "Gun Run",
+			"GameMode_ltm_Lockdown": "Lockdown"
 		}
 	},
 	"DiscordRPC": {
 		"MainMenu": {
-			"Idle_Details": "メインメニューを閲覧中",
+			"Idle_Details": "Browsing the main menu",
 			"Idle_State": ""
 		},
 		"ProfileManage": {
-			"Viewing_Details": "プロファイルを閲覧中",
+			"Viewing_Details": "Viewing profiles",
 			"Viewing_State": ""
 		},
 		"ProfileEdit": {
-			"Editing_Details": "プロファイルを編集中",
+			"Editing_Details": "Editing profile",
 			"Editing_State": "- {0}"
 		},
 		"ApplicationSettings": {
-			"Viewing_Details": "アプリケーション設定を閲覧中",
+			"Viewing_Details": "Viewing application settings",
 			"Viewing_State": ""
 		},
 		"Playing": {
-			"Playing_Details": "Apex Legends をプレイ中",
-			"Playing_State": "プロファイル: {0}"
+			"Playing_Details": "Playing Apex Legends",
+			"Playing_State": "Profile: {0}"
 		}
 	},
 	"Platform_EAapp": {
 		"Dialog": {
-			"FolderSelectionDialog_Title": "フォルダーを選択"
+			"FolderSelectionDialog_Title": "Select Folder"
 		},
 		"Error": {
-			"FailedToOpenFolderSelectionDialog": "フォルダー選択ダイアログの表示に失敗しました。\n\n{0}",
-			"FailedToOpenFolderSelectionDialog_RequiredRestart": "フォルダー選択ダイアログの表示に失敗しました。\nアプリケーションを再起動してください。\n\n{0}",
-			"ConfigFileNotFound": "EA app のコンフィグファイルが見つかりません。\nコンフィグファイルが生成されていない可能性があります。\nコンフィグファイルを生成させるため、EA app を再起動してからもう一度お試しください。",
-			"ConfigFileNotFound_UserFolderSettingsRequired": "EA app のコンフィグファイルが見つかりません。\nコンフィグが別のユーザーフォルダーに保存されている可能性があります。\nアプリケーション設定で「EA app コンフィグフォルダー」へ、現在ログインしている Windows のユーザーフォルダーを設定してください。"
+			"FailedToOpenFolderSelectionDialog": "Failed to open folder selection dialog.\n\n{0}",
+			"FailedToOpenFolderSelectionDialog_RequiredRestart": "Failed to open folder selection dialog.\nPlease restart the application.\n\n{0}",
+			"ConfigFileNotFound": "EA app config file not found.\nThe config file may not have been generated.\nPlease restart EA app to generate the config file, then try again.",
+			"ConfigFileNotFound_UserFolderSettingsRequired": "EA app config file not found.\nThe config may be saved in a different user folder.\nPlease set the \"EA app Config Folder\" in the application settings to the user folder of the currently logged in Windows user."
 		}
 	},
 	"ProfileManagement": {
 		"General": {
-			"NotFound": "指定されたプロファイル (ID: {0}) は存在しません。"
+			"NotFound": "The specified profile (ID: {0}) does not exist."
 		},
 		"Shortcut": {
-			"ConfirmCreate": "プロファイル「{0}」のショートカットを作成してもよろしいですか？",
-			"Created": "プロファイル「{0}」のショートカットをデスクトップへ作成しました。",
-			"CannotCreate": "ショートカットの作成に失敗しました。\n\n{0}"
+			"ConfirmCreate": "Are you sure you want to create a shortcut for profile \"{0}\"?",
+			"Created": "Created a shortcut for profile \"{0}\" on the desktop.",
+			"CannotCreate": "Failed to create shortcut.\n\n{0}"
 		},
 		"Delete": {
-			"ConfirmDelete": "プロファイル「{0}」を削除してもよろしいですか？",
-			"CannotDelete": "プロファイル「{0}」は削除できません。"
+			"ConfirmDelete": "Are you sure you want to delete profile \"{0}\"?",
+			"CannotDelete": "Profile \"{0}\" cannot be deleted."
 		},
 		"Dialog": {
-			"FailedToLoadProfiles": "以下のプロファイルの読み込みに失敗しました。\n詳細はデバッグログを参照してください。\n\n{0}",
-			"ConvertedOldDX12Args": "DirectX 12 で起動するための起動引数が シーズン 21 以降に対応していない値だったため、次の値を自動的に置き換えました。\n置換前: {0}\n置換後: {1}\n\n<置換処理を行ったプロファイル>\n{2}"
+			"FailedToLoadProfiles": "Failed to load the following profiles.\nSee the debug log for details.\n\n{0}",
+			"ConvertedOldDX12Args": "The launch arguments for starting with DirectX 12 were not compatible with Season 21 or later, so the following values were automatically replaced.\nBefore replacement: {0}\nAfter replacement: {1}\n\n<Profiles that were replaced>\n{2}"
 		}
 	},
 	"InPlay": {
 		"UI": {
-			"Cancel": "キャンセル",
-			"ProfileName": "プロファイル名",
-			"CursorLock": "カーソルロック",
+			"Cancel": "Cancel",
+			"ProfileName": "Profile Name",
+			"CursorLock": "Cursor Lock",
 			"PID": "PID",
-			"Version": "バージョン",
-			"Build": "ビルド",
-			"LaunchOption": "起動引数"
+			"Version": "Version",
+			"Build": "Build",
+			"LaunchOption": "Launch Options"
 		},
 		"Status": {
-			"ProcessingStartup": "起動処理中...",
-			"ProcessingTermination": "終了処理中...",
-			"ChangingDisplaySettings": "ディスプレイ設定を変更中",
-			"StartingGame": "Apex Legends を起動中",
-			"WaitingForGameToStart": "Apex Legends の起動を待機中",
-			"WaitingForGameToStart_WithRT": "Apex Legends の起動を待機中 - 残り{0}秒",
-			"StoppingGameProcess": "Apex Legends のプロセスを停止中",
-			"MonitoringGameProcess": "Apex Legends のプロセスを追跡中",
-			"WaitingForGameInstallProcess": "Apex Legends がインストール中であることを検知しました インストールが完了するのを待っています...",
-			"WaitingForGameUpdateProcess": "Apex Legends がアップデート中であることを検知しました アップデートが完了するのを待っています...",
-			"WaitingForGameRepairProcess": "Apex Legends が修復中であることを検知しました 修復が完了するのを待っています...",
-			"WaitingForGameInstallProcess_WithStatus": "Apex Legends がインストール中であることを検知しました\nインストールが完了するのを待っています...\n(進行状況: {0} - {1})",
-			"WaitingForGameUpdateProcess_WithStatus": "Apex Legends がアップデート中であることを検知しました\nアップデートが完了するのを待っています...\n(進行状況: {0} - {1})",
-			"WaitingForGameRepairProcess_WithStatus": "Apex Legends が修復中であることを検知しました\n修復が完了するのを待っています...\n(進行状況: {0} - {1})",
-			"CancelingGameInstall": "ゲームのインストール/アップデート/修復処理がキャンセルされました。"
+			"ProcessingStartup": "Processing startup...",
+			"ProcessingTermination": "Processing termination...",
+			"ChangingDisplaySettings": "Changing display settings",
+			"StartingGame": "Launching Apex Legends",
+			"WaitingForGameToStart": "Waiting for Apex Legends to start",
+			"WaitingForGameToStart_WithRT": "Waiting for Apex Legends to start - {0} seconds remaining",
+			"StoppingGameProcess": "Stopping Apex Legends process",
+			"MonitoringGameProcess": "Monitoring Apex Legends process",
+			"WaitingForGameInstallProcess": "Detected that Apex Legends is being installed. Waiting for installation to complete...",
+			"WaitingForGameUpdateProcess": "Detected that Apex Legends is being updated. Waiting for update to complete...",
+			"WaitingForGameRepairProcess": "Detected that Apex Legends is being repaired. Waiting for repair to complete...",
+			"WaitingForGameInstallProcess_WithStatus": "Detected that Apex Legends is being installed.\nWaiting for installation to complete...\n(Progress: {0} - {1})",
+			"WaitingForGameUpdateProcess_WithStatus": "Detected that Apex Legends is being updated.\nWaiting for update to complete...\n(Progress: {0} - {1})",
+			"WaitingForGameRepairProcess_WithStatus": "Detected that Apex Legends is being repaired.\nWaiting for repair to complete...\n(Progress: {0} - {1})",
+			"CancelingGameInstall": "Game installation/update/repair process cancelled."
 		},
 		"Dialog": {
-			"Game_CancelProcessTracking_Confirm": "Apex Legends の待機をキャンセルしてもよろしいですか？",
-			"Game_WontStart": "Apex Legends が起動しませんか？\nEA app のバックグラウンドサービスを再起動すると解決する場合があります。再起動しますか？\n(アップデート中の場合は、一度待機をキャンセルし、アップデート完了後に再度起動してください。)",
-			"Game_ProcessForciblyTerminated": "Apex Legends のプロセスを強制終了しました。\n正常な終了処理が行われていないため、コンフィグなどが保存されていない可能性があります。",
-			"Game_DeleteStartupArgsInEAappProperties": "EA app のプロパティで Apex Legends の起動引数が設定されているため、このまま起動すると意図しない設定が適用されてしまう可能性があります。\n\nEA app のプロパティで設定されている起動引数を削除しますか？\n\n＜設定されている起動引数＞\n{0}",
-			"Window_Close_InPlay_Confirm": "Apex Legends が起動中です。\n強制終了してから {0} を終了しますか？\n(問題が発生する可能性があります)\n\n「はい」をクリックすると Apex Legends を強制終了してから {0} を終了します。\n「いいえ」をクリックすると {0} の終了をキャンセルします。",
-			"Window_Close_InLaunchProcess_Confirm": "Apex Legends の起動処理中です。\n起動処理をキャンセルしてから {0} を終了しますか？\n({0} の終了後に Apex Legends が起動する可能性があります。)\n\n「はい」をクリックすると Apex Legends の起動処理をキャンセルしてから {0} を終了します。\n「いいえ」をクリックすると {0} の終了をキャンセルします。"
+			"Game_CancelProcessTracking_Confirm": "Are you sure you want to cancel waiting for Apex Legends?",
+			"Game_WontStart": "Is Apex Legends not starting?\nRestarting the EA app's background service may resolve the issue. Do you want to restart it?\n(If it is updating, cancel the wait once and try launching again after the update is complete.)",
+			"Game_ProcessForciblyTerminated": "Apex Legends process was forcibly terminated.\nBecause it did not terminate normally, configs, etc. may not have been saved.",
+			"Game_DeleteStartupArgsInEAappProperties": "Launch arguments are set in the EA app properties for Apex Legends. Launching the game with these arguments may apply unintended settings.\n\nDo you want to remove the launch arguments set in the EA app properties?\n\n<Set launch arguments>\n{0}",
+			"Window_Close_InPlay_Confirm": "Apex Legends is running.\nForce quit and close {0}?\n(Problems may occur)\n\nClicking \"Yes\" will force quit Apex Legends and then close {0}.\nClicking \"No\" will cancel closing {0}.",
+			"Window_Close_InLaunchProcess_Confirm": "Apex Legends is launching.\nCancel launch process and close {0}?\n(Apex Legends may launch after {0} is closed.)\n\nClicking \"Yes\" will cancel the Apex Legends launch process and then close {0}.\nClicking \"No\" will cancel closing {0}."
 		},
 		"Log": {
-			"Done": "完了",
-			"Path": "パス",
-			"Platform": "プラットフォーム",
-			"WindowHandle": "ウィンドウハンドル",
-			"MainWindowHandle": "メインウィンドウハンドル",
-			"Download": "ダウンロード",
-			"StatusCode": "ステータスコード",
-			"Error": "エラー",
-			"ImageSimilarity": "画像の類似度",
-			"ConfigFile": "コンフィグファイル",
-			"ProfileConfigFile": "プロファイルコンフィグファイル",
-			"VideoConfigFile": "ビデオコンフィグファイル",
-			"LoadingProfile": "プロファイルの読み込み中",
-			"GettingDetailsOfInstalledGames": "インストールされているゲームの情報を取得中",
-			"GettingGameInstallationLocation": "ゲームのインストール先を取得中",
-			"GenerateAutoexec": "Autoexec を生成: {0}",
-			"StartEditingVideoConfig": "ビデオコンフィグの編集を開始",
-			"RetrievingLatestTitleScreenImage": "- 最新のタイトル画面を取得",
-			"RetrievingLatestTitleScreenImage_Succeeded": " - 成功: {0}",
-			"RetrievingLatestTitleScreenImage_Failed": " - 失敗: {0}",
-			"DeleteStartupArgsInConfig": "コンフィグの起動引数を削除",
-			"GetConfigFile": "{0}を取得",
-			"CopyConfigFile": "{0}をコピー",
-			"RestoreConfigFile": "{0}を復元",
-			"SaveProfileSpecificConfigFile": "プロファイル専用コンフィグを保存",
-			"RestoreGlobalConfigFile": "共通コンフィグを復元",
+			"Done": "Done",
+			"Path": "Path",
+			"Platform": "Platform",
+			"WindowHandle": "Window Handle",
+			"MainWindowHandle": "Main Window Handle",
+			"Download": "Download",
+			"StatusCode": "Status Code",
+			"Error": "Error",
+			"ImageSimilarity": "Image Similarity",
+			"ConfigFile": "Config File",
+			"ProfileConfigFile": "Profile Config File",
+			"VideoConfigFile": "Video Config File",
+			"LoadingProfile": "Loading profile",
+			"GettingDetailsOfInstalledGames": "Getting details of installed games",
+			"GettingGameInstallationLocation": "Getting game installation location",
+			"GenerateAutoexec": "Generate Autoexec: {0}",
+			"StartEditingVideoConfig": "Start editing video config",
+			"RetrievingLatestTitleScreenImage": "- Retrieving latest title screen image",
+			"RetrievingLatestTitleScreenImage_Succeeded": " - Succeeded: {0}",
+			"RetrievingLatestTitleScreenImage_Failed": " - Failed: {0}",
+			"DeleteStartupArgsInConfig": "Delete startup arguments in config",
+			"GetConfigFile": "Get {0}",
+			"CopyConfigFile": "Copy {0}",
+			"RestoreConfigFile": "Restore {0}",
+			"SaveProfileSpecificConfigFile": "Save profile-specific config file",
+			"RestoreGlobalConfigFile": "Restore global config file",
 			"CopyConfigFile_Path": "{0} → {1}",
-			"TransferConfigFile_Path": "(移行): {0} → {1}",
-			"SystemDisplaySettings_Get": "システムのディスプレイ設定を取得",
-			"SystemDisplaySettings_Change": "システムのディスプレイ設定を変更",
-			"SystemDisplaySettings_Restore": "システムのディスプレイ設定を復元",
-			"Game_Launch": "Apex Legends を起動",
-			"Game_Starting": "Apex Legends を起動中...",
-			"Game_StartProcessTracking": "プロセスの追跡を開始します...",
-			"Game_EndProcessTracking": "プロセスの追跡を終了します...",
-			"EAapp_ConfigEditing": "EA app コンフィグ編集",
-			"EAapp_Close": "EA app を終了",
-			"EAapp_GetProcess": "EA app のプロセスを取得",
-			"EAapp_TerminateProcess": "EA app のプロセスを終了",
-			"EAapp_ProcessNotFound": "EA app のプロセスが見つかりませんでした",
-			"EAapp_Launch": "EA app を起動",
-			"EAapp_Launch_ViaSteam": "EA app を起動 (Steam 経由)",
-			"EAapp_SearchingForProcess": "EA app のプロセスを検索中",
-			"EAapp_WaitingForWindow": "ウィンドウの表示を待機中 (これには時間がかかる場合があります)",
-			"TitleScreenImage_CouldNotGetLatestImageFileName": "最新の画像ファイル名を取得できませんでした | ステータスコード: {0}",
-			"TitleScreenImage_AlreadyDownloaded": "既に最新の画像ファイルがダウンロードされています | ステータスコード: {0}",
-			"TitleScreenImage_FailedToDownload": "最新の画像ファイル({0})を取得できませんでした | ステータスコード: {1}",
-			"AltEnterAutoPress_Waiting": "Alt+Enter の自動押下の実行まで待機中",
-			"AltEnterAutoPress_WaitingForTitleScreen": "タイトル画面の表示を待機中",
-			"AltEnterAutoPress_WaitingForWindow": "ウィンドウの表示を待機中",
-			"AltEnterAutoPress_CannotExecute_TitleScreenImageNotFound": "タイトル画面の画像ファイルが見つからないため、自動押下を実行できません",
-			"AltEnterAutoPress_ScreenCaptureFailed_ProcessWindowNotSelected": "画面キャプチャー失敗: プロセスのウィンドウが選択されていません",
-			"AltEnterAutoPress_WaitingTime": "待機時間: {0}秒",
-			"AltEnterAutoPress_WaitingTime_Left": "残り {0}秒",
-			"AltEnterAutoPress_Execute": "Alt+Enter の自動押下を実行",
-			"CursorLock_Enabled": "カーソルロック有効化",
-			"CursorLock_Disabled": "カーソルロック無効化"
+			"TransferConfigFile_Path": "(Transfer): {0} → {1}",
+			"SystemDisplaySettings_Get": "Get system display settings",
+			"SystemDisplaySettings_Change": "Change system display settings",
+			"SystemDisplaySettings_Restore": "Restore system display settings",
+			"Game_Launch": "Launch Apex Legends",
+			"Game_Starting": "Starting Apex Legends...",
+			"Game_StartProcessTracking": "Starting process tracking...",
+			"Game_EndProcessTracking": "Ending process tracking...",
+			"EAapp_ConfigEditing": "EA app config editing",
+			"EAapp_Close": "Close EA app",
+			"EAapp_GetProcess": "Get EA app process",
+			"EAapp_TerminateProcess": "Terminate EA app process",
+			"EAapp_ProcessNotFound": "EA app process not found",
+			"EAapp_Launch": "Launch EA app",
+			"EAapp_Launch_ViaSteam": "Launch EA app (via Steam)",
+			"EAapp_SearchingForProcess": "Searching for EA app process",
+			"EAapp_WaitingForWindow": "Waiting for window to appear (this may take some time)",
+			"TitleScreenImage_CouldNotGetLatestImageFileName": "Could not get latest image file name | Status Code: {0}",
+			"TitleScreenImage_AlreadyDownloaded": "Latest image file already downloaded | Status Code: {0}",
+			"TitleScreenImage_FailedToDownload": "Failed to get latest image file ({0}) | Status Code: {1}",
+			"AltEnterAutoPress_Waiting": "Waiting to automatically press Alt+Enter",
+			"AltEnterAutoPress_WaitingForTitleScreen": "Waiting for title screen",
+			"AltEnterAutoPress_WaitingForWindow": "Waiting for window",
+			"AltEnterAutoPress_CannotExecute_TitleScreenImageNotFound": "Cannot execute auto-press because title screen image file not found",
+			"AltEnterAutoPress_ScreenCaptureFailed_ProcessWindowNotSelected": "Screen capture failed: Process window not selected",
+			"AltEnterAutoPress_WaitingTime": "Waiting time: {0} seconds",
+			"AltEnterAutoPress_WaitingTime_Left": "{0} seconds remaining",
+			"AltEnterAutoPress_Execute": "Execute Alt+Enter auto-press",
+			"CursorLock_Enabled": "Cursor lock enabled",
+			"CursorLock_Disabled": "Cursor lock disabled"
 		},
 		"ErrorLog": {
-			"StartupProcessFailed": "<エラー番号: {0}>\n{1}\n\n{2}",
-			"EAappConfigEditingFailed_WithErrMsg": "EA app コンフィグ編集失敗: {0}",
-			"EAappConfigEditingFailed_CouldNotLoadConfigFile": "EA app コンフィグ編集失敗: コンフィグファイルを読み込めませんでした (ID: {0})",
-			"EAappConfigEditingFailed_CouldNotGetLoggedInUser": "EA app コンフィグ編集失敗: ログイン中のユーザーを取得できませんでした",
-			"Game_ProcessTrackingError": "プロセス監視エラー: {0}",
-			"Game_ProcessTrackingTerminationError": "監視終了処理でエラーが発生しました。\n\n{0}",
-			"SystemDisplaySettings_RestoringError": "システムのディスプレイ設定の復元処理でエラーが発生しました。",
-			"ConfigFile_RestoringError": "コンフィグファイルの復元処理でエラーが発生しました。",
-			"ProfileConfigFile_RestoringError": "プロファイルコンフィグファイルの復元処理でエラーが発生しました。",
-			"VideoConfigFile_EditingFailed_CorruptedFile": "ビデオコンフィグファイルが壊れている可能性があるため、ファイルを読み込めませんでした。ビデオ設定がリセットされる可能性があります。",
-			"VideoConfigFile_RestoringError": "ビデオコンフィグファイルの復元処理でエラーが発生しました。",
-			"VideoConfigFile_SettingsRestoringError": "ビデオコンフィグ設定項目の復元処理でエラーが発生しました。",
-			"TT_LastPlayDate_RecordError": "最終プレイ日時の記録処理でエラーが発生しました。",
-			"TT_TotalPlayTime_RecordError": "総プレイ時間の記録処理でエラーを発生しました。",
-			"TT_DiscordRPC_TimestampResetError": "Discord RPC のタイムスタンプリセットでエラーが発生しました。"
+			"StartupProcessFailed": "<Error Number: {0}>\n{1}\n\n{2}",
+			"EAappConfigEditingFailed_WithErrMsg": "EA app config editing failed: {0}",
+			"EAappConfigEditingFailed_CouldNotLoadConfigFile": "EA app config editing failed: Could not load config file (ID: {0})",
+			"EAappConfigEditingFailed_CouldNotGetLoggedInUser": "EA app config editing failed: Could not get logged-in user",
+			"Game_ProcessTrackingError": "Process tracking error: {0}",
+			"Game_ProcessTrackingTerminationError": "An error occurred during the monitoring termination process.\n\n{0}",
+			"SystemDisplaySettings_RestoringError": "An error occurred while restoring the system display settings.",
+			"ConfigFile_RestoringError": "An error occurred while restoring the config file.",
+			"ProfileConfigFile_RestoringError": "An error occurred while restoring the profile config file.",
+			"VideoConfigFile_EditingFailed_CorruptedFile": "The video config file could not be loaded because it may be corrupted. Video settings may be reset.",
+			"VideoConfigFile_RestoringError": "An error occurred while restoring the video config file.",
+			"VideoConfigFile_SettingsRestoringError": "An error occurred while restoring the video config settings.",
+			"TT_LastPlayDate_RecordError": "An error occurred while recording the last play date.",
+			"TT_TotalPlayTime_RecordError": "An error occurred while recording the total play time.",
+			"TT_DiscordRPC_TimestampResetError": "An error occurred while resetting the Discord RPC timestamp."
 		},
 		"Error": {
-			"0": "起動処理時にエラーが発生しました。",
-			"1": "プロファイルの読み込みに失敗しました。",
-			"2": "ディスプレイ設定の変更に失敗しました。\n\nサポートされている解像度でこのエラーが発生している場合は、スケーリングモードを変更してからもう一度お試しください。",
-			"3": "Apex Legends の起動時にエラーが発生しました。",
-			"4": "Apex Legends を起動できませんでした。Apex Legends がインストールされていない可能性があります。",
-			"5": "Apex Legends のプロセスを時間内に取得できませんでした。",
-			"6": "Alt+Enter 自動押下の待機時にエラーが発生しました。",
-			"7": "Alt+Enter 自動押下の実行時にエラーが発生しました。",
-			"8": "Apex Legends の起動に失敗しました。",
-			"9": "起動引数の変更失敗",
-			"10": "ビデオコンフィグの変更に失敗しました。",
-			"11": "プロセスの待機がキャンセルされました。",
-			"12": "インストール先の取得に失敗しました。",
-			"13": "コンフィグの取得に失敗しました。",
-			"14": "コンフィグの作成に失敗しました。",
-			"15": "コンフィグの復元に失敗しました。",
-			"16": "ビデオコンフィグの取得に失敗しました。",
-			"17": "ビデオコンフィグの作成に失敗しました。",
-			"18": "ビデオコンフィグの復元に失敗しました。",
-			"19": "プロファイルコンフィグの取得に失敗しました。",
-			"20": "プロファイルコンフィグの作成に失敗しました。",
-			"21": "プロファイルコンフィグの復元に失敗しました。",
-			"22": "EA app のコンフィグから起動引数を削除できませんでした。",
-			"StartupProcessFailed": "<エラー番号: {0}>\n{1}\n\n{2}",
-			"FailedToLaunch_FileNotFound": "Apex Legends の起動に失敗しました。\n指定されたパス「{0}」にファイルが見つかりませんでした。",
-			"Game_ProcessTrackingTerminationError": "終了処理でエラーが発生しました。\n正常な終了処理が行われていないため、一部の設定が保存されていなかったりする可能性があります。\n\n{0}",
-			"Game_StartupProcessingIsAlreadyInProgress": "既に起動処理が実行中です。",
-			"Game_CouldNotGetProcess_Timeout": "時間内に Apex Legends のプロセスを取得出来ませんでした。",
-			"Profile_SpecifiedProfileNotFound": "指定されたプロファイル {0} は存在しません。",
-			"InstallPath_EACNotFoundInFolder": "指定されたフォルダー「{0}」に「EasyAntiCheat_launcher.exe」が見つかりませんでした。",
-			"InstallPath_FileNotFound": "指定されたファイルが見つかりませんでした。\n- パス: {0}",
-			"SystemDisplaySettings_UnsupportedDisplaySettings": "対応していないディスプレイ設定です。\n\nNVIDIA コントロールパネルなどでカスタム解像度を作成してからもう一度お試しください。",
-			"EAapp_FindProcess_Timeout": "時間内に EA app のプロセスを取得できませんでした。",
-			"EAapp_CouldNotGetWindowHandle": "EA app のウィンドウハンドルを取得できませんでした。"
+			"0": "An error occurred during the startup process.",
+			"1": "Failed to load profile.",
+			"2": "Failed to change display settings.\n\nIf this error occurs with a supported resolution, please try again after changing the scaling mode.",
+			"3": "An error occurred while launching Apex Legends.",
+			"4": "Could not launch Apex Legends. Apex Legends may not be installed.",
+			"5": "Could not acquire Apex Legends process within the time limit.",
+			"6": "An error occurred while waiting for Alt+Enter auto-press.",
+			"7": "An error occurred while executing Alt+Enter auto-press.",
+			"8": "Failed to launch Apex Legends.",
+			"9": "Failed to change launch arguments.",
+			"10": "Failed to change video config.",
+			"11": "Process wait cancelled.",
+			"12": "Failed to get installation path.",
+			"13": "Failed to get config.",
+			"14": "Failed to create config.",
+			"15": "Failed to restore config.",
+			"16": "Failed to get video config.",
+			"17": "Failed to create video config.",
+			"18": "Failed to restore video config.",
+			"19": "Failed to get profile config.",
+			"20": "Failed to create profile config.",
+			"21": "Failed to restore profile config.",
+			"22": "Could not remove launch arguments from the EA app config.",
+			"StartupProcessFailed": "<Error Number: {0}>\n{1}\n\n{2}",
+			"FailedToLaunch_FileNotFound": "Failed to launch Apex Legends.\nThe file was not found at the specified path \"{0}\".",
+			"Game_ProcessTrackingTerminationError": "An error occurred during the termination process.\nSome settings may not have been saved because the process did not terminate normally.\n\n{0}",
+			"Game_StartupProcessingIsAlreadyInProgress": "Startup process is already in progress.",
+			"Game_CouldNotGetProcess_Timeout": "Could not get the Apex Legends process within the time limit.",
+			"Profile_SpecifiedProfileNotFound": "The specified profile {0} does not exist.",
+			"InstallPath_EACNotFoundInFolder": "\"EasyAntiCheat_launcher.exe\" was not found in the specified folder \"{0}\".",
+			"InstallPath_FileNotFound": "The specified file was not found.\n- Path: {0}",
+			"SystemDisplaySettings_UnsupportedDisplaySettings": "Unsupported display settings.\n\nPlease create a custom resolution in the NVIDIA Control Panel, etc. and try again.",
+			"EAapp_FindProcess_Timeout": "Could not get the EA app process within the time limit.",
+			"EAapp_CouldNotGetWindowHandle": "Could not get the EA app window handle."
 		}
 	},
 	"Panel": {
 		"MainMenu_ProfileList": {
-			"SortOrderList;List": "名前 (昇順),名前 (降順),ディスプレイ設定 (昇順),ディスプレイ設定 (降順),プラットフォーム (昇順),プラットフォーム (降順),最終プレイ日時 (近い順),最終プレイ日時 (遠い順),総プレイ時間 (短い順),総プレイ時間 (長い順)",
-			"ItemDetail_Resolution": "解像度: {0}×{1} ({2}) - {3} Hz",
-			"ItemDetail_Resolution_Native": "解像度: ネイティブ",
-			"ItemDetail_Additional": "総プレイ時間: {0}\n最終プレイ日時: {1}"
+			"SortOrderList;List": "Name (Ascending),Name (Descending),Display Settings (Ascending),Display Settings (Descending),Platform (Ascending),Platform (Descending),Last Played (Recent),Last Played (Oldest),Total Play Time (Shortest),Total Play Time (Longest)",
+			"ItemDetail_Resolution": "Resolution: {0}×{1} ({2}) - {3} Hz",
+			"ItemDetail_Resolution_Native": "Resolution: Native",
+			"ItemDetail_Additional": "Total Play Time: {0}\nLast Played: {1}"
 		},
 		"ProfileManage_ContextMenu": {
-			"EditButton": "編集",
-			"CreateShortcutButton": "ショートカットを作成",
-			"ChangeNameButton": "名前の変更",
-			"DeleteButton": "削除"
+			"EditButton": "Edit",
+			"CreateShortcutButton": "Create Shortcut",
+			"ChangeNameButton": "Rename",
+			"DeleteButton": "Delete"
 		}
 	},
 	"InputDialog": {
 		"Control": {
-			"Done": "完了",
-			"Cancel": "キャンセル"
+			"Done": "Done",
+			"Cancel": "Cancel"
 		}
 	},
 	"1": {
 		"1": {
-			"1": "プレイ",
-			"2": "プロファイル",
-			"3": "アカウント",
-			"4": "設定"
+			"1": "Play",
+			"2": "Profile",
+			"3": "Account",
+			"4": "Settings"
 		},
 		"2": {
-			"1": "地域: {0}",
-			"2": "クロスプレイ認証",
-			"3": "ロビー/マッチメイキング",
-			"4": "Origin ログイン",
-			"5": "EA アカウント",
+			"1": "Region: {0}",
+			"2": "Cross-Play Authentication",
+			"3": "Lobby/Matchmaking",
+			"4": "Origin Login",
+			"5": "EA Account",
 			"6": "LegendUtil API",
-			"7": "サーバーステータスの取得に失敗しました",
-			"8": "ニュース"
+			"7": "Failed to retrieve server status",
+			"8": "News"
 		},
 		"3": {
-			"1": "プレイ",
-			"2": "取得できませんでした",
-			"3": "停止",
-			"4": "Apex Legends のプロセスを停止してもよろしいですか？\r\n設定などの情報が正常に保存されない可能性があります。"
+			"1": "Play",
+			"2": "Could not be retrieved",
+			"3": "Stop",
+			"4": "Are you sure you want to stop the Apex Legends process?\r\nSettings and other information may not be saved correctly."
 		}
 	},
 	"2": {
 		"1": {
-			"1": "プロファイルを新規作成",
-			"2": "選択しているプロファイルを編集",
-			"3": "選択しているプロファイルのショートカットを作成",
-			"4": "選択しているプロファイルの名前を変更",
-			"5": "選択しているプロファイルを削除",
-			"6": "名前",
+			"1": "Create a new profile",
+			"2": "Edit selected profile",
+			"3": "Create shortcut for selected profile",
+			"4": "Rename selected profile",
+			"5": "Delete selected profile",
+			"6": "Name",
 			"7": "ID",
-			"8": "ディスプレイ設定",
-			"9": "プロファイルの新規作成",
-			"10": "プロファイルの作成方法を選択してください。\r\nウィザードを使用すると、プリセットからプロファイルを作成できます。",
-			"11": "空のプロファイルを作成",
-			"12": "プリセットからプロファイルを作成",
-			"13": "作成するプロファイルの名前を入力してください。",
-			"14": "名前が入力されていません。",
-			"15": "プロファイル「{0}」を作成しました。",
-			"16": "プロファイルの名前を変更",
-			"17": "プロファイル「{0}」の名前は変更できません。",
-			"18": "変更したい名前を入力してください。",
-			"19": "プロファイルの名前が入力されていません。",
-			"20": "最終プレイ日時",
-			"21": "総プレイ時間",
-			"22": "{0}時間{1}分"
+			"8": "Display settings",
+			"9": "Create new profile",
+			"10": "Select how to create a profile.\r\nUsing the wizard, you can create a profile from a preset.",
+			"11": "Create empty profile",
+			"12": "Create profile from preset",
+			"13": "Enter the name of the profile you want to create.",
+			"14": "Name not entered.",
+			"15": "Profile \"{0}\" created.",
+			"16": "Rename profile",
+			"17": "Profile \"{0}\" cannot be renamed.",
+			"18": "Enter the name you want to change it to.",
+			"19": "Profile name not entered.",
+			"20": "Last played",
+			"21": "Total play time",
+			"22": "{0} hour(s) {1} minute(s)"
 		}
 	},
 	"3": {
 		"1": {
-			"1": "編集中: {0}",
-			"2": "項目にカーソルを合わせると説明が表示されます"
+			"1": "Editing: {0}",
+			"2": "Hover over an item to see a description."
 		},
 		"2": {
-			"1": "全般",
-			"2": "起動引数",
+			"1": "General",
+			"2": "Launch Options",
 			"3": "Autoexec",
-			"4": "コンフィグ",
-			"5": "ビデオコンフィグ"
+			"4": "Config",
+			"5": "Video Config"
 		},
 		"3": {
-			"1": "プラットフォーム",
-			"2": "Apex Legends の実行ファイル",
-			"3": "自動取得 (推奨)",
-			"4": "自動取得を実行",
-			"5": "Steamを経由して起動する",
-			"6": "EA app の AppID",
-			"7": "カーソルロック",
-			"8": "解像度の変更 (引き伸ばし)",
-			"9": "システムの解像度を変更する",
-			"10": "スケーリングモード",
-			"17": "起動後の Alt+Enter 自動押下",
-			"14": "プリセット",
-			"13": "リフレッシュレート",
-			"12": "解像度",
-			"11": "スケーリングなし,伸縮,中央",
-			"15": "選択すると自動入力されます",
-			"20": "待機時間",
-			"18": "自動押下の方法",
-			"19": "画像認識,時間",
-			"21": "秒",
-			"22": "取得できませんでした",
-			"23": "Alt+Enter 自動押下の画像処理に必要なファイルが不足しています。\r\nダウンロードしますか？",
-			"24": "Apex Legends のインストール先を取得できませんでした。\r\n指定されたプラットフォーム「{0}」で Apex Legends がインストールされていない可能性があります。",
-			"25": "＜ディスプレイのスケーリングモード＞\r\n・スケーリングなし\r\n    表示される画面がオリジナルのサイズのままでディスプレイの中央に配置されます。\r\n    ディスプレイの解像度よりも小さい解像度に設定されている場合は、余った領域に黒い帯が出来ます。\r\n\r\n・伸縮\r\n    表示される画面が\"アスペクト比を維持せずに\"ディスプレイに合わせて伸縮して表示されます。\r\n    アスペクト比が異なる場合でも、引き伸ばされて表示されます。\r\n    ※ 解像度の引き伸ばしを行う場合はこの設定を推奨します ※\r\n\r\n・中央\r\n    表示される画面が\"アスペクト比を維持しながら\"ディスプレイに合わせて伸縮して表示されます。\r\n    アスペクト比が異なる場合は、余った領域に黒い帯が出来ます。",
-			"26": "[非対応]",
-			"27": "お使いのディスプレイは、選択された設定 {0}×{1}@{2}Hz ({3}) に対応していません。\n本当に設定しますか？\n\n(引き伸ばしを行う場合は、NVIDIA コントロールパネルなどでカスタム解像度を作成してから、もう一度お試しください。)",
-			"28": "必要なファイルをダウンロード中",
-			"29": "ファイルを展開中",
-			"30": "完了",
-			"31": "ダウンロードが完了しました。",
-			"32": "非対応の設定を表示する",
-			"33": "Apex Legends のインストール先が見つかりました。\r\n\r\nパス: {0}",
-			"34": "アカウント",
-			"35": "テスト",
-			"36": "＜注意＞\nDirectX 12 が有効になっています。\nDirectX 12 を有効にした状態で引き伸ばしを行う場合は、「システムの解像度を変更する」を有効、「スケーリングモード」を「伸縮」に設定する必要があります。"
+			"1": "Platform",
+			"2": "Apex Legends executable file",
+			"3": "Auto-detect (Recommended)",
+			"4": "Execute auto-detect",
+			"5": "Launch via Steam",
+			"6": "EA app AppID",
+			"7": "Cursor lock",
+			"8": "Resolution change (stretch)",
+			"9": "Change system resolution",
+			"10": "Scaling mode",
+			"17": "Auto-press Alt+Enter after launch",
+			"14": "Preset",
+			"13": "Refresh rate",
+			"12": "Resolution",
+			"11": "No scaling,Stretched,Centered",
+			"15": "Automatically entered when selected",
+			"20": "Wait time",
+			"18": "Auto-press method",
+			"19": "Image recognition,Time",
+			"21": "seconds",
+			"22": "Could not get",
+			"23": "Files required for Alt+Enter auto-press image processing are missing.\r\nDo you want to download them?",
+			"24": "Could not retrieve Apex Legends installation location.\r\nApex Legends may not be installed on the specified platform \"{0}\".",
+			"25": "<Display Scaling Mode>\r\n・No scaling\r\n    The displayed screen will be placed in the center of the display at its original size.\r\n    If the resolution is set smaller than the display resolution, black bars will appear in the remaining area.\r\n\r\n・Stretched\r\n    The displayed screen will be stretched to fit the display \"without maintaining the aspect ratio\".\r\n    Even if the aspect ratio is different, it will be stretched to display.\r\n    ※ This setting is recommended when stretching the resolution ※\r\n\r\n・Centered\r\n    The displayed screen will be stretched to fit the display \"while maintaining the aspect ratio\".\r\n    If the aspect ratio is different, black bars will appear in the remaining area.",
+			"26": "[Unsupported]",
+			"27": "Your display does not support the selected setting {0}×{1}@{2}Hz ({3}).\nAre you sure you want to set it?\n\n(If you want to stretch, create a custom resolution in the NVIDIA Control Panel etc. and try again.)",
+			"28": "Downloading required files",
+			"29": "Extracting files",
+			"30": "Complete",
+			"31": "Download complete.",
+			"32": "Show unsupported settings",
+			"33": "Apex Legends installation location found.\r\n\r\nPath: {0}",
+			"34": "Account",
+			"35": "Test",
+			"36": "<Caution>\nDirectX 12 is enabled.\nIf you want to stretch with DirectX 12 enabled, you need to enable \"Change system resolution\" and set \"Scaling mode\" to \"Stretched\"."
 		},
 		"4": {
-			"2": "下記の選択肢にない起動引数はここに入力してください。\n既存の起動引数のテキストを入力して「解析」を実行すると、LegendUtil が自動的に解析して読み込みます。",
-			"1": "追加引数",
-			"3": "解析"
+			"2": "Enter any launch arguments not listed in the options below here.\nEnter the text of the existing launch arguments and execute \"Parse\" to have LegendUtil automatically parse and load them.",
+			"1": "Additional arguments",
+			"3": "Parse"
 		},
 		"5": {
-			"1": "＜統計情報＞\n- オプション数: {0}"
+			"1": "<Statistics>\n- Number of options: {0}"
 		},
 		"コンフィグパネル部品": {
-			"ベースフレーム": "コンフィグ",
-			"コンフィグ指定ラベル": "読み込むファイル",
-			"__DropDownList;コンフィグ指定選択リスト": "共通,プロファイル",
-			"コンフィグ読み取り専用ラベル": "読み取り専用",
-			"コンフィグ読み取り専用チェックボックス": "有効",
-			"コンフィグファイル開くボタン": "ファイルを開く",
-			"__Text;コンフィグ未生成警告": "コンフィグが生成されていません。一度このプロファイルでゲームを起動してください。",
-			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
+			"ベースフレーム": "Config",
+			"コンフィグ指定ラベル": "File to load",
+			"__DropDownList;コンフィグ指定選択リスト": "Global,Profile",
+			"コンフィグ読み取り専用ラベル": "Read-only",
+			"コンフィグ読み取り専用チェックボックス": "Enabled",
+			"コンフィグファイル開くボタン": "Open File",
+			"__Text;コンフィグ未生成警告": "Config has not been generated. Launch the game once with this profile.",
+			"__Text;ファイル取得失敗エラー": "Failed to retrieve the file.\n\n{0}"
 		},
 		"コンフィグパネル部品2": {
-			"ベースフレーム": "プロファイルコンフィグ",
-			"コンフィグ指定ラベル": "読み込むファイル",
-			"__DropDownList;コンフィグ指定選択リスト": "共通,プロファイル",
-			"コンフィグ読み取り専用ラベル": "読み取り専用",
-			"コンフィグ読み取り専用チェックボックス": "有効",
-			"コンフィグファイル開くボタン": "ファイルを開く",
-			"__Text;コンフィグ未生成警告": "プロファイルコンフィグが生成されていません。一度このプロファイルでゲームを起動してください。",
-			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
+			"ベースフレーム": "Profile Config",
+			"コンフィグ指定ラベル": "File to load",
+			"__DropDownList;コンフィグ指定選択リスト": "Global,Profile",
+			"コンフィグ読み取り専用ラベル": "Read-only",
+			"コンフィグ読み取り専用チェックボックス": "Enabled",
+			"コンフィグファイル開くボタン": "Open File",
+			"__Text;コンフィグ未生成警告": "Profile config has not been generated. Launch the game once with this profile.",
+			"__Text;ファイル取得失敗エラー": "Failed to retrieve the file.\n\n{0}"
 		},
 		"コンフィグパネル部品3": {
-			"ベースフレーム": "ビデオコンフィグ",
-			"コンフィグ指定ラベル": "読み込むファイル",
-			"__DropDownList;コンフィグ指定選択リスト": "共通,プロファイル",
-			"コンフィグ読み取り専用ラベル": "読み取り専用",
-			"コンフィグ読み取り専用チェックボックス": "有効",
-			"コンフィグファイル開くボタン": "ファイルを開く",
-			"__Text;コンフィグ未生成警告": "ビデオコンフィグが生成されていません。一度このプロファイルでゲームを起動してください。",
-			"__Text;ファイル取得失敗エラー": "ファイルの取得に失敗しました。\n\n{0}"
+			"ベースフレーム": "Video Config",
+			"コンフィグ指定ラベル": "File to load",
+			"__DropDownList;コンフィグ指定選択リスト": "Global,Profile",
+			"コンフィグ読み取り専用ラベル": "Read-only",
+			"コンフィグ読み取り専用チェックボックス": "Enabled",
+			"コンフィグファイル開くボタン": "Open File",
+			"__Text;コンフィグ未生成警告": "Video config has not been generated. Launch the game once with this profile.",
+			"__Text;ファイル取得失敗エラー": "Failed to retrieve the file.\n\n{0}"
 		}
 	},
 	"4": {
 		"1": {
-			"1": "変更内容は自動的に保存されます",
-			"ExperimentalFeatures": "実験的機能",
-			"Activate": "有効化"
+			"1": "Changes are saved automatically",
+			"ExperimentalFeatures": "Experimental Features",
+			"Activate": "Activate"
 		}
 	},
 	"5": {
 		"1": {
-			"1": "オープンソースライセンス"
+			"1": "Open Source Licenses"
 		}
 	},
 	"6": {
 		"1": {
-			"1": "アップデートを確認中...",
-			"2": "インストーラーをダウンロード中...",
-			"3": "インストールされている {0} は最新のバージョンです！\r\nリリースチャンネル: {1}\r\n\r\n現在のバージョン: {2} ({3})\r\n最新のバージョン: {4}"
+			"1": "Checking for updates...",
+			"2": "Downloading installer...",
+			"3": "The installed {0} is the latest version!\r\nRelease channel: {1}\r\n\r\nCurrent version: {2} ({3})\r\nLatest version: {4}"
 		},
 		"2": {
-			"1": "新しいバージョンがリリースされています！",
-			"2": "現在のバージョン: {0}\r\n最新のバージョン: {1}",
-			"3": "アップデート",
-			"4": "あとで"
+			"1": "A new version has been released!",
+			"2": "Current version: {0}\r\nLatest version: {1}",
+			"3": "Update",
+			"4": "Later"
 		}
 	},
 	"7": {
 		"1": {
-			"1": "アカウントが追加されていません。\r\n「追加」をクリックして、EA app でログインしているアカウントを追加しましょう。",
-			"2": "名前",
+			"1": "No accounts have been added.\r\nClick \"Add\" to add the account you are logged in to on EA app.",
+			"2": "Name",
 			"3": "ID",
-			"4": "しばらくアカウントにログインしていないと、再度ログインを求められる場合があります。\r\nログインを求められた場合は、ログインを行った後に「追加」ボタンをクリックしてキャッシュを更新してください。"
+			"4": "If you haven't logged in to your account for a while, you may be asked to log in again.\r\nIf you are asked to log in, please log in and then click the \"Add\" button to update the cache."
 		},
 		"2": {
-			"1": "ログイン中のアカウント: {0}",
-			"2": "ログイン中のアカウント: {0} (追加されていないアカウント)"
+			"1": "Logged in account: {0}",
+			"2": "Logged in account: {0} (Account not added)"
 		},
 		"3": {
-			"1": "追加",
-			"2": "切り替え",
-			"3": "名前を変更",
-			"4": "削除"
+			"1": "Add",
+			"2": "Switch",
+			"3": "Rename",
+			"4": "Delete"
 		}
 	},
 	"Config": {
 		"Design": {
-			"__Name": "外観",
-			"Theme;Name": "テーマ",
-			"Theme;Desc": "ユーザーインターフェースのテーマ\r\n(適用するにはアプリの再起動が必要です)"
+			"__Name": "Appearance",
+			"Theme;Name": "Theme",
+			"Theme;Desc": "User interface theme\r\n(Requires application restart to apply)"
 		},
 		"Display": {
-			"__Name": "ディスプレイ",
-			"Resolution_Width;Name": "ディスプレイの解像度 (幅)",
-			"Resolution_Width;Desc": "通常時のメインディスプレイの解像度 (幅)",
-			"Resolution_Height;Name": "ディスプレイの解像度 (高さ)",
-			"Resolution_Height;Desc": "通常時のメインディスプレイの解像度 (高さ)",
-			"RefreshRate;Name": "ディスプレイのリフレッシュレート",
-			"RefreshRate;Desc": "通常時のメインディスプレイのリフレッシュレート"
+			"__Name": "Display",
+			"Resolution_Width;Name": "Display Resolution (Width)",
+			"Resolution_Width;Desc": "Resolution (width) of the main display in normal use",
+			"Resolution_Height;Name": "Display Resolution (Height)",
+			"Resolution_Height;Desc": "Resolution (height) of the main display in normal use",
+			"RefreshRate;Name": "Display Refresh Rate",
+			"RefreshRate;Desc": "Refresh rate of the main display in normal use"
 		},
 		"General": {
-			"__Name": "全般",
-			"EAapp_Config_Folder_Path;Name": "EA app コンフィグフォルダー",
-			"EAapp_Config_Folder_Path;Desc": "EA app のコンフィグファイルが保存されているフォルダー\r\n空欄または存在しないフォルダーを指定すると自動的に取得されます。\r\n※通常は空欄にすることを推奨します※",
-			"EAapp_Config_Folder_Path;Custom_1": "フォルダーを選択",
-			"EAapp_Config_File_Name;Name": "EA app コンフィグファイル",
-			"EAapp_Config_File_Name;Desc": "EA app のコンフィグファイルのファイル名\r\nプレイする際のプラットフォームが EA app の場合、この項目は必須です。\r\n※このコンフィグファイルはアカウントによって異なるため、複数のアカウントでプレイする場合、\r\nアカウントを切り替えるたびにファイル名を変更する必要があります※",
-			"EAapp_Config_File_Name;Custom_1": "自動検出を実行"
+			"__Name": "General",
+			"EAapp_Config_Folder_Path;Name": "EA app Config Folder",
+			"EAapp_Config_Folder_Path;Desc": "Folder where EA app config files are saved.\r\nIf left blank or a non-existent folder is specified, it will be acquired automatically.\r\n*Normally, it is recommended to leave this blank.*",
+			"EAapp_Config_Folder_Path;Custom_1": "Select Folder",
+			"EAapp_Config_File_Name;Name": "EA app Config File",
+			"EAapp_Config_File_Name;Desc": "File name of the EA app config file.\r\nThis item is required if the platform you are playing on is EA app.\r\n*This config file differs depending on the account, so if you play with multiple accounts,\r\nyou will need to change the file name each time you switch accounts.*",
+			"EAapp_Config_File_Name;Custom_1": "Perform Auto Detection"
 		},
 		"Discord_RPC": {
-			"__Name": "Discord リッチプレゼンス",
-			"Enable;Name": "リッチプレゼンスを有効化",
-			"Enable;Desc": "Discord のプロフィールに LegendUtil のステータスを表示するかどうか\n(適用するにはアプリの再起動が必要です)",
-			"Language;Name": "リッチプレゼンスの表示言語",
-			"Language;Desc": "Discord のプロフィールに表示されるリッチプレゼンスの言語"
+			"__Name": "Discord Rich Presence",
+			"Enable;Name": "Enable Rich Presence",
+			"Enable;Desc": "Whether to display LegendUtil status on your Discord profile\n(Requires application restart to apply)",
+			"Language;Name": "Rich Presence Display Language",
+			"Language;Desc": "Language of the Rich Presence displayed on your Discord profile"
 		},
 		"Update": {
-			"__Name": "アップデート",
-			"CheckForUpdatesOnAppLaunch;Name": "アプリの起動時にアップデートを確認する",
-			"CheckForUpdatesOnAppLaunch;Desc": "アプリの起動時、自動的にアップデートの確認を行うかどうか",
-			"ReleaseChannel;Name": "アップデートのリリースチャンネル",
-			"ReleaseChannel;Desc": "アップデート時にインストールするバージョンのリリースチャンネル",
-			"ReleaseChannel;Custom_1": "リリースチャンネルの説明",
-			"ReleaseChannel;Custom_2": "Release: 正式リリースビルドです。\nこの選択肢は将来のために存在しており、現時点では Beta と同様です。\n\nBeta / Beta Only: ベータビルドです。\nRelease と比べて安定性に欠きますが、Dev や Nightly と比べると安定しています。\nBeta Only は Release へのアップデートを行いません。\n\nDevelopment: 開発ビルドです。\n開発者によって任意のタイミングでリリースされるビルドで、Release や Beta と比べて安定性に欠きますが、Nightly と比べると安定しています。\n\nNightly: ナイトリービルドです。\nリポジトリーへのプッシュの度にリリースされるビルドで、存在するビルドの中で最も不安定です。\n場合によっては起動すらできない事もあります。",
-			"CustomReleaseChannelUrl;Name": "カスタムリリースチャンネルURL",
-			"CustomReleaseChannelUrl;Desc": "※開発用※"
+			"__Name": "Update",
+			"CheckForUpdatesOnAppLaunch;Name": "Check for updates on app launch",
+			"CheckForUpdatesOnAppLaunch;Desc": "Whether to automatically check for updates on app launch",
+			"ReleaseChannel;Name": "Update Release Channel",
+			"ReleaseChannel;Desc": "Release channel of the version to install during updates",
+			"ReleaseChannel;Custom_1": "Release Channel Description",
+			"ReleaseChannel;Custom_2": "Release: Official release build.\nThis option exists for the future and is currently the same as Beta.\n\nBeta / Beta Only: Beta build.\nLess stable than Release, but more stable than Dev or Nightly.\nBeta Only will not update to Release.\n\nDevelopment: Development build.\nReleased at any time by developers, less stable than Release or Beta, but more stable than Nightly.\n\nNightly: Nightly build.\nReleased with every push to the repository, this is the most unstable build available.\nIn some cases, it may not even start.",
+			"CustomReleaseChannelUrl;Name": "Custom Release Channel URL",
+			"CustomReleaseChannelUrl;Desc": "*For development purposes*"
 		},
 		"UI_General": {
-			"__Name": "UI - 全般",
-			"Language;Name": "UIの言語",
-			"Language;Desc": "ユーザーインターフェースの表示言語",
-			"Language;Custom_1": "翻訳に協力する (Crowdin)"
+			"__Name": "UI - General",
+			"Language;Name": "UI Language",
+			"Language;Desc": "Display language of the user interface",
+			"Language;Custom_1": "Contribute to translation (Crowdin)"
 		},
 		"UI_MainMenu": {
-			"__Name": "UI - メインメニュー",
-			"News_Enable;Name": "ニュース - 表示",
-			"News_Enable;Desc": "メインメニューにニュースを表示するかどうか\n(適用するにはアプリの再起動が必要です)",
-			"News_Language;Name": "ニュース - 言語",
-			"News_Language;Desc": "メインメニューに表示されるニュースの言語",
-			"ServerStatus_Enable;Name": "サーバーステータス - 表示",
-			"ServerStatus_Enable;Desc": "メインメニューにサーバーステータス情報を表示するかどうか\n(適用するにはアプリの再起動が必要です)",
-			"ServerStatus_Region;Name": "サーバーステータス - 地域",
-			"ServerStatus_Region;Desc": "メインメニューに表示されるサーバーステータスの地域",
-			"ServerStatus_Region;List": "アジア,東ヨーロッパ,西ヨーロッパ,アメリカ南部,アメリカ中部,アメリカ東部,アメリカ西部",
-			"MapRotation_Enable;Name": "マップローテーション - 表示",
-			"MapRotation_Enable;Desc": "メインメニューにマップローテーション情報をするかどうか\n(適用するにはアプリの再起動が必要です)",
-			"MapRotation_RemainingTime;Name": "[試験的機能] マップローテーション - 詳細な残り時間の表示",
-			"MapRotation_RemainingTime;Desc": "マップローテーションの各モードの残り時間表記を毎秒更新される詳細な表示にします。\n※この設定は試験的機能です。有効化するとメモリーの使用量が増加する可能性があります。\n(適用するにはアプリの再起動が必要です)"
+			"__Name": "UI - Main Menu",
+			"News_Enable;Name": "News - Display",
+			"News_Enable;Desc": "Whether to display news on the main menu\n(Requires application restart to apply)",
+			"News_Language;Name": "News - Language",
+			"News_Language;Desc": "Language of the news displayed on the main menu",
+			"ServerStatus_Enable;Name": "Server Status - Display",
+			"ServerStatus_Enable;Desc": "Whether to display server status information on the main menu\n(Requires application restart to apply)",
+			"ServerStatus_Region;Name": "Server Status - Region",
+			"ServerStatus_Region;Desc": "Region of the server status displayed on the main menu",
+			"ServerStatus_Region;List": "Asia,Eastern Europe,Western Europe,South America,Central America,Eastern America,Western America",
+			"MapRotation_Enable;Name": "Map Rotation - Display",
+			"MapRotation_Enable;Desc": "Whether to display map rotation information on the main menu\n(Requires application restart to apply)",
+			"MapRotation_RemainingTime;Name": "[Experimental] Map Rotation - Detailed Remaining Time Display",
+			"MapRotation_RemainingTime;Desc": "Displays the remaining time for each mode in the map rotation with detailed updates every second.\n*This setting is experimental. Enabling it may increase memory usage.\n(Requires application restart to apply)"
 		},
 		"ExperimentalFeatures": {
-			"__Name": "実験的機能"
+			"__Name": "Experimental Features"
 		}
 	},
 	"LaunchOption": {
 		"-anticheat_settings=SettingsDX12___dot___json": {
-			"Category": "グラフィック",
-			"Choices": "有効",
-			"Desc": "DirectX 12 でゲームを起動します。\r\nDirectX 12 を使用すると、ゲームがCPU グラフィック コードを複数のコアに分散できるようになり、フレームレートの向上が期待できます。",
-			"DisabledText": "無効",
-			"Name": "DirectX 12 を有効化",
-			"AdditionalButtonText": "DirectX 12 に関する詳しい情報 (Reddit)"
+			"Category": "Graphics",
+			"Choices": "Enabled",
+			"Desc": "Launches the game with DirectX 12.\r\nUsing DirectX 12 allows the game to distribute CPU graphics code across multiple cores, which can improve frame rates.",
+			"DisabledText": "Disabled",
+			"Name": "Enable DirectX 12",
+			"AdditionalButtonText": "More information about DirectX 12 (Reddit)"
 		},
 		"-forcenovsync": {
-			"Category": "グラフィック",
-			"Choices": "垂直同期(V-SYNC)を無効化",
-			"Desc": "垂直同期(V-SYNC)を強制的に無効化します。",
-			"DisabledText": "無効化しない",
-			"Name": "垂直同期(V-SYNC)を無効化"
+			"Category": "Graphics",
+			"Choices": "Disable Vertical Sync (V-SYNC)",
+			"Desc": "Forces Vertical Sync (V-SYNC) to be disabled.",
+			"DisabledText": "Do not disable",
+			"Name": "Disable Vertical Sync (V-SYNC)"
 		},
 		"-fullscreen": {
-			"Category": "グラフィック",
-			"Choices": "有効",
-			"Desc": "ウィンドウをフルスクリーンにした状態でゲームを起動します。",
-			"DisabledText": "無効",
-			"Name": "フルスクリーン"
+			"Category": "Graphics",
+			"Choices": "Enabled",
+			"Desc": "Launches the game in fullscreen mode.",
+			"DisabledText": "Disabled",
+			"Name": "Fullscreen"
 		},
 		"-high": {
 			"Category": "CPU",
-			"Choices": "CPU優先度を「高」へ変更する",
-			"Desc": "Apex Legends のCPU優先度を「高」へ変更します。\r\n変更すると、パフォーマンス向上に繋がる可能性がありますが、\r\nApex Legends のCPU使用率が増加し、システムや他のアプリケーションが不安定になる可能性があります。",
-			"DisabledText": "無効",
-			"Name": "優先度を「高」へ変更"
+			"Choices": "Change CPU priority to \"High\"",
+			"Desc": "Changes the CPU priority of Apex Legends to \"High\".\r\nThis may improve performance, but it may also increase CPU usage by Apex Legends and cause system or other application instability.",
+			"DisabledText": "Disabled",
+			"Name": "Change priority to \"High\""
 		},
 		"-limitvsconst": {
-			"Category": "グラフィック",
-			"Choices": "頂点シェーダー数を変更する",
-			"Desc": "頂点シェーダー数を256に制限します。変更すると、パフォーマンス向上に繋がる可能性があります。",
-			"DisabledText": "変更しない",
-			"Name": "頂点シェーダー数を変更"
+			"Category": "Graphics",
+			"Choices": "Change vertex shader count",
+			"Desc": "Limits the number of vertex shaders to 256.  This may improve performance.",
+			"DisabledText": "Do not change",
+			"Name": "Change vertex shader count"
 		},
 		"-noff": {
-			"Category": "マウス/コントローラー",
-			"Choices": "振動機能を無効化する",
-			"Desc": "ゲーム内でのコントローラーの振動機能を無効化します。ゲーム内で振動機能が機能しなくなります。\r\n無効化すると、パフォーマンス向上に繋がる可能性があります。",
-			"DisabledText": "無効化しない",
-			"Name": "コントローラーの振動機能を無効化"
+			"Category": "Mouse/Controller",
+			"Choices": "Disable vibration function",
+			"Desc": "Disables the controller's vibration function in-game. The vibration function will no longer work in-game.\r\nDisabling this may improve performance.",
+			"DisabledText": "Do not disable",
+			"Name": "Disable controller vibration"
 		},
 		"-nojoy": {
-			"Category": "マウス/コントローラー",
-			"Choices": "スティック機能を無効化する",
-			"Desc": "コントローラーのジョイスティック機能を無効化します。ゲーム内でジョイスティックを使った操作が行えなくなります。\r\n無効化すると、パフォーマンス向上に繋がる可能性があります。",
-			"DisabledText": "無効化しない",
-			"Name": "コントローラーのジョイスティック機能を無効化"
+			"Category": "Mouse/Controller",
+			"Choices": "Disable stick function",
+			"Desc": "Disables the controller's joystick function. You will no longer be able to operate the game using the joystick.\r\nDisabling this may improve performance.",
+			"DisabledText": "Do not disable",
+			"Name": "Disable controller joystick function"
 		},
 		"-nomouse": {
-			"Category": "マウス/コントローラー",
-			"Choices": "マウス機能を無効化する",
-			"Desc": "マウス機能を無効化します。ゲーム内でマウスを使った操作が行えなくなります。\r\n無効化すると、パフォーマンス向上に繋がる可能性があります。",
-			"DisabledText": "無効化しない",
-			"Name": "マウス機能を無効化"
+			"Category": "Mouse/Controller",
+			"Choices": "Disable mouse function",
+			"Desc": "Disables mouse functionality. You will no longer be able to operate the game using the mouse.\r\nDisabling this may improve performance.",
+			"DisabledText": "Do not disable",
+			"Name": "Disable mouse function"
 		},
 		"-novid": {
 			"Category": null,
-			"Choices": "スプラッシュムービーを再生しない",
-			"Desc": "EA特有の爆音スプラッシュムービーを無効化して、起動時間の短縮、及び鼓膜の破壊を防止します。",
-			"DisabledText": "無効化しない (スプラッシュムービーを再生する)",
-			"Name": "スプラッシュムービーを無効化"
+			"Choices": "Do not play splash movie",
+			"Desc": "Disables the notoriously loud EA splash movie to shorten startup time and prevent eardrum damage.",
+			"DisabledText": "Do not disable (Play splash movie)",
+			"Name": "Disable splash movie"
 		},
 		"-preload": {
-			"Category": "システム",
-			"Choices": "有効",
-			"Desc": "ゲームの起動時に必要なデータを優先して読み込みます。\r\nプレイ時のパフォーマンス向上に繋がる可能性がありますが、RAMの使用量が増加したり、読み込み時間が長くなる可能性があります。",
-			"DisabledText": "無効",
-			"Name": "起動時に必要なデータを優先的に読み込む"
+			"Category": "System",
+			"Choices": "Enabled",
+			"Desc": "Prioritizes loading necessary data during game startup.\r\nThis may improve performance during gameplay, but it may also increase RAM usage and loading time.",
+			"DisabledText": "Disabled",
+			"Name": "Prioritize loading necessary data at startup"
 		},
 		"-refresh": {
-			"Category": "グラフィック",
-			"Choices": "指定入力,60 Hz,95 Hz,120 Hz,144 Hz,240 Hz,360 Hz",
-			"Desc": "リフレッシュレートの上限値を設定します。",
-			"DisabledText": "設定しない",
-			"Name": "リフレッシュレート上限"
+			"Category": "Graphics",
+			"Choices": "Specify Input,60 Hz,95 Hz,120 Hz,144 Hz,240 Hz,360 Hz",
+			"Desc": "Sets the upper limit for the refresh rate.",
+			"DisabledText": "Do not set",
+			"Name": "Refresh Rate Limit"
 		},
 		"-threads": {
 			"Category": "CPU",
-			"Choices": "変更する",
-			"Desc": "Apex Legends が使用するCPUのスレッド数を変更します。\r\n通常、Apex Legends は自動的にすべてのスレッドを使用するため、設定は不要です。\r\nApex Legends が使用するスレッド数を制限したい場合にこの設定を変更してください。",
-			"DisabledText": "変更しない",
-			"Name": "スレッド数を変更"
+			"Choices": "Change",
+			"Desc": "Changes the number of CPU threads used by Apex Legends.\r\nNormally, Apex Legends automatically uses all threads, so no configuration is necessary.\r\nChange this setting if you want to limit the number of threads used by Apex Legends.",
+			"DisabledText": "Do not change",
+			"Name": "Change thread count"
 		},
 		"+building_cubemaps": {
-			"Category": "グラフィック",
+			"Category": "Graphics",
 			"Choices": "",
-			"Desc": "この引数は、解像度の変更が有効化されている時、自動的に有効になります。",
-			"DisabledText": "無効化しない",
-			"Name": "解像度変更設定専用 | +building_cubemaps"
+			"Desc": "This argument is automatically enabled when resolution changes are enabled.",
+			"DisabledText": "Do not disable",
+			"Name": "Resolution Change Setting Only | +building_cubemaps"
 		},
 		"+cl_forcepreload": {
-			"Category": "システム",
-			"Choices": "有効",
-			"Desc": "プレイ時に必要なマップやサウンドなどのデータを事前に読み込みます。\r\nプレイ時のパフォーマンス向上に繋がる可能性がありますが、RAMの使用量が増加したり、読み込み時間が長くなる可能性があります。",
-			"DisabledText": "無効",
-			"Name": "プレイ時に必要なデータを事前に読み込む"
+			"Category": "System",
+			"Choices": "Enabled",
+			"Desc": "Preloads data such as maps and sounds needed during gameplay.\r\nThis may improve performance during gameplay, but it may also increase RAM usage and loading times.",
+			"DisabledText": "Disabled",
+			"Name": "Preload data needed during gameplay"
 		},
 		"+cl_fovScale": {
-			"Category": "グラフィック",
-			"Choices": "変更する",
-			"Desc": "視野角(FOV)を変更します。",
-			"DisabledText": "変更しない",
-			"Name": "視野角(FOV)を変更"
+			"Category": "Graphics",
+			"Choices": "Change",
+			"Desc": "Changes the field of view (FOV).",
+			"DisabledText": "Do not change",
+			"Name": "Change Field of View (FOV)"
 		},
 		"+cl_liveapi_allow_requests": {
 			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "受信したリクエストの処理と実行を許可します。",
-			"DisabledText": "無効化しない",
-			"Name": "受信したリクエストの処理と実行を許可"
+			"Choices": "Enabled",
+			"Desc": "Allows processing and execution of received requests.",
+			"DisabledText": "Do not disable",
+			"Name": "Allow processing and execution of received requests"
 		},
 		"+cl_liveapi_enabled": {
 			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "Live API を有効化します。",
-			"DisabledText": "無効化しない",
-			"Name": "Live API を有効化"
+			"Choices": "Enabled",
+			"Desc": "Enables the Live API.",
+			"DisabledText": "Do not disable",
+			"Name": "Enable Live API"
 		},
 		"+cl_liveapi_pretty_print_log": {
 			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "JSON出力をより人間に読みやすいものに整形します。",
-			"DisabledText": "無効化しない",
-			"Name": "JSON出力を整形"
+			"Choices": "Enabled",
+			"Desc": "Formats JSON output to be more human-readable.",
+			"DisabledText": "Do not disable",
+			"Name": "Format JSON output"
 		},
 		"+cl_liveapi_use_protobuf": {
 			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "有効にすると、シリアライズフォーマットとして protobuf を使用します。\r\n無効にすると、シリアライズフォーマットとして JSON を使用します。",
-			"DisabledText": "無効化しない",
-			"Name": "シリアライズフォーマットとして protobuf を使用"
+			"Choices": "Enabled",
+			"Desc": "If enabled, uses protobuf as the serialization format.\r\nIf disabled, uses JSON as the serialization format.",
+			"DisabledText": "Do not disable",
+			"Name": "Use protobuf as serialization format"
 		},
 		"+cl_liveapi_ws_keepalive": {
 			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "接続された任意のサーバーにPingを送信する間隔を指定します。",
-			"DisabledText": "無効化しない",
-			"Name": "WebSocket | Ping送信間隔"
+			"Choices": "Enabled",
+			"Desc": "Specifies the interval at which to send pings to any connected servers.",
+			"DisabledText": "Do not disable",
+			"Name": "WebSocket | Ping interval"
 		},
 		"+cl_liveapi_ws_retry_count": {
 			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "接続不可とするまでの再試行回数を指定します。",
-			"DisabledText": "無効化しない",
-			"Name": "WebSocket | 再試行回数"
+			"Choices": "Enabled",
+			"Desc": "Specifies the number of retries before giving up on a connection.",
+			"DisabledText": "Do not disable",
+			"Name": "WebSocket | Retry count"
 		},
 		"+cl_liveapi_ws_retry_time": {
 			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "再試行までの時間(秒)を指定します。",
-			"DisabledText": "無効化しない",
-			"Name": "WebSocket | 再試行時間"
+			"Choices": "Enabled",
+			"Desc": "Specifies the time (in seconds) to wait before retrying.",
+			"DisabledText": "Do not disable",
+			"Name": "WebSocket | Retry time"
 		},
 		"+cl_liveapi_ws_servers": {
 			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "WebSocket サーバーを指定します。\r\n複数指定する場合は「,」で区切ります。",
-			"DisabledText": "無効化しない",
-			"Name": "WebSocket | サーバー一覧"
+			"Choices": "Enabled",
+			"Desc": "Specifies the WebSocket servers.\r\nSeparate multiple servers with a comma (,).",
+			"DisabledText": "Do not disable",
+			"Name": "WebSocket | Server list"
 		},
 		"+cl_liveapi_ws_timeout": {
 			"Category": "Live API",
-			"Choices": "有効",
-			"Desc": "タイムアウトまでの時間(秒)を指定します。",
-			"DisabledText": "無効化しない",
-			"Name": "WebSocket | タイムアウト時間"
+			"Choices": "Enabled",
+			"Desc": "Specifies the timeout period (in seconds).",
+			"DisabledText": "Do not disable",
+			"Name": "WebSocket | Timeout period"
 		},
 		"+cl_ragdoll_collide": {
-			"Category": "グラフィック",
-			"Choices": "有効",
-			"Desc": "死体などの物理挙動を変更します。変更すると、パフォーマンス向上に繋がる可能性があります。",
-			"DisabledText": "変更しない",
-			"Name": "物理挙動変更"
+			"Category": "Graphics",
+			"Choices": "Enabled",
+			"Desc": "Changes the physics behavior of dead bodies, etc.  This may improve performance.",
+			"DisabledText": "Do not change",
+			"Name": "Change physics behavior"
 		},
 		"+cl_showfps": {
-			"Category": "システム",
-			"Choices": "有効",
-			"Desc": "FPSやサーバーに対してのPingなどのパフォーマンス情報のオーバーレイ表示を有効化します。\r\nこの設定はゲーム内設定の「パフォーマンス表示」と同様の設定です。",
-			"DisabledText": "無効化しない",
-			"Name": "パフォーマンス情報のオーバーレイ表示を有効化"
+			"Category": "System",
+			"Choices": "Enabled",
+			"Desc": "Enables the overlay display of performance information such as FPS and ping to the server.\r\nThis setting is the same as the \"Performance Display\" setting in the in-game settings.",
+			"DisabledText": "Do not disable",
+			"Name": "Enable performance information overlay"
 		},
 		"+cl_showpos": {
-			"Category": "システム",
-			"Choices": "有効",
-			"Desc": "ユーザー名や位置座標、移動速度などの情報のオーバーレイ表示を有効化します。",
-			"DisabledText": "無効化しない",
-			"Name": "プレイヤー情報のオーバーレイ表示を有効化"
+			"Category": "System",
+			"Choices": "Enabled",
+			"Desc": "Enables the overlay display of information such as username, position coordinates, and movement speed.",
+			"DisabledText": "Do not disable",
+			"Name": "Enable player information overlay"
 		},
 		"+CrossPlay_user_optin": {
-			"Category": "システム",
-			"Choices": "クロスプレイを無効化する",
-			"Desc": "クロスプレイを強制的に無効化します。",
-			"DisabledText": "無効化しない",
-			"Name": "クロスプレイを無効化"
+			"Category": "System",
+			"Choices": "Disable cross-play",
+			"Desc": "Forces cross-play to be disabled.",
+			"DisabledText": "Do not disable",
+			"Name": "Disable cross-play"
 		},
 		"+exec": {
-			"Category": "コンフィグ",
-			"Choices": "プロファイル,指定",
-			"Desc": "ゲームの起動時に autoexec ファイルを読み込んでコンフィグを適用します。\nautoexec は「Autoexec」タブから編集できます。",
-			"DisabledText": "無効",
-			"Name": "autoexec を読み込む"
+			"Category": "Config",
+			"Choices": "Profile,Specify",
+			"Desc": "Loads the autoexec file and applies the configuration when the game starts.\r\nYou can edit the autoexec from the \"Autoexec\" tab.",
+			"DisabledText": "Disabled",
+			"Name": "Load autoexec"
 		},
 		"+fps_max": {
-			"Category": "グラフィック",
-			"Choices": "無制限,指定入力,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
-			"Desc": "FPSの上限値を設定します。",
-			"DisabledText": "設定しない",
-			"Name": "FPS上限"
+			"Category": "Graphics",
+			"Choices": "Unlimited,Specify Input,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
+			"Desc": "Sets the upper limit for FPS.",
+			"DisabledText": "Do not set",
+			"Name": "FPS Limit"
 		},
 		"+m_rawinput": {
-			"Category": "マウス/コントローラー",
-			"Choices": "有効",
-			"Desc": "マウスのローインプットを有効化します。",
-			"DisabledText": "有効化しない",
-			"Name": "ローインプットを有効化"
+			"Category": "Mouse/Controller",
+			"Choices": "Enabled",
+			"Desc": "Enables raw mouse input.",
+			"DisabledText": "Do not enable",
+			"Name": "Enable raw input"
 		},
 		"+mat_queue_mode": {
 			"Category": "CPU",
-			"Choices": "<推奨> マルチ,シングル (非同期),シングル (同期),システム,レガシー",
-			"Desc": "マテリアルシステムが使用するCPUのスレッドモードを変更します。設定によっては、パフォーマンス向上に繋がる可能性があります。",
-			"DisabledText": "変更しない",
-			"Name": "スレッドモードを変更"
+			"Choices": "<Recommended> Multi,Single (Asynchronous),Single (Synchronous),System,Legacy",
+			"Desc": "Changes the CPU threading mode used by the material system. Depending on the setting, this may improve performance.",
+			"DisabledText": "Do not change",
+			"Name": "Change threading mode"
 		},
 		"__Category": {
-			"List": "コンフィグ,全般,グラフィック,システム,CPU,マウス/コントローラー,Live API"
+			"List": "Config,General,Graphics,System,CPU,Mouse/Controller,Live API"
 		},
 		"__Placeholder": {
-			"Text": "<指定値>"
+			"Text": "<Specified Value>"
 		}
 	}
 }
