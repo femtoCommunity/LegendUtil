@@ -1,16 +1,16 @@
-「rdrFirstChanceException.dll」を利用する
+「..\Dll\rdrFirstChanceException.dll」を利用する
 
 // C# ライブラリー
-「LegendUtil.SharpLibrary.dll」を利用する
+「..\Dll\LegendUtil.SharpLibrary.dll」を利用する
 
 // DiscordRPC ライブラリー
-「FuwaFuwaPresence.dll」を利用する
+「..\Dll\FuwaFuwaPresence.dll」を利用する
 
-「Wind.rdr.dll」を利用する
-「Milkeyyy.ControlSR.dll」を利用する
-「Produire.WebView2.dll」を利用する
-「rdrReadWriteTextReader.dll」を利用する
-「RdrWindows7API.dll」を利用する
+「..\Dll\Wind.rdr.dll」を利用する
+「..\Dll\Milkeyyy.ControlSR.dll」を利用する
+「..\Dll\Produire.WebView2.dll」を利用する
+「..\Dll\rdrReadWriteTextReader.dll」を利用する
+「..\Dll\RdrWindows7API.dll」を利用する
 
 
 未処理例外処理器を初期化する
