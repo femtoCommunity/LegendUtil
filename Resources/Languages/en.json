@@ -178,7 +178,7 @@
 		},
 		"Dialog": {
 			"FailedToLoadProfiles": "Failed to load the following profile.\nSee the debug log for details.\n\n{0}",
-			"ConvertedOldDX12Args": "The startup argument for launching DirectX 12 had a value that was not compatible with Season 21 or later, so the following value was automatically replaced.\nBefore: {0}\nAfter: {1}\n\n<Target profiles>\n{2}"
+			"ConvertedOldDX12Args": "シーズン23 (アストラルアノマリーイベント) 以降不要になった DirectX 12 で起動するための起動引数が設定されていたため、自動的に削除しました。\n\n<置換処理を行ったプロファイル>\n{1}"
 		}
 	},
 	"InPlay": {
@@ -599,13 +599,13 @@
 		}
 	},
 	"LaunchOption": {
-		"-anticheat_settings=SettingsDX12___dot___json": {
-			"Category": "Graphics",
+		"-anticheat_settings=SettingsDX11___dot___json": {
+			"Category": "グラフィック",
 			"Choices": "Enable",
-			"Desc": "Launch game with DirectX 12.\nUsing DirectX 12 allows the game to distribute CPU graphics code across multiple cores, which might improve the frame rate.",
+			"Desc": "DirectX 11 でゲームを起動します。\r\nDirectX 12 を使用する方がパフォーマンスと安定性に優れる傾向にあるため、このオプションを使用することは推奨されません。\r\nDirectX 12 でパフォーマンスが安定しない場合のみ使用してください。",
 			"DisabledText": "Disable",
-			"Name": "Enable DirectX 12",
-			"AdditionalButtonText": "More information about DirectX 12 (Reddit)"
+			"Name": "DirectX 11 でゲームを起動",
+			"AdditionalButtonText": "DirectX 12/11 に関する詳しい情報 (Reddit)"
 		},
 		"-forcenovsync": {
 			"Category": "Graphics",
