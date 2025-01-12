@@ -446,7 +446,7 @@
 			"33": "Apex Legends installation location found.\r\n\r\nPath: {0}",
 			"34": "Account",
 			"35": "Test",
-			"36": "<Caution>\nDirectX 12 is enabled.\nIf you want to stretch with DirectX 12 enabled, you need to enable \"Change system resolution\" and set \"Scaling mode\" to \"Stretched\"."
+			"36": "＜注意＞DirectX 12 で引き伸ばしを行う場合は、「システムの解像度を変更する」を「有効」、「スケーリングモード」を「伸縮」に設定する必要があります。"
 		},
 		"4": {
 			"2": "Enter any launch arguments not listed in the options below here.\nEnter the text of the existing launch arguments and execute \"Parse\" to have LegendUtil automatically parse and load them.",
