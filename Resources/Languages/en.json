@@ -178,7 +178,7 @@
 		},
 		"Dialog": {
 			"FailedToLoadProfiles": "Failed to load the following profile.\nSee the debug log for details.\n\n{0}",
-			"ConvertedOldDX12Args": "シーズン23 (アストラルアノマリーイベント) 以降不要になった DirectX 12 で起動するための起動引数が設定されていたため、自動的に削除しました。\n\n<置換処理を行ったプロファイル>\n{0}"
+			"ConvertedOldDX12Args": "A launch argument for launching with DirectX 12, which is no longer necessary since Season 23 (Astral Anomaly event), was found and automatically deleted.\n\n<Target profile>\n{0}"
 		}
 	},
 	"InPlay": {
@@ -446,7 +446,7 @@
 			"33": "The installation location for Apex Legends has been found.\n\nPath: {0}",
 			"34": "Account",
 			"35": "Test",
-			"36": "<Note>\nDirectX 12 is enabled.\nIf you want to stretch with DirectX 12 enabled, you must enable \"Change system resolution\" and set \"Scaling mode\" to \"Stretch\"."
+			"36": "＜注意＞DirectX 12 で引き伸ばしを行う場合は、「システムの解像度を変更する」を「有効」、「スケーリングモード」を「伸縮」に設定する必要があります。"
 		},
 		"4": {
 			"2": "Enter any startup arguments not listed below as options here.\nEnter the text of an existing launch argument and run \"Parse\" and LegendUtil will automatically parse and load it.",
@@ -600,12 +600,12 @@
 	},
 	"LaunchOption": {
 		"-anticheat_settings=SettingsDX11___dot___json": {
-			"Category": "グラフィック",
+			"Category": "Graphics",
 			"Choices": "Enable",
-			"Desc": "DirectX 11 でゲームを起動します。\r\nDirectX 12 を使用する方がパフォーマンスと安定性に優れる傾向にあるため、このオプションを使用することは推奨されません。\r\nDirectX 12 でパフォーマンスが安定しない場合のみ使用してください。",
+			"Desc": "Launches the game with DirectX 11.\nThis option is not recommended as DirectX 12 tends to provide better performance and stability.\nUse this only if you are experiencing unstable performance with DirectX 12.",
 			"DisabledText": "Disable",
-			"Name": "DirectX 11 でゲームを起動",
-			"AdditionalButtonText": "DirectX 12/11 に関する詳しい情報 (Reddit)"
+			"Name": "Launch the game with DirectX 11",
+			"AdditionalButtonText": "More information about DirectX 12/11 (Reddit)"
 		},
 		"-forcenovsync": {
 			"Category": "Graphics",
