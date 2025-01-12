@@ -178,7 +178,7 @@
 		},
 		"Dialog": {
 			"FailedToLoadProfiles": "다음 프로파일을 불러오는 데 실패했습니다.\n자세한 내용은 디버그 로그를 참고하세요.\n\n{0}",
-			"ConvertedOldDX12Args": "DirectX 12에서 실행하기 위한 시작 인수가 시즌 21 이상에서 지원되지 않는 값이었기 때문에 다음 값을 자동으로 대체했습니다.\n교체 전: {0}\n교체 후: {1}\n\n<치환 처리를 실시한 프로파일>\n{2}"
+			"ConvertedOldDX12Args": "シーズン23 (アストラルアノマリーイベント) 以降不要になった DirectX 12 で起動するための起動引数が設定されていたため、自動的に削除しました。\n\n<置換処理を行ったプロファイル>\n{1}"
 		}
 	},
 	"InPlay": {
@@ -599,23 +599,23 @@
 		}
 	},
 	"LaunchOption": {
-		"-anticheat_settings=SettingsDX12___dot___json": {
-			"Category": "그래픽",
+		"-anticheat_settings=SettingsDX11___dot___json": {
+			"Category": "グラフィック",
 			"Choices": "활성화됨",
-			"Desc": "DirectX 12로 게임을 시작합니다.\nDirectX 12를 사용하면 게임에서 CPU 그래픽 코드를 여러 코어에 분산할 수 있으므로 프레임 속도가 향상될 수 있습니다.",
+			"Desc": "DirectX 11 でゲームを起動します。\r\nDirectX 12 を使用する方がパフォーマンスと安定性に優れる傾向にあるため、このオプションを使用することは推奨されません。\r\nDirectX 12 でパフォーマンスが安定しない場合のみ使用してください。",
 			"DisabledText": "비활성화",
-			"Name": "DirectX 12 활성화",
-			"AdditionalButtonText": "DirectX 12에 대한 자세한 정보 (Reddit)"
+			"Name": "DirectX 11 でゲームを起動",
+			"AdditionalButtonText": "DirectX 12/11 に関する詳しい情報 (Reddit)"
 		},
 		"-forcenovsync": {
-			"Category": "그래픽",
+			"Category": "グラフィック",
 			"Choices": "수직 동기화(V-SYNC) 비활성화",
 			"Desc": "수직 동기화(V-SYNC)를 강제로 비활성화합니다.",
 			"DisabledText": "비활성화하지 않음",
 			"Name": "수직 동기화(V-SYNC) 비활성화"
 		},
 		"-fullscreen": {
-			"Category": "그래픽",
+			"Category": "グラフィック",
 			"Choices": "활성화됨",
 			"Desc": "창을 전체 화면으로 띄운 상태에서 게임을 실행합니다.",
 			"DisabledText": "비활성화",
@@ -629,7 +629,7 @@
 			"Name": "우선순위 '높음'으로 변경"
 		},
 		"-limitvsconst": {
-			"Category": "그래픽",
+			"Category": "グラフィック",
 			"Choices": "버텍스 셰이더 수 변경하기",
 			"Desc": "정점 셰이더 수를 256으로 제한합니다. 변경하면 성능 향상으로 이어질 수 있습니다.",
 			"DisabledText": "변경하지 않음",
@@ -671,7 +671,7 @@
 			"Name": "시작 시 필요한 데이터를 우선적으로 불러오기"
 		},
 		"-refresh": {
-			"Category": "그래픽",
+			"Category": "グラフィック",
 			"Choices": "지정 입력,60 Hz,95 Hz,120 Hz,144 Hz,240 Hz,360 Hz",
 			"Desc": "리프레시율의 상한값을 설정합니다.",
 			"DisabledText": "설정하지 않음",
@@ -685,7 +685,7 @@
 			"Name": "스레드 수 변경"
 		},
 		"+building_cubemaps": {
-			"Category": "그래픽",
+			"Category": "グラフィック",
 			"Choices": "",
 			"Desc": "이 인수는 해상도 변경이 활성화되어 있을 때 자동으로 활성화됩니다.",
 			"DisabledText": "비활성화하지 않음",
@@ -699,7 +699,7 @@
 			"Name": "플레이 시 필요한 데이터를 미리 불러오기"
 		},
 		"+cl_fovScale": {
-			"Category": "그래픽",
+			"Category": "グラフィック",
 			"Choices": "변경하기",
 			"Desc": "시야각(FOV)을 변경합니다.",
 			"DisabledText": "변경하지 않음",
@@ -769,7 +769,7 @@
 			"Name": "WebSocket | 타임아웃 시간"
 		},
 		"+cl_ragdoll_collide": {
-			"Category": "그래픽",
+			"Category": "グラフィック",
 			"Choices": "활성화됨",
 			"Desc": "시체 등의 물리적 거동을 변경합니다. 변경하면 성능 향상으로 이어질 수 있습니다.",
 			"DisabledText": "변경하지 않음",
@@ -804,7 +804,7 @@
 			"Name": "autoexec 불러오기"
 		},
 		"+fps_max": {
-			"Category": "그래픽",
+			"Category": "グラフィック",
 			"Choices": "무제한,지정 입력,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
 			"Desc": "FPS의 상한값을 설정합니다.",
 			"DisabledText": "설정하지 않음",
