@@ -105,9 +105,15 @@
 						もしプロファイル辞書(「Info」)(「Total_Play_Time_List」)が無ならプロファイル辞書(「Info」)(「Total_Play_Time_List」)=空の辞書
 						もしプロファイル辞書(「Info」)(「Last_Play_Date_And_Time_List」)が無ならプロファイル辞書(「Info」)(「Last_Play_Date_And_Time_List」)=空の辞書
 						
-						// シーズン 21 から DirectX 12 で起動するための引数が変わったので、以前の引数が存在する場合は置き換える
+						// DirectX 12 がデフォルトになったので、以前の引数が存在する場合は削除する
+						// 旧引数 (シーズン20以前)
 						もし[プロファイル辞書(「Game」)(「Arguments」)]から「-eac_launcher_settings SettingsDX12.json」を探したものが1以上なら
-							プロファイル辞書(「Game」)(「Arguments」)=[プロファイル辞書(「Game」)(「Arguments」)]で「-eac_launcher_settings SettingsDX12.json」を「-anticheat_settings=SettingsDX12.json」へ置換したもの
+							プロファイル辞書(「Game」)(「Arguments」)=[プロファイル辞書(「Game」)(「Arguments」)]で「-eac_launcher_settings SettingsDX12.json」を「」へ置換したもの
+							DX12引数置換リストへ「[プロファイル辞書(「Info」)(「Name」)]」を追加する
+						もし終わり
+						// 新引数 (シーズン21以降)
+						もし[プロファイル辞書(「Game」)(「Arguments」)]から「-anticheat_settings=SettingsDX12.json」を探したものが1以上なら
+							プロファイル辞書(「Game」)(「Arguments」)=[プロファイル辞書(「Game」)(「Arguments」)]で「-anticheat_settings=SettingsDX12.json」を「」へ置換したもの
 							DX12引数置換リストへ「[プロファイル辞書(「Info」)(「Name」)]」を追加する
 						もし終わり
 						
@@ -140,7 +146,7 @@
 		// DirectX 12 で起動するための引数が置き換えられている場合はダイアログを表示する
 		もしDX12引数置換リストの個数が1以上なら
 			[言語管理器で「ProfileManagement.Dialog.ConvertedOldDX12Args」を{
-				「-eac_launcher_settings SettingsDX12.json」,「-anticheat_settings=SettingsDX12.json」,「・[DX12引数置換リストを「[改行]・」で繋げたもの]」
+				「・[DX12引数置換リストを「[改行]・」で繋げたもの]」
 			}として取得したもの]を「情報アイコン」で表示する
 		もし終わり
 	終わり
@@ -606,13 +612,11 @@
 		},
 		
 		////////// グラフィック //////////
-		「-anticheat_settings=SettingsDX12.json」={
+		「-anticheat_settings=SettingsDX11.json」={
 			「カテゴリー」=「グラフィック」,
-			「名前」=「DirectX 12 を有効化 (ベータ)」,
-			「説明」=「DirectX 12 でゲームを起動します。
-DirectX 12 を使用すると、ゲームがCPU グラフィック コードを複数のコアに分散できるようになり、フレームレートの向上が期待できます。
-環境によっては、テクスチャーが正常に表示されないなど、不具合が発生する可能性があります。」,
-			「拡張ボタン」={「DirectX 12 に関する詳しい情報はこちら (Reddit)」,「「「https://www.reddit.com/r/apexlegends/comments/16mwzaz/dev_team_update_directx_12_rhi/」を「標準」で開く」」},
+			「名前」=「DirectX 11 を有効化」,
+			「説明」=「DirectX 11 でゲームを起動します。」,
+			「拡張ボタン」={「DirectX 12/11 に関する詳しい情報は (Reddit)」,「「「https://www.reddit.com/r/apexlegends/comments/1gv3ing/dev_team_update_directx_12/」を「標準」で開く」」},
 			「編集可能」=○,
 			「入力」=×,
 			「入力初期値」=「」,
