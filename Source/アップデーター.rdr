@@ -123,6 +123,10 @@
 					「body」=[アップデートデータJSON(「data」)(「changelog」)],
 					「assets」={{「browser_download_url」=[アップデートデータJSON(「data」)(「installer_download_url」)]}}
 				}
+				// Nightly は変更履歴を GitHub のページにする
+				アップデートチャンネルが「nightly」で始まるなら
+					元アップデートデータ(「body」)=「[アプリのGitHubリポジトリーURL]/compare/[アプリのリリース番号]...[[アップデートデータJSON(「data」)(「build_version」)]の先頭から1文字消したもの]」
+				そして
 				
 			そうでなければ
 				例外監視

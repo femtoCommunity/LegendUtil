@@ -9,9 +9,11 @@
 [![Licence](https://img.shields.io/github/license/femtoCommunity/LegendUtil?style=for-the-badge)](#-ライセンス)
 
 [![Downloads](https://img.shields.io/github/downloads/femtoCommunity/LegendUtil/total?style=for-the-badge)](https://github.com/femtoCommunity/LegendUtil/releases)
+[![Nightly Build Status](https://img.shields.io/github/actions/workflow/status/femtoCommunity/LegendUtil/nightly_rdr.yml?branch=dev&style=for-the-badge&label=Nightly%20Build)](https://github.com/femtoCommunity/LegendUtil/actions/workflows/nightly_rdr.yml)
 
-[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/Y5FrzPft3M)
 [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/Milkeyyy_53)
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/Y5FrzPft3M)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/Milkeyyy?style=for-the-badge&logo=githubsponsors)](https://github.com/sponsors/Milkeyyy)
 [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/milkeyyy)
 
 ## 📃 概要

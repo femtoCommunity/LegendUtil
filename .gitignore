@@ -14,7 +14,7 @@ BuildDate.txt
 BuildVersion.txt
 CommitHash.txt
 *.dll
-!Source/*.dll
+!Resources/Dll/*
 !Scripts/*.dll
 
 ## Ignore Visual Studio temporary files, build results, and
