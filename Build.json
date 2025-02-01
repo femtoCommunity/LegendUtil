@@ -1,19 +1,19 @@
 {
-  "App": {
-    "ReleaseChannel": "dev"
-  },
-  "DiscordRPC": {
-    "AppID": "1205482419730382888"
-  },
-  "API": {
-    "FQDN": "api.legendutil.milkeyyy.com"
-  },
-  "URL": {
-    "Logo_Author": "https://twitter.com/Apex_tyaneko",
-    "GitHub_Repo": "https://github.com/femtoCommunity/LegendUtil",
-    "Discord_Server": "https://discord.gg/Y5FrzPft3M",
-    "Crowdin": "https://bit.ly/LegendUtil-TL",
-    "Wiki": "https://wiki.legendutil.ezolys.com",
-    "Ko-fi": "https://ko-fi.com/milkeyyy"
-  }
+    "API": {
+        "FQDN": "api-legendutil.ezolys.com"
+    },
+    "App": {
+        "ReleaseChannel": "dev"
+    },
+    "DiscordRPC": {
+        "AppID": "1205482419730382888"
+    },
+    "URL": {
+        "Crowdin": "https://bit.ly/LegendUtil-TL",
+        "Discord_Server": "https://discord.gg/Y5FrzPft3M",
+        "GitHub_Repo": "https://github.com/femtoCommunity/LegendUtil",
+        "Ko-fi": "https://ko-fi.com/milkeyyy",
+        "Logo_Author": "https://twitter.com/Apex_tyaneko",
+        "Wiki": "https://wiki.legendutil.ezolys.com"
+    }
 }

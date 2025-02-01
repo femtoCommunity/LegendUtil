@@ -5,7 +5,7 @@
 #define MyAppVersion "0.3.0"
 #define MyAppReleaseChannel "beta"
 #define MyAppReleaseNumber "0"
-#define MyAppVersionText "0.3.0-beta"
+#define MyAppVersionText "0.3.0-beta.20240829.175304.2"
 #define MyAppPublisher "femto Community Software Team"
 #define MyAppCopyrighter "Milkeyyy"
 #define MyAppURL "https://github.com/femtoCommunity/LegendUtil"
@@ -48,8 +48,8 @@ Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
 ; Installer and Application Architecture
-ArchitecturesInstallIn64BitMode=x64
-ArchitecturesAllowed=x64
+ArchitecturesInstallIn64BitMode=x64compatible
+ArchitecturesAllowed=x64compatible
 
 [Languages]
 Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"

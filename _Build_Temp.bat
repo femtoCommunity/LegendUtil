@@ -1,1 +1,1 @@
-pconsole.exeへのパス _Build.rdr
+pconsole.exeへのパス Scripts\_Build.rdr

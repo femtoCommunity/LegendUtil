@@ -1,0 +1,62 @@
+name: Build Nightly
+
+on:
+  push:
+    branches: [ "dev" ]
+
+env:
+  project-name: LegendUtil
+  produire-url: https://produ.irelang.jp/downloads
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: MathRobin/timezone-action@v1.1
+        with:
+          timezoneWindows: 'Tokyo Standard Time'
+
+      - name: Create Directory
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory "\rdr"
+
+      - uses: actions/checkout@v4
+        with:
+          path: Source
+
+      - uses: actions/checkout@v4
+        with:
+          ref: releases/nightly
+          path: Releases
+
+      - name: Cache Produire
+        id: cache-produire
+        uses: actions/cache@v4
+        env:
+          cache-name: cache-produire
+        with:
+          path: \rdr
+          key: ${{ env.cache-name }}-${{ vars.PRODUIRE_VERSION_MAJOR }}.${{ vars.PRODUIRE_VERSION_MINOR }}.${{ vars.PRODUIRE_VERSION_BUILD }}
+
+      - if: ${{ steps.cache-produire.outputs.cache-hit != 'true' }}
+        name: Download Produire
+        continue-on-error: true
+        shell: pwsh
+        run: |
+          Invoke-WebRequest -Uri "${{ env.produire-url }}/${{ vars.PRODUIRE_VERSION_MAJOR }}.${{ vars.PRODUIRE_VERSION_MINOR }}/produire-${{ vars.PRODUIRE_VERSION_MAJOR }}.${{ vars.PRODUIRE_VERSION_MINOR }}.${{ vars.PRODUIRE_VERSION_BUILD }}.zip" -OutFile "$env:RUNNER_TEMP\rdr.zip"
+          $zipfilePath="$env:RUNNER_TEMP\rdr.zip"
+          $destinationUnzipPath="\rdr"
+          & ${env:ProgramFiles}\7-Zip\7z.exe x $zipfilePath "-o$($destinationUnzipPath)" -y
+          Remove-Item -Path "$env:RUNNER_TEMP\rdr.zip"
+
+      - name: Set Git Config
+        shell: pwsh
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+      - name: Run Builder
+        shell: pwsh
+        run: |
+          \rdr\pconsole.exe "$env:GITHUB_WORKSPACE\Source\Scripts\NightlyBuilder_Actions.rdr" "/ApiKey" "${{ secrets.LEGENDUTIL_API_KEY }}"
