@@ -1,12 +1,12 @@
 {
   "App": {
-    "ReleaseChannel": "dev"
+    "ReleaseChannel": "beta"
   },
   "DiscordRPC": {
     "AppID": "1205482419730382888"
   },
   "API": {
-    "FQDN": "api.legendutil.milkeyyy.com"
+    "FQDN": "api-legendutil.ezolys.com"
   },
   "URL": {
     "Logo_Author": "https://twitter.com/Apex_tyaneko",

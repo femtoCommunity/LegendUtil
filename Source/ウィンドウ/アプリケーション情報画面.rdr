@@ -15,7 +15,7 @@
 		アプリ名ラベルの内容=「[アプリの名前]」
 		バージョンラベルの内容=「Version [アプリのバージョン表記]」
 		ビルドラベルの内容=「Internal [アプリの内部バージョン][改行]Build [アプリのビルドバージョン] ([アプリのリリースチャンネル])」
-		コピーライトラベルの内容=「Developed by femto Community Software Team[改行]Copyright (C) 2024 Milkeyyy」
+		コピーライトラベルの内容=「Developed by femto Community Software Team[改行]Copyright (C) 2025 Milkeyyy」
 		
 		アイコンパネルの幅=アイコンピクチャーの高さ
 		GitHubボタンの元実体の「FlatAppearance」の「BorderSize」=0
