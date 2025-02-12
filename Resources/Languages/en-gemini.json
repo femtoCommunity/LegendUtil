@@ -834,9 +834,9 @@
 		"+mat_wide_pillarbox": {
 			"Category": "グラフィック",
 			"Choices": "Enable",
-			"Desc": "ウルトラワイドモニターなどのディスプレイでのゲーム画面の引き伸ばしを無効化します。\n無効化すると、ゲーム画面は比率を維持したままになり、左右に黒い余白が表示されます。",
+			"Desc": "ゲーム画面の引き伸ばしを有効化します。\n有効化すると、ゲーム画面は比率を維持せずに引き伸ばされ、左右に黒い余白が表示されなくなります。この引数は、ウルトラワイドモニター等、通常とは異なるアスペクト比のディスプレイ向けです。",
 			"DisabledText": "Disable",
-			"Name": "ゲーム画面の引き伸ばしを無効化"
+			"Name": "ゲーム画面の引き伸ばしを有効化"
 		},
 		"__Category": {
 			"List": "Config,General,Graphics,System,CPU,Mouse/Controller,Live API"
