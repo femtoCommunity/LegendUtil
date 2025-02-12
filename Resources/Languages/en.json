@@ -624,9 +624,9 @@
 		"-high": {
 			"Category": "CPU",
 			"Choices": "Change CPU priority to \"High\"",
-			"Desc": "Change the CPU priority of Apex Legends to \"High\".\nChanging this may lead to performance improvements, though,\nApex Legends CPU usage will increase and may cause system and other applications to become unstable.",
+			"Desc": "Apex Legends のプロセスのCPU優先度を「高」へ変更します。\r\n変更すると、パフォーマンス向上に繋がる可能性がありますが、\r\nApex Legends のCPU使用率が増加し、システムや他のアプリケーションが不安定になる可能性があります。",
 			"DisabledText": "Disable",
-			"Name": "Change priority to \"high\""
+			"Name": "プロセスの優先度を「高」へ変更"
 		},
 		"-limitvsconst": {
 			"Category": "Graphics",
@@ -817,12 +817,26 @@
 			"DisabledText": "Don't enable",
 			"Name": "Enable Raw Input"
 		},
+		"+mat_minimize_on_alt_tab": {
+			"Category": "System",
+			"Choices": "Enable",
+			"Desc": "Alt+Tab などを使用してゲームのウィンドウからフォーカスを外した際にウィンドウを最小化します。\n有効にすると、DirectX 11 のウィンドウの挙動と同様になります。",
+			"DisabledText": "Disable",
+			"Name": "フォーカス解除時にウィンドウを最小化"
+		},
 		"+mat_queue_mode": {
 			"Category": "CPU",
 			"Choices": "<Recommended> Multi,Single (Asynchronous),Single (Sync),System,Legacy",
 			"Desc": "Change the CPU thread mode. Depending on your settings, it may lead to better performance.",
 			"DisabledText": "No changes",
-			"Name": "Change thread mode"
+			"Name": "マテリアルシステムのスレッドモードを変更"
+		},
+		"+mat_wide_pillarbox": {
+			"Category": "Graphics",
+			"Choices": "Enable",
+			"Desc": "ウルトラワイドモニターなどのディスプレイでのゲーム画面の引き伸ばしを無効化します。\n無効化すると、ゲーム画面は比率を維持したままになり、左右に黒い余白が表示されます。",
+			"DisabledText": "Disable",
+			"Name": "ゲーム画面の引き伸ばしを無効化"
 		},
 		"__Category": {
 			"List": "Config,General,Graphics,System,CPU,Mouse/Controller,Live API"
