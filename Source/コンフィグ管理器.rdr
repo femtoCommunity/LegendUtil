@@ -27,6 +27,8 @@
 		
 		「Resources」,
 		「Resources\TitleScreenImage」,
+		「Resources\MapRotation」,
+		「Resources\MapRotation\Image」,
 		「Resources\News」,
 		「Resources\News\Image」,
 		
@@ -97,6 +99,12 @@
 				「MapRotation_Enable」={
 					「初期値」=○,
 					「名前」=「マップローテーション - 表示」,
+					「説明」=「メインメニューにマップローテーション情報を表示します」,
+					「型」=真偽値
+				},
+				「MapRotation_Image」={
+					「初期値」=○,
+					「名前」=「マップローテーション - 画像」,
 					「説明」=「メインメニューにマップローテーション情報を表示します」,
 					「型」=真偽値
 				},
