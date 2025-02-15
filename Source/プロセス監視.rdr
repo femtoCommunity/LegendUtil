@@ -927,10 +927,10 @@ ApexLegendsとは
 		// Apex Legends が起動するまで待つ
 		【待機時間】=120 // 秒
 		【待機時間カウント】=待機時間
-		//【インストール待機時間】=3600 // 秒
-		//【インストール待機時間カウント】=インストール待機時間
-		//【インストール開始:真偽値】=×
-		//【インストール終了:真偽値】=×
+		【インストール待機時間】=3600 // 秒
+		【インストール待機時間カウント】=インストール待機時間
+		【インストール開始:真偽値】=×
+		【インストール終了:真偽値】=×
 		【Apexプロセス】=無
 		【EABSプロセス】=無
 		【EABS再起動質問結果】
@@ -941,77 +941,80 @@ ApexLegendsとは
 			Apexプロセスが無でないなら繰り返しから抜ける // プロセスが見つかった場合に繰り返しから抜ける
 			待機キャンセルが○なら繰り返しから抜ける // 待機がキャンセルされた場合に繰り返しから抜ける
 			待機時間カウントが0なら繰り返しから抜ける // ゲームの起動が時間内に終わらなかった場合に繰り返しから抜ける
-			//インストール待機時間カウントが0なら繰り返しから抜ける // インストールが時間内に終わらなかった場合に繰り返しから抜ける
+			インストール待機時間カウントが0なら繰り返しから抜ける // インストールが時間内に終わらなかった場合に繰り返しから抜ける
 			
-			/*
 			例外監視
 				インストール終了でないなら
 					// ゲームのステータスを取得してチェック
 					ゲームステータス=EAappでゲームステータス取得する
-					
-					[ゲームステータス(「offerId」)が「Origin.OFR.50.0002694」]なら // ゲームが Apex Legends か判定
-						// インストールor修復実行中の場合 処理が終了するまで待機する
-						[ゲームステータス(「gameStatus」)(「installing」)]かつ[ゲームステータス(「gameStatus」)(「updating」)]でないなら
-							// 修復
-							[ゲームステータス(「installInfo」)(「installReason」)]が「REPAIR」なら
-								インストール開始でないなら
-									[言語管理器で「InPlay.Status.WaitingForGameRepairProcess」を取得したもの]をログ出力する
-									インストール開始=○
+					// ゲームのステータスが取得できない場合はチェックしない
+					ゲームステータスが無でないなら
+						[ゲームステータス(「offerId」)が「Origin.OFR.50.0002694」]なら // ゲームが Apex Legends か判定
+							// インストールor修復実行中の場合 処理が終了するまで待機する
+							[ゲームステータス(「gameStatus」)(「installing」)]かつ[ゲームステータス(「gameStatus」)(「updating」)]でないなら
+								// 修復
+								[ゲームステータス(「installInfo」)(「installReason」)]が「REPAIR」なら
+									インストール開始でないなら
+										[言語管理器で「InPlay.Status.WaitingForGameRepairProcess」を取得したもの]をログ出力する
+										インストール開始=○
+									そして
+									メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameRepairProcess_WithStatus」を{[ゲームステータス(「installInfo」)(「installStatusString」)],[ゲームステータス(「installInfo」)(「installPhaseString」)]}として取得したもの]
+									
+								// インストール
+								そうでなければ
+									インストール開始でないなら
+										[言語管理器で「InPlay.Status.WaitingForGameInstallProcess」を取得したもの]をログ出力する
+										インストール開始=○
+									そして
+									メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameInstallProcess_WithStatus」を{[ゲームステータス(「installInfo」)(「installStatusString」)],[ゲームステータス(「installInfo」)(「installPhaseString」)]}として取得したもの]
+									
 								そして
-								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameRepairProcess_WithStatus」を{[ゲームステータス(「installInfo」)(「installStatusString」)],[ゲームステータス(「installInfo」)(「installPhaseString」)]}として取得したもの]
 								
-							// インストール
-							そうでなければ
+								インストール待機時間カウント=インストール待機時間カウント-1
+								1秒待つ
+								繰り返しを続ける
+								
+							// アップデート実行中の場合 処理が終了するまで待機する
+							他で[ゲームステータス(「gameStatus」)(「installing」)]かつ[ゲームステータス(「gameStatus」)(「updating」)]なら
 								インストール開始でないなら
-									[言語管理器で「InPlay.Status.WaitingForGameInstallProcess」を取得したもの]をログ出力する
+									[言語管理器で「InPlay.Status.WaitingForGameUpdateProcess」を取得したもの]をログ出力する
 									インストール開始=○
 								そして
-								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameInstallProcess_WithStatus」を{[ゲームステータス(「installInfo」)(「installStatusString」)],[ゲームステータス(「installInfo」)(「installPhaseString」)]}として取得したもの]
+								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameUpdateProcess_WithStatus」を{[ゲームステータス(「installInfo」)(「installStatusString」)],[ゲームステータス(「installInfo」)(「installPhaseString」)]}として取得したもの]
+								インストール待機時間カウント=インストール待機時間カウント-1
+								1秒待つ
+								繰り返しを続ける
 								
 							そして
 							
-							インストール待機時間カウント=インストール待機時間カウント-1
-							1秒待つ
-							繰り返しを続ける
-							
-						// アップデート実行中の場合 処理が終了するまで待機する
-						他で[ゲームステータス(「gameStatus」)(「installing」)]かつ[ゲームステータス(「gameStatus」)(「updating」)]なら
-							インストール開始でないなら
-								[言語管理器で「InPlay.Status.WaitingForGameUpdateProcess」を取得したもの]をログ出力する
-								インストール開始=○
+							// インストール完了/キャンセル
+							インストール開始かつ[ゲームステータス(「gameStatus」)(「installing」)]でないかつ[ゲームステータス(「gameStatus」)(「updating」)]でないなら
+								// インストール処理がキャンセルされた場合 待機をキャンセルする
+								[ゲームステータス(「installInfo」)(「installStatus」)]が4なら
+									キャンセル理由=[言語管理器で「InPlay.Status.CancelingGameInstall」を取得したもの]
+									待機キャンセル=○
+									繰り返しから抜ける
+									
+								// インストール処理が完了した場合 ゲームを起動する
+								他で[ゲームステータス(「installInfo」)(「installStatus」)]が5かつインストール開始なら
+									インストール終了でないなら
+										インストール終了=○
+										// ゲームを起動する (EALaunchHelperを呼ぶとEA appも起動するので、EABackgroundServiceも勝手に開始される)
+										プロセス起動する
+									そして
+									
+								そして
 							そして
-							メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameUpdateProcess_WithStatus」を{[ゲームステータス(「installInfo」)(「installStatusString」)],[ゲームステータス(「installInfo」)(「installPhaseString」)]}として取得したもの]
-							インストール待機時間カウント=インストール待機時間カウント-1
-							1秒待つ
-							繰り返しを続ける
-							
 						そして
 						
-						// インストール完了/キャンセル
-						インストール開始かつ[ゲームステータス(「gameStatus」)(「installing」)]でないかつ[ゲームステータス(「gameStatus」)(「updating」)]でないなら
-						// インストール処理がキャンセルされた場合 待機をキャンセルする
-							[ゲームステータス(「installInfo」)(「installStatus」)]が4なら
-								キャンセル理由=[言語管理器で「InPlay.Status.CancelingGameInstall」を取得したもの]
-								待機キャンセル=○
-								繰り返しから抜ける
-								
-							// インストール処理が完了した場合 ゲームを起動する
-							他で[ゲームステータス(「installInfo」)(「installStatus」)]が5かつインストール開始なら
-								インストール終了でないなら
-									インストール終了=○
-									// ゲームを起動する (EALaunchHelperを呼ぶとEA appも起動するので、EABackgroundServiceも勝手に開始される)
-									プロセス起動する
-								そして
-								
-							そして
-							
-						そして
+					そうでなければ
+						「ゲームステータス取得スキップ: ステータス取得失敗」をデバッグログへ出力する
+						
 					そして
 				そして
 			発生した場合
 				「ゲームステータス取得エラー: [エラーのメッセージ]」を「エラー」としてデバッグログへ出力する
 			監視終わり
-			*/
 			
 			例外監視
 				// 1分経過しても起動しない場合はEABackgroundServiceの再起動を勧めるダイアログを表示する (EA appのみ)
