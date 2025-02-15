@@ -37,6 +37,12 @@
 		コンフィグ初期値={
 			「General」={
 				「__Name」=「全般」,
+				「EAapp_GameInstallStatusDetector」={
+					「初期値」=○,
+					「名前」=「EA app ゲームインストール状況検知機能」,
+					「説明」=「」,
+					「型」=真偽値
+				},
 				「EAapp_Config_Folder_Path」={
 					「初期値」=「」,
 					「名前」=「EA app コンフィグフォルダー」,

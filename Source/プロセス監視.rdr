@@ -947,7 +947,7 @@ ApexLegendsとは
 			
 			例外監視
 				// EA app の場合はゲームのインストール状況を取得してチェックする
-				プロファイルのApexLegendsプラットフォームが「EA app」かつインストール終了でないなら
+				([メイン設定について「General」から「EAapp_GameInstallStatusDetector」を取得したもの]が○)かつ(プロファイルのApexLegendsプラットフォームが「EA app」)かつインストール終了でないなら
 					// Apex Legends のゲームのステータスを取得してチェック
 					ゲームステータス=EAappで「Origin.OFR.50.0002694」としてゲームステータス取得する
 					// ゲームのステータスが取得できない場合はチェックしない
