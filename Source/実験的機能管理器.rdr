@@ -20,9 +20,9 @@
 	
 	自分で初期化する手順
 		// ローカライズ
-		機能一覧を【機能】へそれぞれ繰り返す
-			//機能の内容(「名前」)=[言語管理器で「Config.ExperimentalFeatures.[機能のキー];Name」を取得したもの]
-			//機能の内容(「説明」)=[言語管理器で「Config.ExperimentalFeatures.[機能のキー];Desc」を取得したもの]
+		機能一覧の見出しを【機能ID】へそれぞれ繰り返す
+			//起動一覧(機能ID)(「名前」)=[言語管理器で「Config.ExperimentalFeatures.[機能のキー];Name」を取得したもの]
+			//起動一覧(機能ID)(「説明」)=[言語管理器で「Config.ExperimentalFeatures.[機能のキー];Desc」を取得したもの]
 		繰り返し終わり
 	終わり
 	
