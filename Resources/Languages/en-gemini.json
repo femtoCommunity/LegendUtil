@@ -547,6 +547,8 @@
 		},
 		"General": {
 			"__Name": "General",
+			"EAapp_GameInstallStatusDetector;Name": "[実験的機能] EA app ゲームインストール状況検知機能",
+			"EAapp_GameInstallStatusDetector;Desc": "ゲームの起動時に EA app での Apex Legends のインストール/アップデート/修復の状況を取得します。\n有効にすると、ゲームの起動時にアップデートなどが実行されていることを検知した場合、\n処理が終了するまで待機し、処理が終わり次第ゲームの起動処理を自動的に再開します。\n※この設定は実験的機能です。将来的に EA app のアップデートなどによる影響で\n　正常に検知できなくなる可能性があります。",
 			"EAapp_Config_Folder_Path;Name": "EA app Config Folder",
 			"EAapp_Config_Folder_Path;Desc": "Folder where EA app config files are saved.\r\nIf left blank or a non-existent folder is specified, it will be acquired automatically.\r\n*Normally, it is recommended to leave this blank.*",
 			"EAapp_Config_Folder_Path;Custom_1": "Select Folder",
@@ -591,8 +593,8 @@
 			"ServerStatus_Region;List": "Asia,Eastern Europe,Western Europe,South America,Central America,Eastern America,Western America",
 			"MapRotation_Enable;Name": "Map Rotation - Display",
 			"MapRotation_Enable;Desc": "Whether to display map rotation information on the main menu\n(Requires application restart to apply)",
-			"MapRotation_RemainingTime;Name": "[Experimental] Map Rotation - Detailed Remaining Time Display",
-			"MapRotation_RemainingTime;Desc": "マップローテーション情報の残り時間表記を毎秒更新される詳細な表示にします。\n※この設定は試験的機能です。有効化するとメモリーの使用量が増加する可能性があります。\n(適用するにはアプリの再起動が必要です)"
+			"MapRotation_RemainingTime;Name": "[実験的機能] マップローテーション - 詳細な残り時間の表示",
+			"MapRotation_RemainingTime;Desc": "マップローテーション情報の残り時間表記を毎秒更新される詳細な表示にします。\n※この設定は実験的機能です。有効化するとメモリーの使用量が増加する可能性があります。\n(適用するにはアプリの再起動が必要です)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "Experimental Features"
