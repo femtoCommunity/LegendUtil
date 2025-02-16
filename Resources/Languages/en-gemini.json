@@ -548,7 +548,7 @@
 		"General": {
 			"__Name": "General",
 			"EAapp_GameInstallStatusDetector;Name": "[実験的機能] EA app ゲームインストール状況検知機能",
-			"EAapp_GameInstallStatusDetector;Desc": "ゲームの起動時に EA app での Apex Legends のインストール/アップデート/修復の状況を取得します。\n有効にすると、ゲームの起動時にアップデートなどが実行されていることを検知した場合、\n処理が終了するまで待機し、処理が終わり次第ゲームの起動処理を自動的に再開します。\n※この設定は実験的機能です。将来的に EA app のアップデートなどによる影響で\n　正常に検知できなくなる可能性があります。",
+			"EAapp_GameInstallStatusDetector;Desc": "ゲームの起動時に EA app での Apex Legends のインストール/アップデート/修復の状況を取得します。\n有効にすると、ゲームの起動時にアップデートなどが実行されていることを検知した場合、処理が終了するまで待機し、処理が終わり次第ゲームの起動処理を自動的に再開します。\n※この設定は実験的機能です。将来的に EA app のアップデートなどによる影響で正常に検知できなくなる可能性があります。",
 			"EAapp_Config_Folder_Path;Name": "EA app Config Folder",
 			"EAapp_Config_Folder_Path;Desc": "Folder where EA app config files are saved.\r\nIf left blank or a non-existent folder is specified, it will be acquired automatically.\r\n*Normally, it is recommended to leave this blank.*",
 			"EAapp_Config_Folder_Path;Custom_1": "Select Folder",
@@ -822,7 +822,7 @@
 		"+mat_minimize_on_alt_tab": {
 			"Category": "System",
 			"Choices": "Enable",
-			"Desc": "Alt+Tab などを使用してゲームのウィンドウからフォーカスを外した際にウィンドウを最小化します。\n有効にすると、DirectX 11 のウィンドウの挙動と同様になります。",
+			"Desc": "Alt+Tab などを使用してゲームのウィンドウからフォーカスを外した際にウィンドウを最小化します。\n(DirectX 11 のウィンドウに似た挙動になります。)",
 			"DisabledText": "Disable",
 			"Name": "フォーカス解除時にウィンドウを最小化"
 		},
