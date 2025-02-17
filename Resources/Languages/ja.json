@@ -548,7 +548,7 @@
 		"General": {
 			"__Name": "全般",
 			"EAapp_GameInstallStatusDetector;Name": "[実験的機能] EA app ゲームインストール状況検知機能",
-			"EAapp_GameInstallStatusDetector;Desc": "ゲームの起動時に EA app での Apex Legends のインストール/アップデート/修復の状況を取得します。\n有効にすると、ゲームの起動時にアップデートなどが実行されていることを検知した場合、処理が終了するまで待機し、処理が終わり次第ゲームの起動処理を自動的に再開します。\n※この設定は実験的機能です。将来的に EA app のアップデートなどによる影響で正常に検知できなくなる可能性があります。",
+			"EAapp_GameInstallStatusDetector;Desc": "ゲームの起動時に EA app での Apex Legends のインストール/アップデート/修復の状況を取得します。\n有効にすると、ゲームの起動時にアップデートなどが実行されていることを検知した場合、処理が終了するまで待機し、処理が終わり次第ゲームの起動処理を自動的に再開します。\n※この設定は実験的機能です。将来的に EA app のアップデートなどによる影響で正常に動作しなくなる可能性があります。",
 			"EAapp_Config_Folder_Path;Name": "EA app コンフィグフォルダー",
 			"EAapp_Config_Folder_Path;Desc": "EA app のコンフィグファイルが保存されているフォルダー\r\n空欄または存在しないフォルダーを指定すると自動的に取得されます。\r\n※通常は空欄にすることを推奨します※",
 			"EAapp_Config_Folder_Path;Custom_1": "フォルダーを選択",
