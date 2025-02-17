@@ -73,6 +73,9 @@
 		}
 	},
 	"Tooltip": {
+		"メイン画面": {
+			"アプリケーション情報ラベル": "クリックしてバージョン情報をコピー"
+		},
 		"プロファイル編集パネル部品": {
 			"AltEnter自動押下チェックボックス": "Sets whether to automatically press Alt+Enter after launching Apex Legends.\nEnabling this setting can eliminate the \"black bars\" that appear when \"stretching the resolution\".",
 			"AltEnter自動押下待機時間ダイヤル": "Sets the waiting time (seconds) before automatically pressing Alt+Enter after Apex Legends launches.\r\nThe time it takes for the title screen to appear varies depending on the environment, so please adjust this setting to suit your environment.",
@@ -330,6 +333,9 @@
 		}
 	},
 	"Panel": {
+		"MainMenu_VersionInfoLabel": {
+			"VersionInfoCopied": "バージョン情報をクリップボードへコピーしました。"
+		},
 		"MainMenu_ProfileList": {
 			"SortOrderList;List": "Name (Ascending),Name (Descending),Display Settings (Ascending),Display Settings (Descending),Platform (Ascending),Platform (Descending),Last Played (Recent),Last Played (Oldest),Total Play Time (Shortest),Total Play Time (Longest)",
 			"ItemDetail_Resolution": "Resolution: {0}×{1} ({2}) - {3} Hz",
