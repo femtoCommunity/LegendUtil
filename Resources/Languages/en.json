@@ -73,6 +73,9 @@
 		}
 	},
 	"Tooltip": {
+		"メイン画面": {
+			"アプリケーション情報ラベル": "クリックしてバージョン情報をコピー"
+		},
 		"プロファイル編集パネル部品": {
 			"AltEnter自動押下チェックボックス": "Set whether to automatically press Alt+Enter after starting Apex Legends.\nBy enabling this setting, you can eliminate the \"black bands\" that occur when \"resolution stretching\" is performed.",
 			"AltEnter自動押下待機時間ダイヤル": "Sets the wait time (in seconds) from when Apex Legends starts to when Alt+Enter is automatically pressed.\nThe time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
@@ -330,6 +333,9 @@
 		}
 	},
 	"Panel": {
+		"MainMenu_VersionInfoLabel": {
+			"VersionInfoCopied": "バージョン情報をクリップボードへコピーしました。"
+		},
 		"MainMenu_ProfileList": {
 			"SortOrderList;List": "Name (ascending),Name (descending),Display Settings (ascending),Display Settings (descending),Platform (ascending),Platform (descending),Last Played (nearest to latest),Last Played (farthest to latest),Total Play Time (shortest to longest),Total Play Time (longest to longest)",
 			"ItemDetail_Resolution": "Resolution: {0}×{1} ({2}) - {3} Hz",
