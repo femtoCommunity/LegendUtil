@@ -548,7 +548,7 @@
 		"General": {
 			"__Name": "일반",
 			"EAapp_GameInstallStatusDetector;Name": "[実験的機能] EA app ゲームインストール状況検知機能",
-			"EAapp_GameInstallStatusDetector;Desc": "ゲームの起動時に EA app での Apex Legends のインストール/アップデート/修復の状況を取得します。\n有効にすると、ゲームの起動時にアップデートなどが実行されていることを検知した場合、処理が終了するまで待機し、処理が終わり次第ゲームの起動処理を自動的に再開します。\n※この設定は実験的機能です。将来的に EA app のアップデートなどによる影響で正常に検知できなくなる可能性があります。",
+			"EAapp_GameInstallStatusDetector;Desc": "ゲームの起動時に EA app での Apex Legends のインストール/アップデート/修復の状況を取得します。\n有効にすると、ゲームの起動時にアップデートなどが実行されていることを検知した場合、処理が終了するまで待機し、処理が終わり次第ゲームの起動処理を自動的に再開します。\n※この設定は実験的機能です。将来的に EA app のアップデートなどによる影響で正常に動作しなくなる可能性があります。",
 			"EAapp_Config_Folder_Path;Name": "EA app 구성 폴더",
 			"EAapp_Config_Folder_Path;Desc": "EA app의 구성 파일이 저장된 폴더\n공백이나 존재하지 않는 폴더를 지정하면 자동으로 검색됩니다.\n※통상은 공란으로 하는 것을 추천합니다※",
 			"EAapp_Config_Folder_Path;Custom_1": "폴더를 선택하세요",
