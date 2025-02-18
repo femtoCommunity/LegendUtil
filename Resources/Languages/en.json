@@ -74,7 +74,7 @@
 	},
 	"Tooltip": {
 		"メイン画面": {
-			"アプリケーション情報ラベル": "クリックしてバージョン情報をコピー"
+			"アプリケーション情報ラベル": "Click to copy version information"
 		},
 		"プロファイル編集パネル部品": {
 			"AltEnter自動押下チェックボックス": "Set whether to automatically press Alt+Enter after starting Apex Legends.\nBy enabling this setting, you can eliminate the \"black bands\" that occur when \"resolution stretching\" is performed.",
@@ -334,7 +334,7 @@
 	},
 	"Panel": {
 		"MainMenu_VersionInfoLabel": {
-			"VersionInfoCopied": "バージョン情報をクリップボードへコピーしました。"
+			"VersionInfoCopied": "The version information has been copied to the clipboard."
 		},
 		"MainMenu_ProfileList": {
 			"SortOrderList;List": "Name (ascending),Name (descending),Display Settings (ascending),Display Settings (descending),Platform (ascending),Platform (descending),Last Played (nearest to latest),Last Played (farthest to latest),Total Play Time (shortest to longest),Total Play Time (longest to longest)",
@@ -553,8 +553,8 @@
 		},
 		"General": {
 			"__Name": "General",
-			"EAapp_GameInstallStatusDetector;Name": "[実験的機能] EA app ゲームインストール状況検知機能",
-			"EAapp_GameInstallStatusDetector;Desc": "ゲームの起動時に EA app での Apex Legends のインストール/アップデート/修復の状況を取得します。\n有効にすると、ゲームの起動時にアップデートなどが実行されていることを検知した場合、処理が終了するまで待機し、処理が終わり次第ゲームの起動処理を自動的に再開します。\n※この設定は実験的機能です。将来的に EA app のアップデートなどによる影響で正常に動作しなくなる可能性があります。",
+			"EAapp_GameInstallStatusDetector;Name": "[Experimental Feature] EA app game installation status detection",
+			"EAapp_GameInstallStatusDetector;Desc": "Get the installation/update/repair status of Apex Legends in the EA app when the game is launched.\nIf enabled, if an update or other process is detected when the game is launched, it will wait until the process is complete and automatically resume the game launch process once the process is complete.\n*This setting is an experimental feature. It may not work properly in the future due to EA app updates, etc.",
 			"EAapp_Config_Folder_Path;Name": "EA app Config Folder",
 			"EAapp_Config_Folder_Path;Desc": "The folder where the EA app configuration file is saved.\nIf you specify a blank or non-existent folder, it will be retrieved automatically.\n*We recommend leaving this blank.",
 			"EAapp_Config_Folder_Path;Custom_1": "Select Folder",
