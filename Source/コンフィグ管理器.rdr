@@ -37,6 +37,12 @@
 		コンフィグ初期値={
 			「General」={
 				「__Name」=「全般」,
+				「EAapp_GameInstallStatusDetector」={
+					「初期値」=○,
+					「名前」=「EA app ゲームインストール状況検知機能」,
+					「説明」=「」,
+					「型」=真偽値
+				},
 				「EAapp_Config_Folder_Path」={
 					「初期値」=「」,
 					「名前」=「EA app コンフィグフォルダー」,
@@ -106,7 +112,9 @@
 					「説明」=「メインメニューにマップローテーション情報を表示します\n(この設定は試験的機能です。有効化するとメモリーの使用量が増加する可能性があります。)」,
 					「型」=真偽値
 				},
-				「ProfileDropdownList_SelectedID」={「設定可能」=×,「初期値」=「Default」}
+				「ProfileList_SortOrder」={「設定可能」=×,「初期値」=「7」},
+				「ProfileDropdownList_SelectedID」={「設定可能」=×,「初期値」=「Default」},
+				
 			},
 			「UI_ProfileManage」={
 				「__Name」=「」,
@@ -157,7 +165,7 @@
 						「Beta」=「beta」,
 						「Beta Only」=「beta_only」,
 						「Development」=「dev」,
-						「Nightly」=「dev_nightly」
+						「Nightly」=「nightly」
 					},
 					「追加項目」=空の配列
 				},
@@ -205,9 +213,13 @@
 			そのドッキング方向=「上」
 			その自動調整=○
 			その余白={0,5,0,5}
-			//その元実体の「MinimumSize」={その親の実質大きさの幅,30}
-			//その元実体の「MaximumSize」={その親の実質大きさの幅,100}
 			その枠=「線」
+			その描画する時の手順は、『
+				// 部品の幅を調整する
+				【部品】=コンフィグ初期値(「UI_General」)(「Language」)(「追加項目」)(1)
+				部品の元実体の「MinimumSize」={部品の親の実質大きさの幅,30}
+				部品の元実体の「MaximumSize」={部品の親の実質大きさの幅,100}
+			』
 			そのクリックされた時の手順は、『
 				「[アプリのCrowdinURL]」を開く
 			』
@@ -328,7 +340,7 @@
 					メイン設定について「Window_Main」で「Size_W」へ[930に(メイン画面の設計スケール比率(2)/96)を掛けたもの]を設定する
 				もし終わり
 				もしメイン設定について「Window_Main」から「Size_H」を取得したものが無なら
-					メイン設定について「Window_Main」で「Size_H」へ[835に(メイン画面の設計スケール比率(2)/96)を掛けたもの]を設定する
+					メイン設定について「Window_Main」で「Size_H」へ[890に(メイン画面の設計スケール比率(2)/96)を掛けたもの]を設定する
 				もし終わり
 				// 位置
 				もしメイン設定について「Window_Main」から「Position_X」を取得したものが無なら

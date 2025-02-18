@@ -38,7 +38,7 @@ namespace LegendUtil.SharpLibrary
 				mode.dmSize = (short)Marshal.SizeOf(mode);
 
 				// 現在のディスプレイ設定を取得する
-				DisplayManager.EnumDisplaySettings(デバイス名, -1, ref mode);
+				NativeMethod.EnumDisplaySettings(デバイス名, -1, ref mode);
 
 				mode.dmPelsWidth = dw;
 				mode.dmPelsHeight = dh;
@@ -47,7 +47,7 @@ namespace LegendUtil.SharpLibrary
 				//mode.dmFields = mode.dmPelsWidth | mode.dmPelsHeight | mode.dmDisplayFrequency;
 
 				// ディスプレイ設定の変更を実行
-				var result = DisplayManager.ChangeDisplaySettingsEx(デバイス名, ref mode, IntPtr.Zero, フラグ, IntPtr.Zero);
+				var result = NativeMethod.ChangeDisplaySettingsEx(デバイス名, ref mode, IntPtr.Zero, フラグ, IntPtr.Zero);
 
 				return result;
 			}
@@ -61,7 +61,7 @@ namespace LegendUtil.SharpLibrary
 				var mode = new DEVMODE();
 				mode.dmSize = (short)Marshal.SizeOf(mode);
 
-				DisplayManager.EnumDisplaySettings(デバイス名, modeIndex, ref mode);
+				NativeMethod.EnumDisplaySettings(デバイス名, modeIndex, ref mode);
 
 				return new ディスプレイ設定(mode.dmPelsWidth, mode.dmPelsHeight, mode.dmDisplayFrequency, mode.dmDisplayFixedOutput);
 			}
@@ -85,7 +85,7 @@ namespace LegendUtil.SharpLibrary
 				var mode = new DEVMODE();
 				mode.dmSize = (short)Marshal.SizeOf(mode);
 
-				while (DisplayManager.EnumDisplaySettings(デバイス名, modeIndex, ref mode))
+				while (NativeMethod.EnumDisplaySettings(デバイス名, modeIndex, ref mode))
 				{
 					if (mode.dmPelsWidth == (uint)dw && mode.dmPelsHeight == (uint)dh && mode.dmDisplayFrequency == (uint)df)
 						return true;
@@ -116,7 +116,7 @@ namespace LegendUtil.SharpLibrary
 				var mode = new DEVMODE();
 				mode.dmSize = (short)Marshal.SizeOf(mode);
 
-				while (DisplayManager.EnumDisplaySettings(デバイス名, modeIndex, ref mode))
+				while (NativeMethod.EnumDisplaySettings(デバイス名, modeIndex, ref mode))
 				{
 					list.Add(new ディスプレイ設定(mode.dmPelsWidth, mode.dmPelsHeight, mode.dmDisplayFrequency, mode.dmDisplayFixedOutput));
 					modeIndex++;
@@ -133,7 +133,7 @@ namespace LegendUtil.SharpLibrary
 					d.cb = Marshal.SizeOf(d);
 					try
 					{
-						for (uint id = 0; DisplayManager.EnumDisplayDevices(null, id, ref d, 0); id++)
+						for (uint id = 0; NativeMethod.EnumDisplayDevices(null, id, ref d, 0); id++)
 						{
 							list.Add(d);
 							d.cb = Marshal.SizeOf(d);
@@ -202,7 +202,7 @@ namespace LegendUtil.SharpLibrary
 			public string DeviceKey;
 		}
 
-		public class DisplayManager
+		public class NativeMethod
 		{
 			[DllImport("user32.dll")]
 			public static extern DISP_CHANGE ChangeDisplaySettings(ref DEVMODE devMode, int flags);

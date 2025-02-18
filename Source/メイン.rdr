@@ -1,18 +1,3 @@
-「rdrFirstChanceException.dll」を利用する
-
-// C# ライブラリー
-「LegendUtil.SharpLibrary.dll」を利用する
-
-// DiscordRPC ライブラリー
-「FuwaFuwaPresence.dll」を利用する
-
-「Wind.rdr.dll」を利用する
-「Milkeyyy.ControlSR.dll」を利用する
-「Produire.WebView2.dll」を利用する
-「rdrReadWriteTextReader.dll」を利用する
-「RdrWindows7API.dll」を利用する
-
-
 未処理例外処理器を初期化する
 未処理例外処理器の検知した時の手順は、未処理例外検知した
 
