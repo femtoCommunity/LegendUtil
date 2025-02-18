@@ -90,7 +90,7 @@ winget install --id femtoCommunity.LegendUtil
   複雑な文字列を入力することなく、GUIで視覚的に起動引数を設定できます。
 
   - 一覧にない起動引数も手動で指定することができます。
-  - 今まで EA app や Steam で設定していた起動引数を「追加引数」へ入力すると、LegendUtil が自動的に解析して読み込んで引き継ぐ事ができます。
+  - 今まで EA app や Steam で設定していた起動引数を「追加引数」へ入力すると、LegendUtil が自動的に解析するため、そのまま引き継ぐ事ができます。
 
   ![Profile Edit Panel Preview 2](https://github.com/femtoCommunity/LegendUtil/assets/59532514/0b447778-4c94-492a-ba4b-a7a74d6b995d)
   ![Profile Edit Panel Preview 3](https://github.com/femtoCommunity/LegendUtil/assets/59532514/b1604e42-4c00-4662-92e0-50217e42538c)
