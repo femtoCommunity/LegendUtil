@@ -18,6 +18,7 @@
 - [メインメニュー] マップローテーションへ常時表示される残り時間表記を追加
 - [プロファイル編集パネル] DirectX 12 での解像度変更に関する警告文を追加
 - [アプリケーション情報画面] コミットハッシュの表記を追加
+- ウィンドウ上部のバージョンラベルをクリックするとバージョン情報をコピーする機能を実装
 - シーズン24 で追加された新たな起動引数へ対応
   - [`+mat_minimize_on_alt_tab`](https://www.ea.com/ja/games/apex-legends/apex-legends/news/takeover-patch-notes#:~:text=Added%20a%20launch%20argument%20%2Bmat_minimize_on_alt_tab%201%20that%20allows%20behavior%20similar%20to%20DX11%20where%20tabbing%20away%20from/clicking%20out%20of%20the%20fullscreen%20game%20causes%20Apex%20to%20minimize) - フルスクリーン時に <kbd>Alt</kbd>+<kbd>Tab</kbd> で移動したり、ウィンドウ外をクリックしてゲームからフォーカスを外すと、**ウィンドウが最小化される** という DirectX 11 と同様の動作が可能になります。
   - [`+mat_wide_pillarbox`](https://www.ea.com/ja/games/apex-legends/apex-legends/news/takeover-patch-notes#:~:text=Changed%20the%20way%20that%20ultrawide%20monitors%20handle%2016%3A9%20and%2016%3A10%20resolutions%20in%20full%2Dscreen%20mode.%20They%20will%20now%20have%20pillarboxing%20(black%20borders%20on%20left%20and%20right)%20and%20no%20stretching.%20This%20behavior%20can%20be%20disabled%20with%20%2Bmat_wide_pillarbox%200%20launch%20argument%2C%20if%20stretching%20is%20desired.) - ゲーム画面が比率を維持せずに引き伸ばされ、画面の左右に黒い余白が表示されなくなります。主にウルトラワイドモニター等の通常とは異なるアスペクト比のディスプレイ向けの引数です。
