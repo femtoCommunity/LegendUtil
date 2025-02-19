@@ -139,5 +139,4 @@ Copyright (C) 2025 Rel1cStyle
     - [Ko-fiで開発をサポートする](https://ko-fi.com/milkeyyy)
 - **ロゴデザイン**
   - [**Rel1c**](https://github.com/Rel1c393) (Rel1cStyle) - [@Ezolys](https://github.com/Ezolys) / [@femto Community](https://github.com/femtoCommunity)
-    - [GitHub](https://github.com/Rel1c393)
     - [Twitter](https://twitter.com/Apex_tyaneko)
