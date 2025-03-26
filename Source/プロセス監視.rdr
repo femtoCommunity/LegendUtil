@@ -475,7 +475,18 @@ ApexLegendsとは
 		ステータス番号=12
 		// Apex Legends の実行ファイルのパスを取得する 取得できなければエラー
 		[言語管理器で「InPlay.Log.GettingGameInstallationLocation」を取得したもの]をログ出力する
+		
 		インストールパス=プロファイルのApexLegendsバイナリーパス
+
+		// ビーストモードイベントから DirectX 11 の実行ファイルが削除されたので、
+		// 設定されているインストール先の実行ファイル名を DirectX 12 のものに置き換える
+		もし[インストールパスのファイル名だけ]が「r5apex.exe」なら
+			プロファイルのApexLegendsバイナリーパス=「[プロファイルのApexLegendsバイナリーパスのフォルダだけ]r5apex_dx12.exe」
+			「- [言語管理器で「InPlay.Log.ReplacedDX11BinaryPath」を取得したもの]」をログ出力する
+			「 - [インストールパス] -> [プロファイルのApexLegendsバイナリーパス]」をログ出力する
+			インストールパス=プロファイルのApexLegendsバイナリーパス
+		もし終わり
+
 		もしインストールパスというファイルが存在するなら
 			「- [言語管理器で「InPlay.Log.Path」を取得したもの]: [インストールパス]」をログ出力する
 			// autoexec を生成(コピー)する

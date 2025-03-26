@@ -54,7 +54,7 @@
     <項目 位置="Source\ユーティリティ\アスペクト比計算.rdr" />
     <項目 位置="Source\ユーティリティ\サムネイル化.rdr" />
   </一覧>
-  <バージョン 値="0.3.1.0">
+  <バージョン 値="0.3.2.0">
     <項目 名前="Comments" 値="LegendUtil - Development by femto Community Software Team" />
     <項目 名前="FileDescription" 値="LegendUtil" />
     <項目 名前="CompanyName" 値="femto Community Software Team" />
