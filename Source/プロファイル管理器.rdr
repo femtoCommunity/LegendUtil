@@ -104,7 +104,7 @@
 						もしプロファイル辞書(「Info」)に「Last_Play_Date_And_Time_List」が存在しないならプロファイル辞書(「Info」)(「Last_Play_Date_And_Time_List」)=空の辞書
 						もしプロファイル辞書(「Info」)(「Total_Play_Time_List」)が無ならプロファイル辞書(「Info」)(「Total_Play_Time_List」)=空の辞書
 						もしプロファイル辞書(「Info」)(「Last_Play_Date_And_Time_List」)が無ならプロファイル辞書(「Info」)(「Last_Play_Date_And_Time_List」)=空の辞書
-						
+
 						// シーズン 21 から DirectX 12 で起動するための引数が変わったので、以前の引数が存在する場合は置き換える
 						もし[プロファイル辞書(「Game」)(「Arguments」)]から「-eac_launcher_settings SettingsDX12.json」を探したものが1以上なら
 							プロファイル辞書(「Game」)(「Arguments」)=[プロファイル辞書(「Game」)(「Arguments」)]で「-eac_launcher_settings SettingsDX12.json」を「-anticheat_settings=SettingsDX12.json」へ置換したもの
@@ -976,14 +976,14 @@ Apex Legends が使用するスレッド数を制限したい場合にこの設�
 		// インストール先が取得できなかった場合は、自動検出を無効にして、インストール先を空欄にする
 		もしパスが無なら
 			ApexLegendsバイナリーパス=「」
-			ApexLegendsDX12バイナリーパス=「」
-			//EACバイナリーパス=「」
+			ApexLegendsDX12バイナリーパス=「」 // 未使用
+			//EACバイナリーパス=「」 // 未使用
 			
 		// 取得できた場合はパスを設定する
 		そうでなければ
-			ApexLegendsバイナリーパス=「[パス]r5apex.exe」
-			ApexLegendsDX12バイナリーパス=「[パス]r5apex_dx12.exe」
-			EACバイナリーパス=「[パス]r5apex.exe」
+			ApexLegendsバイナリーパス=「[パス]r5apex_dx12.exe」
+			ApexLegendsDX12バイナリーパス=「[パス]r5apex_dx12.exe」 // 未使用
+			EACバイナリーパス=「[パス]r5apex_dx12.exe」 // 未使用
 			
 		もし終わり
 	終わり
