@@ -220,6 +220,7 @@
 			"LoadingProfile": "Loading profile",
 			"GettingDetailsOfInstalledGames": "Getting information about installed games",
 			"GettingGameInstallationLocation": "Getting game installation location",
+			"ReplacedDX11BinaryPath": "Replaced DirectX 11 executable names with DirectX 12 executable names",
 			"GenerateAutoexec": "Generating Autoexec: {0}",
 			"StartEditingVideoConfig": "Start editing Video Config",
 			"RetrievingLatestTitleScreenImage": "- Get the latest title screen image",
@@ -570,7 +571,9 @@
 			"ServerStatus_Region;Desc": "Server status regions displayed in the main menu",
 			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West",
 			"MapRotation_Enable;Name": "Show Map Rotation Widget",
-			"MapRotation_Enable;Desc": "Show map rotation on main menu\n(Requires app restart to apply)"
+			"MapRotation_Enable;Desc": "Show map rotation on main menu\n(Requires app restart to apply)",
+			"MapRotation_RemainingTime;Name": "[Experimental Feature] Map Rotation - Time Remaining",
+			"MapRotation_RemainingTime;Desc": "Whether to display the remaining time for each mode of map rotation. This setting is an experimental feature. Enabling it may increase memory usage. (Requires app restart to apply)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "Experimental Features"

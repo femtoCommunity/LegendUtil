@@ -220,6 +220,7 @@
 			"LoadingProfile": "프로필 로딩 중",
 			"GettingDetailsOfInstalledGames": "설치된 게임 정보 조회 중",
 			"GettingGameInstallationLocation": "게임 설치 위치 검색 중",
+			"ReplacedDX11BinaryPath": "DirectX 11 실행 파일 이름을 DirectX 12 실행 파일 이름으로 바꿨습니다",
 			"GenerateAutoexec": "Autoexec 생성: {0}",
 			"StartEditingVideoConfig": "비디오 구성 편집 시작",
 			"RetrievingLatestTitleScreenImage": "- 최신 타이틀 화면 보기",
@@ -570,7 +571,9 @@
 			"ServerStatus_Region;Desc": "주 메뉴에 표시되는 서버 상태의 지역",
 			"ServerStatus_Region;List": "아시아,동유럽,서유럽,미국 남부,미국 중부,미국 동부,미국 서부",
 			"MapRotation_Enable;Name": "지도 회전 정보 보기",
-			"MapRotation_Enable;Desc": "메인 메뉴에 지도 회전 정보 표시\r\n(적용하려면 앱 재부팅이 필요합니다.)"
+			"MapRotation_Enable;Desc": "메인 메뉴에 지도 회전 정보 표시\r\n(적용하려면 앱 재부팅이 필요합니다.)",
+			"MapRotation_RemainingTime;Name": "[시험 기능] 맵 회전 - 남은 시간",
+			"MapRotation_RemainingTime;Desc": "맵 로테이션의 각 모드의 남은 시간을 표시할지 어떨지\n※이 설정은 시험적 기능입니다. 활성화하면 메모리 사용량이 증가할 수 있습니다. \n(적용하려면 앱을 다시 시작해야 함)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "실험적 기능"
