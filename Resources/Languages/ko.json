@@ -80,7 +80,7 @@
 			"AltEnter自動押下チェックボックス": "Apex Legends 실행 후 Alt+Enter를 자동으로 누를지 여부를 설정합니다.\n이 설정을 활성화하면 '해상도 늘리기'를 할 때 발생하는 '검은 띠'를 없앨 수 있습니다.",
 			"AltEnter自動押下待機時間ダイヤル": "Apex Legends가 실행된 후 Alt+Enter를 자동 누를 때까지의 대기 시간(초)을 설정합니다.\r\n환경에 따라 타이틀 화면이 표시되기까지 걸리는 시간이 달라지므로, 자신의 환경에 맞게 설정하시기 바랍니다.",
 			"AltEnter自動押下方法選択リスト": "Alt+Enter 자동 누름 실행 방법을 설정합니다.\n\n  <이미지 인식>\n    제목 화면의 표시를 자동으로 인식하여 Alt+Enter 자동 누름을 실행합니다.\n    이 설정을 사용하려면 추가 파일 다운로드가 필요합니다. (자동으로 다운로드됩니다).\n\n  <시간>\n    Apex Legends가 실행된 후 지정된 시간 동안 대기하여 Alt+Enter 자동 누름을 실행합니다.\n    환경에 따라 타이틀 화면이 표시되기까지 걸리는 시간이 달라지므로 자신의 환경에 맞게 설정하시기 바랍니다.",
-			"ApexLegendsパステキスト": "Apex Legends의 설치 경로(실행 파일)를 설정합니다.\r\n'r5apex.exe'의 경로를 지정합니다.",
+			"ApexLegendsパステキスト": "Apex Legends のインストール先(実行ファイル)へのパスを設定します。\r\n「r5apex_dx12.exe」へのパスを指定してください。",
 			"ApexLegendsパス自動取得チェックボックス": "이 PC에 설치된 Apex Legends의 설치 위치(실행 파일)를 자동으로 검색합니다.",
 			"ApexLegendsパス自動取得ボタン": "이 PC에 설치된 Apex Legends의 설치 위치를 다시 가져옵니다.\r\n재설치를 하는 등 설치 위치가 변경된 경우 다시 설치하십시오.",
 			"EAappSteam経由IDテキスト": "Steam에 등록된 EA 앱의 AppID를 지정합니다.",
@@ -235,6 +235,7 @@
 			"LoadingProfile": "프로필 로딩 중",
 			"GettingDetailsOfInstalledGames": "설치된 게임 정보 조회 중",
 			"GettingGameInstallationLocation": "게임 설치 위치 검색 중",
+			"ReplacedDX11BinaryPath": "DirectX 11 の実行ファイル名を DirectX 12 の実行ファイル名へ置き換えました",
 			"GenerateAutoexec": "Autoexec 생성: {0}",
 			"StartEditingVideoConfig": "비디오 구성 편집 시작",
 			"RetrievingLatestTitleScreenImage": "- 최신 타이틀 화면 보기",
@@ -452,7 +453,7 @@
 			"33": "Apex Legends 설치 경로를 찾았습니다.\r\n\r\n경로: {0}",
 			"34": "계정",
 			"35": "테스트",
-			"36": "＜주의＞ DirectX 12 로 늘이는 경우는, 「시스템의 해상도를 변경한다」를 「유효」, 「스케일링 모드」를 「신축」으로 설정할 필요가 있습니다."
+			"36": "＜注意＞\n特別な理由がない限り、引き伸ばし設定を行うために「システムの解像度を変更する」を有効にする必要はありません。\n通常は無効にすることをおすすめします。"
 		},
 		"4": {
 			"2": "아래 옵션에 없는 시작 인수는 여기에 입력하십시오.\n기존 시작 인수의 텍스트를 입력하고 구문 분석을 실행하면 LegendUtil이 자동으로 구문 분석하고 읽습니다.",
