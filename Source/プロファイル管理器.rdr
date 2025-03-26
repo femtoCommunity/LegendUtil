@@ -1097,14 +1097,14 @@ Apex Legends が使用するスレッド数を制限したい場合にこの設�
 		// インストール先が取得できなかった場合は、自動検出を無効にして、インストール先を空欄にする
 		もしパスが無なら
 			ApexLegendsバイナリーパス=「」
-			ApexLegendsDX12バイナリーパス=「」
-			//EACバイナリーパス=「」
+			ApexLegendsDX12バイナリーパス=「」 // 未使用
+			//EACバイナリーパス=「」 // 未使用
 			
 		// 取得できた場合はパスを設定する
 		そうでなければ
-			ApexLegendsバイナリーパス=「[パス]r5apex.exe」
-			ApexLegendsDX12バイナリーパス=「[パス]r5apex_dx12.exe」
-			EACバイナリーパス=「[パス]r5apex.exe」
+			ApexLegendsバイナリーパス=「[パス]r5apex_dx12.exe」
+			ApexLegendsDX12バイナリーパス=「[パス]r5apex_dx12.exe」 // 未使用
+			EACバイナリーパス=「[パス]r5apex_dx12.exe」 // 未使用
 			
 		もし終わり
 	終わり
