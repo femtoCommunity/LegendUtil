@@ -80,7 +80,7 @@
 			"AltEnter自動押下チェックボックス": "Sets whether to automatically press Alt+Enter after launching Apex Legends.\nEnabling this setting can eliminate the \"black bars\" that appear when \"stretching the resolution\".",
 			"AltEnter自動押下待機時間ダイヤル": "Sets the waiting time (seconds) before automatically pressing Alt+Enter after Apex Legends launches.\r\nThe time it takes for the title screen to appear varies depending on the environment, so please adjust this setting to suit your environment.",
 			"AltEnter自動押下方法選択リスト": "Sets how to automatically press Alt+Enter.\n\n  <Image Recognition>\n    Automatically recognizes the title screen and presses Alt+Enter.\n    If you use this setting, you need to download additional files. (They will be downloaded automatically.)\n\n  <Time>\n    Waits for the specified time after Apex Legends launches and then presses Alt+Enter.\n    The time it takes for the title screen to appear varies depending on the environment, so please adjust this setting to suit your environment.",
-			"ApexLegendsパステキスト": "Sets the path to the Apex Legends installation (executable file).\r\nSpecify the path to \"r5apex.exe\".",
+			"ApexLegendsパステキスト": "Apex Legends のインストール先(実行ファイル)へのパスを設定します。\r\n「r5apex_dx12.exe」へのパスを指定してください。",
 			"ApexLegendsパス自動取得チェックボックス": "Automatically retrieves the installation location (executable file) of Apex Legends installed on this PC.",
 			"ApexLegendsパス自動取得ボタン": "Retrieves the installation location of Apex Legends installed on this PC.\r\nDo this if the installation location has changed, such as after reinstalling.",
 			"EAappSteam経由IDテキスト": "Specifies the AppID of the EA app registered on Steam.",
@@ -235,6 +235,7 @@
 			"LoadingProfile": "Loading profile",
 			"GettingDetailsOfInstalledGames": "Getting details of installed games",
 			"GettingGameInstallationLocation": "Getting game installation location",
+			"ReplacedDX11BinaryPath": "DirectX 11 の実行ファイル名を DirectX 12 の実行ファイル名へ置き換えました",
 			"GenerateAutoexec": "Generate Autoexec: {0}",
 			"StartEditingVideoConfig": "Start editing video config",
 			"RetrievingLatestTitleScreenImage": "- Retrieving latest title screen image",
@@ -452,7 +453,7 @@
 			"33": "Apex Legends installation location found.\r\n\r\nPath: {0}",
 			"34": "Account",
 			"35": "Test",
-			"36": "＜注意＞DirectX 12 で引き伸ばしを行う場合は、「システムの解像度を変更する」を「有効」、「スケーリングモード」を「伸縮」に設定する必要があります。"
+			"36": "＜注意＞\n特別な理由がない限り、引き伸ばし設定を行うために「システムの解像度を変更する」を有効にする必要はありません。\n通常は無効にすることをおすすめします。"
 		},
 		"4": {
 			"2": "Enter any launch arguments not listed in the options below here.\nEnter the text of the existing launch arguments and execute \"Parse\" to have LegendUtil automatically parse and load them.",
