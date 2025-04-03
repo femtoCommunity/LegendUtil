@@ -608,14 +608,6 @@
 		}
 	},
 	"LaunchOption": {
-		"-anticheat_settings=SettingsDX11___dot___json": {
-			"Category": "Graphics",
-			"Choices": "Enable",
-			"Desc": "Launches the game with DirectX 11.\nThis option is not recommended as DirectX 12 tends to provide better performance and stability.\nUse this only if you are experiencing unstable performance with DirectX 12.",
-			"DisabledText": "Disable",
-			"Name": "Launch the game with DirectX 11",
-			"AdditionalButtonText": "More information about DirectX 12/11 (Reddit)"
-		},
 		"-forcenovsync": {
 			"Category": "Graphics",
 			"Choices": "Force Disable V-SYNC",
@@ -643,6 +635,13 @@
 			"Desc": "Change the number of vertex shaders to 256. Changes may lead to better performance.",
 			"DisabledText": "No override",
 			"Name": "Change the number of vertex shaders"
+		},
+		"-no_render_on_input_thread": {
+			"Category": "CPU",
+			"Choices": "Enable",
+			"Desc": "有効にすると、マルチスレッドレンダリングの処理に入力処理と同じCPUコアを使用しなくなります。\nCPUコア数が多い (6以上) プレイヤーの場合、特にポーリングレートの高いマウスやコントローラーを使用している場合、フレームレートと入力遅延の安定性が向上します。\n他のプレイヤーにとっては、このオプションはレンダリングのパフォーマンスを低下させる可能性があります。",
+			"DisabledText": "Disable",
+			"Name": "マルチスレッドレンダリングに入力処理と同じCPUコアを使用しない"
 		},
 		"-noff": {
 			"Category": "Mouse/Controller",
@@ -798,6 +797,13 @@
 			"DisabledText": "Enable",
 			"Name": "Enable player info overlay"
 		},
+		"+clip_mouse_to_letterbox": {
+			"Category": "System",
+			"Choices": "Enable",
+			"Desc": "＜ウルトラワイドモニター向け＞\nゲーム内で「マウスカーソルをゲーム画面に固定」オプションを有効にしている場合に、カーソルが黒帯の内側の領域に固定されないようにします。\nこの引数は、ウルトラワイドモニター等、通常とは異なるアスペクト比のディスプレイ向けです。",
+			"DisabledText": "Disable",
+			"Name": "カーソルを黒帯の内側の領域に固定しない"
+		},
 		"+CrossPlay_user_optin": {
 			"Category": "System",
 			"Choices": "Disable crossplay",
@@ -819,6 +825,13 @@
 			"DisabledText": "Not set",
 			"Name": "FPS upper limit"
 		},
+		"+lobby_max_fps": {
+			"Category": "グラフィック",
+			"Choices": "無制限,指定入力,15 FPS,30 FPS,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
+			"Desc": "ロビーとメニューにおけるFPSの上限値を設定します。\nCPUとGPUの使用率を減らすために、デフォルト値は 60 に設定されています。",
+			"DisabledText": "Not set",
+			"Name": "ロビー/メニューFPS上限"
+		},
 		"+m_rawinput": {
 			"Category": "Mouse/Controller",
 			"Choices": "Enable",
@@ -833,6 +846,13 @@
 			"DisabledText": "Disable",
 			"Name": "Minimize window on focus change"
 		},
+		"+mat_no_stretching": {
+			"Category": "グラフィック",
+			"Choices": "Enable",
+			"Desc": "すべての解像度の引き伸ばしを無効化し、常にモニターをゲームの解像度に合わせてレターボックスまたはピラーボックス化します。 (黒帯が表示されます)\nこの機能は、一部のプレイヤーがカスタム解像度で DirectX 11 の設定を再現するのに便利です。",
+			"DisabledText": "Disable",
+			"Name": "すべての解像度の引き伸ばしを無効化"
+		},
 		"+mat_queue_mode": {
 			"Category": "CPU",
 			"Choices": "<Recommended> Multi,Single (Asynchronous),Single (Sync),System,Legacy",
@@ -841,9 +861,9 @@
 			"Name": "Changed material system threading mode"
 		},
 		"+mat_wide_pillarbox": {
-			"Category": "Graphics",
+			"Category": "グラフィック",
 			"Choices": "Enable",
-			"Desc": "Enables stretching of the game screen.\nWhen enabled, the game screen will be stretched non-proportionally and there will be no black margins on the left or right.\nThis option is intended for ultra-wide monitors or other displays with unusual aspect ratios.",
+			"Desc": "＜ウルトラワイドモニター向け＞\nゲーム画面の引き伸ばしを有効化します。\n有効にすると、ゲーム画面は比率を維持せずに引き伸ばされ、左右に黒い余白が表示されなくなります。\nこの引数は、ウルトラワイドモニター等、通常とは異なるアスペクト比のディスプレイ向けです。",
 			"DisabledText": "Disable",
 			"Name": "Enable game screen stretching"
 		},
