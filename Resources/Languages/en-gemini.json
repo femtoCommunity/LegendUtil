@@ -608,14 +608,6 @@
 		}
 	},
 	"LaunchOption": {
-		"-anticheat_settings=SettingsDX11___dot___json": {
-			"Category": "グラフィック",
-			"Choices": "Enable",
-			"Desc": "DirectX 11 でゲームを起動します。\r\nDirectX 12 を使用する方がパフォーマンスと安定性に優れる傾向にあるため、このオプションを使用することは推奨されません。\r\nDirectX 12 でパフォーマンスが安定しない場合のみ使用してください。",
-			"DisabledText": "Disable",
-			"Name": "DirectX 11 でゲームを起動",
-			"AdditionalButtonText": "DirectX 12/11 に関する詳しい情報 (Reddit)"
-		},
 		"-forcenovsync": {
 			"Category": "Graphics",
 			"Choices": "Disable Vertical Sync (V-SYNC)",
@@ -643,6 +635,13 @@
 			"Desc": "Limits the number of vertex shaders to 256.  This may improve performance.",
 			"DisabledText": "Do not change",
 			"Name": "Change vertex shader count"
+		},
+		"-no_render_on_input_thread": {
+			"Category": "CPU",
+			"Choices": "Enable",
+			"Desc": "有効にすると、マルチスレッドレンダリングの処理に入力処理と同じCPUコアを使用しなくなります。\nCPUコア数が多い (6以上) プレイヤーの場合、特にポーリングレートの高いマウスやコントローラーを使用している場合、フレームレートと入力遅延の安定性が向上します。\n他のプレイヤーにとっては、このオプションはレンダリングのパフォーマンスを低下させる可能性があります。",
+			"DisabledText": "Disable",
+			"Name": "マルチスレッドレンダリングに入力処理と同じCPUコアを使用しない"
 		},
 		"-noff": {
 			"Category": "Mouse/Controller",
@@ -798,6 +797,13 @@
 			"DisabledText": "Do not disable",
 			"Name": "Enable player information overlay"
 		},
+		"+clip_mouse_to_letterbox": {
+			"Category": "System",
+			"Choices": "Enable",
+			"Desc": "＜ウルトラワイドモニター向け＞\nゲーム内で「マウスカーソルをゲーム画面に固定」オプションを有効にしている場合に、カーソルが黒帯の内側の領域に固定されないようにします。\nこの引数は、ウルトラワイドモニター等、通常とは異なるアスペクト比のディスプレイ向けです。",
+			"DisabledText": "Disable",
+			"Name": "カーソルを黒帯の内側の領域に固定しない"
+		},
 		"+CrossPlay_user_optin": {
 			"Category": "System",
 			"Choices": "Disable cross-play",
@@ -819,6 +825,13 @@
 			"DisabledText": "Do not set",
 			"Name": "FPS Limit"
 		},
+		"+lobby_max_fps": {
+			"Category": "グラフィック",
+			"Choices": "無制限,指定入力,15 FPS,30 FPS,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
+			"Desc": "ロビーとメニューにおけるFPSの上限値を設定します。\nCPUとGPUの使用率を減らすために、デフォルト値は 60 に設定されています。",
+			"DisabledText": "Do not set",
+			"Name": "ロビー/メニューFPS上限"
+		},
 		"+m_rawinput": {
 			"Category": "Mouse/Controller",
 			"Choices": "Enabled",
@@ -833,6 +846,13 @@
 			"DisabledText": "Disable",
 			"Name": "フォーカス解除時にウィンドウを最小化"
 		},
+		"+mat_no_stretching": {
+			"Category": "グラフィック",
+			"Choices": "Enable",
+			"Desc": "すべての解像度の引き伸ばしを無効化し、常にモニターをゲームの解像度に合わせてレターボックスまたはピラーボックス化します。 (黒帯が表示されます)\nこの機能は、一部のプレイヤーがカスタム解像度で DirectX 11 の設定を再現するのに便利です。",
+			"DisabledText": "Disable",
+			"Name": "すべての解像度の引き伸ばしを無効化"
+		},
 		"+mat_queue_mode": {
 			"Category": "CPU",
 			"Choices": "<Recommended> Multi,Single (Asynchronous),Single (Synchronous),System,Legacy",
@@ -843,7 +863,7 @@
 		"+mat_wide_pillarbox": {
 			"Category": "グラフィック",
 			"Choices": "Enable",
-			"Desc": "ゲーム画面の引き伸ばしを有効化します。\n有効化すると、ゲーム画面は比率を維持せずに引き伸ばされ、左右に黒い余白が表示されなくなります。\nこの引数は、ウルトラワイドモニター等、通常とは異なるアスペクト比のディスプレイ向けです。",
+			"Desc": "＜ウルトラワイドモニター向け＞\nゲーム画面の引き伸ばしを有効化します。\n有効にすると、ゲーム画面は比率を維持せずに引き伸ばされ、左右に黒い余白が表示されなくなります。\nこの引数は、ウルトラワイドモニター等、通常とは異なるアスペクト比のディスプレイ向けです。",
 			"DisabledText": "Disable",
 			"Name": "ゲーム画面の引き伸ばしを有効化"
 		},
