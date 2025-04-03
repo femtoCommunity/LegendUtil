@@ -608,14 +608,6 @@
 		}
 	},
 	"LaunchOption": {
-		"-anticheat_settings=SettingsDX11___dot___json": {
-			"Category": "グラフィック",
-			"Choices": "有効",
-			"Desc": "DirectX 11 でゲームを起動します。\r\nDirectX 12 を使用する方がパフォーマンスと安定性に優れる傾向にあるため、このオプションを使用することは推奨されません。\r\nDirectX 12 でパフォーマンスが安定しない場合のみ使用してください。",
-			"DisabledText": "無効",
-			"Name": "DirectX 11 でゲームを起動",
-			"AdditionalButtonText": "DirectX 12/11 に関する詳しい情報 (Reddit)"
-		},
 		"-forcenovsync": {
 			"Category": "グラフィック",
 			"Choices": "垂直同期(V-SYNC)を無効化",

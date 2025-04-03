@@ -612,20 +612,6 @@
 		},
 		
 		////////// グラフィック //////////
-		「-anticheat_settings=SettingsDX11.json」={
-			「カテゴリー」=「グラフィック」,
-			「名前」=「DirectX 11 を有効化」,
-			「説明」=「DirectX 11 でゲームを起動します。」,
-			「拡張ボタン」={「DirectX 12/11 に関する詳しい情報は (Reddit)」,「「「https://www.reddit.com/r/apexlegends/comments/1gv3ing/dev_team_update_directx_12/」を「標準」で開く」」},
-			「編集可能」=○,
-			「入力」=×,
-			「入力初期値」=「」,
-			「オプション指定」=×,
-			「無効選択肢」=「無効」,
-			「選択肢」={
-				{「」,2,「有効」,×}
-			}
-		},
 		「+mat_wide_pillarbox」={
 			「カテゴリー」=「グラフィック」,
 			「名前」=「ピラーボックスの表示を無効化」,
