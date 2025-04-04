@@ -28,6 +28,13 @@ Apex Legends のプレイをより快適にするランチャーアプリケー�
 > [![EA](https://img.shields.io/badge/ea%20app-%23000000.svg?style=for-the-badge&logo=ea&logoColor=ffffff&color=e6371e)](https://www.ea.com/ja-jp/ea-app)
 > [![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=000000&color=e2e2e2)](https://store.steampowered.com/about/)
 
+### 🗺️ 対応言語
+#### ネイティブ - Native
+- 日本語 - Japanese
+#### 機械翻訳 - Machine Translation
+- 英語 - English [**[Contribute to translations]**](https://bit.ly/LegendUtil-TL)
+- 韓国語 - Korean [**[번역에 기여하다]**](https://bit.ly/LegendUtil-TL)
+
 ### 📝 プログラミング言語
 - [**プロデル**](https://produ.irelang.jp/) - `2.0.1271`
 - [**C#**](https://learn.microsoft.com/ja-jp/dotnet/csharp/) - `.NET Framework 4.8`
