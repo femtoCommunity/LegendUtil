@@ -32,7 +32,7 @@
 			"2": "Failed to update news"
 		},
 		"2": {
-			"1": "Failed to load profile.\r\n\r\n<Profile failed to load>\r\n・{0}",
+			"1": "Failed to load profile.\n\n<Profile failed to load>\n・{0}",
 			"2": "Failed to load profile.\r\n\r\n{0}",
 			"3": "Failed to create profile.\r\n\r\n{0}",
 			"4": "Could not rename profile.\r\n\r\n{0}",
@@ -453,7 +453,7 @@
 			"33": "The installation location for Apex Legends has been found.\n\nPath: {0}",
 			"34": "Account",
 			"35": "Test",
-			"36": "＜注意＞\n特別な理由がない限り、引き伸ばし設定を行うために「システムの解像度を変更する」を有効にする必要はありません。\n通常は無効にすることをおすすめします。"
+			"36": "<Note>\nUnless there is a special reason, there is no need to enable \"Change system resolution\" to set stretching.\nWe recommend that you normally disable it."
 		},
 		"4": {
 			"2": "Enter any startup arguments not listed below as options here.\nEnter the text of an existing launch argument and run \"Parse\" and LegendUtil will automatically parse and load it.",
@@ -639,9 +639,9 @@
 		"-no_render_on_input_thread": {
 			"Category": "CPU",
 			"Choices": "Enable",
-			"Desc": "有効にすると、マルチスレッドレンダリングの処理に入力処理と同じCPUコアを使用しなくなります。\nCPUコア数が多い (6以上) プレイヤーの場合、特にポーリングレートの高いマウスやコントローラーを使用している場合、フレームレートと入力遅延の安定性が向上します。\n他のプレイヤーにとっては、このオプションはレンダリングのパフォーマンスを低下させる可能性があります。",
+			"Desc": "When enabled, multithreaded rendering will not use the same CPU cores as input processing.\nFor players with a high CPU core count (6+), this will result in more stable framerates and input latency, especially if using mice or controllers with high polling rates.\nFor other players, this option may reduce rendering performance.",
 			"DisabledText": "Disable",
-			"Name": "マルチスレッドレンダリングに入力処理と同じCPUコアを使用しない"
+			"Name": "Use a separate CPU core for multi-threaded rendering than for input processing"
 		},
 		"-noff": {
 			"Category": "Mouse/Controller",
@@ -800,9 +800,9 @@
 		"+clip_mouse_to_letterbox": {
 			"Category": "System",
 			"Choices": "Enable",
-			"Desc": "＜ウルトラワイドモニター向け＞\nゲーム内で「マウスカーソルをゲーム画面に固定」オプションを有効にしている場合に、カーソルが黒帯の内側の領域に固定されないようにします。\nこの引数は、ウルトラワイドモニター等、通常とは異なるアスペクト比のディスプレイ向けです。",
+			"Desc": "<For ultra-wide monitors>\nWhen the \"Pin mouse cursor to game screen\" option is enabled in the game, this will prevent the cursor from being fixed to the area inside the letterboxing or pillarboxing.\nThis argument is intended for displays with non-standard aspect ratios, such as ultra-wide monitors.",
 			"DisabledText": "Disable",
-			"Name": "カーソルを黒帯の内側の領域に固定しない"
+			"Name": "Do not fix the cursor to the area inside the letterboxing or pillarboxing"
 		},
 		"+CrossPlay_user_optin": {
 			"Category": "System",
@@ -826,11 +826,11 @@
 			"Name": "FPS upper limit"
 		},
 		"+lobby_max_fps": {
-			"Category": "グラフィック",
-			"Choices": "無制限,指定入力,15 FPS,30 FPS,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
-			"Desc": "ロビーとメニューにおけるFPSの上限値を設定します。\nCPUとGPUの使用率を減らすために、デフォルト値は 60 に設定されています。",
+			"Category": "Graphics",
+			"Choices": "Unlimited,Specified Input,15 FPS,30 FPS,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
+			"Desc": "Sets the FPS limit for the lobby and menus.\nThe default value is set to 60 to reduce CPU and GPU usage.",
 			"DisabledText": "Not set",
-			"Name": "ロビー/メニューFPS上限"
+			"Name": "Lobby/Menu FPS Cap"
 		},
 		"+m_rawinput": {
 			"Category": "Mouse/Controller",
@@ -847,11 +847,11 @@
 			"Name": "Minimize window on focus change"
 		},
 		"+mat_no_stretching": {
-			"Category": "グラフィック",
+			"Category": "Graphics",
 			"Choices": "Enable",
-			"Desc": "すべての解像度の引き伸ばしを無効化し、常にモニターをゲームの解像度に合わせてレターボックスまたはピラーボックス化します。 (黒帯が表示されます)\nこの機能は、一部のプレイヤーがカスタム解像度で DirectX 11 の設定を再現するのに便利です。",
+			"Desc": "Disables all resolution stretching and always letterboxes or pillarboxes your monitor to the game resolution.\nThis feature is useful for some players to replicate DirectX 11 setups with custom resolutions.",
 			"DisabledText": "Disable",
-			"Name": "すべての解像度の引き伸ばしを無効化"
+			"Name": "Disable all resolution stretching"
 		},
 		"+mat_queue_mode": {
 			"Category": "CPU",
@@ -861,9 +861,9 @@
 			"Name": "Changed material system threading mode"
 		},
 		"+mat_wide_pillarbox": {
-			"Category": "グラフィック",
+			"Category": "Graphics",
 			"Choices": "Enable",
-			"Desc": "＜ウルトラワイドモニター向け＞\nゲーム画面の引き伸ばしを有効化します。\n有効にすると、ゲーム画面は比率を維持せずに引き伸ばされ、左右に黒い余白が表示されなくなります。\nこの引数は、ウルトラワイドモニター等、通常とは異なるアスペクト比のディスプレイ向けです。",
+			"Desc": "<For ultra-wide monitors>\nEnables stretching of the game screen.\nWhen enabled, the game screen will be stretched without maintaining the ratio and letterboxing or pillarboxing will not be displayed on the left or right.\nThis argument is intended for displays with non-standard aspect ratios, such as ultra-wide monitors.",
 			"DisabledText": "Disable",
 			"Name": "Enable game screen stretching"
 		},
