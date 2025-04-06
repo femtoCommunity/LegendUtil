@@ -7,7 +7,6 @@
 ---
 
 [![Licence](https://img.shields.io/github/license/femtoCommunity/LegendUtil?style=for-the-badge)](#-ライセンス)
-
 [![Downloads](https://img.shields.io/github/downloads/femtoCommunity/LegendUtil/total?style=for-the-badge)](https://github.com/femtoCommunity/LegendUtil/releases)
 [![Nightly Build Status](https://img.shields.io/github/actions/workflow/status/femtoCommunity/LegendUtil/nightly_rdr.yml?branch=dev&style=for-the-badge&label=Nightly%20Build)](https://github.com/femtoCommunity/LegendUtil/actions/workflows/nightly_rdr.yml)
 
@@ -27,6 +26,13 @@ Apex Legends のプレイをより快適にするランチャーアプリケー�
 ### 🎮 対応プラットフォーム
 > [![EA](https://img.shields.io/badge/ea%20app-%23000000.svg?style=for-the-badge&logo=ea&logoColor=ffffff&color=e6371e)](https://www.ea.com/ja-jp/ea-app)
 > [![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=000000&color=e2e2e2)](https://store.steampowered.com/about/)
+
+### 🗺️ 対応言語
+> [![Crowdin](https://badges.crowdin.net/legendutil/localized.svg)](https://crowdin.com/project/legendutil)
+
+- 日本語 - Japanese
+- 英語 - English
+- 韓国語 - Korean
 
 ### 📝 プログラミング言語
 - [**プロデル**](https://produ.irelang.jp/) - `2.0.1271`
