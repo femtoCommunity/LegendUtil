@@ -957,74 +957,99 @@ ApexLegendsとは
 			待機時間カウントが0なら繰り返しから抜ける // ゲームの起動が時間内に終わらなかった場合に繰り返しから抜ける
 			インストール待機時間カウントが0なら繰り返しから抜ける // インストールが時間内に終わらなかった場合に繰り返しから抜ける
 			
-			例外監視
-				// EA app の場合はゲームのインストール状況を取得してチェックする
-// 2025/06/16 動かなくなった;;
-//				([メイン設定について「General」から「EAapp_GameInstallStatusDetector」を取得したもの]が○)かつ(プロファイルのApexLegendsプラットフォームが「EA app」)かつインストール終了でないなら
-//					// Apex Legends のゲームのステータスを取得してチェック
-//					ゲームステータス=EAappで「Origin.OFR.50.0002694」としてゲームステータス取得する
-//					// ゲームのステータスが取得できない場合はチェックしない
-//					ゲームステータスが無でないなら
-//						// 処理実行中の場合 処理が終了するまで待機する
-//						[ゲームステータス(「installStatusString」)]が「ACTIVE」なら
-//							// 修復
-//							[ゲームステータス(「installReason」)]が「REPAIR」なら
-//								インストール開始でないなら
-//									[言語管理器で「InPlay.Status.WaitingForGameRepairProcess」を取得したもの]をログ出力する
-//									インストール開始=○
-//								そして
-//								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameRepairProcess_WithStatus」を{[ゲームステータス(「installStatusString」)],[ゲームステータス(「installPhaseString」)]}として取得したもの]
-//								
-//							// インストール
-//							他で[ゲームステータス(「installReason」)]が「INSTALL」なら
-//								インストール開始でないなら
-//									[言語管理器で「InPlay.Status.WaitingForGameInstallProcess」を取得したもの]をログ出力する
-//									インストール開始=○
-//								そして
-//								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameInstallProcess_WithStatus」を{[ゲームステータス(「installStatusString」)],[ゲームステータス(「installPhaseString」)]}として取得したもの]
-//								
-//							// アップデート
-//							他で[ゲームステータス(「installReason」)]が「UPDATE」なら
-//								インストール開始でないなら
-//									[言語管理器で「InPlay.Status.WaitingForGameUpdateProcess」を取得したもの]をログ出力する
-//									インストール開始=○
-//								そして
-//								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameUpdateProcess_WithStatus」を{[ゲームステータス(「installStatusString」)],[ゲームステータス(「installPhaseString」)]}として取得したもの]
-//								
-//							そして
-//							
-//							インストール待機時間カウント=インストール待機時間カウント-1
-//							1秒待つ
-//							繰り返しを続ける
-//						そして
-//							
-//						// インストール(アップデート)完了
-//						インストール開始なら
-//							// インストール処理が完了した場合 ゲームを起動する
-//							[ゲームステータス(「installStatusString」)]が「INSTALLED」かつインストール終了でないなら
-//								「EA app ゲームインストール完了」をデバッグログへ出力する
-//								インストール終了=○
-//								// ゲームを起動する (EALaunchHelperを呼ぶとEA appも起動するので、EABackgroundServiceも勝手に開始される)
-//								プロセス起動する
-//								
-//							// インストール処理がキャンセルされた場合 待機をキャンセルする
-//							他で[ゲームステータス(「installStatusString」)]が「CANCELED」または[ゲームステータス(「installStatus」)]が4なら
-//								「EA app ゲームインストールキャンセル」をデバッグログへ出力する
-//								キャンセル理由=[言語管理器で「InPlay.Status.CancelingGameInstall」を取得したもの]
-//								待機キャンセル=○
-//								繰り返しから抜ける
-//								
-//							そして
-//						そして
-//						
-//					そうでなければ
-//						「ゲームステータス取得スキップ: ステータス取得失敗」をデバッグログへ出力する
-//						
-//					そして
-//				そして
-			発生した場合
-				「ゲームステータス取得エラー: [エラーのメッセージ]」を「エラー」としてデバッグログへ出力する
-			監視終わり
+			// 実験的機能:game_install_status_detector_eaapp_250620
+			実験的機能管理器の機能一覧(「game_install_status_detector_eaapp_250620」)(「有効」)が○なら
+				例外監視
+					// TODO: 代替機能を実装する
+					// EA app の場合はゲームのインストール状況を取得してチェックする
+					//([メイン設定について「General」から「EAapp_GameInstallStatusDetector」を取得したもの]が○)かつ(プロファイルのApexLegendsプラットフォームが「EA app」)かつインストール終了でないなら
+					//	[[ApexLegendsインストールパスのフォルダだけのファイルの一覧]すべての拡張子だけ]から「dll_DiP_Staged」を探したものの個数が1以上なら
+					//		インストール開始でないなら
+					//			[言語管理器で「InPlay.Status.WaitingForGameInstallProcess」を取得したもの]をログ出力する
+					//			インストール開始=○
+					//		そして
+					//		メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameInstallProcess_WithStatus」を{[ゲームステータス(「installStatusString」)],[ゲームステータス(「installPhaseString」)]}として取得したもの]
+					//		
+					//		インストール待機時間カウント=インストール待機時間カウント-1
+					//		1秒待つ
+					//		繰り返しを続ける
+					//	そして
+					//	
+					//	インストール開始かつインストール終了でないなら
+					//		「EA app ゲームインストール完了」をデバッグログへ出力する
+					//		インストール終了=○
+					//		// ゲームを起動する (EALaunchHelperを呼ぶとEA appも起動するので、EABackgroundServiceも勝手に開始される)
+					//		プロセス起動する
+					//	そして
+					//そして
+
+	// 2025/06/16 動かなくなった;;
+	//				([メイン設定について「General」から「EAapp_GameInstallStatusDetector」を取得したもの]が○)かつ(プロファイルのApexLegendsプラットフォームが「EA app」)かつインストール終了でないなら
+	//					// Apex Legends のゲームのステータスを取得してチェック
+	//					ゲームステータス=EAappで「Origin.OFR.50.0002694」としてゲームステータス取得する
+	//					// ゲームのステータスが取得できない場合はチェックしない
+	//					ゲームステータスが無でないなら
+	//						// 処理実行中の場合 処理が終了するまで待機する
+	//						[ゲームステータス(「installStatusString」)]が「ACTIVE」なら
+	//							// 修復
+	//							[ゲームステータス(「installReason」)]が「REPAIR」なら
+	//								インストール開始でないなら
+	//									[言語管理器で「InPlay.Status.WaitingForGameRepairProcess」を取得したもの]をログ出力する
+	//									インストール開始=○
+	//								そして
+	//								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameRepairProcess_WithStatus」を{[ゲームステータス(「installStatusString」)],[ゲームステータス(「installPhaseString」)]}として取得したもの]
+	//								
+	//							// インストール
+	//							他で[ゲームステータス(「installReason」)]が「INSTALL」なら
+	//								インストール開始でないなら
+	//									[言語管理器で「InPlay.Status.WaitingForGameInstallProcess」を取得したもの]をログ出力する
+	//									インストール開始=○
+	//								そして
+	//								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameInstallProcess_WithStatus」を{[ゲームステータス(「installStatusString」)],[ゲームステータス(「installPhaseString」)]}として取得したもの]
+	//								
+	//							// アップデート
+	//							他で[ゲームステータス(「installReason」)]が「UPDATE」なら
+	//								インストール開始でないなら
+	//									[言語管理器で「InPlay.Status.WaitingForGameUpdateProcess」を取得したもの]をログ出力する
+	//									インストール開始=○
+	//								そして
+	//								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameUpdateProcess_WithStatus」を{[ゲームステータス(「installStatusString」)],[ゲームステータス(「installPhaseString」)]}として取得したもの]
+	//								
+	//							そして
+	//							
+	//							インストール待機時間カウント=インストール待機時間カウント-1
+	//							1秒待つ
+	//							繰り返しを続ける
+	//						そして
+	//							
+	//						// インストール(アップデート)完了
+	//						インストール開始なら
+	//							// インストール処理が完了した場合 ゲームを起動する
+	//							[ゲームステータス(「installStatusString」)]が「INSTALLED」かつインストール終了でないなら
+	//								「EA app ゲームインストール完了」をデバッグログへ出力する
+	//								インストール終了=○
+	//								// ゲームを起動する (EALaunchHelperを呼ぶとEA appも起動するので、EABackgroundServiceも勝手に開始される)
+	//								プロセス起動する
+	//								
+	//							// インストール処理がキャンセルされた場合 待機をキャンセルする
+	//							他で[ゲームステータス(「installStatusString」)]が「CANCELED」または[ゲームステータス(「installStatus」)]が4なら
+	//								「EA app ゲームインストールキャンセル」をデバッグログへ出力する
+	//								キャンセル理由=[言語管理器で「InPlay.Status.CancelingGameInstall」を取得したもの]
+	//								待機キャンセル=○
+	//								繰り返しから抜ける
+	//								
+	//							そして
+	//						そして
+	//						
+	//					そうでなければ
+	//						「ゲームステータス取得スキップ: ステータス取得失敗」をデバッグログへ出力する
+	//						
+	//					そして
+	//				そして
+				発生した場合
+					「ゲームステータス取得エラー: [エラーのメッセージ]」を「エラー」としてデバッグログへ出力する
+				監視終わり
+			そして
 			
 			例外監視
 				// 1分経過しても起動しない場合はEABackgroundServiceの再起動を勧めるダイアログを表示する (EA appのみ)
