@@ -12,7 +12,12 @@
 			"6": "無効",
 			"7": "無効",
 			"8": "アカウント",
-			"Loading": "読み込み中"
+			"Default": "デフォルト",
+			"Platform": "プラットフォーム",
+			"Play": "プレイ",
+			"Loading": "読み込み中",
+			"RemainingTime_Format_Hour": "あと {0} 時間",
+			"RemainingTime_Format_Minute": "あと {0} 分"
 		},
 		"Dialog": {
 			"Welcome": "{0} をインストールしていただき、ありがとうございます！\n\nこのアプリはベータ版であり、予期せぬ不具合などが発生する可能性があります。\n不具合などの問題を見つけたり、改善してほしい点があった場合は、\nサポート Discord サーバーのフォーラム または GitHub の Issue にて報告をお願いいたします。",
@@ -69,6 +74,9 @@
 		}
 	},
 	"Tooltip": {
+		"メイン画面": {
+			"アプリケーション情報ラベル": "クリックしてバージョン情報をコピー"
+		},
 		"プロファイル編集パネル部品": {
 			"AltEnter自動押下チェックボックス": "Apex Legends の起動後に Alt+Enter を自動的に押下するかどうかを設定します。\nこの設定を有効にすると、「解像度の引き伸ばし」を行った際に発生する「黒帯」を消すことができます。",
 			"AltEnter自動押下待機時間ダイヤル": "Apex Legends が起動してから Alt+Enter の自動押下を行うまでの待機時間(秒)を設定します。\r\n環境によってタイトル画面が表示されるまでの時間が変化するため、ご自分の環境に合わせて設定してください。",
@@ -90,7 +98,7 @@
 			"フルスクリーンストレッチ有効チェックボックス": "Apex Legends のプレイ時にディスプレイ解像度の変更(引き伸ばし)を行うかどうかを設定します。",
 			"プラットフォーム選択リスト": "Apex Legends をインストールしているプラットフォームを選択します。",
 			"アカウント選択リスト": "Apex Legends をプレイする際に使用するアカウントを選択します。\r\n(アカウントの管理は「アカウント」タブから行えます。)",
-			"戻るボタン": "プロファイル一覧へ戻る",
+			"戻るボタン": "戻る",
 			"ディスプレイ解像度テストボタン": "指定されたディスプレイ設定に変更しても正常に表示できるかをテストします。",
 			"コンフィグパネル部品のコンフィグ指定選択リスト": "このプロファイルでプレイする際に読み込むコンフィグを選択します。",
 			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "このプロファイルでプレイする際に読み込むビデオコンフィグを選択します。",
@@ -121,6 +129,7 @@
 			"GameMode_arenasRanked": "アリーナ | ランク",
 			"GameMode_ltm_Control": "コントロール",
 			"GameMode_ltm_TDM": "チームデスマッチ",
+			"GameMode_ltm_Big TDM": "ビッグTDM",
 			"GameMode_ltm_Gun Run": "ガンゲーム",
 			"GameMode_ltm_Lockdown": "ロックダウン"
 		}
@@ -173,7 +182,7 @@
 		},
 		"Dialog": {
 			"FailedToLoadProfiles": "以下のプロファイルの読み込みに失敗しました。\n詳細はデバッグログを参照してください。\n\n{0}",
-			"ConvertedOldDX12Args": "DirectX 12 で起動するための起動引数が シーズン 21 以降に対応していない値だったため、次の値を自動的に置き換えました。\n置換前: {0}\n置換後: {1}\n\n<置換処理を行ったプロファイル>\n{2}"
+			"ConvertedOldDX12Args": "シーズン23 (アストラルアノマリーイベント) 以降不要になった DirectX 12 で起動するための起動引数が設定されていたため、自動的に削除しました。\n\n<置換処理を行ったプロファイル>\n{0}"
 		}
 	},
 	"InPlay": {
@@ -194,7 +203,14 @@
 			"WaitingForGameToStart": "Apex Legends の起動を待機中",
 			"WaitingForGameToStart_WithRT": "Apex Legends の起動を待機中 - 残り{0}秒",
 			"StoppingGameProcess": "Apex Legends のプロセスを停止中",
-			"MonitoringGameProcess": "Apex Legends のプロセスを追跡中"
+			"MonitoringGameProcess": "Apex Legends のプロセスを追跡中",
+			"WaitingForGameInstallProcess": "Apex Legends がインストール中であることを検知しました インストールが完了するのを待っています...",
+			"WaitingForGameUpdateProcess": "Apex Legends がアップデート中であることを検知しました アップデートが完了するのを待っています...",
+			"WaitingForGameRepairProcess": "Apex Legends が修復中であることを検知しました 修復が完了するのを待っています...",
+			"WaitingForGameInstallProcess_WithStatus": "Apex Legends がインストール中であることを検知しました\nインストールが完了するのを待っています...\n(進行状況: {0} - {1})",
+			"WaitingForGameUpdateProcess_WithStatus": "Apex Legends がアップデート中であることを検知しました\nアップデートが完了するのを待っています...\n(進行状況: {0} - {1})",
+			"WaitingForGameRepairProcess_WithStatus": "Apex Legends が修復中であることを検知しました\n修復が完了するのを待っています...\n(進行状況: {0} - {1})",
+			"CancelingGameInstall": "ゲームのインストール/アップデート/修復処理がキャンセルされました。"
 		},
 		"Dialog": {
 			"Game_CancelProcessTracking_Confirm": "Apex Legends の待機をキャンセルしてもよろしいですか？",
@@ -274,6 +290,7 @@
 			"SystemDisplaySettings_RestoringError": "システムのディスプレイ設定の復元処理でエラーが発生しました。",
 			"ConfigFile_RestoringError": "コンフィグファイルの復元処理でエラーが発生しました。",
 			"ProfileConfigFile_RestoringError": "プロファイルコンフィグファイルの復元処理でエラーが発生しました。",
+			"VideoConfigFile_EditingFailed_CorruptedFile": "ビデオコンフィグファイルが壊れている可能性があるため、ファイルを読み込めませんでした。ビデオ設定がリセットされる可能性があります。",
 			"VideoConfigFile_RestoringError": "ビデオコンフィグファイルの復元処理でエラーが発生しました。",
 			"VideoConfigFile_SettingsRestoringError": "ビデオコンフィグ設定項目の復元処理でエラーが発生しました。",
 			"TT_LastPlayDate_RecordError": "最終プレイ日時の記録処理でエラーが発生しました。",
@@ -283,7 +300,7 @@
 		"Error": {
 			"0": "起動処理時にエラーが発生しました。",
 			"1": "プロファイルの読み込みに失敗しました。",
-			"2": "ディスプレイ設定の変更に失敗しました。",
+			"2": "ディスプレイ設定の変更に失敗しました。\n\nサポートされている解像度でこのエラーが発生している場合は、スケーリングモードを変更してからもう一度お試しください。",
 			"3": "Apex Legends の起動時にエラーが発生しました。",
 			"4": "Apex Legends を起動できませんでした。Apex Legends がインストールされていない可能性があります。",
 			"5": "Apex Legends のプロセスを時間内に取得できませんでした。",
@@ -318,6 +335,15 @@
 		}
 	},
 	"Panel": {
+		"MainMenu_VersionInfoLabel": {
+			"VersionInfoCopied": "バージョン情報をクリップボードへコピーしました。"
+		},
+		"MainMenu_ProfileList": {
+			"SortOrderList;List": "名前 (昇順),名前 (降順),ディスプレイ設定 (昇順),ディスプレイ設定 (降順),プラットフォーム (昇順),プラットフォーム (降順),最終プレイ日時 (近い順),最終プレイ日時 (遠い順),総プレイ時間 (短い順),総プレイ時間 (長い順)",
+			"ItemDetail_Resolution": "解像度: {0}×{1} ({2}) - {3} Hz",
+			"ItemDetail_Resolution_Native": "解像度: ネイティブ",
+			"ItemDetail_Additional": "総プレイ時間: {0}\n最終プレイ日時: {1}"
+		},
 		"ProfileManage_ContextMenu": {
 			"EditButton": "編集",
 			"CreateShortcutButton": "ショートカットを作成",
@@ -427,7 +453,8 @@
 			"32": "非対応の設定を表示する",
 			"33": "Apex Legends のインストール先が見つかりました。\r\n\r\nパス: {0}",
 			"34": "アカウント",
-			"35": "テスト"
+			"35": "テスト",
+			"36": "＜注意＞\n特別な理由がない限り、引き伸ばし設定を行うために「システムの解像度を変更する」を有効にする必要はありません。\n通常は無効にすることをおすすめします。"
 		},
 		"4": {
 			"2": "下記の選択肢にない起動引数はここに入力してください。\n既存の起動引数のテキストを入力して「解析」を実行すると、LegendUtil が自動的に解析して読み込みます。",
@@ -528,6 +555,8 @@
 		},
 		"General": {
 			"__Name": "全般",
+			"EAapp_GameInstallStatusDetector;Name": "[実験的機能] EA app ゲームインストール状況検知機能",
+			"EAapp_GameInstallStatusDetector;Desc": "ゲームの起動時に EA app での Apex Legends のインストール/アップデート/修復の状況を取得します。\n有効にすると、ゲームの起動時にアップデートなどが実行されていることを検知した場合、処理が終了するまで待機し、処理が終わり次第ゲームの起動処理を自動的に再開します。\n※この設定は実験的機能です。将来的に EA app のアップデートなどによる影響で正常に動作しなくなる可能性があります。",
 			"EAapp_Config_Folder_Path;Name": "EA app コンフィグフォルダー",
 			"EAapp_Config_Folder_Path;Desc": "EA app のコンフィグファイルが保存されているフォルダー\r\n空欄または存在しないフォルダーを指定すると自動的に取得されます。\r\n※通常は空欄にすることを推奨します※",
 			"EAapp_Config_Folder_Path;Custom_1": "フォルダーを選択",
@@ -572,22 +601,14 @@
 			"ServerStatus_Region;List": "アジア,東ヨーロッパ,西ヨーロッパ,アメリカ南部,アメリカ中部,アメリカ東部,アメリカ西部",
 			"MapRotation_Enable;Name": "マップローテーション - 表示",
 			"MapRotation_Enable;Desc": "メインメニューにマップローテーション情報をするかどうか\n(適用するにはアプリの再起動が必要です)",
-			"MapRotation_RemainingTime;Name": "[試験的機能] マップローテーション - 残り時間",
-			"MapRotation_RemainingTime;Desc": "マップローテーションの各モードの残り時間を表示するかどうか\n※この設定は試験的機能です。有効化するとメモリーの使用量が増加する可能性があります。\n(適用するにはアプリの再起動が必要です)"
+			"MapRotation_RemainingTime;Name": "[実験的機能] マップローテーション - 詳細な残り時間の表示",
+			"MapRotation_RemainingTime;Desc": "マップローテーション情報の残り時間表記を毎秒更新される詳細な表示にします。\n※この設定は実験的機能です。有効化するとメモリーの使用量が増加する可能性があります。\n(適用するにはアプリの再起動が必要です)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "実験的機能"
 		}
 	},
 	"LaunchOption": {
-		"-anticheat_settings=SettingsDX12___dot___json": {
-			"Category": "グラフィック",
-			"Choices": "有効",
-			"Desc": "DirectX 12 でゲームを起動します。\r\nDirectX 12 を使用すると、ゲームがCPU グラフィック コードを複数のコアに分散できるようになり、フレームレートの向上が期待できます。\r\n環境によっては、テクスチャーが正常に表示されないなど、不具合が発生する可能性があります。",
-			"DisabledText": "無効",
-			"Name": "DirectX 12 を有効化 (ベータ)",
-			"AdditionalButtonText": "DirectX 12 に関する詳しい情報 (Reddit)"
-		},
 		"-forcenovsync": {
 			"Category": "グラフィック",
 			"Choices": "垂直同期(V-SYNC)を無効化",
@@ -605,9 +626,9 @@
 		"-high": {
 			"Category": "CPU",
 			"Choices": "CPU優先度を「高」へ変更する",
-			"Desc": "Apex Legends のCPU優先度を「高」へ変更します。\r\n変更すると、パフォーマンス向上に繋がる可能性がありますが、\r\nApex Legends のCPU使用率が増加し、システムや他のアプリケーションが不安定になる可能性があります。",
+			"Desc": "Apex Legends のプロセスのCPU優先度を「高」へ変更します。\r\n変更すると、パフォーマンス向上に繋がる可能性がありますが、\r\nApex Legends のCPU使用率が増加し、システムや他のアプリケーションが不安定になる可能性があります。",
 			"DisabledText": "無効",
-			"Name": "優先度を「高」へ変更"
+			"Name": "プロセスの優先度を「高」へ変更"
 		},
 		"-limitvsconst": {
 			"Category": "グラフィック",
@@ -615,6 +636,13 @@
 			"Desc": "頂点シェーダー数を256に制限します。変更すると、パフォーマンス向上に繋がる可能性があります。",
 			"DisabledText": "変更しない",
 			"Name": "頂点シェーダー数を変更"
+		},
+		"-no_render_on_input_thread": {
+			"Category": "CPU",
+			"Choices": "有効",
+			"Desc": "有効にすると、マルチスレッドレンダリングの処理に入力処理と同じCPUコアを使用しなくなります。\nCPUコア数が多い (6以上) プレイヤーの場合、特にポーリングレートの高いマウスやコントローラーを使用している場合、フレームレートと入力遅延の安定性が向上します。\n他のプレイヤーにとっては、このオプションはレンダリングのパフォーマンスを低下させる可能性があります。",
+			"DisabledText": "無効",
+			"Name": "マルチスレッドレンダリングに入力処理と同じCPUコアを使用しない"
 		},
 		"-noff": {
 			"Category": "マウス/コントローラー",
@@ -770,6 +798,13 @@
 			"DisabledText": "無効化しない",
 			"Name": "プレイヤー情報のオーバーレイ表示を有効化"
 		},
+		"+clip_mouse_to_letterbox": {
+			"Category": "システム",
+			"Choices": "有効",
+			"Desc": "＜ウルトラワイドモニター向け＞\nゲーム内で「マウスカーソルをゲーム画面に固定」オプションを有効にしている場合に、カーソルが黒帯の内側の領域に固定されないようにします。\nこの引数は、ウルトラワイドモニター等、通常とは異なるアスペクト比のディスプレイ向けです。",
+			"DisabledText": "無効",
+			"Name": "カーソルを黒帯の内側の領域に固定しない"
+		},
 		"+CrossPlay_user_optin": {
 			"Category": "システム",
 			"Choices": "クロスプレイを無効化する",
@@ -791,6 +826,13 @@
 			"DisabledText": "設定しない",
 			"Name": "FPS上限"
 		},
+		"+lobby_max_fps": {
+			"Category": "グラフィック",
+			"Choices": "無制限,指定入力,15 FPS,30 FPS,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
+			"Desc": "ロビーとメニューにおけるFPSの上限値を設定します。\nCPUとGPUの使用率を減らすために、デフォルト値は 60 に設定されています。",
+			"DisabledText": "設定しない",
+			"Name": "ロビー/メニューFPS上限"
+		},
 		"+m_rawinput": {
 			"Category": "マウス/コントローラー",
 			"Choices": "有効",
@@ -798,12 +840,33 @@
 			"DisabledText": "有効化しない",
 			"Name": "ローインプットを有効化"
 		},
+		"+mat_minimize_on_alt_tab": {
+			"Category": "システム",
+			"Choices": "有効",
+			"Desc": "Alt+Tab などを使用してゲームのウィンドウからフォーカスを外した際にウィンドウを最小化します。\n(DirectX 11 のウィンドウと似た挙動になります。)",
+			"DisabledText": "無効",
+			"Name": "フォーカス解除時にウィンドウを最小化"
+		},
+		"+mat_no_stretching": {
+			"Category": "グラフィック",
+			"Choices": "有効",
+			"Desc": "すべての解像度の引き伸ばしを無効化し、常にモニターをゲームの解像度に合わせてレターボックスまたはピラーボックス化します。 (黒帯が表示されます)\nこの機能は、一部のプレイヤーがカスタム解像度で DirectX 11 の設定を再現するのに便利です。",
+			"DisabledText": "無効",
+			"Name": "すべての解像度の引き伸ばしを無効化"
+		},
 		"+mat_queue_mode": {
 			"Category": "CPU",
 			"Choices": "<推奨> マルチ,シングル (非同期),シングル (同期),システム,レガシー",
 			"Desc": "マテリアルシステムが使用するCPUのスレッドモードを変更します。設定によっては、パフォーマンス向上に繋がる可能性があります。",
 			"DisabledText": "変更しない",
-			"Name": "スレッドモードを変更"
+			"Name": "マテリアルシステムのスレッドモードを変更"
+		},
+		"+mat_wide_pillarbox": {
+			"Category": "グラフィック",
+			"Choices": "有効",
+			"Desc": "＜ウルトラワイドモニター向け＞\nゲーム画面の引き伸ばしを有効化します。\n有効にすると、ゲーム画面は比率を維持せずに引き伸ばされ、左右に黒い余白が表示されなくなります。\nこの引数は、ウルトラワイドモニター等、通常とは異なるアスペクト比のディスプレイ向けです。",
+			"DisabledText": "無効",
+			"Name": "ゲーム画面の引き伸ばしを有効化"
 		},
 		"__Category": {
 			"List": "コンフィグ,全般,グラフィック,システム,CPU,マウス/コントローラー,Live API"

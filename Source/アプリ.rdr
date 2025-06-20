@@ -3,13 +3,28 @@
 「..\Build.json」を素材として利用する
 
 「..\BuildVersion.txt」を素材として利用する
+「..\CommitHash.txt」を素材として利用する
 
+// Release/Beta
 「..\Resources\Logo\LegendUtil_Icon.ico」を素材として利用する
 「..\Resources\Logo\LegendUtil_Icon.png」を素材として利用する
 「..\Resources\Logo\LegendUtil_Icon_Transparent.png」を素材として利用する
 「..\Resources\Logo\LegendUtil_Banner_WithoutText.png」を素材として利用する
-
 「..\Resources\Logo\LegendUtil_LogoType_Transparent.png」を素材として利用する
+
+// Dev
+「..\Resources\Logo\LegendUtil_Dev_Icon.ico」を素材として利用する
+「..\Resources\Logo\LegendUtil_Dev_Icon.png」を素材として利用する
+「..\Resources\Logo\LegendUtil_Dev_Icon_Transparent.png」を素材として利用する
+「..\Resources\Logo\LegendUtil_Dev_Banner_WithoutText.png」を素材として利用する
+「..\Resources\Logo\LegendUtil_Dev_LogoType_Transparent.png」を素材として利用する
+
+// Nightly
+「..\Resources\Logo\LegendUtil_Nightly_Icon.ico」を素材として利用する
+「..\Resources\Logo\LegendUtil_Nightly_Icon.png」を素材として利用する
+「..\Resources\Logo\LegendUtil_Nightly_Icon_Transparent.png」を素材として利用する
+「..\Resources\Logo\LegendUtil_Nightly_Banner_WithoutText.png」を素材として利用する
+「..\Resources\Logo\LegendUtil_Nightly_LogoType_Transparent.png」を素材として利用する
 
 「..\Resources\Images\kofi_button_red.png」を素材として利用する
 
@@ -28,6 +43,7 @@
 	+バージョン表記:文字列
 	+ビルドバージョン:文字列
 	+リリース番号
+	-コミットハッシュ値:文字列
 	//----- バージョン関連 -----//
 	
 	+アイコン:プロデルアイコン
@@ -51,8 +67,11 @@
 		情報設定する
 	終わり
 	
-	情報設定する手順
-		ビルド情報=[「Build.json」を素材リストから文字列として取得したもの]をJSON形式として読み取ったもの
+	〈【ビルド情報辞書】で〉情報設定する手順
+		ビルド情報辞書が無ならビルド情報=[「Build.json」を素材リストから文字列として取得したもの]をJSON形式として読み取ったもの
+		そうでなければビルド情報=ビルド情報辞書
+		
+		コミットハッシュ値=「CommitHash.txt」を素材リストから文字列として取得したもの
 		
 		プロジェクトファイル=XMLで[「LegendUtil.rdrproj」を素材リストから文字列として取得したもの]から作成したもの
 		アプリ名=「[プロジェクトファイルの「プロジェクト」の「名前」の内容]」
@@ -69,25 +88,39 @@
 			もしリリースチャンネルが「dev」で始まるなら
 				リリース番号=ビルドバージョン
 				「内部バージョン=[内部バージョン番号].[ビルドバージョンで「.」を「」へ置換したもの]」を命令する
+				バージョン表記=「[バージョン]-[リリースチャンネル].[リリース番号]」
+				
+			他でもしリリースチャンネルが「nightly」で始まるなら
+				リリース番号=「CommitHash.txt」を素材リストから文字列として取得したもの
+				「内部バージョン=[内部バージョン番号].[ビルドバージョンで「.」を「」へ置換したもの]」を命令する
+				バージョン表記=「[バージョン]-[リリースチャンネル].[リリース番号]」
 				
 			そうでなければ
 				リリース番号=[バージョン配列(4)]
 				「内部バージョン=[内部バージョン番号].[ビルドバージョンで「.」を「」へ置換したもの]」を命令する
+				バージョン表記=「[バージョン]-[リリースチャンネル]」
 				
 			もし終わり
 		繰り返し終わり
 		
-		もしリリースチャンネルが「dev」で始まるならバージョン表記=「[バージョン]-[リリースチャンネル].[リリース番号]」
-		そうでなければバージョン表記=「[バージョン]-[リリースチャンネル]」
-		
 		ライセンス読み込む
 		
 		起動引数=空の配列
-		アイコン=「LegendUtil_Icon.ico」を素材リストからアイコンとして取得したもの
-		アイコン画像=「LegendUtil_Icon.png」を素材リストから画像として取得したもの
-		アイコン透過画像=「LegendUtil_Icon_Transparent.png」を素材リストから画像として取得したもの
-		バナー画像=「LegendUtil_Banner_WithoutText.png」を素材リストから画像として取得したもの
-		ロゴタイプ画像=「LegendUtil_LogoType_Transparent.png」を素材リストから画像として取得したもの
+		
+		// リリースチャンネルによってロゴを変える
+		【アイコンファイル接尾詞】=「」
+		もしリリースチャンネルが「dev」で始まるなら // Dev
+			アイコンファイル接尾詞=「_Dev」
+		他でもしリリースチャンネルが「nightly」で始まるなら // Nightly
+			アイコンファイル接尾詞=「_Nightly」
+		そうでなければ // Release/Beta
+			アイコンファイル接尾詞=「」
+		もし終わり
+		アイコン=「LegendUtil[アイコンファイル接尾詞]_Icon.ico」を素材リストからアイコンとして取得したもの
+		アイコン画像=「LegendUtil[アイコンファイル接尾詞]_Icon.png」を素材リストから画像として取得したもの
+		アイコン透過画像=「LegendUtil[アイコンファイル接尾詞]_Icon_Transparent.png」を素材リストから画像として取得したもの
+		バナー画像=「LegendUtil[アイコンファイル接尾詞]_Banner_WithoutText.png」を素材リストから画像として取得したもの
+		ロゴタイプ画像=「LegendUtil[アイコンファイル接尾詞]_LogoType_Transparent.png」を素材リストから画像として取得したもの
 	終わり
 	
 	自分で情報表示する手順
@@ -136,6 +169,13 @@
 		終わり
 	終わり
 	
+	-DPI係数値
+	DPI係数という属性
+		取得する手順
+			(メイン画面の設計スケール比率(1)/アプリの設計スケール比率(1))を返す
+		終わり
+	終わり
+	
 	-アプリ名:文字列
 	名前という属性
 		取得する手順
@@ -146,6 +186,12 @@
 	リリースチャンネルという属性
 		取得する手順
 			ビルド情報(「App」)(「ReleaseChannel」)を返す
+		終わり
+	終わり
+	
+	コミットハッシュという属性
+		取得する手順
+			コミットハッシュ値を返す
 		終わり
 	終わり
 	

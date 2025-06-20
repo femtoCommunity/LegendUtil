@@ -49,7 +49,7 @@
 	
 	
 	-アップデートデータURL:文字列=「https://api.github.com/repos/femtoCommunity/LegendUtil/releases」
-	-開発アップデートデータURL:文字列=「https://releases.api.legendutil.milkeyyy.com/latest」
+	-開発アップデートデータURL:文字列=「https://api-legendutil.ezolys.com/releases/latest」
 	
 	-アップデートデータ取得結果:真偽値=×
 	-アップデートデータステータスコード=0
@@ -85,12 +85,15 @@
 				
 			もし終わり
 			
+		他でもしアプリのリリースチャンネルが「nightly」で始まるなら
+			アップデートチャンネル=アプリのリリースチャンネル
+			
 		そうでなければ
 			アップデートチャンネル=「release」
 			
 		もし終わり
 		
-		もしアップデートチャンネルが「dev」で始まるなら
+		もしアップデートチャンネルが「dev」で始まるまたはアップデートチャンネルが「nightly」で始まるなら
 			カスタムリリースチャンネル=×
 			開発アップデートデータアドレス=開発アップデートデータURL
 			
@@ -120,6 +123,10 @@
 					「body」=[アップデートデータJSON(「data」)(「changelog」)],
 					「assets」={{「browser_download_url」=[アップデートデータJSON(「data」)(「installer_download_url」)]}}
 				}
+				// Nightly は変更履歴を GitHub のページにする
+				アップデートチャンネルが「nightly」で始まるなら
+					元アップデートデータ(「body」)=「[アプリのGitHubリポジトリーURL]/compare/[アプリのリリース番号]...[[アップデートデータJSON(「data」)(「build_version」)]の先頭から1文字消したもの]」
+				そして
 				
 			そうでなければ
 				例外監視
@@ -214,6 +221,15 @@
 			もし終わり
 			
 		他でもしアプリのリリースチャンネルが「dev」で始まるなら
+			もしメイン設定について「Update」から「ReleaseChannel」を取得したものが「dev」で始まるなら
+				アップデートチャンネル=メイン設定について「Update」から「ReleaseChannel」を取得したもの
+				
+			そうでなければ
+				アップデートチャンネル=アプリのリリースチャンネル
+				
+			もし終わり
+			
+		他でもしアプリのリリースチャンネルが「nightly」で始まるなら
 			アップデートチャンネル=アプリのリリースチャンネル
 			
 		そうでなければ
