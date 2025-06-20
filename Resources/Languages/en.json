@@ -12,7 +12,12 @@
 			"6": "Disable",
 			"7": "Disabled",
 			"8": "Account",
-			"Loading": "Loading"
+			"Default": "Default",
+			"Platform": "Platform",
+			"Play": "Play",
+			"Loading": "Loading",
+			"RemainingTime_Format_Hour": "{0} hr left",
+			"RemainingTime_Format_Minute": "{0} min left"
 		},
 		"Dialog": {
 			"Welcome": "Thank you for installing {0}!\n\nThis app is a beta version, and unexpected problems may occur.\nIf you find any bugs or other issues or would like to see improvements, please report them in the support Discord server forum or GitHub Issue.",
@@ -28,7 +33,7 @@
 			"2": "Failed to update news"
 		},
 		"2": {
-			"1": "Failed to load profile.\r\n\r\n<Profile failed to load>\r\n・{0}",
+			"1": "Failed to load profile.\n\n<Profile failed to load>\n・{0}",
 			"2": "Failed to load profile.\r\n\r\n{0}",
 			"3": "Failed to create profile.\r\n\r\n{0}",
 			"4": "Could not rename profile.\r\n\r\n{0}",
@@ -69,11 +74,14 @@
 		}
 	},
 	"Tooltip": {
+		"メイン画面": {
+			"アプリケーション情報ラベル": "Click to copy version information"
+		},
 		"プロファイル編集パネル部品": {
 			"AltEnter自動押下チェックボックス": "Set whether to automatically press Alt+Enter after starting Apex Legends.\nBy enabling this setting, you can eliminate the \"black bands\" that occur when \"resolution stretching\" is performed.",
 			"AltEnter自動押下待機時間ダイヤル": "Sets the wait time (in seconds) from when Apex Legends starts to when Alt+Enter is automatically pressed.\nThe time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
 			"AltEnter自動押下方法選択リスト": "Sets how Alt+Enter is automatically pressed.\n\n   <Image recognition>\n     Automatically recognizes the title screen display and automatically presses Alt+Enter.\n     Using this configuration requires additional file downloads. (It will be downloaded automatically.)\n\n   <Time>\n     After Apex Legends starts, waits the specified amount of time to perform an automatic Alt+Enter press.\n     The time it takes for the title screen to appear varies depending on your environment, so please set it according to your environment.",
-			"ApexLegendsパステキスト": "Set the path to the installation destination (executable file) of Apex Legends.\nPlease specify the path to \"r5apex.exe\".",
+			"ApexLegendsパステキスト": "Set the path to the installation destination (executable file) of Apex Legends.\nPlease specify the path to \"r5apex_dx12.exe\".",
 			"ApexLegendsパス自動取得チェックボックス": "Automatically obtains the installation location (executable file) of Apex Legends installed on this PC.",
 			"ApexLegendsパス自動取得ボタン": "Retrieve the installation location of Apex Legends installed on this PC.\nThis should be done when the installation location has been changed, such as when reinstalling the software.",
 			"EAappSteam経由IDテキスト": "Specify the AppID of the EA app registered with Steam.",
@@ -90,7 +98,7 @@
 			"フルスクリーンストレッチ有効チェックボックス": "Sets whether or not the display resolution is changed (stretched) when playing Apex Legends.",
 			"プラットフォーム選択リスト": "Select the platform on which Apex Legends is installed.",
 			"アカウント選択リスト": "Select the account you want to use to play Apex Legends.\n(You can manage your account from the \"Account\" tab.)",
-			"戻るボタン": "Back to Profile List",
+			"戻るボタン": "Back",
 			"ディスプレイ解像度テストボタン": "Tests if it can be displayed normally after changing to the specified display settings.",
 			"コンフィグパネル部品のコンフィグ指定選択リスト": "Select the config to load when playing with this profile.",
 			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "Select the Video config to load when playing with this profile.",
@@ -121,6 +129,7 @@
 			"GameMode_arenasRanked": "Arena | Ranked",
 			"GameMode_ltm_Control": "Control",
 			"GameMode_ltm_TDM": "Team Deathmatch",
+			"GameMode_ltm_Big TDM": "Big TDM",
 			"GameMode_ltm_Gun Run": "Gun Run",
 			"GameMode_ltm_Lockdown": "Lockdown"
 		}
@@ -173,7 +182,7 @@
 		},
 		"Dialog": {
 			"FailedToLoadProfiles": "Failed to load the following profile.\nSee the debug log for details.\n\n{0}",
-			"ConvertedOldDX12Args": "The startup argument for launching DirectX 12 had a value that was not compatible with Season 21 or later, so the following value was automatically replaced.\nBefore: {0}\nAfter: {1}\n\n<Target profiles>\n{2}"
+			"ConvertedOldDX12Args": "A launch argument for launching with DirectX 12, which is no longer necessary since Season 23 (Astral Anomaly event), was found and automatically deleted.\n\n<Target profile>\n{0}"
 		}
 	},
 	"InPlay": {
@@ -194,7 +203,14 @@
 			"WaitingForGameToStart": "Waiting for Apex Legends to launch",
 			"WaitingForGameToStart_WithRT": "Waiting for Apex Legends to launch - {0} seconds left",
 			"StoppingGameProcess": "Stopping Apex Legends process",
-			"MonitoringGameProcess": "Tracking the Apex Legends process"
+			"MonitoringGameProcess": "Tracking the Apex Legends process",
+			"WaitingForGameInstallProcess": "We have detected that Apex Legends is installing. Waiting for the installation to complete...",
+			"WaitingForGameUpdateProcess": "We have detected that Apex Legends is updating. Waiting for the update to complete...",
+			"WaitingForGameRepairProcess": "We have detected that Apex Legends is repairing. Waiting for the repair to complete...",
+			"WaitingForGameInstallProcess_WithStatus": "We have detected that Apex Legends is installing.\nWaiting for the install to complete...\n(Progress: {0} - {1})",
+			"WaitingForGameUpdateProcess_WithStatus": "We have detected that Apex Legends is updating.\nWaiting for the update to complete...\n(Progress: {0} - {1})",
+			"WaitingForGameRepairProcess_WithStatus": "We have detected that Apex Legends is repairing.\nWaiting for the repair to complete...\n(Progress: {0} - {1})",
+			"CancelingGameInstall": "Game install/update/repair process canceled."
 		},
 		"Dialog": {
 			"Game_CancelProcessTracking_Confirm": "Are you sure you want to cancel your Apex Legends standby?",
@@ -274,16 +290,17 @@
 			"SystemDisplaySettings_RestoringError": "An error occurred while restoring the system display settings.",
 			"ConfigFile_RestoringError": "An error occurred while restoring the config file.",
 			"ProfileConfigFile_RestoringError": "An error occurred while restoring the profile config file.",
+			"VideoConfigFile_EditingFailed_CorruptedFile": "The video config file could not be loaded because it may be corrupted. Your video settings may be reset.",
 			"VideoConfigFile_RestoringError": "An error occurred while restoring the video config file.",
 			"VideoConfigFile_SettingsRestoringError": "An error occurred while restoring the video config settings.",
-			"TT_LastPlayDate_RecordError": "An error occurred while recording the last play date and time.",
+			"TT_LastPlayDate_RecordError": "An error occurred while recording the last play time.",
 			"TT_TotalPlayTime_RecordError": "An error occurred while recording the total play time.",
 			"TT_DiscordRPC_TimestampResetError": "An error occurred while resetting the Discord RPC timestamp."
 		},
 		"Error": {
 			"0": "An error occurred during startup processing.",
 			"1": "Failed to load profile.",
-			"2": "Failed to change display settings.",
+			"2": "Failed to change display settings.\n\nIf you're getting this error with a supported resolution, change the scaling mode and try again.",
 			"3": "An error occurred when launching Apex Legends.",
 			"4": "Apex Legends could not start.\nApex Legends may not be installed.",
 			"5": "Apex Legends process could not be retrieved in time.",
@@ -318,6 +335,15 @@
 		}
 	},
 	"Panel": {
+		"MainMenu_VersionInfoLabel": {
+			"VersionInfoCopied": "The version information has been copied to the clipboard."
+		},
+		"MainMenu_ProfileList": {
+			"SortOrderList;List": "Name (ascending),Name (descending),Display Settings (ascending),Display Settings (descending),Platform (ascending),Platform (descending),Last Played (nearest to latest),Last Played (farthest to latest),Total Play Time (shortest to longest),Total Play Time (longest to longest)",
+			"ItemDetail_Resolution": "Resolution: {0}×{1} ({2}) - {3} Hz",
+			"ItemDetail_Resolution_Native": "Resolution: Native",
+			"ItemDetail_Additional": "Total Play Time: {0}\nLast Play Date: {1}"
+		},
 		"ProfileManage_ContextMenu": {
 			"EditButton": "Edit",
 			"CreateShortcutButton": "Create Shortcut",
@@ -427,7 +453,8 @@
 			"32": "Show non-compliant settings",
 			"33": "The installation location for Apex Legends has been found.\n\nPath: {0}",
 			"34": "Account",
-			"35": "Test"
+			"35": "Test",
+			"36": "<Note>\nUnless there is a special reason, there is no need to enable \"Change system resolution\" to set stretching.\nWe recommend that you normally disable it."
 		},
 		"4": {
 			"2": "Enter any startup arguments not listed below as options here.\nEnter the text of an existing launch argument and run \"Parse\" and LegendUtil will automatically parse and load it.",
@@ -528,6 +555,8 @@
 		},
 		"General": {
 			"__Name": "General",
+			"EAapp_GameInstallStatusDetector;Name": "[Experimental Feature] EA app game installation status detection",
+			"EAapp_GameInstallStatusDetector;Desc": "Get the installation/update/repair status of Apex Legends in the EA app when the game is launched.\nIf enabled, if an update or other process is detected when the game is launched, it will wait until the process is complete and automatically resume the game launch process once the process is complete.\n*This setting is an experimental feature. It may not work properly in the future due to EA app updates, etc.",
 			"EAapp_Config_Folder_Path;Name": "EA app Config Folder",
 			"EAapp_Config_Folder_Path;Desc": "The folder where the EA app configuration file is saved.\nIf you specify a blank or non-existent folder, it will be retrieved automatically.\n*We recommend leaving this blank.",
 			"EAapp_Config_Folder_Path;Custom_1": "Select Folder",
@@ -572,22 +601,14 @@
 			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West",
 			"MapRotation_Enable;Name": "Map Rotation - Display",
 			"MapRotation_Enable;Desc": "Whether to display map rotation information in the main menu\n(Requires app restart to apply)",
-			"MapRotation_RemainingTime;Name": "[Experimental] Map Rotation - Remaining Time",
-			"MapRotation_RemainingTime;Desc": "Whether to display the remaining time for each mode of map rotation.\n*This setting is an experimental feature. Enabling it may increase memory usage.\n(Requires app restart to apply)"
+			"MapRotation_RemainingTime;Name": "[Experimental Feature] Map rotation - Detailed remaining time display",
+			"MapRotation_RemainingTime;Desc": "Displays detailed map rotation information with remaining time updated every second.\n*This setting is an experimental feature. Enabling it may increase memory usage.\n(Requires app restart to apply)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "Experimental Features"
 		}
 	},
 	"LaunchOption": {
-		"-anticheat_settings=SettingsDX12___dot___json": {
-			"Category": "Graphics",
-			"Choices": "Enable",
-			"Desc": "Launch your game with DirectX 12.\nUsing DirectX 12 allows the game to distribute the CPU graphics code across multiple cores, which can result in higher frame rates.\nIn some environments, this may cause problems, such as textures not displaying properly.",
-			"DisabledText": "Disable",
-			"Name": "Enable DirectX 12 (Beta)",
-			"AdditionalButtonText": "More information about DirectX 12 (Reddit)"
-		},
 		"-forcenovsync": {
 			"Category": "Graphics",
 			"Choices": "Force Disable V-SYNC",
@@ -605,9 +626,9 @@
 		"-high": {
 			"Category": "CPU",
 			"Choices": "Change CPU priority to \"High\"",
-			"Desc": "Change the CPU priority of Apex Legends to \"High\".\nChanging this may lead to performance improvements, though,\nApex Legends CPU usage will increase and may cause system and other applications to become unstable.",
+			"Desc": "Change the CPU priority of the Apex Legends process to \"High\".\n\nThis may improve performance, but it may also increase Apex Legends' CPU usage and cause instability in your system or other applications.",
 			"DisabledText": "Disable",
-			"Name": "Change priority to \"high\""
+			"Name": "Change the process priority to \"High\""
 		},
 		"-limitvsconst": {
 			"Category": "Graphics",
@@ -615,6 +636,13 @@
 			"Desc": "Change the number of vertex shaders to 256. Changes may lead to better performance.",
 			"DisabledText": "No override",
 			"Name": "Change the number of vertex shaders"
+		},
+		"-no_render_on_input_thread": {
+			"Category": "CPU",
+			"Choices": "Enable",
+			"Desc": "When enabled, multithreaded rendering will not use the same CPU cores as input processing.\nFor players with a high CPU core count (6+), this will result in more stable framerates and input latency, especially if using mice or controllers with high polling rates.\nFor other players, this option may reduce rendering performance.",
+			"DisabledText": "Disable",
+			"Name": "Use a separate CPU core for multi-threaded rendering than for input processing"
 		},
 		"-noff": {
 			"Category": "Mouse/Controller",
@@ -770,6 +798,13 @@
 			"DisabledText": "Enable",
 			"Name": "Enable player info overlay"
 		},
+		"+clip_mouse_to_letterbox": {
+			"Category": "System",
+			"Choices": "Enable",
+			"Desc": "<For ultra-wide monitors>\nWhen the \"Pin mouse cursor to game screen\" option is enabled in the game, this will prevent the cursor from being fixed to the area inside the letterboxing or pillarboxing.\nThis argument is intended for displays with non-standard aspect ratios, such as ultra-wide monitors.",
+			"DisabledText": "Disable",
+			"Name": "Do not fix the cursor to the area inside the letterboxing or pillarboxing"
+		},
 		"+CrossPlay_user_optin": {
 			"Category": "System",
 			"Choices": "Disable crossplay",
@@ -791,6 +826,13 @@
 			"DisabledText": "Not set",
 			"Name": "FPS upper limit"
 		},
+		"+lobby_max_fps": {
+			"Category": "Graphics",
+			"Choices": "Unlimited,Specified Input,15 FPS,30 FPS,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
+			"Desc": "Sets the FPS limit for the lobby and menus.\nThe default value is set to 60 to reduce CPU and GPU usage.",
+			"DisabledText": "Not set",
+			"Name": "Lobby/Menu FPS Cap"
+		},
 		"+m_rawinput": {
 			"Category": "Mouse/Controller",
 			"Choices": "Enable",
@@ -798,12 +840,33 @@
 			"DisabledText": "Don't enable",
 			"Name": "Enable Raw Input"
 		},
+		"+mat_minimize_on_alt_tab": {
+			"Category": "System",
+			"Choices": "Enable",
+			"Desc": "When you move focus away from the game window (e.g. using Alt+Tab), the window will be minimized.\n(This behaves similarly to DirectX 11 windows.)",
+			"DisabledText": "Disable",
+			"Name": "Minimize window on focus change"
+		},
+		"+mat_no_stretching": {
+			"Category": "Graphics",
+			"Choices": "Enable",
+			"Desc": "Disables all resolution stretching and always letterboxes or pillarboxes your monitor to the game resolution.\nThis feature is useful for some players to replicate DirectX 11 setups with custom resolutions.",
+			"DisabledText": "Disable",
+			"Name": "Disable all resolution stretching"
+		},
 		"+mat_queue_mode": {
 			"Category": "CPU",
 			"Choices": "<Recommended> Multi,Single (Asynchronous),Single (Sync),System,Legacy",
 			"Desc": "Change the CPU thread mode. Depending on your settings, it may lead to better performance.",
 			"DisabledText": "No changes",
-			"Name": "Change thread mode"
+			"Name": "Changed material system threading mode"
+		},
+		"+mat_wide_pillarbox": {
+			"Category": "Graphics",
+			"Choices": "Enable",
+			"Desc": "<For ultra-wide monitors>\nEnables stretching of the game screen.\nWhen enabled, the game screen will be stretched without maintaining the ratio and letterboxing or pillarboxing will not be displayed on the left or right.\nThis argument is intended for displays with non-standard aspect ratios, such as ultra-wide monitors.",
+			"DisabledText": "Disable",
+			"Name": "Enable game screen stretching"
 		},
 		"__Category": {
 			"List": "Config,General,Graphics,System,CPU,Mouse/Controller,Live API"

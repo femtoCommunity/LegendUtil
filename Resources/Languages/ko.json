@@ -12,7 +12,12 @@
 			"6": "비활성화",
 			"7": "비활성화",
 			"8": "계정",
-			"Loading": "로딩 중"
+			"Default": "기본값",
+			"Platform": "플랫폼",
+			"Play": "플레이",
+			"Loading": "로딩 중",
+			"RemainingTime_Format_Hour": "이후 {0} 시간",
+			"RemainingTime_Format_Minute": "이후 {0} 분"
 		},
 		"Dialog": {
 			"Welcome": "{0} 을 설치해 주셔서 감사합니다!\n\n이 응용 프로그램은 베타 버전이며 예기치 않은 문제 등이 발생할 수 있습니다.\n문제 등의 문제를 발견하거나 개선하고 싶은 점이 있는 경우는 지원 Discord 서버 포럼 또는 GitHub Issue에서 보고를 부탁드립니다.",
@@ -69,11 +74,14 @@
 		}
 	},
 	"Tooltip": {
+		"メイン画面": {
+			"アプリケーション情報ラベル": "클릭하여 버전 정보 복사"
+		},
 		"プロファイル編集パネル部品": {
 			"AltEnter自動押下チェックボックス": "Apex Legends 실행 후 Alt+Enter를 자동으로 누를지 여부를 설정합니다.\n이 설정을 활성화하면 '해상도 늘리기'를 할 때 발생하는 '검은 띠'를 없앨 수 있습니다.",
 			"AltEnter自動押下待機時間ダイヤル": "Apex Legends가 실행된 후 Alt+Enter를 자동 누를 때까지의 대기 시간(초)을 설정합니다.\r\n환경에 따라 타이틀 화면이 표시되기까지 걸리는 시간이 달라지므로, 자신의 환경에 맞게 설정하시기 바랍니다.",
 			"AltEnter自動押下方法選択リスト": "Alt+Enter 자동 누름 실행 방법을 설정합니다.\n\n  <이미지 인식>\n    제목 화면의 표시를 자동으로 인식하여 Alt+Enter 자동 누름을 실행합니다.\n    이 설정을 사용하려면 추가 파일 다운로드가 필요합니다. (자동으로 다운로드됩니다).\n\n  <시간>\n    Apex Legends가 실행된 후 지정된 시간 동안 대기하여 Alt+Enter 자동 누름을 실행합니다.\n    환경에 따라 타이틀 화면이 표시되기까지 걸리는 시간이 달라지므로 자신의 환경에 맞게 설정하시기 바랍니다.",
-			"ApexLegendsパステキスト": "Apex Legends의 설치 경로(실행 파일)를 설정합니다.\r\n'r5apex.exe'의 경로를 지정합니다.",
+			"ApexLegendsパステキスト": "Apex Legends를 설치할 위치(실행 파일)의 경로를 설정합니다.\n\"r5apex_dx12.exe\"의 경로를 지정하십시오.",
 			"ApexLegendsパス自動取得チェックボックス": "이 PC에 설치된 Apex Legends의 설치 위치(실행 파일)를 자동으로 검색합니다.",
 			"ApexLegendsパス自動取得ボタン": "이 PC에 설치된 Apex Legends의 설치 위치를 다시 가져옵니다.\r\n재설치를 하는 등 설치 위치가 변경된 경우 다시 설치하십시오.",
 			"EAappSteam経由IDテキスト": "Steam에 등록된 EA 앱의 AppID를 지정합니다.",
@@ -90,7 +98,7 @@
 			"フルスクリーンストレッチ有効チェックボックス": "Apex Legends 플레이 시 디스플레이 해상도를 변경할지 여부를 설정합니다.",
 			"プラットフォーム選択リスト": "Apex Legends를 설치한 플랫폼을 선택합니다.",
 			"アカウント選択リスト": "Apex Legends를 플레이할 때 사용할 계정을 선택합니다.\r\n(계정 관리는 '계정' 탭에서 할 수 있습니다).",
-			"戻るボタン": "프로필 목록으로 돌아가기",
+			"戻るボタン": "뒤로",
 			"ディスプレイ解像度テストボタン": "지정된 디스플레이 설정으로 변경해도 정상적으로 표시되는지 테스트합니다.",
 			"コンフィグパネル部品のコンフィグ指定選択リスト": "이 프로필로 플레이할 때 불러올 구성을 선택합니다.",
 			"ビデオコンフィグパネル部品のビデオコンフィグ指定選択リスト": "이 프로파일로 플레이할 때 로드할 비디오 구성을 선택합니다.",
@@ -121,6 +129,7 @@
 			"GameMode_arenasRanked": "아레나 | 랭크",
 			"GameMode_ltm_Control": "컨트롤",
 			"GameMode_ltm_TDM": "팀 데스매치",
+			"GameMode_ltm_Big TDM": "빅 TDM",
 			"GameMode_ltm_Gun Run": "건 게임",
 			"GameMode_ltm_Lockdown": "락다운"
 		}
@@ -173,7 +182,7 @@
 		},
 		"Dialog": {
 			"FailedToLoadProfiles": "다음 프로파일을 불러오는 데 실패했습니다.\n자세한 내용은 디버그 로그를 참고하세요.\n\n{0}",
-			"ConvertedOldDX12Args": "DirectX 12에서 실행하기 위한 시작 인수가 시즌 21 이상에서 지원되지 않는 값이었기 때문에 다음 값을 자동으로 대체했습니다.\n교체 전: {0}\n교체 후: {1}\n\n<치환 처리를 실시한 프로파일>\n{2}"
+			"ConvertedOldDX12Args": "시즌 23 (아스트랄 어노멀리 이벤트) 이후 불필요하게 된 DirectX 12 로 기동하기 위한 기동 인수가 설정되어 있었으므로, 자동적으로 삭제했습니다.\n\n<치환 처리를 실시한 프로파일>\n{0}"
 		}
 	},
 	"InPlay": {
@@ -194,7 +203,14 @@
 			"WaitingForGameToStart": "Apex Legends 출시 대기 중",
 			"WaitingForGameToStart_WithRT": "Apex Legends 시작 대기 중 - 남은 시간{0}초",
 			"StoppingGameProcess": "Apex Legends 프로세스 중지 중",
-			"MonitoringGameProcess": "Apex Legends 프로세스 추적 중"
+			"MonitoringGameProcess": "Apex Legends 프로세스 추적 중",
+			"WaitingForGameInstallProcess": "Apex Legends가 설치 중임을 감지했습니다. 설치가 완료 될 때까지 기다리는 중...",
+			"WaitingForGameUpdateProcess": "Apex Legends가 업데이트 중임을 감지했습니다. 업데이트가 완료 될 때까지 기다리는 중...",
+			"WaitingForGameRepairProcess": "Apex Legends가 복구 중임을 감지했습니다. 복구가 완료 될 때까지 기다리는 중...",
+			"WaitingForGameInstallProcess_WithStatus": "Apex Legends가 설치 중임을 감지했습니다.\n설치가 완료 될 때까지 기다리는 중...\n(진행 상황: {0} - {1})",
+			"WaitingForGameUpdateProcess_WithStatus": "Apex Legends가 업데이트 중임을 감지했습니다.\n업데이트가 완료 될 때까지 기다리는 중...\n(진행 상황: {0} - {1})",
+			"WaitingForGameRepairProcess_WithStatus": "Apex Legends가 복구 중임을 감지했습니다.\n복구가 완료 될 때까지 기다리는 중...\n(진행 상황: {0} - {1})",
+			"CancelingGameInstall": "게임 설치/업데이트/복구 처리가 취소되었습니다."
 		},
 		"Dialog": {
 			"Game_CancelProcessTracking_Confirm": "Apex Legends 대기를 취소하시겠습니까?",
@@ -220,7 +236,7 @@
 			"LoadingProfile": "프로필 로딩 중",
 			"GettingDetailsOfInstalledGames": "설치된 게임 정보 조회 중",
 			"GettingGameInstallationLocation": "게임 설치 위치 검색 중",
-			"ReplacedDX11BinaryPath": "DirectX 11 실행 파일 이름을 DirectX 12 실행 파일 이름으로 바꿨습니다",
+			"ReplacedDX11BinaryPath": "DirectX 11 실행 파일 이름을 DirectX 12 실행 파일 이름으로 바꿨습니다.",
 			"GenerateAutoexec": "Autoexec 생성: {0}",
 			"StartEditingVideoConfig": "비디오 구성 편집 시작",
 			"RetrievingLatestTitleScreenImage": "- 최신 타이틀 화면 보기",
@@ -274,6 +290,7 @@
 			"SystemDisplaySettings_RestoringError": "시스템 디스플레이 설정 복원 과정에서 오류가 발생했습니다.",
 			"ConfigFile_RestoringError": "설정 파일 복원 과정에서 오류가 발생했습니다.",
 			"ProfileConfigFile_RestoringError": "프로필 설정 파일 복원 과정에서 오류가 발생했습니다.",
+			"VideoConfigFile_EditingFailed_CorruptedFile": "비디오 구성 파일이 손상되었을 수 있으므로 파일을 로드할 수 없습니다. 비디오 설정이 재설정될 수 있습니다.",
 			"VideoConfigFile_RestoringError": "비디오 구성 파일 복원 과정에서 오류가 발생했습니다.",
 			"VideoConfigFile_SettingsRestoringError": "비디오 설정 항목 복원 과정에서 오류가 발생했습니다.",
 			"TT_LastPlayDate_RecordError": "마지막 플레이 일시의 기록 처리에 에러가 발생했습니다.",
@@ -283,7 +300,7 @@
 		"Error": {
 			"0": "부팅 처리 중 오류가 발생했습니다.",
 			"1": "프로필을 불러오는 데 실패했습니다.",
-			"2": "디스플레이 설정 변경에 실패했습니다.",
+			"2": "디스플레이 설정을 변경하지 못했습니다.\n\n지원되는 해상도에서 이 오류가 발생하면 스케일링 모드를 변경한 후 다시 시도해 주세요.",
 			"3": "Apex Legends 시작 시 오류가 발생했습니다.",
 			"4": "Apex Legends 를 시작할 수 없습니다. Apex Legends 가 설치되어 있지 않을 수 있습니다.",
 			"5": "Apex Legends의 프로세스를 제시간에 얻을 수 없습니다.",
@@ -318,6 +335,15 @@
 		}
 	},
 	"Panel": {
+		"MainMenu_VersionInfoLabel": {
+			"VersionInfoCopied": "버전 정보를 클립보드에 복사했습니다."
+		},
+		"MainMenu_ProfileList": {
+			"SortOrderList;List": "이름 (오름차순),이름 (내림차순),디스플레이 설정 (오름차순),디스플레이 설정 (내림차순),플랫폼 (오름차순), 플랫폼 (내림차순),마지막 플레이 일시 (가까운 순서),마지막 플레이 일시 (먼 순서),총 플레이 시간 (짧은 순서),총 플레이 시간 (긴 순서)",
+			"ItemDetail_Resolution": "해상도: {0}×{1} ({2}) - {3} Hz",
+			"ItemDetail_Resolution_Native": "해상도: 네이티브",
+			"ItemDetail_Additional": "총 플레이 시간: {0}\n마지막 플레이 날짜: {1}"
+		},
 		"ProfileManage_ContextMenu": {
 			"EditButton": "편집",
 			"CreateShortcutButton": "바로 가기 만들기",
@@ -427,7 +453,8 @@
 			"32": "지원되지 않는 설정 표시",
 			"33": "Apex Legends 설치 경로를 찾았습니다.\r\n\r\n경로: {0}",
 			"34": "계정",
-			"35": "테스트"
+			"35": "테스트",
+			"36": "<주의>\n특별한 이유가 없으면 확장 설정을 수행하기 위해 \"시스템 해상도 변경\"을 활성화할 필요가 없습니다.\n일반적으로 비활성화하는 것이 좋습니다."
 		},
 		"4": {
 			"2": "아래 옵션에 없는 시작 인수는 여기에 입력하십시오.\n기존 시작 인수의 텍스트를 입력하고 구문 분석을 실행하면 LegendUtil이 자동으로 구문 분석하고 읽습니다.",
@@ -528,6 +555,8 @@
 		},
 		"General": {
 			"__Name": "일반",
+			"EAapp_GameInstallStatusDetector;Name": "[실험 기능] EA app 게임 설치 상황 감지 기능",
+			"EAapp_GameInstallStatusDetector;Desc": "게임이 시작될 때 EA 앱에서 Apex Legends 설치/업데이트/복구 상태를 가져옵니다.\n활성화하면 게임이 시작될 때 업데이트 등이 실행 중임을 감지하면 처리가 끝날 때까지 기다리고 처리가 끝나면 게임 시작 프로세스를 자동으로 다시 시작합니다.\n※이 설정은 실험적 기능입니다. 향후 EA 앱 업데이트 등의 영향으로 제대로 작동하지 않을 수 있습니다.",
 			"EAapp_Config_Folder_Path;Name": "EA app 구성 폴더",
 			"EAapp_Config_Folder_Path;Desc": "EA app의 구성 파일이 저장된 폴더\n공백이나 존재하지 않는 폴더를 지정하면 자동으로 검색됩니다.\n※통상은 공란으로 하는 것을 추천합니다※",
 			"EAapp_Config_Folder_Path;Custom_1": "폴더를 선택하세요",
@@ -572,22 +601,14 @@
 			"ServerStatus_Region;List": "아시아,동유럽,서유럽,미국 남부,미국 중부,미국 동부,미국 서부",
 			"MapRotation_Enable;Name": "지도 회전 - 표시",
 			"MapRotation_Enable;Desc": "메인 메뉴에 맵 회전 정보를 사용할지 여부\n(적용하려면 앱을 다시 시작해야 합니다)",
-			"MapRotation_RemainingTime;Name": "[시험 기능] 맵 회전 - 남은 시간",
-			"MapRotation_RemainingTime;Desc": "맵 회전의 각 모드의 남은 시간을 표시할지 여부\n※이 설정은 시험 기능입니다. 활성화하면 메모리 사용량이 증가할 수 있습니다.\n(적용하려면 앱을 다시 시작해야 합니다)"
+			"MapRotation_RemainingTime;Name": "[실험 기능] 지도 회전 - 자세한 남은 시간 표시",
+			"MapRotation_RemainingTime;Desc": "맵 로테이션 정보의 남은 시간 표기를 매초 갱신되는 상세한 표시로 합니다.\n※이 설정은 실험적 기능입니다. 활성화하면 메모리 사용량이 증가할 수 있습니다.\n(적용하려면 앱을 다시 시작해야 합니다)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "실험적 기능"
 		}
 	},
 	"LaunchOption": {
-		"-anticheat_settings=SettingsDX12___dot___json": {
-			"Category": "그래픽",
-			"Choices": "활성화됨",
-			"Desc": "DirectX 12로 게임을 실행합니다.\r\nDirectX 12를 사용하면 게임이 CPU 그래픽 코드를 여러 코어에 분산시킬 수 있어 프레임 속도 향상을 기대할 수 있습니다.\r\n환경에 따라 텍스처가 제대로 표시되지 않는 등 문제가 발생할 수 있습니다.",
-			"DisabledText": "비활성화",
-			"Name": "DirectX 12 활성화(베타)",
-			"AdditionalButtonText": "DirectX 12에 대한 자세한 정보 (Reddit)"
-		},
 		"-forcenovsync": {
 			"Category": "그래픽",
 			"Choices": "수직 동기화(V-SYNC) 비활성화",
@@ -605,9 +626,9 @@
 		"-high": {
 			"Category": "CPU",
 			"Choices": "CPU 우선순위 '높음'으로 변경",
-			"Desc": "Apex Legends의 CPU 우선순위를 '높음'으로 변경합니다.\r\n변경하면 성능이 향상될 수 있지만,\r\nApex Legends의 CPU 사용량이 증가하여 시스템 및 다른 애플리케이션이 불안정해질 수 있습니다.",
+			"Desc": "Apex Legends 프로세스의 CPU 우선 순위를 높음으로 변경합니다.\n변경하면 성능 향상으로 이어질 수 있지만,\nApex Legends의 CPU 사용률이 증가하여 시스템 및 기타 응용 프로그램이 불안정해질 수 있습니다.",
 			"DisabledText": "비활성화",
-			"Name": "우선순위 '높음'으로 변경"
+			"Name": "프로세스 우선 순위를 '높음'으로 변경"
 		},
 		"-limitvsconst": {
 			"Category": "그래픽",
@@ -615,6 +636,13 @@
 			"Desc": "정점 셰이더 수를 256으로 제한합니다. 변경하면 성능 향상으로 이어질 수 있습니다.",
 			"DisabledText": "변경하지 않음",
 			"Name": "버텍스 셰이더 수 변경"
+		},
+		"-no_render_on_input_thread": {
+			"Category": "CPU",
+			"Choices": "활성화됨",
+			"Desc": "활성화하면 멀티스레드 렌더링 처리에 입력 처리와 동일한 CPU 코어를 사용하지 않습니다.\nCPU 코어 수가 많은 (6 이상) 플레이어의 경우, 특히 폴링 레이트가 높은 마우스나 컨트롤러를 사용하고 있는 경우, 프레임 레이트와 입력 지연의 안정성이 향상됩니다.\n다른 플레이어의 경우 이 옵션은 렌더링 성능을 저하시킬 수 있습니다.",
+			"DisabledText": "비활성화",
+			"Name": "멀티스레드 렌더링에 입력 처리와 동일한 CPU 코어를 사용하지 않음"
 		},
 		"-noff": {
 			"Category": "마우스/컨트롤러",
@@ -770,6 +798,13 @@
 			"DisabledText": "비활성화하지 않음",
 			"Name": "플레이어 정보 오버레이 표시 활성화"
 		},
+		"+clip_mouse_to_letterbox": {
+			"Category": "시스템",
+			"Choices": "활성화됨",
+			"Desc": "<울트라 와이드 모니터용>\n게임 내에서 마우스 커서를 게임 화면에 고정 옵션을 활성화한 경우 커서가 검은색 띠 안쪽 영역에 고정되지 않도록 합니다.\n이 인수는 울트라 와이드 모니터 등, 통상과는 다른 어스펙트비의 디스플레이용입니다.",
+			"DisabledText": "비활성화",
+			"Name": "커서를 검은색 띠의 안쪽 영역에 고정하지 마십시오."
+		},
 		"+CrossPlay_user_optin": {
 			"Category": "시스템",
 			"Choices": "크로스 플레이 비활성화",
@@ -791,6 +826,13 @@
 			"DisabledText": "설정하지 않음",
 			"Name": "FPS 상한선"
 		},
+		"+lobby_max_fps": {
+			"Category": "그래픽",
+			"Choices": "무제한,지정 입력,15 FPS,30 FPS,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
+			"Desc": "로비와 메뉴에서 FPS의 상한값을 설정합니다.\nCPU 및 GPU 사용률을 줄이기 위해 기본값은 60으로 설정됩니다.",
+			"DisabledText": "설정하지 않음",
+			"Name": "로비/메뉴 FPS 상한"
+		},
 		"+m_rawinput": {
 			"Category": "마우스/컨트롤러",
 			"Choices": "활성화됨",
@@ -798,12 +840,33 @@
 			"DisabledText": "활성화하지 않음",
 			"Name": "로우 입력 활성화"
 		},
+		"+mat_minimize_on_alt_tab": {
+			"Category": "시스템",
+			"Choices": "활성화됨",
+			"Desc": "Alt+Tab 등을 사용하여 게임 창에서 포커스를 제거할 때 창을 최소화합니다.\n(DirectX 11의 윈도우와 비슷한 거동이 됩니다.)",
+			"DisabledText": "비활성화",
+			"Name": "포커스 해제 시 창 최소화"
+		},
+		"+mat_no_stretching": {
+			"Category": "그래픽",
+			"Choices": "활성화됨",
+			"Desc": "모든 해상도의 스트레칭을 비활성화하고 항상 모니터를 게임 해상도에 맞게 레터 박스 또는 필러 박스로 만듭니다. (흑대가 표시됩니다)\n이 기능은 일부 플레이어가 사용자 정의 해상도로 DirectX 11 설정을 재현하는 데 유용합니다.",
+			"DisabledText": "비활성화",
+			"Name": "모든 해상도의 스트레칭 비활성화"
+		},
 		"+mat_queue_mode": {
 			"Category": "CPU",
 			"Choices": "<추천> 멀티,싱글(비동기),싱글(동기),시스템,레거시",
 			"Desc": "머티리얼 시스템이 사용하는 CPU의 스레드 모드를 변경합니다. 설정에 따라 성능 향상으로 이어질 수 있습니다.",
 			"DisabledText": "변경하지 않음",
-			"Name": "스레드 모드 변경"
+			"Name": "머티리얼 시스템의 스레드 모드 변경"
+		},
+		"+mat_wide_pillarbox": {
+			"Category": "그래픽",
+			"Choices": "활성화됨",
+			"Desc": "<울트라 와이드 모니터용>\n게임 화면의 늘이기를 활성화합니다.\n활성화하면 게임 화면이 비율을 유지하지 않고 늘어나고 왼쪽과 오른쪽에 검은색 여백이 표시되지 않습니다.\n이 인수는 울트라 와이드 모니터 등, 통상과는 다른 어스펙트비의 디스플레이용입니다.",
+			"DisabledText": "비활성화",
+			"Name": "게임 화면 늘이기 활성화"
 		},
 		"__Category": {
 			"List": "구성,일반,그래픽,시스템,CPU,마우스/컨트롤러,Live API"

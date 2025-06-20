@@ -12,6 +12,7 @@
 			"6": "Disable",
 			"7": "Disabled",
 			"8": "Account",
+			"Default": "デフォルト",
 			"Platform": "Platform",
 			"Play": "Play",
 			"Loading": "Loading",
@@ -73,11 +74,14 @@
 		}
 	},
 	"Tooltip": {
+		"メイン画面": {
+			"アプリケーション情報ラベル": "クリックしてバージョン情報をコピー"
+		},
 		"プロファイル編集パネル部品": {
 			"AltEnter自動押下チェックボックス": "Sets whether to automatically press Alt+Enter after launching Apex Legends.\nEnabling this setting can eliminate the \"black bars\" that appear when \"stretching the resolution\".",
 			"AltEnter自動押下待機時間ダイヤル": "Sets the waiting time (seconds) before automatically pressing Alt+Enter after Apex Legends launches.\r\nThe time it takes for the title screen to appear varies depending on the environment, so please adjust this setting to suit your environment.",
 			"AltEnter自動押下方法選択リスト": "Sets how to automatically press Alt+Enter.\n\n  <Image Recognition>\n    Automatically recognizes the title screen and presses Alt+Enter.\n    If you use this setting, you need to download additional files. (They will be downloaded automatically.)\n\n  <Time>\n    Waits for the specified time after Apex Legends launches and then presses Alt+Enter.\n    The time it takes for the title screen to appear varies depending on the environment, so please adjust this setting to suit your environment.",
-			"ApexLegendsパステキスト": "Sets the path to the Apex Legends installation (executable file).\r\nSpecify the path to \"r5apex.exe\".",
+			"ApexLegendsパステキスト": "Apex Legends のインストール先(実行ファイル)へのパスを設定します。\r\n「r5apex_dx12.exe」へのパスを指定してください。",
 			"ApexLegendsパス自動取得チェックボックス": "Automatically retrieves the installation location (executable file) of Apex Legends installed on this PC.",
 			"ApexLegendsパス自動取得ボタン": "Retrieves the installation location of Apex Legends installed on this PC.\r\nDo this if the installation location has changed, such as after reinstalling.",
 			"EAappSteam経由IDテキスト": "Specifies the AppID of the EA app registered on Steam.",
@@ -178,7 +182,7 @@
 		},
 		"Dialog": {
 			"FailedToLoadProfiles": "Failed to load the following profiles.\nSee the debug log for details.\n\n{0}",
-			"ConvertedOldDX12Args": "The launch arguments for starting with DirectX 12 were not compatible with Season 21 or later, so the following values were automatically replaced.\nBefore replacement: {0}\nAfter replacement: {1}\n\n<Profiles that were replaced>\n{2}"
+			"ConvertedOldDX12Args": "シーズン23 (アストラルアノマリーイベント) 以降不要になった DirectX 12 で起動するための起動引数が設定されていたため、自動的に削除しました。\n\n<置換処理を行ったプロファイル>\n{0}"
 		}
 	},
 	"InPlay": {
@@ -232,6 +236,7 @@
 			"LoadingProfile": "Loading profile",
 			"GettingDetailsOfInstalledGames": "Getting details of installed games",
 			"GettingGameInstallationLocation": "Getting game installation location",
+			"ReplacedDX11BinaryPath": "DirectX 11 の実行ファイル名を DirectX 12 の実行ファイル名へ置き換えました",
 			"GenerateAutoexec": "Generate Autoexec: {0}",
 			"StartEditingVideoConfig": "Start editing video config",
 			"RetrievingLatestTitleScreenImage": "- Retrieving latest title screen image",
@@ -330,6 +335,9 @@
 		}
 	},
 	"Panel": {
+		"MainMenu_VersionInfoLabel": {
+			"VersionInfoCopied": "バージョン情報をクリップボードへコピーしました。"
+		},
 		"MainMenu_ProfileList": {
 			"SortOrderList;List": "Name (Ascending),Name (Descending),Display Settings (Ascending),Display Settings (Descending),Platform (Ascending),Platform (Descending),Last Played (Recent),Last Played (Oldest),Total Play Time (Shortest),Total Play Time (Longest)",
 			"ItemDetail_Resolution": "Resolution: {0}×{1} ({2}) - {3} Hz",
@@ -446,7 +454,7 @@
 			"33": "Apex Legends installation location found.\r\n\r\nPath: {0}",
 			"34": "Account",
 			"35": "Test",
-			"36": "<Caution>\nDirectX 12 is enabled.\nIf you want to stretch with DirectX 12 enabled, you need to enable \"Change system resolution\" and set \"Scaling mode\" to \"Stretched\"."
+			"36": "＜注意＞\n特別な理由がない限り、引き伸ばし設定を行うために「システムの解像度を変更する」を有効にする必要はありません。\n通常は無効にすることをおすすめします。"
 		},
 		"4": {
 			"2": "Enter any launch arguments not listed in the options below here.\nEnter the text of the existing launch arguments and execute \"Parse\" to have LegendUtil automatically parse and load them.",
@@ -547,6 +555,8 @@
 		},
 		"General": {
 			"__Name": "General",
+			"EAapp_GameInstallStatusDetector;Name": "[実験的機能] EA app ゲームインストール状況検知機能",
+			"EAapp_GameInstallStatusDetector;Desc": "ゲームの起動時に EA app での Apex Legends のインストール/アップデート/修復の状況を取得します。\n有効にすると、ゲームの起動時にアップデートなどが実行されていることを検知した場合、処理が終了するまで待機し、処理が終わり次第ゲームの起動処理を自動的に再開します。\n※この設定は実験的機能です。将来的に EA app のアップデートなどによる影響で正常に動作しなくなる可能性があります。",
 			"EAapp_Config_Folder_Path;Name": "EA app Config Folder",
 			"EAapp_Config_Folder_Path;Desc": "Folder where EA app config files are saved.\r\nIf left blank or a non-existent folder is specified, it will be acquired automatically.\r\n*Normally, it is recommended to leave this blank.*",
 			"EAapp_Config_Folder_Path;Custom_1": "Select Folder",
@@ -591,22 +601,14 @@
 			"ServerStatus_Region;List": "Asia,Eastern Europe,Western Europe,South America,Central America,Eastern America,Western America",
 			"MapRotation_Enable;Name": "Map Rotation - Display",
 			"MapRotation_Enable;Desc": "Whether to display map rotation information on the main menu\n(Requires application restart to apply)",
-			"MapRotation_RemainingTime;Name": "[Experimental] Map Rotation - Detailed Remaining Time Display",
-			"MapRotation_RemainingTime;Desc": "Displays the remaining time for each mode in the map rotation with detailed updates every second.\n*This setting is experimental. Enabling it may increase memory usage.\n(Requires application restart to apply)"
+			"MapRotation_RemainingTime;Name": "[実験的機能] マップローテーション - 詳細な残り時間の表示",
+			"MapRotation_RemainingTime;Desc": "マップローテーション情報の残り時間表記を毎秒更新される詳細な表示にします。\n※この設定は実験的機能です。有効化するとメモリーの使用量が増加する可能性があります。\n(適用するにはアプリの再起動が必要です)"
 		},
 		"ExperimentalFeatures": {
 			"__Name": "Experimental Features"
 		}
 	},
 	"LaunchOption": {
-		"-anticheat_settings=SettingsDX12___dot___json": {
-			"Category": "Graphics",
-			"Choices": "Enabled",
-			"Desc": "Launches the game with DirectX 12.\r\nUsing DirectX 12 allows the game to distribute CPU graphics code across multiple cores, which can improve frame rates.",
-			"DisabledText": "Disabled",
-			"Name": "Enable DirectX 12",
-			"AdditionalButtonText": "More information about DirectX 12 (Reddit)"
-		},
 		"-forcenovsync": {
 			"Category": "Graphics",
 			"Choices": "Disable Vertical Sync (V-SYNC)",
@@ -624,9 +626,9 @@
 		"-high": {
 			"Category": "CPU",
 			"Choices": "Change CPU priority to \"High\"",
-			"Desc": "Changes the CPU priority of Apex Legends to \"High\".\r\nThis may improve performance, but it may also increase CPU usage by Apex Legends and cause system or other application instability.",
+			"Desc": "Apex Legends のプロセスのCPU優先度を「高」へ変更します。\r\n変更すると、パフォーマンス向上に繋がる可能性がありますが、\r\nApex Legends のCPU使用率が増加し、システムや他のアプリケーションが不安定になる可能性があります。",
 			"DisabledText": "Disabled",
-			"Name": "Change priority to \"High\""
+			"Name": "プロセスの優先度を「高」へ変更"
 		},
 		"-limitvsconst": {
 			"Category": "Graphics",
@@ -634,6 +636,13 @@
 			"Desc": "Limits the number of vertex shaders to 256.  This may improve performance.",
 			"DisabledText": "Do not change",
 			"Name": "Change vertex shader count"
+		},
+		"-no_render_on_input_thread": {
+			"Category": "CPU",
+			"Choices": "Enable",
+			"Desc": "有効にすると、マルチスレッドレンダリングの処理に入力処理と同じCPUコアを使用しなくなります。\nCPUコア数が多い (6以上) プレイヤーの場合、特にポーリングレートの高いマウスやコントローラーを使用している場合、フレームレートと入力遅延の安定性が向上します。\n他のプレイヤーにとっては、このオプションはレンダリングのパフォーマンスを低下させる可能性があります。",
+			"DisabledText": "Disable",
+			"Name": "マルチスレッドレンダリングに入力処理と同じCPUコアを使用しない"
 		},
 		"-noff": {
 			"Category": "Mouse/Controller",
@@ -789,6 +798,13 @@
 			"DisabledText": "Do not disable",
 			"Name": "Enable player information overlay"
 		},
+		"+clip_mouse_to_letterbox": {
+			"Category": "System",
+			"Choices": "Enable",
+			"Desc": "＜ウルトラワイドモニター向け＞\nゲーム内で「マウスカーソルをゲーム画面に固定」オプションを有効にしている場合に、カーソルが黒帯の内側の領域に固定されないようにします。\nこの引数は、ウルトラワイドモニター等、通常とは異なるアスペクト比のディスプレイ向けです。",
+			"DisabledText": "Disable",
+			"Name": "カーソルを黒帯の内側の領域に固定しない"
+		},
 		"+CrossPlay_user_optin": {
 			"Category": "System",
 			"Choices": "Disable cross-play",
@@ -810,6 +826,13 @@
 			"DisabledText": "Do not set",
 			"Name": "FPS Limit"
 		},
+		"+lobby_max_fps": {
+			"Category": "グラフィック",
+			"Choices": "無制限,指定入力,15 FPS,30 FPS,60 FPS,95 FPS,120 FPS,144 FPS,240 FPS,360 FPS",
+			"Desc": "ロビーとメニューにおけるFPSの上限値を設定します。\nCPUとGPUの使用率を減らすために、デフォルト値は 60 に設定されています。",
+			"DisabledText": "Do not set",
+			"Name": "ロビー/メニューFPS上限"
+		},
 		"+m_rawinput": {
 			"Category": "Mouse/Controller",
 			"Choices": "Enabled",
@@ -817,12 +840,33 @@
 			"DisabledText": "Do not enable",
 			"Name": "Enable raw input"
 		},
+		"+mat_minimize_on_alt_tab": {
+			"Category": "System",
+			"Choices": "Enable",
+			"Desc": "Alt+Tab などを使用してゲームのウィンドウからフォーカスを外した際にウィンドウを最小化します。\n(DirectX 11 のウィンドウと似た挙動になります。)",
+			"DisabledText": "Disable",
+			"Name": "フォーカス解除時にウィンドウを最小化"
+		},
+		"+mat_no_stretching": {
+			"Category": "グラフィック",
+			"Choices": "Enable",
+			"Desc": "すべての解像度の引き伸ばしを無効化し、常にモニターをゲームの解像度に合わせてレターボックスまたはピラーボックス化します。 (黒帯が表示されます)\nこの機能は、一部のプレイヤーがカスタム解像度で DirectX 11 の設定を再現するのに便利です。",
+			"DisabledText": "Disable",
+			"Name": "すべての解像度の引き伸ばしを無効化"
+		},
 		"+mat_queue_mode": {
 			"Category": "CPU",
 			"Choices": "<Recommended> Multi,Single (Asynchronous),Single (Synchronous),System,Legacy",
 			"Desc": "Changes the CPU threading mode used by the material system. Depending on the setting, this may improve performance.",
 			"DisabledText": "Do not change",
-			"Name": "Change threading mode"
+			"Name": "マテリアルシステムのスレッドモードを変更"
+		},
+		"+mat_wide_pillarbox": {
+			"Category": "グラフィック",
+			"Choices": "Enable",
+			"Desc": "＜ウルトラワイドモニター向け＞\nゲーム画面の引き伸ばしを有効化します。\n有効にすると、ゲーム画面は比率を維持せずに引き伸ばされ、左右に黒い余白が表示されなくなります。\nこの引数は、ウルトラワイドモニター等、通常とは異なるアスペクト比のディスプレイ向けです。",
+			"DisabledText": "Disable",
+			"Name": "ゲーム画面の引き伸ばしを有効化"
 		},
 		"__Category": {
 			"List": "Config,General,Graphics,System,CPU,Mouse/Controller,Live API"
