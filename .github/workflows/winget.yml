@@ -1,0 +1,14 @@
+name: Publish to WinGet
+on:
+  release:
+    types: [published]
+jobs:
+  publish:
+    runs-on: windows-latest
+    steps:
+      - uses: vedantmgoyal9/winget-releaser@main
+        with:
+          identifier: femtoCommunity.LegendUtil
+          version: ${{ github.event.release.name }}
+          installers-regex: LegendUtil_Setup.exe
+          token: ${{ secrets.WINGET_GITHUB_TOKEN }}
