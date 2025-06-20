@@ -220,6 +220,7 @@
 			"LoadingProfile": "프로필 로딩 중",
 			"GettingDetailsOfInstalledGames": "설치된 게임 정보 조회 중",
 			"GettingGameInstallationLocation": "게임 설치 위치 검색 중",
+			"ReplacedDX11BinaryPath": "DirectX 11 실행 파일 이름을 DirectX 12 실행 파일 이름으로 바꿨습니다",
 			"GenerateAutoexec": "Autoexec 생성: {0}",
 			"StartEditingVideoConfig": "비디오 구성 편집 시작",
 			"RetrievingLatestTitleScreenImage": "- 최신 타이틀 화면 보기",
