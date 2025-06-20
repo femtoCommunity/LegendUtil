@@ -39,7 +39,7 @@
 				「__Name」=「全般」,
 				// 実験的機能:game_install_status_detector_eaapp_250620
 				「EAapp_GameInstallStatusDetector」={
-					「初期値」=○,
+					「初期値」=×,
 					「名前」=「EA app ゲームインストール状況検知機能」,
 					「説明」=「」,
 					「型」=真偽値,
