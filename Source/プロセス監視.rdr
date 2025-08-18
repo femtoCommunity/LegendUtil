@@ -441,14 +441,7 @@ ApexLegendsとは
 		
 		メイン画面の起動中パネルのプロファイル名ラベルの内容=プロファイルの名前
 		
-		// DirectX 11/12 で実行ファイル名を変える
-		もしプロファイルの起動引数が「-anticheat_settings=SettingsDX11.json」を含むなら
-			実行ファイル名=「r5apex」 // DX11
-			
-		そうでなければ
-			実行ファイル名=「r5apex_dx12」 // DX12
-			
-		もし終わり
+		実行ファイル名=「r5apex_dx12」 // DX12
 		
 		[言語管理器で「InPlay.Log.Done」を取得したもの]をログ出力する
 		
