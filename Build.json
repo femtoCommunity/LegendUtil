@@ -2,6 +2,10 @@
     "App": {
         "ReleaseChannel": "beta"
     },
+    "MSStore":{
+      "Release": false,
+      "ID": ""
+    },
     "DiscordRPC": {
         "AppID": "1205482419730382888"
     },
