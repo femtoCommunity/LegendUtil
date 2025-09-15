@@ -337,10 +337,13 @@
 			"EAapp_CouldNotGetWindowHandle": "Failed to get window handle for EA app."
 		}
 	},
+	"Window": {
+		"MainWindow": {
+			"VersionInfoLabel_Copied": "バージョン情報をクリップボードへコピーしました。",
+			"SupportButton_Title": "GitHub Sponsors で支援する"
+		}
+	},
 	"Panel": {
-		"MainMenu_VersionInfoLabel": {
-			"VersionInfoCopied": "The version information has been copied to the clipboard."
-		},
 		"MainMenu_ProfileList": {
 			"SortOrderList;List": "Name (ascending),Name (descending),Display Settings (ascending),Display Settings (descending),Platform (ascending),Platform (descending),Last Played (nearest to latest),Last Played (farthest to latest),Total Play Time (shortest to longest),Total Play Time (longest to longest)",
 			"ItemDetail_Resolution": "Resolution: {0}×{1} ({2}) - {3} Hz",
