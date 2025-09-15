@@ -339,8 +339,8 @@
 	},
 	"Window": {
 		"MainWindow": {
-			"VersionInfoLabel_Copied": "バージョン情報をクリップボードへコピーしました。",
-			"SupportButton_Title": "GitHub Sponsors で支援する"
+			"VersionInfoLabel_Copied": "버전 정보를 클립보드에 복사했습니다.",
+			"SupportButton_Title": "GitHub Sponsors로 개발 지원"
 		}
 	},
 	"Panel": {
