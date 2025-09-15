@@ -337,10 +337,13 @@
 			"EAapp_CouldNotGetWindowHandle": "EA 앱의 창 핸들을 가져올 수 없습니다."
 		}
 	},
+	"Window": {
+		"MainWindow": {
+			"VersionInfoLabel_Copied": "バージョン情報をクリップボードへコピーしました。",
+			"SupportButton_Title": "GitHub Sponsors で支援する"
+		}
+	},
 	"Panel": {
-		"MainMenu_VersionInfoLabel": {
-			"VersionInfoCopied": "버전 정보를 클립보드에 복사했습니다."
-		},
 		"MainMenu_ProfileList": {
 			"SortOrderList;List": "이름 (오름차순),이름 (내림차순),디스플레이 설정 (오름차순),디스플레이 설정 (내림차순),플랫폼 (오름차순), 플랫폼 (내림차순),마지막 플레이 일시 (가까운 순서),마지막 플레이 일시 (먼 순서),총 플레이 시간 (짧은 순서),총 플레이 시간 (긴 순서)",
 			"ItemDetail_Resolution": "해상도: {0}×{1} ({2}) - {3} Hz",
