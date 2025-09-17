@@ -25,6 +25,17 @@
 		},
 		"Error": {
 			"ErrorOccurredApplicationTermination": "An error occurred while terminating the application.\nConfiguration and profile changes may not have been saved.\n\n{0}"
+		},
+		"Format": {
+			"ElapsedTime_Prefix": "",
+			"ElapsedTime_Suffix": "前",
+			"ElapsedTime_Second": "{0}秒",
+			"ElapsedTime_Minute": "{0}分",
+			"ElapsedTime_Hour": "{0}時間",
+			"ElapsedTime_Day": "{0}日",
+			"ElapsedTime_Month": "{0}ヶ月",
+			"ElapsedTime_Year": "{0}年",
+			"ElapsedTime_Yesterday": "昨日"
 		}
 	},
 	"ErrorMessage": {
