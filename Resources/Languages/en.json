@@ -28,14 +28,14 @@
 		},
 		"Format": {
 			"ElapsedTime_Prefix": "",
-			"ElapsedTime_Suffix": "前",
-			"ElapsedTime_Second": "{0}秒",
-			"ElapsedTime_Minute": "{0}分",
-			"ElapsedTime_Hour": "{0}時間",
-			"ElapsedTime_Day": "{0}日",
-			"ElapsedTime_Month": "{0}ヶ月",
-			"ElapsedTime_Year": "{0}年",
-			"ElapsedTime_Yesterday": "昨日"
+			"ElapsedTime_Suffix": " ago",
+			"ElapsedTime_Second": "{0} s",
+			"ElapsedTime_Minute": "{0} m",
+			"ElapsedTime_Hour": "{0} h",
+			"ElapsedTime_Day": "{0} d",
+			"ElapsedTime_Month": "{0} mo",
+			"ElapsedTime_Year": "{0} y",
+			"ElapsedTime_Yesterday": "Yesterday"
 		}
 	},
 	"ErrorMessage": {
