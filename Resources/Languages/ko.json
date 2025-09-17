@@ -25,6 +25,17 @@
 		},
 		"Error": {
 			"ErrorOccurredApplicationTermination": "애플리케이션 종료 처리 중 오류가 발생했습니다.\n구성 및 프로파일 변경 내용이 저장되지 않았을 수 있습니다.\n\n{0}"
+		},
+		"Format": {
+			"ElapsedTime_Prefix": "",
+			"ElapsedTime_Suffix": "前",
+			"ElapsedTime_Second": "{0}秒",
+			"ElapsedTime_Minute": "{0}分",
+			"ElapsedTime_Hour": "{0}時間",
+			"ElapsedTime_Day": "{0}日",
+			"ElapsedTime_Month": "{0}ヶ月",
+			"ElapsedTime_Year": "{0}年",
+			"ElapsedTime_Yesterday": "昨日"
 		}
 	},
 	"ErrorMessage": {
