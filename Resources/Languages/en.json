@@ -382,7 +382,7 @@
 			"4": "Settings"
 		},
 		"2": {
-			"1": "Legion: {0}",
+			"1": "Region: {0}",
 			"2": "Crossplay Auth",
 			"3": "Lobby/Matchmaking",
 			"4": "Origin Logins",
@@ -439,8 +439,8 @@
 		"3": {
 			"1": "Platform",
 			"2": "Apex Legends executable path",
-			"3": "Automatic acquisition (recommended)",
-			"4": "Execute automatic acquisition",
+			"3": "Automatic detection (recommended)",
+			"4": "Execute automatic detection",
 			"5": "Launch via Steam",
 			"6": "EA app AppID",
 			"7": "Cursor Lock",
@@ -602,7 +602,7 @@
 		"UI_General": {
 			"__Name": "UI - General",
 			"Language;Name": "UI Language",
-			"Language;Desc": "User interface display language\n* Translations are done using machine translation and may not be accurate.\n* If you would like to contribute to the translation, please visit bit.ly/LegendUtil-TL",
+			"Language;Desc": "User interface display language\n* Translations are done using machine translation and may not be accurate.\n* If you would like to contribute to the translation, please visit https://crowdin.com/project/legendutil",
 			"Language;Custom_1": "Contribute to translation (Crowdin)"
 		},
 		"UI_MainMenu": {
