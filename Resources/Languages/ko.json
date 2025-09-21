@@ -619,8 +619,8 @@
 			"ServerStatus_Region;List": "아시아,동유럽,서유럽,미국 남부,미국 중부,미국 동부,미국 서부",
 			"MapRotation_Enable;Name": "지도 회전 - 표시",
 			"MapRotation_Enable;Desc": "메인 메뉴에 맵 회전 정보를 사용할지 여부\n(적용하려면 앱을 다시 시작해야 합니다)",
-			"MapRotation_Image;Name": "[実験的機能] マップローテーション - サムネイル画像",
-			"MapRotation_Image;Desc": "マップローテーション情報に各マップのサムネイル画像を表示します。",
+			"MapRotation_Image;Name": "[実験的機能] マップローテーション - サムネイル画像の表示",
+			"MapRotation_Image;Desc": "マップローテーション情報に各マップのサムネイル画像を表示します。\n※この設定は実験的機能です。有効化するとメモリーの使用量が増加する可能性があります。",
 			"MapRotation_RemainingTime;Name": "[실험 기능] 지도 회전 - 자세한 남은 시간 표시",
 			"MapRotation_RemainingTime;Desc": "맵 로테이션 정보의 남은 시간 표기를 매초 갱신되는 상세한 표시로 합니다.\n※이 설정은 실험적 기능입니다. 활성화하면 메모리 사용량이 증가할 수 있습니다.\n(적용하려면 앱을 다시 시작해야 합니다)"
 		},
