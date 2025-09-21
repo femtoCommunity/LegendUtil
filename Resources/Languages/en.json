@@ -126,6 +126,7 @@
 		"ErrorMessage": {
 			"HTTPStatusCode": "HTTP Status Code: {0}",
 			"FailedToGetMapRotation": "Failed to get Map Rotation.",
+			"FailedToGetMapRotationImage": "Failed to get News Image.",
 			"FailedToGetServerStatus": "Failed to get Server Status.",
 			"FailedToGetNews": "Failed to get News.",
 			"FailedToGetNewsImage": "Failed to get News Image."
@@ -618,6 +619,8 @@
 			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West",
 			"MapRotation_Enable;Name": "Map Rotation - Display",
 			"MapRotation_Enable;Desc": "Whether to display map rotation information in the main menu\n(Requires app restart to apply)",
+			"MapRotation_Image;Name": "[実験的機能] マップローテーション - サムネイル画像",
+			"MapRotation_Image;Desc": "マップローテーション情報に各マップのサムネイル画像を表示します。",
 			"MapRotation_RemainingTime;Name": "[Experimental Feature] Map rotation - Detailed remaining time display",
 			"MapRotation_RemainingTime;Desc": "Displays detailed map rotation information with remaining time updated every second.\n*This setting is an experimental feature. Enabling it may increase memory usage.\n(Requires app restart to apply)"
 		},
