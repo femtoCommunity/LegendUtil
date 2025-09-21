@@ -441,14 +441,7 @@ ApexLegendsとは
 		
 		メイン画面の起動中パネルのプロファイル名ラベルの内容=プロファイルの名前
 		
-		// DirectX 11/12 で実行ファイル名を変える
-		もしプロファイルの起動引数が「-anticheat_settings=SettingsDX11.json」を含むなら
-			実行ファイル名=「r5apex」 // DX11
-			
-		そうでなければ
-			実行ファイル名=「r5apex_dx12」 // DX12
-			
-		もし終わり
+		実行ファイル名=「r5apex_dx12」 // DX12
 		
 		[言語管理器で「InPlay.Log.Done」を取得したもの]をログ出力する
 		
@@ -479,7 +472,18 @@ ApexLegendsとは
 		ステータス番号=12
 		// Apex Legends の実行ファイルのパスを取得する 取得できなければエラー
 		[言語管理器で「InPlay.Log.GettingGameInstallationLocation」を取得したもの]をログ出力する
+
 		インストールパス=プロファイルのApexLegendsバイナリーパス
+
+		// ビーストモードイベントから DirectX 11 の実行ファイルが削除されたので、
+		// 設定されているインストール先の実行ファイル名を DirectX 12 のものに置き換える
+		もし[インストールパスのファイル名だけ]が「r5apex.exe」なら
+			プロファイルのApexLegendsバイナリーパス=「[プロファイルのApexLegendsバイナリーパスのフォルダだけ]r5apex_dx12.exe」
+			「- [言語管理器で「InPlay.Log.ReplacedDX11BinaryPath」を取得したもの]」をログ出力する
+			「 - [インストールパス] -> [プロファイルのApexLegendsバイナリーパス]」をログ出力する
+			インストールパス=プロファイルのApexLegendsバイナリーパス
+		もし終わり
+
 		もしインストールパスというファイルが存在するなら
 			「- [言語管理器で「InPlay.Log.Path」を取得したもの]: [インストールパス]」をログ出力する
 			// autoexec を生成(コピー)する
@@ -567,6 +571,12 @@ ApexLegendsとは
 				固有ファイルパス=「[アプリのコンフィグフォルダー]Profile\VideoConfig\[ビデオコンフィグファイル名]」 // 固有ファイルのパス
 			分岐終わり
 			
+			// ゲームが読み込むコンフィグファイルが存在しない場合は処理を行わない
+			保存ファイルパスが存在しないなら
+				[言語管理器で「InPlay.ErrorLog.GetConfigFile_NotFoundError」を{[保存ファイルパス]}として取得したもの]をログ出力する
+				手順から抜ける
+			そして
+			
 			// プロファイル固有のコンフィグを読み込むための処理
 			もし(プロファイルのコンフィグ指定が2)なら
 				// プロファイル固有のコンフィグファイルが見つからない場合は作成(通常のコンフィグファイルをコピー)する
@@ -601,6 +611,7 @@ ApexLegendsとは
 			コンフィグファイル=ファイル情報(保存ファイルパス)を作ったもの
 			
 			[言語管理器で「InPlay.Log.Done」を取得したもの]をログ出力する
+			
 		発生した場合
 			エラーのメッセージというエラーを発生させる
 		監視終わり
@@ -635,6 +646,12 @@ ApexLegendsとは
 				固有ファイルパス=「[アプリのコンフィグフォルダー]Profile\VideoConfig\[ビデオコンフィグファイル名]」 // 固有ファイルのパス
 				旧固有ファイルパス=「[アプリのコンフィグフォルダー]Profile\VideoConfig\[プロファイルのID].txt」
 			分岐終わり
+			
+			// ゲームが読み込むコンフィグファイルが存在しない場合は処理を行わない
+			保存ファイルパスが存在しないなら
+				[言語管理器で「InPlay.ErrorLog.CreateConfigFile_NotFoundError」を{[保存ファイルパス]}として取得したもの]をログ出力する
+				手順から抜ける
+			そして
 			
 			// アカウント切り替え機能実装前のファイルが存在する場合はそのファイルから移行する
 			もし旧固有ファイルパスが存在するなら
@@ -683,6 +700,12 @@ ApexLegendsとは
 				共通ファイルパス=「[アプリのコンフィグフォルダー]Backup\VideoConfig\videoconfig.txt」 // 共通ファイルのバックアップのパス
 				固有ファイルパス=「[アプリのコンフィグフォルダー]Profile\VideoConfig\[ビデオコンフィグファイル名]」 // 固有ファイルのパス
 			分岐終わり
+			
+			// ゲームが読み込むコンフィグファイルが存在しない場合は処理を行わない
+			保存ファイルパスが存在しないなら
+				[言語管理器で「InPlay.ErrorLog.RestoreConfigFile_NotFoundError」を{[保存ファイルパス]}として取得したもの]をログ出力する
+				手順から抜ける
+			そして
 			
 			もし(プロファイルのコンフィグ指定が2)かつ(固有ファイルパスが存在する)なら
 				[言語管理器で「InPlay.Log.RestoreConfigFile」を{コンフィグ種類}として取得したもの]をログ出力する
@@ -741,6 +764,7 @@ ApexLegendsとは
 					【コンフィグ】=[コンフィグファイルをVDF形式として読み取ったもの]をJSON形式として読み取ったもの
 					初期ビデオコンフィグ=[コンフィグファイルをVDF形式として読み取ったもの]をJSON形式として読み取ったもの
 				発生した場合
+					ビデオコンフィグ変更=×
 					「ビデオコンフィグ変更エラー: [エラーのメッセージ]」を「エラー」としてデバッグログへ出力する
 					「[言語管理器で「InPlay.ErrorLog.VideoConfigFile_EditingFailed_CorruptedFile」を{[エラーのメッセージ]}として取得したもの]」をログ出力する
 					手順から抜ける
@@ -927,91 +951,117 @@ ApexLegendsとは
 		// Apex Legends が起動するまで待つ
 		【待機時間】=120 // 秒
 		【待機時間カウント】=待機時間
-		//【インストール待機時間】=3600 // 秒
-		//【インストール待機時間カウント】=インストール待機時間
-		//【インストール開始:真偽値】=×
-		//【インストール終了:真偽値】=×
+		
+		【インストール待機時間】=3600 // 秒
+		【インストール待機時間カウント】=インストール待機時間
+		【インストール開始:真偽値】=×
+		【インストール終了:真偽値】=×
 		【Apexプロセス】=無
 		【EABSプロセス】=無
 		【EABS再起動質問結果】
 		【ゲームステータス:辞書】
+		
 		【キャンセル理由:文字列】=「」
 		
 		繰り返す
 			Apexプロセスが無でないなら繰り返しから抜ける // プロセスが見つかった場合に繰り返しから抜ける
 			待機キャンセルが○なら繰り返しから抜ける // 待機がキャンセルされた場合に繰り返しから抜ける
 			待機時間カウントが0なら繰り返しから抜ける // ゲームの起動が時間内に終わらなかった場合に繰り返しから抜ける
-			//インストール待機時間カウントが0なら繰り返しから抜ける // インストールが時間内に終わらなかった場合に繰り返しから抜ける
+			インストール待機時間カウントが0なら繰り返しから抜ける // インストールが時間内に終わらなかった場合に繰り返しから抜ける
 			
-			/*
-			例外監視
-				インストール終了でないなら
-					// ゲームのステータスを取得してチェック
-					ゲームステータス=EAappでゲームステータス取得する
-					
-					[ゲームステータス(「offerId」)が「Origin.OFR.50.0002694」]なら // ゲームが Apex Legends か判定
-						// インストールor修復実行中の場合 処理が終了するまで待機する
-						[ゲームステータス(「gameStatus」)(「installing」)]かつ[ゲームステータス(「gameStatus」)(「updating」)]でないなら
-							// 修復
-							[ゲームステータス(「installInfo」)(「installReason」)]が「REPAIR」なら
-								インストール開始でないなら
-									[言語管理器で「InPlay.Status.WaitingForGameRepairProcess」を取得したもの]をログ出力する
-									インストール開始=○
-								そして
-								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameRepairProcess_WithStatus」を{[ゲームステータス(「installInfo」)(「installStatusString」)],[ゲームステータス(「installInfo」)(「installPhaseString」)]}として取得したもの]
-								
-							// インストール
-							そうでなければ
-								インストール開始でないなら
-									[言語管理器で「InPlay.Status.WaitingForGameInstallProcess」を取得したもの]をログ出力する
-									インストール開始=○
-								そして
-								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameInstallProcess_WithStatus」を{[ゲームステータス(「installInfo」)(「installStatusString」)],[ゲームステータス(「installInfo」)(「installPhaseString」)]}として取得したもの]
-								
-							そして
-							
-							インストール待機時間カウント=インストール待機時間カウント-1
-							1秒待つ
-							繰り返しを続ける
-							
-						// アップデート実行中の場合 処理が終了するまで待機する
-						他で[ゲームステータス(「gameStatus」)(「installing」)]かつ[ゲームステータス(「gameStatus」)(「updating」)]なら
-							インストール開始でないなら
-								[言語管理器で「InPlay.Status.WaitingForGameUpdateProcess」を取得したもの]をログ出力する
-								インストール開始=○
-							そして
-							メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameUpdateProcess_WithStatus」を{[ゲームステータス(「installInfo」)(「installStatusString」)],[ゲームステータス(「installInfo」)(「installPhaseString」)]}として取得したもの]
-							インストール待機時間カウント=インストール待機時間カウント-1
-							1秒待つ
-							繰り返しを続ける
-							
-						そして
-						
-						// インストール完了/キャンセル
-						インストール開始かつ[ゲームステータス(「gameStatus」)(「installing」)]でないかつ[ゲームステータス(「gameStatus」)(「updating」)]でないなら
-						// インストール処理がキャンセルされた場合 待機をキャンセルする
-							[ゲームステータス(「installInfo」)(「installStatus」)]が4なら
-								キャンセル理由=[言語管理器で「InPlay.Status.CancelingGameInstall」を取得したもの]
-								待機キャンセル=○
-								繰り返しから抜ける
-								
-							// インストール処理が完了した場合 ゲームを起動する
-							他で[ゲームステータス(「installInfo」)(「installStatus」)]が5かつインストール開始なら
-								インストール終了でないなら
-									インストール終了=○
-									// ゲームを起動する (EALaunchHelperを呼ぶとEA appも起動するので、EABackgroundServiceも勝手に開始される)
-									プロセス起動する
-								そして
-								
-							そして
-							
-						そして
-					そして
-				そして
-			発生した場合
-				「ゲームステータス取得エラー: [エラーのメッセージ]」を「エラー」としてデバッグログへ出力する
-			監視終わり
-			*/
+			// 実験的機能:game_install_status_detector_eaapp_250620
+			実験的機能管理器の機能一覧(「game_install_status_detector_eaapp_250620」)(「有効」)が○なら
+				例外監視
+					// TODO: 代替機能を実装する
+					// EA app の場合はゲームのインストール状況を取得してチェックする
+					//([メイン設定について「General」から「EAapp_GameInstallStatusDetector」を取得したもの]が○)かつ(プロファイルのApexLegendsプラットフォームが「EA app」)かつインストール終了でないなら
+					//	[[ApexLegendsインストールパスのフォルダだけのファイルの一覧]すべての拡張子だけ]から「dll_DiP_Staged」を探したものの個数が1以上なら
+					//		インストール開始でないなら
+					//			[言語管理器で「InPlay.Status.WaitingForGameInstallProcess」を取得したもの]をログ出力する
+					//			インストール開始=○
+					//		そして
+					//		メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameInstallProcess_WithStatus」を{[ゲームステータス(「installStatusString」)],[ゲームステータス(「installPhaseString」)]}として取得したもの]
+					//		
+					//		インストール待機時間カウント=インストール待機時間カウント-1
+					//		1秒待つ
+					//		繰り返しを続ける
+					//	そして
+					//	
+					//	インストール開始かつインストール終了でないなら
+					//		「EA app ゲームインストール完了」をデバッグログへ出力する
+					//		インストール終了=○
+					//		// ゲームを起動する (EALaunchHelperを呼ぶとEA appも起動するので、EABackgroundServiceも勝手に開始される)
+					//		プロセス起動する
+					//	そして
+					//そして
+
+	// 2025/06/16 動かなくなった;;
+	//				([メイン設定について「General」から「EAapp_GameInstallStatusDetector」を取得したもの]が○)かつ(プロファイルのApexLegendsプラットフォームが「EA app」)かつインストール終了でないなら
+	//					// Apex Legends のゲームのステータスを取得してチェック
+	//					ゲームステータス=EAappで「Origin.OFR.50.0002694」としてゲームステータス取得する
+	//					// ゲームのステータスが取得できない場合はチェックしない
+	//					ゲームステータスが無でないなら
+	//						// 処理実行中の場合 処理が終了するまで待機する
+	//						[ゲームステータス(「installStatusString」)]が「ACTIVE」なら
+	//							// 修復
+	//							[ゲームステータス(「installReason」)]が「REPAIR」なら
+	//								インストール開始でないなら
+	//									[言語管理器で「InPlay.Status.WaitingForGameRepairProcess」を取得したもの]をログ出力する
+	//									インストール開始=○
+	//								そして
+	//								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameRepairProcess_WithStatus」を{[ゲームステータス(「installStatusString」)],[ゲームステータス(「installPhaseString」)]}として取得したもの]
+	//								
+	//							// インストール
+	//							他で[ゲームステータス(「installReason」)]が「INSTALL」なら
+	//								インストール開始でないなら
+	//									[言語管理器で「InPlay.Status.WaitingForGameInstallProcess」を取得したもの]をログ出力する
+	//									インストール開始=○
+	//								そして
+	//								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameInstallProcess_WithStatus」を{[ゲームステータス(「installStatusString」)],[ゲームステータス(「installPhaseString」)]}として取得したもの]
+	//								
+	//							// アップデート
+	//							他で[ゲームステータス(「installReason」)]が「UPDATE」なら
+	//								インストール開始でないなら
+	//									[言語管理器で「InPlay.Status.WaitingForGameUpdateProcess」を取得したもの]をログ出力する
+	//									インストール開始=○
+	//								そして
+	//								メイン画面の起動中パネルのプレイ処理状況=[言語管理器で「InPlay.Status.WaitingForGameUpdateProcess_WithStatus」を{[ゲームステータス(「installStatusString」)],[ゲームステータス(「installPhaseString」)]}として取得したもの]
+	//								
+	//							そして
+	//							
+	//							インストール待機時間カウント=インストール待機時間カウント-1
+	//							1秒待つ
+	//							繰り返しを続ける
+	//						そして
+	//							
+	//						// インストール(アップデート)完了
+	//						インストール開始なら
+	//							// インストール処理が完了した場合 ゲームを起動する
+	//							[ゲームステータス(「installStatusString」)]が「INSTALLED」かつインストール終了でないなら
+	//								「EA app ゲームインストール完了」をデバッグログへ出力する
+	//								インストール終了=○
+	//								// ゲームを起動する (EALaunchHelperを呼ぶとEA appも起動するので、EABackgroundServiceも勝手に開始される)
+	//								プロセス起動する
+	//								
+	//							// インストール処理がキャンセルされた場合 待機をキャンセルする
+	//							他で[ゲームステータス(「installStatusString」)]が「CANCELED」または[ゲームステータス(「installStatus」)]が4なら
+	//								「EA app ゲームインストールキャンセル」をデバッグログへ出力する
+	//								キャンセル理由=[言語管理器で「InPlay.Status.CancelingGameInstall」を取得したもの]
+	//								待機キャンセル=○
+	//								繰り返しから抜ける
+	//								
+	//							そして
+	//						そして
+	//						
+	//					そうでなければ
+	//						「ゲームステータス取得スキップ: ステータス取得失敗」をデバッグログへ出力する
+	//						
+	//					そして
+	//				そして
+				発生した場合
+					「ゲームステータス取得エラー: [エラーのメッセージ]」を「エラー」としてデバッグログへ出力する
+				監視終わり
+			そして
 			
 			例外監視
 				// 1分経過しても起動しない場合はEABackgroundServiceの再起動を勧めるダイアログを表示する (EA appのみ)
