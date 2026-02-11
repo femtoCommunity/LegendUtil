@@ -2,7 +2,7 @@ EAappとは
 	ウィンドウを継承する
 	
 	+例外部品一覧={}
-	+アイコン一覧={}
+	+アイコン一覧=空の辞書
 	
 	-初期データフォルダー:文字列=「C:\Users\[ウィンドウズのユーザ名]\AppData\Local\Electronic Arts\EA Desktop\」
 	
