@@ -187,7 +187,7 @@
 		
 		ツールボタンパネルの子部品一覧を【子部品】へそれぞれ繰り返す
 			もし(子部品がボタンである)なら
-				子部品の元実体の「FlatAppearance」の「BorderSize」=0
+				子部品の元実体のFlatAppearanceのBorderSize=0
 			もし終わり
 		繰り返し終わり
 		
@@ -382,7 +382,7 @@
 	
 	はじめの手順
 		初期化する
-		メインボタンの元実体の「FlatAppearance」の「BorderSize」=0
+		メインボタンの元実体のFlatAppearanceのBorderSize=0
 		メインボタンの画像=[ウィンドウ管理器:「add_FILL1_wght400_GRAD0_opsz48」を[ウィンドウ管理器のテーマアイコン色]でアイコン取得したもの]
 		ーー貼り付けた部品に対する操作をここに書きます
 	終わり
