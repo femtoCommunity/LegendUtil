@@ -589,8 +589,12 @@
 					そうでなければ
 						部品のゲームモード=[モザンビークAPIのマップローテーションデータ(ゲームモード)(「current」)(「eventName」)]
 					もし終わり
-				その他の場合
-					部品のゲームモード=[モザンビークAPIのマップローテーションデータ(ゲームモード)(「current」)(「eventName」)]
+				その他の場合 // Mixtape 以外
+					もし言語管理器に「MozambiqueAPI.MapRotation.GameMode_[ゲームモード]」が存在するなら
+						部品のゲームモード=[言語管理器で「MozambiqueAPI.MapRotation.GameMode_[ゲームモード]」を取得したもの]
+					そうでなければ
+						部品のゲームモード=ゲームモード
+					もし終わり
 				分岐終わり
 				部品の現在マップ=現在マップ
 				部品の次マップ=次マップ
@@ -695,7 +699,11 @@
 					
 					自分で1としてマップローテーション残り時間更新する
 				その他の場合
-					部品のゲームモード=[言語管理器で「MozambiqueAPI.MapRotation.GameMode_[ゲームモード]」を取得したもの]
+					もし言語管理器に「MozambiqueAPI.MapRotation.GameMode_[ゲームモード]」が存在するなら
+						部品のゲームモード=[言語管理器で「MozambiqueAPI.MapRotation.GameMode_[ゲームモード]」を取得したもの]
+					そうでなければ
+						部品のゲームモード=ゲームモード
+					もし終わり
 					部品の次マップ=次マップ
 				分岐終わり
 				
