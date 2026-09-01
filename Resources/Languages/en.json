@@ -144,7 +144,7 @@
 			"GameMode_ltm_Big TDM": "Big TDM",
 			"GameMode_ltm_Gun Run": "Gun Run",
 			"GameMode_ltm_Lockdown": "Lockdown",
-			"GameMode_wildcard": "ワイルドカード"
+			"GameMode_wildcard": "Wildcard"
 		}
 	},
 	"DiscordRPC": {
