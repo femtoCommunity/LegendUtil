@@ -25,6 +25,17 @@
 		},
 		"Error": {
 			"ErrorOccurredApplicationTermination": "An error occurred while closing the application.\nChanges to your configuration and profile may not have been saved.\n\n{0}"
+		},
+		"Format": {
+			"ElapsedTime_Prefix": "",
+			"ElapsedTime_Suffix": " ago",
+			"ElapsedTime_Second": "{0} s",
+			"ElapsedTime_Minute": "{0} m",
+			"ElapsedTime_Hour": "{0} h",
+			"ElapsedTime_Day": "{0} d",
+			"ElapsedTime_Month": "{0} mo",
+			"ElapsedTime_Year": "{0} y",
+			"ElapsedTime_Yesterday": "Yesterday"
 		}
 	},
 	"ErrorMessage": {
@@ -115,6 +126,7 @@
 		"ErrorMessage": {
 			"HTTPStatusCode": "HTTP Status Code: {0}",
 			"FailedToGetMapRotation": "Failed to get Map Rotation.",
+			"FailedToGetMapRotationImage": "Failed to get News Image.",
 			"FailedToGetServerStatus": "Failed to get Server Status.",
 			"FailedToGetNews": "Failed to get News.",
 			"FailedToGetNewsImage": "Failed to get News Image."
@@ -131,7 +143,8 @@
 			"GameMode_ltm_TDM": "Team Deathmatch",
 			"GameMode_ltm_Big TDM": "Big TDM",
 			"GameMode_ltm_Gun Run": "Gun Run",
-			"GameMode_ltm_Lockdown": "Lockdown"
+			"GameMode_ltm_Lockdown": "Lockdown",
+			"GameMode_wildcard": "Wildcard"
 		}
 	},
 	"DiscordRPC": {
@@ -337,10 +350,13 @@
 			"EAapp_CouldNotGetWindowHandle": "Failed to get window handle for EA app."
 		}
 	},
+	"Window": {
+		"MainWindow": {
+			"VersionInfoLabel_Copied": "The version information has been copied to the clipboard.",
+			"SupportButton_Title": "Support with GitHub Sponsors"
+		}
+	},
 	"Panel": {
-		"MainMenu_VersionInfoLabel": {
-			"VersionInfoCopied": "The version information has been copied to the clipboard."
-		},
 		"MainMenu_ProfileList": {
 			"SortOrderList;List": "Name (ascending),Name (descending),Display Settings (ascending),Display Settings (descending),Platform (ascending),Platform (descending),Last Played (nearest to latest),Last Played (farthest to latest),Total Play Time (shortest to longest),Total Play Time (longest to longest)",
 			"ItemDetail_Resolution": "Resolution: {0}×{1} ({2}) - {3} Hz",
@@ -368,7 +384,7 @@
 			"4": "Settings"
 		},
 		"2": {
-			"1": "Legion: {0}",
+			"1": "Region: {0}",
 			"2": "Crossplay Auth",
 			"3": "Lobby/Matchmaking",
 			"4": "Origin Logins",
@@ -425,8 +441,8 @@
 		"3": {
 			"1": "Platform",
 			"2": "Apex Legends executable path",
-			"3": "Automatic acquisition (recommended)",
-			"4": "Execute automatic acquisition",
+			"3": "Automatic detection (recommended)",
+			"4": "Execute automatic detection",
 			"5": "Launch via Steam",
 			"6": "EA app AppID",
 			"7": "Cursor Lock",
@@ -588,7 +604,7 @@
 		"UI_General": {
 			"__Name": "UI - General",
 			"Language;Name": "UI Language",
-			"Language;Desc": "User interface display language\n* Translations are done using machine translation and may not be accurate.\n* If you would like to contribute to the translation, please visit bit.ly/LegendUtil-TL",
+			"Language;Desc": "User interface display language\n* Translations are done using machine translation and may not be accurate.\n* If you would like to contribute to the translation, please visit https://crowdin.com/project/legendutil",
 			"Language;Custom_1": "Contribute to translation (Crowdin)"
 		},
 		"UI_MainMenu": {
@@ -604,6 +620,8 @@
 			"ServerStatus_Region;List": "Asia,EU East,EU West,US South,US Central,US East,US West",
 			"MapRotation_Enable;Name": "Map Rotation - Display",
 			"MapRotation_Enable;Desc": "Whether to display map rotation information in the main menu\n(Requires app restart to apply)",
+			"MapRotation_Image;Name": "[Experimental Feature] Map Rotation - Thumbnail Image Display",
+			"MapRotation_Image;Desc": "Displays thumbnail images for each map in the map rotation information.\n*This setting is an experimental feature. Enabling it may increase memory usage.",
 			"MapRotation_RemainingTime;Name": "[Experimental Feature] Map rotation - Detailed remaining time display",
 			"MapRotation_RemainingTime;Desc": "Displays detailed map rotation information with remaining time updated every second.\n*This setting is an experimental feature. Enabling it may increase memory usage.\n(Requires app restart to apply)"
 		},
