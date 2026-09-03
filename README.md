@@ -61,7 +61,7 @@ winget install --id femtoCommunity.LegendUtil
 ```
 
 ### 💊 開発ビルドをインストールする
-- [**インストーラーをダウンロード**](https://api-legendutil.ezolys.com/releases/latest/download?release_channel=dev)
+- [**インストーラーをダウンロード**](https://api-legendutil.femtocommunity.com/releases/latest/download?release_channel=dev)
   - **開発ビルドには、実装途中の機能や不安定な機能が含まれており、予期せぬ不具合、クラッシュが発生する可能性があります。**
   - 開発ビルドは、通常(Beta/Release)ビルドとは別のアプリケーションとしてインストールされます。**ただし、コンフィグやプロファイルなどは共通です。**
 
