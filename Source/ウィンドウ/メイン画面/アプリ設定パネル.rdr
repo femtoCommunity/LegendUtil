@@ -17,7 +17,7 @@
 		ツールバーパネルを最背面
 		
 		保存ボタンの背景画像=[ウィンドウ管理器:「save_FILL1_wght400_GRAD0_opsz48」を[ウィンドウ管理器のテーマアイコン色]でアイコン取得したもの]
-		保存ボタンの元実体の「FlatAppearance」の「BorderSize」=0
+		保存ボタンの元実体のFlatAppearanceのBorderSize=0
 		
 		言語読み込む
 		ーー貼り付けた部品に対する操作をここに書きます
