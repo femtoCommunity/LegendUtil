@@ -4,7 +4,7 @@
 
 
 // 定数
-APIURL=「https://api-legendutil.ezolys.com/releases」
+APIURL=「https://api-legendutil.femtoCommunity.com/releases」
 プロデルURL=「https://produ.irelang.jp/downloads/」
 一時フォルダーパス=「[今の位置]Temp_[GUID値を生成したもの]\」
 
