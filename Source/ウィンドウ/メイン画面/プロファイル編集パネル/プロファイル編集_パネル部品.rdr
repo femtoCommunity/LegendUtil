@@ -1277,8 +1277,10 @@
 				もし終わり
 			もし終わり
 			
-			// DiscordRPCを更新
+			// DiscordRPC を更新
+			RPC管理器で「名前」へ表示タイプ更新する
 			RPC管理器で[RPC管理器で「DiscordRPC.ProfileEdit.Editing_Details」を取得したもの]を[RPC管理器で「DiscordRPC.ProfileEdit.Editing_State」を{プロファイル名}として取得したもの]としてステータス更新する
+			RPC管理器で情報更新する
 			
 			自分のメインタブパネルをウィンドウ管理器で初期化開始する
 			
