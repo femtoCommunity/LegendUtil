@@ -1,3 +1,3 @@
 @echo off
-Scripts\rdr\pconsole.exe Scripts\_Build.rdr
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0Scripts\_Build.ps1" %*
 pause
