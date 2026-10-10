@@ -1351,8 +1351,12 @@ ApexLegendsとは
 				プレイ開始日時=今
 				// Discord RPC を更新する
 				例外監視
+					RPC管理器で「詳細」へ表示タイプ更新する
 					RPC管理器で[RPC管理器で「DiscordRPC.Playing.Playing_Details」を取得したもの]を[RPC管理器で「DiscordRPC.Playing.Playing_State」を{[プロファイルの名前]}として取得したもの]としてステータス更新する
+					RPC管理器で「Apex Legends」として「apexlegends_icon」へ大画像更新する
+					RPC管理器で「LegendUtil」として「legendutil_icon」へ小画像更新する
 					RPC管理器で{プレイ開始日時}としてタイムスタンプ更新する
+					RPC管理器で情報更新する
 				発生した場合
 					「Discord RPC 更新エラー: [エラーのメッセージ]」を「エラー」としてデバッグログへ出力する
 				監視終わり
@@ -1477,12 +1481,20 @@ ApexLegendsとは
 			エラーのメッセージを「エラー」としてログ出力する
 		監視終わり
 		
-		// Discord RPC の日時情報をリセットする
+		// Discord RPC のリセット メインメニューへの切り替え時にRPC更新が入るので、ここでは更新を行わない
 		例外監視
 			「Discord RPC タイムスタンプリセット」をデバッグログへ出力する
 			RPC管理器でタイムスタンプ削除する
 		発生した場合
 			[言語管理器で「InPlay.ErrorLog.TT_DiscordRPC_TimestampResetError」を取得したもの]を「エラー」としてログ出力する
+			エラーのメッセージを「エラー」としてログ出力する
+		監視終わり
+		
+		例外監視
+			「Discord RPC 画像リセット」をデバッグログへ出力する
+			RPC管理器で画像リセットする
+		発生した場合
+			[言語管理器で「InPlay.ErrorLog.TT_DiscordRPC_ImageResetError」を取得したもの]を「エラー」としてログ出力する
 			エラーのメッセージを「エラー」としてログ出力する
 		監視終わり
 		

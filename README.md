@@ -61,7 +61,7 @@ winget install --id femtoCommunity.LegendUtil
 ```
 
 ### 💊 開発ビルドをインストールする
-- [**インストーラーをダウンロード**](https://api-legendutil.ezolys.com/releases/latest/download?release_channel=dev)
+- [**インストーラーをダウンロード**](https://api-legendutil.femtocommunity.com/releases/latest/download?release_channel=dev)
   - **開発ビルドには、実装途中の機能や不安定な機能が含まれており、予期せぬ不具合、クラッシュが発生する可能性があります。**
   - 開発ビルドは、通常(Beta/Release)ビルドとは別のアプリケーションとしてインストールされます。**ただし、コンフィグやプロファイルなどは共通です。**
 
@@ -127,7 +127,7 @@ winget install --id femtoCommunity.LegendUtil
 
 LegendUtil は [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.ja.html) のもとでライセンスされています。
 
-Copyright (C) 2025 Milkeyyy
+Copyright (C) 2026 Milkeyyy
 
 ---
 
@@ -136,7 +136,7 @@ Copyright (C) 2025 Milkeyyy
 - [`Rel1cStyle_Logo_TypographyDeth_1.png`](./Resources/Logo/Rel1cStyle_Logo_TypographyDeth_1.png)
 - [`Rel1cStyle_Logo_TypographyDeth_1_White.png`](./Resources/Logo/Rel1cStyle_Logo_TypographyDeth_1_White.png)
 
-Copyright (C) 2025 Rel1cStyle
+Copyright (C) 2026 Rel1cStyle
 
 ---
 
