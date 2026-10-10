@@ -311,8 +311,8 @@
 			"VideoConfigFile_SettingsRestoringError": "비디오 설정 항목 복원 과정에서 오류가 발생했습니다.",
 			"TT_LastPlayDate_RecordError": "마지막 플레이 일시의 기록 처리에 에러가 발생했습니다.",
 			"TT_TotalPlayTime_RecordError": "총 플레이 시간의 기록 처리에 에러가 발생했습니다.",
-			"TT_DiscordRPC_TimestampResetError": "Discord RPC のタイムスタンプのリセットでエラーが発生しました。",
-			"TT_DiscordRPC_ImageResetError": "Discord RPC の画像のリセットでエラーが発生しました。"
+			"TT_DiscordRPC_TimestampResetError": "Discord RPC의 타임스탬프를 재설정하는 중 오류가 발생했습니다.",
+			"TT_DiscordRPC_ImageResetError": "Discord RPC 이미지 초기화 중 오류가 발생했습니다."
 		},
 		"Error": {
 			"0": "부팅 처리 중 오류가 발생했습니다.",
