@@ -165,8 +165,8 @@
 			"Viewing_State": ""
 		},
 		"Playing": {
-			"Playing_Details": "Playing Apex Legends",
-			"Playing_State": "Profile: {0}"
+			"Playing_Details": "Apex Legends",
+			"Playing_State": ""
 		}
 	},
 	"Platform_EAapp": {
@@ -311,7 +311,8 @@
 			"VideoConfigFile_SettingsRestoringError": "An error occurred while restoring the video config settings.",
 			"TT_LastPlayDate_RecordError": "An error occurred while recording the last play time.",
 			"TT_TotalPlayTime_RecordError": "An error occurred while recording the total play time.",
-			"TT_DiscordRPC_TimestampResetError": "An error occurred while resetting the Discord RPC timestamp."
+			"TT_DiscordRPC_TimestampResetError": "An error occurred while resetting the Discord RPC timestamp.",
+			"TT_DiscordRPC_ImageResetError": "An error occurred while resetting the Discord RPC images."
 		},
 		"Error": {
 			"0": "An error occurred during startup processing.",
